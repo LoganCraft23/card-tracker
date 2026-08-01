@@ -26,7 +26,10 @@
   html { scroll-behavior: smooth; background: var(--bg); -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: transparent; color: var(--text);
     font-family: "Space Grotesk", system-ui, sans-serif; line-height: 1.5;
-    -webkit-tap-highlight-color: transparent; overflow-x: hidden; }
+    -webkit-tap-highlight-color: transparent;
+    /* clip, not hidden: hidden makes body a scroll container, which breaks
+       position:sticky on the desktop rail. */
+    overflow-x: clip; }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
@@ -34,7 +37,10 @@
   img { max-width: 100%; }
 
   /* ---------- parallax backdrop ---------- */
-  .bgfx { position: fixed; inset: -10%; z-index: -2; pointer-events: none; overflow: hidden; }
+  /* inset:0, not a negative inset — the layers already extend ±720px vertically
+     and the drift is vertical only, so bleeding sideways past the viewport buys
+     nothing and adds horizontal overflow that forces a pinch-zoom on phones. */
+  .bgfx { position: fixed; inset: 0; z-index: -2; pointer-events: none; overflow: hidden; }
   /* Each layer is translated up by as much as one whole tile, so it has to
      extend a tile past the viewport on both sides or the far edge scrolls
      into view as an uncovered gap. 720px clears the largest tile (640). */
@@ -119,7 +125,7 @@
   .cols .r { text-align: right; }
   .rows { display: flex; flex-direction: column; }
   .row { border-bottom: 1px solid var(--line);
-    content-visibility: auto; contain-intrinsic-size: auto 66px; }
+    content-visibility: auto; contain-intrinsic-block-size: auto 66px; }
   .row > summary { list-style: none; cursor: pointer; padding: 11px 14px; border-left: 3px solid transparent;
     transition: background .14s, border-color .14s; min-height: var(--tap); }
   .row > summary::-webkit-details-marker { display: none; }
@@ -137,11 +143,17 @@
     padding: 4px 18px 20px 91px; background: rgba(22,33,63,.5); }
 
   /* ---------- tiles view ---------- */
-  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; padding-top: 14px; }
+  /* min(300px,100%) so the 300px track minimum can never exceed a narrow
+     screen, and minmax(0,…) so a track is never forced up to its item's
+     min-content width. */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    gap: 16px; padding-top: 14px; }
   .tile { position: relative; display: flex; flex-direction: column; gap: 11px;
     background: linear-gradient(180deg, var(--surface2), var(--surface) 55%);
     border: 1px solid var(--line); border-radius: 14px; padding: 16px;
-    content-visibility: auto; contain-intrinsic-size: auto 380px;
+    /* block-size only: contain-intrinsic-size would also pin an intrinsic
+       *width*, which leaks into grid track sizing and overflows the screen. */
+    content-visibility: auto; contain-intrinsic-block-size: auto 380px; min-width: 0;
     transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
   .tile::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
     border-radius: 14px 14px 0 0; background: var(--sig); opacity: .9; }
@@ -209,7 +221,14 @@
     .rowDetail { grid-template-columns: 1fr; padding-left: 18px; }
   }
   @media (max-width: 860px) {
-    .app { flex-direction: column; }
+    /* align-items:flex-start is right for the desktop row layout, but in
+       column mode the cross axis is horizontal — leaving it makes children
+       shrink-to-fit their max-content width instead of stretching, so the
+       movers ticker's full unwrapped width pushes the page wider than the
+       screen and forces a pinch-zoom. Stretch, and hard-cap the widths. */
+    .app { flex-direction: column; align-items: stretch; }
+    .rail, .content { width: 100%; max-width: 100%; min-width: 0; }
+    .ticker, .fchips, .railStats { min-width: 0; max-width: 100%; }
     /* The rail becomes a compact header strip rather than a full-height column
        that would eat the viewport before any content is visible. */
     /* Pack the controls into a 4-row grid — brand and view toggle share the
