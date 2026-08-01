@@ -13,7 +13,7 @@
 // its entry in watchlist.json — pinned cards survive every rebuild.
 
 import { readFileSync, writeFileSync } from "node:fs";
-import { getSets, getSet, fetchCard } from "./tcgdex.js";
+import { getSets, getSet, fetchCard, getEurUsd } from "./tcgdex.js";
 import { SETS, analyze } from "./model.js";
 
 const PATH = new URL("../watchlist.json", import.meta.url);
@@ -77,6 +77,7 @@ const num = (localId) => {
   return Number.isFinite(n) ? n : -1;
 };
 
+const eurUsd = await getEurUsd();
 const allSets = await getSets();
 const idByName = new Map(allSets.map((s) => [s.name.toLowerCase(), s.id]));
 
@@ -111,9 +112,11 @@ for (const setName of Object.keys(SETS)) {
         image: d.image,
         auto: true,
       };
-      const a = analyze(entry, d.price, []);
+      const a = analyze(entry, d.price, [], d.market, eurUsd);
       const upside = (a.proj[0] + a.proj[1]) / 2 / d.price - 1;
-      candidates.push({ entry, price: d.price, upside });
+      // Rank on upside but discount cards whose price we don't trust, so a
+      // thin-market outlier can't top the board on a phantom quote.
+      candidates.push({ entry, price: d.price, upside, score: upside * (0.5 + 0.5 * a.confidence) });
     }
   }
 }
@@ -121,7 +124,7 @@ for (const setName of Object.keys(SETS)) {
 const charRank = { S: 2, A: 1, B: 0 };
 candidates.sort(
   (x, y) =>
-    y.upside - x.upside ||
+    y.score - x.score ||
     charRank[y.entry.char] - charRank[x.entry.char] ||
     y.price - x.price
 );

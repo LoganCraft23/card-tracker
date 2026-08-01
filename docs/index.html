@@ -119,8 +119,13 @@
   .sparkBox { position: relative; }
   .spark { width: 100%; height: 58px; display: block; }
   .noHist { color: var(--faint); font-size: 12px; font-style: italic; padding: 8px 0; }
-  .range { font-size: 12.5px; color: var(--muted); }
+  .range { font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .range b { color: var(--gold); font: 700 12.5px "JetBrains Mono", monospace; }
+  .conf { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; color: var(--muted); }
+  .confBar { width: 34px; height: 5px; border-radius: 3px; background: var(--line2); overflow: hidden; }
+  .confBar i { display: block; height: 100%; background: var(--c, var(--buy)); }
+  .thin { color: var(--hold); border: 1px solid color-mix(in srgb, var(--hold) 45%, transparent);
+    border-radius: 5px; padding: 1px 6px; font-size: 11px; }
   details.why { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 2px; }
   details.why summary { cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--muted); list-style: none; display: flex; align-items: center; gap: 6px; }
   details.why summary::before { content: "▸"; transition: transform .15s; color: var(--gold); }
@@ -206,6 +211,9 @@
       <ul>
         <li><b>Screen</b> — every secret rare in every modern set is priced daily; chase-art cards between $5 and $50 make the cut, ranked by model upside.</li>
         <li><b>Model</b> — each set moves through hype-fade → supply-trough → recovery → appreciation; rarity tier and character popularity adjust the curve.</li>
+        <li><b>Momentum</b> — read from Cardmarket's smoothed trend against its 30-day average, shrunk toward zero when a card's sales are too thin to trust.</li>
+        <li><b>Confidence</b> — the listing spread and any US/EU price disagreement set how wide the projected range is, instead of a flat guess on every card.</li>
+        <li><b>Scoring</b> — every prediction is logged and graded at 30/90/180 days against a "price stays flat" baseline, so the model has to prove it beats doing nothing.</li>
         <li><b>Signal</b> — Discord pings fire only when a card flips to BUY or SELL, so alerts stay actionable.</li>
       </ul>
     </div>
@@ -235,6 +243,32 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&l
 function tcgUrl(c) {
   return "https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=" +
     encodeURIComponent(c.name.replace(/\s(IR|SIR|Shiny|Gold|UR)(\s#\d+)?$/, "") + " " + c.set);
+}
+
+// Momentum measured from our own snapshots is exact; the Cardmarket-derived
+// figure is an estimate, so it's labelled "~" and titled as such rather than
+// being passed off as the same number.
+function deltas(c) {
+  const out = [];
+  const measured = [["30d", c.chg30], ["90d", c.chg90], ["180d", c.chg180]]
+    .filter(([, v]) => v !== null && v !== undefined);
+  for (const [l, v] of measured) {
+    out.push(`<span class="${v >= 0 ? "up" : "down"}">${l} ${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span>`);
+  }
+  if (!measured.length && c.momSource === "cardmarket" && c.mom !== null && c.mom !== undefined) {
+    out.push(`<span class="${c.mom >= 0 ? "up" : "down"}" title="Estimated from Cardmarket's smoothed trend vs its 30-day average — the tracker's own measured history takes over once it has a month of snapshots">~30d ${c.mom >= 0 ? "▲" : "▼"}${Math.abs(Math.round(c.mom * 100))}%</span>`);
+  }
+  return out.join("");
+}
+
+function confBadge(c) {
+  if (typeof c.confidence !== "number") return "";
+  const pctv = Math.round(c.confidence * 100);
+  const col = c.confidence >= 0.8 ? "var(--buy)" : c.confidence >= 0.55 ? "var(--hold)" : "var(--sell)";
+  const flags = (c.confidenceFlags || []).join("; ");
+  const thin = flags ? ` <span class="thin" title="${esc(flags)}">${esc(flags.split(";")[0])}</span>` : "";
+  return `<span class="conf" title="Price confidence ${pctv}% — drives how wide the projected range is${flags ? ": " + esc(flags) : ""}">
+    <span class="confBar" style="--c:${col}"><i style="width:${pctv}%"></i></span>${pctv}%</span>${thin}`;
 }
 
 function spark(c) {
@@ -278,14 +312,11 @@ function render() {
           <h3>${esc(c.name)}</h3>
           <div class="phase">${c.phase.replace("-", " ")} phase</div>
           <div class="price">$${c.price.toFixed(2)}</div>
-          <div class="deltas">${[["30d", c.chg30], ["90d", c.chg90], ["180d", c.chg180]]
-            .filter(([, v]) => v !== null && v !== undefined)
-            .map(([l, v]) => `<span class="${v >= 0 ? "up" : "down"}">${l} ${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span>`)
-            .join("")}</div>
+          <div class="deltas">${deltas(c)}</div>
         </div>
       </div>
       ${spark(c)}
-      <div class="range">12-mo model range <b>$${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</b></div>
+      <div class="range">12-mo model range <b>$${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</b>${confBadge(c)}</div>
       <details class="why"><summary>Why ${c.signal}?</summary>
         <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
       </details>

@@ -64,7 +64,92 @@ export function priceDaysAgo(history, days, now = Date.now()) {
   return best;
 }
 
-export function analyze(card, price, history) {
+// --- momentum from the second market -------------------------------------
+// The tracker's own snapshots give exact point-to-point change, but only once
+// it has been running a month. Cardmarket's figures cover the gap from day one.
+//
+// Which figures matter. avg1/avg7/avg30 are averages of *actual sales*, so on
+// a card that sells a couple of copies a week avg7 is a two-sale average and
+// jumps around wildly — differencing it against avg30 mostly measures sampling
+// noise. `trend` is Cardmarket's own smoothed current-value estimate and is
+// far steadier, so momentum is built on trend vs the 30-day average.
+//
+// Lag: trend is roughly "now" and a 30-day trailing average is centred ~15
+// days back, so the gap spans about half a month — scaling by 2 puts it on the
+// same footing as a point-to-point 30-day reading.
+const TREND_LAG_SCALE = 2.0;
+const MOM_CAP = 0.6;          // a real monthly move on these cards isn't beyond this
+const ESTIMATE_MARGIN = 1.2;  // demand a wider move before acting on an estimate
+
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+
+// How much the short averages disagree with the monthly one — a direct read on
+// how few sales sit behind each number. Near 0 means a liquid, well-sampled
+// card; above ~0.6 means the quotes are near-meaningless.
+export function salesNoise(market) {
+  const a1 = market?.cmAvg1, a7 = market?.cmAvg7, a30 = market?.cmAvg30;
+  if (!a1 || !a7 || !a30) return null;
+  return (Math.abs(a1 - a30) + Math.abs(a7 - a30)) / (2 * a30);
+}
+
+export function marketMomentum(market) {
+  const t = market?.cmTrend, a30 = market?.cmAvg30;
+  if (!t || !a30) return null;
+  // A ratio of two EUR figures — unitless, so no FX conversion needed.
+  const raw = ((t - a30) / a30) * TREND_LAG_SCALE;
+  // Shrink toward zero when the sales data is thin, so noise can't fire a
+  // signal on its own. A card with noise 1.0 gets its reading halved.
+  const noise = salesNoise(market);
+  const shrink = noise === null ? 0.6 : 1 / (1 + noise);
+  return clamp(raw * shrink, -MOM_CAP, MOM_CAP);
+}
+
+// --- how much to trust the quoted price -----------------------------------
+// A "market price" derived from a handful of thin listings deserves a wider
+// projection than one where both markets and the whole listing pool agree.
+// Returns { score 0..1, flags[] }.
+export function confidence(price, market, eurUsd = 1.08) {
+  const flags = [];
+  let score = 1;
+
+  const low = market?.low;
+  if (price && low) {
+    // Spread of the listing pool behind the quote. Healthy singles sit well
+    // under 30%; a wide gap means the "market" is a couple of outlier asks.
+    const spread = Math.max(0, (price - low) / price);
+    if (spread > 0.45) { score -= 0.35; flags.push("wide listing spread"); }
+    else if (spread > 0.28) { score -= 0.15; }
+  } else {
+    score -= 0.15;
+    flags.push("no listing depth");
+  }
+
+  const cm30 = market?.cmAvg30;
+  if (price && cm30) {
+    // Two independent markets (US/EU) should roughly agree once converted.
+    const div = Math.abs(cm30 * eurUsd - price) / price;
+    if (div > 0.5) { score -= 0.3; flags.push("US and EU prices disagree"); }
+    else if (div > 0.28) { score -= 0.12; }
+  } else {
+    score -= 0.1;
+    flags.push("single market only");
+  }
+
+  // Erratic short-window averages mean very few sales back the quote.
+  const noise = salesNoise(market);
+  if (noise !== null) {
+    if (noise > 0.6) { score -= 0.3; flags.push("thin, erratic sales"); }
+    else if (noise > 0.3) { score -= 0.12; }
+  }
+
+  return { score: Math.max(0, Math.min(1, score)), flags };
+}
+
+// Band half-width: confident cards get a tight range, thin ones an honestly
+// wide one, instead of a flat ±20% that implies precision nobody has.
+const BAND_TIGHT = 0.12, BAND_LOOSE = 0.45;
+
+export function analyze(card, price, history, market = null, eurUsd = 1.08) {
   const phase = getPhase(card);
   const p30 = priceDaysAgo(history, 30);
   const p90 = priceDaysAgo(history, 90);
@@ -73,33 +158,42 @@ export function analyze(card, price, history) {
   const chg90 = pct(price, p90);
   const chg180 = pct(price, p180);
 
+  // Prefer measured history; fall back to the estimate so the momentum rules
+  // are live from day one rather than dormant for a month.
+  const estimated = chg30 === null;
+  const mom = estimated ? marketMomentum(market) : chg30;
+  const momSource = chg30 !== null ? "history" : mom !== null ? "cardmarket" : "none";
+  const margin = estimated ? ESTIMATE_MARGIN : 1;
+
   let growth = PHASE_BASE[phase] + TIER_ADJ[card.tier || "chase"] + CHAR_ADJ[card.char || "A"];
   const reasons = [];
 
-  if (chg30 !== null && chg30 > 0.2) {
-    growth -= chg30 * 0.5;
-    reasons.push(`Up ${Math.round(chg30 * 100)}% in 30 days — spikes like this usually give back a chunk.`);
-  } else if (chg30 !== null && chg30 < -0.2) {
-    growth += Math.abs(chg30) * 0.3;
-    reasons.push(`Down ${Math.round(Math.abs(chg30) * 100)}% in 30 days — oversold moves partially bounce.`);
+  const via = estimated ? " (from Cardmarket 7d vs 30d averages)" : "";
+  if (mom !== null && mom > 0.2 * margin) {
+    growth -= mom * 0.5;
+    reasons.push(`Up ~${Math.round(mom * 100)}% over the last month${via} — spikes like this usually give back a chunk.`);
+  } else if (mom !== null && mom < -0.2 * margin) {
+    growth += Math.abs(mom) * 0.3;
+    reasons.push(`Down ~${Math.round(Math.abs(mom) * 100)}% over the last month${via} — oversold moves partially bounce.`);
   }
 
+  const conf = confidence(price, market, eurUsd);
   const proj12 = price * (1 + growth);
   const inPrint = (SETS[card.set] || card).inPrint;
   const tier = card.tier || "chase";
   const chr = card.char || "A";
 
   let signal = "HOLD";
-  if (chg30 !== null && chg30 >= 0.25) {
+  if (mom !== null && mom >= 0.25 * margin) {
     signal = "SELL";
-    reasons.push("Sell into hype. Big 30-day spikes on singles rarely hold — take the exit the market is offering.");
+    reasons.push("Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.");
   } else if (inPrint && tier !== "chase") {
     signal = "AVOID";
     reasons.push("Standard hits from in-print sets keep bleeding as packs get opened.");
   } else if (
     (phase === "supply-trough" || phase === "hype-fade") &&
     tier === "chase" && chr !== "B" &&
-    (chg30 === null || chg30 <= 0.05)
+    (mom === null || mom <= 0.05 * margin)
   ) {
     signal = "BUY";
     reasons.push(
@@ -109,7 +203,7 @@ export function analyze(card, price, history) {
     );
   } else if (
     phase === "recovery" && tier === "chase" && chr !== "B" &&
-    (chg30 === null || chg30 <= 0.08)
+    (mom === null || mom <= 0.08 * margin)
   ) {
     signal = "BUY";
     reasons.push("Out of print under three years — sealed supply is drying up and the floor is rising.");
@@ -120,8 +214,19 @@ export function analyze(card, price, history) {
     reasons.push("No strong edge either way at current price.");
   }
 
+  // Grab this before the confidence caveat is appended — it's what the signal
+  // actually rests on, and what the Discord alert quotes.
+  const rationale = reasons[reasons.length - 1];
+
+  if (conf.flags.length) {
+    reasons.push(`Price confidence is low (${conf.flags.join("; ")}) — the projection range is widened to match.`);
+  }
+
+  const band = BAND_TIGHT + (1 - conf.score) * (BAND_LOOSE - BAND_TIGHT);
   return {
-    phase, price, chg30, chg90, chg180, signal, reasons,
-    proj: [+(proj12 * 0.8).toFixed(2), +(proj12 * 1.2).toFixed(2)],
+    phase, price, chg30, chg90, chg180, signal, reasons, rationale,
+    mom, momSource,
+    confidence: +conf.score.toFixed(2), confidenceFlags: conf.flags,
+    proj: [+(proj12 * (1 - band)).toFixed(2), +(proj12 * (1 + band)).toFixed(2)],
   };
 }

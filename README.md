@@ -46,6 +46,38 @@ any card flipped to BUY or SELL. GitHub Pages serves the dashboard.
    After it finishes, the dashboard has live prices and Discord gets its first
    alert batch. From then on it runs itself every day at 9 AM Eastern.
 
+## How the model reads the market
+
+- **Momentum** comes from Cardmarket's smoothed `trend` measured against its
+  30-day average, scaled ×2 to put it on the same footing as a point-to-point
+  30-day change (a trailing average is centred ~15 days back). It deliberately
+  does *not* use `avg7`: those are averages of actual sales, so on a card that
+  sells two copies a week they swing wildly and differencing them mostly
+  measures sampling noise. Once the tracker has a month of its own snapshots,
+  measured history takes over and the estimate is dropped.
+- **Sales noise** — how far `avg1`/`avg7` stray from `avg30` — is a direct read
+  on how few sales back a quote. High noise shrinks the momentum reading toward
+  zero so thin data can't fire a signal by itself.
+- **Confidence** combines the TCGplayer listing spread, US/EU price
+  disagreement, and that noise figure. It sets the width of the projected range
+  (±12% when confident, up to ±45% when not) instead of a flat guess, and
+  discounts a card's ranking in the screener.
+
+## Does the model actually work?
+
+Unknown yet, on purpose. `scripts/score.js` runs daily and grades every logged
+prediction at 30/90/180 days against a **naive "price stays flat" baseline**,
+writing `docs/accuracy.json`:
+
+```bash
+npm run score
+```
+
+If `beatsNaive` is false, the phase/tier/character machinery is decoration at
+that horizon and adding more criteria won't fix it. First real verdict lands
+~30 days after logging began. Until then it honestly reports having nothing to
+say.
+
 ## Preview locally
 
 ```bash

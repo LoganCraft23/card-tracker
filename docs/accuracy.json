@@ -1,0 +1,32 @@
+{
+  "generated": "2026-08-01T05:49:07.961Z",
+  "predictionsLogged": 100,
+  "daysCollected": 0,
+  "horizons": {
+    "30": {
+      "samples": 0,
+      "modelMAPE": null,
+      "naiveMAPE": null,
+      "bandHitRate": null,
+      "directionAccuracy": null,
+      "beatsNaive": null
+    },
+    "90": {
+      "samples": 0,
+      "modelMAPE": null,
+      "naiveMAPE": null,
+      "bandHitRate": null,
+      "directionAccuracy": null,
+      "beatsNaive": null
+    },
+    "180": {
+      "samples": 0,
+      "modelMAPE": null,
+      "naiveMAPE": null,
+      "bandHitRate": null,
+      "directionAccuracy": null,
+      "beatsNaive": null
+    }
+  },
+  "bySignal": {}
+}

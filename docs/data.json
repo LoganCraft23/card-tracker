@@ -1,5 +1,6 @@
 {
-  "updated": "2026-08-01T03:47:33.815Z",
+  "updated": "2026-08-01T05:48:15.888Z",
+  "eurUsd": 1.1485,
   "cards": [
     {
       "name": "Garchomp ex SIR",
@@ -15,11 +16,17 @@
       "chg180": null,
       "signal": "BUY",
       "reasons": [
+        "Down ~26% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.2634936211972524,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        40.64,
-        60.96
+        47.49,
+        60.44
       ],
       "history": [
         [
@@ -42,11 +49,19 @@
       "chg180": null,
       "signal": "BUY",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print under three years — sealed supply is drying up and the floor is rising.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.12839097121557264,
+      "momSource": "cardmarket",
+      "confidence": 0.53,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        40.64,
-        60.96
+        36.82,
+        64.78
       ],
       "history": [
         [
@@ -71,9 +86,14 @@
       "reasons": [
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.026435357290375903,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        34.38,
-        51.57
+        33.99,
+        51.96
       ],
       "history": [
         [
@@ -94,13 +114,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.10468654899573943,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        20.31,
-        30.46
+        21.08,
+        29.69
       ],
       "history": [
         [
@@ -121,13 +146,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.15037593984962397,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        7.48,
-        11.22
+        7.39,
+        11.3
       ],
       "history": [
         [
@@ -148,13 +178,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.13615928066795102,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        11.76,
-        17.64
+        11.63,
+        17.77
       ],
       "history": [
         [
@@ -179,9 +214,14 @@
       "reasons": [
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.15072875933167446,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        16.08,
-        24.12
+        17.69,
+        22.51
       ],
       "history": [
         [
@@ -202,13 +242,22 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "SELL",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Up ~60% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.6,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        11.87,
-        17.8
+        8.76,
+        13.67
       ],
       "history": [
         [
@@ -233,9 +282,14 @@
       "reasons": [
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.05765595463137991,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        23.61,
-        35.41
+        25.97,
+        33.05
       ],
       "history": [
         [
@@ -256,13 +310,19 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Up ~29% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.2870090634441088,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        9.52,
-        14.27
+        8.31,
+        12.7
       ],
       "history": [
         [
@@ -283,13 +343,19 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Up ~28% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.27849406910778746,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        32.85,
-        49.27
+        30.6,
+        42.22
       ],
       "history": [
         [
@@ -312,11 +378,19 @@
       "chg180": null,
       "signal": "BUY",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print under three years — sealed supply is drying up and the floor is rising.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.22690437601296592,
+      "momSource": "cardmarket",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        22.2,
-        33.3
+        20.3,
+        35.2
       ],
       "history": [
         [
@@ -332,18 +406,23 @@
       "tier": "chase",
       "id": "sv03-199",
       "image": "https://assets.tcgdex.net/en/sv/sv03/199",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 43.73,
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.2069588793492995,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        43.03,
-        64.55
+        46.18,
+        58.77
       ],
       "history": [
         [
@@ -368,9 +447,14 @@
       "reasons": [
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.14707655213984314,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        31.66,
-        47.48
+        34.82,
+        44.32
       ],
       "history": [
         [
@@ -391,13 +475,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.11340206185567021,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        29.52,
-        44.28
+        31.01,
+        42.79
       ],
       "history": [
         [
@@ -422,9 +511,14 @@
       "reasons": [
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.08236434108527145,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        24.6,
-        36.9
+        27.06,
+        34.44
       ],
       "history": [
         [
@@ -445,13 +539,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.23752969121140147,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        13.78,
-        20.66
+        13.62,
+        20.82
       ],
       "history": [
         [
@@ -476,9 +575,14 @@
       "reasons": [
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.006120887528691528,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        7.87,
-        11.81
+        8.17,
+        11.51
       ],
       "history": [
         [
@@ -501,11 +605,17 @@
       "chg180": null,
       "signal": "BUY",
       "reasons": [
+        "Down ~26% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.2596581933074824,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        40.43,
-        60.65
+        47.29,
+        60.19
       ],
       "history": [
         [
@@ -528,11 +638,17 @@
       "chg180": null,
       "signal": "BUY",
       "reasons": [
+        "Down ~54% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.5412054120541205,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        42.27,
-        63.41
+        52.64,
+        66.99
       ],
       "history": [
         [
@@ -553,13 +669,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1834578716825562,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        44.09,
-        66.14
+        48.5,
+        61.73
       ],
       "history": [
         [
@@ -582,11 +703,19 @@
       "chg180": null,
       "signal": "BUY",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print under three years — sealed supply is drying up and the floor is rising.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.04907975460122714,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        43.56,
-        65.34
+        42.53,
+        66.38
       ],
       "history": [
         [
@@ -607,13 +736,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.10723192019950116,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        17.87,
-        26.8
+        19.66,
+        25.02
       ],
       "history": [
         [
@@ -634,13 +768,18 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.22456140350877177,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        15.41,
-        23.11
+        16.19,
+        22.34
       ],
       "history": [
         [
@@ -665,9 +804,14 @@
       "reasons": [
         "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.08504289444237229,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        16.42,
-        24.63
+        17.05,
+        24.01
       ],
       "history": [
         [
@@ -692,9 +836,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.21505376344086025,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        5.02,
-        7.53
+        4.96,
+        7.58
       ],
       "history": [
         [
@@ -719,9 +868,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.05548549810844886,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        5.45,
-        8.17
+        5.38,
+        8.23
       ],
       "history": [
         [
@@ -746,9 +900,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.04030226700251864,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        8,
-        12
+        8.3,
+        11.69
       ],
       "history": [
         [
@@ -773,9 +932,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.004016064257028027,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        6.8,
-        10.2
+        7.48,
+        9.52
       ],
       "history": [
         [
@@ -798,11 +962,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.09850746268656718,
+      "momSource": "cardmarket",
+      "confidence": 0.53,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        6.8,
-        10.2
+        6.16,
+        10.83
       ],
       "history": [
         [
@@ -827,9 +999,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.13419354838709663,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        5.6,
-        8.4
+        5.81,
+        8.18
       ],
       "history": [
         [
@@ -852,11 +1029,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.12105263157894737,
+      "momSource": "cardmarket",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        5,
-        7.5
+        4.78,
+        7.72
       ],
       "history": [
         [
@@ -881,9 +1066,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.06945540647198098,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        10.18,
-        15.27
+        10.06,
+        15.38
       ],
       "history": [
         [
@@ -906,11 +1096,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (thin, erratic sales) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.10995944118972516,
+      "momSource": "cardmarket",
+      "confidence": 0.43,
+      "confidenceFlags": [
+        "thin, erratic sales"
       ],
       "proj": [
-        9.38,
-        14.07
+        8.11,
+        15.33
       ],
       "history": [
         [
@@ -933,11 +1131,20 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Down ~24% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.24146981627296585,
+      "momSource": "cardmarket",
+      "confidence": 0.53,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        5.63,
-        8.44
+        5.41,
+        9.51
       ],
       "history": [
         [
@@ -960,11 +1167,20 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread; US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1677704194260485,
+      "momSource": "cardmarket",
+      "confidence": 0.35,
+      "confidenceFlags": [
+        "wide listing spread",
+        "US and EU prices disagree"
       ],
       "proj": [
-        9.61,
-        14.41
+        7.99,
+        16.02
       ],
       "history": [
         [
@@ -989,9 +1205,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.0049261083743841316,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        5.58,
-        8.37
+        5.52,
+        8.43
       ],
       "history": [
         [
@@ -1016,9 +1237,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.003921568627450896,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        8.81,
-        13.21
+        9.25,
+        12.76
       ],
       "history": [
         [
@@ -1043,9 +1269,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.06570841889117011,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        8.61,
-        12.91
+        8.51,
+        13.01
       ],
       "history": [
         [
@@ -1061,7 +1292,7 @@
       "tier": "chase",
       "id": "sv03-203",
       "image": "https://assets.tcgdex.net/en/sv/sv03/203",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 7.7,
       "chg30": null,
       "chg90": null,
@@ -1070,9 +1301,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.14163614163614166,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        7.33,
-        11
+        7.06,
+        10.8
       ],
       "history": [
         [
@@ -1097,9 +1333,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.16638935108153077,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        7.33,
-        11
+        8.06,
+        10.26
       ],
       "history": [
         [
@@ -1115,7 +1356,7 @@
       "tier": "chase",
       "id": "sv03-208",
       "image": "https://assets.tcgdex.net/en/sv/sv03/208",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 12.38,
       "chg30": null,
       "chg90": null,
@@ -1124,9 +1365,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.07211848036059247,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        11.79,
-        17.68
+        11.93,
+        16.79
       ],
       "history": [
         [
@@ -1142,7 +1388,7 @@
       "tier": "chase",
       "id": "sv03-205",
       "image": "https://assets.tcgdex.net/en/sv/sv03/205",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 18.4,
       "chg30": null,
       "chg90": null,
@@ -1151,9 +1397,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.09574767671078566,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        17.52,
-        26.28
+        18.78,
+        23.91
       ],
       "history": [
         [
@@ -1178,9 +1429,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.011869436201780163,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        6.13,
-        9.2
+        6.36,
+        8.96
       ],
       "history": [
         [
@@ -1205,9 +1461,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.10181818181818199,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        8.56,
-        12.84
+        9.41,
+        11.98
       ],
       "history": [
         [
@@ -1230,11 +1491,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1593625498007967,
+      "momSource": "cardmarket",
+      "confidence": 0.53,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        6.81,
-        10.21
+        6.17,
+        10.85
       ],
       "history": [
         [
@@ -1255,13 +1524,19 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "HOLD",
+      "signal": "SELL",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Up ~37% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
       ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.370315944158707,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        5.93,
-        8.9
+        5.2,
+        7.32
       ],
       "history": [
         [
@@ -1277,7 +1552,7 @@
       "tier": "chase",
       "id": "sv03-224",
       "image": "https://assets.tcgdex.net/en/sv/sv03/224",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 6.02,
       "chg30": null,
       "chg90": null,
@@ -1286,9 +1561,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.09150326797385619,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        5.73,
-        8.6
+        6.15,
+        7.82
       ],
       "history": [
         [
@@ -1313,9 +1593,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.2046783625730992,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        6.41,
-        9.61
+        6.33,
+        9.68
       ],
       "history": [
         [
@@ -1338,11 +1623,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (thin, erratic sales) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.08268733850129194,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "thin, erratic sales"
       ],
       "proj": [
-        10.39,
-        15.58
+        10.14,
+        15.83
       ],
       "history": [
         [
@@ -1365,11 +1658,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.010723860589812423,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        11.54,
-        17.31
+        11.26,
+        17.58
       ],
       "history": [
         [
@@ -1394,9 +1695,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.04803843074459551,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        19.1,
-        28.65
+        21.01,
+        26.74
       ],
       "history": [
         [
@@ -1421,9 +1727,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.15542363734484632,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        14.72,
-        22.08
+        14.55,
+        22.24
       ],
       "history": [
         [
@@ -1446,11 +1757,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.04010938924339086,
+      "momSource": "cardmarket",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        17.3,
-        25.95
+        15.82,
+        27.43
       ],
       "history": [
         [
@@ -1475,9 +1794,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.026825633383010663,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        12.37,
-        18.55
+        12.99,
+        17.93
       ],
       "history": [
         [
@@ -1493,7 +1817,7 @@
       "tier": "chase",
       "id": "sv03-225",
       "image": "https://assets.tcgdex.net/en/sv/sv03/225",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 23.43,
       "chg30": null,
       "chg90": null,
@@ -1502,9 +1826,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.1537176274018379,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        22.31,
-        33.46
+        23.92,
+        30.44
       ],
       "history": [
         [
@@ -1529,9 +1858,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1299545159194282,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        8.79,
-        13.18
+        9.67,
+        12.3
       ],
       "history": [
         [
@@ -1554,11 +1888,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.15313225058004665,
+      "momSource": "cardmarket",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        5.41,
-        8.11
+        5.17,
+        8.35
       ],
       "history": [
         [
@@ -1581,11 +1923,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.11571185479296667,
+      "momSource": "cardmarket",
+      "confidence": 0.53,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        16.7,
-        25.05
+        15.13,
+        26.61
       ],
       "history": [
         [
@@ -1610,9 +1960,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.06570841889117025,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        13.32,
-        19.98
+        13.17,
+        20.13
       ],
       "history": [
         [
@@ -1637,9 +1992,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1315789473684209,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        8.59,
-        12.88
+        8.49,
+        12.98
       ],
       "history": [
         [
@@ -1664,9 +2024,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.08774583963691376,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        7.91,
-        11.87
+        8.21,
+        11.57
       ],
       "history": [
         [
@@ -1689,11 +2054,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.21855146124523492,
+      "momSource": "cardmarket",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        7.24,
-        10.85
+        6.62,
+        11.47
       ],
       "history": [
         [
@@ -1716,11 +2089,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.041522491349481064,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        18.33,
-        27.49
+        17.89,
+        27.92
       ],
       "history": [
         [
@@ -1745,9 +2126,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.08344733242134054,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        16.3,
-        24.45
+        17.93,
+        22.82
       ],
       "history": [
         [
@@ -1763,18 +2149,26 @@
       "tier": "chase",
       "id": "sv03-209",
       "image": "https://assets.tcgdex.net/en/sv/sv03/209",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 14.99,
       "chg30": null,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.051517939282428586,
+      "momSource": "cardmarket",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        14.27,
-        21.41
+        12.72,
+        22.06
       ],
       "history": [
         [
@@ -1797,11 +2191,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.15527426160337554,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        14.27,
-        21.41
+        13.93,
+        21.74
       ],
       "history": [
         [
@@ -1826,9 +2228,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.11588161734055862,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        18.88,
-        28.32
+        20.77,
+        26.43
       ],
       "history": [
         [
@@ -1853,9 +2260,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.17817947062621034,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        10.69,
-        16.04
+        11.76,
+        14.97
       ],
       "history": [
         [
@@ -1878,11 +2290,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.09040928527794727,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        19.23,
-        28.85
+        18.77,
+        29.3
       ],
       "history": [
         [
@@ -1905,11 +2325,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.12435233160621757,
+      "momSource": "cardmarket",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        5.28,
-        7.93
+        5.05,
+        8.16
       ],
       "history": [
         [
@@ -1934,9 +2362,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.06502359727320373,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        18.63,
-        27.95
+        18.42,
+        28.16
       ],
       "history": [
         [
@@ -1961,9 +2394,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.017841213202497708,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        31.18,
-        46.77
+        32.75,
+        45.19
       ],
       "history": [
         [
@@ -1984,13 +2422,22 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "HOLD",
+      "signal": "SELL",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Up ~33% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.33192686357243306,
+      "momSource": "cardmarket",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        8.34,
-        12.51
+        6.56,
+        11.38
       ],
       "history": [
         [
@@ -2015,9 +2462,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.19001610305958128,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        9.97,
-        14.95
+        10.47,
+        14.45
       ],
       "history": [
         [
@@ -2042,9 +2494,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.03395061728395072,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        8.82,
-        13.22
+        9.15,
+        12.89
       ],
       "history": [
         [
@@ -2067,11 +2524,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (wide listing spread) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.12994350282485873,
+      "momSource": "cardmarket",
+      "confidence": 0.53,
+      "confidenceFlags": [
+        "wide listing spread"
       ],
       "proj": [
-        6.04,
-        9.05
+        5.47,
+        9.62
       ],
       "history": [
         [
@@ -2096,9 +2561,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.06078431372548995,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        13.02,
-        19.54
+        13.52,
+        19.04
       ],
       "history": [
         [
@@ -2114,7 +2584,7 @@
       "tier": "chase",
       "id": "sv03-222",
       "image": "https://assets.tcgdex.net/en/sv/sv03/222",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 9.05,
       "chg30": null,
       "chg90": null,
@@ -2123,9 +2593,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.012806830309498507,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        8.62,
-        12.92
+        8.3,
+        12.69
       ],
       "history": [
         [
@@ -2150,9 +2625,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.039415801513285144,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        42.68,
-        64.02
+        44.83,
+        61.86
       ],
       "history": [
         [
@@ -2177,9 +2657,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        12.15,
-        18.22
+        12.76,
+        17.61
       ],
       "history": [
         [
@@ -2200,13 +2685,19 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "HOLD",
+      "signal": "SELL",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Up ~47% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
       ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.4708487084870849,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        18.46,
-        27.69
+        16.29,
+        20.73
       ],
       "history": [
         [
@@ -2222,7 +2713,7 @@
       "tier": "chase",
       "id": "sv03-202",
       "image": "https://assets.tcgdex.net/en/sv/sv03/202",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 42.99,
       "chg30": null,
       "chg90": null,
@@ -2231,9 +2722,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1572869463528725,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        40.93,
-        61.39
+        41.42,
+        58.32
       ],
       "history": [
         [
@@ -2258,9 +2754,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.08671257332313201,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        22.47,
-        33.7
+        24.71,
+        31.45
       ],
       "history": [
         [
@@ -2285,9 +2786,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.044766293614220104,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        18.74,
-        28.1
+        20.61,
+        26.23
       ],
       "history": [
         [
@@ -2312,9 +2818,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.061807580174927046,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        45.69,
-        68.53
+        47.99,
+        66.22
       ],
       "history": [
         [
@@ -2339,9 +2850,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.15306122448979598,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        8.69,
-        13.04
+        9.13,
+        12.6
       ],
       "history": [
         [
@@ -2357,7 +2873,7 @@
       "tier": "chase",
       "id": "sv03-207",
       "image": "https://assets.tcgdex.net/en/sv/sv03/207",
-      "phase": "recovery",
+      "phase": "appreciation",
       "price": 19.26,
       "chg30": null,
       "chg90": null,
@@ -2366,9 +2882,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.12503617945007237,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        18.34,
-        27.5
+        18.55,
+        26.13
       ],
       "history": [
         [
@@ -2393,9 +2914,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.18117571474461935,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        25.48,
-        38.21
+        26.76,
+        36.93
       ],
       "history": [
         [
@@ -2420,9 +2946,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.18763326226012808,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        42.06,
-        63.09
+        44.18,
+        60.97
       ],
       "history": [
         [
@@ -2447,9 +2978,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.19469026548672544,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        5.44,
-        8.15
+        5.37,
+        8.22
       ],
       "history": [
         [
@@ -2474,9 +3010,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.05726405090137849,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        29.08,
-        43.63
+        30.55,
+        42.16
       ],
       "history": [
         [
@@ -2499,11 +3040,17 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
+        "Down ~27% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.2653416149068325,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        29.56,
-        44.34
+        33.13,
+        45.71
       ],
       "history": [
         [
@@ -2528,9 +3075,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.07189873417721528,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        26.5,
-        39.76
+        29.15,
+        37.11
       ],
       "history": [
         [
@@ -2555,9 +3107,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.11874469889737053,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        37.18,
-        55.76
+        39.05,
+        53.89
       ],
       "history": [
         [
@@ -2580,11 +3137,20 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Up ~25% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.2500737245650252,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        38.6,
-        57.91
+        33.73,
+        52.64
       ],
       "history": [
         [
@@ -2609,9 +3175,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.07838526357044875,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        25.35,
-        38.03
+        27.89,
+        35.49
       ],
       "history": [
         [
@@ -2632,13 +3203,23 @@
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "HOLD",
+      "signal": "SELL",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Up ~57% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+        "Price confidence is low (wide listing spread; US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.5731933292155651,
+      "momSource": "cardmarket",
+      "confidence": 0.35,
+      "confidenceFlags": [
+        "wide listing spread",
+        "US and EU prices disagree"
       ],
       "proj": [
-        20.19,
-        30.29
+        12.75,
+        25.57
       ],
       "history": [
         [
@@ -2663,9 +3244,14 @@
       "reasons": [
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.04210526315789477,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        42.84,
-        64.26
+        45,
+        62.1
       ],
       "history": [
         [
@@ -2688,11 +3274,19 @@
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.19507748404740208,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
       ],
       "proj": [
-        28.56,
-        42.84
+        27.88,
+        43.52
       ],
       "history": [
         [

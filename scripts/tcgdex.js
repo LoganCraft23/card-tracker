@@ -72,19 +72,68 @@ function extractPrice(card) {
   return Math.max(...candidates);
 }
 
-// Fetch one card's detail: current TCGplayer market price (USD, number|null),
-// rarity, and art URL (append /low.webp or /high.webp to display).
+// The TCGplayer variant block backing the price we quote — the one with the
+// highest market price. Its low/mid/high fields describe that same listing
+// pool, which is what makes the spread meaningful.
+function pickVariant(card) {
+  const p = card?.pricing?.tcgplayer;
+  if (!p || typeof p !== "object") return null;
+  let best = null;
+  for (const v of Object.values(p)) {
+    if (!v || typeof v !== "object") continue;
+    const m = typeof v.marketPrice === "number" ? v.marketPrice : null;
+    if (m === null) continue;
+    if (!best || m > best.marketPrice) best = v;
+  }
+  return best;
+}
+
+// Fetch one card's detail: TCGplayer market price (USD, number|null), rarity,
+// art URL (append /low.webp or /high.webp to display), and a `market` block
+// carrying the listing spread plus Cardmarket's rolling averages — the inputs
+// for momentum and liquidity scoring.
 export async function fetchCard(cardId) {
   const card = await getJSON(`${BASE}/cards/${cardId}`);
   await sleep(DELAY_MS);
+  const v = pickVariant(card);
+  const cm = card?.pricing?.cardmarket || null;
   return {
     id: card.id,
     name: card.name,
     localId: card.localId,
     rarity: card.rarity || "",
+    illustrator: card.illustrator || null,
+    standardLegal: card?.legal?.standard === true,
     image: card.image || null,
     price: extractPrice(card),
+    market: {
+      // USD, from the variant we quote
+      low: v?.lowPrice ?? null,
+      mid: v?.midPrice ?? null,
+      high: v?.highPrice ?? null,
+      directLow: v?.directLowPrice ?? null,
+      // EUR, Cardmarket rolling averages — an independent second market
+      cmAvg1: cm?.avg1 ?? null,
+      cmAvg7: cm?.avg7 ?? null,
+      cmAvg30: cm?.avg30 ?? null,
+      cmTrend: cm?.trend ?? null,
+    },
   };
+}
+
+// EUR→USD rate, so the two markets can be compared on one scale. ECB data via
+// frankfurter.app (free, no key). Falls back to a static rate if it's down —
+// this only feeds a divergence *ratio*, so a stale rate degrades gracefully.
+const FX_FALLBACK = 1.08;
+export async function getEurUsd() {
+  try {
+    const d = await getJSON("https://api.frankfurter.app/latest?from=EUR&to=USD");
+    const r = d?.rates?.USD;
+    return typeof r === "number" && r > 0 ? r : FX_FALLBACK;
+  } catch {
+    console.warn("FX lookup failed — using fallback EUR/USD rate");
+    return FX_FALLBACK;
+  }
 }
 
 // Fetch one card's current TCGplayer market price (USD). Returns number|null.
