@@ -238,14 +238,16 @@
       border-bottom: 1px solid var(--line); backdrop-filter: none;
       background: rgba(9,14,32,.94); overflow: visible;
       display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 9px;
-      grid-template-areas: "brand view" "search search" "chips chips" "sort sort";
+      grid-template-areas: "brand market" "search search" "chips chips" "sort view" "format format";
       padding: 12px max(16px, env(safe-area-inset-left)) 12px max(16px, env(safe-area-inset-right)); }
     .brand { grid-area: brand; align-self: center; font-size: 18px; }
     .brand .mark { width: 28px; height: 28px; }
     #q { grid-area: search; }
+    #gMarketSeg { grid-area: market; }
     #gView { grid-area: view; }
     #gSignal { grid-area: chips; min-width: 0; }
-    #gRank { grid-area: sort; }
+    #gRank { grid-area: sort; align-self: center; }
+    #gFormat { grid-area: format; }
     /* The per-card numbers already carry this; the summary strip is the first
        thing to cut when vertical space is the scarce resource. */
     #gMarket, .railFoot, .brandSub { display: none; }
@@ -310,12 +312,34 @@
 
     <input id="q" type="search" placeholder="Search card or set…" aria-label="Search cards" />
 
+    <div class="railGroup" id="gMarketSeg">
+      <h5>Market</h5>
+      <div class="seg" id="marketSeg" role="group" aria-label="Market">
+        <button type="button" data-market="cards">Cards</button>
+        <button type="button" data-market="sealed">Sealed</button>
+      </div>
+    </div>
+
     <div class="railGroup" id="gView">
       <h5>View</h5>
       <div class="seg" id="viewSeg" role="group" aria-label="Layout">
         <button type="button" data-view="tiles">Tiles</button>
         <button type="button" data-view="rows">Rows</button>
       </div>
+    </div>
+
+    <div class="railGroup" id="gFormat" hidden>
+      <h5>Format</h5>
+      <select id="format" aria-label="Filter by product format">
+        <option value="ALL">All formats</option>
+        <option value="CORE">Boxes &amp; ETBs only</option>
+        <option value="Booster Box">Booster Box</option>
+        <option value="Elite Trainer Box">Elite Trainer Box</option>
+        <option value="Booster Bundle">Booster Bundle</option>
+        <option value="Collection">Collection</option>
+        <option value="Blister">Blister</option>
+        <option value="Booster Pack">Booster Pack</option>
+      </select>
     </div>
 
     <div class="railGroup" id="gSignal">
@@ -348,8 +372,8 @@
   <div class="content" id="top">
     <div class="topbar">
       <div>
-        <h1>The chase index</h1>
-        <p class="sub">Every secret rare in the modern era, re-screened each morning. The
+        <h1 id="pageTitle">The chase index</h1>
+        <p class="sub" id="pageSub">Every secret rare in the modern era, re-screened each morning. The
           <b>100 chase cards trading between $5 and $50</b>, ranked by what a card-lifecycle
           model thinks they're worth in twelve months — and <b>graded against a flat-price
           baseline</b> so the theory has to earn its keep.</p>
@@ -409,8 +433,21 @@ const store = {
   get(k, d) { try { return localStorage.getItem(k) ?? d; } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch {} },
 };
-let state = { q: "", filter: "ALL", sort: "upside", view: store.get("ft.view", "tiles") };
+let SEALED = { products: [] };
+let state = {
+  q: "", filter: "ALL", sort: "upside", format: "ALL",
+  view: store.get("ft.view", "tiles"),
+  market: store.get("ft.market", "cards"),
+};
 if (state.view !== "rows") state.view = "tiles";
+if (state.market !== "sealed") state.market = "cards";
+
+// Cards and sealed products carry different fields; everything downstream
+// works off this one shape so render/sort/filter stay market-agnostic.
+const items = () =>
+  state.market === "sealed"
+    ? SEALED.products.map((p) => ({ ...p, subtitle: p.format, isSealed: true }))
+    : DATA.cards.map((c) => ({ ...c, subtitle: c.phase.replace("-", " ") + " phase" }));
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -554,13 +591,16 @@ function tcgUrl(c) {
 // Momentum measured from our own snapshots is exact; the Cardmarket-derived
 // figure is an estimate, so it's marked "~" rather than passed off as equal.
 function momValue(c) {
+  // Sealed momentum only ever comes from our own snapshots, so it is measured
+  // rather than estimated — no Cardmarket fallback exists for products.
+  if (c.isSealed) return typeof c.mom === "number" ? c.mom : null;
   const v = c.chg30 ?? (c.momSource === "cardmarket" ? c.mom : null);
   return typeof v === "number" ? v : null;
 }
 function momCell(c, cls) {
   const v = momValue(c);
   if (v === null) return `<span class="num mom ${cls}" style="color:var(--faint)">—</span>`;
-  const est = c.chg30 === null || c.chg30 === undefined;
+  const est = !c.isSealed && (c.chg30 === null || c.chg30 === undefined);
   const t = est
     ? "Estimated from Cardmarket's smoothed trend vs its 30-day average — measured history takes over once the tracker has a month of snapshots"
     : "Measured from this tracker's own daily snapshots";
@@ -608,8 +648,13 @@ function sortList(list) {
   return list.sort(by[state.sort] || by.upside);
 }
 
-const artImg = (c, cls) =>
-  c.image ? `<img class="thumb" src="${esc(c.image)}/low.webp" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">` : "";
+// TCGdex serves card art as a base path needing a size suffix; the sealed
+// source returns a complete image URL, so only cards get "/low.webp".
+const artImg = (c) => {
+  if (!c.image) return "";
+  const src = c.isSealed ? c.image : c.image + "/low.webp";
+  return `<img class="thumb" src="${esc(src)}" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">`;
+};
 
 function tileHTML(c) {
   return `
@@ -617,9 +662,10 @@ function tileHTML(c) {
       <div class="tHead">
         <span class="thumbWrap big">${artImg(c)}</span>
         <div class="tInfo">
-          <div class="badges"><span class="sig">${c.signal}</span><span class="setTag">${esc(c.set)}</span></div>
+          <div class="badges"><span class="sig">${c.signal}</span><span class="setTag">${esc(c.set)}</span>${
+            c.isSealed && typeof c.listings === "number" ? `<span class="setTag" title="Active TCGplayer listings">${c.listings} listed</span>` : ""}</div>
           <h3>${esc(c.name)}</h3>
-          <div class="phase">${c.phase.replace("-", " ")} phase</div>
+          <div class="phase">${esc(c.subtitle)}</div>
           <div class="num price" style="text-align:left">$${c.price.toFixed(2)}</div>
           <div class="momRow">${momCell(c, "")}${confCell(c, "")}</div>
         </div>
@@ -640,7 +686,7 @@ function rowHTML(c, i) {
       <summary class="rowMain">
         <span class="rank">${String(i + 1).padStart(2, "0")}</span>
         <span class="thumbWrap">${artImg(c)}</span>
-        <span class="ident"><b>${esc(c.name)}</b><em>${esc(c.set)} · ${c.phase.replace("-", " ")}</em></span>
+        <span class="ident"><b>${esc(c.name)}</b><em>${esc(c.set)} · ${esc(c.subtitle)}</em></span>
         <span class="num price">$${c.price.toFixed(2)}</span>
         ${momCell(c, "")}
         ${confCell(c, "hideSm")}
@@ -662,13 +708,20 @@ function rowHTML(c, i) {
     </details>`;
 }
 
+const CORE_FORMATS = ["Booster Box", "Elite Trainer Box"];
+
 function render() {
-  let list = DATA.cards.slice();
+  const all = items();
+  let list = all.slice();
   if (state.q) {
     const t = state.q.toLowerCase();
     list = list.filter((c) => (c.name + " " + c.set).toLowerCase().includes(t));
   }
   if (state.filter !== "ALL") list = list.filter((c) => c.signal === state.filter);
+  if (state.market === "sealed" && state.format !== "ALL") {
+    list = list.filter((c) =>
+      state.format === "CORE" ? CORE_FORMATS.includes(c.format) : c.format === state.format);
+  }
   sortList(list);
 
   const tiles = state.view === "tiles";
@@ -679,36 +732,55 @@ function render() {
     ? list.map((c, i) => (tiles ? tileHTML(c) : rowHTML(c, i))).join("")
     : '<div class="empty">Nothing matches that filter — try widening the search.</div>';
 
-  const counts = DATA.cards.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
+  const counts = all.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
   $("chips").innerHTML = ["ALL", "BUY", "HOLD", "SELL", "AVOID"].map((s) =>
     `<button class="fchip${state.filter === s ? " active" : ""}" style="--c:${s === "ALL" ? "var(--link)" : SIG[s]}"
-      onclick="state.filter='${s}';render()">${s === "ALL" ? "All cards" : s}<b>${s === "ALL" ? DATA.cards.length : counts[s] || 0}</b></button>`
+      onclick="state.filter='${s}';render()">${s === "ALL" ? (state.market === "sealed" ? "All products" : "All cards") : s}<b>${s === "ALL" ? all.length : counts[s] || 0}</b></button>`
   ).join("");
 
   for (const b of $("viewSeg").children) b.setAttribute("aria-pressed", String(b.dataset.view === state.view));
+  for (const b of $("marketSeg").children) b.setAttribute("aria-pressed", String(b.dataset.market === state.market));
+  $("gFormat").hidden = state.market !== "sealed";
+
+  const sealed = state.market === "sealed";
+  $("pageTitle").textContent = sealed ? "The sealed index" : "The chase index";
+  $("pageSub").innerHTML = sealed
+    ? `Booster boxes, ETBs and the rest, priced daily. Unlike singles, <b>sealed supply only shrinks</b> —
+       every box opened is one fewer left — so the out-of-print phases carry more weight here.`
+    : `Every secret rare in the modern era, re-screened each morning. The
+       <b>100 chase cards trading between $5 and $50</b>, ranked by what a card-lifecycle
+       model thinks they're worth in twelve months — and <b>graded against a flat-price
+       baseline</b> so the theory has to earn its keep.`;
+  $("updated").textContent = (sealed ? SEALED.updated : DATA.updated)
+    ? "updated " + new Date(sealed ? SEALED.updated : DATA.updated).toLocaleString()
+    : "no data yet";
 }
 
 function renderMovers() {
-  const moved = DATA.cards
+  const moved = items()
     .filter((c) => momValue(c) !== null)
     .sort((a, b) => Math.abs(momValue(b)) - Math.abs(momValue(a)))
     .slice(0, 8);
+  // Sealed momentum needs our own history, so this strip is empty on day one
+  // rather than showing fabricated movement.
+  $("movers").hidden = moved.length === 0;
   $("movers").innerHTML = moved.map((c) => {
     const v = momValue(c);
-    return `<div class="tk">${c.image ? `<img src="${esc(c.image)}/low.webp" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : ""}
+    const src = c.image ? (c.isSealed ? c.image : c.image + "/low.webp") : null;
+    return `<div class="tk">${src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : ""}
       <span class="n">${esc(c.name)}</span>
       <span class="m ${v >= 0 ? "up" : "down"}">${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span></div>`;
   }).join("");
 }
 
 function renderStats() {
-  const cards = DATA.cards;
-  if (!cards.length) return;
+  const cards = items();
+  if (!cards.length) { $("stats").innerHTML = ""; return; }
   const prices = cards.map((c) => c.price).sort((a, b) => a - b);
   const median = prices[Math.floor(prices.length / 2)] || 0;
   const avgConf = cards.reduce((a, c) => a + (c.confidence || 0), 0) / cards.length;
   $("stats").innerHTML = [
-    ["Cards tracked", cards.length],
+    [state.market === "sealed" ? "Products tracked" : "Cards tracked", cards.length],
     ["Median price", "$" + median.toFixed(0)],
     ["Avg confidence", Math.round(avgConf * 100) + "%"],
     ["Refresh", "9AM ET"],
@@ -724,19 +796,35 @@ $("viewSeg").addEventListener("click", (e) => {
   store.set("ft.view", state.view);
   render();
 });
+$("marketSeg").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-market]");
+  if (!b || b.dataset.market === state.market) return;
+  state.market = b.dataset.market;
+  store.set("ft.market", state.market);
+  state.filter = "ALL";
+  renderStats();
+  renderMovers();
+  render();
+});
+$("format").addEventListener("change", (e) => { state.format = e.target.value; render(); });
 
-fetch("./data.json")
-  .then((r) => r.json())
-  .then((d) => {
-    DATA = d;
-    $("updated").textContent = d.updated
-      ? "updated " + new Date(d.updated).toLocaleString()
-      : "no data yet";
-    renderStats();
-    renderMovers();
-    render();
-  })
-  .catch(() => { $("updated").textContent = "couldn't load data.json"; });
+function refresh() { renderStats(); renderMovers(); render(); }
+
+// Sealed is optional: if sealed.json is missing (no API key configured) the
+// cards side still works and the Sealed tab simply reports nothing to show.
+Promise.allSettled([
+  fetch("./data.json").then((r) => r.json()),
+  fetch("./sealed.json").then((r) => r.json()),
+]).then(([cards, sealed]) => {
+  if (cards.status === "fulfilled") DATA = cards.value;
+  if (sealed.status === "fulfilled" && Array.isArray(sealed.value?.products)) SEALED = sealed.value;
+  if (!SEALED.products.length && state.market === "sealed") state.market = "cards";
+  if (cards.status !== "fulfilled" && !SEALED.products.length) {
+    $("updated").textContent = "couldn't load data";
+    return;
+  }
+  refresh();
+});
 </script>
 </body>
 </html>

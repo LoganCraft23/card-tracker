@@ -65,13 +65,29 @@ export function setMatches(apiSetName, modelSetName) {
   const a = norm(apiSetName);
   return modelSetName.split("/").some((part) => {
     const p = norm(part);
-    return p.length > 3 && a.endsWith(p);
+    // >= 3, not > 3: "151" is a real set name and was being silently dropped.
+    return p.length >= 3 && a.endsWith(p);
   });
 }
 
-// Sealed rows for one model set, normalised and ready to price.
+// Some model set names are useless as free-text queries on their own — "151"
+// matches every card numbered 151 — so search the full retail name instead.
+const QUERY_ALIAS = { "151": "Scarlet & Violet 151" };
+
+// Sealed rows for one model set, normalised and ready to price. A name like
+// "Black Bolt / White Flare" is two real sets, so each half is queried and the
+// results merged; searching only the first half misses the other's products.
 export async function sealedForSet(modelSetName) {
-  const rows = await searchSet(modelSetName.split("/")[0].trim());
+  const parts = modelSetName.split("/").map((p) => p.trim());
+  const seen = new Set();
+  const rows = [];
+  for (const part of parts) {
+    for (const r of await searchSet(QUERY_ALIAS[part] || part)) {
+      if (seen.has(r.id)) continue;
+      seen.add(r.id);
+      rows.push(r);
+    }
+  }
   const out = [];
   for (const r of rows) {
     if (r.product_type !== "Sealed Products") continue;
