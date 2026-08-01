@@ -5,92 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Slab &amp; Signal — Pokémon card market tracker</title>
 <meta name="description" content="Daily TCGplayer market prices and buy/hold/sell signals for the top 100 chase Pokémon cards under $50." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%23fff'/%3E%3Cpath d='M1 12a11 11 0 0 1 22 0z' fill='%23E3350D'/%3E%3Crect x='1' y='10.8' width='22' height='2.4' fill='%23131A2E'/%3E%3Ccircle cx='12' cy='12' r='3.4' fill='%23fff' stroke='%23131A2E' stroke-width='1.6'/%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%23EDF2FB'/%3E%3Cpath d='M2 24a22 22 0 0 1 44 0z' fill='%23E3350D'/%3E%3Cpath d='M2 24h11l5-9 6 15 6-10 5 4h11' fill='none' stroke='%230B1120' stroke-width='3.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='24' r='6.5' fill='%230B1120'/%3E%3Ccircle cx='24' cy='24' r='3.8' fill='%23FFCB05'/%3E%3Ccircle cx='24' cy='24' r='22' fill='none' stroke='%230B1120' stroke-width='3'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
   :root {
     --bg: #070C1B; --bg2: #0C1329; --surface: #111A33; --surface2: #16213F;
     --line: #223055; --line2: #2E3F6B;
     --text: #EDF1FB; --muted: #93A0C0; --faint: #5E6B8C;
-    --gold: #FFCB05; --gold-deep: #C7A008; --poke-red: #E3350D; --poke-blue: #2A75BB;
+    --gold: #FFCB05; --poke-red: #E3350D; --poke-blue: #2A75BB;
     --link: #8FB6FF;
     --buy: #3ADF8C; --sell: #FF7A6B; --hold: #FFC94D; --avoid: #8B96B3;
     --holo: linear-gradient(90deg, #59A0FF, #B36BFF, #FF6BC1, #FFD36B);
+    --display: "Fredoka", "Space Grotesk", system-ui, sans-serif;
     --radius: 14px;
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  /* The page colour lives on <html> so the fixed z-index:-2 backdrop paints
+     above the canvas background rather than being hidden behind it. */
+  html { scroll-behavior: smooth; background: var(--bg); }
   body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: "Space Grotesk", system-ui, sans-serif;
-    line-height: 1.5;
+    margin: 0; background: transparent; color: var(--text);
+    font-family: "Space Grotesk", system-ui, sans-serif; line-height: 1.5;
   }
   .wrap { max-width: 1180px; margin-inline: auto; padding-inline: 24px; }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
+  h1, h2, h3, .brand, .chip, .sig { font-family: var(--display); }
+
+  /* ---------- parallax backdrop ---------- */
+  /* Three tiled layers drift at different rates against the scroll. Each is
+     translated by scroll × factor, wrapped modulo its own tile size, so the
+     pattern repeats forever without the element ever needing to be tall. */
+  .bgfx { position: fixed; inset: -10% -10% -10% -10%; z-index: -2; pointer-events: none; overflow: hidden; }
+  .bgfx .layer { position: absolute; inset: 0; will-change: transform; }
+  .bgfx .aurora {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(900px 500px at 12% 8%, rgba(42,117,187,.20), transparent 62%),
+      radial-gradient(760px 460px at 88% 22%, rgba(255,203,5,.09), transparent 60%),
+      radial-gradient(680px 520px at 60% 85%, rgba(179,107,255,.10), transparent 62%);
+  }
+  .l1 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='380'%3E%3Cg fill='none' stroke='%238FB6FF' stroke-width='1.15' opacity='.42'%3E%3Ccircle cx='64' cy='72' r='34'/%3E%3Cpath d='M30 72h68'/%3E%3Ccircle cx='64' cy='72' r='10'/%3E%3Ccircle cx='268' cy='196' r='25'/%3E%3Cpath d='M243 196h50'/%3E%3Ccircle cx='268' cy='196' r='7.5'/%3E%3Ccircle cx='150' cy='312' r='19'/%3E%3Cpath d='M131 312h38'/%3E%3Ccircle cx='150' cy='312' r='5.6'/%3E%3C/g%3E%3C/svg%3E"); }
+  .l2 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='%23B36BFF' opacity='.30'%3E%3Cpath d='M40 18l3.2 8.8L52 30l-8.8 3.2L40 42l-3.2-8.8L28 30l8.8-3.2z'/%3E%3Cpath d='M186 128l2.4 6.6L195 137l-6.6 2.4L186 146l-2.4-6.6L177 137l6.6-2.4z'/%3E%3C/g%3E%3Cg fill='%2359A0FF' opacity='.26'%3E%3Cpath d='M112 196l2.6 7.2L122 206l-7.4 2.6L112 216l-2.6-7.4L102 206l7.4-2.6z'/%3E%3Ccircle cx='210' cy='58' r='2.4'/%3E%3Ccircle cx='30' cy='150' r='2'/%3E%3C/g%3E%3C/svg%3E"); }
+  .l3 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cg fill='%23FFD36B' opacity='.24'%3E%3Ccircle cx='24' cy='36' r='1.5'/%3E%3Ccircle cx='120' cy='18' r='1.2'/%3E%3Ccircle cx='84' cy='108' r='1.6'/%3E%3Ccircle cx='142' cy='132' r='1.2'/%3E%3C/g%3E%3C/svg%3E"); }
+  @media (prefers-reduced-motion: reduce) { .bgfx .layer { transform: none !important; } }
 
   /* ---------- nav ---------- */
-  .site {
-    position: sticky; top: 0; z-index: 40;
-    background: rgba(7, 12, 27, 0.82); backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav { display: flex; align-items: center; justify-content: space-between; height: 62px; }
-  .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; font-size: 17px; letter-spacing: -0.2px; }
+  .site { position: sticky; top: 0; z-index: 40;
+    background: rgba(7,12,27,.82); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 11px; color: var(--text);
+    font-weight: 600; font-size: 19px; letter-spacing: -0.1px; }
   .brand:hover { text-decoration: none; }
-  .ball { width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0; position: relative;
-    background: linear-gradient(180deg, var(--poke-red) 0 44%, #131A2E 44% 56%, #F4F6FB 56% 100%);
-    box-shadow: 0 0 0 1.5px #131A2E, 0 2px 8px rgba(227, 53, 13, 0.35); }
-  .ball::after { content: ""; position: absolute; inset: 0; margin: auto; width: 7px; height: 7px;
-    border-radius: 50%; background: #F4F6FB; border: 2px solid #131A2E; }
+  .brand .mark { width: 30px; height: 30px; flex-shrink: 0; filter: drop-shadow(0 2px 7px rgba(227,53,13,.4)); }
+  .brand em { font-style: normal; color: var(--gold); }
   .navlinks { display: flex; gap: 26px; font-size: 14.5px; font-weight: 600; }
   .navlinks a { color: var(--muted); }
   .navlinks a:hover { color: var(--text); text-decoration: none; }
-  @media (max-width: 640px) { .navlinks a:not(.gh) { display: none; } }
+  @media (max-width: 640px) { .navlinks a:not(.gh) { display: none; } .brand { font-size: 17px; } }
 
   /* ---------- hero ---------- */
-  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line);
-    background:
-      radial-gradient(900px 420px at 15% -10%, rgba(42, 117, 187, 0.22), transparent 65%),
-      radial-gradient(700px 380px at 90% 10%, rgba(255, 203, 5, 0.10), transparent 60%),
-      var(--bg2); }
-  .hero .wrap { padding-block: 72px 56px; position: relative; }
+  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .hero .wrap { padding-block: 78px 58px; position: relative; }
   .kicker { display: inline-flex; align-items: center; gap: 8px; font: 700 12px "JetBrains Mono", monospace;
-    letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; margin: 0 0 14px; }
-  .kicker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--buy);
-    box-shadow: 0 0 10px var(--buy); animation: pulse 2.4s infinite; }
-  @keyframes pulse { 50% { opacity: 0.4; } }
-  h1 { font-size: clamp(34px, 5.2vw, 58px); line-height: 1.05; letter-spacing: -1.5px; margin: 0 0 18px; max-width: 13ch; }
-  .grad { background: linear-gradient(92deg, var(--gold) 20%, #FF9C41 60%, var(--poke-red)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; margin: 0 0 16px; }
+  .kicker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--buy); box-shadow: 0 0 10px var(--buy); animation: pulse 2.4s infinite; }
+  @keyframes pulse { 50% { opacity: .35; } }
+  h1 { font-size: clamp(36px, 5.4vw, 62px); line-height: 1.02; letter-spacing: -1px; margin: 0 0 18px; max-width: 13ch; font-weight: 700; }
+  .grad { background: linear-gradient(92deg, var(--gold) 18%, #FF9C41 58%, var(--poke-red)); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .lede { color: var(--muted); font-size: 17px; max-width: 56ch; margin: 0 0 34px; }
   .lede b { color: var(--text); font-weight: 600; }
-  .pokeball-bg { position: absolute; right: -140px; top: -120px; width: 520px; height: 520px; opacity: 0.05; pointer-events: none; }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; max-width: 760px; }
-  .stat { background: rgba(17, 26, 51, 0.75); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; max-width: 780px; }
+  .stat { background: rgba(17,26,51,.72); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; backdrop-filter: blur(4px); }
   .stat b { display: block; font: 700 26px "JetBrains Mono", monospace; color: var(--gold); letter-spacing: -0.5px; }
   .stat span { font-size: 12.5px; color: var(--muted); }
 
   /* ---------- toolbar ---------- */
-  .board { padding-block: 40px 80px; }
-  .boardHead { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 6px; }
-  h2 { font-size: 24px; letter-spacing: -0.5px; margin: 0; }
+  .board { padding-block: 42px 84px; }
+  .boardHead { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  h2 { font-size: 26px; letter-spacing: -0.3px; margin: 0; font-weight: 600; }
   .updated { color: var(--faint); font-size: 13px; }
-  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 22px; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 24px; }
   input[type="search"], select {
     background: var(--surface); border: 1px solid var(--line); color: var(--text);
-    border-radius: 10px; padding: 10px 14px; font: 500 13.5px "Space Grotesk", sans-serif;
-  }
+    border-radius: 10px; padding: 10px 14px; font: 500 13.5px "Space Grotesk", sans-serif; }
   input[type="search"] { flex: 1; min-width: 180px; }
   input:focus, select:focus { border-color: var(--gold); outline: none; }
   input::placeholder { color: var(--faint); }
   .chips { display: flex; gap: 7px; flex-wrap: wrap; }
   .chip { --c: var(--link); background: none; border: 1.5px solid var(--line); color: var(--muted);
-    border-radius: 999px; padding: 7px 15px; font: 700 12.5px "Space Grotesk", sans-serif; cursor: pointer;
-    transition: border-color .15s, color .15s; }
+    border-radius: 999px; padding: 7px 15px; font-size: 12.5px; font-weight: 600; cursor: pointer;
+    transition: border-color .15s, color .15s, background .15s; }
   .chip:hover { border-color: var(--c); }
-  .chip.active { border-color: var(--c); color: var(--c); background: color-mix(in srgb, var(--c) 10%, transparent); }
+  .chip.active { border-color: var(--c); color: var(--c); background: color-mix(in srgb, var(--c) 12%, transparent); }
 
   /* ---------- card grid ---------- */
   main.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
@@ -99,24 +109,36 @@
     border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 16px;
     transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
   .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
-    border-radius: var(--radius) var(--radius) 0 0; background: var(--sig); opacity: 0.9; }
+    border-radius: var(--radius) var(--radius) 0 0; background: var(--sig); opacity: .9; }
   .card:hover { transform: translateY(-4px); border-color: var(--line2);
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45), 0 0 0 1px color-mix(in srgb, var(--sig) 35%, transparent); }
+    box-shadow: 0 14px 34px rgba(0,0,0,.45), 0 0 0 1px color-mix(in srgb, var(--sig) 35%, transparent); }
+  /* Cards are visible by default and only start hidden once JS has confirmed
+     it can animate them in (html.js-reveal). Content must never be left
+     invisible because an observer failed to fire. */
+  .js-reveal .reveal { opacity: 0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
+  .js-reveal .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .js-reveal .reveal { opacity: 1; transform: none; transition: none; } }
   .cHead { display: flex; gap: 14px; }
-  .art { width: 96px; flex-shrink: 0; align-self: flex-start; border-radius: 6px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); transition: transform .18s ease; }
-  .card:hover .art { transform: scale(1.04) rotate(-1deg); }
+  .artWrap { position: relative; flex-shrink: 0; align-self: flex-start; border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.5); transition: transform .18s ease; }
+  .card:hover .artWrap { transform: scale(1.04) rotate(-1deg); }
+  /* holo-foil sweep, the way a real chase card catches light */
+  .artWrap::after { content: ""; position: absolute; inset: 0; border-radius: 6px; opacity: 0;
+    background: linear-gradient(115deg, transparent 28%, rgba(255,255,255,.34) 43%, rgba(179,107,255,.34) 51%,
+      rgba(89,160,255,.30) 58%, rgba(255,211,107,.26) 65%, transparent 78%);
+    mix-blend-mode: screen; pointer-events: none; transition: opacity .28s ease; }
+  .card:hover .artWrap::after { opacity: 1; }
+  .art { width: 96px; display: block; border-radius: 6px; }
   .cInfo { min-width: 0; flex: 1; }
   .badges { display: flex; gap: 7px; align-items: center; margin-bottom: 7px; flex-wrap: wrap; }
-  .sig { font: 700 11.5px "JetBrains Mono", monospace; letter-spacing: 1.5px;
-    color: #0A1020; background: var(--sig); border-radius: 6px; padding: 3px 9px; }
+  .sig { font-size: 11.5px; font-weight: 600; letter-spacing: 1.2px; color: #0A1020;
+    background: var(--sig); border-radius: 6px; padding: 3px 9px; }
   .setTag { font-size: 11.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 2.5px 8px; white-space: nowrap; }
-  h3 { margin: 0 0 2px; font-size: 16.5px; line-height: 1.25; letter-spacing: -0.2px; }
+  h3 { margin: 0 0 2px; font-size: 17px; line-height: 1.22; letter-spacing: -0.1px; font-weight: 600; }
   .phase { color: var(--faint); font-size: 12px; text-transform: capitalize; margin-bottom: 8px; }
   .price { font: 700 24px "JetBrains Mono", monospace; letter-spacing: -0.5px; }
-  .deltas { display: flex; gap: 10px; font: 600 11.5px "JetBrains Mono", monospace; margin-top: 3px; }
+  .deltas { display: flex; gap: 10px; font: 600 11.5px "JetBrains Mono", monospace; margin-top: 3px; flex-wrap: wrap; }
   .up { color: var(--buy); } .down { color: var(--sell); }
-  .sparkBox { position: relative; }
   .spark { width: 100%; height: 58px; display: block; }
   .noHist { color: var(--faint); font-size: 12px; font-style: italic; padding: 8px 0; }
   .range { font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
@@ -126,8 +148,9 @@
   .confBar i { display: block; height: 100%; background: var(--c, var(--buy)); }
   .thin { color: var(--hold); border: 1px solid color-mix(in srgb, var(--hold) 45%, transparent);
     border-radius: 5px; padding: 1px 6px; font-size: 11px; }
-  details.why { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 2px; }
+  details.why { border-top: 1px solid var(--line); padding-top: 10px; }
   details.why summary { cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--muted); list-style: none; display: flex; align-items: center; gap: 6px; }
+  details.why summary::-webkit-details-marker { display: none; }
   details.why summary::before { content: "▸"; transition: transform .15s; color: var(--gold); }
   details[open].why summary::before { transform: rotate(90deg); }
   details.why summary:hover { color: var(--text); }
@@ -138,21 +161,51 @@
   .empty { color: var(--muted); text-align: center; padding: 60px 0; grid-column: 1 / -1; }
 
   /* ---------- footer ---------- */
-  footer.site { position: static; background: var(--bg2); border-top: 1px solid var(--line); border-bottom: none; backdrop-filter: none; }
-  .holoStrip { height: 3px; background: var(--holo); opacity: 0.65; }
+  footer.site { position: static; background: rgba(12,19,41,.9); border-top: 1px solid var(--line); border-bottom: none; }
+  .holoStrip { height: 3px; background: var(--holo); opacity: .65; }
   .footGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px; padding-block: 44px 30px; }
-  .footGrid h4 { margin: 0 0 10px; font-size: 13.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); }
+  .footGrid h4 { margin: 0 0 10px; font-size: 13.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); font-family: var(--display); }
   .footGrid p, .footGrid li { color: var(--muted); font-size: 13.5px; }
   .footGrid ul { margin: 0; padding-left: 18px; }
-  .footBrand { display: flex; align-items: center; gap: 9px; font-weight: 700; margin-bottom: 10px; }
+  .footBrand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; margin-bottom: 10px; }
+  .footBrand .mark { width: 26px; height: 26px; }
   .legal { border-top: 1px solid var(--line); padding-block: 18px 26px; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--faint); font-size: 12px; }
 </style>
 </head>
 <body>
 
+<!-- logo mark, referenced by <use> in the nav and footer -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 48 48">
+    <defs>
+      <linearGradient id="mkTop" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FF6A57"/><stop offset="1" stop-color="#D62B08"/>
+      </linearGradient>
+      <linearGradient id="mkBot" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FBFDFF"/><stop offset="1" stop-color="#C3D0EA"/>
+      </linearGradient>
+    </defs>
+    <circle cx="24" cy="24" r="22" fill="url(#mkBot)"/>
+    <path d="M2 24a22 22 0 0 1 44 0z" fill="url(#mkTop)"/>
+    <path d="M2 24h11l5-9 6 15 6-10 5 4h11" fill="none" stroke="#0B1120" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M2 24h11l5-9 6 15 6-10 5 4h11" fill="none" stroke="#FFCB05" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="24" cy="24" r="6.6" fill="#0B1120"/>
+    <circle cx="24" cy="24" r="4.1" fill="#FBFDFF"/>
+    <circle cx="24" cy="24" r="1.9" fill="#FFCB05"/>
+    <circle cx="24" cy="24" r="22" fill="none" stroke="#0B1120" stroke-width="3"/>
+  </symbol>
+</svg>
+
+<div class="bgfx" aria-hidden="true">
+  <div class="aurora"></div>
+  <div class="layer l1" data-speed="0.08" data-tile="380"></div>
+  <div class="layer l2" data-speed="0.17" data-tile="240"></div>
+  <div class="layer l3" data-speed="0.30" data-tile="160"></div>
+</div>
+
 <header class="site">
   <div class="wrap nav">
-    <a class="brand" href="#top"><span class="ball" aria-hidden="true"></span>Slab &amp; Signal</a>
+    <a class="brand" href="#top"><svg class="mark"><use href="#mark"/></svg>Slab <em>&amp;</em> Signal</a>
     <nav class="navlinks">
       <a href="#board">Dashboard</a>
       <a href="#method">How it works</a>
@@ -162,11 +215,6 @@
 </header>
 
 <section class="hero" id="top">
-  <svg class="pokeball-bg" viewBox="0 0 24 24" aria-hidden="true">
-    <circle cx="12" cy="12" r="11" fill="none" stroke="#8FB6FF" stroke-width="0.7"/>
-    <path d="M1 12h8.6M14.4 12H23" stroke="#8FB6FF" stroke-width="0.7"/>
-    <circle cx="12" cy="12" r="3" fill="none" stroke="#8FB6FF" stroke-width="0.7"/>
-  </svg>
   <div class="wrap">
     <p class="kicker"><span class="dot"></span>Live market tracker</p>
     <h1>Catch the dip. <span class="grad">Ride the recovery.</span></h1>
@@ -190,7 +238,7 @@
       <option value="upside">Sort: model upside</option>
       <option value="priceAsc">Sort: price low → high</option>
       <option value="priceDesc">Sort: price high → low</option>
-      <option value="chg30">Sort: 30d movers</option>
+      <option value="chg30">Sort: biggest movers</option>
     </select>
   </div>
 
@@ -201,7 +249,7 @@
   <div class="holoStrip"></div>
   <div class="wrap footGrid">
     <div>
-      <div class="footBrand"><span class="ball" aria-hidden="true"></span>Slab &amp; Signal</div>
+      <div class="footBrand"><svg class="mark"><use href="#mark"/></svg>Slab &amp; Signal</div>
       <p>A self-updating tracker for collectible Pokémon TCG singles. Prices refresh daily
         from TCGplayer market data via the free <a href="https://tcgdex.dev" target="_blank" rel="noreferrer">TCGdex API</a>,
         and the whole thing runs for $0/month on GitHub Actions&nbsp;+&nbsp;Pages.</p>
@@ -214,7 +262,6 @@
         <li><b>Momentum</b> — read from Cardmarket's smoothed trend against its 30-day average, shrunk toward zero when a card's sales are too thin to trust.</li>
         <li><b>Confidence</b> — the listing spread and any US/EU price disagreement set how wide the projected range is, instead of a flat guess on every card.</li>
         <li><b>Scoring</b> — every prediction is logged and graded at 30/90/180 days against a "price stays flat" baseline, so the model has to prove it beats doing nothing.</li>
-        <li><b>Signal</b> — Discord pings fire only when a card flips to BUY or SELL, so alerts stay actionable.</li>
       </ul>
     </div>
     <div>
@@ -240,14 +287,54 @@ let state = { q: "", filter: "ALL", sort: "upside" };
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+// --- parallax: translate each tiled layer by scroll × speed, wrapped modulo
+// its tile height so the pattern never runs out and the offset stays small.
+(function parallax() {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const layers = [...document.querySelectorAll(".bgfx .layer")].map((el) => ({
+    el, speed: +el.dataset.speed, tile: +el.dataset.tile,
+  }));
+  let ticking = false;
+  const apply = () => {
+    const y = window.scrollY;
+    for (const l of layers) {
+      const off = -((y * l.speed) % l.tile);
+      l.el.style.transform = `translate3d(0, ${off.toFixed(1)}px, 0)`;
+    }
+    ticking = false;
+  };
+  addEventListener("scroll", () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(apply); }
+  }, { passive: true });
+  // Hidden tabs suspend rAF and scroll events, so the offset can be stale by
+  // the time the page is looked at again (including bfcache restores).
+  addEventListener("visibilitychange", () => { if (!document.hidden) apply(); });
+  addEventListener("pageshow", apply);
+  apply();
+})();
+
+// Reveal cards as they enter the viewport. Opt in to the hidden start state
+// only if the observer exists, and always run a safety timer that shows
+// everything regardless — a stalled observer must never leave the page blank.
+const revealer = "IntersectionObserver" in window
+  ? new IntersectionObserver((entries, obs) => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); obs.unobserve(e.target); }
+    }, { rootMargin: "0px 0px -40px 0px" })
+  : null;
+if (revealer) document.documentElement.classList.add("js-reveal");
+const revealAll = () => document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
+let revealSafety;
+
+// TCGplayer publishes a product id per printing, so link straight to the
+// listing page; the name search is only a fallback if that id is missing.
 function tcgUrl(c) {
+  if (c.productId) return "https://www.tcgplayer.com/product/" + encodeURIComponent(c.productId);
   return "https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=" +
     encodeURIComponent(c.name.replace(/\s(IR|SIR|Shiny|Gold|UR)(\s#\d+)?$/, "") + " " + c.set);
 }
 
 // Momentum measured from our own snapshots is exact; the Cardmarket-derived
-// figure is an estimate, so it's labelled "~" and titled as such rather than
-// being passed off as the same number.
+// figure is an estimate, so it's labelled "~" rather than passed off as equal.
 function deltas(c) {
   const out = [];
   const measured = [["30d", c.chg30], ["90d", c.chg90], ["180d", c.chg180]]
@@ -282,12 +369,12 @@ function spark(c) {
   const line = pts.map((p, i) => x(i).toFixed(1) + "," + y(p).toFixed(1)).join(" ");
   const lastY = y(pts[pts.length - 1]);
   const mid = y((c.proj[0] + c.proj[1]) / 2);
-  return `<div class="sparkBox"><svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
     <polygon points="0,${H} ${line} ${x(pts.length - 1).toFixed(1)},${H}" fill="rgba(143,182,255,0.09)"/>
     <polyline points="${line}" fill="none" stroke="#8FB6FF" stroke-width="2" vector-effect="non-scaling-stroke"/>
     <line x1="${histW}" y1="${lastY}" x2="${W - 6}" y2="${mid}" stroke="#FFCB05" stroke-width="1.5" stroke-dasharray="4 3" vector-effect="non-scaling-stroke"/>
     <polygon points="${histW},${lastY} ${W - 6},${y(c.proj[1])} ${W - 6},${y(c.proj[0])}" fill="rgba(255,203,5,0.13)"/>
-  </svg></div>`;
+  </svg>`;
 }
 
 function render() {
@@ -298,15 +385,16 @@ function render() {
   }
   if (state.filter !== "ALL") list = list.filter((c) => c.signal === state.filter);
   const upside = (c) => c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0;
+  const mv = (c) => Math.abs(c.chg30 ?? c.mom ?? 0);
   if (state.sort === "upside") list.sort((a, b) => upside(b) - upside(a));
   if (state.sort === "priceAsc") list.sort((a, b) => a.price - b.price);
   if (state.sort === "priceDesc") list.sort((a, b) => b.price - a.price);
-  if (state.sort === "chg30") list.sort((a, b) => Math.abs(b.chg30 || 0) - Math.abs(a.chg30 || 0));
+  if (state.sort === "chg30") list.sort((a, b) => mv(b) - mv(a));
 
   $("list").innerHTML = list.length ? list.map((c) => `
-    <article class="card" style="--sig:${SIG[c.signal]}">
+    <article class="card reveal" style="--sig:${SIG[c.signal]}">
       <div class="cHead">
-        ${c.image ? `<img class="art" src="${esc(c.image)}/low.webp" alt="${esc(c.name)} card art" loading="lazy" onerror="this.remove()">` : ""}
+        ${c.image ? `<span class="artWrap"><img class="art" src="${esc(c.image)}/low.webp" alt="${esc(c.name)} card art" loading="lazy" onerror="this.parentNode.remove()"></span>` : ""}
         <div class="cInfo">
           <div class="badges"><span class="sig">${c.signal}</span><span class="setTag">${esc(c.set)}</span></div>
           <h3>${esc(c.name)}</h3>
@@ -322,6 +410,12 @@ function render() {
       </details>
       <div class="cFoot"><a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View on TCGplayer ↗</a></div>
     </article>`).join("") : '<div class="empty">Nothing matches that filter — release the Snorlax and broaden the search.</div>';
+
+  if (revealer) {
+    document.querySelectorAll(".reveal").forEach((el) => revealer.observe(el));
+    clearTimeout(revealSafety);
+    revealSafety = setTimeout(revealAll, 1200);
+  } else revealAll();
 
   const counts = DATA.cards.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
   $("chips").innerHTML = ["ALL", "BUY", "HOLD", "SELL", "AVOID"].map((s) =>

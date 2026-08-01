@@ -106,6 +106,9 @@ export async function fetchCard(cardId) {
     standardLegal: card?.legal?.standard === true,
     image: card.image || null,
     price: extractPrice(card),
+    // TCGplayer's own product id for the variant we quote — lets the dashboard
+    // deep-link to the exact listing page instead of a name search.
+    productId: v?.productId ?? null,
     market: {
       // USD, from the variant we quote
       low: v?.lowPrice ?? null,

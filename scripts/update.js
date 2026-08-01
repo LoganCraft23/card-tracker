@@ -41,11 +41,13 @@ for (const card of watchlist.cards) {
   let price = null;
   let image = card.image || null;
   let market = null;
+  let productId = null;
   try {
     const detail = await fetchCard(card.id);
     price = detail.price;
     image = image || detail.image;
     market = detail.market;
+    productId = detail.productId;
   } catch (e) {
     console.error(`fetch failed for ${key}: ${e.message}`);
   }
@@ -84,7 +86,7 @@ for (const card of watchlist.cards) {
 
   dashboard.push({
     name: card.name, set: card.set, char: card.char, tier: card.tier || "chase",
-    id: card.id, image, ...a,
+    id: card.id, image, productId, ...a,
     history: priceHistory[key].slice(-180),
   });
 }
