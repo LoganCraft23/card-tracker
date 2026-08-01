@@ -13,7 +13,7 @@ const DELAY_MS = 150; // be polite to a free API (the screener makes ~1000 calls
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function getJSON(url) {
-  const res = await fetch(url, { headers: { "user-agent": "slab-and-signal-tracker" } });
+  const res = await fetch(url, { headers: { "user-agent": "foil-theory-tracker" } });
   if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${url}`);
   return res.json();
 }

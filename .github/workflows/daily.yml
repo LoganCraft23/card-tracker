@@ -31,7 +31,7 @@ jobs:
 
       - name: Commit updated history and dashboard data
         run: |
-          git config user.name "slab-and-signal-bot"
+          git config user.name "foil-theory-bot"
           git config user.email "actions@github.com"
           git add history/ docs/data.json docs/accuracy.json watchlist.json
           git diff --cached --quiet || git commit -m "Daily price update $(date -u +%F)"

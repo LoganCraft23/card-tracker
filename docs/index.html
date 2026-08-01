@@ -3,200 +3,192 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Slab &amp; Signal — Pokémon card market tracker</title>
-<meta name="description" content="Daily TCGplayer market prices and buy/hold/sell signals for the top 100 chase Pokémon cards under $50." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%23EDF2FB'/%3E%3Cpath d='M2 24a22 22 0 0 1 44 0z' fill='%23E3350D'/%3E%3Cpath d='M2 24h11l5-9 6 15 6-10 5 4h11' fill='none' stroke='%230B1120' stroke-width='3.4' stroke-linejoin='round' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='24' r='6.5' fill='%230B1120'/%3E%3Ccircle cx='24' cy='24' r='3.8' fill='%23FFCB05'/%3E%3Ccircle cx='24' cy='24' r='22' fill='none' stroke='%230B1120' stroke-width='3'/%3E%3C/svg%3E" />
+<title>Foil Theory — chase card index</title>
+<meta name="description" content="A testable model of Pokémon chase-card value: daily market prices, buy/hold/sell calls, and a public scorecard grading every prediction against a flat-price baseline." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3ClinearGradient id='f' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2359A0FF'/%3E%3Cstop offset='.4' stop-color='%23B36BFF'/%3E%3Cstop offset='.72' stop-color='%23FF6BC1'/%3E%3Cstop offset='1' stop-color='%23FFD36B'/%3E%3C/linearGradient%3E%3Cg transform='rotate(-8 24 24)'%3E%3Crect x='10' y='5' width='28' height='38' rx='4' fill='url(%23f)' stroke='%230B1120' stroke-width='2.6'/%3E%3Cpath d='M15 34l6.5-9 6 6 6.5-13' fill='none' stroke='%230B1120' stroke-width='4.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 34l6.5-9 6 6 6.5-13' fill='none' stroke='%23F7FAFF' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg: #070C1B; --bg2: #0C1329; --surface: #111A33; --surface2: #16213F;
+    --bg: #070C1B; --surface: #111A33; --surface2: #16213F;
     --line: #223055; --line2: #2E3F6B;
     --text: #EDF1FB; --muted: #93A0C0; --faint: #5E6B8C;
-    --gold: #FFCB05; --poke-red: #E3350D; --poke-blue: #2A75BB;
-    --link: #8FB6FF;
+    --gold: #FFCB05; --link: #8FB6FF;
     --buy: #3ADF8C; --sell: #FF7A6B; --hold: #FFC94D; --avoid: #8B96B3;
     --holo: linear-gradient(90deg, #59A0FF, #B36BFF, #FF6BC1, #FFD36B);
     --display: "Fredoka", "Space Grotesk", system-ui, sans-serif;
-    --radius: 14px;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
   }
   * { box-sizing: border-box; }
-  /* The page colour lives on <html> so the fixed z-index:-2 backdrop paints
-     above the canvas background rather than being hidden behind it. */
   html { scroll-behavior: smooth; background: var(--bg); }
-  body {
-    margin: 0; background: transparent; color: var(--text);
-    font-family: "Space Grotesk", system-ui, sans-serif; line-height: 1.5;
-  }
-  .wrap { max-width: 1180px; margin-inline: auto; padding-inline: 24px; }
+  body { margin: 0; background: transparent; color: var(--text);
+    font-family: "Space Grotesk", system-ui, sans-serif; line-height: 1.5; }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
-  h1, h2, h3, .brand, .chip, .sig { font-family: var(--display); }
+  h1, h2, h3, .brand, .sig { font-family: var(--display); }
 
   /* ---------- parallax backdrop ---------- */
-  /* Three tiled layers drift at different rates against the scroll. Each is
-     translated by scroll × factor, wrapped modulo its own tile size, so the
-     pattern repeats forever without the element ever needing to be tall. */
-  .bgfx { position: fixed; inset: -10% -10% -10% -10%; z-index: -2; pointer-events: none; overflow: hidden; }
-  .bgfx .layer { position: absolute; inset: 0; will-change: transform; }
-  /* The route map is generated on a canvas at load (see buildOverworld) and
-     tiled here. It sits under a scrim heavy enough to keep body text well
-     above AA contrast — the map should read as texture, not compete. */
+  .bgfx { position: fixed; inset: -10%; z-index: -2; pointer-events: none; overflow: hidden; }
+  /* Each layer is translated up by as much as one whole tile, so it has to
+     extend a tile past the viewport on both sides or the far edge scrolls
+     into view as an uncovered gap. 720px clears the largest tile (640). */
+  .bgfx .layer { position: absolute; left: 0; right: 0; top: -720px; bottom: -720px; will-change: transform; }
   .map { opacity: .6; image-rendering: pixelated; }
   .scrim { position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(7,12,27,.80), rgba(7,12,27,.74) 40%, rgba(7,12,27,.80)); }
-  .bgfx .aurora {
-    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(7,12,27,.82), rgba(7,12,27,.76) 40%, rgba(7,12,27,.82)); }
+  .bgfx .aurora { position: absolute; inset: 0;
     background:
       radial-gradient(900px 500px at 12% 8%, rgba(42,117,187,.20), transparent 62%),
-      radial-gradient(760px 460px at 88% 22%, rgba(255,203,5,.09), transparent 60%),
-      radial-gradient(680px 520px at 60% 85%, rgba(179,107,255,.10), transparent 62%);
-  }
-  .l3 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cg fill='%23FFD36B' opacity='.24'%3E%3Ccircle cx='24' cy='36' r='1.5'/%3E%3Ccircle cx='120' cy='18' r='1.2'/%3E%3Ccircle cx='84' cy='108' r='1.6'/%3E%3Ccircle cx='142' cy='132' r='1.2'/%3E%3C/g%3E%3C/svg%3E"); }
+      radial-gradient(760px 460px at 88% 22%, rgba(255,203,5,.08), transparent 60%),
+      radial-gradient(680px 520px at 60% 85%, rgba(179,107,255,.10), transparent 62%); }
+  .l3 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cg fill='%23FFD36B' opacity='.22'%3E%3Ccircle cx='24' cy='36' r='1.5'/%3E%3Ccircle cx='120' cy='18' r='1.2'/%3E%3Ccircle cx='84' cy='108' r='1.6'/%3E%3Ccircle cx='142' cy='132' r='1.2'/%3E%3C/g%3E%3C/svg%3E"); }
   @media (prefers-reduced-motion: reduce) { .bgfx .layer { transform: none !important; } }
 
-  /* ---------- nav ---------- */
-  .site { position: sticky; top: 0; z-index: 40;
-    background: rgba(7,12,27,.82); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
-  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  /* ---------- shell: fixed rail + scrolling content ---------- */
+  .app { display: flex; align-items: flex-start; max-width: 1460px; margin-inline: auto; }
+  .rail { position: sticky; top: 0; height: 100vh; width: 272px; flex-shrink: 0;
+    display: flex; flex-direction: column; gap: 4px;
+    background: rgba(9,14,32,.82); backdrop-filter: blur(14px);
+    border-right: 1px solid var(--line); padding: 20px 18px; overflow-y: auto; }
   .brand { display: flex; align-items: center; gap: 11px; color: var(--text);
-    font-weight: 600; font-size: 19px; letter-spacing: -0.1px; }
+    font-weight: 600; font-size: 20px; letter-spacing: -0.2px; margin-bottom: 4px; }
   .brand:hover { text-decoration: none; }
-  .brand .mark { width: 30px; height: 30px; flex-shrink: 0; filter: drop-shadow(0 2px 7px rgba(227,53,13,.4)); }
-  .brand em { font-style: normal; color: var(--gold); }
-  .navlinks { display: flex; gap: 26px; font-size: 14.5px; font-weight: 600; }
-  .navlinks a { color: var(--muted); }
-  .navlinks a:hover { color: var(--text); text-decoration: none; }
-  @media (max-width: 640px) { .navlinks a:not(.gh) { display: none; } .brand { font-size: 17px; } }
-
-  /* ---------- hero ---------- */
-  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
-  .hero .wrap { padding-block: 78px 58px; position: relative; }
-  .kicker { display: inline-flex; align-items: center; gap: 8px; font: 700 12px "JetBrains Mono", monospace;
-    letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; margin: 0 0 16px; }
-  .kicker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--buy); box-shadow: 0 0 10px var(--buy); animation: pulse 2.4s infinite; }
-  @keyframes pulse { 50% { opacity: .35; } }
-  h1 { font-size: clamp(36px, 5.4vw, 62px); line-height: 1.02; letter-spacing: -1px; margin: 0 0 18px; max-width: 13ch; font-weight: 700; }
-  .grad { background: linear-gradient(92deg, var(--gold) 18%, #FF9C41 58%, var(--poke-red)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .lede { color: var(--muted); font-size: 17px; max-width: 56ch; margin: 0 0 34px; }
-  .lede b { color: var(--text); font-weight: 600; }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; max-width: 780px; }
-  .stat { background: rgba(17,26,51,.72); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; backdrop-filter: blur(4px); }
-  .stat b { display: block; font: 700 26px "JetBrains Mono", monospace; color: var(--gold); letter-spacing: -0.5px; }
-  .stat span { font-size: 12.5px; color: var(--muted); }
-
-  /* ---------- toolbar ---------- */
-  .board { padding-block: 42px 84px; }
-  .boardHead { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  h2 { font-size: 26px; letter-spacing: -0.3px; margin: 0; font-weight: 600; }
-  .updated { color: var(--faint); font-size: 13px; }
-  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 24px; }
+  .brand .mark { width: 32px; height: 32px; flex-shrink: 0; filter: drop-shadow(0 2px 8px rgba(179,107,255,.4)); }
+  .brandSub { color: var(--faint); font-size: 11.5px; letter-spacing: 1.4px; text-transform: uppercase;
+    font-family: var(--mono); margin: 0 0 16px 43px; }
+  .railGroup { margin-top: 14px; }
+  .railGroup h5 { margin: 0 0 8px; font-size: 10.5px; letter-spacing: 1.6px; text-transform: uppercase;
+    color: var(--faint); font-weight: 700; }
   input[type="search"], select {
-    background: var(--surface); border: 1px solid var(--line); color: var(--text);
-    border-radius: 10px; padding: 10px 14px; font: 500 13.5px "Space Grotesk", sans-serif; }
-  input[type="search"] { flex: 1; min-width: 180px; }
+    width: 100%; background: rgba(17,26,51,.9); border: 1px solid var(--line); color: var(--text);
+    border-radius: 9px; padding: 9px 12px; font: 500 13px "Space Grotesk", sans-serif; }
   input:focus, select:focus { border-color: var(--gold); outline: none; }
   input::placeholder { color: var(--faint); }
-  .chips { display: flex; gap: 7px; flex-wrap: wrap; }
-  .chip { --c: var(--link); background: none; border: 1.5px solid var(--line); color: var(--muted);
-    border-radius: 999px; padding: 7px 15px; font-size: 12.5px; font-weight: 600; cursor: pointer;
+  .fchips { display: flex; flex-direction: column; gap: 5px; }
+  .fchip { --c: var(--link); display: flex; justify-content: space-between; align-items: center;
+    background: none; border: 1px solid var(--line); color: var(--muted); cursor: pointer;
+    border-radius: 9px; padding: 8px 12px; font: 600 13px "Space Grotesk", sans-serif;
     transition: border-color .15s, color .15s, background .15s; }
-  .chip:hover { border-color: var(--c); }
-  .chip.active { border-color: var(--c); color: var(--c); background: color-mix(in srgb, var(--c) 12%, transparent); }
+  .fchip:hover { border-color: var(--c); color: var(--text); }
+  .fchip.active { border-color: var(--c); color: var(--c); background: color-mix(in srgb, var(--c) 12%, transparent); }
+  .fchip b { font-family: var(--mono); font-size: 12px; font-weight: 700; }
+  .railStats { display: grid; gap: 7px; }
+  .rstat { display: flex; justify-content: space-between; align-items: baseline;
+    border: 1px solid var(--line); border-radius: 9px; padding: 9px 12px; background: rgba(17,26,51,.55); }
+  .rstat span { font-size: 12px; color: var(--muted); }
+  .rstat b { font-family: var(--mono); font-size: 15px; color: var(--gold); }
+  .railFoot { margin-top: auto; padding-top: 16px; display: grid; gap: 7px; font-size: 12.5px; }
+  .railFoot a { color: var(--muted); }
 
-  /* ---------- card grid ---------- */
-  main.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
-  .card { position: relative; display: flex; flex-direction: column; gap: 12px;
-    background: linear-gradient(180deg, var(--surface2), var(--surface) 55%);
-    border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 16px;
-    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
-  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
-    border-radius: var(--radius) var(--radius) 0 0; background: var(--sig); opacity: .9; }
-  .card:hover { transform: translateY(-4px); border-color: var(--line2);
-    box-shadow: 0 14px 34px rgba(0,0,0,.45), 0 0 0 1px color-mix(in srgb, var(--sig) 35%, transparent); }
-  /* Cards are visible by default and only start hidden once JS has confirmed
-     it can animate them in (html.js-reveal). Content must never be left
-     invisible because an observer failed to fire. */
-  .js-reveal .reveal { opacity: 0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
-  .js-reveal .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) { .js-reveal .reveal { opacity: 1; transform: none; transition: none; } }
-  .cHead { display: flex; gap: 14px; }
-  .artWrap { position: relative; flex-shrink: 0; align-self: flex-start; border-radius: 6px;
-    box-shadow: 0 6px 18px rgba(0,0,0,.5); transition: transform .18s ease; }
-  .card:hover .artWrap { transform: scale(1.04) rotate(-1deg); }
-  /* holo-foil sweep, the way a real chase card catches light */
-  .artWrap::after { content: ""; position: absolute; inset: 0; border-radius: 6px; opacity: 0;
-    background: linear-gradient(115deg, transparent 28%, rgba(255,255,255,.34) 43%, rgba(179,107,255,.34) 51%,
-      rgba(89,160,255,.30) 58%, rgba(255,211,107,.26) 65%, transparent 78%);
-    mix-blend-mode: screen; pointer-events: none; transition: opacity .28s ease; }
-  .card:hover .artWrap::after { opacity: 1; }
-  .art { width: 96px; display: block; border-radius: 6px; }
-  .cInfo { min-width: 0; flex: 1; }
-  .badges { display: flex; gap: 7px; align-items: center; margin-bottom: 7px; flex-wrap: wrap; }
-  .sig { font-size: 11.5px; font-weight: 600; letter-spacing: 1.2px; color: #0A1020;
-    background: var(--sig); border-radius: 6px; padding: 3px 9px; }
-  .setTag { font-size: 11.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 2.5px 8px; white-space: nowrap; }
-  h3 { margin: 0 0 2px; font-size: 17px; line-height: 1.22; letter-spacing: -0.1px; font-weight: 600; }
-  .phase { color: var(--faint); font-size: 12px; text-transform: capitalize; margin-bottom: 8px; }
-  .price { font: 700 24px "JetBrains Mono", monospace; letter-spacing: -0.5px; }
-  .deltas { display: flex; gap: 10px; font: 600 11.5px "JetBrains Mono", monospace; margin-top: 3px; flex-wrap: wrap; }
+  .content { flex: 1; min-width: 0; padding: 26px 30px 70px; }
+  .topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; flex-wrap: wrap; margin-bottom: 6px; }
+  h1 { font-size: clamp(26px, 3vw, 34px); letter-spacing: -0.6px; margin: 0; font-weight: 700; }
+  .sub { color: var(--muted); font-size: 14.5px; margin: 6px 0 0; max-width: 68ch; }
+  .sub b { color: var(--text); font-weight: 600; }
+  .updated { color: var(--faint); font-size: 12.5px; font-family: var(--mono); white-space: nowrap; }
+
+  /* ---------- movers ticker ---------- */
+  .ticker { display: flex; gap: 8px; overflow-x: auto; padding: 16px 0 4px; scrollbar-width: thin; }
+  .tk { flex-shrink: 0; display: flex; align-items: center; gap: 9px; border: 1px solid var(--line);
+    background: rgba(17,26,51,.7); border-radius: 10px; padding: 8px 12px; }
+  .tk img { width: 22px; border-radius: 3px; }
+  .tk .n { font-size: 12.5px; font-weight: 600; max-width: 15ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tk .m { font-family: var(--mono); font-size: 12px; font-weight: 700; }
+
+  /* ---------- ranked rows ---------- */
+  .cols, .rowMain { display: grid; align-items: center; gap: 12px;
+    grid-template-columns: 30px 44px minmax(0,1fr) 84px 74px 96px 118px 66px 20px; }
+  .cols { padding: 14px 14px 8px; font-size: 10.5px; letter-spacing: 1.3px; text-transform: uppercase;
+    color: var(--faint); font-weight: 700; border-bottom: 1px solid var(--line); }
+  .cols .r { text-align: right; }
+  .rows { display: flex; flex-direction: column; }
+  .row { border-bottom: 1px solid var(--line); }
+  .row > summary { list-style: none; cursor: pointer; padding: 11px 14px; border-left: 3px solid transparent;
+    transition: background .14s, border-color .14s; }
+  .row > summary::-webkit-details-marker { display: none; }
+  .row > summary:hover { background: rgba(22,33,63,.75); border-left-color: var(--sig); }
+  .row[open] > summary { background: rgba(22,33,63,.9); border-left-color: var(--sig); }
+  .rank { font-family: var(--mono); font-size: 12px; color: var(--faint); }
+  .thumbWrap { position: relative; width: 44px; }
+  .thumb { width: 44px; display: block; border-radius: 4px; box-shadow: 0 3px 10px rgba(0,0,0,.5); }
+  .thumbWrap::after { content: ""; position: absolute; inset: 0; border-radius: 4px; opacity: 0;
+    background: linear-gradient(115deg, transparent 28%, rgba(255,255,255,.35) 44%, rgba(179,107,255,.35) 52%,
+      rgba(89,160,255,.3) 60%, transparent 76%);
+    mix-blend-mode: screen; transition: opacity .25s; }
+  .row > summary:hover .thumbWrap::after { opacity: 1; }
+  .ident { min-width: 0; }
+  .ident b { display: block; font-size: 14.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ident em { font-style: normal; font-size: 11.5px; color: var(--faint); text-transform: capitalize; }
+  .num { font-family: var(--mono); text-align: right; }
+  .price { font-size: 15px; font-weight: 700; }
+  .mom { font-size: 12.5px; font-weight: 600; }
   .up { color: var(--buy); } .down { color: var(--sell); }
-  .spark { width: 100%; height: 58px; display: block; }
-  .noHist { color: var(--faint); font-size: 12px; font-style: italic; padding: 8px 0; }
-  .range { font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .range b { color: var(--gold); font: 700 12.5px "JetBrains Mono", monospace; }
-  .conf { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; color: var(--muted); }
-  .confBar { width: 34px; height: 5px; border-radius: 3px; background: var(--line2); overflow: hidden; }
+  .projCell { font-size: 12px; color: var(--gold); text-align: right; }
+  .confCell { display: flex; align-items: center; gap: 6px; justify-content: flex-end;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+  .confBar { width: 32px; height: 5px; border-radius: 3px; background: var(--line2); overflow: hidden; flex-shrink: 0; }
   .confBar i { display: block; height: 100%; background: var(--c, var(--buy)); }
-  .thin { color: var(--hold); border: 1px solid color-mix(in srgb, var(--hold) 45%, transparent);
-    border-radius: 5px; padding: 1px 6px; font-size: 11px; }
-  details.why { border-top: 1px solid var(--line); padding-top: 10px; }
-  details.why summary { cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--muted); list-style: none; display: flex; align-items: center; gap: 6px; }
-  details.why summary::-webkit-details-marker { display: none; }
-  details.why summary::before { content: "▸"; transition: transform .15s; color: var(--gold); }
-  details[open].why summary::before { transform: rotate(90deg); }
-  details.why summary:hover { color: var(--text); }
-  details.why ul { margin: 8px 0 2px; padding-left: 18px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
-  details.why li { margin-bottom: 4px; }
-  .cFoot { margin-top: auto; padding-top: 4px; }
-  .cFoot a { font-size: 13px; font-weight: 600; }
-  .empty { color: var(--muted); text-align: center; padding: 60px 0; grid-column: 1 / -1; }
+  .sig { font-size: 10.5px; font-weight: 600; letter-spacing: 1px; color: #0A1020;
+    background: var(--sig); border-radius: 5px; padding: 3px 0; text-align: center; }
+  .caret { color: var(--faint); font-size: 11px; transition: transform .15s; text-align: center; }
+  .row[open] .caret { transform: rotate(90deg); }
 
-  /* ---------- footer ---------- */
-  footer.site { position: static; background: rgba(12,19,41,.9); border-top: 1px solid var(--line); border-bottom: none; }
-  .holoStrip { height: 3px; background: var(--holo); opacity: .65; }
-  .footGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px; padding-block: 44px 30px; }
-  .footGrid h4 { margin: 0 0 10px; font-size: 13.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); font-family: var(--display); }
-  .footGrid p, .footGrid li { color: var(--muted); font-size: 13.5px; }
-  .footGrid ul { margin: 0; padding-left: 18px; }
-  .footBrand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; margin-bottom: 10px; }
-  .footBrand .mark { width: 26px; height: 26px; }
-  .legal { border-top: 1px solid var(--line); padding-block: 18px 26px; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--faint); font-size: 12px; }
+  .rowDetail { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 22px;
+    padding: 4px 18px 20px 91px; background: rgba(22,33,63,.5); }
+  .rowDetail ul { margin: 0; padding-left: 17px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
+  .rowDetail li { margin-bottom: 5px; }
+  .spark { width: 100%; height: 62px; display: block; }
+  .noHist { color: var(--faint); font-size: 12px; font-style: italic; }
+  .thin { display: inline-block; color: var(--hold); border: 1px solid color-mix(in srgb, var(--hold) 45%, transparent);
+    border-radius: 5px; padding: 1px 7px; font-size: 11px; margin-top: 8px; }
+  .detailFoot { margin-top: 10px; font-size: 13px; font-weight: 600; }
+  .empty { color: var(--muted); text-align: center; padding: 60px 0; }
+
+  footer.pageFoot { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 26px; }
+  .footGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 30px; }
+  .footGrid h4 { margin: 0 0 9px; font-size: 12.5px; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--gold); font-family: var(--display); }
+  .footGrid p, .footGrid li { color: var(--muted); font-size: 13px; }
+  .footGrid ul { margin: 0; padding-left: 17px; }
+  .legal { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--faint); font-size: 11.5px; }
+  .holoStrip { height: 3px; background: var(--holo); opacity: .6; border-radius: 2px; margin-bottom: 22px; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 1080px) {
+    .cols, .rowMain { grid-template-columns: 26px 40px minmax(0,1fr) 78px 68px 62px 20px; }
+    .hideMd { display: none; }
+    .rowDetail { grid-template-columns: 1fr; padding-left: 18px; }
+  }
+  @media (max-width: 760px) {
+    .app { flex-direction: column; }
+    .rail { position: static; height: auto; width: 100%; border-right: none;
+      border-bottom: 1px solid var(--line); }
+    .fchips { flex-direction: row; flex-wrap: wrap; }
+    .fchip { flex: 1 1 auto; gap: 7px; }
+    .railStats { grid-template-columns: repeat(2, 1fr); }
+    .railFoot { margin-top: 14px; grid-auto-flow: column; justify-content: start; gap: 18px; }
+    .content { padding: 20px 16px 60px; }
+    .cols { display: none; }
+    .rowMain { grid-template-columns: 26px 40px minmax(0,1fr) 64px 20px; }
+    .hideSm { display: none; }
+  }
 </style>
 </head>
 <body>
 
-<!-- logo mark, referenced by <use> in the nav and footer -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="mark" viewBox="0 0 48 48">
-    <defs>
-      <linearGradient id="mkTop" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#FF6A57"/><stop offset="1" stop-color="#D62B08"/>
-      </linearGradient>
-      <linearGradient id="mkBot" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#FBFDFF"/><stop offset="1" stop-color="#C3D0EA"/>
-      </linearGradient>
-    </defs>
-    <circle cx="24" cy="24" r="22" fill="url(#mkBot)"/>
-    <path d="M2 24a22 22 0 0 1 44 0z" fill="url(#mkTop)"/>
-    <path d="M2 24h11l5-9 6 15 6-10 5 4h11" fill="none" stroke="#0B1120" stroke-width="4.2" stroke-linejoin="round" stroke-linecap="round"/>
-    <path d="M2 24h11l5-9 6 15 6-10 5 4h11" fill="none" stroke="#FFCB05" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
-    <circle cx="24" cy="24" r="6.6" fill="#0B1120"/>
-    <circle cx="24" cy="24" r="4.1" fill="#FBFDFF"/>
-    <circle cx="24" cy="24" r="1.9" fill="#FFCB05"/>
-    <circle cx="24" cy="24" r="22" fill="none" stroke="#0B1120" stroke-width="3"/>
+    <linearGradient id="foilg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#59A0FF"/><stop offset=".4" stop-color="#B36BFF"/>
+      <stop offset=".72" stop-color="#FF6BC1"/><stop offset="1" stop-color="#FFD36B"/>
+    </linearGradient>
+    <g transform="rotate(-8 24 24)">
+      <rect x="10" y="5" width="28" height="38" rx="4" fill="url(#foilg)" stroke="#0B1120" stroke-width="2.6"/>
+      <path d="M15 34l6.5-9 6 6 6.5-13" fill="none" stroke="#0B1120" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15 34l6.5-9 6 6 6.5-13" fill="none" stroke="#F7FAFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
   </symbol>
 </svg>
 
@@ -207,81 +199,94 @@
   <div class="layer l3" data-speed="0.30" data-tile="160"></div>
 </div>
 
-<header class="site">
-  <div class="wrap nav">
-    <a class="brand" href="#top"><svg class="mark"><use href="#mark"/></svg>Slab <em>&amp;</em> Signal</a>
-    <nav class="navlinks">
-      <a href="#board">Dashboard</a>
-      <a href="#method">How it works</a>
-      <a class="gh" href="https://github.com/LoganCraft23/card-tracker" target="_blank" rel="noreferrer">GitHub ↗</a>
-    </nav>
-  </div>
-</header>
+<div class="app">
+  <aside class="rail">
+    <a class="brand" href="#top"><svg class="mark"><use href="#mark"/></svg>Foil Theory</a>
+    <p class="brandSub">Chase card index</p>
 
-<section class="hero" id="top">
-  <div class="wrap">
-    <p class="kicker"><span class="dot"></span>Live market tracker</p>
-    <h1>Catch the dip. <span class="grad">Ride the recovery.</span></h1>
-    <p class="lede">Every morning this site re-screens <b>every secret rare in the modern era</b>,
-      keeps the top 100 chase cards trading between <b>$5 and $50</b>, and grades each one
-      <b>BUY / HOLD / SELL</b> with a card-lifecycle model fed by daily TCGplayer market prices.</p>
-    <div class="stats" id="stats" aria-label="tracker stats"></div>
-  </div>
-</section>
+    <input id="q" type="search" placeholder="Search card or set…" aria-label="Search cards" />
 
-<section class="board wrap" id="board">
-  <div class="boardHead">
-    <h2>The Watchlist</h2>
-    <span class="updated" id="updated">Loading…</span>
-  </div>
-
-  <div class="toolbar">
-    <input id="q" type="search" placeholder="Search card or set…" />
-    <div class="chips" id="chips"></div>
-    <select id="sort" aria-label="Sort cards">
-      <option value="upside">Sort: model upside</option>
-      <option value="priceAsc">Sort: price low → high</option>
-      <option value="priceDesc">Sort: price high → low</option>
-      <option value="chg30">Sort: biggest movers</option>
-    </select>
-  </div>
-
-  <main class="grid" id="list"><div class="empty">Loading data…</div></main>
-</section>
-
-<footer class="site">
-  <div class="holoStrip"></div>
-  <div class="wrap footGrid">
-    <div>
-      <div class="footBrand"><svg class="mark"><use href="#mark"/></svg>Slab &amp; Signal</div>
-      <p>A self-updating tracker for collectible Pokémon TCG singles. Prices refresh daily
-        from TCGplayer market data via the free <a href="https://tcgdex.dev" target="_blank" rel="noreferrer">TCGdex API</a>,
-        and the whole thing runs for $0/month on GitHub Actions&nbsp;+&nbsp;Pages.</p>
+    <div class="railGroup">
+      <h5>Signal</h5>
+      <div class="fchips" id="chips"></div>
     </div>
-    <div id="method">
-      <h4>How it works</h4>
-      <ul>
-        <li><b>Screen</b> — every secret rare in every modern set is priced daily; chase-art cards between $5 and $50 make the cut, ranked by model upside.</li>
-        <li><b>Model</b> — each set moves through hype-fade → supply-trough → recovery → appreciation; rarity tier and character popularity adjust the curve.</li>
-        <li><b>Momentum</b> — read from Cardmarket's smoothed trend against its 30-day average, shrunk toward zero when a card's sales are too thin to trust.</li>
-        <li><b>Confidence</b> — the listing spread and any US/EU price disagreement set how wide the projected range is, instead of a flat guess on every card.</li>
-        <li><b>Scoring</b> — every prediction is logged and graded at 30/90/180 days against a "price stays flat" baseline, so the model has to prove it beats doing nothing.</li>
-      </ul>
+
+    <div class="railGroup">
+      <h5>Rank by</h5>
+      <select id="sort" aria-label="Sort cards">
+        <option value="upside">Model upside</option>
+        <option value="priceAsc">Price: low → high</option>
+        <option value="priceDesc">Price: high → low</option>
+        <option value="chg30">Biggest movers</option>
+        <option value="confidence">Price confidence</option>
+      </select>
     </div>
-    <div>
-      <h4>Fine print</h4>
-      <p>Model output is a structured guess, not financial advice — always check recent sold
-        listings before spending real money. Momentum stats fill in as the tracker builds its
-        own price history day by day.</p>
-      <p>Fan project. Not affiliated with, endorsed by, or sponsored by Nintendo, Game Freak,
-        Creatures Inc., or The Pokémon Company. Card images belong to their respective owners.</p>
+
+    <div class="railGroup">
+      <h5>Market</h5>
+      <div class="railStats" id="stats"></div>
     </div>
+
+    <div class="railFoot">
+      <a href="#method">How it works ↓</a>
+      <a href="https://github.com/LoganCraft23/card-tracker" target="_blank" rel="noreferrer">Source on GitHub ↗</a>
+    </div>
+  </aside>
+
+  <div class="content" id="top">
+    <div class="topbar">
+      <div>
+        <h1>The chase index</h1>
+        <p class="sub">Every secret rare in the modern era, re-screened each morning. The
+          <b>100 chase cards trading between $5 and $50</b>, ranked by what a card-lifecycle
+          model thinks they're worth in twelve months — and <b>graded against a flat-price
+          baseline</b> so the theory has to earn its keep.</p>
+      </div>
+      <span class="updated" id="updated">loading…</span>
+    </div>
+
+    <section class="ticker" id="movers" aria-label="Biggest movers"></section>
+
+    <div class="cols" aria-hidden="true">
+      <span>#</span><span></span><span>Card</span>
+      <span class="r">Price</span><span class="r">30d</span>
+      <span class="r hideSm">Confidence</span><span class="r hideMd hideSm">12-mo range</span>
+      <span class="r hideMd">Call</span><span></span>
+    </div>
+
+    <main class="rows" id="list"><div class="empty">Loading data…</div></main>
+
+    <footer class="pageFoot" id="method">
+      <div class="holoStrip"></div>
+      <div class="footGrid">
+        <div>
+          <h4>The theory</h4>
+          <p>A set moves through predictable phases — hype-fade, supply trough, recovery,
+            appreciation. Rarity tier and character popularity bend the curve. Foil Theory
+            prices that idea daily and keeps score.</p>
+        </div>
+        <div>
+          <h4>Method</h4>
+          <ul>
+            <li><b>Screen</b> — every secret rare priced daily; chase art between $5 and $50 makes the cut.</li>
+            <li><b>Momentum</b> — Cardmarket's smoothed trend against its 30-day average, shrunk toward zero when sales are too thin to trust.</li>
+            <li><b>Confidence</b> — listing spread and US/EU disagreement set how wide each range is.</li>
+            <li><b>Scorecard</b> — predictions graded at 30/90/180 days against "price stays flat".</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Fine print</h4>
+          <p>Model output is a structured guess, not financial advice — check recent sold
+            listings before spending real money. Prices via the free
+            <a href="https://tcgdex.dev" target="_blank" rel="noreferrer">TCGdex API</a>.</p>
+          <p>Fan project. Not affiliated with, endorsed by, or sponsored by Nintendo, Game Freak,
+            Creatures Inc., or The Pokémon Company. Card images belong to their respective owners.</p>
+        </div>
+      </div>
+      <div class="legal">Foil Theory · rebuilt daily by GitHub Actions · $0/month</div>
+    </footer>
   </div>
-  <div class="wrap legal">
-    <span>Built with a card-lifecycle model &amp; GitHub Actions.</span>
-    <span><a href="https://github.com/LoganCraft23/card-tracker" target="_blank" rel="noreferrer">Source on GitHub ↗</a></span>
-  </div>
-</footer>
+</div>
 
 <script>
 const SIG = { BUY: "var(--buy)", SELL: "var(--sell)", HOLD: "var(--hold)", AVOID: "var(--avoid)" };
@@ -307,7 +312,6 @@ function buildOverworld() {
   src.width = src.height = IN;
   const g = src.getContext("2d");
 
-  // Fixed seed: the map is the same on every visit rather than reshuffling.
   let seed = 20260801;
   const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
   const ri = (a, b) => a + Math.floor(rnd() * (b - a + 1));
@@ -324,27 +328,23 @@ function buildOverworld() {
   const ell = (cx, cy, rx, ry, col) => {
     g.fillStyle = col; g.beginPath(); g.ellipse(cx, cy, rx, ry, 0, 0, Math.PI * 2); g.fill();
   };
-  // Repeat a draw across the 8 neighbouring tile positions so nothing clips.
   const wrap = (fn) => {
     for (let dx = -IN; dx <= IN; dx += IN) for (let dy = -IN; dy <= IN; dy += IN) {
       g.save(); g.translate(dx, dy); fn(); g.restore();
     }
   };
 
-  // grass base with a subtle checker and speckle
   px(0, 0, IN, IN, C.grass);
   for (let y = 0; y < IN; y += 2) for (let x = 0; x < IN; x += 2) {
     if (((x + y) / 2) % 2 === 0) px(x, y, 2, 2, C.grassAlt);
   }
   for (let i = 0; i < 700; i++) px(ri(0, IN - 1), ri(0, IN - 1), 1, 1, rnd() < 0.5 ? C.grassDark : C.grassAlt);
 
-  // tall-grass patches
   for (let i = 0; i < 13; i++) {
     const x = ri(0, IN), y = ri(0, IN), w = ri(10, 24), h = ri(6, 14);
     wrap(() => px(x, y, w, h, C.tall));
   }
 
-  // pond
   const pxc = ri(24, IN - 24), pyc = ri(24, IN - 24), pw = ri(15, 20), ph = ri(10, 14);
   wrap(() => {
     ell(pxc, pyc, pw, ph, C.waterEdge);
@@ -352,8 +352,6 @@ function buildOverworld() {
     ell(pxc - pw / 3, pyc - ph / 3, pw / 4, ph / 5, C.waterLt);
   });
 
-  // dirt paths — sin periods are whole cycles across the tile, so they line up
-  // edge to edge. One runs vertically, one horizontally, crossing like a route.
   for (let y = 0; y < IN; y++) {
     const cx = IN * 0.5 + Math.sin((y / IN) * Math.PI * 2) * IN * 0.2 + Math.sin((y / IN) * Math.PI * 4) * IN * 0.05;
     px(cx - 8, y, 16, 1, C.pathEdge);
@@ -365,7 +363,6 @@ function buildOverworld() {
     px(x, cy - 4.5, 1, 9, C.path);
   }
 
-  // tree clusters, thickest around the edges like a route hemmed in by woods
   const tree = (x, y) => {
     px(x + 3, y + 8, 3, 4, C.trunk);
     ell(x + 4.5, y + 5.5, 5, 5.5, C.tree);
@@ -379,7 +376,6 @@ function buildOverworld() {
     }
   }
 
-  // flowers
   for (let i = 0; i < 150; i++) {
     const x = ri(0, IN), y = ri(0, IN), col = C.flower[ri(0, 2)];
     wrap(() => px(x, y, 1, 1, col));
@@ -399,7 +395,6 @@ try {
   el.style.backgroundImage = `url(${map.url})`;
   el.style.backgroundSize = `${map.size}px ${map.size}px`;
 } catch (e) {
-  // No map is fine — the aurora and scrim still render a finished-looking page.
   console.warn("overworld generation skipped:", e.message);
 }
 
@@ -429,18 +424,6 @@ try {
   apply();
 })();
 
-// Reveal cards as they enter the viewport. Opt in to the hidden start state
-// only if the observer exists, and always run a safety timer that shows
-// everything regardless — a stalled observer must never leave the page blank.
-const revealer = "IntersectionObserver" in window
-  ? new IntersectionObserver((entries, obs) => {
-      for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); obs.unobserve(e.target); }
-    }, { rootMargin: "0px 0px -40px 0px" })
-  : null;
-if (revealer) document.documentElement.classList.add("js-reveal");
-const revealAll = () => document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
-let revealSafety;
-
 // TCGplayer publishes a product id per printing, so link straight to the
 // listing page; the name search is only a fallback if that id is missing.
 function tcgUrl(c) {
@@ -450,36 +433,32 @@ function tcgUrl(c) {
 }
 
 // Momentum measured from our own snapshots is exact; the Cardmarket-derived
-// figure is an estimate, so it's labelled "~" rather than passed off as equal.
-function deltas(c) {
-  const out = [];
-  const measured = [["30d", c.chg30], ["90d", c.chg90], ["180d", c.chg180]]
-    .filter(([, v]) => v !== null && v !== undefined);
-  for (const [l, v] of measured) {
-    out.push(`<span class="${v >= 0 ? "up" : "down"}">${l} ${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span>`);
-  }
-  if (!measured.length && c.momSource === "cardmarket" && c.mom !== null && c.mom !== undefined) {
-    out.push(`<span class="${c.mom >= 0 ? "up" : "down"}" title="Estimated from Cardmarket's smoothed trend vs its 30-day average — the tracker's own measured history takes over once it has a month of snapshots">~30d ${c.mom >= 0 ? "▲" : "▼"}${Math.abs(Math.round(c.mom * 100))}%</span>`);
-  }
-  return out.join("");
+// figure is an estimate, so it's marked "~" rather than passed off as equal.
+function momCell(c) {
+  const v = c.chg30 ?? (c.momSource === "cardmarket" ? c.mom : null);
+  if (v === null || v === undefined) return `<span class="num mom" style="color:var(--faint)">—</span>`;
+  const est = c.chg30 === null || c.chg30 === undefined;
+  const t = est
+    ? "Estimated from Cardmarket's smoothed trend vs its 30-day average — measured history takes over once the tracker has a month of snapshots"
+    : "Measured from this tracker's own daily snapshots";
+  return `<span class="num mom ${v >= 0 ? "up" : "down"}" title="${t}">${est ? "~" : ""}${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span>`;
 }
 
-function confBadge(c) {
-  if (typeof c.confidence !== "number") return "";
-  const pctv = Math.round(c.confidence * 100);
+function confCell(c) {
+  if (typeof c.confidence !== "number") return `<span class="confCell hideSm">—</span>`;
+  const p = Math.round(c.confidence * 100);
   const col = c.confidence >= 0.8 ? "var(--buy)" : c.confidence >= 0.55 ? "var(--hold)" : "var(--sell)";
   const flags = (c.confidenceFlags || []).join("; ");
-  const thin = flags ? ` <span class="thin" title="${esc(flags)}">${esc(flags.split(";")[0])}</span>` : "";
-  return `<span class="conf" title="Price confidence ${pctv}% — drives how wide the projected range is${flags ? ": " + esc(flags) : ""}">
-    <span class="confBar" style="--c:${col}"><i style="width:${pctv}%"></i></span>${pctv}%</span>${thin}`;
+  return `<span class="confCell hideSm" title="Price confidence ${p}% — sets how wide the 12-month range is${flags ? ": " + esc(flags) : ""}">
+    <span class="confBar" style="--c:${col}"><i style="width:${p}%"></i></span>${p}%</span>`;
 }
 
 function spark(c) {
   const pts = (c.history || []).map((h) => h[1]);
-  if (pts.length < 2) return '<div class="noHist">price history builds daily — sparkline soon</div>';
+  if (pts.length < 2) return '<div class="noHist">Price history builds daily — the sparkline appears once there are a few days of snapshots.</div>';
   const all = pts.concat(c.proj || []);
   const min = Math.min(...all) * 0.95, max = Math.max(...all) * 1.05 || 1;
-  const W = 280, H = 58, histW = 195;
+  const W = 280, H = 62, histW = 195;
   const x = (i) => (i / (pts.length - 1)) * histW;
   const y = (v) => H - ((v - min) / (max - min)) * (H - 12) - 6;
   const line = pts.map((p, i) => x(i).toFixed(1) + "," + y(p).toFixed(1)).join(" ");
@@ -493,6 +472,19 @@ function spark(c) {
   </svg>`;
 }
 
+function sortList(list) {
+  const upside = (c) => (c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0);
+  const mv = (c) => Math.abs(c.chg30 ?? c.mom ?? 0);
+  const by = {
+    upside: (a, b) => upside(b) - upside(a),
+    priceAsc: (a, b) => a.price - b.price,
+    priceDesc: (a, b) => b.price - a.price,
+    chg30: (a, b) => mv(b) - mv(a),
+    confidence: (a, b) => (b.confidence ?? 0) - (a.confidence ?? 0),
+  };
+  return list.sort(by[state.sort] || by.upside);
+}
+
 function render() {
   let list = DATA.cards.slice();
   if (state.q) {
@@ -500,59 +492,66 @@ function render() {
     list = list.filter((c) => (c.name + " " + c.set).toLowerCase().includes(t));
   }
   if (state.filter !== "ALL") list = list.filter((c) => c.signal === state.filter);
-  const upside = (c) => c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0;
-  const mv = (c) => Math.abs(c.chg30 ?? c.mom ?? 0);
-  if (state.sort === "upside") list.sort((a, b) => upside(b) - upside(a));
-  if (state.sort === "priceAsc") list.sort((a, b) => a.price - b.price);
-  if (state.sort === "priceDesc") list.sort((a, b) => b.price - a.price);
-  if (state.sort === "chg30") list.sort((a, b) => mv(b) - mv(a));
+  sortList(list);
 
-  $("list").innerHTML = list.length ? list.map((c) => `
-    <article class="card reveal" style="--sig:${SIG[c.signal]}">
-      <div class="cHead">
-        ${c.image ? `<span class="artWrap"><img class="art" src="${esc(c.image)}/low.webp" alt="${esc(c.name)} card art" loading="lazy" onerror="this.parentNode.remove()"></span>` : ""}
-        <div class="cInfo">
-          <div class="badges"><span class="sig">${c.signal}</span><span class="setTag">${esc(c.set)}</span></div>
-          <h3>${esc(c.name)}</h3>
-          <div class="phase">${c.phase.replace("-", " ")} phase</div>
-          <div class="price">$${c.price.toFixed(2)}</div>
-          <div class="deltas">${deltas(c)}</div>
+  $("list").innerHTML = list.length ? list.map((c, i) => `
+    <details class="row" style="--sig:${SIG[c.signal]}">
+      <summary class="rowMain">
+        <span class="rank">${String(i + 1).padStart(2, "0")}</span>
+        <span class="thumbWrap">${c.image ? `<img class="thumb" src="${esc(c.image)}/low.webp" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : ""}</span>
+        <span class="ident"><b>${esc(c.name)}</b><em>${esc(c.set)} · ${c.phase.replace("-", " ")}</em></span>
+        <span class="num price">$${c.price.toFixed(2)}</span>
+        ${momCell(c)}
+        ${confCell(c)}
+        <span class="num projCell hideMd hideSm">$${c.proj[0].toFixed(0)}–$${c.proj[1].toFixed(0)}</span>
+        <span class="sig hideMd">${c.signal}</span>
+        <span class="caret">▶</span>
+      </summary>
+      <div class="rowDetail">
+        <div>
+          ${spark(c)}
+          <div class="num projCell" style="text-align:left;margin-top:6px">12-mo model range $${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</div>
+          ${(c.confidenceFlags || []).length ? `<span class="thin">${esc(c.confidenceFlags.join("; "))}</span>` : ""}
+        </div>
+        <div>
+          <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
+          <div class="detailFoot"><a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View listing on TCGplayer ↗</a></div>
         </div>
       </div>
-      ${spark(c)}
-      <div class="range">12-mo model range <b>$${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</b>${confBadge(c)}</div>
-      <details class="why"><summary>Why ${c.signal}?</summary>
-        <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
-      </details>
-      <div class="cFoot"><a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View on TCGplayer ↗</a></div>
-    </article>`).join("") : '<div class="empty">Nothing matches that filter — release the Snorlax and broaden the search.</div>';
-
-  if (revealer) {
-    document.querySelectorAll(".reveal").forEach((el) => revealer.observe(el));
-    clearTimeout(revealSafety);
-    revealSafety = setTimeout(revealAll, 1200);
-  } else revealAll();
+    </details>`).join("") : '<div class="empty">Nothing matches that filter — try widening the search.</div>';
 
   const counts = DATA.cards.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
   $("chips").innerHTML = ["ALL", "BUY", "HOLD", "SELL", "AVOID"].map((s) =>
-    `<button class="chip${state.filter === s ? " active" : ""}" style="--c:${s === "ALL" ? "var(--link)" : SIG[s]}"
-      onclick="state.filter='${s}';render()">${s === "ALL" ? "All " + DATA.cards.length : s + " " + (counts[s] || 0)}</button>`
+    `<button class="fchip${state.filter === s ? " active" : ""}" style="--c:${s === "ALL" ? "var(--link)" : SIG[s]}"
+      onclick="state.filter='${s}';render()">${s === "ALL" ? "All cards" : s}<b>${s === "ALL" ? DATA.cards.length : counts[s] || 0}</b></button>`
   ).join("");
+}
+
+function renderMovers() {
+  const moved = DATA.cards
+    .filter((c) => typeof (c.chg30 ?? c.mom) === "number")
+    .sort((a, b) => Math.abs(b.chg30 ?? b.mom) - Math.abs(a.chg30 ?? a.mom))
+    .slice(0, 8);
+  $("movers").innerHTML = moved.map((c) => {
+    const v = c.chg30 ?? c.mom;
+    return `<div class="tk">${c.image ? `<img src="${esc(c.image)}/low.webp" alt="" loading="lazy" onerror="this.remove()">` : ""}
+      <span class="n">${esc(c.name)}</span>
+      <span class="m ${v >= 0 ? "up" : "down"}">${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span></div>`;
+  }).join("");
 }
 
 function renderStats() {
   const cards = DATA.cards;
   if (!cards.length) return;
-  const buys = cards.filter((c) => c.signal === "BUY").length;
   const prices = cards.map((c) => c.price).sort((a, b) => a - b);
   const median = prices[Math.floor(prices.length / 2)] || 0;
-  const updated = DATA.updated ? new Date(DATA.updated).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "—";
+  const avgConf = cards.reduce((a, c) => a + (c.confidence || 0), 0) / cards.length;
   $("stats").innerHTML = [
-    [cards.length, "cards tracked"],
-    [buys, "BUY signals today"],
-    ["$" + median.toFixed(0), "median price"],
-    [updated, "last refresh · daily 9AM ET"],
-  ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+    ["Cards tracked", cards.length],
+    ["Median price", "$" + median.toFixed(0)],
+    ["Avg confidence", Math.round(avgConf * 100) + "%"],
+    ["Refresh", "9AM ET"],
+  ].map(([s, b]) => `<div class="rstat"><span>${s}</span><b>${b}</b></div>`).join("");
 }
 
 $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
@@ -563,12 +562,13 @@ fetch("./data.json")
   .then((d) => {
     DATA = d;
     $("updated").textContent = d.updated
-      ? "Live TCGplayer market prices · updated " + new Date(d.updated).toLocaleString()
-      : "No data yet — the first daily run will populate this page.";
+      ? "updated " + new Date(d.updated).toLocaleString()
+      : "no data yet";
     renderStats();
+    renderMovers();
     render();
   })
-  .catch(() => { $("updated").textContent = "Couldn't load data.json."; });
+  .catch(() => { $("updated").textContent = "couldn't load data.json"; });
 </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-# Slab & Signal — live Pokemon card tracker
+# Foil Theory — live Pokémon chase-card index
 
 A self-updating card price tracker: daily TCGplayer market prices, buy/hold/sell
 signals from a lifecycle model, a live dashboard, and Discord pings when a
@@ -102,9 +102,9 @@ serves the dashboard at http://localhost:4173 exactly as GitHub Pages will.
 
 ## Notes and caveats
 
-- **Momentum builds over time.** The 30/90/180-day change stats come from the
-  tracker's own snapshots, so they fill in as it runs (30-day momentum after a
-  month, etc.). Signals work from day one using phase/tier rules alone.
+- **Momentum is live from day one** via Cardmarket (shown with a `~` on the
+  site to mark it as an estimate). The exact 30/90/180-day figures come from
+  the tracker's own snapshots and replace the estimate as they fill in.
 - **If TCGdex's schema or coverage disappoints,** swap the provider in
   `scripts/tcgdex.js` — it's the only file that touches the API. Alternatives
   are listed at the top of that file.

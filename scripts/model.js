@@ -1,4 +1,4 @@
-// Slab & Signal — pricing model
+// Foil Theory — pricing model
 // Same logic as the chat artifact, adapted to run on real daily snapshots.
 
 export const SETS = {
@@ -168,7 +168,7 @@ export function analyze(card, price, history, market = null, eurUsd = 1.08) {
   let growth = PHASE_BASE[phase] + TIER_ADJ[card.tier || "chase"] + CHAR_ADJ[card.char || "A"];
   const reasons = [];
 
-  const via = estimated ? " (from Cardmarket 7d vs 30d averages)" : "";
+  const via = estimated ? " (estimated from Cardmarket's trend vs its 30-day average)" : "";
   if (mom !== null && mom > 0.2 * margin) {
     growth -= mom * 0.5;
     reasons.push(`Up ~${Math.round(mom * 100)}% over the last month${via} — spikes like this usually give back a chunk.`);

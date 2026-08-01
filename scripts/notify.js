@@ -20,7 +20,7 @@ export async function sendDiscord(changes) {
   if (changes.length > 15) lines.push(`…and ${changes.length - 15} more on the dashboard.`);
 
   const body = {
-    username: "Slab & Signal",
+    username: "Foil Theory",
     content: `**Card signals changed today (${changes.length}):**\n\n${lines.join("\n\n")}`,
   };
 
