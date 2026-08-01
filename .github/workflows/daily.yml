@@ -26,6 +26,13 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: node scripts/update.js
 
+      # After update.js, so it can reuse that run's card prices for the
+      # per-set chase read. Costs ~16 of the 100/day TCG API free tier.
+      - name: Price sealed products
+        env:
+          TCGAPI_KEY: ${{ secrets.TCGAPI_KEY }}
+        run: node scripts/sealed.js
+
       - name: Score past predictions against what actually happened
         run: node scripts/score.js
 
@@ -33,6 +40,6 @@ jobs:
         run: |
           git config user.name "foil-theory-bot"
           git config user.email "actions@github.com"
-          git add history/ docs/data.json docs/accuracy.json watchlist.json
+          git add history/ docs/data.json docs/sealed.json docs/accuracy.json watchlist.json
           git diff --cached --quiet || git commit -m "Daily price update $(date -u +%F)"
           git push

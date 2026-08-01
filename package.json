@@ -8,6 +8,7 @@
     "resolve": "node scripts/resolve.js",
     "screen": "node scripts/screen.js",
     "update": "node scripts/update.js",
+    "sealed": "node scripts/sealed.js",
     "score": "node scripts/score.js",
     "serve": "node scripts/serve.js"
   }
