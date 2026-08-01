@@ -1,0 +1,1028 @@
+{
+  "note": "Add cards here (name, set, char S/A/B, tier chase/ultra/holo), then run: npm run resolve",
+  "cards": [
+    {
+      "name": "Charmander IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-168",
+      "candidates": [
+        "sv03.5-168",
+        "sv03.5-004"
+      ]
+    },
+    {
+      "name": "Squirtle IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-170",
+      "candidates": [
+        "sv03.5-170",
+        "sv03.5-007"
+      ]
+    },
+    {
+      "name": "Bulbasaur IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-166",
+      "candidates": [
+        "sv03.5-166",
+        "sv03.5-001"
+      ]
+    },
+    {
+      "name": "Pikachu IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-173",
+      "candidates": [
+        "sv03.5-173",
+        "sv03.5-025"
+      ]
+    },
+    {
+      "name": "Snorlax IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-143",
+      "candidates": [
+        "sv03.5-143"
+      ]
+    },
+    {
+      "name": "Dragonair IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-181",
+      "candidates": [
+        "sv03.5-181",
+        "sv03.5-148"
+      ]
+    },
+    {
+      "name": "Dratini IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-147",
+      "candidates": [
+        "sv03.5-147"
+      ]
+    },
+    {
+      "name": "Zapdos IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-202",
+      "candidates": [
+        "sv03.5-202",
+        "sv03.5-192",
+        "sv03.5-145"
+      ]
+    },
+    {
+      "name": "Articuno IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-144",
+      "candidates": [
+        "sv03.5-144"
+      ]
+    },
+    {
+      "name": "Moltres IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-146",
+      "candidates": [
+        "sv03.5-146"
+      ]
+    },
+    {
+      "name": "Eevee IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-133",
+      "candidates": [
+        "sv03.5-133"
+      ]
+    },
+    {
+      "name": "Growlithe IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-058",
+      "candidates": [
+        "sv03.5-058"
+      ]
+    },
+    {
+      "name": "Magikarp IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-129",
+      "candidates": [
+        "sv03.5-129"
+      ]
+    },
+    {
+      "name": "Poliwag IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-060",
+      "candidates": [
+        "sv03.5-060"
+      ]
+    },
+    {
+      "name": "Slowpoke IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-079",
+      "candidates": [
+        "sv03.5-079"
+      ]
+    },
+    {
+      "name": "Jigglypuff IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-039",
+      "candidates": [
+        "sv03.5-039"
+      ]
+    },
+    {
+      "name": "Meowth IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-052",
+      "candidates": [
+        "sv03.5-052"
+      ]
+    },
+    {
+      "name": "Ditto IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-132",
+      "candidates": [
+        "sv03.5-132"
+      ]
+    },
+    {
+      "name": "Lapras IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-131",
+      "candidates": [
+        "sv03.5-131"
+      ]
+    },
+    {
+      "name": "Cubone IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-104",
+      "candidates": [
+        "sv03.5-104"
+      ]
+    },
+    {
+      "name": "Gastly IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-092",
+      "candidates": [
+        "sv03.5-092"
+      ]
+    },
+    {
+      "name": "Psyduck IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-175",
+      "candidates": [
+        "sv03.5-175",
+        "sv03.5-054"
+      ]
+    },
+    {
+      "name": "Pidgey IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-016",
+      "candidates": [
+        "sv03.5-016"
+      ]
+    },
+    {
+      "name": "Charmander IR",
+      "set": "Obsidian Flames",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03-026",
+      "candidates": [
+        "sv03-026"
+      ]
+    },
+    {
+      "name": "Charmeleon IR",
+      "set": "Obsidian Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03-027",
+      "candidates": [
+        "sv03-027"
+      ]
+    },
+    {
+      "name": "Vulpix IR",
+      "set": "Obsidian Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03-028",
+      "candidates": [
+        "sv03-028"
+      ]
+    },
+    {
+      "name": "Absol IR",
+      "set": "Obsidian Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03-214",
+      "candidates": [
+        "sv03-214",
+        "sv03-135"
+      ]
+    },
+    {
+      "name": "Garchomp ex SIR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-260",
+      "candidates": [
+        "sv04-260",
+        "sv04-245",
+        "sv04-219",
+        "sv04-038"
+      ]
+    },
+    {
+      "name": "Roaring Moon IR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-262",
+      "candidates": [
+        "sv04-262",
+        "sv04-251",
+        "sv04-229",
+        "sv04-124"
+      ]
+    },
+    {
+      "name": "Iron Valiant IR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-261",
+      "candidates": [
+        "sv04-261",
+        "sv04-249",
+        "sv04-225",
+        "sv04-089"
+      ]
+    },
+    {
+      "name": "Shiny Pikachu",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-131",
+      "candidates": [
+        "sv04.5-131",
+        "sv04.5-018"
+      ]
+    },
+    {
+      "name": "Shiny Charmander",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-109",
+      "candidates": [
+        "sv04.5-109",
+        "sv04.5-007"
+      ]
+    },
+    {
+      "name": "Shiny Ceruledge IR",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-162",
+      "candidates": [
+        "sv04.5-162",
+        "sv04.5-040"
+      ]
+    },
+    {
+      "name": "Shiny Tinkaton IR",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-167",
+      "candidates": [
+        "sv04.5-167"
+      ]
+    },
+    {
+      "name": "Shiny Mimikyu IR",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-160",
+      "candidates": [
+        "sv04.5-160",
+        "sv04.5-037"
+      ]
+    },
+    {
+      "name": "Walking Wake IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-215",
+      "candidates": [
+        "sv05-215",
+        "sv05-205",
+        "sv05-189",
+        "sv05-050"
+      ]
+    },
+    {
+      "name": "Raging Bolt IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-218",
+      "candidates": [
+        "sv05-218",
+        "sv05-208",
+        "sv05-196",
+        "sv05-123"
+      ]
+    },
+    {
+      "name": "Totodile IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-039",
+      "candidates": [
+        "sv05-039"
+      ]
+    },
+    {
+      "name": "Eri SIR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-210",
+      "candidates": [
+        "sv05-210",
+        "sv05-199",
+        "sv05-146"
+      ]
+    },
+    {
+      "name": "Bloodmoon Ursaluna IR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-222",
+      "candidates": [
+        "sv06-222",
+        "sv06-216",
+        "sv06-202",
+        "sv06-141"
+      ]
+    },
+    {
+      "name": "Teal Mask Ogerpon IR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-024",
+      "candidates": [
+        "sv06-024"
+      ]
+    },
+    {
+      "name": "Perrin SIR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-220",
+      "candidates": [
+        "sv06-220",
+        "sv06-209",
+        "sv06-160"
+      ]
+    },
+    {
+      "name": "Carmine SIR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-217",
+      "candidates": [
+        "sv06-217",
+        "sv06-204",
+        "sv06-145"
+      ]
+    },
+    {
+      "name": "Genesect IR",
+      "set": "Shrouded Fable",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06.5-040",
+      "candidates": [
+        "sv06.5-040"
+      ]
+    },
+    {
+      "name": "Duskull IR",
+      "set": "Shrouded Fable",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06.5-068",
+      "candidates": [
+        "sv06.5-068",
+        "sv06.5-018"
+      ]
+    },
+    {
+      "name": "Milotic IR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Cinderace IR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv07-157",
+      "candidates": [
+        "sv07-157",
+        "sv07-028"
+      ]
+    },
+    {
+      "name": "Briar SIR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv07-171",
+      "candidates": [
+        "sv07-171",
+        "sv07-163",
+        "sv07-132"
+      ]
+    },
+    {
+      "name": "N's Zorua IR",
+      "set": "Journey Together",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv09-097",
+      "candidates": [
+        "sv09-097"
+      ]
+    },
+    {
+      "name": "Iono's Bellibolt IR",
+      "set": "Journey Together",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv09-188",
+      "candidates": [
+        "sv09-188",
+        "sv09-183",
+        "sv09-172",
+        "sv09-053"
+      ]
+    },
+    {
+      "name": "Misty's Psyduck IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-193",
+      "candidates": [
+        "sv10-193",
+        "sv10-045"
+      ]
+    },
+    {
+      "name": "Cynthia's Garchomp IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-241",
+      "candidates": [
+        "sv10-241",
+        "sv10-232",
+        "sv10-215",
+        "sv10-104"
+      ]
+    },
+    {
+      "name": "Ethan's Typhlosion IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-190",
+      "candidates": [
+        "sv10-190",
+        "sv10-034"
+      ]
+    },
+    {
+      "name": "Steven's Metagross IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-145",
+      "candidates": [
+        "sv10-145"
+      ]
+    },
+    {
+      "name": "Team Rocket's Meowth IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-203",
+      "candidates": [
+        "sv10-203",
+        "sv10-149"
+      ]
+    },
+    {
+      "name": "Team Rocket's Wobbuffet IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-082",
+      "candidates": [
+        "sv10-082"
+      ]
+    },
+    {
+      "name": "Victini IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-172",
+      "candidates": [
+        "sv10.5w-172",
+        "sv10.5b-171",
+        "sv10.5b-012"
+      ]
+    },
+    {
+      "name": "Zekrom IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5b-172",
+      "candidates": [
+        "sv10.5b-172",
+        "sv10.5b-166",
+        "sv10.5b-158",
+        "sv10.5b-034"
+      ]
+    },
+    {
+      "name": "Reshiram IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-173",
+      "candidates": [
+        "sv10.5w-173",
+        "sv10.5w-166",
+        "sv10.5w-158",
+        "sv10.5w-020"
+      ]
+    },
+    {
+      "name": "Snivy IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5b-087",
+      "candidates": [
+        "sv10.5b-087",
+        "sv10.5b-001"
+      ]
+    },
+    {
+      "name": "Oshawott IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-105",
+      "candidates": [
+        "sv10.5w-105",
+        "sv10.5w-021"
+      ]
+    },
+    {
+      "name": "Tepig IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-096",
+      "candidates": [
+        "sv10.5w-096",
+        "sv10.5w-011"
+      ]
+    },
+    {
+      "name": "Zorua IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-142",
+      "candidates": [
+        "sv10.5w-142",
+        "sv10.5w-061"
+      ]
+    },
+    {
+      "name": "Zoroark IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-143",
+      "candidates": [
+        "sv10.5w-143",
+        "sv10.5w-062"
+      ]
+    },
+    {
+      "name": "Samurott IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-107",
+      "candidates": [
+        "sv10.5w-107",
+        "sv10.5w-023"
+      ]
+    },
+    {
+      "name": "Serperior IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5b-164",
+      "candidates": [
+        "sv10.5b-164",
+        "sv10.5b-156",
+        "sv10.5b-003"
+      ]
+    },
+    {
+      "name": "Emboar IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-098",
+      "candidates": [
+        "sv10.5w-098",
+        "sv10.5w-013"
+      ]
+    },
+    {
+      "name": "Hilda SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-171",
+      "candidates": [
+        "sv10.5w-171",
+        "sv10.5w-164",
+        "sv10.5w-084"
+      ]
+    },
+    {
+      "name": "Lucario IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-188",
+      "candidates": [
+        "me01-188",
+        "me01-179",
+        "me01-160",
+        "me01-077"
+      ]
+    },
+    {
+      "name": "Riolu IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-076",
+      "candidates": [
+        "me01-076"
+      ]
+    },
+    {
+      "name": "Gardevoir IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-187",
+      "candidates": [
+        "me01-187",
+        "me01-178",
+        "me01-159",
+        "me01-060"
+      ]
+    },
+    {
+      "name": "Ralts IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-058",
+      "candidates": [
+        "me01-058"
+      ]
+    },
+    {
+      "name": "Kirlia IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-059",
+      "candidates": [
+        "me01-059"
+      ]
+    },
+    {
+      "name": "Absol IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-180",
+      "candidates": [
+        "me01-180",
+        "me01-161",
+        "me01-086"
+      ]
+    },
+    {
+      "name": "Pikachu IR",
+      "set": "Mega Evolution",
+      "char": "S",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Charmander IR",
+      "set": "Phantasmal Flames",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02-011",
+      "candidates": [
+        "me02-011"
+      ]
+    },
+    {
+      "name": "Charmeleon IR",
+      "set": "Phantasmal Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02-012",
+      "candidates": [
+        "me02-012"
+      ]
+    },
+    {
+      "name": "Vulpix IR",
+      "set": "Phantasmal Flames",
+      "char": "A",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Gastly IR",
+      "set": "Phantasmal Flames",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02-054",
+      "candidates": [
+        "me02-054"
+      ]
+    },
+    {
+      "name": "Dratini IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-150",
+      "candidates": [
+        "me02.5-150"
+      ]
+    },
+    {
+      "name": "Dragonair IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-151",
+      "candidates": [
+        "me02.5-151"
+      ]
+    },
+    {
+      "name": "Dragonite IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-295",
+      "candidates": [
+        "me02.5-295",
+        "me02.5-290",
+        "me02.5-271",
+        "me02.5-152"
+      ]
+    },
+    {
+      "name": "Gastly IR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-123",
+      "candidates": [
+        "me02.5-123"
+      ]
+    },
+    {
+      "name": "Haunter IR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-124",
+      "candidates": [
+        "me02.5-124"
+      ]
+    },
+    {
+      "name": "Pikachu IR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-055",
+      "candidates": [
+        "me02.5-055"
+      ]
+    },
+    {
+      "name": "Eevee IR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Magikarp IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Gyarados IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Snorlax IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Greninja IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "id": "me04-122",
+      "candidates": [
+        "me04-122",
+        "me04-116",
+        "me04-100",
+        "me04-022"
+      ]
+    },
+    {
+      "name": "Froakie IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "id": "me04-088",
+      "candidates": [
+        "me04-088",
+        "me04-020"
+      ]
+    },
+    {
+      "name": "Frogadier IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "id": "me04-089",
+      "candidates": [
+        "me04-089",
+        "me04-021"
+      ]
+    },
+    {
+      "name": "Clefairy IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Staryu IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "unresolved": true
+    },
+    {
+      "name": "Darkrai IR",
+      "set": "Pitch Black",
+      "char": "A",
+      "tier": "chase",
+      "id": "me05-120",
+      "candidates": [
+        "me05-120",
+        "me05-116",
+        "me05-101",
+        "me05-048"
+      ]
+    },
+    {
+      "name": "Zeraora IR",
+      "set": "Pitch Black",
+      "char": "A",
+      "tier": "chase",
+      "id": "me05-114",
+      "candidates": [
+        "me05-114",
+        "me05-098",
+        "me05-027"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+name: Daily price update
+
+on:
+  schedule:
+    - cron: "0 13 * * *" # 9:00 AM Eastern (13:00 UTC)
+  workflow_dispatch: {} # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch prices, compute signals
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: node scripts/update.js
+
+      - name: Commit updated history and dashboard data
+        run: |
+          git config user.name "slab-and-signal-bot"
+          git config user.email "actions@github.com"
+          git add history/ docs/data.json watchlist.json
+          git diff --cached --quiet || git commit -m "Daily price update $(date -u +%F)"
+          git push

@@ -1,0 +1,2267 @@
+{
+  "updated": "2026-08-01T01:40:32.273Z",
+  "cards": [
+    {
+      "name": "Charmander IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-168",
+      "phase": "supply-trough",
+      "price": 107.93,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        94.11,
+        141.17
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          107.93
+        ]
+      ]
+    },
+    {
+      "name": "Squirtle IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-170",
+      "phase": "supply-trough",
+      "price": 105,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        88.2,
+        132.3
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          105
+        ]
+      ]
+    },
+    {
+      "name": "Bulbasaur IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-166",
+      "phase": "supply-trough",
+      "price": 92.51,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        77.71,
+        116.56
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          92.51
+        ]
+      ]
+    },
+    {
+      "name": "Pikachu IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-173",
+      "phase": "supply-trough",
+      "price": 100.51,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        87.64,
+        131.47
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          100.51
+        ]
+      ]
+    },
+    {
+      "name": "Snorlax IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-143",
+      "phase": "supply-trough",
+      "price": 4.49,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        3.77,
+        5.66
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          4.49
+        ]
+      ]
+    },
+    {
+      "name": "Dragonair IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-181",
+      "phase": "supply-trough",
+      "price": 53.49,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        44.93,
+        67.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          53.49
+        ]
+      ]
+    },
+    {
+      "name": "Dratini IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-147",
+      "phase": "supply-trough",
+      "price": 0.33,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.28,
+        0.42
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.33
+        ]
+      ]
+    },
+    {
+      "name": "Zapdos IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-202",
+      "phase": "supply-trough",
+      "price": 113.71,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        95.52,
+        143.27
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          113.71
+        ]
+      ]
+    },
+    {
+      "name": "Articuno IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-144",
+      "phase": "supply-trough",
+      "price": 1.18,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.99,
+        1.49
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          1.18
+        ]
+      ]
+    },
+    {
+      "name": "Moltres IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-146",
+      "phase": "supply-trough",
+      "price": 1.31,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        1.1,
+        1.65
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          1.31
+        ]
+      ]
+    },
+    {
+      "name": "Eevee IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-133",
+      "phase": "supply-trough",
+      "price": 0.45,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.39,
+        0.59
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.45
+        ]
+      ]
+    },
+    {
+      "name": "Growlithe IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-058",
+      "phase": "supply-trough",
+      "price": 0.3,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.25,
+        0.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "Magikarp IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-129",
+      "phase": "supply-trough",
+      "price": 0.3,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.25,
+        0.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "Poliwag IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-060",
+      "phase": "supply-trough",
+      "price": 0.25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.21,
+        0.32
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "Slowpoke IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-079",
+      "phase": "supply-trough",
+      "price": 0.38,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.32,
+        0.48
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.38
+        ]
+      ]
+    },
+    {
+      "name": "Jigglypuff IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-039",
+      "phase": "supply-trough",
+      "price": 0.34,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.29,
+        0.43
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.34
+        ]
+      ]
+    },
+    {
+      "name": "Meowth IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-052",
+      "phase": "supply-trough",
+      "price": 0.32,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.27,
+        0.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.32
+        ]
+      ]
+    },
+    {
+      "name": "Ditto IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-132",
+      "phase": "supply-trough",
+      "price": 2.31,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        1.94,
+        2.91
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          2.31
+        ]
+      ]
+    },
+    {
+      "name": "Lapras IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-131",
+      "phase": "supply-trough",
+      "price": 1.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        1.67,
+        2.51
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          1.99
+        ]
+      ]
+    },
+    {
+      "name": "Cubone IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-104",
+      "phase": "supply-trough",
+      "price": 0.3,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.25,
+        0.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "Gastly IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-092",
+      "phase": "supply-trough",
+      "price": 0.36,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.31,
+        0.47
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.36
+        ]
+      ]
+    },
+    {
+      "name": "Psyduck IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-175",
+      "phase": "supply-trough",
+      "price": 78.38,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        65.84,
+        98.76
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          78.38
+        ]
+      ]
+    },
+    {
+      "name": "Pidgey IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-016",
+      "phase": "supply-trough",
+      "price": 0.32,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.27,
+        0.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.32
+        ]
+      ]
+    },
+    {
+      "name": "Charmander IR",
+      "set": "Obsidian Flames",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03-026",
+      "phase": "recovery",
+      "price": 0.34,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        0.35,
+        0.52
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.34
+        ]
+      ]
+    },
+    {
+      "name": "Charmeleon IR",
+      "set": "Obsidian Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03-027",
+      "phase": "recovery",
+      "price": 0.38,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        0.37,
+        0.56
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.38
+        ]
+      ]
+    },
+    {
+      "name": "Vulpix IR",
+      "set": "Obsidian Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03-028",
+      "phase": "recovery",
+      "price": 0.26,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        0.26,
+        0.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.26
+        ]
+      ]
+    },
+    {
+      "name": "Absol IR",
+      "set": "Obsidian Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03-214",
+      "phase": "recovery",
+      "price": 2.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        2.94,
+        4.41
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          2.99
+        ]
+      ]
+    },
+    {
+      "name": "Garchomp ex SIR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-260",
+      "phase": "recovery",
+      "price": 18.69,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        18.39,
+        27.59
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          18.69
+        ]
+      ]
+    },
+    {
+      "name": "Roaring Moon IR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-262",
+      "phase": "recovery",
+      "price": 7.65,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        7.53,
+        11.29
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          7.65
+        ]
+      ]
+    },
+    {
+      "name": "Iron Valiant IR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-261",
+      "phase": "recovery",
+      "price": 5.92,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        5.83,
+        8.74
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          5.92
+        ]
+      ]
+    },
+    {
+      "name": "Shiny Pikachu",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-131",
+      "phase": "recovery",
+      "price": 89.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        91.43,
+        137.14
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          89.99
+        ]
+      ]
+    },
+    {
+      "name": "Shiny Charmander",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-109",
+      "phase": "recovery",
+      "price": 60.77,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        61.74,
+        92.61
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          60.77
+        ]
+      ]
+    },
+    {
+      "name": "Shiny Ceruledge IR",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-162",
+      "phase": "recovery",
+      "price": 12.06,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        11.87,
+        17.8
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.06
+        ]
+      ]
+    },
+    {
+      "name": "Shiny Tinkaton IR",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-167",
+      "phase": "recovery",
+      "price": 10,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        9.84,
+        14.76
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          10
+        ]
+      ]
+    },
+    {
+      "name": "Shiny Mimikyu IR",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-160",
+      "phase": "recovery",
+      "price": 59.2,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        58.25,
+        87.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          59.2
+        ]
+      ]
+    },
+    {
+      "name": "Walking Wake IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-215",
+      "phase": "recovery",
+      "price": 12.71,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        12.51,
+        18.76
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.71
+        ]
+      ]
+    },
+    {
+      "name": "Raging Bolt IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-218",
+      "phase": "recovery",
+      "price": 14.2,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        13.97,
+        20.96
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          14.2
+        ]
+      ]
+    },
+    {
+      "name": "Totodile IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-039",
+      "phase": "recovery",
+      "price": 0.37,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        0.36,
+        0.55
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.37
+        ]
+      ]
+    },
+    {
+      "name": "Eri SIR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-210",
+      "phase": "recovery",
+      "price": 20.06,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        19.74,
+        29.61
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          20.06
+        ]
+      ]
+    },
+    {
+      "name": "Bloodmoon Ursaluna IR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-222",
+      "phase": "recovery",
+      "price": 10.04,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        9.88,
+        14.82
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          10.04
+        ]
+      ]
+    },
+    {
+      "name": "Teal Mask Ogerpon IR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-024",
+      "phase": "recovery",
+      "price": 0.29,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        0.29,
+        0.43
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.29
+        ]
+      ]
+    },
+    {
+      "name": "Perrin SIR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-220",
+      "phase": "recovery",
+      "price": 185,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        182.04,
+        273.06
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          185
+        ]
+      ]
+    },
+    {
+      "name": "Carmine SIR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-217",
+      "phase": "recovery",
+      "price": 65,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        63.96,
+        95.94
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          65
+        ]
+      ]
+    },
+    {
+      "name": "Genesect IR",
+      "set": "Shrouded Fable",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06.5-040",
+      "phase": "recovery",
+      "price": 0.3,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        0.3,
+        0.44
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "Duskull IR",
+      "set": "Shrouded Fable",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06.5-068",
+      "phase": "recovery",
+      "price": 62.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        61.5,
+        92.25
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          62.5
+        ]
+      ]
+    },
+    {
+      "name": "Cinderace IR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv07-157",
+      "phase": "recovery",
+      "price": 4.13,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        4.06,
+        6.1
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          4.13
+        ]
+      ]
+    },
+    {
+      "name": "Briar SIR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv07-171",
+      "phase": "recovery",
+      "price": 13,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "proj": [
+        12.79,
+        19.19
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          13
+        ]
+      ]
+    },
+    {
+      "name": "N's Zorua IR",
+      "set": "Journey Together",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv09-097",
+      "phase": "supply-trough",
+      "price": 0.33,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.28,
+        0.42
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.33
+        ]
+      ]
+    },
+    {
+      "name": "Iono's Bellibolt IR",
+      "set": "Journey Together",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv09-188",
+      "phase": "supply-trough",
+      "price": 19,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        15.96,
+        23.94
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          19
+        ]
+      ]
+    },
+    {
+      "name": "Misty's Psyduck IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-193",
+      "phase": "supply-trough",
+      "price": 75.01,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        63.01,
+        94.51
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          75.01
+        ]
+      ]
+    },
+    {
+      "name": "Cynthia's Garchomp IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-241",
+      "phase": "supply-trough",
+      "price": 33.4,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        28.06,
+        42.08
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          33.4
+        ]
+      ]
+    },
+    {
+      "name": "Ethan's Typhlosion IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-190",
+      "phase": "supply-trough",
+      "price": 31,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        26.04,
+        39.06
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          31
+        ]
+      ]
+    },
+    {
+      "name": "Steven's Metagross IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-145",
+      "phase": "supply-trough",
+      "price": 0.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.83,
+        1.25
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.99
+        ]
+      ]
+    },
+    {
+      "name": "Team Rocket's Meowth IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-203",
+      "phase": "supply-trough",
+      "price": 30.82,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        25.89,
+        38.83
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          30.82
+        ]
+      ]
+    },
+    {
+      "name": "Team Rocket's Wobbuffet IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-082",
+      "phase": "supply-trough",
+      "price": 0.32,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.27,
+        0.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.32
+        ]
+      ]
+    },
+    {
+      "name": "Victini IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-172",
+      "phase": "supply-trough",
+      "price": 618.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        519.54,
+        779.31
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          618.5
+        ]
+      ]
+    },
+    {
+      "name": "Zekrom IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5b-172",
+      "phase": "supply-trough",
+      "price": 651.58,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        547.33,
+        820.99
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          651.58
+        ]
+      ]
+    },
+    {
+      "name": "Reshiram IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-173",
+      "phase": "supply-trough",
+      "price": 589.02,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        494.78,
+        742.17
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          589.02
+        ]
+      ]
+    },
+    {
+      "name": "Snivy IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5b-087",
+      "phase": "supply-trough",
+      "price": 40,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        33.6,
+        50.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          40
+        ]
+      ]
+    },
+    {
+      "name": "Oshawott IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-105",
+      "phase": "supply-trough",
+      "price": 102.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        86.1,
+        129.15
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          102.5
+        ]
+      ]
+    },
+    {
+      "name": "Tepig IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-096",
+      "phase": "supply-trough",
+      "price": 45,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        37.8,
+        56.7
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          45
+        ]
+      ]
+    },
+    {
+      "name": "Zorua IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-142",
+      "phase": "supply-trough",
+      "price": 52.41,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        44.02,
+        66.04
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          52.41
+        ]
+      ]
+    },
+    {
+      "name": "Zoroark IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-143",
+      "phase": "supply-trough",
+      "price": 83.49,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        70.13,
+        105.2
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          83.49
+        ]
+      ]
+    },
+    {
+      "name": "Samurott IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-107",
+      "phase": "supply-trough",
+      "price": 56.76,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        47.68,
+        71.52
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          56.76
+        ]
+      ]
+    },
+    {
+      "name": "Serperior IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5b-164",
+      "phase": "supply-trough",
+      "price": 58.86,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        49.44,
+        74.16
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          58.86
+        ]
+      ]
+    },
+    {
+      "name": "Emboar IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-098",
+      "phase": "supply-trough",
+      "price": 50.22,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        42.18,
+        63.28
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          50.22
+        ]
+      ]
+    },
+    {
+      "name": "Hilda SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-171",
+      "phase": "supply-trough",
+      "price": 61.26,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        51.46,
+        77.19
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          61.26
+        ]
+      ]
+    },
+    {
+      "name": "Lucario IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-188",
+      "phase": "supply-trough",
+      "price": 280.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        235.62,
+        353.43
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          280.5
+        ]
+      ]
+    },
+    {
+      "name": "Riolu IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-076",
+      "phase": "supply-trough",
+      "price": 0.35,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.29,
+        0.44
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.35
+        ]
+      ]
+    },
+    {
+      "name": "Gardevoir IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-187",
+      "phase": "supply-trough",
+      "price": 225.98,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        189.82,
+        284.73
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          225.98
+        ]
+      ]
+    },
+    {
+      "name": "Ralts IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-058",
+      "phase": "supply-trough",
+      "price": 0.32,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.27,
+        0.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.32
+        ]
+      ]
+    },
+    {
+      "name": "Kirlia IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-059",
+      "phase": "supply-trough",
+      "price": 0.31,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.26,
+        0.39
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.31
+        ]
+      ]
+    },
+    {
+      "name": "Absol IR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-180",
+      "phase": "supply-trough",
+      "price": 69.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        58.79,
+        88.19
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          69.99
+        ]
+      ]
+    },
+    {
+      "name": "Charmander IR",
+      "set": "Phantasmal Flames",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02-011",
+      "phase": "supply-trough",
+      "price": 0.29,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.25,
+        0.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.29
+        ]
+      ]
+    },
+    {
+      "name": "Charmeleon IR",
+      "set": "Phantasmal Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02-012",
+      "phase": "supply-trough",
+      "price": 0.26,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.22,
+        0.33
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.26
+        ]
+      ]
+    },
+    {
+      "name": "Gastly IR",
+      "set": "Phantasmal Flames",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02-054",
+      "phase": "supply-trough",
+      "price": 0.25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "proj": [
+        0.22,
+        0.33
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "Dratini IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-150",
+      "phase": "hype-fade",
+      "price": 0.2,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        0.14,
+        0.21
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "Dragonair IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-151",
+      "phase": "hype-fade",
+      "price": 0.22,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        0.15,
+        0.23
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.22
+        ]
+      ]
+    },
+    {
+      "name": "Dragonite IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-295",
+      "phase": "hype-fade",
+      "price": 296.34,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        206.25,
+        309.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          296.34
+        ]
+      ]
+    },
+    {
+      "name": "Gastly IR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-123",
+      "phase": "hype-fade",
+      "price": 0.16,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        0.12,
+        0.17
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.16
+        ]
+      ]
+    },
+    {
+      "name": "Haunter IR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-124",
+      "phase": "hype-fade",
+      "price": 0.19,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        0.14,
+        0.21
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.19
+        ]
+      ]
+    },
+    {
+      "name": "Pikachu IR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-055",
+      "phase": "hype-fade",
+      "price": 0.3,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        0.22,
+        0.33
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "Greninja IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "id": "me04-122",
+      "phase": "hype-fade",
+      "price": 215,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        149.64,
+        224.46
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          215
+        ]
+      ]
+    },
+    {
+      "name": "Froakie IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "id": "me04-088",
+      "phase": "hype-fade",
+      "price": 12.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        9.04,
+        13.56
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.99
+        ]
+      ]
+    },
+    {
+      "name": "Frogadier IR",
+      "set": "Chaos Rising",
+      "char": "A",
+      "tier": "chase",
+      "id": "me04-089",
+      "phase": "hype-fade",
+      "price": 9,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        6.26,
+        9.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          9
+        ]
+      ]
+    },
+    {
+      "name": "Darkrai IR",
+      "set": "Pitch Black",
+      "char": "A",
+      "tier": "chase",
+      "id": "me05-120",
+      "phase": "hype-fade",
+      "price": 214.94,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        149.6,
+        224.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          214.94
+        ]
+      ]
+    },
+    {
+      "name": "Zeraora IR",
+      "set": "Pitch Black",
+      "char": "A",
+      "tier": "chase",
+      "id": "me05-114",
+      "phase": "hype-fade",
+      "price": 77.8,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "proj": [
+        54.15,
+        81.22
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          77.8
+        ]
+      ]
+    }
+  ]
+}

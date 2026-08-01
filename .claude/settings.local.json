@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Expand-Archive -Path \"files.zip\" -DestinationPath \".\" -Force; Get-ChildItem -Recurse | Where-Object {$_.Name -ne 'files.zip'} | Select-Object FullName, Length | Format-Table -AutoSize)"
+    ]
+  }
+}

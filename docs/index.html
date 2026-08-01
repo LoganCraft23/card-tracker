@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Slab &amp; Signal — live card tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0E1526; --slab: #17203A; --line: #263452;
+    --text: #E9EEF9; --muted: #8B96B3; --gold: #FFCB05;
+    --buy: #3ADF8C; --sell: #FF7A6B; --hold: #FFC94D; --avoid: #7C87A6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ink); color: var(--text);
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    padding: 28px 16px 60px; max-width: 860px; margin-inline: auto;
+  }
+  .holo { height: 5px; width: 120px; border-radius: 3px; margin-bottom: 14px;
+    background: linear-gradient(90deg,#59A0FF,#B36BFF,#FF6BC1,#FFD36B); }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .sub { color: var(--muted); margin: 0 0 16px; line-height: 1.45; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  input, select {
+    background: var(--slab); border: 1px solid var(--line); color: var(--text);
+    border-radius: 8px; padding: 8px 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  input { flex: 1; min-width: 160px; }
+  input:focus, select:focus { border-color: #8FB6FF; outline: none; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { --c: #8FB6FF; background: none; border: 1px solid var(--line); color: var(--muted);
+    border-radius: 999px; padding: 5px 12px; font: 700 12.5px 'Space Grotesk', sans-serif; cursor: pointer; }
+  .chip.active { border-color: var(--c); color: var(--c); }
+  .chip:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  main { display: grid; gap: 14px; }
+  .slab { display: flex; background: var(--slab); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .edge { width: 6px; flex-shrink: 0; background: linear-gradient(180deg, var(--sig), #B36BFF66, var(--sig)); }
+  .body { padding: 16px 18px; flex: 1; min-width: 0; }
+  .top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+  h3 { margin: 0; font-size: 17px; }
+  .meta { color: var(--muted); font-size: 12.5px; }
+  .sig { font: 600 13px 'JetBrains Mono', monospace; border: 1.5px solid var(--sig); color: var(--sig);
+    border-radius: 6px; padding: 3px 10px; letter-spacing: 1px; white-space: nowrap; }
+  .mid { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 12px 0 6px; flex-wrap: wrap; }
+  .prices { font-family: 'JetBrains Mono', monospace; }
+  .now { font-size: 24px; font-weight: 600; }
+  .deltas { display: flex; gap: 10px; font-size: 12px; margin: 4px 0; }
+  .up { color: var(--buy); } .down { color: var(--sell); }
+  .proj { font-size: 12.5px; color: var(--muted); }
+  .proj b { color: var(--gold); font-weight: 600; }
+  ul { margin: 8px 0 4px; padding-left: 18px; color: #B9C3DB; font-size: 13.5px; line-height: 1.5; }
+  li { margin-bottom: 3px; }
+  a { color: #8FB6FF; font-size: 13px; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .empty { color: var(--muted); text-align: center; padding: 40px 0; }
+  footer { color: #64708E; font-size: 12px; margin-top: 26px; line-height: 1.5; }
+  @media (max-width: 560px) { .mid { flex-direction: column; align-items: flex-start; } }
+</style>
+</head>
+<body>
+  <div class="holo"></div>
+  <h1>Slab &amp; Signal</h1>
+  <p class="sub" id="updated">Loading…</p>
+
+  <div class="toolbar">
+    <input id="q" placeholder="Search name or set…" />
+    <div class="chips" id="chips"></div>
+    <select id="sort">
+      <option value="upside">Sort: model upside</option>
+      <option value="priceAsc">Sort: price low → high</option>
+      <option value="priceDesc">Sort: price high → low</option>
+      <option value="chg30">Sort: 30d movers</option>
+    </select>
+  </div>
+
+  <main id="list"><div class="empty">Loading data…</div></main>
+
+  <footer>
+    Prices refresh daily from TCGplayer market data via TCGdex. Model output is a structured guess, not financial
+    advice — confirm against recent sold listings before buying. Momentum stats fill in as the tracker builds its own
+    price history day by day.
+  </footer>
+
+<script>
+const SIG = { BUY: "var(--buy)", SELL: "var(--sell)", HOLD: "var(--hold)", AVOID: "var(--avoid)" };
+let DATA = { cards: [] };
+let state = { q: "", filter: "ALL", sort: "upside" };
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function tcgUrl(c) {
+  return "https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=" +
+    encodeURIComponent(c.name + " " + c.set);
+}
+
+function spark(c) {
+  const pts = (c.history || []).map((h) => h[1]);
+  if (pts.length < 2) return '<span class="meta" style="font-style:italic">history builds daily</span>';
+  const all = pts.concat(c.proj || []);
+  const min = Math.min(...all) * 0.95, max = Math.max(...all) * 1.05;
+  const W = 220, H = 64, histW = 150;
+  const x = (i) => (i / (pts.length - 1)) * histW;
+  const y = (v) => H - ((v - min) / (max - min)) * (H - 10) - 5;
+  const line = pts.map((p, i) => x(i) + "," + y(p)).join(" ");
+  const lastY = y(pts[pts.length - 1]);
+  const mid = y((c.proj[0] + c.proj[1]) / 2);
+  return `<svg width="${W}" height="${H}" aria-hidden="true">
+    <polyline points="${line}" fill="none" stroke="#8FB6FF" stroke-width="2"/>
+    <line x1="${histW}" y1="${lastY}" x2="${W - 8}" y2="${mid}" stroke="#FFCB05" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <polygon points="${histW},${lastY} ${W - 8},${y(c.proj[1])} ${W - 8},${y(c.proj[0])}" fill="rgba(255,203,5,0.12)"/>
+  </svg>`;
+}
+
+function render() {
+  let list = DATA.cards.slice();
+  if (state.q) {
+    const t = state.q.toLowerCase();
+    list = list.filter((c) => (c.name + " " + c.set).toLowerCase().includes(t));
+  }
+  if (state.filter !== "ALL") list = list.filter((c) => c.signal === state.filter);
+  const upside = (c) => c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0;
+  if (state.sort === "upside") list.sort((a, b) => upside(b) - upside(a));
+  if (state.sort === "priceAsc") list.sort((a, b) => a.price - b.price);
+  if (state.sort === "priceDesc") list.sort((a, b) => b.price - a.price);
+  if (state.sort === "chg30") list.sort((a, b) => Math.abs(b.chg30 || 0) - Math.abs(a.chg30 || 0));
+
+  $("list").innerHTML = list.length ? list.map((c) => `
+    <article class="slab" style="--sig:${SIG[c.signal]}">
+      <div class="edge"></div>
+      <div class="body">
+        <div class="top">
+          <div><h3>${esc(c.name)}</h3><span class="meta">${esc(c.set)} · ${c.phase}</span></div>
+          <span class="sig">${c.signal}</span>
+        </div>
+        <div class="mid">
+          <div class="prices">
+            <div class="now">$${c.price.toFixed(2)}</div>
+            <div class="deltas">${[["30d", c.chg30], ["90d", c.chg90], ["180d", c.chg180]]
+              .filter(([, v]) => v !== null && v !== undefined)
+              .map(([l, v]) => `<span class="${v >= 0 ? "up" : "down"}">${l} ${v >= 0 ? "+" : ""}${Math.round(v * 100)}%</span>`)
+              .join("")}</div>
+            <div class="proj">12-mo model range: <b>$${c.proj[0].toFixed(2)}–$${c.proj[1].toFixed(2)}</b></div>
+          </div>
+          ${spark(c)}
+        </div>
+        <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
+        <a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View on TCGplayer ↗</a>
+      </div>
+    </article>`).join("") : '<div class="empty">Nothing matches that filter.</div>';
+
+  const counts = DATA.cards.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
+  $("chips").innerHTML = ["ALL", "BUY", "HOLD", "SELL", "AVOID"].map((s) =>
+    `<button class="chip${state.filter === s ? " active" : ""}" style="--c:${s === "ALL" ? "#8FB6FF" : SIG[s]}"
+      onclick="state.filter='${s}';render()">${s === "ALL" ? "All (" + DATA.cards.length + ")" : s + " (" + (counts[s] || 0) + ")"}</button>`
+  ).join("");
+}
+
+$("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+$("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+
+fetch("./data.json")
+  .then((r) => r.json())
+  .then((d) => {
+    DATA = d;
+    $("updated").textContent = d.updated
+      ? "Live TCGplayer market prices · last updated " + new Date(d.updated).toLocaleString()
+      : "No data yet — the first daily run will populate this page.";
+    render();
+  })
+  .catch(() => { $("updated").textContent = "Couldn't load data.json."; });
+</script>
+</body>
+</html>
