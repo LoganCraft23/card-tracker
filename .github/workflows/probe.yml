@@ -1,7 +1,9 @@
-name: Probe 151
+name: Sealed refresh
 on: { workflow_dispatch: {} }
+permissions:
+  contents: write
 jobs:
-  probe:
+  sealed:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -9,4 +11,10 @@ jobs:
         with: { node-version: 20 }
       - env:
           TCGAPI_KEY: ${{ secrets.TCGAPI_KEY }}
-        run: node scripts/probe151.js
+        run: node scripts/sealed.js
+      - run: |
+          git config user.name "foil-theory-bot"
+          git config user.email "actions@github.com"
+          git add history/sealed-prices.json docs/sealed.json
+          git diff --cached --quiet || git commit -m "Sealed product snapshot"
+          git push
