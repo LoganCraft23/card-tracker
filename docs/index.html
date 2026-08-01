@@ -3,74 +3,185 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Slab &amp; Signal — live card tracker</title>
+<title>Slab &amp; Signal — Pokémon card market tracker</title>
+<meta name="description" content="Daily TCGplayer market prices and buy/hold/sell signals for the top 100 chase Pokémon cards under $50." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%23fff'/%3E%3Cpath d='M1 12a11 11 0 0 1 22 0z' fill='%23E3350D'/%3E%3Crect x='1' y='10.8' width='22' height='2.4' fill='%23131A2E'/%3E%3Ccircle cx='12' cy='12' r='3.4' fill='%23fff' stroke='%23131A2E' stroke-width='1.6'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --ink: #0E1526; --slab: #17203A; --line: #263452;
-    --text: #E9EEF9; --muted: #8B96B3; --gold: #FFCB05;
-    --buy: #3ADF8C; --sell: #FF7A6B; --hold: #FFC94D; --avoid: #7C87A6;
+    --bg: #070C1B; --bg2: #0C1329; --surface: #111A33; --surface2: #16213F;
+    --line: #223055; --line2: #2E3F6B;
+    --text: #EDF1FB; --muted: #93A0C0; --faint: #5E6B8C;
+    --gold: #FFCB05; --gold-deep: #C7A008; --poke-red: #E3350D; --poke-blue: #2A75BB;
+    --link: #8FB6FF;
+    --buy: #3ADF8C; --sell: #FF7A6B; --hold: #FFC94D; --avoid: #8B96B3;
+    --holo: linear-gradient(90deg, #59A0FF, #B36BFF, #FF6BC1, #FFD36B);
+    --radius: 14px;
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
-    margin: 0; background: var(--ink); color: var(--text);
-    font-family: 'Space Grotesk', system-ui, sans-serif;
-    padding: 28px 16px 60px; max-width: 860px; margin-inline: auto;
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    line-height: 1.5;
   }
-  .holo { height: 5px; width: 120px; border-radius: 3px; margin-bottom: 14px;
-    background: linear-gradient(90deg,#59A0FF,#B36BFF,#FF6BC1,#FFD36B); }
-  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
-  .sub { color: var(--muted); margin: 0 0 16px; line-height: 1.45; }
-  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
-  input, select {
-    background: var(--slab); border: 1px solid var(--line); color: var(--text);
-    border-radius: 8px; padding: 8px 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px;
-  }
-  input { flex: 1; min-width: 160px; }
-  input:focus, select:focus { border-color: #8FB6FF; outline: none; }
-  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
-  .chip { --c: #8FB6FF; background: none; border: 1px solid var(--line); color: var(--muted);
-    border-radius: 999px; padding: 5px 12px; font: 700 12.5px 'Space Grotesk', sans-serif; cursor: pointer; }
-  .chip.active { border-color: var(--c); color: var(--c); }
-  .chip:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-  main { display: grid; gap: 14px; }
-  .slab { display: flex; background: var(--slab); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-  .edge { width: 6px; flex-shrink: 0; background: linear-gradient(180deg, var(--sig), #B36BFF66, var(--sig)); }
-  .art { width: 92px; align-self: center; flex-shrink: 0; margin: 14px 0 14px 14px;
-    border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.45); }
-  @media (max-width: 560px) { .art { width: 72px; } }
-  .body { padding: 16px 18px; flex: 1; min-width: 0; }
-  .top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
-  h3 { margin: 0; font-size: 17px; }
-  .meta { color: var(--muted); font-size: 12.5px; }
-  .sig { font: 600 13px 'JetBrains Mono', monospace; border: 1.5px solid var(--sig); color: var(--sig);
-    border-radius: 6px; padding: 3px 10px; letter-spacing: 1px; white-space: nowrap; }
-  .mid { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 12px 0 6px; flex-wrap: wrap; }
-  .prices { font-family: 'JetBrains Mono', monospace; }
-  .now { font-size: 24px; font-weight: 600; }
-  .deltas { display: flex; gap: 10px; font-size: 12px; margin: 4px 0; }
-  .up { color: var(--buy); } .down { color: var(--sell); }
-  .proj { font-size: 12.5px; color: var(--muted); }
-  .proj b { color: var(--gold); font-weight: 600; }
-  ul { margin: 8px 0 4px; padding-left: 18px; color: #B9C3DB; font-size: 13.5px; line-height: 1.5; }
-  li { margin-bottom: 3px; }
-  a { color: #8FB6FF; font-size: 13px; text-decoration: none; }
+  .wrap { max-width: 1180px; margin-inline: auto; padding-inline: 24px; }
+  a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .empty { color: var(--muted); text-align: center; padding: 40px 0; }
-  footer { color: #64708E; font-size: 12px; margin-top: 26px; line-height: 1.5; }
-  @media (max-width: 560px) { .mid { flex-direction: column; align-items: flex-start; } }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
+
+  /* ---------- nav ---------- */
+  .site {
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(7, 12, 27, 0.82); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 62px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; font-size: 17px; letter-spacing: -0.2px; }
+  .brand:hover { text-decoration: none; }
+  .ball { width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0; position: relative;
+    background: linear-gradient(180deg, var(--poke-red) 0 44%, #131A2E 44% 56%, #F4F6FB 56% 100%);
+    box-shadow: 0 0 0 1.5px #131A2E, 0 2px 8px rgba(227, 53, 13, 0.35); }
+  .ball::after { content: ""; position: absolute; inset: 0; margin: auto; width: 7px; height: 7px;
+    border-radius: 50%; background: #F4F6FB; border: 2px solid #131A2E; }
+  .navlinks { display: flex; gap: 26px; font-size: 14.5px; font-weight: 600; }
+  .navlinks a { color: var(--muted); }
+  .navlinks a:hover { color: var(--text); text-decoration: none; }
+  @media (max-width: 640px) { .navlinks a:not(.gh) { display: none; } }
+
+  /* ---------- hero ---------- */
+  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line);
+    background:
+      radial-gradient(900px 420px at 15% -10%, rgba(42, 117, 187, 0.22), transparent 65%),
+      radial-gradient(700px 380px at 90% 10%, rgba(255, 203, 5, 0.10), transparent 60%),
+      var(--bg2); }
+  .hero .wrap { padding-block: 72px 56px; position: relative; }
+  .kicker { display: inline-flex; align-items: center; gap: 8px; font: 700 12px "JetBrains Mono", monospace;
+    letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; margin: 0 0 14px; }
+  .kicker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--buy);
+    box-shadow: 0 0 10px var(--buy); animation: pulse 2.4s infinite; }
+  @keyframes pulse { 50% { opacity: 0.4; } }
+  h1 { font-size: clamp(34px, 5.2vw, 58px); line-height: 1.05; letter-spacing: -1.5px; margin: 0 0 18px; max-width: 13ch; }
+  .grad { background: linear-gradient(92deg, var(--gold) 20%, #FF9C41 60%, var(--poke-red)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lede { color: var(--muted); font-size: 17px; max-width: 56ch; margin: 0 0 34px; }
+  .lede b { color: var(--text); font-weight: 600; }
+  .pokeball-bg { position: absolute; right: -140px; top: -120px; width: 520px; height: 520px; opacity: 0.05; pointer-events: none; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; max-width: 760px; }
+  .stat { background: rgba(17, 26, 51, 0.75); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; }
+  .stat b { display: block; font: 700 26px "JetBrains Mono", monospace; color: var(--gold); letter-spacing: -0.5px; }
+  .stat span { font-size: 12.5px; color: var(--muted); }
+
+  /* ---------- toolbar ---------- */
+  .board { padding-block: 40px 80px; }
+  .boardHead { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 6px; }
+  h2 { font-size: 24px; letter-spacing: -0.5px; margin: 0; }
+  .updated { color: var(--faint); font-size: 13px; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 22px; }
+  input[type="search"], select {
+    background: var(--surface); border: 1px solid var(--line); color: var(--text);
+    border-radius: 10px; padding: 10px 14px; font: 500 13.5px "Space Grotesk", sans-serif;
+  }
+  input[type="search"] { flex: 1; min-width: 180px; }
+  input:focus, select:focus { border-color: var(--gold); outline: none; }
+  input::placeholder { color: var(--faint); }
+  .chips { display: flex; gap: 7px; flex-wrap: wrap; }
+  .chip { --c: var(--link); background: none; border: 1.5px solid var(--line); color: var(--muted);
+    border-radius: 999px; padding: 7px 15px; font: 700 12.5px "Space Grotesk", sans-serif; cursor: pointer;
+    transition: border-color .15s, color .15s; }
+  .chip:hover { border-color: var(--c); }
+  .chip.active { border-color: var(--c); color: var(--c); background: color-mix(in srgb, var(--c) 10%, transparent); }
+
+  /* ---------- card grid ---------- */
+  main.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
+  .card { position: relative; display: flex; flex-direction: column; gap: 12px;
+    background: linear-gradient(180deg, var(--surface2), var(--surface) 55%);
+    border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 16px;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+  .card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+    border-radius: var(--radius) var(--radius) 0 0; background: var(--sig); opacity: 0.9; }
+  .card:hover { transform: translateY(-4px); border-color: var(--line2);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45), 0 0 0 1px color-mix(in srgb, var(--sig) 35%, transparent); }
+  .cHead { display: flex; gap: 14px; }
+  .art { width: 96px; flex-shrink: 0; align-self: flex-start; border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); transition: transform .18s ease; }
+  .card:hover .art { transform: scale(1.04) rotate(-1deg); }
+  .cInfo { min-width: 0; flex: 1; }
+  .badges { display: flex; gap: 7px; align-items: center; margin-bottom: 7px; flex-wrap: wrap; }
+  .sig { font: 700 11.5px "JetBrains Mono", monospace; letter-spacing: 1.5px;
+    color: #0A1020; background: var(--sig); border-radius: 6px; padding: 3px 9px; }
+  .setTag { font-size: 11.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 2.5px 8px; white-space: nowrap; }
+  h3 { margin: 0 0 2px; font-size: 16.5px; line-height: 1.25; letter-spacing: -0.2px; }
+  .phase { color: var(--faint); font-size: 12px; text-transform: capitalize; margin-bottom: 8px; }
+  .price { font: 700 24px "JetBrains Mono", monospace; letter-spacing: -0.5px; }
+  .deltas { display: flex; gap: 10px; font: 600 11.5px "JetBrains Mono", monospace; margin-top: 3px; }
+  .up { color: var(--buy); } .down { color: var(--sell); }
+  .sparkBox { position: relative; }
+  .spark { width: 100%; height: 58px; display: block; }
+  .noHist { color: var(--faint); font-size: 12px; font-style: italic; padding: 8px 0; }
+  .range { font-size: 12.5px; color: var(--muted); }
+  .range b { color: var(--gold); font: 700 12.5px "JetBrains Mono", monospace; }
+  details.why { border-top: 1px solid var(--line); padding-top: 10px; margin-top: 2px; }
+  details.why summary { cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--muted); list-style: none; display: flex; align-items: center; gap: 6px; }
+  details.why summary::before { content: "▸"; transition: transform .15s; color: var(--gold); }
+  details[open].why summary::before { transform: rotate(90deg); }
+  details.why summary:hover { color: var(--text); }
+  details.why ul { margin: 8px 0 2px; padding-left: 18px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
+  details.why li { margin-bottom: 4px; }
+  .cFoot { margin-top: auto; padding-top: 4px; }
+  .cFoot a { font-size: 13px; font-weight: 600; }
+  .empty { color: var(--muted); text-align: center; padding: 60px 0; grid-column: 1 / -1; }
+
+  /* ---------- footer ---------- */
+  footer.site { position: static; background: var(--bg2); border-top: 1px solid var(--line); border-bottom: none; backdrop-filter: none; }
+  .holoStrip { height: 3px; background: var(--holo); opacity: 0.65; }
+  .footGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px; padding-block: 44px 30px; }
+  .footGrid h4 { margin: 0 0 10px; font-size: 13.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); }
+  .footGrid p, .footGrid li { color: var(--muted); font-size: 13.5px; }
+  .footGrid ul { margin: 0; padding-left: 18px; }
+  .footBrand { display: flex; align-items: center; gap: 9px; font-weight: 700; margin-bottom: 10px; }
+  .legal { border-top: 1px solid var(--line); padding-block: 18px 26px; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--faint); font-size: 12px; }
 </style>
 </head>
 <body>
-  <div class="holo"></div>
-  <h1>Slab &amp; Signal</h1>
-  <p class="sub" id="updated">Loading…</p>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="ball" aria-hidden="true"></span>Slab &amp; Signal</a>
+    <nav class="navlinks">
+      <a href="#board">Dashboard</a>
+      <a href="#method">How it works</a>
+      <a class="gh" href="https://github.com/LoganCraft23/card-tracker" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <svg class="pokeball-bg" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="11" fill="none" stroke="#8FB6FF" stroke-width="0.7"/>
+    <path d="M1 12h8.6M14.4 12H23" stroke="#8FB6FF" stroke-width="0.7"/>
+    <circle cx="12" cy="12" r="3" fill="none" stroke="#8FB6FF" stroke-width="0.7"/>
+  </svg>
+  <div class="wrap">
+    <p class="kicker"><span class="dot"></span>Live market tracker</p>
+    <h1>Catch the dip. <span class="grad">Ride the recovery.</span></h1>
+    <p class="lede">Every morning this site re-screens <b>every secret rare in the modern era</b>,
+      keeps the top 100 chase cards trading between <b>$5 and $50</b>, and grades each one
+      <b>BUY / HOLD / SELL</b> with a card-lifecycle model fed by daily TCGplayer market prices.</p>
+    <div class="stats" id="stats" aria-label="tracker stats"></div>
+  </div>
+</section>
+
+<section class="board wrap" id="board">
+  <div class="boardHead">
+    <h2>The Watchlist</h2>
+    <span class="updated" id="updated">Loading…</span>
+  </div>
 
   <div class="toolbar">
-    <input id="q" placeholder="Search name or set…" />
+    <input id="q" type="search" placeholder="Search card or set…" />
     <div class="chips" id="chips"></div>
-    <select id="sort">
+    <select id="sort" aria-label="Sort cards">
       <option value="upside">Sort: model upside</option>
       <option value="priceAsc">Sort: price low → high</option>
       <option value="priceDesc">Sort: price high → low</option>
@@ -78,13 +189,40 @@
     </select>
   </div>
 
-  <main id="list"><div class="empty">Loading data…</div></main>
+  <main class="grid" id="list"><div class="empty">Loading data…</div></main>
+</section>
 
-  <footer>
-    Prices refresh daily from TCGplayer market data via TCGdex. Model output is a structured guess, not financial
-    advice — confirm against recent sold listings before buying. Momentum stats fill in as the tracker builds its own
-    price history day by day.
-  </footer>
+<footer class="site">
+  <div class="holoStrip"></div>
+  <div class="wrap footGrid">
+    <div>
+      <div class="footBrand"><span class="ball" aria-hidden="true"></span>Slab &amp; Signal</div>
+      <p>A self-updating tracker for collectible Pokémon TCG singles. Prices refresh daily
+        from TCGplayer market data via the free <a href="https://tcgdex.dev" target="_blank" rel="noreferrer">TCGdex API</a>,
+        and the whole thing runs for $0/month on GitHub Actions&nbsp;+&nbsp;Pages.</p>
+    </div>
+    <div id="method">
+      <h4>How it works</h4>
+      <ul>
+        <li><b>Screen</b> — every secret rare in every modern set is priced daily; chase-art cards between $5 and $50 make the cut, ranked by model upside.</li>
+        <li><b>Model</b> — each set moves through hype-fade → supply-trough → recovery → appreciation; rarity tier and character popularity adjust the curve.</li>
+        <li><b>Signal</b> — Discord pings fire only when a card flips to BUY or SELL, so alerts stay actionable.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Fine print</h4>
+      <p>Model output is a structured guess, not financial advice — always check recent sold
+        listings before spending real money. Momentum stats fill in as the tracker builds its
+        own price history day by day.</p>
+      <p>Fan project. Not affiliated with, endorsed by, or sponsored by Nintendo, Game Freak,
+        Creatures Inc., or The Pokémon Company. Card images belong to their respective owners.</p>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>Built with a card-lifecycle model &amp; GitHub Actions.</span>
+    <span><a href="https://github.com/LoganCraft23/card-tracker" target="_blank" rel="noreferrer">Source on GitHub ↗</a></span>
+  </div>
+</footer>
 
 <script>
 const SIG = { BUY: "var(--buy)", SELL: "var(--sell)", HOLD: "var(--hold)", AVOID: "var(--avoid)" };
@@ -92,29 +230,30 @@ let DATA = { cards: [] };
 let state = { q: "", filter: "ALL", sort: "upside" };
 
 const $ = (id) => document.getElementById(id);
-const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 function tcgUrl(c) {
   return "https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=" +
-    encodeURIComponent(c.name + " " + c.set);
+    encodeURIComponent(c.name.replace(/\s(IR|SIR|Shiny|Gold|UR)(\s#\d+)?$/, "") + " " + c.set);
 }
 
 function spark(c) {
   const pts = (c.history || []).map((h) => h[1]);
-  if (pts.length < 2) return '<span class="meta" style="font-style:italic">history builds daily</span>';
+  if (pts.length < 2) return '<div class="noHist">price history builds daily — sparkline soon</div>';
   const all = pts.concat(c.proj || []);
-  const min = Math.min(...all) * 0.95, max = Math.max(...all) * 1.05;
-  const W = 220, H = 64, histW = 150;
+  const min = Math.min(...all) * 0.95, max = Math.max(...all) * 1.05 || 1;
+  const W = 280, H = 58, histW = 195;
   const x = (i) => (i / (pts.length - 1)) * histW;
-  const y = (v) => H - ((v - min) / (max - min)) * (H - 10) - 5;
-  const line = pts.map((p, i) => x(i) + "," + y(p)).join(" ");
+  const y = (v) => H - ((v - min) / (max - min)) * (H - 12) - 6;
+  const line = pts.map((p, i) => x(i).toFixed(1) + "," + y(p).toFixed(1)).join(" ");
   const lastY = y(pts[pts.length - 1]);
   const mid = y((c.proj[0] + c.proj[1]) / 2);
-  return `<svg width="${W}" height="${H}" aria-hidden="true">
-    <polyline points="${line}" fill="none" stroke="#8FB6FF" stroke-width="2"/>
-    <line x1="${histW}" y1="${lastY}" x2="${W - 8}" y2="${mid}" stroke="#FFCB05" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <polygon points="${histW},${lastY} ${W - 8},${y(c.proj[1])} ${W - 8},${y(c.proj[0])}" fill="rgba(255,203,5,0.12)"/>
-  </svg>`;
+  return `<div class="sparkBox"><svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+    <polygon points="0,${H} ${line} ${x(pts.length - 1).toFixed(1)},${H}" fill="rgba(143,182,255,0.09)"/>
+    <polyline points="${line}" fill="none" stroke="#8FB6FF" stroke-width="2" vector-effect="non-scaling-stroke"/>
+    <line x1="${histW}" y1="${lastY}" x2="${W - 6}" y2="${mid}" stroke="#FFCB05" stroke-width="1.5" stroke-dasharray="4 3" vector-effect="non-scaling-stroke"/>
+    <polygon points="${histW},${lastY} ${W - 6},${y(c.proj[1])} ${W - 6},${y(c.proj[0])}" fill="rgba(255,203,5,0.13)"/>
+  </svg></div>`;
 }
 
 function render() {
@@ -131,35 +270,48 @@ function render() {
   if (state.sort === "chg30") list.sort((a, b) => Math.abs(b.chg30 || 0) - Math.abs(a.chg30 || 0));
 
   $("list").innerHTML = list.length ? list.map((c) => `
-    <article class="slab" style="--sig:${SIG[c.signal]}">
-      <div class="edge"></div>
-      ${c.image ? `<img class="art" src="${esc(c.image)}/low.webp" alt="${esc(c.name)} card art" loading="lazy" onerror="this.remove()">` : ""}
-      <div class="body">
-        <div class="top">
-          <div><h3>${esc(c.name)}</h3><span class="meta">${esc(c.set)} · ${c.phase}</span></div>
-          <span class="sig">${c.signal}</span>
+    <article class="card" style="--sig:${SIG[c.signal]}">
+      <div class="cHead">
+        ${c.image ? `<img class="art" src="${esc(c.image)}/low.webp" alt="${esc(c.name)} card art" loading="lazy" onerror="this.remove()">` : ""}
+        <div class="cInfo">
+          <div class="badges"><span class="sig">${c.signal}</span><span class="setTag">${esc(c.set)}</span></div>
+          <h3>${esc(c.name)}</h3>
+          <div class="phase">${c.phase.replace("-", " ")} phase</div>
+          <div class="price">$${c.price.toFixed(2)}</div>
+          <div class="deltas">${[["30d", c.chg30], ["90d", c.chg90], ["180d", c.chg180]]
+            .filter(([, v]) => v !== null && v !== undefined)
+            .map(([l, v]) => `<span class="${v >= 0 ? "up" : "down"}">${l} ${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span>`)
+            .join("")}</div>
         </div>
-        <div class="mid">
-          <div class="prices">
-            <div class="now">$${c.price.toFixed(2)}</div>
-            <div class="deltas">${[["30d", c.chg30], ["90d", c.chg90], ["180d", c.chg180]]
-              .filter(([, v]) => v !== null && v !== undefined)
-              .map(([l, v]) => `<span class="${v >= 0 ? "up" : "down"}">${l} ${v >= 0 ? "+" : ""}${Math.round(v * 100)}%</span>`)
-              .join("")}</div>
-            <div class="proj">12-mo model range: <b>$${c.proj[0].toFixed(2)}–$${c.proj[1].toFixed(2)}</b></div>
-          </div>
-          ${spark(c)}
-        </div>
-        <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
-        <a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View on TCGplayer ↗</a>
       </div>
-    </article>`).join("") : '<div class="empty">Nothing matches that filter.</div>';
+      ${spark(c)}
+      <div class="range">12-mo model range <b>$${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</b></div>
+      <details class="why"><summary>Why ${c.signal}?</summary>
+        <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
+      </details>
+      <div class="cFoot"><a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View on TCGplayer ↗</a></div>
+    </article>`).join("") : '<div class="empty">Nothing matches that filter — release the Snorlax and broaden the search.</div>';
 
   const counts = DATA.cards.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
   $("chips").innerHTML = ["ALL", "BUY", "HOLD", "SELL", "AVOID"].map((s) =>
-    `<button class="chip${state.filter === s ? " active" : ""}" style="--c:${s === "ALL" ? "#8FB6FF" : SIG[s]}"
-      onclick="state.filter='${s}';render()">${s === "ALL" ? "All (" + DATA.cards.length + ")" : s + " (" + (counts[s] || 0) + ")"}</button>`
+    `<button class="chip${state.filter === s ? " active" : ""}" style="--c:${s === "ALL" ? "var(--link)" : SIG[s]}"
+      onclick="state.filter='${s}';render()">${s === "ALL" ? "All " + DATA.cards.length : s + " " + (counts[s] || 0)}</button>`
   ).join("");
+}
+
+function renderStats() {
+  const cards = DATA.cards;
+  if (!cards.length) return;
+  const buys = cards.filter((c) => c.signal === "BUY").length;
+  const prices = cards.map((c) => c.price).sort((a, b) => a - b);
+  const median = prices[Math.floor(prices.length / 2)] || 0;
+  const updated = DATA.updated ? new Date(DATA.updated).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "—";
+  $("stats").innerHTML = [
+    [cards.length, "cards tracked"],
+    [buys, "BUY signals today"],
+    ["$" + median.toFixed(0), "median price"],
+    [updated, "last refresh · daily 9AM ET"],
+  ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
 }
 
 $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
@@ -170,8 +322,9 @@ fetch("./data.json")
   .then((d) => {
     DATA = d;
     $("updated").textContent = d.updated
-      ? "Live TCGplayer market prices · last updated " + new Date(d.updated).toLocaleString()
+      ? "Live TCGplayer market prices · updated " + new Date(d.updated).toLocaleString()
       : "No data yet — the first daily run will populate this page.";
+    renderStats();
     render();
   })
   .catch(() => { $("updated").textContent = "Couldn't load data.json."; });
