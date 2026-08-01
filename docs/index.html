@@ -41,6 +41,12 @@
      pattern repeats forever without the element ever needing to be tall. */
   .bgfx { position: fixed; inset: -10% -10% -10% -10%; z-index: -2; pointer-events: none; overflow: hidden; }
   .bgfx .layer { position: absolute; inset: 0; will-change: transform; }
+  /* The route map is generated on a canvas at load (see buildOverworld) and
+     tiled here. It sits under a scrim heavy enough to keep body text well
+     above AA contrast — the map should read as texture, not compete. */
+  .map { opacity: .6; image-rendering: pixelated; }
+  .scrim { position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(7,12,27,.80), rgba(7,12,27,.74) 40%, rgba(7,12,27,.80)); }
   .bgfx .aurora {
     position: absolute; inset: 0;
     background:
@@ -48,8 +54,6 @@
       radial-gradient(760px 460px at 88% 22%, rgba(255,203,5,.09), transparent 60%),
       radial-gradient(680px 520px at 60% 85%, rgba(179,107,255,.10), transparent 62%);
   }
-  .l1 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='380'%3E%3Cg fill='none' stroke='%238FB6FF' stroke-width='1.15' opacity='.42'%3E%3Ccircle cx='64' cy='72' r='34'/%3E%3Cpath d='M30 72h68'/%3E%3Ccircle cx='64' cy='72' r='10'/%3E%3Ccircle cx='268' cy='196' r='25'/%3E%3Cpath d='M243 196h50'/%3E%3Ccircle cx='268' cy='196' r='7.5'/%3E%3Ccircle cx='150' cy='312' r='19'/%3E%3Cpath d='M131 312h38'/%3E%3Ccircle cx='150' cy='312' r='5.6'/%3E%3C/g%3E%3C/svg%3E"); }
-  .l2 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='%23B36BFF' opacity='.30'%3E%3Cpath d='M40 18l3.2 8.8L52 30l-8.8 3.2L40 42l-3.2-8.8L28 30l8.8-3.2z'/%3E%3Cpath d='M186 128l2.4 6.6L195 137l-6.6 2.4L186 146l-2.4-6.6L177 137l6.6-2.4z'/%3E%3C/g%3E%3Cg fill='%2359A0FF' opacity='.26'%3E%3Cpath d='M112 196l2.6 7.2L122 206l-7.4 2.6L112 216l-2.6-7.4L102 206l7.4-2.6z'/%3E%3Ccircle cx='210' cy='58' r='2.4'/%3E%3Ccircle cx='30' cy='150' r='2'/%3E%3C/g%3E%3C/svg%3E"); }
   .l3 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cg fill='%23FFD36B' opacity='.24'%3E%3Ccircle cx='24' cy='36' r='1.5'/%3E%3Ccircle cx='120' cy='18' r='1.2'/%3E%3Ccircle cx='84' cy='108' r='1.6'/%3E%3Ccircle cx='142' cy='132' r='1.2'/%3E%3C/g%3E%3C/svg%3E"); }
   @media (prefers-reduced-motion: reduce) { .bgfx .layer { transform: none !important; } }
 
@@ -197,9 +201,9 @@
 </svg>
 
 <div class="bgfx" aria-hidden="true">
+  <div class="layer map" id="mapLayer" data-speed="0.09" data-tile="640"></div>
+  <div class="scrim"></div>
   <div class="aurora"></div>
-  <div class="layer l1" data-speed="0.08" data-tile="380"></div>
-  <div class="layer l2" data-speed="0.17" data-tile="240"></div>
   <div class="layer l3" data-speed="0.30" data-tile="160"></div>
 </div>
 
@@ -286,6 +290,118 @@ let state = { q: "", filter: "ALL", sort: "upside" };
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// --- the route map -------------------------------------------------------
+// An original top-down overworld drawn from scratch: grass, tall-grass
+// patches, tree clusters, a pond and two winding dirt paths. Nothing here is
+// sampled from anyone's tileset — it's all primitives on a canvas.
+//
+// Drawn at 160×160 and upscaled 4× with smoothing off, which is what gives
+// the chunky pixel-art edges. Everything is drawn nine times at ±one tile so
+// features that cross an edge reappear on the opposite side, and the paths use
+// sine waves with whole-number periods, so the tile repeats seamlessly in both
+// directions no matter how far you scroll.
+function buildOverworld() {
+  const IN = 160, SCALE = 4, S = IN * SCALE;
+  const src = document.createElement("canvas");
+  src.width = src.height = IN;
+  const g = src.getContext("2d");
+
+  // Fixed seed: the map is the same on every visit rather than reshuffling.
+  let seed = 20260801;
+  const rnd = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+  const ri = (a, b) => a + Math.floor(rnd() * (b - a + 1));
+
+  const C = {
+    grass: "#4E9E57", grassAlt: "#57AB5F", grassDark: "#3F8A4B", tall: "#357A42",
+    path: "#D8C08C", pathEdge: "#BCA070",
+    water: "#3E8FB8", waterLt: "#5CB0D4", waterEdge: "#2C6E92",
+    tree: "#2F6B3C", treeLt: "#3E8A4C", trunk: "#6B4A2E",
+    flower: ["#F2A8C4", "#F7E27A", "#F4F1F7"],
+  };
+
+  const px = (x, y, w, h, col) => { g.fillStyle = col; g.fillRect(Math.round(x), Math.round(y), w, h); };
+  const ell = (cx, cy, rx, ry, col) => {
+    g.fillStyle = col; g.beginPath(); g.ellipse(cx, cy, rx, ry, 0, 0, Math.PI * 2); g.fill();
+  };
+  // Repeat a draw across the 8 neighbouring tile positions so nothing clips.
+  const wrap = (fn) => {
+    for (let dx = -IN; dx <= IN; dx += IN) for (let dy = -IN; dy <= IN; dy += IN) {
+      g.save(); g.translate(dx, dy); fn(); g.restore();
+    }
+  };
+
+  // grass base with a subtle checker and speckle
+  px(0, 0, IN, IN, C.grass);
+  for (let y = 0; y < IN; y += 2) for (let x = 0; x < IN; x += 2) {
+    if (((x + y) / 2) % 2 === 0) px(x, y, 2, 2, C.grassAlt);
+  }
+  for (let i = 0; i < 700; i++) px(ri(0, IN - 1), ri(0, IN - 1), 1, 1, rnd() < 0.5 ? C.grassDark : C.grassAlt);
+
+  // tall-grass patches
+  for (let i = 0; i < 13; i++) {
+    const x = ri(0, IN), y = ri(0, IN), w = ri(10, 24), h = ri(6, 14);
+    wrap(() => px(x, y, w, h, C.tall));
+  }
+
+  // pond
+  const pxc = ri(24, IN - 24), pyc = ri(24, IN - 24), pw = ri(15, 20), ph = ri(10, 14);
+  wrap(() => {
+    ell(pxc, pyc, pw, ph, C.waterEdge);
+    ell(pxc, pyc, pw - 2, ph - 2, C.water);
+    ell(pxc - pw / 3, pyc - ph / 3, pw / 4, ph / 5, C.waterLt);
+  });
+
+  // dirt paths — sin periods are whole cycles across the tile, so they line up
+  // edge to edge. One runs vertically, one horizontally, crossing like a route.
+  for (let y = 0; y < IN; y++) {
+    const cx = IN * 0.5 + Math.sin((y / IN) * Math.PI * 2) * IN * 0.2 + Math.sin((y / IN) * Math.PI * 4) * IN * 0.05;
+    px(cx - 8, y, 16, 1, C.pathEdge);
+    px(cx - 6.5, y, 13, 1, C.path);
+  }
+  for (let x = 0; x < IN; x++) {
+    const cy = IN * 0.74 + Math.sin((x / IN) * Math.PI * 2) * IN * 0.045;
+    px(x, cy - 6, 1, 12, C.pathEdge);
+    px(x, cy - 4.5, 1, 9, C.path);
+  }
+
+  // tree clusters, thickest around the edges like a route hemmed in by woods
+  const tree = (x, y) => {
+    px(x + 3, y + 8, 3, 4, C.trunk);
+    ell(x + 4.5, y + 5.5, 5, 5.5, C.tree);
+    ell(x + 3, y + 4, 2.6, 2.8, C.treeLt);
+  };
+  for (let c = 0; c < 13; c++) {
+    const cx = ri(0, IN), cy = ri(0, IN), n = ri(3, 7);
+    for (let t = 0; t < n; t++) {
+      const x = cx + ri(-14, 14), y = cy + ri(-12, 12);
+      wrap(() => tree(x, y));
+    }
+  }
+
+  // flowers
+  for (let i = 0; i < 150; i++) {
+    const x = ri(0, IN), y = ri(0, IN), col = C.flower[ri(0, 2)];
+    wrap(() => px(x, y, 1, 1, col));
+  }
+
+  const out = document.createElement("canvas");
+  out.width = out.height = S;
+  const o = out.getContext("2d");
+  o.imageSmoothingEnabled = false;
+  o.drawImage(src, 0, 0, S, S);
+  return { url: out.toDataURL("image/png"), size: S };
+}
+
+try {
+  const map = buildOverworld();
+  const el = $("mapLayer");
+  el.style.backgroundImage = `url(${map.url})`;
+  el.style.backgroundSize = `${map.size}px ${map.size}px`;
+} catch (e) {
+  // No map is fine — the aurora and scrim still render a finished-looking page.
+  console.warn("overworld generation skipped:", e.message);
+}
 
 // --- parallax: translate each tiled layer by scroll × speed, wrapped modulo
 // its tile height so the pattern never runs out and the offset stays small.
