@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T14:32:43.989Z",
+  "updated": "2026-08-01T20:13:29.381Z",
   "eurUsd": 1.1485,
   "cards": [
     {
@@ -10,6 +10,7 @@
       "id": "sv04-251",
       "image": "https://assets.tcgdex.net/en/sv/sv04/251",
       "productId": 523932,
+      "band": "chase",
       "phase": "recovery",
       "price": 42.96,
       "chg30": null,
@@ -44,6 +45,7 @@
       "id": "sv07-151",
       "image": "https://assets.tcgdex.net/en/sv/sv07/151",
       "productId": 567434,
+      "band": "chase",
       "phase": "recovery",
       "price": 15.28,
       "chg30": null,
@@ -78,6 +80,7 @@
       "id": "sv05-178",
       "image": "https://assets.tcgdex.net/en/sv/sv05/178",
       "productId": 542899,
+      "band": "chase",
       "phase": "recovery",
       "price": 41.09,
       "chg30": null,
@@ -112,6 +115,7 @@
       "id": "sv06.5-069",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/069",
       "productId": 560380,
+      "band": "chase",
       "phase": "recovery",
       "price": 47.47,
       "chg30": null,
@@ -146,6 +150,7 @@
       "id": "sv04-245",
       "image": "https://assets.tcgdex.net/en/sv/sv04/245",
       "productId": 523926,
+      "band": "chase",
       "phase": "recovery",
       "price": 40,
       "chg30": null,
@@ -179,6 +184,7 @@
       "id": "sv04.5-148",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/148",
       "productId": 534631,
+      "band": "chase",
       "phase": "recovery",
       "price": 16,
       "chg30": null,
@@ -213,6 +219,7 @@
       "id": "sv04.5-174",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/174",
       "productId": 534753,
+      "band": "chase",
       "phase": "recovery",
       "price": 33.84,
       "chg30": null,
@@ -246,6 +253,7 @@
       "id": "sv04-214",
       "image": "https://assets.tcgdex.net/en/sv/sv04/214",
       "productId": 523895,
+      "band": "chase",
       "phase": "recovery",
       "price": 16.49,
       "chg30": null,
@@ -280,6 +288,7 @@
       "id": "sv04.5-110",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/110",
       "productId": 534484,
+      "band": "chase",
       "phase": "recovery",
       "price": 19.99,
       "chg30": null,
@@ -313,6 +322,7 @@
       "id": "sv04.5-116",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/116",
       "productId": 534504,
+      "band": "chase",
       "phase": "recovery",
       "price": 22.6,
       "chg30": null,
@@ -350,6 +360,7 @@
       "id": "sv04-249",
       "image": "https://assets.tcgdex.net/en/sv/sv04/249",
       "productId": 523930,
+      "band": "chase",
       "phase": "recovery",
       "price": 24,
       "chg30": null,
@@ -383,6 +394,7 @@
       "id": "sv06-215",
       "image": "https://assets.tcgdex.net/en/sv/sv06/215",
       "productId": 550259,
+      "band": "chase",
       "phase": "recovery",
       "price": 16.5,
       "chg30": null,
@@ -416,6 +428,7 @@
       "id": "sv06-211",
       "image": "https://assets.tcgdex.net/en/sv/sv06/211",
       "productId": 550255,
+      "band": "chase",
       "phase": "recovery",
       "price": 25,
       "chg30": null,
@@ -449,6 +462,7 @@
       "id": "sv06-213",
       "image": "https://assets.tcgdex.net/en/sv/sv06/213",
       "productId": 550257,
+      "band": "chase",
       "phase": "recovery",
       "price": 18.11,
       "chg30": null,
@@ -482,6 +496,7 @@
       "id": "sv04.5-173",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/173",
       "productId": 534749,
+      "band": "chase",
       "phase": "recovery",
       "price": 15.71,
       "chg30": null,
@@ -515,6 +530,7 @@
       "id": "sv07-170",
       "image": "https://assets.tcgdex.net/en/sv/sv07/170",
       "productId": 567478,
+      "band": "chase",
       "phase": "recovery",
       "price": 44.99,
       "chg30": null,
@@ -548,6 +564,7 @@
       "id": "sv06.5-075",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/075",
       "productId": 560386,
+      "band": "chase",
       "phase": "recovery",
       "price": 30.41,
       "chg30": null,
@@ -581,6 +598,7 @@
       "id": "sv04.5-154",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/154",
       "productId": 534659,
+      "band": "chase",
       "phase": "recovery",
       "price": 8,
       "chg30": null,
@@ -614,6 +632,7 @@
       "id": "sv04.5-157",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/157",
       "productId": 534671,
+      "band": "chase",
       "phase": "recovery",
       "price": 5.99,
       "chg30": null,
@@ -651,6 +670,7 @@
       "id": "sv04.5-112",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/112",
       "productId": 534493,
+      "band": "chase",
       "phase": "recovery",
       "price": 16.84,
       "chg30": null,
@@ -684,6 +704,7 @@
       "id": "sv04.5-216",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/216",
       "productId": 535527,
+      "band": "chase",
       "phase": "recovery",
       "price": 40,
       "chg30": null,
@@ -720,6 +741,7 @@
       "id": "sv03-199",
       "image": "https://assets.tcgdex.net/en/sv/sv03/199",
       "productId": 509945,
+      "band": "chase",
       "phase": "appreciation",
       "price": 43.22,
       "chg30": null,
@@ -753,6 +775,7 @@
       "id": "sv04.5-153",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/153",
       "productId": 534650,
+      "band": "chase",
       "phase": "recovery",
       "price": 11.95,
       "chg30": null,
@@ -786,6 +809,7 @@
       "id": "sv04.5-215",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/215",
       "productId": 535524,
+      "band": "chase",
       "phase": "recovery",
       "price": 7.6,
       "chg30": null,
@@ -819,6 +843,7 @@
       "id": "sv05-167",
       "image": "https://assets.tcgdex.net/en/sv/sv05/167",
       "productId": 542888,
+      "band": "chase",
       "phase": "recovery",
       "price": 44.27,
       "chg30": null,
@@ -855,6 +880,7 @@
       "id": "sv06-181",
       "image": "https://assets.tcgdex.net/en/sv/sv06/181",
       "productId": 550225,
+      "band": "chase",
       "phase": "recovery",
       "price": 32.31,
       "chg30": null,
@@ -891,6 +917,7 @@
       "id": "sv04-259",
       "image": "https://assets.tcgdex.net/en/sv/sv04/259",
       "productId": 523940,
+      "band": "chase",
       "phase": "recovery",
       "price": 9.24,
       "chg30": null,
@@ -924,6 +951,7 @@
       "id": "sv04.5-118",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/118",
       "productId": 534508,
+      "band": "chase",
       "phase": "recovery",
       "price": 7.14,
       "chg30": null,
@@ -957,6 +985,7 @@
       "id": "sv04-254",
       "image": "https://assets.tcgdex.net/en/sv/sv04/254",
       "productId": 523935,
+      "band": "chase",
       "phase": "recovery",
       "price": 9.25,
       "chg30": null,
@@ -990,6 +1019,7 @@
       "id": "sv04.5-158",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/158",
       "productId": 534680,
+      "band": "chase",
       "phase": "recovery",
       "price": 5.94,
       "chg30": null,
@@ -1023,6 +1053,7 @@
       "id": "sv06-168",
       "image": "https://assets.tcgdex.net/en/sv/sv06/168",
       "productId": 550212,
+      "band": "chase",
       "phase": "recovery",
       "price": 17.12,
       "chg30": null,
@@ -1056,6 +1087,7 @@
       "id": "sv07-172",
       "image": "https://assets.tcgdex.net/en/sv/sv07/172",
       "productId": 567484,
+      "band": "chase",
       "phase": "recovery",
       "price": 19.83,
       "chg30": null,
@@ -1089,6 +1121,7 @@
       "id": "sv06.5-091",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/091",
       "productId": 560402,
+      "band": "chase",
       "phase": "recovery",
       "price": 21.62,
       "chg30": null,
@@ -1122,6 +1155,7 @@
       "id": "sv04-247",
       "image": "https://assets.tcgdex.net/en/sv/sv04/247",
       "productId": 523928,
+      "band": "chase",
       "phase": "recovery",
       "price": 20.99,
       "chg30": null,
@@ -1155,6 +1189,7 @@
       "id": "sv04-255",
       "image": "https://assets.tcgdex.net/en/sv/sv04/255",
       "productId": 523936,
+      "band": "chase",
       "phase": "recovery",
       "price": 17.31,
       "chg30": null,
@@ -1188,6 +1223,7 @@
       "id": "sv05-203",
       "image": "https://assets.tcgdex.net/en/sv/sv05/203",
       "productId": 542924,
+      "band": "chase",
       "phase": "recovery",
       "price": 39.23,
       "chg30": null,
@@ -1221,6 +1257,7 @@
       "id": "sv04.5-237",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/237",
       "productId": 535101,
+      "band": "chase",
       "phase": "recovery",
       "price": 31.18,
       "chg30": null,
@@ -1254,6 +1291,7 @@
       "id": "sv04-246",
       "image": "https://assets.tcgdex.net/en/sv/sv04/246",
       "productId": 523927,
+      "band": "chase",
       "phase": "recovery",
       "price": 27.97,
       "chg30": null,
@@ -1287,6 +1325,7 @@
       "id": "sv06-218",
       "image": "https://assets.tcgdex.net/en/sv/sv06/218",
       "productId": 550262,
+      "band": "chase",
       "phase": "recovery",
       "price": 31.84,
       "chg30": null,
@@ -1320,6 +1359,7 @@
       "id": "sv04-248",
       "image": "https://assets.tcgdex.net/en/sv/sv04/248",
       "productId": 523929,
+      "band": "chase",
       "phase": "recovery",
       "price": 13.21,
       "chg30": null,
@@ -1353,6 +1393,7 @@
       "id": "sv04-197",
       "image": "https://assets.tcgdex.net/en/sv/sv04/197",
       "productId": 523878,
+      "band": "chase",
       "phase": "recovery",
       "price": 9,
       "chg30": null,
@@ -1386,6 +1427,7 @@
       "id": "sv04-256",
       "image": "https://assets.tcgdex.net/en/sv/sv04/256",
       "productId": 523937,
+      "band": "chase",
       "phase": "recovery",
       "price": 9,
       "chg30": null,
@@ -1419,6 +1461,7 @@
       "id": "sv04.5-137",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/137",
       "productId": 534533,
+      "band": "chase",
       "phase": "recovery",
       "price": 11.5,
       "chg30": null,
@@ -1452,6 +1495,7 @@
       "id": "sv04.5-196",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/196",
       "productId": 535163,
+      "band": "chase",
       "phase": "recovery",
       "price": 8,
       "chg30": null,
@@ -1485,6 +1529,7 @@
       "id": "sv05-181",
       "image": "https://assets.tcgdex.net/en/sv/sv05/181",
       "productId": 542902,
+      "band": "chase",
       "phase": "recovery",
       "price": 12.29,
       "chg30": null,
@@ -1518,6 +1563,7 @@
       "id": "sv05-212",
       "image": "https://assets.tcgdex.net/en/sv/sv05/212",
       "productId": 542933,
+      "band": "chase",
       "phase": "recovery",
       "price": 19.08,
       "chg30": null,
@@ -1551,6 +1597,7 @@
       "id": "sv04-207",
       "image": "https://assets.tcgdex.net/en/sv/sv04/207",
       "productId": 523888,
+      "band": "chase",
       "phase": "recovery",
       "price": 19.37,
       "chg30": null,
@@ -1584,6 +1631,7 @@
       "id": "sv05-176",
       "image": "https://assets.tcgdex.net/en/sv/sv05/176",
       "productId": 542897,
+      "band": "chase",
       "phase": "recovery",
       "price": 34.32,
       "chg30": null,
@@ -1617,6 +1665,7 @@
       "id": "sv05-165",
       "image": "https://assets.tcgdex.net/en/sv/sv05/165",
       "productId": 542886,
+      "band": "chase",
       "phase": "recovery",
       "price": 47.64,
       "chg30": null,
@@ -1650,6 +1699,7 @@
       "id": "sv04.5-095",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/095",
       "productId": 534463,
+      "band": "chase",
       "phase": "recovery",
       "price": 11.24,
       "chg30": null,
@@ -1683,6 +1733,7 @@
       "id": "sv05-209",
       "image": "https://assets.tcgdex.net/en/sv/sv05/209",
       "productId": 542930,
+      "band": "chase",
       "phase": "recovery",
       "price": 30.3,
       "chg30": null,
@@ -1716,6 +1767,7 @@
       "id": "sv04-188",
       "image": "https://assets.tcgdex.net/en/sv/sv04/188",
       "productId": 523869,
+      "band": "chase",
       "phase": "recovery",
       "price": 10.82,
       "chg30": null,
@@ -1749,6 +1801,7 @@
       "id": "sv06.5-093",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/093",
       "productId": 560404,
+      "band": "chase",
       "phase": "recovery",
       "price": 26.75,
       "chg30": null,
@@ -1782,6 +1835,7 @@
       "id": "sv06.5-076",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/076",
       "productId": 560387,
+      "band": "chase",
       "phase": "recovery",
       "price": 16.14,
       "chg30": null,
@@ -1815,6 +1869,7 @@
       "id": "sv04.5-238",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/238",
       "productId": 535104,
+      "band": "chase",
       "phase": "recovery",
       "price": 7.82,
       "chg30": null,
@@ -1848,6 +1903,7 @@
       "id": "sv06.5-090",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/090",
       "productId": 560401,
+      "band": "chase",
       "phase": "recovery",
       "price": 23.75,
       "chg30": null,
@@ -1881,6 +1937,7 @@
       "id": "sv10.5b-088",
       "image": "https://assets.tcgdex.net/en/sv/sv10.5b/088",
       "productId": 642537,
+      "band": "chase",
       "phase": "supply-trough",
       "price": 23.15,
       "chg30": null,
@@ -1915,6 +1972,7 @@
       "id": "sv04.5-175",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/175",
       "productId": 534755,
+      "band": "chase",
       "phase": "recovery",
       "price": 7.99,
       "chg30": null,
@@ -1948,6 +2006,7 @@
       "id": "sv05-173",
       "image": "https://assets.tcgdex.net/en/sv/sv05/173",
       "productId": 542894,
+      "band": "chase",
       "phase": "recovery",
       "price": 12.99,
       "chg30": null,
@@ -1981,6 +2040,7 @@
       "id": "sv07-154",
       "image": "https://assets.tcgdex.net/en/sv/sv07/154",
       "productId": 567439,
+      "band": "chase",
       "phase": "recovery",
       "price": 14.99,
       "chg30": null,
@@ -2014,6 +2074,7 @@
       "id": "sv05-172",
       "image": "https://assets.tcgdex.net/en/sv/sv05/172",
       "productId": 542893,
+      "band": "chase",
       "phase": "recovery",
       "price": 9.6,
       "chg30": null,
@@ -2047,6 +2108,7 @@
       "id": "sv04-190",
       "image": "https://assets.tcgdex.net/en/sv/sv04/190",
       "productId": 523871,
+      "band": "chase",
       "phase": "recovery",
       "price": 12.76,
       "chg30": null,
@@ -2080,6 +2142,7 @@
       "id": "sv04-212",
       "image": "https://assets.tcgdex.net/en/sv/sv04/212",
       "productId": 523893,
+      "band": "chase",
       "phase": "recovery",
       "price": 18.18,
       "chg30": null,
@@ -2113,6 +2176,7 @@
       "id": "sv05-180",
       "image": "https://assets.tcgdex.net/en/sv/sv05/180",
       "productId": 542901,
+      "band": "chase",
       "phase": "recovery",
       "price": 32.68,
       "chg30": null,
@@ -2146,6 +2210,7 @@
       "id": "sv06.5-074",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/074",
       "productId": 560385,
+      "band": "chase",
       "phase": "recovery",
       "price": 18,
       "chg30": null,
@@ -2179,6 +2244,7 @@
       "id": "sv06.5-092",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/092",
       "productId": 560403,
+      "band": "chase",
       "phase": "recovery",
       "price": 45,
       "chg30": null,
@@ -2212,6 +2278,7 @@
       "id": "sv06.5-072",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/072",
       "productId": 560383,
+      "band": "chase",
       "phase": "recovery",
       "price": 43,
       "chg30": null,
@@ -2245,6 +2312,7 @@
       "id": "sv04-252",
       "image": "https://assets.tcgdex.net/en/sv/sv04/252",
       "productId": 523933,
+      "band": "chase",
       "phase": "recovery",
       "price": 38.5,
       "chg30": null,
@@ -2278,6 +2346,7 @@
       "id": "sv06.5-070",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/070",
       "productId": 560381,
+      "band": "chase",
       "phase": "recovery",
       "price": 35,
       "chg30": null,
@@ -2311,6 +2380,7 @@
       "id": "sv04.5-209",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/209",
       "productId": 535214,
+      "band": "chase",
       "phase": "recovery",
       "price": 31.5,
       "chg30": null,
@@ -2344,6 +2414,7 @@
       "id": "sv06.5-071",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/071",
       "productId": 560382,
+      "band": "chase",
       "phase": "recovery",
       "price": 31.5,
       "chg30": null,
@@ -2377,6 +2448,7 @@
       "id": "sv05-210",
       "image": "https://assets.tcgdex.net/en/sv/sv05/210",
       "productId": 542931,
+      "band": "chase",
       "phase": "recovery",
       "price": 20,
       "chg30": null,
@@ -2410,6 +2482,7 @@
       "id": "sv04-216",
       "image": "https://assets.tcgdex.net/en/sv/sv04/216",
       "productId": 523897,
+      "band": "chase",
       "phase": "recovery",
       "price": 12,
       "chg30": null,
@@ -2443,6 +2516,7 @@
       "id": "sv04-215",
       "image": "https://assets.tcgdex.net/en/sv/sv04/215",
       "productId": 523896,
+      "band": "chase",
       "phase": "recovery",
       "price": 8,
       "chg30": null,
@@ -2476,6 +2550,7 @@
       "id": "sv04-186",
       "image": "https://assets.tcgdex.net/en/sv/sv04/186",
       "productId": 523867,
+      "band": "chase",
       "phase": "recovery",
       "price": 26.79,
       "chg30": null,
@@ -2509,6 +2584,7 @@
       "id": "sv04-194",
       "image": "https://assets.tcgdex.net/en/sv/sv04/194",
       "productId": 523875,
+      "band": "chase",
       "phase": "recovery",
       "price": 49.37,
       "chg30": null,
@@ -2542,6 +2618,7 @@
       "id": "sv05-175",
       "image": "https://assets.tcgdex.net/en/sv/sv05/175",
       "productId": 542896,
+      "band": "chase",
       "phase": "recovery",
       "price": 10.45,
       "chg30": null,
@@ -2575,6 +2652,7 @@
       "id": "sv04-258",
       "image": "https://assets.tcgdex.net/en/sv/sv04/258",
       "productId": 523939,
+      "band": "chase",
       "phase": "recovery",
       "price": 9.45,
       "chg30": null,
@@ -2608,6 +2686,7 @@
       "id": "sv06-210",
       "image": "https://assets.tcgdex.net/en/sv/sv06/210",
       "productId": 550254,
+      "band": "chase",
       "phase": "recovery",
       "price": 37.09,
       "chg30": null,
@@ -2641,6 +2720,7 @@
       "id": "sv06-216",
       "image": "https://assets.tcgdex.net/en/sv/sv06/216",
       "productId": 550260,
+      "band": "chase",
       "phase": "recovery",
       "price": 49.99,
       "chg30": null,
@@ -2674,6 +2754,7 @@
       "id": "sv04-213",
       "image": "https://assets.tcgdex.net/en/sv/sv04/213",
       "productId": 523894,
+      "band": "chase",
       "phase": "recovery",
       "price": 30.8,
       "chg30": null,
@@ -2707,6 +2788,7 @@
       "id": "sv06.5-094",
       "image": "https://assets.tcgdex.net/en/sv/sv06.5/094",
       "productId": 560405,
+      "band": "chase",
       "phase": "recovery",
       "price": 44.99,
       "chg30": null,
@@ -2740,6 +2822,7 @@
       "id": "sv04-211",
       "image": "https://assets.tcgdex.net/en/sv/sv04/211",
       "productId": 523892,
+      "band": "chase",
       "phase": "recovery",
       "price": 31.88,
       "chg30": null,
@@ -2773,6 +2856,7 @@
       "id": "sv06-219",
       "image": "https://assets.tcgdex.net/en/sv/sv06/219",
       "productId": 550263,
+      "band": "chase",
       "phase": "recovery",
       "price": 44.07,
       "chg30": null,
@@ -2806,6 +2890,7 @@
       "id": "sv07-167",
       "image": "https://assets.tcgdex.net/en/sv/sv07/167",
       "productId": 567472,
+      "band": "chase",
       "phase": "recovery",
       "price": 40.99,
       "chg30": null,
@@ -2839,6 +2924,7 @@
       "id": "sv04.5-236",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/236",
       "productId": 535098,
+      "band": "chase",
       "phase": "recovery",
       "price": 31.04,
       "chg30": null,
@@ -2872,6 +2958,7 @@
       "id": "sv05-207",
       "image": "https://assets.tcgdex.net/en/sv/sv05/207",
       "productId": 542928,
+      "band": "chase",
       "phase": "recovery",
       "price": 27.75,
       "chg30": null,
@@ -2905,6 +2992,7 @@
       "id": "sv05-174",
       "image": "https://assets.tcgdex.net/en/sv/sv05/174",
       "productId": 542895,
+      "band": "chase",
       "phase": "recovery",
       "price": 12.19,
       "chg30": null,
@@ -2938,6 +3026,7 @@
       "id": "sv04-187",
       "image": "https://assets.tcgdex.net/en/sv/sv04/187",
       "productId": 523868,
+      "band": "chase",
       "phase": "recovery",
       "price": 9.19,
       "chg30": null,
@@ -2971,6 +3060,7 @@
       "id": "sv06-186",
       "image": "https://assets.tcgdex.net/en/sv/sv06/186",
       "productId": 550230,
+      "band": "chase",
       "phase": "recovery",
       "price": 24.07,
       "chg30": null,
@@ -3004,6 +3094,7 @@
       "id": "sv04.5-132",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/132",
       "productId": 534523,
+      "band": "chase",
       "phase": "recovery",
       "price": 24.36,
       "chg30": null,
@@ -3037,6 +3128,7 @@
       "id": "sv06-170",
       "image": "https://assets.tcgdex.net/en/sv/sv06/170",
       "productId": 550214,
+      "band": "chase",
       "phase": "recovery",
       "price": 13.96,
       "chg30": null,
@@ -3070,6 +3162,7 @@
       "id": "sv07-171",
       "image": "https://assets.tcgdex.net/en/sv/sv07/171",
       "productId": 567482,
+      "band": "chase",
       "phase": "recovery",
       "price": 13.2,
       "chg30": null,
@@ -3103,6 +3196,7 @@
       "id": "sv04.5-194",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/194",
       "productId": 535155,
+      "band": "chase",
       "phase": "recovery",
       "price": 5.41,
       "chg30": null,
@@ -3136,6 +3230,7 @@
       "id": "sv04.5-155",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/155",
       "productId": 534662,
+      "band": "chase",
       "phase": "recovery",
       "price": 6.02,
       "chg30": null,
@@ -3169,6 +3264,7 @@
       "id": "sv04.5-149",
       "image": "https://assets.tcgdex.net/en/sv/sv04.5/149",
       "productId": 534634,
+      "band": "chase",
       "phase": "recovery",
       "price": 8.39,
       "chg30": null,
@@ -3202,6 +3298,7 @@
       "id": "sv05-170",
       "image": "https://assets.tcgdex.net/en/sv/sv05/170",
       "productId": 542891,
+      "band": "chase",
       "phase": "recovery",
       "price": 9.18,
       "chg30": null,
@@ -3235,6 +3332,7 @@
       "id": "sv07-147",
       "image": "https://assets.tcgdex.net/en/sv/sv07/147",
       "productId": 567427,
+      "band": "chase",
       "phase": "recovery",
       "price": 8.55,
       "chg30": null,
@@ -3268,6 +3366,7 @@
       "id": "sv04-200",
       "image": "https://assets.tcgdex.net/en/sv/sv04/200",
       "productId": 523881,
+      "band": "chase",
       "phase": "recovery",
       "price": 10.71,
       "chg30": null,
@@ -3301,6 +3400,7 @@
       "id": "sv06-180",
       "image": "https://assets.tcgdex.net/en/sv/sv06/180",
       "productId": 550224,
+      "band": "chase",
       "phase": "recovery",
       "price": 7,
       "chg30": null,
@@ -3323,6 +3423,3450 @@
         [
           "2026-08-01",
           7
+        ]
+      ]
+    },
+    {
+      "name": "Gardevoir ex SIR",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-233",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/233",
+      "productId": 535085,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 199,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~35% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.3501755132432719,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        233.79,
+        297.56
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          199
+        ]
+      ]
+    },
+    {
+      "name": "Gastly IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-177",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/177",
+      "productId": 542898,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 110.88,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~32% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.31638711914358775,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        129.28,
+        164.54
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          110.88
+        ]
+      ]
+    },
+    {
+      "name": "Groudon IR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-199",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/199",
+      "productId": 523880,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 149,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~31% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.31297551241009447,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        173.59,
+        220.93
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          149
+        ]
+      ]
+    },
+    {
+      "name": "Raging Bolt ex SIR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-208",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/208",
+      "productId": 542929,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 74.95,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~33% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.3315647211933126,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        85.05,
+        108.24
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          74.95
+        ]
+      ]
+    },
+    {
+      "name": "Horsea IR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-067",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/067",
+      "productId": 560378,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 51.78,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~30% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.30255006483215696,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        58.36,
+        74.28
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          51.78
+        ]
+      ]
+    },
+    {
+      "name": "Sawsbuck IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-166",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/166",
+      "productId": 542887,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 63.25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~33% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.3250260809087747,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        68.44,
+        94.43
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          63.25
+        ]
+      ]
+    },
+    {
+      "name": "Eevee IR",
+      "set": "Twilight Masquerade",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv06-188",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/188",
+      "productId": 550232,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 100,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.09570724841660799,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        111.76,
+        142.24
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          100
+        ]
+      ]
+    },
+    {
+      "name": "Morpeko IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-206",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/206",
+      "productId": 523887,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 56.47,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~41% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.4120007643798968,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
+      ],
+      "proj": [
+        57.93,
+        90.42
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          56.47
+        ]
+      ]
+    },
+    {
+      "name": "Charmander IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-168",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/168",
+      "productId": 502556,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 108.16,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~58% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.5814648729446936,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        120.35,
+        153.17
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          108.16
+        ]
+      ]
+    },
+    {
+      "name": "Snorlax Shiny",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-202",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/202",
+      "productId": 535193,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 65.94,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.13953488372093015,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        70.38,
+        97.11
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          65.94
+        ]
+      ]
+    },
+    {
+      "name": "Greninja ex SIR",
+      "set": "Twilight Masquerade",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv06-214",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/214",
+      "productId": 550258,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 400,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.15210589651022868,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        426.92,
+        589.08
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          400
+        ]
+      ]
+    },
+    {
+      "name": "Charmander Shiny",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-109",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/109",
+      "productId": 534483,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 60.57,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.020913032389696693,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
+      "proj": [
+        60.84,
+        93.01
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          60.57
+        ]
+      ]
+    },
+    {
+      "name": "Pikachu Shiny",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-131",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/131",
+      "productId": 534522,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 89.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.09224109224109209,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
+      "proj": [
+        90.39,
+        138.18
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          89.99
+        ]
+      ]
+    },
+    {
+      "name": "Squirtle IR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv07-148",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/148",
+      "productId": 567429,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 125,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.20238313473877187,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        135.3,
+        172.2
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          125
+        ]
+      ]
+    },
+    {
+      "name": "Bulbasaur IR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv07-143",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/143",
+      "productId": 567418,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 121.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.09382429077077495,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        132.04,
+        168.05
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          121.99
+        ]
+      ]
+    },
+    {
+      "name": "Charizard ex SIR",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-234",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/234",
+      "productId": 535090,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 325.54,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising.",
+        "Price confidence is low (thin, erratic sales) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.13132933844155567,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "thin, erratic sales"
+      ],
+      "proj": [
+        322.89,
+        503.98
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          325.54
+        ]
+      ]
+    },
+    {
+      "name": "Ditto Shiny",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-201",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/201",
+      "productId": 535191,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 52,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.007339449541284367,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        53.75,
+        74.17
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          52
+        ]
+      ]
+    },
+    {
+      "name": "Mimikyu Shiny",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-160",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/160",
+      "productId": 534683,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 59.4,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.0979042374177756,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        61.4,
+        84.72
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          59.4
+        ]
+      ]
+    },
+    {
+      "name": "Walking Wake ex SIR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-205",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/205",
+      "productId": 542926,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 60,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.15828254343673226,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        62.83,
+        79.97
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          60
+        ]
+      ]
+    },
+    {
+      "name": "Iron Crown ex SIR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-206",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/206",
+      "productId": 542927,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 60,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.04001429081814925,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        62.83,
+        79.97
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          60
+        ]
+      ]
+    },
+    {
+      "name": "Persian IR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-078",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/078",
+      "productId": 560389,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 80,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.20780148174596094,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        83.78,
+        106.62
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          80
+        ]
+      ]
+    },
+    {
+      "name": "Morty's Conviction SIR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-211",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/211",
+      "productId": 542932,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 76.98,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.19068109997982913,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        80.61,
+        102.6
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          76.98
+        ]
+      ]
+    },
+    {
+      "name": "Gouging Fire ex SIR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-204",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/204",
+      "productId": 542925,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 59.8,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.11303789338471422,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        62.62,
+        79.7
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          59.8
+        ]
+      ]
+    },
+    {
+      "name": "Chansey IR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-187",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/187",
+      "productId": 550231,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 61.25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.1386344712739386,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        64.14,
+        81.63
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          61.25
+        ]
+      ]
+    },
+    {
+      "name": "Lilligant IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-092",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/092",
+      "productId": 642541,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 63.44,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~60% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.6,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        66.43,
+        84.55
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          63.44
+        ]
+      ]
+    },
+    {
+      "name": "Oshawott IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-105",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/105",
+      "productId": 642217,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 102.39,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~45% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.451040967092008,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        106.8,
+        135.93
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          102.39
+        ]
+      ]
+    },
+    {
+      "name": "Dachsbun ex SIR",
+      "set": "Stellar Crown",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv07-169",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/169",
+      "productId": 567476,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 74.3,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.043077721551835896,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        74.31,
+        102.53
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          74.3
+        ]
+      ]
+    },
+    {
+      "name": "Perrin SIR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-220",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/220",
+      "productId": 550264,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 185,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.026777280381124636,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        185.01,
+        255.29
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          185
+        ]
+      ]
+    },
+    {
+      "name": "Carmine SIR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-217",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/217",
+      "productId": 550261,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 65,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.061511031869846015,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        65,
+        89.7
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          65
+        ]
+      ]
+    },
+    {
+      "name": "Plusle IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-193",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/193",
+      "productId": 523874,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 52.8,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.17062314540059353,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        52.8,
+        72.86
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          52.8
+        ]
+      ]
+    },
+    {
+      "name": "Alakazam ex SIR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-201",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/201",
+      "productId": 517047,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 80,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~38% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.3838921797728386,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        82.03,
+        104.4
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          80
+        ]
+      ]
+    },
+    {
+      "name": "Duskull IR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-068",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/068",
+      "productId": 560379,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 62.52,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.10638658309334237,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
+      "proj": [
+        58.84,
+        89.96
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          62.52
+        ]
+      ]
+    },
+    {
+      "name": "Bulbasaur IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-166",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/166",
+      "productId": 516997,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 92.53,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~34% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.34123910939012586,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        93.83,
+        119.42
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          92.53
+        ]
+      ]
+    },
+    {
+      "name": "Mega Latias ex SIR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-181",
+      "image": "https://assets.tcgdex.net/en/me/me01/181",
+      "productId": 654520,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 97.59,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~25% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.2484087390332014,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        96.57,
+        122.91
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          97.59
+        ]
+      ]
+    },
+    {
+      "name": "Team Rocket's Crobat ex SIR",
+      "set": "Destined Rivals",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10-234",
+      "image": "https://assets.tcgdex.net/en/sv/sv10/234",
+      "productId": 633034,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 75.32,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~38% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.37644796923816387,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        74.43,
+        94.73
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          75.32
+        ]
+      ]
+    },
+    {
+      "name": "Gengar ex UR",
+      "set": "Temporal Forces",
+      "char": "S",
+      "tier": "ultra",
+      "id": "sv05-193",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/193",
+      "productId": 542914,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 68.45,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.15419820454145403,
+      "momSource": "cardmarket",
+      "confidence": 0.76,
+      "confidenceFlags": [],
+      "proj": [
+        60.84,
+        91.11
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          68.45
+        ]
+      ]
+    },
+    {
+      "name": "Mega Lucario ex SIR",
+      "set": "Mega Evolution",
+      "char": "S",
+      "tier": "chase",
+      "id": "me01-179",
+      "image": "https://assets.tcgdex.net/en/me/me01/179",
+      "productId": 654518,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 229.25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.006871884417157334,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        219.9,
+        279.87
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          229.25
+        ]
+      ]
+    },
+    {
+      "name": "Charizard ex SIR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-199",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/199",
+      "productId": 517045,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 407.22,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.1750991276764472,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        390.61,
+        497.13
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          407.22
+        ]
+      ]
+    },
+    {
+      "name": "Pikachu IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-173",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/173",
+      "productId": 513721,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 100,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.06236030397854251,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        95.92,
+        122.08
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          100
+        ]
+      ]
+    },
+    {
+      "name": "Cynthia's Garchomp ex SIR",
+      "set": "Destined Rivals",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv10-232",
+      "image": "https://assets.tcgdex.net/en/sv/sv10/232",
+      "productId": 633032,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 280,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.09544810771078724,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        268.58,
+        341.82
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          280
+        ]
+      ]
+    },
+    {
+      "name": "Charmeleon IR",
+      "set": "151",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03.5-169",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/169",
+      "productId": 517018,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 70.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.11788055572261964,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        68.09,
+        86.66
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          70.99
+        ]
+      ]
+    },
+    {
+      "name": "Seismitoad IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-105",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/105",
+      "productId": 642558,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 254,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~30% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.30047202281443613,
+      "momSource": "cardmarket",
+      "confidence": 0.76,
+      "confidenceFlags": [],
+      "proj": [
+        223.77,
+        335.1
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          254
+        ]
+      ]
+    },
+    {
+      "name": "Charizard ex SIR",
+      "set": "Obsidian Flames",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv03-223",
+      "image": "https://assets.tcgdex.net/en/sv/sv03/223",
+      "productId": 509980,
+      "band": "premium",
+      "phase": "appreciation",
+      "price": 120,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "SELL",
+      "reasons": [
+        "Up ~32% over the last month (estimated from Cardmarket's trend vs its 30-day average) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
+      ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.3176268002504695,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        107.75,
+        151.73
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          120
+        ]
+      ]
+    },
+    {
+      "name": "Houndoom IR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-066",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/066",
+      "productId": 560377,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 63.01,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Up ~25% over the last month (estimated from Cardmarket's trend vs its 30-day average) — spikes like this usually give back a chunk.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.24806201550387613,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        56.45,
+        77.89
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          63.01
+        ]
+      ]
+    },
+    {
+      "name": "Zorua IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-142",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/142",
+      "productId": 642255,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 52.16,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.16726403823178015,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        48.2,
+        61.34
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          52.16
+        ]
+      ]
+    },
+    {
+      "name": "Psyduck IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-175",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/175",
+      "productId": 517035,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 76.85,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.013912480789452389,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        71.01,
+        90.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          76.85
+        ]
+      ]
+    },
+    {
+      "name": "Wartortle IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-171",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/171",
+      "productId": 517038,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 69.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.16329284750337392,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        64.67,
+        82.31
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          69.99
+        ]
+      ]
+    },
+    {
+      "name": "Mega Absol ex SIR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-180",
+      "image": "https://assets.tcgdex.net/en/me/me01/180",
+      "productId": 654519,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 69.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.16055296186260848,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        64.67,
+        82.31
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          69.99
+        ]
+      ]
+    },
+    {
+      "name": "Zoroark IR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-143",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/143",
+      "productId": 642256,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 82.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.167875138257343,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        76.68,
+        97.6
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          82.99
+        ]
+      ]
+    },
+    {
+      "name": "Mega Venusaur ex SIR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-177",
+      "image": "https://assets.tcgdex.net/en/me/me01/177",
+      "productId": 654516,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 170.68,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": 0.03484801002820433,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        157.71,
+        200.72
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          170.68
+        ]
+      ]
+    },
+    {
+      "name": "Blastoise ex SIR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-200",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/200",
+      "productId": 517046,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 159.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.09118456534430532,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        147.83,
+        188.15
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          159.99
+        ]
+      ]
+    },
+    {
+      "name": "Mega Gardevoir ex SIR",
+      "set": "Mega Evolution",
+      "char": "A",
+      "tier": "chase",
+      "id": "me01-178",
+      "image": "https://assets.tcgdex.net/en/me/me01/178",
+      "productId": 654517,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 205,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.16246272866467892,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        189.42,
+        241.08
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          205
+        ]
+      ]
+    },
+    {
+      "name": "Salamence ex SIR",
+      "set": "Journey Together",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv09-187",
+      "image": "https://assets.tcgdex.net/en/sv/sv09/187",
+      "productId": 623614,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 66.1,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.10657596371882079,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        61.08,
+        77.73
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          66.1
+        ]
+      ]
+    },
+    {
+      "name": "N's Zoroark ex SIR",
+      "set": "Journey Together",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv09-185",
+      "image": "https://assets.tcgdex.net/en/sv/sv09/185",
+      "productId": 623612,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 55,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.009109223088376913,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        50.82,
+        64.68
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          55
+        ]
+      ]
+    },
+    {
+      "name": "Squirtle IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-170",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/170",
+      "productId": 502549,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 105.62,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.2231062350822831,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        97.59,
+        124.21
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          105.62
+        ]
+      ]
+    },
+    {
+      "name": "Venusaur ex SIR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-198",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/198",
+      "productId": 517044,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 129.73,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": 0.012517696147828083,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        119.87,
+        152.56
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          129.73
+        ]
+      ]
+    },
+    {
+      "name": "Dragonair IR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-181",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/181",
+      "productId": 517020,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 53.24,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.02382553559419723,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        49.19,
+        62.61
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          53.24
+        ]
+      ]
+    },
+    {
+      "name": "Reshiram ex SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5w-166",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/166",
+      "productId": 642283,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 226.67,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.14005167958656328,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        200.02,
+        275.99
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          226.67
+        ]
+      ]
+    },
+    {
+      "name": "Zapdos ex SIR",
+      "set": "151",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03.5-202",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/202",
+      "productId": 517048,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 113.49,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.06824128167449202,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        100.15,
+        138.18
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          113.49
+        ]
+      ]
+    },
+    {
+      "name": "Zekrom ex SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10.5b-166",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/166",
+      "productId": 642618,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 311.35,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.15782692466814027,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        274.74,
+        379.09
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          311.35
+        ]
+      ]
+    },
+    {
+      "name": "Misty's Psyduck IR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-193",
+      "image": "https://assets.tcgdex.net/en/sv/sv10/193",
+      "productId": 632993,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 75,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.0104243016532291,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        65.4,
+        92.1
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          75
+        ]
+      ]
+    },
+    {
+      "name": "Team Rocket's Moltres ex SIR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-229",
+      "image": "https://assets.tcgdex.net/en/sv/sv10/229",
+      "productId": 633029,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 116.15,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.06628866656450441,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
+      ],
+      "proj": [
+        95.25,
+        148.67
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          116.15
+        ]
+      ]
+    },
+    {
+      "name": "Ethan's Ho-Oh ex SIR",
+      "set": "Destined Rivals",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv10-230",
+      "image": "https://assets.tcgdex.net/en/sv/sv10/230",
+      "productId": 633030,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 187.84,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.07306577676297536,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
+      ],
+      "proj": [
+        154.04,
+        240.43
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          187.84
+        ]
+      ]
+    },
+    {
+      "name": "Team Rocket's Mewtwo ex Gold",
+      "set": "Destined Rivals",
+      "char": "S",
+      "tier": "ultra",
+      "id": "sv10-240",
+      "image": "https://assets.tcgdex.net/en/sv/sv10/240",
+      "productId": 633040,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 70,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Down ~34% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Standard hits from in-print sets keep bleeding as packs get opened."
+      ],
+      "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
+      "mom": -0.3433106881011637,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        63.63,
+        80.99
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          70
+        ]
+      ]
+    },
+    {
+      "name": "Basic Darkness Energy Gold",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "ultra",
+      "id": "sv06.5-098",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/098",
+      "productId": 560409,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 66.14,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price.",
+        "Price confidence is low (single market only) — the projection range is widened to match."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": null,
+      "momSource": "none",
+      "confidence": 0.9,
+      "confidenceFlags": [
+        "single market only"
+      ],
+      "proj": [
+        57.7,
+        78.55
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          66.14
+        ]
+      ]
+    },
+    {
+      "name": "Serperior ex SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-164",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/164",
+      "productId": 642616,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 58.4,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.09694415173867209,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        51.91,
+        66.06
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          58.4
+        ]
+      ]
+    },
+    {
+      "name": "Lillie's Clefairy ex SIR",
+      "set": "Journey Together",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv09-184",
+      "image": "https://assets.tcgdex.net/en/sv/sv09/184",
+      "productId": 623611,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 127.79,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.13914731817814083,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        113.58,
+        144.56
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          127.79
+        ]
+      ]
+    },
+    {
+      "name": "Genesect ex SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-169",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/169",
+      "productId": 642621,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 52.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.11041610008158831,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        47.1,
+        59.94
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          52.99
+        ]
+      ]
+    },
+    {
+      "name": "Samurott IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5w-107",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/107",
+      "productId": 642219,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 55.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.11162179908076185,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        49.76,
+        63.34
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          55.99
+        ]
+      ]
+    },
+    {
+      "name": "Volcarona IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-100",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/100",
+      "productId": 642553,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 64.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.05153991200502844,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        57.76,
+        73.52
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          64.99
+        ]
+      ]
+    },
+    {
+      "name": "Chandelure IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5w-103",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/103",
+      "productId": 642551,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 76.49,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.10420198055134273,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        67.98,
+        86.53
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          76.49
+        ]
+      ]
+    },
+    {
+      "name": "Krookodile IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-137",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/137",
+      "productId": 642592,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 63,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.0668002672010688,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        55.99,
+        71.27
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          63
+        ]
+      ]
+    },
+    {
+      "name": "Poliwhirl IR",
+      "set": "151",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv03.5-176",
+      "image": "https://assets.tcgdex.net/en/sv/sv03.5/176",
+      "productId": 517034,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 53,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.06626314112774748,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        47.11,
+        59.95
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          53
+        ]
+      ]
+    },
+    {
+      "name": "Hydreigon ex SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5w-169",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/169",
+      "productId": 642286,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 97.08,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.2330052113491604,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        86.28,
+        109.82
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          97.08
+        ]
+      ]
+    },
+    {
+      "name": "Mega Kangaskhan ex SIR",
+      "set": "Mega Evolution",
+      "char": "B",
+      "tier": "chase",
+      "id": "me01-182",
+      "image": "https://assets.tcgdex.net/en/me/me01/182",
+      "productId": 654521,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 66.06,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.1527318532514563,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        58.71,
+        74.73
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          66.06
+        ]
+      ]
+    },
+    {
+      "name": "Kyurem ex SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-165",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/165",
+      "productId": 642617,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 86.65,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.06846284003644398,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        77.01,
+        98.02
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          86.65
+        ]
+      ]
+    },
+    {
+      "name": "Lillie's Determination SIR",
+      "set": "Mega Evolution",
+      "char": "B",
+      "tier": "chase",
+      "id": "me01-184",
+      "image": "https://assets.tcgdex.net/en/me/me01/184",
+      "productId": 654523,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 73.65,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.11822153687997931,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        65.46,
+        83.31
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          73.65
+        ]
+      ]
+    },
+    {
+      "name": "Emboar IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5w-098",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/098",
+      "productId": 642213,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 50.41,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.03449814126394063,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        44.8,
+        57.02
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          50.41
+        ]
+      ]
+    },
+    {
+      "name": "Team Rocket's Nidoking ex SIR",
+      "set": "Destined Rivals",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10-233",
+      "image": "https://assets.tcgdex.net/en/sv/sv10/233",
+      "productId": 633033,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 120,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.0651774683628835,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        101.86,
+        140.54
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          120
+        ]
+      ]
+    },
+    {
+      "name": "Dwebble IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-129",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/129",
+      "productId": 642584,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 66.53,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.2252396166134184,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        56.47,
+        77.92
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          66.53
+        ]
+      ]
+    },
+    {
+      "name": "Hilda SIR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5w-171",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/171",
+      "productId": 642288,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 62.8,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.0160518598549162,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        53.3,
+        73.55
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          62.8
+        ]
+      ]
+    },
+    {
+      "name": "Mega Charizard X ex Gold",
+      "set": "Phantasmal Flames",
+      "char": "S",
+      "tier": "ultra",
+      "id": "me02-130",
+      "image": "https://assets.tcgdex.net/en/me/me02/130",
+      "productId": 662185,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 350,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Down ~25% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Standard hits from in-print sets keep bleeding as packs get opened."
+      ],
+      "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
+      "mom": -0.25208186309103753,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        309.73,
+        394.2
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          350
+        ]
+      ]
+    },
+    {
+      "name": "Mega Froslass ex SIR",
+      "set": "Ascended Heroes",
+      "char": "B",
+      "tier": "chase",
+      "id": "me02.5-275",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/275",
+      "productId": 676087,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 92,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~50% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.5010584714212717,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        79.37,
+        101.01
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          92
+        ]
+      ]
+    },
+    {
+      "name": "Mega Darkrai ex SIR",
+      "set": "Pitch Black",
+      "char": "A",
+      "tier": "chase",
+      "id": "me05-116",
+      "image": "https://assets.tcgdex.net/en/me/me05/116",
+      "productId": 704873,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 305.49,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~24% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "rationale": "Chase card still fading with print supply. Ladder in on the way down rather than all at once.",
+      "mom": -0.24305135120259796,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        253.49,
+        322.62
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          305.49
+        ]
+      ]
+    },
+    {
+      "name": "Marnie's Grimmsnarl ex SIR",
+      "set": "Ascended Heroes",
+      "char": "B",
+      "tier": "chase",
+      "id": "me02.5-287",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/287",
+      "productId": 676099,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 77.94,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~36% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.35642447598458515,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        61.37,
+        84.68
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          77.94
+        ]
+      ]
+    },
+    {
+      "name": "Altaria ex SIR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-253",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/253",
+      "productId": 523934,
+      "band": "premium",
+      "phase": "recovery",
+      "price": 62.33,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "SELL",
+      "reasons": [
+        "Up ~52% over the last month (estimated from Cardmarket's trend vs its 30-day average) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
+      ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.5200341005967606,
+      "momSource": "cardmarket",
+      "confidence": 0.76,
+      "confidenceFlags": [],
+      "proj": [
+        46.42,
+        69.51
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          62.33
+        ]
+      ]
+    },
+    {
+      "name": "Mega Lucario ex Gold",
+      "set": "Mega Evolution",
+      "char": "S",
+      "tier": "ultra",
+      "id": "me01-188",
+      "image": "https://assets.tcgdex.net/en/me/me01/188",
+      "productId": 654527,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 280.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Standard hits from in-print sets keep bleeding as packs get opened."
+      ],
+      "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
+      "mom": -0.19680095518455243,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        229.56,
+        292.17
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          280.5
+        ]
+      ]
+    },
+    {
+      "name": "Mega Zeraora ex SIR",
+      "set": "Pitch Black",
+      "char": "B",
+      "tier": "chase",
+      "id": "me05-114",
+      "image": "https://assets.tcgdex.net/en/me/me05/114",
+      "productId": 704871,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 77.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~33% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.3285224463758872,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        63.33,
+        80.6
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          77.5
+        ]
+      ]
+    },
+    {
+      "name": "Mega Chandelure ex SIR",
+      "set": "Pitch Black",
+      "char": "B",
+      "tier": "chase",
+      "id": "me05-115",
+      "image": "https://assets.tcgdex.net/en/me/me05/115",
+      "productId": 704872,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 59.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~31% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.3111216504624141,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        48.74,
+        62.04
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          59.99
+        ]
+      ]
+    },
+    {
+      "name": "Fezandipiti ex SIR",
+      "set": "Ascended Heroes",
+      "char": "B",
+      "tier": "chase",
+      "id": "me02.5-288",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/288",
+      "productId": 676100,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 68.94,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~31% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.31082089552238795,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        56.01,
+        71.29
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          68.94
+        ]
+      ]
+    },
+    {
+      "name": "Pikachu ex SIR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-277",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/277",
+      "productId": 676089,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 404.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "rationale": "Chase card still fading with print supply. Ladder in on the way down rather than all at once.",
+      "mom": -0.19188765655559475,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        324.32,
+        412.77
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          404.99
+        ]
+      ]
+    },
+    {
+      "name": "Mega Greninja ex SIR",
+      "set": "Chaos Rising",
+      "char": "S",
+      "tier": "chase",
+      "id": "me04-116",
+      "image": "https://assets.tcgdex.net/en/me/me04/116",
+      "productId": 693517,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 251.36,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "rationale": "Chase card still fading with print supply. Ladder in on the way down rather than all at once.",
+      "mom": -0.12437593062976277,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        201.29,
+        256.19
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          251.36
+        ]
+      ]
+    },
+    {
+      "name": "Team Rocket's Mewtwo ex SIR",
+      "set": "Ascended Heroes",
+      "char": "S",
+      "tier": "chase",
+      "id": "me02.5-281",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/281",
+      "productId": 676093,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 407.96,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.13921187601541818,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        326.69,
+        415.79
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          407.96
+        ]
+      ]
+    },
+    {
+      "name": "Steven's Metagross ex SIR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-289",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/289",
+      "productId": 676101,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 101.84,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "rationale": "Chase card still fading with print supply. Ladder in on the way down rather than all at once.",
+      "mom": -0.14537983661889164,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        74.46,
+        102.74
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          101.84
+        ]
+      ]
+    },
+    {
+      "name": "N's Zoroark ex SIR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-286",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/286",
+      "productId": 676098,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 180,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "rationale": "Chase card still fading with print supply. Ladder in on the way down rather than all at once.",
+      "mom": -0.17556482947186627,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        137.81,
+        175.39
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          180
+        ]
+      ]
+    },
+    {
+      "name": "Psyduck IR",
+      "set": "Ascended Heroes",
+      "char": "A",
+      "tier": "chase",
+      "id": "me02.5-226",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/226",
+      "productId": 676038,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 84.11,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card still fading with print supply. Ladder in on the way down rather than all at once."
+      ],
+      "rationale": "Chase card still fading with print supply. Ladder in on the way down rather than all at once.",
+      "mom": 0.001904157410345994,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        64.39,
+        81.96
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          84.11
+        ]
+      ]
+    },
+    {
+      "name": "Mega Darkrai ex Gold",
+      "set": "Pitch Black",
+      "char": "A",
+      "tier": "ultra",
+      "id": "me05-120",
+      "image": "https://assets.tcgdex.net/en/me/me05/120",
+      "productId": 704877,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 208.31,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Down ~52% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Standard hits from in-print sets keep bleeding as packs get opened."
+      ],
+      "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
+      "mom": -0.5215673687069455,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        158.84,
+        202.15
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          208.31
+        ]
+      ]
+    },
+    {
+      "name": "Haxorus IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-147",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/147",
+      "productId": 642601,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 78.21,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "SELL",
+      "reasons": [
+        "Up ~30% over the last month (estimated from Cardmarket's trend vs its 30-day average) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
+      ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.30023640661938544,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        59.18,
+        75.32
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          78.21
+        ]
+      ]
+    },
+    {
+      "name": "Liepard IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5w-137",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5w/137",
+      "productId": 642250,
+      "band": "premium",
+      "phase": "supply-trough",
+      "price": 55.25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "SELL",
+      "reasons": [
+        "Up ~32% over the last month (estimated from Cardmarket's trend vs its 30-day average) — spikes like this usually give back a chunk.",
+        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
+      ],
+      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
+      "mom": 0.31571957119817856,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        41.43,
+        52.73
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          55.25
+        ]
+      ]
+    },
+    {
+      "name": "Mega Scrafty ex SIR",
+      "set": "Ascended Heroes",
+      "char": "B",
+      "tier": "chase",
+      "id": "me02.5-285",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/285",
+      "productId": 676097,
+      "band": "premium",
+      "phase": "hype-fade",
+      "price": 70.89,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.19185481257426806,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        49.45,
+        68.23
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          70.89
         ]
       ]
     }

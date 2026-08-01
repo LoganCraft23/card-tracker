@@ -86,7 +86,7 @@ for (const card of watchlist.cards) {
 
   dashboard.push({
     name: card.name, set: card.set, char: card.char, tier: card.tier || "chase",
-    id: card.id, image, productId, ...a,
+    id: card.id, image, productId, band: card.band || "chase", ...a,
     history: priceHistory[key].slice(-180),
   });
 }

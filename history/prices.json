@@ -2,25 +2,25 @@
   "Charmander IR | 151": [
     [
       "2026-08-01",
-      107.93
+      108.16
     ]
   ],
   "Squirtle IR | 151": [
     [
       "2026-08-01",
-      105
+      105.62
     ]
   ],
   "Bulbasaur IR | 151": [
     [
       "2026-08-01",
-      92.51
+      92.53
     ]
   ],
   "Pikachu IR | 151": [
     [
       "2026-08-01",
-      100.51
+      100
     ]
   ],
   "Snorlax IR | 151": [
@@ -32,7 +32,7 @@
   "Dragonair IR | 151": [
     [
       "2026-08-01",
-      53.49
+      53.24
     ]
   ],
   "Dratini IR | 151": [
@@ -128,7 +128,7 @@
   "Psyduck IR | 151": [
     [
       "2026-08-01",
-      78.38
+      76.85
     ]
   ],
   "Pidgey IR | 151": [
@@ -266,7 +266,7 @@
   "Duskull IR | Shrouded Fable": [
     [
       "2026-08-01",
-      62.5
+      62.52
     ]
   ],
   "Cinderace IR | Stellar Crown": [
@@ -296,7 +296,7 @@
   "Misty's Psyduck IR | Destined Rivals": [
     [
       "2026-08-01",
-      75.01
+      75
     ]
   ],
   "Cynthia's Garchomp IR | Destined Rivals": [
@@ -356,7 +356,7 @@
   "Oshawott IR | Black Bolt / White Flare": [
     [
       "2026-08-01",
-      102.5
+      102.39
     ]
   ],
   "Tepig IR | Black Bolt / White Flare": [
@@ -368,19 +368,19 @@
   "Zorua IR | Black Bolt / White Flare": [
     [
       "2026-08-01",
-      52.41
+      52.16
     ]
   ],
   "Zoroark IR | Black Bolt / White Flare": [
     [
       "2026-08-01",
-      83.49
+      82.99
     ]
   ],
   "Samurott IR | Black Bolt / White Flare": [
     [
       "2026-08-01",
-      56.76
+      55.99
     ]
   ],
   "Serperior IR | Black Bolt / White Flare": [
@@ -392,13 +392,13 @@
   "Emboar IR | Black Bolt / White Flare": [
     [
       "2026-08-01",
-      50.22
+      50.41
     ]
   ],
   "Hilda SIR | Black Bolt / White Flare": [
     [
       "2026-08-01",
-      61.26
+      62.8
     ]
   ],
   "Lucario IR | Mega Evolution": [
@@ -1425,6 +1425,510 @@
     [
       "2026-08-01",
       24.07
+    ]
+  ],
+  "Gardevoir ex SIR | Paldean Fates": [
+    [
+      "2026-08-01",
+      199
+    ]
+  ],
+  "Gastly IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      110.88
+    ]
+  ],
+  "Groudon IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      149
+    ]
+  ],
+  "Raging Bolt ex SIR | Temporal Forces": [
+    [
+      "2026-08-01",
+      74.95
+    ]
+  ],
+  "Horsea IR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      51.78
+    ]
+  ],
+  "Sawsbuck IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      63.25
+    ]
+  ],
+  "Eevee IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      100
+    ]
+  ],
+  "Morpeko IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      56.47
+    ]
+  ],
+  "Snorlax Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      65.94
+    ]
+  ],
+  "Greninja ex SIR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      400
+    ]
+  ],
+  "Charmander Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      60.57
+    ]
+  ],
+  "Pikachu Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      89.99
+    ]
+  ],
+  "Squirtle IR | Stellar Crown": [
+    [
+      "2026-08-01",
+      125
+    ]
+  ],
+  "Bulbasaur IR | Stellar Crown": [
+    [
+      "2026-08-01",
+      121.99
+    ]
+  ],
+  "Charizard ex SIR | Paldean Fates": [
+    [
+      "2026-08-01",
+      325.54
+    ]
+  ],
+  "Ditto Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      52
+    ]
+  ],
+  "Mimikyu Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      59.4
+    ]
+  ],
+  "Walking Wake ex SIR | Temporal Forces": [
+    [
+      "2026-08-01",
+      60
+    ]
+  ],
+  "Iron Crown ex SIR | Temporal Forces": [
+    [
+      "2026-08-01",
+      60
+    ]
+  ],
+  "Persian IR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      80
+    ]
+  ],
+  "Morty's Conviction SIR | Temporal Forces": [
+    [
+      "2026-08-01",
+      76.98
+    ]
+  ],
+  "Gouging Fire ex SIR | Temporal Forces": [
+    [
+      "2026-08-01",
+      59.8
+    ]
+  ],
+  "Chansey IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      61.25
+    ]
+  ],
+  "Lilligant IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      63.44
+    ]
+  ],
+  "Dachsbun ex SIR | Stellar Crown": [
+    [
+      "2026-08-01",
+      74.3
+    ]
+  ],
+  "Plusle IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      52.8
+    ]
+  ],
+  "Alakazam ex SIR | 151": [
+    [
+      "2026-08-01",
+      80
+    ]
+  ],
+  "Mega Latias ex SIR | Mega Evolution": [
+    [
+      "2026-08-01",
+      97.59
+    ]
+  ],
+  "Team Rocket's Crobat ex SIR | Destined Rivals": [
+    [
+      "2026-08-01",
+      75.32
+    ]
+  ],
+  "Gengar ex UR | Temporal Forces": [
+    [
+      "2026-08-01",
+      68.45
+    ]
+  ],
+  "Mega Lucario ex SIR | Mega Evolution": [
+    [
+      "2026-08-01",
+      229.25
+    ]
+  ],
+  "Charizard ex SIR | 151": [
+    [
+      "2026-08-01",
+      407.22
+    ]
+  ],
+  "Cynthia's Garchomp ex SIR | Destined Rivals": [
+    [
+      "2026-08-01",
+      280
+    ]
+  ],
+  "Charmeleon IR | 151": [
+    [
+      "2026-08-01",
+      70.99
+    ]
+  ],
+  "Seismitoad IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      254
+    ]
+  ],
+  "Charizard ex SIR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      120
+    ]
+  ],
+  "Houndoom IR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      63.01
+    ]
+  ],
+  "Wartortle IR | 151": [
+    [
+      "2026-08-01",
+      69.99
+    ]
+  ],
+  "Mega Absol ex SIR | Mega Evolution": [
+    [
+      "2026-08-01",
+      69.99
+    ]
+  ],
+  "Mega Venusaur ex SIR | Mega Evolution": [
+    [
+      "2026-08-01",
+      170.68
+    ]
+  ],
+  "Blastoise ex SIR | 151": [
+    [
+      "2026-08-01",
+      159.99
+    ]
+  ],
+  "Mega Gardevoir ex SIR | Mega Evolution": [
+    [
+      "2026-08-01",
+      205
+    ]
+  ],
+  "Salamence ex SIR | Journey Together": [
+    [
+      "2026-08-01",
+      66.1
+    ]
+  ],
+  "N's Zoroark ex SIR | Journey Together": [
+    [
+      "2026-08-01",
+      55
+    ]
+  ],
+  "Venusaur ex SIR | 151": [
+    [
+      "2026-08-01",
+      129.73
+    ]
+  ],
+  "Reshiram ex SIR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      226.67
+    ]
+  ],
+  "Zapdos ex SIR | 151": [
+    [
+      "2026-08-01",
+      113.49
+    ]
+  ],
+  "Zekrom ex SIR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      311.35
+    ]
+  ],
+  "Team Rocket's Moltres ex SIR | Destined Rivals": [
+    [
+      "2026-08-01",
+      116.15
+    ]
+  ],
+  "Ethan's Ho-Oh ex SIR | Destined Rivals": [
+    [
+      "2026-08-01",
+      187.84
+    ]
+  ],
+  "Team Rocket's Mewtwo ex Gold | Destined Rivals": [
+    [
+      "2026-08-01",
+      70
+    ]
+  ],
+  "Basic Darkness Energy Gold | Shrouded Fable": [
+    [
+      "2026-08-01",
+      66.14
+    ]
+  ],
+  "Serperior ex SIR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      58.4
+    ]
+  ],
+  "Lillie's Clefairy ex SIR | Journey Together": [
+    [
+      "2026-08-01",
+      127.79
+    ]
+  ],
+  "Genesect ex SIR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      52.99
+    ]
+  ],
+  "Volcarona IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      64.99
+    ]
+  ],
+  "Chandelure IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      76.49
+    ]
+  ],
+  "Krookodile IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      63
+    ]
+  ],
+  "Poliwhirl IR | 151": [
+    [
+      "2026-08-01",
+      53
+    ]
+  ],
+  "Hydreigon ex SIR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      97.08
+    ]
+  ],
+  "Mega Kangaskhan ex SIR | Mega Evolution": [
+    [
+      "2026-08-01",
+      66.06
+    ]
+  ],
+  "Kyurem ex SIR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      86.65
+    ]
+  ],
+  "Lillie's Determination SIR | Mega Evolution": [
+    [
+      "2026-08-01",
+      73.65
+    ]
+  ],
+  "Team Rocket's Nidoking ex SIR | Destined Rivals": [
+    [
+      "2026-08-01",
+      120
+    ]
+  ],
+  "Dwebble IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      66.53
+    ]
+  ],
+  "Mega Charizard X ex Gold | Phantasmal Flames": [
+    [
+      "2026-08-01",
+      350
+    ]
+  ],
+  "Mega Froslass ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      92
+    ]
+  ],
+  "Mega Darkrai ex SIR | Pitch Black": [
+    [
+      "2026-08-01",
+      305.49
+    ]
+  ],
+  "Marnie's Grimmsnarl ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      77.94
+    ]
+  ],
+  "Altaria ex SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      62.33
+    ]
+  ],
+  "Mega Lucario ex Gold | Mega Evolution": [
+    [
+      "2026-08-01",
+      280.5
+    ]
+  ],
+  "Mega Zeraora ex SIR | Pitch Black": [
+    [
+      "2026-08-01",
+      77.5
+    ]
+  ],
+  "Mega Chandelure ex SIR | Pitch Black": [
+    [
+      "2026-08-01",
+      59.99
+    ]
+  ],
+  "Fezandipiti ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      68.94
+    ]
+  ],
+  "Pikachu ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      404.99
+    ]
+  ],
+  "Mega Greninja ex SIR | Chaos Rising": [
+    [
+      "2026-08-01",
+      251.36
+    ]
+  ],
+  "Team Rocket's Mewtwo ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      407.96
+    ]
+  ],
+  "Steven's Metagross ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      101.84
+    ]
+  ],
+  "N's Zoroark ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      180
+    ]
+  ],
+  "Psyduck IR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      84.11
+    ]
+  ],
+  "Mega Darkrai ex Gold | Pitch Black": [
+    [
+      "2026-08-01",
+      208.31
+    ]
+  ],
+  "Haxorus IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      78.21
+    ]
+  ],
+  "Liepard IR | Black Bolt / White Flare": [
+    [
+      "2026-08-01",
+      55.25
+    ]
+  ],
+  "Mega Scrafty ex SIR | Ascended Heroes": [
+    [
+      "2026-08-01",
+      70.89
     ]
   ]
 }

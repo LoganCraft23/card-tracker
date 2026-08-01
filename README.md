@@ -31,12 +31,14 @@ any card flipped to BUY or SELL. GitHub Pages serves the dashboard.
 
 4. **The watchlist manages itself.** Every daily run starts with the
    screener (`npm run screen`): it prices every secret-rare card in every set
-   the model knows, keeps chase-art cards currently between $5 and $50, ranks
-   them by model upside (set phase × rarity tier × character popularity), and
-   writes the top 100 into `watchlist.json`. Cards drop out automatically
-   when they cross $50 or stronger candidates appear; new ones enter on their
-   own. Add `"pinned": true` to any entry to keep it through rebuilds. Tune
-   `MIN_PRICE` / `MAX_PRICE` / `TARGET` at the top of `scripts/screen.js`.
+   the model knows and sorts the chase-art ones into **price bands** —
+   `chase` ($5–$50) and `premium` ($50–$500) — keeping the top 100 of each by
+   model upside (set phase × rarity tier × character popularity). Each band
+   competes only against itself, so a run of expensive cards can't crowd out
+   the cheaper tier. Cards rotate in and out on their own as prices move. Add
+   `"pinned": true` to any entry to keep it through rebuilds; edit `BANDS` at
+   the top of `scripts/screen.js` to add a tier or retune the ranges — adding
+   a band costs no extra API calls, since every card is priced anyway.
 
 5. **Enable GitHub Pages.** Repo Settings → Pages → Source: "Deploy from a
    branch" → Branch: `main`, folder: `/docs`. Your dashboard will be at

@@ -315,7 +315,8 @@
     <div class="railGroup" id="gMarketSeg">
       <h5>Market</h5>
       <div class="seg" id="marketSeg" role="group" aria-label="Market">
-        <button type="button" data-market="cards">Cards</button>
+        <button type="button" data-market="chase">Chase</button>
+        <button type="button" data-market="premium">Premium</button>
         <button type="button" data-market="sealed">Sealed</button>
       </div>
     </div>
@@ -400,6 +401,8 @@
           <p>A set moves through predictable phases — hype-fade, supply trough, recovery,
             appreciation. Rarity tier and character popularity bend the curve. Foil Theory
             prices that idea daily and keeps score.</p>
+          <p>Three markets, one model: <b>Chase</b> ($5–$50 singles), <b>Premium</b>
+            ($50–$500 singles) and <b>Sealed</b> (boxes, ETBs and bundles).</p>
         </div>
         <div>
           <h4>Method</h4>
@@ -437,17 +440,22 @@ let SEALED = { products: [] };
 let state = {
   q: "", filter: "ALL", sort: "upside", format: "ALL",
   view: store.get("ft.view", "tiles"),
-  market: store.get("ft.market", "cards"),
+  market: store.get("ft.market", "chase"),
 };
 if (state.view !== "rows") state.view = "tiles";
-if (state.market !== "sealed") state.market = "cards";
+const MARKETS = ["chase", "premium", "sealed"];
+// "cards" was the pre-band name for what is now the chase tier.
+if (state.market === "cards") state.market = "chase";
+if (!MARKETS.includes(state.market)) state.market = "chase";
 
 // Cards and sealed products carry different fields; everything downstream
 // works off this one shape so render/sort/filter stay market-agnostic.
 const items = () =>
   state.market === "sealed"
     ? SEALED.products.map((p) => ({ ...p, subtitle: p.format, isSealed: true }))
-    : DATA.cards.map((c) => ({ ...c, subtitle: c.phase.replace("-", " ") + " phase" }));
+    : DATA.cards
+        .filter((c) => (c.band || "chase") === state.market)
+        .map((c) => ({ ...c, subtitle: c.phase.replace("-", " ") + " phase" }));
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -743,14 +751,24 @@ function render() {
   $("gFormat").hidden = state.market !== "sealed";
 
   const sealed = state.market === "sealed";
-  $("pageTitle").textContent = sealed ? "The sealed index" : "The chase index";
-  $("pageSub").innerHTML = sealed
-    ? `Booster boxes, ETBs and the rest, priced daily. Unlike singles, <b>sealed supply only shrinks</b> —
-       every box opened is one fewer left — so the out-of-print phases carry more weight here.`
-    : `Every secret rare in the modern era, re-screened each morning. The
+  const COPY = {
+    chase: ["The chase index",
+      `Every secret rare in the modern era, re-screened each morning. The
        <b>100 chase cards trading between $5 and $50</b>, ranked by what a card-lifecycle
        model thinks they're worth in twelve months — and <b>graded against a flat-price
-       baseline</b> so the theory has to earn its keep.`;
+       baseline</b> so the theory has to earn its keep.`],
+    premium: ["The premium index",
+      `The higher tier: <b>100 secret rares between $50 and $500</b>, screened from the same
+       daily sweep. Same lifecycle model, bigger positions — so the
+       <b>price-confidence read matters more here</b>, since a thin listing pool moves a
+       $300 card further than a $30 one.`],
+    sealed: ["The sealed index",
+      `Booster boxes, ETBs and the rest, priced daily. Unlike singles, <b>sealed supply only shrinks</b> —
+       every box opened is one fewer left — so the out-of-print phases carry more weight here.`],
+  };
+  const [title, sub] = COPY[state.market] || COPY.chase;
+  $("pageTitle").textContent = title;
+  $("pageSub").innerHTML = sub;
   $("updated").textContent = (sealed ? SEALED.updated : DATA.updated)
     ? "updated " + new Date(sealed ? SEALED.updated : DATA.updated).toLocaleString()
     : "no data yet";
@@ -781,6 +799,7 @@ function renderStats() {
   const avgConf = cards.reduce((a, c) => a + (c.confidence || 0), 0) / cards.length;
   $("stats").innerHTML = [
     [state.market === "sealed" ? "Products tracked" : "Cards tracked", cards.length],
+    ...(state.market === "premium" ? [["Total value", "$" + Math.round(cards.reduce((a, c) => a + c.price, 0)).toLocaleString()]] : []),
     ["Median price", "$" + median.toFixed(0)],
     ["Avg confidence", Math.round(avgConf * 100) + "%"],
     ["Refresh", "9AM ET"],
@@ -818,7 +837,7 @@ Promise.allSettled([
 ]).then(([cards, sealed]) => {
   if (cards.status === "fulfilled") DATA = cards.value;
   if (sealed.status === "fulfilled" && Array.isArray(sealed.value?.products)) SEALED = sealed.value;
-  if (!SEALED.products.length && state.market === "sealed") state.market = "cards";
+  if (!SEALED.products.length && state.market === "sealed") state.market = "chase";
   if (cards.status !== "fulfilled" && !SEALED.products.length) {
     $("updated").textContent = "couldn't load data";
     return;
