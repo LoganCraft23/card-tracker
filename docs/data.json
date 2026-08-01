@@ -1,7 +1,73 @@
 {
-  "updated": "2026-08-01T05:48:15.888Z",
+  "updated": "2026-08-01T05:55:13.641Z",
   "eurUsd": 1.1485,
   "cards": [
+    {
+      "name": "Roaring Moon ex SIR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-251",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/251",
+      "phase": "recovery",
+      "price": 42.96,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Down ~54% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.5412054120541205,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        52.64,
+        66.99
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          42.96
+        ]
+      ]
+    },
+    {
+      "name": "Zeraora IR",
+      "set": "Stellar Crown",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv07-151",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/151",
+      "phase": "recovery",
+      "price": 15,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~60% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.6,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        18.08,
+        23.02
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          15
+        ]
+      ]
+    },
     {
       "name": "Garchomp ex SIR",
       "set": "Paradox Rift",
@@ -32,562 +98,6 @@
         [
           "2026-08-01",
           40
-        ]
-      ]
-    },
-    {
-      "name": "Mew ex Shiny",
-      "set": "Paldean Fates",
-      "char": "S",
-      "tier": "chase",
-      "id": "sv04.5-216",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/216",
-      "phase": "recovery",
-      "price": 40,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising.",
-        "Price confidence is low (wide listing spread) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": -0.12839097121557264,
-      "momSource": "cardmarket",
-      "confidence": 0.53,
-      "confidenceFlags": [
-        "wide listing spread"
-      ],
-      "proj": [
-        36.82,
-        64.78
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          40
-        ]
-      ]
-    },
-    {
-      "name": "Lucario Shiny",
-      "set": "Paldean Fates",
-      "char": "S",
-      "tier": "chase",
-      "id": "sv04.5-174",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/174",
-      "phase": "recovery",
-      "price": 33.84,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": 0.026435357290375903,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        33.99,
-        51.96
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          33.84
-        ]
-      ]
-    },
-    {
-      "name": "Charmeleon Shiny",
-      "set": "Paldean Fates",
-      "char": "S",
-      "tier": "chase",
-      "id": "sv04.5-110",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/110",
-      "phase": "recovery",
-      "price": 19.99,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.10468654899573943,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        21.08,
-        29.69
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          19.99
-        ]
-      ]
-    },
-    {
-      "name": "Alakazam ex Shiny",
-      "set": "Paldean Fates",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04.5-215",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/215",
-      "phase": "recovery",
-      "price": 7.6,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.15037593984962397,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        7.39,
-        11.3
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          7.6
-        ]
-      ]
-    },
-    {
-      "name": "Ralts Shiny",
-      "set": "Paldean Fates",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04.5-153",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/153",
-      "phase": "recovery",
-      "price": 11.95,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.13615928066795102,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        11.63,
-        17.77
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          11.95
-        ]
-      ]
-    },
-    {
-      "name": "Cornerstone Mask Ogerpon ex SIR",
-      "set": "Twilight Masquerade",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv06-215",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/215",
-      "phase": "recovery",
-      "price": 16.34,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": -0.15072875933167446,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        17.69,
-        22.51
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          16.34
-        ]
-      ]
-    },
-    {
-      "name": "Ceruledge Shiny",
-      "set": "Paldean Fates",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04.5-162",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/162",
-      "phase": "recovery",
-      "price": 12.06,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "SELL",
-      "reasons": [
-        "Up ~60% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-      "mom": 0.6,
-      "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        8.76,
-        13.67
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          12.06
-        ]
-      ]
-    },
-    {
-      "name": "Iron Valiant ex SIR",
-      "set": "Paradox Rift",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04-249",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/249",
-      "phase": "recovery",
-      "price": 23.99,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": 0.05765595463137991,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        25.97,
-        33.05
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          23.99
-        ]
-      ]
-    },
-    {
-      "name": "Gardevoir ex Shiny",
-      "set": "Paldean Fates",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04.5-217",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/217",
-      "phase": "recovery",
-      "price": 9.67,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Up ~29% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.2870090634441088,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        8.31,
-        12.7
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          9.67
-        ]
-      ]
-    },
-    {
-      "name": "Yveltal IR",
-      "set": "Paradox Rift",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04-205",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/205",
-      "phase": "recovery",
-      "price": 33.38,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Up ~28% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.27849406910778746,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        30.6,
-        42.22
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          33.38
-        ]
-      ]
-    },
-    {
-      "name": "Slowpoke Shiny",
-      "set": "Paldean Fates",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04.5-116",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/116",
-      "phase": "recovery",
-      "price": 22.56,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": -0.22690437601296592,
-      "momSource": "cardmarket",
-      "confidence": 0.55,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        20.3,
-        35.2
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          22.56
-        ]
-      ]
-    },
-    {
-      "name": "Ninetales IR",
-      "set": "Obsidian Flames",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv03-199",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/199",
-      "phase": "appreciation",
-      "price": 43.73,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.2069588793492995,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        46.18,
-        58.77
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          43.73
-        ]
-      ]
-    },
-    {
-      "name": "Hisuian Growlithe IR",
-      "set": "Twilight Masquerade",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv06-181",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/181",
-      "phase": "recovery",
-      "price": 32.17,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": -0.14707655213984314,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        34.82,
-        44.32
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          32.17
-        ]
-      ]
-    },
-    {
-      "name": "Zorua IR",
-      "set": "Shrouded Fable",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv06.5-075",
-      "image": "https://assets.tcgdex.net/en/sv/sv06.5/075",
-      "phase": "recovery",
-      "price": 30,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.11340206185567021,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        31.01,
-        42.79
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          30
-        ]
-      ]
-    },
-    {
-      "name": "Teal Mask Ogerpon ex SIR",
-      "set": "Twilight Masquerade",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv06-211",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/211",
-      "phase": "recovery",
-      "price": 25,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": 0.08236434108527145,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        27.06,
-        34.44
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          25
-        ]
-      ]
-    },
-    {
-      "name": "Hearthflame Mask Ogerpon ex SIR",
-      "set": "Twilight Masquerade",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv06-212",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/212",
-      "phase": "recovery",
-      "price": 14,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.23752969121140147,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        13.62,
-        20.82
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          14
-        ]
-      ]
-    },
-    {
-      "name": "Kirlia Shiny",
-      "set": "Paldean Fates",
-      "char": "A",
-      "tier": "chase",
-      "id": "sv04.5-154",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/154",
-      "phase": "recovery",
-      "price": 8,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "BUY",
-      "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
-      ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": 0.006120887528691528,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        8.17,
-        11.51
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          8
         ]
       ]
     },
@@ -625,47 +135,146 @@
       ]
     },
     {
-      "name": "Roaring Moon ex SIR",
-      "set": "Paradox Rift",
-      "char": "A",
+      "name": "Dusclops IR",
+      "set": "Shrouded Fable",
+      "char": "B",
       "tier": "chase",
-      "id": "sv04-251",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/251",
+      "id": "sv06.5-069",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/069",
       "phase": "recovery",
-      "price": 42.96,
+      "price": 47.5,
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "BUY",
+      "signal": "HOLD",
       "reasons": [
-        "Down ~54% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
-        "Out of print under three years — sealed supply is drying up and the floor is rising."
+        "Down ~33% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
-      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": -0.5412054120541205,
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.32930575465902107,
       "momSource": "cardmarket",
-      "confidence": 1,
+      "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        52.64,
-        66.99
+        51.45,
+        70.99
       ],
       "history": [
         [
           "2026-08-01",
-          42.96
+          47.5
         ]
       ]
     },
     {
-      "name": "Terapagos ex SIR",
-      "set": "Stellar Crown",
-      "char": "A",
+      "name": "Iron Boulder ex SIR",
+      "set": "Temporal Forces",
+      "char": "B",
       "tier": "chase",
-      "id": "sv07-170",
-      "image": "https://assets.tcgdex.net/en/sv/sv07/170",
+      "id": "sv05-207",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/207",
       "phase": "recovery",
-      "price": 44.81,
+      "price": 27.79,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~26% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.2589049460614695,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        31,
+        39.46
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          27.79
+        ]
+      ]
+    },
+    {
+      "name": "Porygon-Z IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-214",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/214",
+      "phase": "recovery",
+      "price": 16.45,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~30% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.30466830466830475,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        17.71,
+        24.44
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          16.45
+        ]
+      ]
+    },
+    {
+      "name": "Clive SIR",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-236",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/236",
+      "phase": "recovery",
+      "price": 31.05,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~27% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.2653416149068325,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        33.13,
+        45.71
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          31.05
+        ]
+      ]
+    },
+    {
+      "name": "Charmeleon Shiny",
+      "set": "Paldean Fates",
+      "char": "S",
+      "tier": "chase",
+      "id": "sv04.5-110",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/110",
+      "phase": "recovery",
+      "price": 19.99,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -674,53 +283,50 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.1834578716825562,
+      "mom": 0.10468654899573943,
       "momSource": "cardmarket",
-      "confidence": 1,
+      "confidence": 0.85,
       "confidenceFlags": [],
       "proj": [
-        48.5,
-        61.73
+        21.08,
+        29.69
       ],
       "history": [
         [
           "2026-08-01",
-          44.81
+          19.99
         ]
       ]
     },
     {
-      "name": "Litten IR",
-      "set": "Temporal Forces",
-      "char": "A",
+      "name": "Lucario Shiny",
+      "set": "Paldean Fates",
+      "char": "S",
       "tier": "chase",
-      "id": "sv05-167",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/167",
+      "id": "sv04.5-174",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/174",
       "phase": "recovery",
-      "price": 44.27,
+      "price": 33.84,
       "chg30": null,
       "chg90": null,
       "chg180": null,
       "signal": "BUY",
       "reasons": [
-        "Out of print under three years — sealed supply is drying up and the floor is rising.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
       "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
-      "mom": -0.04907975460122714,
+      "mom": 0.026435357290375903,
       "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        42.53,
-        66.38
+        33.99,
+        51.96
       ],
       "history": [
         [
           "2026-08-01",
-          44.27
+          33.84
         ]
       ]
     },
@@ -757,6 +363,166 @@
       ]
     },
     {
+      "name": "Cornerstone Mask Ogerpon ex SIR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-215",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/215",
+      "phase": "recovery",
+      "price": 16.34,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.15072875933167446,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        17.69,
+        22.51
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          16.34
+        ]
+      ]
+    },
+    {
+      "name": "Iron Valiant ex SIR",
+      "set": "Paradox Rift",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04-249",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/249",
+      "phase": "recovery",
+      "price": 23.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.05765595463137991,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        25.97,
+        33.05
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          23.99
+        ]
+      ]
+    },
+    {
+      "name": "Hisuian Growlithe IR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-181",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/181",
+      "phase": "recovery",
+      "price": 32.17,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.14707655213984314,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        34.82,
+        44.32
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          32.17
+        ]
+      ]
+    },
+    {
+      "name": "Teal Mask Ogerpon ex SIR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-211",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/211",
+      "phase": "recovery",
+      "price": 25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.08236434108527145,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        27.06,
+        34.44
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          25
+        ]
+      ]
+    },
+    {
+      "name": "Terapagos ex SIR",
+      "set": "Stellar Crown",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv07-170",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/170",
+      "phase": "recovery",
+      "price": 44.81,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1834578716825562,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        48.5,
+        61.73
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          44.81
+        ]
+      ]
+    },
+    {
       "name": "Riolu Shiny",
       "set": "Paldean Fates",
       "char": "A",
@@ -785,6 +551,38 @@
         [
           "2026-08-01",
           15.66
+        ]
+      ]
+    },
+    {
+      "name": "Zorua IR",
+      "set": "Shrouded Fable",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06.5-075",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/075",
+      "phase": "recovery",
+      "price": 30,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.11340206185567021,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        31.01,
+        42.79
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          30
         ]
       ]
     },
@@ -821,299 +619,69 @@
       ]
     },
     {
-      "name": "Jumpluff Shiny",
+      "name": "Kirlia Shiny",
       "set": "Paldean Fates",
-      "char": "B",
+      "char": "A",
       "tier": "chase",
-      "id": "sv04.5-098",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/098",
+      "id": "sv04.5-154",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/154",
       "phase": "recovery",
-      "price": 5.27,
+      "price": 8,
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "HOLD",
+      "signal": "BUY",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+        "Out of print under three years — sealed supply is drying up and the floor is rising."
       ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.21505376344086025,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        4.96,
-        7.58
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.27
-        ]
-      ]
-    },
-    {
-      "name": "Armarouge Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-115",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/115",
-      "phase": "recovery",
-      "price": 5.72,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.05548549810844886,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        5.38,
-        8.23
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.72
-        ]
-      ]
-    },
-    {
-      "name": "Meditite IR",
-      "set": "Stellar Crown",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv07-153",
-      "image": "https://assets.tcgdex.net/en/sv/sv07/153",
-      "phase": "recovery",
-      "price": 8.4,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.04030226700251864,
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": 0.006120887528691528,
       "momSource": "cardmarket",
       "confidence": 0.85,
       "confidenceFlags": [],
       "proj": [
-        8.3,
-        11.69
+        8.17,
+        11.51
       ],
       "history": [
         [
           "2026-08-01",
-          8.4
+          8
         ]
       ]
     },
     {
-      "name": "Staryu Shiny",
+      "name": "Mew ex Shiny",
       "set": "Paldean Fates",
-      "char": "B",
+      "char": "S",
       "tier": "chase",
-      "id": "sv04.5-118",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/118",
+      "id": "sv04.5-216",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/216",
       "phase": "recovery",
-      "price": 7.14,
+      "price": 40,
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "HOLD",
+      "signal": "BUY",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.004016064257028027,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        7.48,
-        9.52
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          7.14
-        ]
-      ]
-    },
-    {
-      "name": "Torkoal IR",
-      "set": "Twilight Masquerade",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06-172",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/172",
-      "phase": "recovery",
-      "price": 7.14,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+        "Out of print under three years — sealed supply is drying up and the floor is rising.",
         "Price confidence is low (wide listing spread) — the projection range is widened to match."
       ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.09850746268656718,
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.12839097121557264,
       "momSource": "cardmarket",
       "confidence": 0.53,
       "confidenceFlags": [
         "wide listing spread"
       ],
       "proj": [
-        6.16,
-        10.83
+        36.82,
+        64.78
       ],
       "history": [
         [
           "2026-08-01",
-          7.14
-        ]
-      ]
-    },
-    {
-      "name": "Spiritomb Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-158",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/158",
-      "phase": "recovery",
-      "price": 5.88,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.13419354838709663,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        5.81,
-        8.18
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.88
-        ]
-      ]
-    },
-    {
-      "name": "Voltorb Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-133",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/133",
-      "phase": "recovery",
-      "price": 5.25,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (wide listing spread) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.12105263157894737,
-      "momSource": "cardmarket",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "wide listing spread"
-      ],
-      "proj": [
-        4.78,
-        7.72
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.25
-        ]
-      ]
-    },
-    {
-      "name": "Scizor Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-191",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/191",
-      "phase": "recovery",
-      "price": 10.69,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.06945540647198098,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        10.06,
-        15.38
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          10.69
-        ]
-      ]
-    },
-    {
-      "name": "Lileep IR",
-      "set": "Stellar Crown",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv07-145",
-      "image": "https://assets.tcgdex.net/en/sv/sv07/145",
-      "phase": "recovery",
-      "price": 9.85,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (thin, erratic sales) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.10995944118972516,
-      "momSource": "cardmarket",
-      "confidence": 0.43,
-      "confidenceFlags": [
-        "thin, erratic sales"
-      ],
-      "proj": [
-        8.11,
-        15.33
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          9.85
+          40
         ]
       ]
     },
@@ -1154,50 +722,241 @@
       ]
     },
     {
-      "name": "Charjabug IR",
+      "name": "Ninetales IR",
+      "set": "Obsidian Flames",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv03-199",
+      "image": "https://assets.tcgdex.net/en/sv/sv03/199",
+      "phase": "appreciation",
+      "price": 43.73,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.2069588793492995,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        46.18,
+        58.77
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          43.73
+        ]
+      ]
+    },
+    {
+      "name": "Ralts Shiny",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-153",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/153",
+      "phase": "recovery",
+      "price": 11.95,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.13615928066795102,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
+      "proj": [
+        11.63,
+        17.77
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          11.95
+        ]
+      ]
+    },
+    {
+      "name": "Hearthflame Mask Ogerpon ex SIR",
+      "set": "Twilight Masquerade",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv06-212",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/212",
+      "phase": "recovery",
+      "price": 14,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.23752969121140147,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
+      "proj": [
+        13.62,
+        20.82
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          14
+        ]
+      ]
+    },
+    {
+      "name": "Alakazam ex Shiny",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-215",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/215",
+      "phase": "recovery",
+      "price": 7.6,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.15037593984962397,
+      "momSource": "cardmarket",
+      "confidence": 0.73,
+      "confidenceFlags": [],
+      "proj": [
+        7.39,
+        11.3
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          7.6
+        ]
+      ]
+    },
+    {
+      "name": "Litten IR",
+      "set": "Temporal Forces",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv05-167",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/167",
+      "phase": "recovery",
+      "price": 44.27,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.04907975460122714,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
+      ],
+      "proj": [
+        42.53,
+        66.38
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          44.27
+        ]
+      ]
+    },
+    {
+      "name": "Tulip SIR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-259",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/259",
+      "phase": "recovery",
+      "price": 9.24,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.03641881638846741,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        9.68,
+        12.32
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          9.24
+        ]
+      ]
+    },
+    {
+      "name": "Staryu Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-118",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/118",
+      "phase": "recovery",
+      "price": 7.14,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.004016064257028027,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        7.48,
+        9.52
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          7.14
+        ]
+      ]
+    },
+    {
+      "name": "Chatot IR",
       "set": "Temporal Forces",
       "char": "B",
       "tier": "chase",
-      "id": "sv05-169",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/169",
+      "id": "sv05-181",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/181",
       "phase": "recovery",
-      "price": 10.09,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (wide listing spread; US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.1677704194260485,
-      "momSource": "cardmarket",
-      "confidence": 0.35,
-      "confidenceFlags": [
-        "wide listing spread",
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        7.99,
-        16.02
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          10.09
-        ]
-      ]
-    },
-    {
-      "name": "Crustle IR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-183",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/183",
-      "phase": "recovery",
-      "price": 5.86,
+      "price": 12.25,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -1206,158 +965,30 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.0049261083743841316,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        5.52,
-        8.43
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.86
-        ]
-      ]
-    },
-    {
-      "name": "Iron Moth IR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-187",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/187",
-      "phase": "recovery",
-      "price": 9.25,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.003921568627450896,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        9.25,
-        12.76
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          9.25
-        ]
-      ]
-    },
-    {
-      "name": "Vileplume Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-094",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/094",
-      "phase": "recovery",
-      "price": 9.04,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.06570841889117011,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        8.51,
-        13.01
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          9.04
-        ]
-      ]
-    },
-    {
-      "name": "Larvitar IR",
-      "set": "Obsidian Flames",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv03-203",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/203",
-      "phase": "appreciation",
-      "price": 7.7,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.14163614163614166,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        7.06,
-        10.8
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          7.7
-        ]
-      ]
-    },
-    {
-      "name": "Nemona SIR",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-238",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/238",
-      "phase": "recovery",
-      "price": 7.7,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.16638935108153077,
+      "mom": -0.04006009013520267,
       "momSource": "cardmarket",
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        8.06,
-        10.26
+        12.83,
+        16.33
       ],
       "history": [
         [
           "2026-08-01",
-          7.7
+          12.25
         ]
       ]
     },
     {
-      "name": "Pidgeotto IR",
-      "set": "Obsidian Flames",
+      "name": "Cufant IR",
+      "set": "Shrouded Fable",
       "char": "B",
       "tier": "chase",
-      "id": "sv03-208",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/208",
-      "phase": "appreciation",
-      "price": 12.38,
+      "id": "sv06.5-076",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/076",
+      "phase": "recovery",
+      "price": 16.01,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -1366,316 +997,18 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.07211848036059247,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        11.93,
-        16.79
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          12.38
-        ]
-      ]
-    },
-    {
-      "name": "Scizor IR",
-      "set": "Obsidian Flames",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv03-205",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/205",
-      "phase": "appreciation",
-      "price": 18.4,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.09574767671078566,
+      "mom": 0.04651162790697664,
       "momSource": "cardmarket",
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        18.78,
-        23.91
+        16.77,
+        21.34
       ],
       "history": [
         [
           "2026-08-01",
-          18.4
-        ]
-      ]
-    },
-    {
-      "name": "Ferrothorn IR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-209",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/209",
-      "phase": "recovery",
-      "price": 6.44,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.011869436201780163,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        6.36,
-        8.96
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          6.44
-        ]
-      ]
-    },
-    {
-      "name": "Professor Sada's Vitality SIR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-256",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/256",
-      "phase": "recovery",
-      "price": 8.99,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.10181818181818199,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        9.41,
-        11.98
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          8.99
-        ]
-      ]
-    },
-    {
-      "name": "Wigglytuff Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-147",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/147",
-      "phase": "recovery",
-      "price": 7.15,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (wide listing spread) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.1593625498007967,
-      "momSource": "cardmarket",
-      "confidence": 0.53,
-      "confidenceFlags": [
-        "wide listing spread"
-      ],
-      "proj": [
-        6.17,
-        10.85
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          7.15
-        ]
-      ]
-    },
-    {
-      "name": "Professor Turo's Scenario SIR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-257",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/257",
-      "phase": "recovery",
-      "price": 6.23,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "SELL",
-      "reasons": [
-        "Up ~37% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
-      ],
-      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-      "mom": 0.370315944158707,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        5.2,
-        7.32
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          6.23
-        ]
-      ]
-    },
-    {
-      "name": "Revavroom ex SIR",
-      "set": "Obsidian Flames",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv03-224",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/224",
-      "phase": "appreciation",
-      "price": 6.02,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.09150326797385619,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        6.15,
-        7.82
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          6.02
-        ]
-      ]
-    },
-    {
-      "name": "Garganacl IR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-202",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/202",
-      "phase": "recovery",
-      "price": 6.73,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.2046783625730992,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        6.33,
-        9.68
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          6.73
-        ]
-      ]
-    },
-    {
-      "name": "Snorunt IR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-188",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/188",
-      "phase": "recovery",
-      "price": 10.91,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (thin, erratic sales) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.08268733850129194,
-      "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "thin, erratic sales"
-      ],
-      "proj": [
-        10.14,
-        15.83
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          10.91
-        ]
-      ]
-    },
-    {
-      "name": "Iron Jugulis IR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-216",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/216",
-      "phase": "recovery",
-      "price": 12.12,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.010723860589812423,
-      "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        11.26,
-        17.58
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          12.12
+          16.01
         ]
       ]
     },
@@ -1712,137 +1045,6 @@
       ]
     },
     {
-      "name": "Gimmighoul IR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-198",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/198",
-      "phase": "recovery",
-      "price": 15.46,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.15542363734484632,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        14.55,
-        22.24
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          15.46
-        ]
-      ]
-    },
-    {
-      "name": "Lechonk Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-207",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/207",
-      "phase": "recovery",
-      "price": 18.17,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.04010938924339086,
-      "momSource": "cardmarket",
-      "confidence": 0.55,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        15.82,
-        27.43
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          18.17
-        ]
-      ]
-    },
-    {
-      "name": "Relicanth IR",
-      "set": "Temporal Forces",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv05-173",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/173",
-      "phase": "recovery",
-      "price": 12.99,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.026825633383010663,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        12.99,
-        17.93
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          12.99
-        ]
-      ]
-    },
-    {
-      "name": "Pidgeot ex SIR",
-      "set": "Obsidian Flames",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv03-225",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/225",
-      "phase": "appreciation",
-      "price": 23.43,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.1537176274018379,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        23.92,
-        30.44
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          23.43
-        ]
-      ]
-    },
-    {
       "name": "Mela SIR",
       "set": "Paradox Rift",
       "char": "B",
@@ -1875,242 +1077,6 @@
       ]
     },
     {
-      "name": "Heliolisk IR",
-      "set": "Twilight Masquerade",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06-177",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/177",
-      "phase": "recovery",
-      "price": 5.68,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (wide listing spread) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.15313225058004665,
-      "momSource": "cardmarket",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "wide listing spread"
-      ],
-      "proj": [
-        5.17,
-        8.35
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.68
-        ]
-      ]
-    },
-    {
-      "name": "Reuniclus IR",
-      "set": "Temporal Forces",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv05-171",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/171",
-      "phase": "recovery",
-      "price": 17.54,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (wide listing spread) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.11571185479296667,
-      "momSource": "cardmarket",
-      "confidence": 0.53,
-      "confidenceFlags": [
-        "wide listing spread"
-      ],
-      "proj": [
-        15.13,
-        26.61
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          17.54
-        ]
-      ]
-    },
-    {
-      "name": "Tapu Bulu IR",
-      "set": "Shrouded Fable",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06.5-065",
-      "image": "https://assets.tcgdex.net/en/sv/sv06.5/065",
-      "phase": "recovery",
-      "price": 13.99,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.06570841889117025,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        13.17,
-        20.13
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          13.99
-        ]
-      ]
-    },
-    {
-      "name": "Sunflora IR",
-      "set": "Twilight Masquerade",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06-169",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/169",
-      "phase": "recovery",
-      "price": 9.02,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.1315789473684209,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        8.49,
-        12.98
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          9.02
-        ]
-      ]
-    },
-    {
-      "name": "Kadabra Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-149",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/149",
-      "phase": "recovery",
-      "price": 8.31,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.08774583963691376,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        8.21,
-        11.57
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          8.31
-        ]
-      ]
-    },
-    {
-      "name": "Tatsugiri Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-127",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/127",
-      "phase": "recovery",
-      "price": 7.6,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.21855146124523492,
-      "momSource": "cardmarket",
-      "confidence": 0.55,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        6.62,
-        11.47
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          7.6
-        ]
-      ]
-    },
-    {
-      "name": "Snom IR",
-      "set": "Temporal Forces",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv05-168",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/168",
-      "phase": "recovery",
-      "price": 19.25,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.041522491349481064,
-      "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        17.89,
-        27.92
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          19.25
-        ]
-      ]
-    },
-    {
       "name": "Pinsir IR",
       "set": "Twilight Masquerade",
       "char": "B",
@@ -2139,76 +1105,6 @@
         [
           "2026-08-01",
           17.12
-        ]
-      ]
-    },
-    {
-      "name": "Lechonk IR",
-      "set": "Obsidian Flames",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv03-209",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/209",
-      "phase": "appreciation",
-      "price": 14.99,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.051517939282428586,
-      "momSource": "cardmarket",
-      "confidence": 0.55,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        12.72,
-        22.06
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          14.99
-        ]
-      ]
-    },
-    {
-      "name": "Oddish Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-092",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/092",
-      "phase": "recovery",
-      "price": 14.99,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.15527426160337554,
-      "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        13.93,
-        21.74
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          14.99
         ]
       ]
     },
@@ -2277,379 +1173,14 @@
       ]
     },
     {
-      "name": "Milcery IR",
-      "set": "Stellar Crown",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv07-152",
-      "image": "https://assets.tcgdex.net/en/sv/sv07/152",
-      "phase": "recovery",
-      "price": 20.2,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.09040928527794727,
-      "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        18.77,
-        29.3
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          20.2
-        ]
-      ]
-    },
-    {
-      "name": "Wattrel IR",
-      "set": "Twilight Masquerade",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06-178",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/178",
-      "phase": "recovery",
-      "price": 5.55,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (wide listing spread) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.12435233160621757,
-      "momSource": "cardmarket",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "wide listing spread"
-      ],
-      "proj": [
-        5.05,
-        8.16
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.55
-        ]
-      ]
-    },
-    {
-      "name": "Fraxure IR",
-      "set": "Shrouded Fable",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06.5-077",
-      "image": "https://assets.tcgdex.net/en/sv/sv06.5/077",
-      "phase": "recovery",
-      "price": 19.57,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.06502359727320373,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        18.42,
-        28.16
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          19.57
-        ]
-      ]
-    },
-    {
-      "name": "Lickitung IR",
-      "set": "Temporal Forces",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv05-180",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/180",
-      "phase": "recovery",
-      "price": 32.75,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.017841213202497708,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        32.75,
-        45.19
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          32.75
-        ]
-      ]
-    },
-    {
-      "name": "Tinkatink Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-165",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/165",
-      "phase": "recovery",
-      "price": 8.76,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "SELL",
-      "reasons": [
-        "Up ~33% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-      "mom": 0.33192686357243306,
-      "momSource": "cardmarket",
-      "confidence": 0.55,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        6.56,
-        11.38
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          8.76
-        ]
-      ]
-    },
-    {
-      "name": "Mudsdale IR",
-      "set": "Temporal Forces",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv05-175",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/175",
-      "phase": "recovery",
-      "price": 10.47,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.19001610305958128,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        10.47,
-        14.45
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          10.47
-        ]
-      ]
-    },
-    {
-      "name": "Bronzor IR",
-      "set": "Temporal Forces",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv05-170",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/170",
-      "phase": "recovery",
-      "price": 9.26,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.03395061728395072,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        9.15,
-        12.89
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          9.26
-        ]
-      ]
-    },
-    {
-      "name": "Poltchageist IR",
-      "set": "Twilight Masquerade",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06-171",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/171",
-      "phase": "recovery",
-      "price": 6.34,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (wide listing spread) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.12994350282485873,
-      "momSource": "cardmarket",
-      "confidence": 0.53,
-      "confidenceFlags": [
-        "wide listing spread"
-      ],
-      "proj": [
-        5.47,
-        9.62
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          6.34
-        ]
-      ]
-    },
-    {
-      "name": "Phione IR",
-      "set": "Twilight Masquerade",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06-175",
-      "image": "https://assets.tcgdex.net/en/sv/sv06/175",
-      "phase": "recovery",
-      "price": 13.68,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.06078431372548995,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        13.52,
-        19.04
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          13.68
-        ]
-      ]
-    },
-    {
-      "name": "Eiscue ex SIR",
-      "set": "Obsidian Flames",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv03-222",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/222",
-      "phase": "appreciation",
-      "price": 9.05,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.012806830309498507,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        8.3,
-        12.69
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          9.05
-        ]
-      ]
-    },
-    {
-      "name": "Cassiopeia SIR",
-      "set": "Shrouded Fable",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06.5-094",
-      "image": "https://assets.tcgdex.net/en/sv/sv06.5/094",
-      "phase": "recovery",
-      "price": 44.83,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.039415801513285144,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        44.83,
-        61.86
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          44.83
-        ]
-      ]
-    },
-    {
-      "name": "Vanillish IR",
+      "name": "Tapu Koko ex SIR",
       "set": "Paradox Rift",
       "char": "B",
       "tier": "chase",
-      "id": "sv04-190",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/190",
+      "id": "sv04-247",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/247",
       "phase": "recovery",
-      "price": 12.76,
+      "price": 20.99,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -2658,63 +1189,30 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        12.76,
-        17.61
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          12.76
-        ]
-      ]
-    },
-    {
-      "name": "Penny SIR",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-239",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/239",
-      "phase": "recovery",
-      "price": 19.39,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "SELL",
-      "reasons": [
-        "Up ~47% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering."
-      ],
-      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-      "mom": 0.4708487084870849,
+      "mom": -0.052542943752105165,
       "momSource": "cardmarket",
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        16.29,
-        20.73
+        21.98,
+        27.98
       ],
       "history": [
         [
           "2026-08-01",
-          19.39
+          20.99
         ]
       ]
     },
     {
-      "name": "Cleffa IR",
-      "set": "Obsidian Flames",
+      "name": "Iron Leaves ex SIR",
+      "set": "Temporal Forces",
       "char": "B",
       "tier": "chase",
-      "id": "sv03-202",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/202",
-      "phase": "appreciation",
-      "price": 42.99,
+      "id": "sv05-203",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/203",
+      "phase": "recovery",
+      "price": 39.38,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -2723,30 +1221,30 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.1572869463528725,
+      "mom": -0.18128430997063694,
       "momSource": "cardmarket",
-      "confidence": 0.85,
+      "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        41.42,
-        58.32
+        41.24,
+        52.49
       ],
       "history": [
         [
           "2026-08-01",
-          42.99
+          39.38
         ]
       ]
     },
     {
-      "name": "Okidogi ex SIR",
+      "name": "Munkidori ex SIR",
       "set": "Shrouded Fable",
       "char": "B",
       "tier": "chase",
-      "id": "sv06.5-090",
-      "image": "https://assets.tcgdex.net/en/sv/sv06.5/090",
+      "id": "sv06.5-091",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/091",
       "phase": "recovery",
-      "price": 23.6,
+      "price": 21.6,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -2755,18 +1253,18 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.08671257332313201,
+      "mom": -0.11823700184745291,
       "momSource": "cardmarket",
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        24.71,
-        31.45
+        22.62,
+        28.79
       ],
       "history": [
         [
           "2026-08-01",
-          23.6
+          21.6
         ]
       ]
     },
@@ -2803,14 +1301,14 @@
       ]
     },
     {
-      "name": "Deerling IR",
-      "set": "Temporal Forces",
+      "name": "Golisopod ex SIR",
+      "set": "Paradox Rift",
       "char": "B",
       "tier": "chase",
-      "id": "sv05-165",
-      "image": "https://assets.tcgdex.net/en/sv/sv05/165",
+      "id": "sv04-246",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/246",
       "phase": "recovery",
-      "price": 47.99,
+      "price": 27.84,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -2819,18 +1317,627 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.061807580174927046,
+      "mom": 0.07189873417721528,
       "momSource": "cardmarket",
-      "confidence": 0.88,
+      "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        47.99,
-        66.22
+        29.15,
+        37.11
       ],
       "history": [
         [
           "2026-08-01",
-          47.99
+          27.84
+        ]
+      ]
+    },
+    {
+      "name": "Pecharunt ex SIR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-093",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/093",
+      "phase": "recovery",
+      "price": 26.63,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.07838526357044875,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        27.89,
+        35.49
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          26.63
+        ]
+      ]
+    },
+    {
+      "name": "Gloom Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-093",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/093",
+      "phase": "recovery",
+      "price": 6,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.04989604989604994,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        6.28,
+        8
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          6
+        ]
+      ]
+    },
+    {
+      "name": "Servine IR",
+      "set": "Black Bolt / White Flare",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv10.5b-088",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/088",
+      "phase": "supply-trough",
+      "price": 23,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Down ~60% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.6,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        24.09,
+        30.65
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          23
+        ]
+      ]
+    },
+    {
+      "name": "Iron Hands ex SIR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-248",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/248",
+      "phase": "recovery",
+      "price": 13.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.07323026851098473,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        14.14,
+        17.99
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          13.5
+        ]
+      ]
+    },
+    {
+      "name": "Parasol Lady SIR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-255",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/255",
+      "phase": "recovery",
+      "price": 17.37,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.05275056518462693,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        18.19,
+        23.15
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          17.37
+        ]
+      ]
+    },
+    {
+      "name": "Kieran SIR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-218",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/218",
+      "phase": "recovery",
+      "price": 31.82,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.0008009611533839015,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        33.32,
+        42.41
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          31.82
+        ]
+      ]
+    },
+    {
+      "name": "Arbok IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-176",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/176",
+      "phase": "recovery",
+      "price": 34.56,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.15748469671675003,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        36.19,
+        46.06
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          34.56
+        ]
+      ]
+    },
+    {
+      "name": "Iono SIR",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-237",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/237",
+      "phase": "recovery",
+      "price": 31.01,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.05301914580265088,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        32.47,
+        41.33
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          31.01
+        ]
+      ]
+    },
+    {
+      "name": "Bianca's Devotion SIR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-209",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/209",
+      "phase": "recovery",
+      "price": 30.59,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.015627260888438698,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        32.03,
+        40.77
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          30.59
+        ]
+      ]
+    },
+    {
+      "name": "Okidogi ex SIR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-090",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/090",
+      "phase": "recovery",
+      "price": 23.6,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.08671257332313201,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        24.71,
+        31.45
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          23.6
+        ]
+      ]
+    },
+    {
+      "name": "Professor Sada's Vitality SIR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-256",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/256",
+      "phase": "recovery",
+      "price": 8.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.10181818181818199,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        9.41,
+        11.98
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          8.99
+        ]
+      ]
+    },
+    {
+      "name": "Nemona SIR",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-238",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/238",
+      "phase": "recovery",
+      "price": 7.7,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.16638935108153077,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        8.06,
+        10.26
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          7.7
+        ]
+      ]
+    },
+    {
+      "name": "Rika SIR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-258",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/258",
+      "phase": "recovery",
+      "price": 9.49,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.049573973663826536,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        9.49,
+        13.1
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          9.49
+        ]
+      ]
+    },
+    {
+      "name": "Relicanth IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-173",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/173",
+      "phase": "recovery",
+      "price": 12.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.026825633383010663,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        12.99,
+        17.93
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.99
+        ]
+      ]
+    },
+    {
+      "name": "Excadrill IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-174",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/174",
+      "phase": "recovery",
+      "price": 12.02,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.10318664643399085,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        12.02,
+        16.59
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.02
+        ]
+      ]
+    },
+    {
+      "name": "Dipplin IR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-170",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/170",
+      "phase": "recovery",
+      "price": 14.1,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.016053511705685516,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        14.1,
+        19.46
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          14.1
+        ]
+      ]
+    },
+    {
+      "name": "Mudsdale IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-175",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/175",
+      "phase": "recovery",
+      "price": 10.47,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.19001610305958128,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        10.47,
+        14.45
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          10.47
+        ]
+      ]
+    },
+    {
+      "name": "Raichu Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-132",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/132",
+      "phase": "recovery",
+      "price": 24.52,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.11154144074360971,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        24.52,
+        33.84
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          24.52
+        ]
+      ]
+    },
+    {
+      "name": "Vanillish IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-190",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/190",
+      "phase": "recovery",
+      "price": 12.76,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        12.76,
+        17.61
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.76
         ]
       ]
     },
@@ -2863,38 +1970,6 @@
         [
           "2026-08-01",
           9.13
-        ]
-      ]
-    },
-    {
-      "name": "Pidgey IR",
-      "set": "Obsidian Flames",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv03-207",
-      "image": "https://assets.tcgdex.net/en/sv/sv03/207",
-      "phase": "appreciation",
-      "price": 19.26,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.12503617945007237,
-      "momSource": "cardmarket",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        18.55,
-        26.13
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          19.26
         ]
       ]
     },
@@ -2963,38 +2038,6 @@
       ]
     },
     {
-      "name": "Pawmi Shiny",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-142",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/142",
-      "phase": "recovery",
-      "price": 5.71,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.19469026548672544,
-      "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
-      "proj": [
-        5.37,
-        8.22
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          5.71
-        ]
-      ]
-    },
-    {
       "name": "Swablu IR",
       "set": "Paradox Rift",
       "char": "B",
@@ -3023,71 +2066,6 @@
         [
           "2026-08-01",
           30.55
-        ]
-      ]
-    },
-    {
-      "name": "Clive SIR",
-      "set": "Paldean Fates",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04.5-236",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/236",
-      "phase": "recovery",
-      "price": 31.05,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Down ~27% over the last month (from Cardmarket 7d vs 30d averages) — oversold moves partially bounce.",
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.2653416149068325,
-      "momSource": "cardmarket",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        33.13,
-        45.71
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          31.05
-        ]
-      ]
-    },
-    {
-      "name": "Golisopod ex SIR",
-      "set": "Paradox Rift",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv04-246",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/246",
-      "phase": "recovery",
-      "price": 27.84,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.07189873417721528,
-      "momSource": "cardmarket",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        29.15,
-        37.11
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          27.84
         ]
       ]
     },
@@ -3124,50 +2102,14 @@
       ]
     },
     {
-      "name": "Mantyke IR",
+      "name": "Loudred IR",
       "set": "Paradox Rift",
       "char": "B",
       "tier": "chase",
-      "id": "sv04-189",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/189",
+      "id": "sv04-212",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/212",
       "phase": "recovery",
-      "price": 40.55,
-      "chg30": null,
-      "chg90": null,
-      "chg180": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Up ~25% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.2500737245650252,
-      "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
-      "proj": [
-        33.73,
-        52.64
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          40.55
-        ]
-      ]
-    },
-    {
-      "name": "Pecharunt ex SIR",
-      "set": "Shrouded Fable",
-      "char": "B",
-      "tier": "chase",
-      "id": "sv06.5-093",
-      "image": "https://assets.tcgdex.net/en/sv/sv06.5/093",
-      "phase": "recovery",
-      "price": 26.63,
+      "price": 18,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -3176,55 +2118,82 @@
         "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": -0.07838526357044875,
+      "mom": 0.04595669465311528,
       "momSource": "cardmarket",
-      "confidence": 1,
+      "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        27.89,
-        35.49
+        18,
+        24.84
       ],
       "history": [
         [
           "2026-08-01",
-          26.63
+          18
         ]
       ]
     },
     {
-      "name": "Slowbro Shiny",
-      "set": "Paldean Fates",
+      "name": "Okidogi IR",
+      "set": "Shrouded Fable",
       "char": "B",
       "tier": "chase",
-      "id": "sv04.5-117",
-      "image": "https://assets.tcgdex.net/en/sv/sv04.5/117",
+      "id": "sv06.5-074",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/074",
       "phase": "recovery",
-      "price": 21.21,
+      "price": 18,
       "chg30": null,
       "chg90": null,
       "chg180": null,
-      "signal": "SELL",
+      "signal": "HOLD",
       "reasons": [
-        "Up ~57% over the last month (from Cardmarket 7d vs 30d averages) — spikes like this usually give back a chunk.",
-        "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-        "Price confidence is low (wide listing spread; US and EU prices disagree) — the projection range is widened to match."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
-      "rationale": "Sell into hype. Big monthly spikes on singles rarely hold — take the exit the market is offering.",
-      "mom": 0.5731933292155651,
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.11455847255369955,
       "momSource": "cardmarket",
-      "confidence": 0.35,
-      "confidenceFlags": [
-        "wide listing spread",
-        "US and EU prices disagree"
-      ],
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        12.75,
-        25.57
+        18,
+        24.84
       ],
       "history": [
         [
           "2026-08-01",
-          21.21
+          18
+        ]
+      ]
+    },
+    {
+      "name": "Bloodmoon Ursaluna ex SIR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-216",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/216",
+      "phase": "recovery",
+      "price": 50,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.07341206511331005,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        50,
+        69
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          50
         ]
       ]
     },
@@ -3261,37 +2230,997 @@
       ]
     },
     {
-      "name": "Joltik IR",
-      "set": "Paradox Rift",
+      "name": "Munkidori IR",
+      "set": "Shrouded Fable",
       "char": "B",
       "tier": "chase",
-      "id": "sv04-196",
-      "image": "https://assets.tcgdex.net/en/sv/sv04/196",
+      "id": "sv06.5-072",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/072",
       "phase": "recovery",
-      "price": 30,
+      "price": 43,
       "chg30": null,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
       ],
       "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
-      "mom": 0.19507748404740208,
+      "mom": -0.023814411825087475,
       "momSource": "cardmarket",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        27.88,
-        43.52
+        43,
+        59.34
       ],
       "history": [
         [
           "2026-08-01",
-          30
+          43
+        ]
+      ]
+    },
+    {
+      "name": "Dusknoir IR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-070",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/070",
+      "phase": "recovery",
+      "price": 35,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.11756133106631048,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        35,
+        48.3
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          35
+        ]
+      ]
+    },
+    {
+      "name": "Tandemaus Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-209",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/209",
+      "phase": "recovery",
+      "price": 31.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.029481692819781483,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        31.5,
+        43.47
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          31.5
+        ]
+      ]
+    },
+    {
+      "name": "Abra Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-148",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/148",
+      "phase": "recovery",
+      "price": 16,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.19230769230769215,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        16,
+        22.08
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          16
+        ]
+      ]
+    },
+    {
+      "name": "Briar SIR",
+      "set": "Stellar Crown",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv07-171",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/171",
+      "phase": "recovery",
+      "price": 13,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.0813480534572924,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        13,
+        17.94
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          13
+        ]
+      ]
+    },
+    {
+      "name": "Luxray Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-137",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/137",
+      "phase": "recovery",
+      "price": 11.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.16719442685243827,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        11.5,
+        15.87
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          11.5
+        ]
+      ]
+    },
+    {
+      "name": "Cyclizar IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-215",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/215",
+      "phase": "recovery",
+      "price": 8,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.06910569105691053,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        8,
+        11.04
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          8
+        ]
+      ]
+    },
+    {
+      "name": "Hawlucha Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-175",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/175",
+      "phase": "recovery",
+      "price": 8,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.23045267489711913,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        8,
+        11.04
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          8
+        ]
+      ]
+    },
+    {
+      "name": "Minun IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-194",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/194",
+      "phase": "recovery",
+      "price": 49.29,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.09431345353675433,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        49.29,
+        68.02
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          49.29
+        ]
+      ]
+    },
+    {
+      "name": "Hydrapple ex SIR",
+      "set": "Stellar Crown",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv07-167",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/167",
+      "phase": "recovery",
+      "price": 41.03,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.002855613064429963,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        41.03,
+        56.62
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          41.03
+        ]
+      ]
+    },
+    {
+      "name": "Cresselia IR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-071",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/071",
+      "phase": "recovery",
+      "price": 31.03,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.004555808656036349,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        31.03,
+        42.82
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          31.03
+        ]
+      ]
+    },
+    {
+      "name": "Cassiopeia SIR",
+      "set": "Shrouded Fable",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06.5-094",
+      "image": "https://assets.tcgdex.net/en/sv/sv06.5/094",
+      "phase": "recovery",
+      "price": 44.83,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.039415801513285144,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        44.83,
+        61.86
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          44.83
+        ]
+      ]
+    },
+    {
+      "name": "Deerling IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-165",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/165",
+      "phase": "recovery",
+      "price": 47.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.061807580174927046,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        47.99,
+        66.22
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          47.99
+        ]
+      ]
+    },
+    {
+      "name": "Lickitung IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-180",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/180",
+      "phase": "recovery",
+      "price": 32.75,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.017841213202497708,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        32.75,
+        45.19
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          32.75
+        ]
+      ]
+    },
+    {
+      "name": "Brute Bonnet IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-207",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/207",
+      "phase": "recovery",
+      "price": 19.54,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.11177086971707986,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        19.54,
+        26.96
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          19.54
+        ]
+      ]
+    },
+    {
+      "name": "Gulpin IR",
+      "set": "Stellar Crown",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv07-154",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/154",
+      "phase": "recovery",
+      "price": 14.91,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.19975031210986263,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        14.91,
+        20.57
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          14.91
+        ]
+      ]
+    },
+    {
+      "name": "Tinkatuff Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-166",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/166",
+      "phase": "recovery",
+      "price": 6.85,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.18203592814371272,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        6.85,
+        9.45
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          6.85
+        ]
+      ]
+    },
+    {
+      "name": "Iron Moth IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-187",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/187",
+      "phase": "recovery",
+      "price": 9.25,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.003921568627450896,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        9.25,
+        12.76
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          9.25
+        ]
+      ]
+    },
+    {
+      "name": "Slowpoke Shiny",
+      "set": "Paldean Fates",
+      "char": "A",
+      "tier": "chase",
+      "id": "sv04.5-116",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/116",
+      "phase": "recovery",
+      "price": 22.56,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print under three years — sealed supply is drying up and the floor is rising.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print under three years — sealed supply is drying up and the floor is rising.",
+      "mom": -0.22690437601296592,
+      "momSource": "cardmarket",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "US and EU prices disagree"
+      ],
+      "proj": [
+        20.3,
+        35.2
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          22.56
+        ]
+      ]
+    },
+    {
+      "name": "Noibat Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-194",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/194",
+      "phase": "recovery",
+      "price": 5.4,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.16847826086956527,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        5.34,
+        7.52
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          5.4
+        ]
+      ]
+    },
+    {
+      "name": "Meltan IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-179",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/179",
+      "phase": "recovery",
+      "price": 6.83,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.08814270724029379,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        6.75,
+        9.51
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          6.83
+        ]
+      ]
+    },
+    {
+      "name": "Drifloon Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-155",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/155",
+      "phase": "recovery",
+      "price": 5.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.18288393903868727,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        5.92,
+        8.34
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          5.99
+        ]
+      ]
+    },
+    {
+      "name": "Chimecho IR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-179",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/179",
+      "phase": "recovery",
+      "price": 5.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.08060453400503786,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        5.92,
+        8.34
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          5.99
+        ]
+      ]
+    },
+    {
+      "name": "Mienshao IR",
+      "set": "Paradox Rift",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04-200",
+      "image": "https://assets.tcgdex.net/en/sv/sv04/200",
+      "phase": "recovery",
+      "price": 10.54,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.1759450171821305,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        10.42,
+        14.67
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          10.54
+        ]
+      ]
+    },
+    {
+      "name": "Kadabra Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-149",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/149",
+      "phase": "recovery",
+      "price": 8.31,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.08774583963691376,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        8.21,
+        11.57
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          8.31
+        ]
+      ]
+    },
+    {
+      "name": "Galvantula ex SIR",
+      "set": "Stellar Crown",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv07-168",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/168",
+      "phase": "recovery",
+      "price": 20.75,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": -0.0885466794995186,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        20.51,
+        28.88
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          20.75
+        ]
+      ]
+    },
+    {
+      "name": "Bronzor IR",
+      "set": "Temporal Forces",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv05-170",
+      "image": "https://assets.tcgdex.net/en/sv/sv05/170",
+      "phase": "recovery",
+      "price": 9.26,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.03395061728395072,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        9.15,
+        12.89
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          9.26
+        ]
+      ]
+    },
+    {
+      "name": "Phione IR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-175",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/175",
+      "phase": "recovery",
+      "price": 13.68,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.06078431372548995,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        13.52,
+        19.04
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          13.68
+        ]
+      ]
+    },
+    {
+      "name": "Raboot IR",
+      "set": "Stellar Crown",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv07-147",
+      "image": "https://assets.tcgdex.net/en/sv/sv07/147",
+      "phase": "recovery",
+      "price": 8.5,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.05684367988032921,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        8.4,
+        11.83
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          8.5
+        ]
+      ]
+    },
+    {
+      "name": "Enamorus IR",
+      "set": "Twilight Masquerade",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv06-180",
+      "image": "https://assets.tcgdex.net/en/sv/sv06/180",
+      "phase": "recovery",
+      "price": 7,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.004469273743016665,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        6.92,
+        9.74
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          7
+        ]
+      ]
+    },
+    {
+      "name": "Pidgeotto Shiny",
+      "set": "Paldean Fates",
+      "char": "B",
+      "tier": "chase",
+      "id": "sv04.5-197",
+      "image": "https://assets.tcgdex.net/en/sv/sv04.5/197",
+      "phase": "recovery",
+      "price": 6,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real collector demand. Hold, and add on dips rather than chasing green days."
+      ],
+      "rationale": "Out of print with real collector demand. Hold, and add on dips rather than chasing green days.",
+      "mom": 0.1042345276872965,
+      "momSource": "cardmarket",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        5.93,
+        8.35
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          6
         ]
       ]
     }
