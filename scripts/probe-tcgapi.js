@@ -1,74 +1,63 @@
-// One-off reconnaissance for the TCG API (sealed product source).
-// Runs in GitHub Actions, where TCGAPI_KEY exists; it never runs locally and
-// never prints the key — only status codes and response *shapes*.
+// Reconnaissance round 2 for the TCG API sealed source.
+// Round 1 established: auth is the X-API-Key header, /v1/search is the only
+// live endpoint, sealed rows carry product_type "Sealed Products", and the
+// free tier is 100 requests/day.
 //
-// The published docs disagree with themselves (X-API-Key vs Bearer, /search vs
-// /search/cards), so this tries the combinations and reports which are real.
-// Delete this file once scripts/sealed.js is written against the answer.
+// Round 2 answers what the implementation actually depends on:
+//   1. how large per_page can go (quota is the binding constraint)
+//   2. whether one query per set returns that set's sealed products
+//   3. how often market_price is actually populated
+//   4. whether product_type / set filters exist as query params
+// Deleted once scripts/sealed.js is written.
 
 const KEY = process.env.TCGAPI_KEY;
-if (!KEY) {
-  console.error("TCGAPI_KEY not set — nothing to probe.");
-  process.exit(1);
-}
+if (!KEY) { console.error("TCGAPI_KEY not set."); process.exit(1); }
 
 const BASE = "https://api.tcgapi.dev/v1";
-const AUTHS = {
-  "X-API-Key": { "X-API-Key": KEY },
-  "Bearer": { Authorization: `Bearer ${KEY}` },
+const headers = { "X-API-Key": KEY, accept: "application/json" };
+
+async function get(path) {
+  const res = await fetch(BASE + path, { headers });
+  const text = await res.text();
+  let json = null;
+  try { json = JSON.parse(text); } catch {}
+  await new Promise((r) => setTimeout(r, 400));
+  return { status: res.status, json, text };
+}
+
+const summarise = (rows) => {
+  const sealed = rows.filter((r) => r.product_type === "Sealed Products");
+  const priced = sealed.filter((r) => typeof r.market_price === "number");
+  return { rows: rows.length, sealed: sealed.length, sealedPriced: priced.length,
+           sample: priced.slice(0, 4).map((r) => `${r.name} $${r.market_price} (set=${r.set_name}, tcg=${r.tcgplayer_id})`) };
 };
 
-// A booster box is the archetypal sealed product; if any of these return it,
-// we know both the endpoint and the shape.
-const PATHS = [
-  "/search?q=booster%20box&game=pokemon&per_page=3",
-  "/search/products?q=booster%20box&game=pokemon&per_page=3",
-  "/search/sealed?q=booster%20box&game=pokemon&per_page=3",
-  "/products?game=pokemon&per_page=3",
-  "/search/cards?q=charizard&game=pokemon&per_page=2",
-];
-
-// Print the structure of a value without dumping (or leaking) all of it.
-function shape(v, depth = 0) {
-  if (v === null) return "null";
-  if (Array.isArray(v)) return depth > 2 ? "[…]" : `[${v.length ? shape(v[0], depth + 1) : ""}]`;
-  if (typeof v === "object") {
-    if (depth > 2) return "{…}";
-    return "{" + Object.keys(v).slice(0, 24).map((k) => `${k}:${shape(v[k], depth + 1)}`).join(", ") + "}";
-  }
-  if (typeof v === "string") return v.length > 40 ? "string" : JSON.stringify(v);
-  return typeof v;
+// 1 + 2 + 3: one query per set, large page
+for (const q of ["Paldean Fates", "Twilight Masquerade"]) {
+  const r = await get(`/search?q=${encodeURIComponent(q)}&game=pokemon&per_page=100`);
+  console.log(`\n"${q}" per_page=100 -> ${r.status}`);
+  if (r.json?.data) {
+    console.log("  meta:", JSON.stringify(r.json.meta), "| remaining:", r.json.rate_limit?.daily_remaining);
+    console.log("  ", JSON.stringify(summarise(r.json.data), null, 1).replace(/\n\s*/g, " "));
+  } else console.log("  body:", r.text.slice(0, 200));
 }
 
-for (const [authName, headers] of Object.entries(AUTHS)) {
-  for (const path of PATHS) {
-    const url = BASE + path;
-    let res, body;
-    try {
-      res = await fetch(url, { headers: { ...headers, accept: "application/json" } });
-      body = await res.text();
-    } catch (e) {
-      console.log(`[${authName}] ${path} -> network error: ${e.message}`);
-      continue;
-    }
-    const ok = res.status >= 200 && res.status < 300;
-    let parsed = null;
-    try { parsed = JSON.parse(body); } catch {}
+// 1: does per_page go beyond 100?
+const big = await get(`/search?q=booster&game=pokemon&per_page=250`);
+console.log(`\nper_page=250 -> ${big.status} returned=${big.json?.data?.length ?? "?"} per_page_echo=${big.json?.meta?.per_page ?? "?"}`);
 
-    console.log(`\n[${authName}] ${path} -> ${res.status}`);
-    if (!ok) {
-      console.log("  body:", body.slice(0, 200).replace(/\s+/g, " "));
-      continue;
-    }
-    console.log("  shape:", shape(parsed).slice(0, 900));
-    // Surface the first record fully-ish so field names for sealed are visible.
-    const first = parsed?.data?.[0] ?? parsed?.results?.[0] ?? null;
-    if (first) console.log("  first record:", JSON.stringify(first).slice(0, 700));
-    // Rate-limit headers tell us the real free-tier budget.
-    const rl = ["x-ratelimit-limit", "x-ratelimit-remaining", "x-daily-limit", "x-daily-remaining"]
-      .map((h) => (res.headers.get(h) ? `${h}=${res.headers.get(h)}` : null)).filter(Boolean);
-    if (rl.length) console.log("  rate limit:", rl.join(" "));
-    await new Promise((r) => setTimeout(r, 400));
-  }
+// 4: do server-side filters exist?
+for (const p of ["&product_type=Sealed%20Products", "&set=Paldean%20Fates", "&set_name=Paldean%20Fates"]) {
+  const r = await get(`/search?q=elite%20trainer%20box&game=pokemon&per_page=20${p}`);
+  const rows = r.json?.data ?? [];
+  const allSealed = rows.length > 0 && rows.every((x) => x.product_type === "Sealed Products");
+  console.log(`filter "${decodeURIComponent(p)}" -> ${r.status} rows=${rows.length} allSealed=${allSealed} sets=${[...new Set(rows.map(x=>x.set_name))].slice(0,3).join("|")}`);
 }
-console.log("\nProbe complete.");
+
+// 3: what does a current, in-demand product look like?
+const etb = await get(`/search?q=${encodeURIComponent("Prismatic Evolutions Elite Trainer Box")}&game=pokemon&per_page=5`);
+console.log("\ncurrent ETB sample:");
+for (const r of etb.json?.data ?? []) {
+  console.log(`  ${r.product_type} | ${r.name} | market=${r.market_price} low=${r.low_price} listings=${r.total_listings} set=${r.set_name}`);
+}
+console.log("\nremaining today:", etb.json?.rate_limit?.daily_remaining);
