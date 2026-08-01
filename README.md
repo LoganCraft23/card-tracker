@@ -29,16 +29,16 @@ any card flipped to BUY or SELL. GitHub Pages serves the dashboard.
    variables → Actions → New repository secret. Name: `DISCORD_WEBHOOK_URL`,
    value: the URL you copied.
 
-4. **Resolve card IDs.** The watchlist ships with ~96 cards by name; they need
-   TCGdex IDs. Locally (Node 20+):
+4. **Card IDs are already resolved.** The watchlist's ~96 cards carry TCGdex
+   IDs (set-aware matching: only cards from the right set, preferring the
+   highest collector number, which is the IR/SIR chase variant). Each card
+   keeps a `candidates` list — if a pick looks wrong (the dashboard's
+   TCGplayer link makes mismatches easy to spot), paste a different candidate
+   into `id`. Cards flagged `unresolved` need a name tweak, then:
    ```bash
    npm run resolve
-   git add watchlist.json && git commit -m "resolve ids" && git push
    ```
-   Review the output — anything marked `unresolved` needs a name tweak, and
-   each resolved card keeps a `candidates` list so you can swap in a better
-   match if the first pick was wrong (the dashboard's TCGplayer link makes
-   mismatches easy to spot).
+   (`npm run resolve -- --force` re-resolves everything from scratch.)
 
 5. **Enable GitHub Pages.** Repo Settings → Pages → Source: "Deploy from a
    branch" → Branch: `main`, folder: `/docs`. Your dashboard will be at
@@ -47,6 +47,14 @@ any card flipped to BUY or SELL. GitHub Pages serves the dashboard.
 6. **Run it once.** Repo → Actions tab → "Daily price update" → Run workflow.
    After it finishes, the dashboard has live prices and Discord gets its first
    alert batch. From then on it runs itself every day at 9 AM Eastern.
+
+## Preview locally
+
+```bash
+npm run serve
+```
+
+serves the dashboard at http://localhost:4173 exactly as GitHub Pages will.
 
 ## Day-to-day
 
