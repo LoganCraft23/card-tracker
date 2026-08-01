@@ -164,7 +164,7 @@
   "Garchomp ex SIR | Paradox Rift": [
     [
       "2026-08-01",
-      18.69
+      40
     ]
   ],
   "Roaring Moon IR | Paradox Rift": [
@@ -519,6 +519,594 @@
     [
       "2026-08-01",
       77.8
+    ]
+  ],
+  "Mew ex Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      40
+    ]
+  ],
+  "Lucario Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      33.84
+    ]
+  ],
+  "Charmeleon Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      19.99
+    ]
+  ],
+  "Alakazam ex Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      7.6
+    ]
+  ],
+  "Ralts Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      11.95
+    ]
+  ],
+  "Cornerstone Mask Ogerpon ex SIR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      16.34
+    ]
+  ],
+  "Ceruledge Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      12.06
+    ]
+  ],
+  "Iron Valiant ex SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      23.99
+    ]
+  ],
+  "Gardevoir ex Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      9.67
+    ]
+  ],
+  "Yveltal IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      33.38
+    ]
+  ],
+  "Slowpoke Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      22.56
+    ]
+  ],
+  "Ninetales IR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      43.73
+    ]
+  ],
+  "Hisuian Growlithe IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      32.17
+    ]
+  ],
+  "Zorua IR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      30
+    ]
+  ],
+  "Teal Mask Ogerpon ex SIR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      25
+    ]
+  ],
+  "Hearthflame Mask Ogerpon ex SIR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      14
+    ]
+  ],
+  "Kirlia Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      8
+    ]
+  ],
+  "Metagross IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      41.09
+    ]
+  ],
+  "Roaring Moon ex SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      42.96
+    ]
+  ],
+  "Terapagos ex SIR | Stellar Crown": [
+    [
+      "2026-08-01",
+      44.81
+    ]
+  ],
+  "Litten IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      44.27
+    ]
+  ],
+  "Wellspring Mask Ogerpon ex SIR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      18.16
+    ]
+  ],
+  "Riolu Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      15.66
+    ]
+  ],
+  "Entei Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      16.69
+    ]
+  ],
+  "Jumpluff Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      5.27
+    ]
+  ],
+  "Armarouge Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      5.72
+    ]
+  ],
+  "Meditite IR | Stellar Crown": [
+    [
+      "2026-08-01",
+      8.4
+    ]
+  ],
+  "Staryu Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      7.14
+    ]
+  ],
+  "Torkoal IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      7.14
+    ]
+  ],
+  "Spiritomb Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      5.88
+    ]
+  ],
+  "Voltorb Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      5.25
+    ]
+  ],
+  "Scizor Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      10.69
+    ]
+  ],
+  "Lileep IR | Stellar Crown": [
+    [
+      "2026-08-01",
+      9.85
+    ]
+  ],
+  "Mime Jr. Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      5.91
+    ]
+  ],
+  "Charjabug IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      10.09
+    ]
+  ],
+  "Crustle IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      5.86
+    ]
+  ],
+  "Iron Moth IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      9.25
+    ]
+  ],
+  "Vileplume Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      9.04
+    ]
+  ],
+  "Larvitar IR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      7.7
+    ]
+  ],
+  "Nemona SIR | Paldean Fates": [
+    [
+      "2026-08-01",
+      7.7
+    ]
+  ],
+  "Pidgeotto IR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      12.38
+    ]
+  ],
+  "Scizor IR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      18.4
+    ]
+  ],
+  "Ferrothorn IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      6.44
+    ]
+  ],
+  "Professor Sada's Vitality SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      8.99
+    ]
+  ],
+  "Wigglytuff Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      7.15
+    ]
+  ],
+  "Professor Turo's Scenario SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      6.23
+    ]
+  ],
+  "Revavroom ex SIR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      6.02
+    ]
+  ],
+  "Garganacl IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      6.73
+    ]
+  ],
+  "Snorunt IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      10.91
+    ]
+  ],
+  "Iron Jugulis IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      12.12
+    ]
+  ],
+  "Gimmighoul IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      15.46
+    ]
+  ],
+  "Lechonk Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      18.17
+    ]
+  ],
+  "Relicanth IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      12.99
+    ]
+  ],
+  "Pidgeot ex SIR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      23.43
+    ]
+  ],
+  "Mela SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      9.23
+    ]
+  ],
+  "Heliolisk IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      5.68
+    ]
+  ],
+  "Reuniclus IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      17.54
+    ]
+  ],
+  "Tapu Bulu IR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      13.99
+    ]
+  ],
+  "Sunflora IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      9.02
+    ]
+  ],
+  "Kadabra Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      8.31
+    ]
+  ],
+  "Tatsugiri Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      7.6
+    ]
+  ],
+  "Snom IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      19.25
+    ]
+  ],
+  "Pinsir IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      17.12
+    ]
+  ],
+  "Lechonk IR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      14.99
+    ]
+  ],
+  "Oddish Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      14.99
+    ]
+  ],
+  "Lacey SIR | Stellar Crown": [
+    [
+      "2026-08-01",
+      19.83
+    ]
+  ],
+  "Scyther Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      11.23
+    ]
+  ],
+  "Milcery IR | Stellar Crown": [
+    [
+      "2026-08-01",
+      20.2
+    ]
+  ],
+  "Wattrel IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      5.55
+    ]
+  ],
+  "Fraxure IR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      19.57
+    ]
+  ],
+  "Lickitung IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      32.75
+    ]
+  ],
+  "Tinkatink Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      8.76
+    ]
+  ],
+  "Mudsdale IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      10.47
+    ]
+  ],
+  "Bronzor IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      9.26
+    ]
+  ],
+  "Poltchageist IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      6.34
+    ]
+  ],
+  "Phione IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      13.68
+    ]
+  ],
+  "Eiscue ex SIR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      9.05
+    ]
+  ],
+  "Cassiopeia SIR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      44.83
+    ]
+  ],
+  "Vanillish IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      12.76
+    ]
+  ],
+  "Penny SIR | Paldean Fates": [
+    [
+      "2026-08-01",
+      19.39
+    ]
+  ],
+  "Cleffa IR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      42.99
+    ]
+  ],
+  "Okidogi ex SIR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      23.6
+    ]
+  ],
+  "Salvatore SIR | Temporal Forces": [
+    [
+      "2026-08-01",
+      19.68
+    ]
+  ],
+  "Deerling IR | Temporal Forces": [
+    [
+      "2026-08-01",
+      47.99
+    ]
+  ],
+  "Froslass IR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      9.13
+    ]
+  ],
+  "Pidgey IR | Obsidian Flames": [
+    [
+      "2026-08-01",
+      19.26
+    ]
+  ],
+  "Magby IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      26.76
+    ]
+  ],
+  "Lana's Aid SIR | Twilight Masquerade": [
+    [
+      "2026-08-01",
+      44.18
+    ]
+  ],
+  "Pawmi Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      5.71
+    ]
+  ],
+  "Swablu IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      30.55
+    ]
+  ],
+  "Clive SIR | Paldean Fates": [
+    [
+      "2026-08-01",
+      31.05
+    ]
+  ],
+  "Golisopod ex SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      27.84
+    ]
+  ],
+  "Gholdengo ex SIR | Paradox Rift": [
+    [
+      "2026-08-01",
+      39.05
+    ]
+  ],
+  "Mantyke IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      40.55
+    ]
+  ],
+  "Pecharunt ex SIR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      26.63
+    ]
+  ],
+  "Slowbro Shiny | Paldean Fates": [
+    [
+      "2026-08-01",
+      21.21
+    ]
+  ],
+  "Fezandipiti ex SIR | Shrouded Fable": [
+    [
+      "2026-08-01",
+      45
+    ]
+  ],
+  "Joltik IR | Paradox Rift": [
+    [
+      "2026-08-01",
+      30
     ]
   ]
 }

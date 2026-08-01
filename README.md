@@ -29,17 +29,14 @@ any card flipped to BUY or SELL. GitHub Pages serves the dashboard.
    variables → Actions → New repository secret. Name: `DISCORD_WEBHOOK_URL`,
    value: the URL you copied.
 
-4. **Card IDs are already resolved.** Resolution downloads each set's full
-   card list and picks the variant numbered above the set's official count —
-   the definition of an IR/SIR/secret rare — so it can't silently fall back
-   to a cheap base version. Cards flagged `unresolved` either don't exist in
-   that set (the original watchlist guessed at some) or need a name tweak
-   (e.g. "Genesect IR" → "Genesect ex SIR" if the ex is what you meant);
-   after editing, run:
-   ```bash
-   npm run resolve
-   ```
-   (`npm run resolve -- --force` re-resolves everything from scratch.)
+4. **The watchlist manages itself.** Every daily run starts with the
+   screener (`npm run screen`): it prices every secret-rare card in every set
+   the model knows, keeps chase-art cards currently between $5 and $50, ranks
+   them by model upside (set phase × rarity tier × character popularity), and
+   writes the top 100 into `watchlist.json`. Cards drop out automatically
+   when they cross $50 or stronger candidates appear; new ones enter on their
+   own. Add `"pinned": true` to any entry to keep it through rebuilds. Tune
+   `MIN_PRICE` / `MAX_PRICE` / `TARGET` at the top of `scripts/screen.js`.
 
 5. **Enable GitHub Pages.** Repo Settings → Pages → Source: "Deploy from a
    branch" → Branch: `main`, folder: `/docs`. Your dashboard will be at
@@ -59,10 +56,13 @@ serves the dashboard at http://localhost:4173 exactly as GitHub Pages will.
 
 ## Day-to-day
 
-- **Add a card:** append it to `watchlist.json` (name, set, char `S`/`A`/`B`,
-  tier `chase`/`ultra`/`holo`), run `npm run resolve`, push. If the set is new,
-  add it to `SETS` in `scripts/model.js` with its release month and print
-  status.
+- **Keep a card forever:** add `"pinned": true` to its entry in
+  `watchlist.json` — the screener preserves pinned cards and only competes
+  the remaining slots. To hand-add a card outside the screen, append it with
+  name/set (plus `pinned: true`) and run `npm run resolve`.
+- **New set releases:** add it to `SETS` in `scripts/model.js` with its
+  release month and print status — the screener picks up its cards the next
+  morning.
 - **Set goes out of print:** flip `inPrint` to `false` in `scripts/model.js` —
   this moves its cards from trough to recovery phase.
 - **Alerts:** Discord pings only on signal *changes* to or from BUY/SELL, so

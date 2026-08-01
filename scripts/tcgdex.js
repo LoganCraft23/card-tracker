@@ -8,7 +8,7 @@
 // Keep the two exported functions' signatures the same and everything else works.
 
 const BASE = "https://api.tcgdex.net/v2/en";
-const DELAY_MS = 350; // be polite to a free API
+const DELAY_MS = 150; // be polite to a free API (the screener makes ~1000 calls)
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -50,10 +50,7 @@ export async function searchCards(name) {
   }));
 }
 
-// Fetch one card's current TCGplayer market price (USD). Returns number|null.
-export async function fetchPrice(cardId) {
-  const card = await getJSON(`${BASE}/cards/${cardId}`);
-  await sleep(DELAY_MS);
+function extractPrice(card) {
   const p = card?.pricing?.tcgplayer;
   if (!p) return null;
   // Defensive: TCGdex nests prices by variant (normal/holofoil/reverse etc.)
@@ -73,4 +70,24 @@ export async function fetchPrice(cardId) {
   // Prefer the highest market price (usually the holo variant, which is the
   // collectible one for IR/SIR cards where only one variant exists anyway).
   return Math.max(...candidates);
+}
+
+// Fetch one card's detail: current TCGplayer market price (USD, number|null),
+// rarity, and art URL (append /low.webp or /high.webp to display).
+export async function fetchCard(cardId) {
+  const card = await getJSON(`${BASE}/cards/${cardId}`);
+  await sleep(DELAY_MS);
+  return {
+    id: card.id,
+    name: card.name,
+    localId: card.localId,
+    rarity: card.rarity || "",
+    image: card.image || null,
+    price: extractPrice(card),
+  };
+}
+
+// Fetch one card's current TCGplayer market price (USD). Returns number|null.
+export async function fetchPrice(cardId) {
+  return (await fetchCard(cardId)).price;
 }

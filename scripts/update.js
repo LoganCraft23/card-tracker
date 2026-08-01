@@ -6,7 +6,7 @@
 // 5. Write docs/data.json for the dashboard
 
 import { readFileSync, writeFileSync } from "node:fs";
-import { fetchPrice } from "./tcgdex.js";
+import { fetchCard } from "./tcgdex.js";
 import { analyze } from "./model.js";
 import { sendDiscord } from "./notify.js";
 
@@ -31,8 +31,11 @@ for (const card of watchlist.cards) {
   }
 
   let price = null;
+  let image = card.image || null;
   try {
-    price = await fetchPrice(card.id);
+    const detail = await fetchCard(card.id);
+    price = detail.price;
+    image = image || detail.image;
   } catch (e) {
     console.error(`fetch failed for ${key}: ${e.message}`);
   }
@@ -62,7 +65,7 @@ for (const card of watchlist.cards) {
 
   dashboard.push({
     name: card.name, set: card.set, char: card.char, tier: card.tier || "chase",
-    id: card.id, ...a,
+    id: card.id, image, ...a,
     history: priceHistory[key].slice(-180),
   });
 }

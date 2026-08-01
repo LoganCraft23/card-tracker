@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Refresh screened watchlist (auto add/remove $5-$50 chases)
+        run: node scripts/screen.js
+
       - name: Fetch prices, compute signals
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

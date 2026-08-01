@@ -37,6 +37,9 @@
   main { display: grid; gap: 14px; }
   .slab { display: flex; background: var(--slab); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
   .edge { width: 6px; flex-shrink: 0; background: linear-gradient(180deg, var(--sig), #B36BFF66, var(--sig)); }
+  .art { width: 92px; align-self: center; flex-shrink: 0; margin: 14px 0 14px 14px;
+    border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.45); }
+  @media (max-width: 560px) { .art { width: 72px; } }
   .body { padding: 16px 18px; flex: 1; min-width: 0; }
   .top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
   h3 { margin: 0; font-size: 17px; }
@@ -130,6 +133,7 @@ function render() {
   $("list").innerHTML = list.length ? list.map((c) => `
     <article class="slab" style="--sig:${SIG[c.signal]}">
       <div class="edge"></div>
+      ${c.image ? `<img class="art" src="${esc(c.image)}/low.webp" alt="${esc(c.name)} card art" loading="lazy" onerror="this.remove()">` : ""}
       <div class="body">
         <div class="top">
           <div><h3>${esc(c.name)}</h3><span class="meta">${esc(c.set)} · ${c.phase}</span></div>
