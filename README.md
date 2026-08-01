@@ -29,12 +29,13 @@ any card flipped to BUY or SELL. GitHub Pages serves the dashboard.
    variables → Actions → New repository secret. Name: `DISCORD_WEBHOOK_URL`,
    value: the URL you copied.
 
-4. **Card IDs are already resolved.** The watchlist's ~96 cards carry TCGdex
-   IDs (set-aware matching: only cards from the right set, preferring the
-   highest collector number, which is the IR/SIR chase variant). Each card
-   keeps a `candidates` list — if a pick looks wrong (the dashboard's
-   TCGplayer link makes mismatches easy to spot), paste a different candidate
-   into `id`. Cards flagged `unresolved` need a name tweak, then:
+4. **Card IDs are already resolved.** Resolution downloads each set's full
+   card list and picks the variant numbered above the set's official count —
+   the definition of an IR/SIR/secret rare — so it can't silently fall back
+   to a cheap base version. Cards flagged `unresolved` either don't exist in
+   that set (the original watchlist guessed at some) or need a name tweak
+   (e.g. "Genesect IR" → "Genesect ex SIR" if the ex is what you meant);
+   after editing, run:
    ```bash
    npm run resolve
    ```

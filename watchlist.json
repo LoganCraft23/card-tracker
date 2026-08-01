@@ -50,10 +50,7 @@
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-143",
-      "candidates": [
-        "sv03.5-143"
-      ]
+      "unresolved": true
     },
     {
       "name": "Dragonair IR",
@@ -71,10 +68,7 @@
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-147",
-      "candidates": [
-        "sv03.5-147"
-      ]
+      "unresolved": true
     },
     {
       "name": "Zapdos IR",
@@ -93,130 +87,91 @@
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-144",
-      "candidates": [
-        "sv03.5-144"
-      ]
+      "unresolved": true
     },
     {
       "name": "Moltres IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-146",
-      "candidates": [
-        "sv03.5-146"
-      ]
+      "unresolved": true
     },
     {
       "name": "Eevee IR",
       "set": "151",
       "char": "S",
       "tier": "chase",
-      "id": "sv03.5-133",
-      "candidates": [
-        "sv03.5-133"
-      ]
+      "unresolved": true
     },
     {
       "name": "Growlithe IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-058",
-      "candidates": [
-        "sv03.5-058"
-      ]
+      "unresolved": true
     },
     {
       "name": "Magikarp IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-129",
-      "candidates": [
-        "sv03.5-129"
-      ]
+      "unresolved": true
     },
     {
       "name": "Poliwag IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-060",
-      "candidates": [
-        "sv03.5-060"
-      ]
+      "unresolved": true
     },
     {
       "name": "Slowpoke IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-079",
-      "candidates": [
-        "sv03.5-079"
-      ]
+      "unresolved": true
     },
     {
       "name": "Jigglypuff IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-039",
-      "candidates": [
-        "sv03.5-039"
-      ]
+      "unresolved": true
     },
     {
       "name": "Meowth IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-052",
-      "candidates": [
-        "sv03.5-052"
-      ]
+      "unresolved": true
     },
     {
       "name": "Ditto IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-132",
-      "candidates": [
-        "sv03.5-132"
-      ]
+      "unresolved": true
     },
     {
       "name": "Lapras IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-131",
-      "candidates": [
-        "sv03.5-131"
-      ]
+      "unresolved": true
     },
     {
       "name": "Cubone IR",
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-104",
-      "candidates": [
-        "sv03.5-104"
-      ]
+      "unresolved": true
     },
     {
       "name": "Gastly IR",
       "set": "151",
       "char": "S",
       "tier": "chase",
-      "id": "sv03.5-092",
-      "candidates": [
-        "sv03.5-092"
-      ]
+      "unresolved": true
     },
     {
       "name": "Psyduck IR",
@@ -234,40 +189,28 @@
       "set": "151",
       "char": "A",
       "tier": "chase",
-      "id": "sv03.5-016",
-      "candidates": [
-        "sv03.5-016"
-      ]
+      "unresolved": true
     },
     {
       "name": "Charmander IR",
       "set": "Obsidian Flames",
       "char": "S",
       "tier": "chase",
-      "id": "sv03-026",
-      "candidates": [
-        "sv03-026"
-      ]
+      "unresolved": true
     },
     {
       "name": "Charmeleon IR",
       "set": "Obsidian Flames",
       "char": "A",
       "tier": "chase",
-      "id": "sv03-027",
-      "candidates": [
-        "sv03-027"
-      ]
+      "unresolved": true
     },
     {
       "name": "Vulpix IR",
       "set": "Obsidian Flames",
       "char": "A",
       "tier": "chase",
-      "id": "sv03-028",
-      "candidates": [
-        "sv03-028"
-      ]
+      "unresolved": true
     },
     {
       "name": "Absol IR",
@@ -404,10 +347,7 @@
       "set": "Temporal Forces",
       "char": "A",
       "tier": "chase",
-      "id": "sv05-039",
-      "candidates": [
-        "sv05-039"
-      ]
+      "unresolved": true
     },
     {
       "name": "Eri SIR",
@@ -439,10 +379,7 @@
       "set": "Twilight Masquerade",
       "char": "A",
       "tier": "chase",
-      "id": "sv06-024",
-      "candidates": [
-        "sv06-024"
-      ]
+      "unresolved": true
     },
     {
       "name": "Perrin SIR",
@@ -473,10 +410,7 @@
       "set": "Shrouded Fable",
       "char": "A",
       "tier": "chase",
-      "id": "sv06.5-040",
-      "candidates": [
-        "sv06.5-040"
-      ]
+      "unresolved": true
     },
     {
       "name": "Duskull IR",
@@ -524,10 +458,7 @@
       "set": "Journey Together",
       "char": "A",
       "tier": "chase",
-      "id": "sv09-097",
-      "candidates": [
-        "sv09-097"
-      ]
+      "unresolved": true
     },
     {
       "name": "Iono's Bellibolt IR",
@@ -582,10 +513,7 @@
       "set": "Destined Rivals",
       "char": "A",
       "tier": "chase",
-      "id": "sv10-145",
-      "candidates": [
-        "sv10-145"
-      ]
+      "unresolved": true
     },
     {
       "name": "Team Rocket's Meowth IR",
@@ -603,10 +531,7 @@
       "set": "Destined Rivals",
       "char": "A",
       "tier": "chase",
-      "id": "sv10-082",
-      "candidates": [
-        "sv10-082"
-      ]
+      "unresolved": true
     },
     {
       "name": "Victini IR",
@@ -752,68 +677,42 @@
       "set": "Mega Evolution",
       "char": "A",
       "tier": "chase",
-      "id": "me01-188",
-      "candidates": [
-        "me01-188",
-        "me01-179",
-        "me01-160",
-        "me01-077"
-      ]
+      "unresolved": true
     },
     {
       "name": "Riolu IR",
       "set": "Mega Evolution",
       "char": "A",
       "tier": "chase",
-      "id": "me01-076",
-      "candidates": [
-        "me01-076"
-      ]
+      "unresolved": true
     },
     {
       "name": "Gardevoir IR",
       "set": "Mega Evolution",
       "char": "A",
       "tier": "chase",
-      "id": "me01-187",
-      "candidates": [
-        "me01-187",
-        "me01-178",
-        "me01-159",
-        "me01-060"
-      ]
+      "unresolved": true
     },
     {
       "name": "Ralts IR",
       "set": "Mega Evolution",
       "char": "A",
       "tier": "chase",
-      "id": "me01-058",
-      "candidates": [
-        "me01-058"
-      ]
+      "unresolved": true
     },
     {
       "name": "Kirlia IR",
       "set": "Mega Evolution",
       "char": "A",
       "tier": "chase",
-      "id": "me01-059",
-      "candidates": [
-        "me01-059"
-      ]
+      "unresolved": true
     },
     {
       "name": "Absol IR",
       "set": "Mega Evolution",
       "char": "A",
       "tier": "chase",
-      "id": "me01-180",
-      "candidates": [
-        "me01-180",
-        "me01-161",
-        "me01-086"
-      ]
+      "unresolved": true
     },
     {
       "name": "Pikachu IR",
@@ -827,20 +726,14 @@
       "set": "Phantasmal Flames",
       "char": "S",
       "tier": "chase",
-      "id": "me02-011",
-      "candidates": [
-        "me02-011"
-      ]
+      "unresolved": true
     },
     {
       "name": "Charmeleon IR",
       "set": "Phantasmal Flames",
       "char": "A",
       "tier": "chase",
-      "id": "me02-012",
-      "candidates": [
-        "me02-012"
-      ]
+      "unresolved": true
     },
     {
       "name": "Vulpix IR",
@@ -854,73 +747,49 @@
       "set": "Phantasmal Flames",
       "char": "S",
       "tier": "chase",
-      "id": "me02-054",
-      "candidates": [
-        "me02-054"
-      ]
+      "unresolved": true
     },
     {
       "name": "Dratini IR",
       "set": "Ascended Heroes",
       "char": "A",
       "tier": "chase",
-      "id": "me02.5-150",
-      "candidates": [
-        "me02.5-150"
-      ]
+      "unresolved": true
     },
     {
       "name": "Dragonair IR",
       "set": "Ascended Heroes",
       "char": "A",
       "tier": "chase",
-      "id": "me02.5-151",
-      "candidates": [
-        "me02.5-151"
-      ]
+      "unresolved": true
     },
     {
       "name": "Dragonite IR",
       "set": "Ascended Heroes",
       "char": "A",
       "tier": "chase",
-      "id": "me02.5-295",
-      "candidates": [
-        "me02.5-295",
-        "me02.5-290",
-        "me02.5-271",
-        "me02.5-152"
-      ]
+      "unresolved": true
     },
     {
       "name": "Gastly IR",
       "set": "Ascended Heroes",
       "char": "S",
       "tier": "chase",
-      "id": "me02.5-123",
-      "candidates": [
-        "me02.5-123"
-      ]
+      "unresolved": true
     },
     {
       "name": "Haunter IR",
       "set": "Ascended Heroes",
       "char": "S",
       "tier": "chase",
-      "id": "me02.5-124",
-      "candidates": [
-        "me02.5-124"
-      ]
+      "unresolved": true
     },
     {
       "name": "Pikachu IR",
       "set": "Ascended Heroes",
       "char": "S",
       "tier": "chase",
-      "id": "me02.5-055",
-      "candidates": [
-        "me02.5-055"
-      ]
+      "unresolved": true
     },
     {
       "name": "Eevee IR",
@@ -955,13 +824,7 @@
       "set": "Chaos Rising",
       "char": "A",
       "tier": "chase",
-      "id": "me04-122",
-      "candidates": [
-        "me04-122",
-        "me04-116",
-        "me04-100",
-        "me04-022"
-      ]
+      "unresolved": true
     },
     {
       "name": "Froakie IR",
@@ -1004,25 +867,14 @@
       "set": "Pitch Black",
       "char": "A",
       "tier": "chase",
-      "id": "me05-120",
-      "candidates": [
-        "me05-120",
-        "me05-116",
-        "me05-101",
-        "me05-048"
-      ]
+      "unresolved": true
     },
     {
       "name": "Zeraora IR",
       "set": "Pitch Black",
       "char": "A",
       "tier": "chase",
-      "id": "me05-114",
-      "candidates": [
-        "me05-114",
-        "me05-098",
-        "me05-027"
-      ]
+      "unresolved": true
     }
   ]
 }

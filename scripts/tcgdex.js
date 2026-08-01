@@ -25,6 +25,19 @@ export async function getSets() {
   return Array.isArray(data) ? data : [];
 }
 
+// Fetch one set's full card list + official count. Resolution works from this
+// (not name search) so secret-rare variants can't be missed.
+export async function getSet(setId) {
+  const data = await getJSON(`${BASE}/sets/${setId}`);
+  await sleep(DELAY_MS);
+  return {
+    id: data.id,
+    name: data.name,
+    official: data?.cardCount?.official ?? null,
+    cards: (data.cards || []).map((c) => ({ id: c.id, name: c.name, localId: c.localId })),
+  };
+}
+
 // Search for a card by name; returns candidate cards [{id, name, set}]
 export async function searchCards(name) {
   const url = `${BASE}/cards?name=${encodeURIComponent(name)}`;
