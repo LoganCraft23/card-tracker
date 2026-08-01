@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#070C1B" />
 <title>Foil Theory — chase card index</title>
 <meta name="description" content="A testable model of Pokémon chase-card value: daily market prices, buy/hold/sell calls, and a public scorecard grading every prediction against a flat-price baseline." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3ClinearGradient id='f' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2359A0FF'/%3E%3Cstop offset='.4' stop-color='%23B36BFF'/%3E%3Cstop offset='.72' stop-color='%23FF6BC1'/%3E%3Cstop offset='1' stop-color='%23FFD36B'/%3E%3C/linearGradient%3E%3Cg transform='rotate(-8 24 24)'%3E%3Crect x='10' y='5' width='28' height='38' rx='4' fill='url(%23f)' stroke='%230B1120' stroke-width='2.6'/%3E%3Cpath d='M15 34l6.5-9 6 6 6.5-13' fill='none' stroke='%230B1120' stroke-width='4.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 34l6.5-9 6 6 6.5-13' fill='none' stroke='%23F7FAFF' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E" />
@@ -19,15 +20,18 @@
     --holo: linear-gradient(90deg, #59A0FF, #B36BFF, #FF6BC1, #FFD36B);
     --display: "Fredoka", "Space Grotesk", system-ui, sans-serif;
     --mono: "JetBrains Mono", ui-monospace, monospace;
+    --tap: 44px; /* minimum comfortable touch target */
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; background: var(--bg); }
+  html { scroll-behavior: smooth; background: var(--bg); -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: transparent; color: var(--text);
-    font-family: "Space Grotesk", system-ui, sans-serif; line-height: 1.5; }
+    font-family: "Space Grotesk", system-ui, sans-serif; line-height: 1.5;
+    -webkit-tap-highlight-color: transparent; overflow-x: hidden; }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
   h1, h2, h3, .brand, .sig { font-family: var(--display); }
+  img { max-width: 100%; }
 
   /* ---------- parallax backdrop ---------- */
   .bgfx { position: fixed; inset: -10%; z-index: -2; pointer-events: none; overflow: hidden; }
@@ -46,31 +50,41 @@
   .l3 { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cg fill='%23FFD36B' opacity='.22'%3E%3Ccircle cx='24' cy='36' r='1.5'/%3E%3Ccircle cx='120' cy='18' r='1.2'/%3E%3Ccircle cx='84' cy='108' r='1.6'/%3E%3Ccircle cx='142' cy='132' r='1.2'/%3E%3C/g%3E%3C/svg%3E"); }
   @media (prefers-reduced-motion: reduce) { .bgfx .layer { transform: none !important; } }
 
-  /* ---------- shell: fixed rail + scrolling content ---------- */
+  /* ---------- shell ---------- */
   .app { display: flex; align-items: flex-start; max-width: 1460px; margin-inline: auto; }
   .rail { position: sticky; top: 0; height: 100vh; width: 272px; flex-shrink: 0;
     display: flex; flex-direction: column; gap: 4px;
     background: rgba(9,14,32,.82); backdrop-filter: blur(14px);
     border-right: 1px solid var(--line); padding: 20px 18px; overflow-y: auto; }
   .brand { display: flex; align-items: center; gap: 11px; color: var(--text);
-    font-weight: 600; font-size: 20px; letter-spacing: -0.2px; margin-bottom: 4px; }
+    font-weight: 600; font-size: 20px; letter-spacing: -0.2px; }
   .brand:hover { text-decoration: none; }
   .brand .mark { width: 32px; height: 32px; flex-shrink: 0; filter: drop-shadow(0 2px 8px rgba(179,107,255,.4)); }
   .brandSub { color: var(--faint); font-size: 11.5px; letter-spacing: 1.4px; text-transform: uppercase;
-    font-family: var(--mono); margin: 0 0 16px 43px; }
+    font-family: var(--mono); margin: 4px 0 16px 43px; }
   .railGroup { margin-top: 14px; }
   .railGroup h5 { margin: 0 0 8px; font-size: 10.5px; letter-spacing: 1.6px; text-transform: uppercase;
     color: var(--faint); font-weight: 700; }
   input[type="search"], select {
     width: 100%; background: rgba(17,26,51,.9); border: 1px solid var(--line); color: var(--text);
-    border-radius: 9px; padding: 9px 12px; font: 500 13px "Space Grotesk", sans-serif; }
+    border-radius: 9px; padding: 10px 12px; font: 500 13px "Space Grotesk", sans-serif;
+    min-height: var(--tap); }
   input:focus, select:focus { border-color: var(--gold); outline: none; }
   input::placeholder { color: var(--faint); }
+
+  .seg { display: flex; gap: 4px; background: rgba(17,26,51,.7); border: 1px solid var(--line);
+    border-radius: 10px; padding: 4px; }
+  .seg button { flex: 1; background: none; border: none; color: var(--muted); cursor: pointer;
+    border-radius: 7px; padding: 8px 6px; font: 600 12.5px "Space Grotesk", sans-serif;
+    min-height: 36px; transition: background .15s, color .15s; }
+  .seg button:hover { color: var(--text); }
+  .seg button[aria-pressed="true"] { background: color-mix(in srgb, var(--link) 18%, transparent); color: var(--link); }
+
   .fchips { display: flex; flex-direction: column; gap: 5px; }
   .fchip { --c: var(--link); display: flex; justify-content: space-between; align-items: center;
     background: none; border: 1px solid var(--line); color: var(--muted); cursor: pointer;
-    border-radius: 9px; padding: 8px 12px; font: 600 13px "Space Grotesk", sans-serif;
-    transition: border-color .15s, color .15s, background .15s; }
+    border-radius: 9px; padding: 9px 12px; font: 600 13px "Space Grotesk", sans-serif;
+    min-height: var(--tap); transition: border-color .15s, color .15s, background .15s; }
   .fchip:hover { border-color: var(--c); color: var(--text); }
   .fchip.active { border-color: var(--c); color: var(--c); background: color-mix(in srgb, var(--c) 12%, transparent); }
   .fchip b { font-family: var(--mono); font-size: 12px; font-weight: 700; }
@@ -79,71 +93,104 @@
     border: 1px solid var(--line); border-radius: 9px; padding: 9px 12px; background: rgba(17,26,51,.55); }
   .rstat span { font-size: 12px; color: var(--muted); }
   .rstat b { font-family: var(--mono); font-size: 15px; color: var(--gold); }
-  .railFoot { margin-top: auto; padding-top: 16px; display: grid; gap: 7px; font-size: 12.5px; }
-  .railFoot a { color: var(--muted); }
+  .railFoot { margin-top: auto; padding-top: 16px; display: grid; gap: 4px; font-size: 12.5px; }
+  .railFoot a { color: var(--muted); display: flex; align-items: center; min-height: 40px; }
 
   .content { flex: 1; min-width: 0; padding: 26px 30px 70px; }
-  .topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; flex-wrap: wrap; margin-bottom: 6px; }
-  h1 { font-size: clamp(26px, 3vw, 34px); letter-spacing: -0.6px; margin: 0; font-weight: 700; }
+  .topbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+  h1 { font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.6px; margin: 0; font-weight: 700; }
   .sub { color: var(--muted); font-size: 14.5px; margin: 6px 0 0; max-width: 68ch; }
   .sub b { color: var(--text); font-weight: 600; }
-  .updated { color: var(--faint); font-size: 12.5px; font-family: var(--mono); white-space: nowrap; }
+  .updated { color: var(--faint); font-size: 12.5px; font-family: var(--mono); }
 
-  /* ---------- movers ticker ---------- */
-  .ticker { display: flex; gap: 8px; overflow-x: auto; padding: 16px 0 4px; scrollbar-width: thin; }
+  .ticker { display: flex; gap: 8px; overflow-x: auto; padding: 16px 0 6px;
+    scrollbar-width: thin; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; }
   .tk { flex-shrink: 0; display: flex; align-items: center; gap: 9px; border: 1px solid var(--line);
-    background: rgba(17,26,51,.7); border-radius: 10px; padding: 8px 12px; }
+    background: rgba(17,26,51,.7); border-radius: 10px; padding: 8px 12px; scroll-snap-align: start; }
   .tk img { width: 22px; border-radius: 3px; }
   .tk .n { font-size: 12.5px; font-weight: 600; max-width: 15ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .tk .m { font-family: var(--mono); font-size: 12px; font-weight: 700; }
 
-  /* ---------- ranked rows ---------- */
+  /* ---------- rows view ---------- */
   .cols, .rowMain { display: grid; align-items: center; gap: 12px;
-    grid-template-columns: 30px 44px minmax(0,1fr) 84px 74px 96px 118px 66px 20px; }
+    grid-template-columns: 30px 44px minmax(0,1fr) 84px 74px 96px 118px 66px 24px; }
   .cols { padding: 14px 14px 8px; font-size: 10.5px; letter-spacing: 1.3px; text-transform: uppercase;
     color: var(--faint); font-weight: 700; border-bottom: 1px solid var(--line); }
   .cols .r { text-align: right; }
   .rows { display: flex; flex-direction: column; }
-  .row { border-bottom: 1px solid var(--line); }
+  .row { border-bottom: 1px solid var(--line);
+    content-visibility: auto; contain-intrinsic-size: auto 66px; }
   .row > summary { list-style: none; cursor: pointer; padding: 11px 14px; border-left: 3px solid transparent;
-    transition: background .14s, border-color .14s; }
+    transition: background .14s, border-color .14s; min-height: var(--tap); }
   .row > summary::-webkit-details-marker { display: none; }
-  .row > summary:hover { background: rgba(22,33,63,.75); border-left-color: var(--sig); }
+  .row > summary:hover, .row > summary:active { background: rgba(22,33,63,.75); border-left-color: var(--sig); }
   .row[open] > summary { background: rgba(22,33,63,.9); border-left-color: var(--sig); }
   .rank { font-family: var(--mono); font-size: 12px; color: var(--faint); }
-  .thumbWrap { position: relative; width: 44px; }
-  .thumb { width: 44px; display: block; border-radius: 4px; box-shadow: 0 3px 10px rgba(0,0,0,.5); }
-  .thumbWrap::after { content: ""; position: absolute; inset: 0; border-radius: 4px; opacity: 0;
-    background: linear-gradient(115deg, transparent 28%, rgba(255,255,255,.35) 44%, rgba(179,107,255,.35) 52%,
-      rgba(89,160,255,.3) 60%, transparent 76%);
-    mix-blend-mode: screen; transition: opacity .25s; }
-  .row > summary:hover .thumbWrap::after { opacity: 1; }
-  .ident { min-width: 0; }
-  .ident b { display: block; font-size: 14.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .ident em { font-style: normal; font-size: 11.5px; color: var(--faint); text-transform: capitalize; }
   .num { font-family: var(--mono); text-align: right; }
   .price { font-size: 15px; font-weight: 700; }
   .mom { font-size: 12.5px; font-weight: 600; }
-  .up { color: var(--buy); } .down { color: var(--sell); }
   .projCell { font-size: 12px; color: var(--gold); text-align: right; }
+  .caret { color: var(--faint); font-size: 11px; transition: transform .15s; text-align: center;
+    display: flex; align-items: center; justify-content: center; min-height: var(--tap); }
+  .row[open] .caret { transform: rotate(90deg); }
+  .rowDetail { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 22px;
+    padding: 4px 18px 20px 91px; background: rgba(22,33,63,.5); }
+
+  /* ---------- tiles view ---------- */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; padding-top: 14px; }
+  .tile { position: relative; display: flex; flex-direction: column; gap: 11px;
+    background: linear-gradient(180deg, var(--surface2), var(--surface) 55%);
+    border: 1px solid var(--line); border-radius: 14px; padding: 16px;
+    content-visibility: auto; contain-intrinsic-size: auto 380px;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+  .tile::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+    border-radius: 14px 14px 0 0; background: var(--sig); opacity: .9; }
+  .tile:hover { transform: translateY(-3px); border-color: var(--line2);
+    box-shadow: 0 14px 34px rgba(0,0,0,.45), 0 0 0 1px color-mix(in srgb, var(--sig) 35%, transparent); }
+  .tHead { display: flex; gap: 13px; }
+  .tInfo { min-width: 0; flex: 1; }
+  .badges { display: flex; gap: 7px; align-items: center; margin-bottom: 6px; flex-wrap: wrap; }
+  .setTag { font-size: 11.5px; color: var(--muted); border: 1px solid var(--line); border-radius: 6px;
+    padding: 2px 8px; white-space: nowrap; }
+  .tile h3 { margin: 0 0 2px; font-size: 16px; line-height: 1.22; font-weight: 600; }
+  .phase { color: var(--faint); font-size: 11.5px; text-transform: capitalize; margin-bottom: 7px; }
+  .momRow { display: flex; align-items: center; gap: 10px; margin-top: 3px; flex-wrap: wrap; }
+  .range { font-size: 12.5px; color: var(--muted); }
+  .range b { color: var(--gold); font: 700 12.5px var(--mono); }
+  details.why { border-top: 1px solid var(--line); padding-top: 9px; }
+  details.why > summary { cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--muted);
+    list-style: none; display: flex; align-items: center; gap: 6px; min-height: 36px; }
+  details.why > summary::-webkit-details-marker { display: none; }
+  details.why > summary::before { content: "▸"; transition: transform .15s; color: var(--gold); }
+  details.why[open] > summary::before { transform: rotate(90deg); }
+  details.why ul { margin: 6px 0 2px; padding-left: 17px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
+  .tFoot { margin-top: auto; padding-top: 2px; }
+  .tFoot a, .detailFoot a { font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; min-height: 40px; }
+
+  /* shared bits */
+  .thumbWrap { position: relative; width: 44px; flex-shrink: 0; }
+  .thumbWrap.big { width: 84px; }
+  .thumb { width: 100%; display: block; border-radius: 4px; box-shadow: 0 3px 10px rgba(0,0,0,.5); }
+  .thumbWrap::after { content: ""; position: absolute; inset: 0; border-radius: 4px; opacity: 0;
+    background: linear-gradient(115deg, transparent 28%, rgba(255,255,255,.35) 44%, rgba(179,107,255,.35) 52%,
+      rgba(89,160,255,.3) 60%, transparent 76%);
+    mix-blend-mode: screen; transition: opacity .25s; pointer-events: none; }
+  .row > summary:hover .thumbWrap::after, .tile:hover .thumbWrap::after { opacity: 1; }
+  .ident { min-width: 0; }
+  .ident b { display: block; font-size: 14.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ident em { font-style: normal; font-size: 11.5px; color: var(--faint); text-transform: capitalize; }
+  .up { color: var(--buy); } .down { color: var(--sell); }
+  .sig { font-size: 10.5px; font-weight: 600; letter-spacing: 1px; color: #0A1020;
+    background: var(--sig); border-radius: 5px; padding: 3px 9px; text-align: center; }
   .confCell { display: flex; align-items: center; gap: 6px; justify-content: flex-end;
     font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
   .confBar { width: 32px; height: 5px; border-radius: 3px; background: var(--line2); overflow: hidden; flex-shrink: 0; }
   .confBar i { display: block; height: 100%; background: var(--c, var(--buy)); }
-  .sig { font-size: 10.5px; font-weight: 600; letter-spacing: 1px; color: #0A1020;
-    background: var(--sig); border-radius: 5px; padding: 3px 0; text-align: center; }
-  .caret { color: var(--faint); font-size: 11px; transition: transform .15s; text-align: center; }
-  .row[open] .caret { transform: rotate(90deg); }
-
-  .rowDetail { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 22px;
-    padding: 4px 18px 20px 91px; background: rgba(22,33,63,.5); }
-  .rowDetail ul { margin: 0; padding-left: 17px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
-  .rowDetail li { margin-bottom: 5px; }
   .spark { width: 100%; height: 62px; display: block; }
   .noHist { color: var(--faint); font-size: 12px; font-style: italic; }
   .thin { display: inline-block; color: var(--hold); border: 1px solid color-mix(in srgb, var(--hold) 45%, transparent);
     border-radius: 5px; padding: 1px 7px; font-size: 11px; margin-top: 8px; }
-  .detailFoot { margin-top: 10px; font-size: 13px; font-weight: 600; }
+  .rowDetail ul { margin: 0; padding-left: 17px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
   .empty { color: var(--muted); text-align: center; padding: 60px 0; }
 
   footer.pageFoot { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 26px; }
@@ -157,22 +204,60 @@
 
   /* ---------- responsive ---------- */
   @media (max-width: 1080px) {
-    .cols, .rowMain { grid-template-columns: 26px 40px minmax(0,1fr) 78px 68px 62px 20px; }
+    .cols, .rowMain { grid-template-columns: 26px 40px minmax(0,1fr) 78px 68px 66px 24px; }
     .hideMd { display: none; }
     .rowDetail { grid-template-columns: 1fr; padding-left: 18px; }
   }
-  @media (max-width: 760px) {
+  @media (max-width: 860px) {
     .app { flex-direction: column; }
+    /* The rail becomes a compact header strip rather than a full-height column
+       that would eat the viewport before any content is visible. */
+    /* Pack the controls into a 4-row grid — brand and view toggle share the
+       top line, sort sits beside the signal filters — so the header costs
+       ~230px instead of ~400px of an 844px phone screen. */
     .rail { position: static; height: auto; width: 100%; border-right: none;
-      border-bottom: 1px solid var(--line); }
-    .fchips { flex-direction: row; flex-wrap: wrap; }
-    .fchip { flex: 1 1 auto; gap: 7px; }
-    .railStats { grid-template-columns: repeat(2, 1fr); }
-    .railFoot { margin-top: 14px; grid-auto-flow: column; justify-content: start; gap: 18px; }
-    .content { padding: 20px 16px 60px; }
+      border-bottom: 1px solid var(--line); backdrop-filter: none;
+      background: rgba(9,14,32,.94); overflow: visible;
+      display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 9px;
+      grid-template-areas: "brand view" "search search" "chips chips" "sort sort";
+      padding: 12px max(16px, env(safe-area-inset-left)) 12px max(16px, env(safe-area-inset-right)); }
+    .brand { grid-area: brand; align-self: center; font-size: 18px; }
+    .brand .mark { width: 28px; height: 28px; }
+    #q { grid-area: search; }
+    #gView { grid-area: view; }
+    #gSignal { grid-area: chips; min-width: 0; }
+    #gRank { grid-area: sort; }
+    /* The per-card numbers already carry this; the summary strip is the first
+       thing to cut when vertical space is the scarce resource. */
+    #gMarket, .railFoot, .brandSub { display: none; }
+    .railGroup { margin-top: 0; }
+    .railGroup h5 { display: none; }
+    .seg button, details.why > summary, .tFoot a, .detailFoot a { min-height: var(--tap); }
+    /* 16px minimum stops iOS Safari zooming the page when a field is focused. */
+    input[type="search"], select { font-size: 16px; }
+    .fchips { flex-direction: row; overflow-x: auto; padding-bottom: 2px;
+      -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .fchips::-webkit-scrollbar { display: none; }
+    .fchip { flex: 0 0 auto; gap: 8px; padding: 0 14px; }
+    .railStats { grid-auto-flow: column; grid-auto-columns: minmax(122px, 1fr);
+      overflow-x: auto; scrollbar-width: none; }
+    .railStats::-webkit-scrollbar { display: none; }
+    .rstat { flex-direction: column; align-items: flex-start; gap: 1px; }
+    .railFoot { margin-top: 0; padding-top: 0; grid-auto-flow: column; justify-content: start; gap: 20px; }
+    .content { padding: 18px max(16px, env(safe-area-inset-left)) 56px max(16px, env(safe-area-inset-right)); }
+    .sub { font-size: 13.5px; }
     .cols { display: none; }
-    .rowMain { grid-template-columns: 26px 40px minmax(0,1fr) 64px 20px; }
+    .rowMain { grid-template-columns: 24px 38px minmax(0,1fr) 70px 24px; gap: 10px; }
     .hideSm { display: none; }
+    .rowDetail { padding: 4px 14px 18px; }
+    .tiles { gap: 13px; }
+    /* One less compositing layer to push around on a phone. */
+    .l3 { display: none; }
+  }
+  @media (max-width: 480px) {
+    .tiles { grid-template-columns: 1fr; }
+    h1 { font-size: 22px; }
+    .thumbWrap.big { width: 72px; }
   }
 </style>
 </head>
@@ -206,12 +291,20 @@
 
     <input id="q" type="search" placeholder="Search card or set…" aria-label="Search cards" />
 
-    <div class="railGroup">
+    <div class="railGroup" id="gView">
+      <h5>View</h5>
+      <div class="seg" id="viewSeg" role="group" aria-label="Layout">
+        <button type="button" data-view="tiles">Tiles</button>
+        <button type="button" data-view="rows">Rows</button>
+      </div>
+    </div>
+
+    <div class="railGroup" id="gSignal">
       <h5>Signal</h5>
       <div class="fchips" id="chips"></div>
     </div>
 
-    <div class="railGroup">
+    <div class="railGroup" id="gRank">
       <h5>Rank by</h5>
       <select id="sort" aria-label="Sort cards">
         <option value="upside">Model upside</option>
@@ -222,14 +315,14 @@
       </select>
     </div>
 
-    <div class="railGroup">
+    <div class="railGroup" id="gMarket">
       <h5>Market</h5>
       <div class="railStats" id="stats"></div>
     </div>
 
     <div class="railFoot">
       <a href="#method">How it works ↓</a>
-      <a href="https://github.com/LoganCraft23/card-tracker" target="_blank" rel="noreferrer">Source on GitHub ↗</a>
+      <a href="https://github.com/LoganCraft23/card-tracker" target="_blank" rel="noreferrer">Source ↗</a>
     </div>
   </aside>
 
@@ -247,14 +340,14 @@
 
     <section class="ticker" id="movers" aria-label="Biggest movers"></section>
 
-    <div class="cols" aria-hidden="true">
+    <div class="cols" id="cols" aria-hidden="true">
       <span>#</span><span></span><span>Card</span>
       <span class="r">Price</span><span class="r">30d</span>
       <span class="r hideSm">Confidence</span><span class="r hideMd hideSm">12-mo range</span>
       <span class="r hideMd">Call</span><span></span>
     </div>
 
-    <main class="rows" id="list"><div class="empty">Loading data…</div></main>
+    <main id="list"><div class="empty">Loading data…</div></main>
 
     <footer class="pageFoot" id="method">
       <div class="holoStrip"></div>
@@ -291,7 +384,14 @@
 <script>
 const SIG = { BUY: "var(--buy)", SELL: "var(--sell)", HOLD: "var(--hold)", AVOID: "var(--avoid)" };
 let DATA = { cards: [] };
-let state = { q: "", filter: "ALL", sort: "upside" };
+
+// localStorage throws in some privacy modes, so every access is guarded.
+const store = {
+  get(k, d) { try { return localStorage.getItem(k) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+let state = { q: "", filter: "ALL", sort: "upside", view: store.get("ft.view", "tiles") };
+if (state.view !== "rows") state.view = "tiles";
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -434,22 +534,26 @@ function tcgUrl(c) {
 
 // Momentum measured from our own snapshots is exact; the Cardmarket-derived
 // figure is an estimate, so it's marked "~" rather than passed off as equal.
-function momCell(c) {
+function momValue(c) {
   const v = c.chg30 ?? (c.momSource === "cardmarket" ? c.mom : null);
-  if (v === null || v === undefined) return `<span class="num mom" style="color:var(--faint)">—</span>`;
+  return typeof v === "number" ? v : null;
+}
+function momCell(c, cls) {
+  const v = momValue(c);
+  if (v === null) return `<span class="num mom ${cls}" style="color:var(--faint)">—</span>`;
   const est = c.chg30 === null || c.chg30 === undefined;
   const t = est
     ? "Estimated from Cardmarket's smoothed trend vs its 30-day average — measured history takes over once the tracker has a month of snapshots"
     : "Measured from this tracker's own daily snapshots";
-  return `<span class="num mom ${v >= 0 ? "up" : "down"}" title="${t}">${est ? "~" : ""}${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span>`;
+  return `<span class="num mom ${cls} ${v >= 0 ? "up" : "down"}" title="${t}">${est ? "~" : ""}${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span>`;
 }
 
-function confCell(c) {
-  if (typeof c.confidence !== "number") return `<span class="confCell hideSm">—</span>`;
+function confCell(c, cls) {
+  if (typeof c.confidence !== "number") return `<span class="confCell ${cls}">—</span>`;
   const p = Math.round(c.confidence * 100);
   const col = c.confidence >= 0.8 ? "var(--buy)" : c.confidence >= 0.55 ? "var(--hold)" : "var(--sell)";
   const flags = (c.confidenceFlags || []).join("; ");
-  return `<span class="confCell hideSm" title="Price confidence ${p}% — sets how wide the 12-month range is${flags ? ": " + esc(flags) : ""}">
+  return `<span class="confCell ${cls}" title="Price confidence ${p}% — sets how wide the 12-month range is${flags ? ": " + esc(flags) : ""}">
     <span class="confBar" style="--c:${col}"><i style="width:${p}%"></i></span>${p}%</span>`;
 }
 
@@ -474,7 +578,7 @@ function spark(c) {
 
 function sortList(list) {
   const upside = (c) => (c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0);
-  const mv = (c) => Math.abs(c.chg30 ?? c.mom ?? 0);
+  const mv = (c) => Math.abs(momValue(c) ?? 0);
   const by = {
     upside: (a, b) => upside(b) - upside(a),
     priceAsc: (a, b) => a.price - b.price,
@@ -485,24 +589,42 @@ function sortList(list) {
   return list.sort(by[state.sort] || by.upside);
 }
 
-function render() {
-  let list = DATA.cards.slice();
-  if (state.q) {
-    const t = state.q.toLowerCase();
-    list = list.filter((c) => (c.name + " " + c.set).toLowerCase().includes(t));
-  }
-  if (state.filter !== "ALL") list = list.filter((c) => c.signal === state.filter);
-  sortList(list);
+const artImg = (c, cls) =>
+  c.image ? `<img class="thumb" src="${esc(c.image)}/low.webp" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">` : "";
 
-  $("list").innerHTML = list.length ? list.map((c, i) => `
+function tileHTML(c) {
+  return `
+    <article class="tile" style="--sig:${SIG[c.signal]}">
+      <div class="tHead">
+        <span class="thumbWrap big">${artImg(c)}</span>
+        <div class="tInfo">
+          <div class="badges"><span class="sig">${c.signal}</span><span class="setTag">${esc(c.set)}</span></div>
+          <h3>${esc(c.name)}</h3>
+          <div class="phase">${c.phase.replace("-", " ")} phase</div>
+          <div class="num price" style="text-align:left">$${c.price.toFixed(2)}</div>
+          <div class="momRow">${momCell(c, "")}${confCell(c, "")}</div>
+        </div>
+      </div>
+      ${spark(c)}
+      <div class="range">12-mo model range <b>$${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</b></div>
+      ${(c.confidenceFlags || []).length ? `<span class="thin">${esc(c.confidenceFlags.join("; "))}</span>` : ""}
+      <details class="why"><summary>Why ${c.signal}?</summary>
+        <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
+      </details>
+      <div class="tFoot"><a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View listing on TCGplayer ↗</a></div>
+    </article>`;
+}
+
+function rowHTML(c, i) {
+  return `
     <details class="row" style="--sig:${SIG[c.signal]}">
       <summary class="rowMain">
         <span class="rank">${String(i + 1).padStart(2, "0")}</span>
-        <span class="thumbWrap">${c.image ? `<img class="thumb" src="${esc(c.image)}/low.webp" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : ""}</span>
+        <span class="thumbWrap">${artImg(c)}</span>
         <span class="ident"><b>${esc(c.name)}</b><em>${esc(c.set)} · ${c.phase.replace("-", " ")}</em></span>
         <span class="num price">$${c.price.toFixed(2)}</span>
-        ${momCell(c)}
-        ${confCell(c)}
+        ${momCell(c, "")}
+        ${confCell(c, "hideSm")}
         <span class="num projCell hideMd hideSm">$${c.proj[0].toFixed(0)}–$${c.proj[1].toFixed(0)}</span>
         <span class="sig hideMd">${c.signal}</span>
         <span class="caret">▶</span>
@@ -518,23 +640,43 @@ function render() {
           <div class="detailFoot"><a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View listing on TCGplayer ↗</a></div>
         </div>
       </div>
-    </details>`).join("") : '<div class="empty">Nothing matches that filter — try widening the search.</div>';
+    </details>`;
+}
+
+function render() {
+  let list = DATA.cards.slice();
+  if (state.q) {
+    const t = state.q.toLowerCase();
+    list = list.filter((c) => (c.name + " " + c.set).toLowerCase().includes(t));
+  }
+  if (state.filter !== "ALL") list = list.filter((c) => c.signal === state.filter);
+  sortList(list);
+
+  const tiles = state.view === "tiles";
+  $("cols").style.display = tiles ? "none" : "";
+  const host = $("list");
+  host.className = tiles ? "tiles" : "rows";
+  host.innerHTML = list.length
+    ? list.map((c, i) => (tiles ? tileHTML(c) : rowHTML(c, i))).join("")
+    : '<div class="empty">Nothing matches that filter — try widening the search.</div>';
 
   const counts = DATA.cards.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
   $("chips").innerHTML = ["ALL", "BUY", "HOLD", "SELL", "AVOID"].map((s) =>
     `<button class="fchip${state.filter === s ? " active" : ""}" style="--c:${s === "ALL" ? "var(--link)" : SIG[s]}"
       onclick="state.filter='${s}';render()">${s === "ALL" ? "All cards" : s}<b>${s === "ALL" ? DATA.cards.length : counts[s] || 0}</b></button>`
   ).join("");
+
+  for (const b of $("viewSeg").children) b.setAttribute("aria-pressed", String(b.dataset.view === state.view));
 }
 
 function renderMovers() {
   const moved = DATA.cards
-    .filter((c) => typeof (c.chg30 ?? c.mom) === "number")
-    .sort((a, b) => Math.abs(b.chg30 ?? b.mom) - Math.abs(a.chg30 ?? a.mom))
+    .filter((c) => momValue(c) !== null)
+    .sort((a, b) => Math.abs(momValue(b)) - Math.abs(momValue(a)))
     .slice(0, 8);
   $("movers").innerHTML = moved.map((c) => {
-    const v = c.chg30 ?? c.mom;
-    return `<div class="tk">${c.image ? `<img src="${esc(c.image)}/low.webp" alt="" loading="lazy" onerror="this.remove()">` : ""}
+    const v = momValue(c);
+    return `<div class="tk">${c.image ? `<img src="${esc(c.image)}/low.webp" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : ""}
       <span class="n">${esc(c.name)}</span>
       <span class="m ${v >= 0 ? "up" : "down"}">${v >= 0 ? "▲" : "▼"}${Math.abs(Math.round(v * 100))}%</span></div>`;
   }).join("");
@@ -556,6 +698,13 @@ function renderStats() {
 
 $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
 $("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+$("viewSeg").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-view]");
+  if (!b) return;
+  state.view = b.dataset.view;
+  store.set("ft.view", state.view);
+  render();
+});
 
 fetch("./data.json")
   .then((r) => r.json())
