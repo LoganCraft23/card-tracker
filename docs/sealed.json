@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T19:10:11.485Z",
+  "updated": "2026-08-01T19:16:14.790Z",
   "products": [
     {
       "name": "Temporal Forces Booster Box",
@@ -3797,6 +3797,35 @@
       ]
     },
     {
+      "name": "White Flare Pokemon Center Elite Trainer Box (Exclusive)",
+      "set": "Black Bolt / White Flare",
+      "format": "Elite Trainer Box",
+      "productId": 630688,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/630688.jpg",
+      "listings": 47,
+      "low": 256.67,
+      "phase": "supply-trough",
+      "price": 265.89,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Still in print and freely available — no edge at current prices."
+      ],
+      "rationale": "Still in print and freely available — no edge at current prices.",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        243.34,
+        309.71
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          265.89
+        ]
+      ]
+    },
+    {
       "name": "Destined Rivals Elite Trainer Box",
       "set": "Destined Rivals",
       "format": "Elite Trainer Box",
@@ -4003,6 +4032,38 @@
       ]
     },
     {
+      "name": "White Flare Elite Trainer Box",
+      "set": "Black Bolt / White Flare",
+      "format": "Elite Trainer Box",
+      "productId": 630689,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/630689.jpg",
+      "listings": 72,
+      "low": 3,
+      "phase": "supply-trough",
+      "price": 153.17,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Still in print and freely available — no edge at current prices.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Still in print and freely available — no edge at current prices.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        124.41,
+        194.18
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          153.17
+        ]
+      ]
+    },
+    {
       "name": "Journey Together Booster Bundle",
       "set": "Journey Together",
       "format": "Booster Bundle",
@@ -4119,6 +4180,35 @@
       ]
     },
     {
+      "name": "White Flare Booster Bundle",
+      "set": "Black Bolt / White Flare",
+      "format": "Booster Bundle",
+      "productId": 630696,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/630696.jpg",
+      "listings": 42,
+      "low": 62,
+      "phase": "supply-trough",
+      "price": 78.37,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        70.34,
+        89.53
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          78.37
+        ]
+      ]
+    },
+    {
       "name": "Phantasmal Flames Booster Bundle",
       "set": "Phantasmal Flames",
       "format": "Booster Bundle",
@@ -4144,6 +4234,35 @@
         [
           "2026-08-01",
           79.38
+        ]
+      ]
+    },
+    {
+      "name": "White Flare Tech Sticker Collection",
+      "set": "Black Bolt / White Flare",
+      "format": "Collection",
+      "productId": 630700,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/630700.jpg",
+      "listings": 10,
+      "low": 40,
+      "phase": "supply-trough",
+      "price": 42.79,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        35.89,
+        50.54
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          42.79
         ]
       ]
     },
@@ -4176,6 +4295,38 @@
         [
           "2026-08-01",
           72.27
+        ]
+      ]
+    },
+    {
+      "name": "White Flare Binder Collection",
+      "set": "Black Bolt / White Flare",
+      "format": "Collection",
+      "productId": 630695,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/630695.jpg",
+      "listings": 42,
+      "low": 9.49,
+      "phase": "supply-trough",
+      "price": 66.48,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        52.44,
+        81.85
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          66.48
         ]
       ]
     },
@@ -5377,6 +5528,38 @@
         [
           "2026-08-01",
           12.66
+        ]
+      ]
+    },
+    {
+      "name": "White Flare Booster Pack",
+      "set": "Black Bolt / White Flare",
+      "format": "Booster Pack",
+      "productId": 630699,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/630699.jpg",
+      "listings": 37,
+      "low": 4.73,
+      "phase": "supply-trough",
+      "price": 16.76,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        12.57,
+        19.61
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          16.76
         ]
       ]
     },
