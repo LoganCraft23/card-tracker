@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T19:16:14.790Z",
+  "updated": "2026-08-01T19:19:39.373Z",
   "products": [
     {
       "name": "Temporal Forces Booster Box",
@@ -3739,6 +3739,35 @@
       ]
     },
     {
+      "name": "151 Pokemon Center Elite Trainer Box (Exclusive)",
+      "set": "151",
+      "format": "Elite Trainer Box",
+      "productId": 501999,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501999.jpg",
+      "listings": 43,
+      "low": 1199.99,
+      "phase": "supply-trough",
+      "price": 1371.63,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Still in print and freely available — no edge at current prices."
+      ],
+      "rationale": "Still in print and freely available — no edge at current prices.",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        1255.32,
+        1597.67
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          1371.63
+        ]
+      ]
+    },
+    {
       "name": "Journey Together Pokemon Center Elite Trainer Box (Exclusive)",
       "set": "Journey Together",
       "format": "Elite Trainer Box",
@@ -4032,6 +4061,38 @@
       ]
     },
     {
+      "name": "151 Elite Trainer Box",
+      "set": "151",
+      "format": "Elite Trainer Box",
+      "productId": 503313,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/503313.jpg",
+      "listings": 53,
+      "low": 49.99,
+      "phase": "supply-trough",
+      "price": 616.1,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Still in print and freely available — no edge at current prices.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Still in print and freely available — no edge at current prices.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        500.42,
+        781.07
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          616.1
+        ]
+      ]
+    },
+    {
       "name": "White Flare Elite Trainer Box",
       "set": "Black Bolt / White Flare",
       "format": "Elite Trainer Box",
@@ -4238,6 +4299,67 @@
       ]
     },
     {
+      "name": "151 Booster Bundle",
+      "set": "151",
+      "format": "Booster Bundle",
+      "productId": 502000,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/502000.jpg",
+      "listings": 139,
+      "low": 69.98,
+      "phase": "supply-trough",
+      "price": 182.59,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        145.45,
+        227.03
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          182.59
+        ]
+      ]
+    },
+    {
+      "name": "151 Ultra-Premium Collection",
+      "set": "151",
+      "format": "Collection",
+      "productId": 502005,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/502005.jpg",
+      "listings": 69,
+      "low": 920,
+      "phase": "supply-trough",
+      "price": 942.58,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        837.77,
+        1066.25
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          942.58
+        ]
+      ]
+    },
+    {
       "name": "White Flare Tech Sticker Collection",
       "set": "Black Bolt / White Flare",
       "format": "Collection",
@@ -4331,6 +4453,102 @@
       ]
     },
     {
+      "name": "151 Poster Collection",
+      "set": "151",
+      "format": "Collection",
+      "productId": 502001,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/502001.jpg",
+      "listings": 44,
+      "low": 0.99,
+      "phase": "supply-trough",
+      "price": 80.98,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        63.88,
+        99.7
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          80.98
+        ]
+      ]
+    },
+    {
+      "name": "151: Zapdos ex Collection",
+      "set": "151",
+      "format": "Collection",
+      "productId": 502007,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/502007.jpg",
+      "listings": 39,
+      "low": 14.99,
+      "phase": "supply-trough",
+      "price": 121.6,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        95.92,
+        149.71
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          121.6
+        ]
+      ]
+    },
+    {
+      "name": "151: Alakazam ex Collection",
+      "set": "151",
+      "format": "Collection",
+      "productId": 502006,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/502006.jpg",
+      "listings": 46,
+      "low": 19.99,
+      "phase": "supply-trough",
+      "price": 118.65,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        93.59,
+        146.08
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          118.65
+        ]
+      ]
+    },
+    {
       "name": "Black Bolt Tech Sticker Collection",
       "set": "Black Bolt / White Flare",
       "format": "Collection",
@@ -4359,6 +4577,38 @@
         [
           "2026-08-01",
           46.24
+        ]
+      ]
+    },
+    {
+      "name": "151 Binder Collection",
+      "set": "151",
+      "format": "Collection",
+      "productId": 502004,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/502004.jpg",
+      "listings": 23,
+      "low": 20,
+      "phase": "supply-trough",
+      "price": 239.69,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        177.09,
+        307.09
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          239.69
         ]
       ]
     },
@@ -5528,6 +5778,38 @@
         [
           "2026-08-01",
           12.66
+        ]
+      ]
+    },
+    {
+      "name": "151 Booster Pack",
+      "set": "151",
+      "format": "Booster Pack",
+      "productId": 504467,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/504467.jpg",
+      "listings": 82,
+      "low": 2.98,
+      "phase": "supply-trough",
+      "price": 29.79,
+      "mom": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        22.34,
+        34.86
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          29.79
         ]
       ]
     },
