@@ -122,7 +122,15 @@
     grid-template-columns: 30px 44px minmax(0,1fr) 84px 74px 96px 118px 66px 24px; }
   .cols { padding: 14px 14px 8px; font-size: 10.5px; letter-spacing: 1.3px; text-transform: uppercase;
     color: var(--faint); font-weight: 700; border-bottom: 1px solid var(--line); }
-  .cols .r { text-align: right; }
+  .cols .r, .cols button.r { text-align: right; }
+  .cols button { background: none; border: none; padding: 2px 0; cursor: pointer;
+    font: 700 10.5px "Space Grotesk", sans-serif; letter-spacing: 1.3px; text-transform: uppercase;
+    color: var(--faint); text-align: left; transition: color .14s; }
+  .cols button:hover { color: var(--text); }
+  .cols button[aria-sort] { color: var(--gold); }
+  .cols button::after { content: ""; }
+  .cols button[aria-sort="descending"]::after { content: " ▾"; }
+  .cols button[aria-sort="ascending"]::after { content: " ▴"; }
   .rows { display: flex; flex-direction: column; }
   .row { border-bottom: 1px solid var(--line);
     content-visibility: auto; contain-intrinsic-block-size: auto 66px; }
@@ -356,6 +364,7 @@
         <option value="priceDesc">Price: high → low</option>
         <option value="chg30">Biggest movers</option>
         <option value="confidence">Price confidence</option>
+        <option value="custom" hidden>Custom order</option>
       </select>
     </div>
 
@@ -384,11 +393,15 @@
 
     <section class="ticker" id="movers" aria-label="Biggest movers"></section>
 
-    <div class="cols" id="cols" aria-hidden="true">
-      <span>#</span><span></span><span>Card</span>
-      <span class="r">Price</span><span class="r">30d</span>
-      <span class="r hideSm">Confidence</span><span class="r hideMd hideSm">12-mo range</span>
-      <span class="r hideMd">Call</span><span></span>
+    <div class="cols" id="cols" role="row">
+      <span>#</span><span></span>
+      <button type="button" data-sort="name">Card</button>
+      <button type="button" class="r" data-sort="price">Price</button>
+      <button type="button" class="r" data-sort="mom">30d</button>
+      <button type="button" class="r hideSm" data-sort="confidence">Confidence</button>
+      <button type="button" class="r hideMd hideSm" data-sort="upside">12-mo range</button>
+      <button type="button" class="r hideMd" data-sort="signal">Call</button>
+      <span></span>
     </div>
 
     <main id="list"><div class="empty">Loading data…</div></main>
@@ -438,7 +451,7 @@ const store = {
 };
 let SEALED = { products: [] };
 let state = {
-  q: "", filter: "ALL", sort: "upside", format: "ALL",
+  q: "", filter: "ALL", sortKey: "upside", sortDir: "desc", format: "ALL",
   view: store.get("ft.view", "tiles"),
   market: store.get("ft.market", "chase"),
 };
@@ -643,17 +656,38 @@ function spark(c) {
   </svg>`;
 }
 
+// Sorting is a (key, direction) pair so the rows-view column headers and the
+// rail's preset dropdown drive one mechanism rather than two.
+const upsideOf = (c) => (c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0);
+const SIGNAL_ORDER = { BUY: 3, HOLD: 2, SELL: 1, AVOID: 0 };
+const SORT_KEYS = {
+  name: (c) => c.name.toLowerCase(),
+  price: (c) => c.price,
+  // Cards with no reading sort to the bottom either way rather than mixing in.
+  mom: (c) => momValue(c) ?? -Infinity,
+  confidence: (c) => c.confidence ?? -1,
+  upside: upsideOf,
+  signal: (c) => SIGNAL_ORDER[c.signal] ?? -1,
+  mover: (c) => Math.abs(momValue(c) ?? 0), // magnitude, ignoring direction
+};
+const SORT_PRESETS = {
+  upside: ["upside", "desc"],
+  priceAsc: ["price", "asc"],
+  priceDesc: ["price", "desc"],
+  chg30: ["mover", "desc"],
+  confidence: ["confidence", "desc"],
+};
+// Names read naturally A→Z; every numeric column is most-interesting-first.
+const defaultDir = (k) => (k === "name" ? "asc" : "desc");
+
 function sortList(list) {
-  const upside = (c) => (c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0);
-  const mv = (c) => Math.abs(momValue(c) ?? 0);
-  const by = {
-    upside: (a, b) => upside(b) - upside(a),
-    priceAsc: (a, b) => a.price - b.price,
-    priceDesc: (a, b) => b.price - a.price,
-    chg30: (a, b) => mv(b) - mv(a),
-    confidence: (a, b) => (b.confidence ?? 0) - (a.confidence ?? 0),
-  };
-  return list.sort(by[state.sort] || by.upside);
+  const get = SORT_KEYS[state.sortKey] || upsideOf;
+  const dir = state.sortDir === "asc" ? 1 : -1;
+  return list.sort((a, b) => {
+    const x = get(a), y = get(b);
+    if (typeof x === "string") return x.localeCompare(y) * dir;
+    return (x - y) * dir;
+  });
 }
 
 // TCGdex serves card art as a base path needing a size suffix; the sealed
@@ -746,6 +780,17 @@ function render() {
       onclick="state.filter='${s}';render()">${s === "ALL" ? (state.market === "sealed" ? "All products" : "All cards") : s}<b>${s === "ALL" ? all.length : counts[s] || 0}</b></button>`
   ).join("");
 
+  // Mark the active column and keep the preset dropdown in step — a header
+  // click that matches no preset shows "Custom order".
+  for (const b of $("cols").querySelectorAll("button[data-sort]")) {
+    if (b.dataset.sort === state.sortKey) {
+      b.setAttribute("aria-sort", state.sortDir === "asc" ? "ascending" : "descending");
+    } else b.removeAttribute("aria-sort");
+  }
+  const preset = Object.entries(SORT_PRESETS)
+    .find(([, [k, d]]) => k === state.sortKey && d === state.sortDir);
+  $("sort").value = preset ? preset[0] : "custom";
+
   for (const b of $("viewSeg").children) b.setAttribute("aria-pressed", String(b.dataset.view === state.view));
   for (const b of $("marketSeg").children) b.setAttribute("aria-pressed", String(b.dataset.market === state.market));
   $("gFormat").hidden = state.market !== "sealed";
@@ -807,7 +852,20 @@ function renderStats() {
 }
 
 $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
-$("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+$("sort").addEventListener("change", (e) => {
+  const p = SORT_PRESETS[e.target.value];
+  if (p) [state.sortKey, state.sortDir] = p;
+  render();
+});
+// Clicking a column header sorts by it; clicking the active one flips it.
+$("cols").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-sort]");
+  if (!b) return;
+  const k = b.dataset.sort;
+  if (state.sortKey === k) state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+  else { state.sortKey = k; state.sortDir = defaultDir(k); }
+  render();
+});
 $("viewSeg").addEventListener("click", (e) => {
   const b = e.target.closest("button[data-view]");
   if (!b) return;
