@@ -208,6 +208,20 @@
   .confBar i { display: block; height: 100%; background: var(--c, var(--buy)); }
   .spark { width: 100%; height: 62px; display: block; }
   .noHist { color: var(--faint); font-size: 12px; font-style: italic; }
+  /* Hover magnifier. A single shared panel rather than one per card, sized to
+     a fixed box so its position can be computed before the image loads; the
+     art is contained inside, so sealed products (square) and cards (portrait)
+     both sit correctly without letterbox bars showing. */
+  .zoom { position: fixed; z-index: 60; width: 300px; height: 420px; margin: 0;
+    pointer-events: none; opacity: 0; transform: scale(.96);
+    transition: opacity .16s ease, transform .16s ease; }
+  .zoom img { width: 100%; height: 100%; object-fit: contain; border-radius: 10px;
+    filter: drop-shadow(0 18px 40px rgba(0,0,0,.65)); }
+  /* Both flags: "on" means hovered, "ready" means the high-res art has
+     decoded — so an empty box can never flash. */
+  .zoom.on.ready { opacity: 1; transform: none; }
+  @media (max-height: 620px) { .zoom { width: 214px; height: 300px; } }
+  @media (prefers-reduced-motion: reduce) { .zoom { transition: opacity .16s ease; transform: none; } }
   .star { background: none; border: none; cursor: pointer; padding: 0 2px; font-size: 16px;
     line-height: 1; color: var(--faint); transition: color .14s, transform .14s; }
   .star:hover { color: var(--gold); transform: scale(1.15); }
@@ -464,6 +478,9 @@ const store = {
 };
 let SEALED = { products: [] };
 let COLLECTION = { items: [] };
+// Assigned by the zoom module below; render() calls it because re-rendering
+// detaches the hovered node, so no mouseout would ever fire to close it.
+let hideZoom = () => {};
 let state = {
   q: "", filter: "ALL", sortKey: "upside", sortDir: "desc", format: "ALL",
   view: store.get("ft.view", "tiles"),
@@ -636,6 +653,63 @@ try {
   apply();
 })();
 
+// --- hover magnifier -----------------------------------------------------
+// Skipped entirely on touch: there is no hover to hang it off, and attaching
+// it would only intercept taps meant for the row toggle.
+(function cardZoom() {
+  if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+  const fig = document.createElement("figure");
+  fig.className = "zoom";
+  fig.setAttribute("aria-hidden", "true"); // decorative: the art is already labelled
+  const img = document.createElement("img");
+  img.alt = "";
+  fig.appendChild(img);
+  document.body.appendChild(fig);
+
+  let current = null;
+  hideZoom = () => { fig.classList.remove("on"); current = null; };
+
+  // Prefer the right of the thumbnail, flip left when that would overflow,
+  // and clamp vertically so a card near the top or bottom stays fully visible.
+  function place(el) {
+    const r = el.getBoundingClientRect();
+    const w = fig.offsetWidth, h = fig.offsetHeight, gap = 14, pad = 8;
+    let left = r.right + gap;
+    if (left + w > innerWidth - pad) left = r.left - w - gap;
+    if (left < pad) left = Math.min(r.right + gap, innerWidth - w - pad);
+    const top = Math.max(pad, Math.min(r.top + r.height / 2 - h / 2, innerHeight - h - pad));
+    fig.style.left = `${Math.round(left)}px`;
+    fig.style.top = `${Math.round(top)}px`;
+  }
+
+  const list = $("list");
+  list.addEventListener("mouseover", (e) => {
+    const t = e.target.closest("img.thumb");
+    if (!t || t === current) return;
+    const src = t.dataset.zoom;
+    if (!src) return;
+    current = t;
+    if (img.getAttribute("src") !== src) {
+      fig.classList.remove("ready"); // wait for the new art before revealing
+      img.src = src;
+    }
+    place(t);
+    fig.classList.add("on");
+  });
+  list.addEventListener("mouseout", (e) => {
+    if (!e.target.closest("img.thumb")) return;
+    if (e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest("img.thumb")) return;
+    hideZoom();
+  });
+
+  img.addEventListener("load", () => fig.classList.add("ready"));
+  img.addEventListener("error", hideZoom);
+  // The panel is fixed-position, so it would otherwise drift away from its card.
+  addEventListener("scroll", hideZoom, { passive: true });
+  addEventListener("resize", hideZoom);
+})();
+
 // TCGplayer publishes a product id per printing, so link straight to the
 // listing page; the name search is only a fallback if that id is missing.
 function tcgUrl(c) {
@@ -737,10 +811,17 @@ function sortList(list) {
 
 // TCGdex serves card art as a base path needing a size suffix; the sealed
 // source returns a complete image URL, so only cards get "/low.webp".
+//
+// The zoom variant is ~5x the bytes (160KB vs 33KB for a card), so it is only
+// ever referenced — never loaded — until something is actually hovered.
+const zoomSrc = (c) =>
+  c.isSealed ? c.image.replace("/fit-in/400x400/", "/fit-in/1000x1000/") : c.image + "/high.webp";
+
 const artImg = (c) => {
   if (!c.image) return "";
   const src = c.isSealed ? c.image : c.image + "/low.webp";
-  return `<img class="thumb" src="${esc(src)}" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">`;
+  return `<img class="thumb" src="${esc(src)}" data-zoom="${esc(zoomSrc(c))}" alt="${esc(c.name)}"
+    loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">`;
 };
 
 function tileHTML(c) {
@@ -800,6 +881,7 @@ function rowHTML(c, i) {
 const CORE_FORMATS = ["Booster Box", "Elite Trainer Box"];
 
 function render() {
+  hideZoom();
   const all = items();
   let list = all.slice();
   if (state.q) {
