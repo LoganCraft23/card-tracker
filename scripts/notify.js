@@ -3,7 +3,13 @@
 
 const EMOJI = { BUY: "🟢", SELL: "🔴", HOLD: "🟡", AVOID: "⚪" };
 
-export async function sendDiscord(changes) {
+/**
+ * @param changes  [{name, set, signal, prev, price, reason}]
+ * @param opts.title   heading for the batch ("Your collection" vs the watchlist)
+ * @param opts.mention prefix with @here — reserved for holdings you actually own,
+ *                     so the noisier watchlist batch can't trigger a ping.
+ */
+export async function sendDiscord(changes, opts = {}) {
   const url = process.env.DISCORD_WEBHOOK_URL;
   if (!url) {
     console.warn("DISCORD_WEBHOOK_URL not set — skipping notification.");
@@ -19,9 +25,13 @@ export async function sendDiscord(changes) {
   );
   if (changes.length > 15) lines.push(`…and ${changes.length - 15} more on the dashboard.`);
 
+  const heading = opts.title
+    ? `${opts.mention ? "@here " : ""}**${opts.title} — ${changes.length} signal change${changes.length > 1 ? "s" : ""}:**`
+    : `**Card signals changed today (${changes.length}):**`;
+
   const body = {
     username: "Foil Theory",
-    content: `**Card signals changed today (${changes.length}):**\n\n${lines.join("\n\n")}`,
+    content: `${heading}\n\n${lines.join("\n\n")}`,
   };
 
   const res = await fetch(url, {

@@ -208,6 +208,11 @@
   .confBar i { display: block; height: 100%; background: var(--c, var(--buy)); }
   .spark { width: 100%; height: 62px; display: block; }
   .noHist { color: var(--faint); font-size: 12px; font-style: italic; }
+  .star { background: none; border: none; cursor: pointer; padding: 0 2px; font-size: 16px;
+    line-height: 1; color: var(--faint); transition: color .14s, transform .14s; }
+  .star:hover { color: var(--gold); transform: scale(1.15); }
+  .star.on { color: var(--gold); }
+  .star.owned { color: var(--buy); cursor: default; }
   .thin { display: inline-block; color: var(--hold); border: 1px solid color-mix(in srgb, var(--hold) 45%, transparent);
     border-radius: 5px; padding: 1px 7px; font-size: 11px; margin-top: 8px; }
   .rowDetail ul { margin: 0; padding-left: 17px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
@@ -326,6 +331,7 @@
         <button type="button" data-market="chase">Chase</button>
         <button type="button" data-market="premium">Premium</button>
         <button type="button" data-market="sealed">Sealed</button>
+        <button type="button" data-market="mine">Mine</button>
       </div>
     </div>
 
@@ -371,6 +377,13 @@
     <div class="railGroup" id="gMarket">
       <h5>Market</h5>
       <div class="railStats" id="stats"></div>
+    </div>
+
+    <div class="railGroup" id="gStaged" hidden>
+      <h5>Staged</h5>
+      <button type="button" class="fchip" id="exportBtn" style="--c:var(--gold)">
+        Export <b id="stagedCount">0</b>
+      </button>
     </div>
 
     <div class="railFoot">
@@ -450,25 +463,47 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, v); } catch {} },
 };
 let SEALED = { products: [] };
+let COLLECTION = { items: [] };
 let state = {
   q: "", filter: "ALL", sortKey: "upside", sortDir: "desc", format: "ALL",
   view: store.get("ft.view", "tiles"),
   market: store.get("ft.market", "chase"),
 };
 if (state.view !== "rows") state.view = "tiles";
-const MARKETS = ["chase", "premium", "sealed"];
+const MARKETS = ["chase", "premium", "sealed", "mine"];
 // "cards" was the pre-band name for what is now the chase tier.
 if (state.market === "cards") state.market = "chase";
 if (!MARKETS.includes(state.market)) state.market = "chase";
 
-// Cards and sealed products carry different fields; everything downstream
-// works off this one shape so render/sort/filter stay market-agnostic.
-const items = () =>
-  state.market === "sealed"
-    ? SEALED.products.map((p) => ({ ...p, subtitle: p.format, isSealed: true }))
-    : DATA.cards
-        .filter((c) => (c.band || "chase") === state.market)
-        .map((c) => ({ ...c, subtitle: c.phase.replace("-", " ") + " phase" }));
+// Cards you've starred but not yet committed to collection.json. This is a
+// staging list for the Export button — the Mine view shows what the daily job
+// actually prices, which is the committed file.
+const staged = new Map(Object.entries(store.get("ft.staged", null) ? JSON.parse(store.get("ft.staged", "{}")) : {}));
+const saveStaged = () => store.set("ft.staged", JSON.stringify(Object.fromEntries(staged)));
+const stagedKey = (c) => (c.isSealed ? `sealed:${c.productId}` : c.id);
+
+function starBtn(c) {
+  const k = stagedKey(c);
+  if (!k) return "";
+  const owned = COLLECTION.items.some((i) => i.id === k);
+  if (owned) return `<span class="star owned" title="In your committed collection">★</span>`;
+  const on = staged.has(k);
+  return `<button type="button" class="star${on ? " on" : ""}" data-star="${esc(k)}"
+    data-name="${esc(c.name)}" title="${on ? "Staged — click to remove" : "Stage for your collection"}">${on ? "★" : "☆"}</button>`;
+}
+
+const subtitleFor = (c) =>
+  c.isSealed ? c.format : c.phase ? c.phase.replace("-", " ") + " phase" : "not modelled";
+
+// Cards, sealed products and holdings carry different fields; everything
+// downstream works off this one shape so render/sort/filter stay agnostic.
+const items = () => {
+  if (state.market === "sealed") return SEALED.products.map((p) => ({ ...p, subtitle: p.format, isSealed: true }));
+  if (state.market === "mine") return COLLECTION.items.map((p) => ({ ...p, subtitle: subtitleFor(p) }));
+  return DATA.cards
+    .filter((c) => (c.band || "chase") === state.market)
+    .map((c) => ({ ...c, subtitle: subtitleFor(c) }));
+};
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -640,6 +675,14 @@ function confCell(c, cls) {
 function spark(c) {
   const pts = (c.history || []).map((h) => h[1]);
   if (pts.length < 2) return '<div class="noHist">Price history builds daily — the sparkline appears once there are a few days of snapshots.</div>';
+  // Holdings from sets the model doesn't cover have no projection cone.
+  if (!c.proj) {
+    const min = Math.min(...pts) * 0.95, max = Math.max(...pts) * 1.05 || 1;
+    const W = 280, H = 62;
+    const line = pts.map((p, i) => ((i / (pts.length - 1)) * W).toFixed(1) + "," + (H - ((p - min) / (max - min)) * (H - 12) - 6).toFixed(1)).join(" ");
+    return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+      <polyline points="${line}" fill="none" stroke="#8FB6FF" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`;
+  }
   const all = pts.concat(c.proj || []);
   const min = Math.min(...all) * 0.95, max = Math.max(...all) * 1.05 || 1;
   const W = 280, H = 62, histW = 195;
@@ -658,7 +701,9 @@ function spark(c) {
 
 // Sorting is a (key, direction) pair so the rows-view column headers and the
 // rail's preset dropdown drive one mechanism rather than two.
-const upsideOf = (c) => (c.price ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0);
+// Holdings from unmodelled sets have no projection, so they carry no upside
+// rather than crashing the comparator.
+const upsideOf = (c) => (c.price && c.proj ? ((c.proj[0] + c.proj[1]) / 2) / c.price - 1 : 0);
 const SIGNAL_ORDER = { BUY: 3, HOLD: 2, SELL: 1, AVOID: 0 };
 const SORT_KEYS = {
   name: (c) => c.name.toLowerCase(),
@@ -700,11 +745,11 @@ const artImg = (c) => {
 
 function tileHTML(c) {
   return `
-    <article class="tile" style="--sig:${SIG[c.signal]}">
+    <article class="tile" style="--sig:${SIG[c.signal] || "var(--avoid)"}">
       <div class="tHead">
         <span class="thumbWrap big">${artImg(c)}</span>
         <div class="tInfo">
-          <div class="badges"><span class="sig">${c.signal}</span><span class="setTag">${esc(c.set)}</span>${
+          <div class="badges">${starBtn(c)}<span class="sig"${c.signal ? "" : ' style="background:var(--line2);color:var(--muted)"'}>${c.signal || "not modelled"}</span><span class="setTag">${esc(c.set)}</span>${
             c.isSealed && typeof c.listings === "number" ? `<span class="setTag" title="Active TCGplayer listings">${c.listings} listed</span>` : ""}</div>
           <h3>${esc(c.name)}</h3>
           <div class="phase">${esc(c.subtitle)}</div>
@@ -713,7 +758,9 @@ function tileHTML(c) {
         </div>
       </div>
       ${spark(c)}
-      <div class="range">12-mo model range <b>$${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</b></div>
+      ${c.proj ? `<div class="range">12-mo model range <b>$${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</b></div>` : ""}
+      ${c.qty ? `<div class="range">You hold <b>${c.qty}</b> · worth <b>$${(c.value ?? c.price * c.qty).toFixed(2)}</b>${
+        c.paid != null ? ` · ${c.price * c.qty >= c.paid * c.qty ? "up" : "down"} <b>${Math.abs(Math.round(((c.price - c.paid) / c.paid) * 100))}%</b> on cost` : ""}</div>` : ""}
       ${(c.confidenceFlags || []).length ? `<span class="thin">${esc(c.confidenceFlags.join("; "))}</span>` : ""}
       <details class="why"><summary>Why ${c.signal}?</summary>
         <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
@@ -724,7 +771,7 @@ function tileHTML(c) {
 
 function rowHTML(c, i) {
   return `
-    <details class="row" style="--sig:${SIG[c.signal]}">
+    <details class="row" style="--sig:${SIG[c.signal] || "var(--avoid)"}">
       <summary class="rowMain">
         <span class="rank">${String(i + 1).padStart(2, "0")}</span>
         <span class="thumbWrap">${artImg(c)}</span>
@@ -732,14 +779,14 @@ function rowHTML(c, i) {
         <span class="num price">$${c.price.toFixed(2)}</span>
         ${momCell(c, "")}
         ${confCell(c, "hideSm")}
-        <span class="num projCell hideMd hideSm">$${c.proj[0].toFixed(0)}–$${c.proj[1].toFixed(0)}</span>
-        <span class="sig hideMd">${c.signal}</span>
+        <span class="num projCell hideMd hideSm">${c.proj ? `$${c.proj[0].toFixed(0)}–$${c.proj[1].toFixed(0)}` : "—"}</span>
+        <span class="sig hideMd"${c.signal ? "" : ' style="background:var(--line2);color:var(--muted)"'}>${c.signal || "—"}</span>
         <span class="caret">▶</span>
       </summary>
       <div class="rowDetail">
         <div>
           ${spark(c)}
-          <div class="num projCell" style="text-align:left;margin-top:6px">12-mo model range $${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</div>
+          ${c.proj ? `<div class="num projCell" style="text-align:left;margin-top:6px">12-mo model range $${c.proj[0].toFixed(2)} – $${c.proj[1].toFixed(2)}</div>` : ""}
           ${(c.confidenceFlags || []).length ? `<span class="thin">${esc(c.confidenceFlags.join("; "))}</span>` : ""}
         </div>
         <div>
@@ -772,7 +819,11 @@ function render() {
   host.className = tiles ? "tiles" : "rows";
   host.innerHTML = list.length
     ? list.map((c, i) => (tiles ? tileHTML(c) : rowHTML(c, i))).join("")
-    : '<div class="empty">Nothing matches that filter — try widening the search.</div>';
+    : `<div class="empty">${
+        state.market === "mine" && !all.length
+          ? "No holdings yet — star cards anywhere on the site, then use Export in the sidebar."
+          : "Nothing matches that filter — try widening the search."
+      }</div>`;
 
   const counts = all.reduce((a, c) => ((a[c.signal] = (a[c.signal] || 0) + 1), a), {});
   $("chips").innerHTML = ["ALL", "BUY", "HOLD", "SELL", "AVOID"].map((s) =>
@@ -810,13 +861,23 @@ function render() {
     sealed: ["The sealed index",
       `Booster boxes, ETBs and the rest, priced daily. Unlike singles, <b>sealed supply only shrinks</b> —
        every box opened is one fewer left — so the out-of-print phases carry more weight here.`],
+    mine: ["My collection",
+      COLLECTION.items.length
+        ? `Your holdings from <code>collection.json</code>, priced every morning whatever their value
+           and whichever set they're from. <b>Discord alerts fire for these and nothing else</b>, on
+           the same rule as the rest of the site: a flip to or from BUY/SELL.`
+        : `Nothing here yet. Star cards anywhere on the site, hit <b>Export</b> in the sidebar, and commit
+           the result as <code>collection.json</code> — the daily job then prices them and alerts you when
+           one flips to or from BUY/SELL.`],
   };
   const [title, sub] = COPY[state.market] || COPY.chase;
   $("pageTitle").textContent = title;
   $("pageSub").innerHTML = sub;
-  $("updated").textContent = (sealed ? SEALED.updated : DATA.updated)
-    ? "updated " + new Date(sealed ? SEALED.updated : DATA.updated).toLocaleString()
-    : "no data yet";
+  const stamp = state.market === "mine" ? COLLECTION.updated : sealed ? SEALED.updated : DATA.updated;
+  $("updated").textContent = stamp ? "updated " + new Date(stamp).toLocaleString() : "no data yet";
+
+  $("gStaged").hidden = staged.size === 0;
+  $("stagedCount").textContent = staged.size;
 }
 
 function renderMovers() {
@@ -842,6 +903,18 @@ function renderStats() {
   const prices = cards.map((c) => c.price).sort((a, b) => a - b);
   const median = prices[Math.floor(prices.length / 2)] || 0;
   const avgConf = cards.reduce((a, c) => a + (c.confidence || 0), 0) / cards.length;
+  if (state.market === "mine") {
+    const gain = COLLECTION.costBasis ? COLLECTION.totalValue - COLLECTION.costBasis : null;
+    $("stats").innerHTML = [
+      ["Holdings", cards.reduce((a, c) => a + (c.qty || 1), 0)],
+      ["Market value", "$" + Math.round(COLLECTION.totalValue || 0).toLocaleString()],
+      ...(COLLECTION.costedItems
+        ? [["Cost basis", "$" + Math.round(COLLECTION.costBasis).toLocaleString()],
+           ["Unrealised", (gain >= 0 ? "+$" : "-$") + Math.abs(Math.round(gain)).toLocaleString()]]
+        : []),
+    ].map(([s, b]) => `<div class="rstat"><span>${s}</span><b>${b}</b></div>`).join("");
+    return;
+  }
   $("stats").innerHTML = [
     [state.market === "sealed" ? "Products tracked" : "Cards tracked", cards.length],
     ...(state.market === "premium" ? [["Total value", "$" + Math.round(cards.reduce((a, c) => a + c.price, 0)).toLocaleString()]] : []),
@@ -885,6 +958,40 @@ $("marketSeg").addEventListener("click", (e) => {
 });
 $("format").addEventListener("change", (e) => { state.format = e.target.value; render(); });
 
+// Stars stage items locally; Export turns the staged list into collection.json.
+$("list").addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-star]");
+  if (!b) return;
+  // In rows view the star sits inside a <summary>, which would otherwise toggle.
+  e.preventDefault();
+  e.stopPropagation();
+  const k = b.dataset.star;
+  if (staged.has(k)) staged.delete(k); else staged.set(k, b.dataset.name || "");
+  saveStaged();
+  render();
+});
+
+$("exportBtn").addEventListener("click", async () => {
+  // Merge what's already committed with what's newly staged, so exporting
+  // never drops holdings that are already being tracked.
+  const existing = COLLECTION.items.map((i) => ({ key: i.id, name: i.name, qty: i.qty, paid: i.paid }));
+  const all = [...existing, ...[...staged].map(([key, name]) => ({ key, name, qty: 1, paid: null }))];
+  const out = {
+    note: "Your holdings. Priced daily; Discord alerts fire only for these, on a flip to or from BUY/SELL. qty and paid are optional.",
+    cards: all.filter((x) => !x.key.startsWith("sealed:"))
+      .map((x) => ({ id: x.key, qty: x.qty ?? 1, paid: x.paid ?? null, note: x.name })),
+    sealed: all.filter((x) => x.key.startsWith("sealed:"))
+      .map((x) => ({ productId: +x.key.slice(7), qty: x.qty ?? 1, paid: x.paid ?? null, note: x.name })),
+  };
+  const json = JSON.stringify(out, null, 2);
+  try { await navigator.clipboard.writeText(json); } catch {}
+  const blob = new URL(URL.createObjectURL(new Blob([json], { type: "application/json" })));
+  const a = document.createElement("a");
+  a.href = blob; a.download = "collection.json"; a.click();
+  URL.revokeObjectURL(blob);
+  alert(`collection.json downloaded (and copied to your clipboard).\n\n${out.cards.length} cards, ${out.sealed.length} sealed.\n\nCommit it to the repo root and the next daily run will price them and alert on flips.`);
+});
+
 function refresh() { renderStats(); renderMovers(); render(); }
 
 // Sealed is optional: if sealed.json is missing (no API key configured) the
@@ -892,9 +999,11 @@ function refresh() { renderStats(); renderMovers(); render(); }
 Promise.allSettled([
   fetch("./data.json").then((r) => r.json()),
   fetch("./sealed.json").then((r) => r.json()),
-]).then(([cards, sealed]) => {
+  fetch("./collection.json").then((r) => r.json()),
+]).then(([cards, sealed, mine]) => {
   if (cards.status === "fulfilled") DATA = cards.value;
   if (sealed.status === "fulfilled" && Array.isArray(sealed.value?.products)) SEALED = sealed.value;
+  if (mine.status === "fulfilled" && Array.isArray(mine.value?.items)) COLLECTION = mine.value;
   if (!SEALED.products.length && state.market === "sealed") state.market = "chase";
   if (cards.status !== "fulfilled" && !SEALED.products.length) {
     $("updated").textContent = "couldn't load data";

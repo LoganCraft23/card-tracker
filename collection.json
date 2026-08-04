@@ -1,0 +1,9 @@
+{
+  "note": "Your holdings. Unlike watchlist.json (which the screener rebuilds every morning), this file is yours — nothing overwrites it. Every card here is priced daily regardless of its value or set, so a $900 grail is tracked just like a $20 chase. Discord alerts fire ONLY for these, on the same rule as the rest of the site: a flip to or from BUY/SELL. Easiest way to fill it: star cards on the site, click Export in the sidebar, and commit the file it hands you. Entries whose note begins with 'example' are ignored, so the two below stay inert until you replace them. `qty` and `paid` are optional and only affect the portfolio totals.",
+  "cards": [
+    { "id": "sv04.5-233", "qty": 1, "paid": null, "note": "example — Gardevoir ex SIR, Paldean Fates. Replace or delete." }
+  ],
+  "sealed": [
+    { "productId": 512821, "qty": 1, "paid": null, "note": "example — Paradox Rift Booster Box. Replace or delete." }
+  ]
+}

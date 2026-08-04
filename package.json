@@ -9,6 +9,7 @@
     "screen": "node scripts/screen.js",
     "update": "node scripts/update.js",
     "sealed": "node scripts/sealed.js",
+    "collection": "node scripts/collection.js",
     "score": "node scripts/score.js",
     "serve": "node scripts/serve.js"
   }

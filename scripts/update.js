@@ -102,9 +102,22 @@ console.log(
   `${withMomentum} with live momentum.`
 );
 
-try {
-  await sendDiscord(changes);
-} catch (e) {
-  console.error(e.message);
-  process.exitCode = 0; // alerts failing shouldn't fail the run
+// Alerts are scoped to your holdings by default — scripts/collection.js sends
+// those. Set WATCHLIST_ALERTS=on in the workflow to also be pinged about the
+// whole screened watchlist; anything you own is filtered out of that batch so
+// a card in both lists can't ping you twice.
+if (process.env.WATCHLIST_ALERTS === "on") {
+  const owned = new Set(
+    (readOr("collection.json", { cards: [] }).cards || []).map((c) => c.id).filter(Boolean)
+  );
+  const byKey = new Map(watchlist.cards.map((c) => [`${c.name} | ${c.set}`, c.id]));
+  const batch = changes.filter((c) => !owned.has(byKey.get(`${c.name} | ${c.set}`)));
+  try {
+    await sendDiscord(batch, { title: "Watchlist" });
+  } catch (e) {
+    console.error(e.message);
+    process.exitCode = 0; // alerts failing shouldn't fail the run
+  }
+} else {
+  console.log(`${changes.length} watchlist signal changes (alerts scoped to collection.json).`);
 }

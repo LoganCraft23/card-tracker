@@ -24,6 +24,9 @@ jobs:
       - name: Fetch prices, compute signals
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # Alerts are scoped to collection.json. Flip to "on" to also be
+          # pinged about every card in the screened watchlist.
+          WATCHLIST_ALERTS: "off"
         run: node scripts/update.js
 
       # After update.js, so it can reuse that run's card prices for the
@@ -33,6 +36,12 @@ jobs:
           TCGAPI_KEY: ${{ secrets.TCGAPI_KEY }}
         run: node scripts/sealed.js
 
+      # After sealed, so owned sealed products can reuse that run's signals.
+      - name: Price your collection and alert on flips
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: node scripts/collection.js
+
       - name: Score past predictions against what actually happened
         run: node scripts/score.js
 
@@ -40,6 +49,6 @@ jobs:
         run: |
           git config user.name "foil-theory-bot"
           git config user.email "actions@github.com"
-          git add history/ docs/data.json docs/sealed.json docs/accuracy.json watchlist.json
+          git add history/ docs/data.json docs/sealed.json docs/collection.json docs/accuracy.json watchlist.json
           git diff --cached --quiet || git commit -m "Daily price update $(date -u +%F)"
           git push

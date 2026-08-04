@@ -80,6 +80,23 @@ that horizon and adding more criteria won't fix it. First real verdict lands
 ~30 days after logging began. Until then it honestly reports having nothing to
 say.
 
+## Tracking your own collection
+
+`collection.json` in the repo root is yours — the screener never touches it.
+Every entry is priced daily by `scripts/collection.js` **regardless of value or
+set**, so a vintage grail is tracked the same as a $20 chase. Cards from sets
+outside `SETS` are priced but carry no signal (there's no lifecycle phase for
+them) and never alert.
+
+To fill it: star cards on the site, click **Export** in the sidebar, and commit
+the file it hands you. Or add TCGdex ids by hand.
+
+**Alerts are scoped to this file.** Discord fires only for your holdings, on the
+same rule as everything else — a flip to or from BUY/SELL. To also be pinged
+about the whole screened watchlist, set `WATCHLIST_ALERTS: "on"` in
+`.github/workflows/daily.yml`; anything you own is filtered out of that batch so
+it can't ping you twice.
+
 ## Preview locally
 
 ```bash
