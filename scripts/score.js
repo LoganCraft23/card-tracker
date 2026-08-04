@@ -43,7 +43,7 @@ const results = {};
 const signalReturns = {}; // signal -> [realized return]
 
 for (const horizon of HORIZONS) {
-  const modelErr = [], naiveErr = [], hits = [], dirHits = [];
+  const modelErr = [], naiveErr = [], hits = [], dirHits = [], fitErr = [], fitPairedErr = [];
 
   for (const [key, log] of Object.entries(predictions)) {
     const hist = priceHistory[key];
@@ -62,6 +62,15 @@ for (const horizon of HORIZONS) {
 
       modelErr.push(Math.abs(pctOf(realized - expected, entry.p)));
       naiveErr.push(Math.abs(pctOf(realized - entry.p, entry.p)));
+
+      // The shadow model, scored the same way. Only entries carrying both
+      // predictions go into the paired comparison, so the head-to-head is
+      // never distorted by the two models seeing different cards.
+      if (typeof entry.f === "number") {
+        const fitExpected = entry.p + (entry.f - entry.p) * fraction;
+        fitErr.push(Math.abs(pctOf(realized - fitExpected, entry.p)));
+        fitPairedErr.push(Math.abs(pctOf(realized - expected, entry.p)));
+      }
 
       // Did the outcome land inside the band, scaled to this horizon?
       const lo = entry.p + (entry.lo - entry.p) * fraction;
@@ -84,10 +93,17 @@ for (const horizon of HORIZONS) {
     naiveMAPE: naiveErr.length ? +(mean(naiveErr) * 100).toFixed(2) : null,
     bandHitRate: hits.length ? +(mean(hits) * 100).toFixed(1) : null,
     directionAccuracy: dirHits.length ? +(mean(dirHits) * 100).toFixed(1) : null,
+    // Head-to-head on the shared subset only.
+    fittedSamples: fitErr.length,
+    fittedMAPE: fitErr.length ? +(mean(fitErr) * 100).toFixed(2) : null,
+    handMAPEOnSameCards: fitPairedErr.length ? +(mean(fitPairedErr) * 100).toFixed(2) : null,
   };
   const r = results[horizon];
   r.beatsNaive =
     r.modelMAPE !== null && r.naiveMAPE !== null ? r.modelMAPE < r.naiveMAPE : null;
+  r.fittedBeatsHand =
+    r.fittedMAPE !== null && r.handMAPEOnSameCards !== null
+      ? r.fittedMAPE < r.handMAPEOnSameCards : null;
 }
 
 const bySignal = {};
@@ -124,6 +140,12 @@ for (const h of HORIZONS) {
     `→ ${r.beatsNaive ? "model wins" : "NAIVE WINS — model adds no value at this horizon"}; ` +
     `band hit ${r.bandHitRate}%, direction ${r.directionAccuracy}%`
   );
+  if (r.fittedSamples) {
+    console.log(
+      `       shadow (learned) ${r.fittedMAPE}% vs hand-set ${r.handMAPEOnSameCards}% ` +
+      `on the same ${r.fittedSamples} predictions → ${r.fittedBeatsHand ? "LEARNED WINS" : "hand-set still ahead"}`
+    );
+  }
 }
 if (Object.keys(bySignal).length) {
   console.log("  90d realized return by signal:", JSON.stringify(bySignal));

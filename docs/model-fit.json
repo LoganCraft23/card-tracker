@@ -1,0 +1,76 @@
+{
+  "fitted": true,
+  "updated": "2026-08-04T06:00:39.576Z",
+  "identified": {
+    "characterAndRarity": true,
+    "ageCurve": false,
+    "why": "Each set sits at exactly one age, so cross-sectional age terms are collinear with set identity. Character and rarity vary within sets, so those effects are measurable."
+  },
+  "withinCard": {
+    "status": "accumulating",
+    "usableCards": 0,
+    "longestSpanDays": 3,
+    "needs": "40 cards with 25+ days of history",
+    "growthByAgeBucket": {}
+  },
+  "n": 998,
+  "r2": 0.4727,
+  "residSd": 0.9673,
+  "ageRange": [
+    1,
+    36
+  ],
+  "counts": {
+    "tier": {
+      "chase": 679,
+      "ultra": 319
+    },
+    "char": {
+      "A": 110,
+      "S": 49,
+      "B": 839
+    }
+  },
+  "knots": [
+    6,
+    12,
+    24,
+    36
+  ],
+  "coef": [
+    4.027383637923977,
+    -0.0688678585851036,
+    0.12364606221047882,
+    -0.05978319708954299,
+    -0.04441685693640865,
+    0,
+    -1.3754315614458696,
+    1.6175552916071523,
+    -1.1886765024212358
+  ],
+  "effects": {
+    "ultraVsChase": -0.7473,
+    "sVsA": 4.0408,
+    "bVsA": -0.6954
+  },
+  "ageCurveUnidentified": true,
+  "growth12moByAgeMonths": {
+    "0": -0.0811,
+    "3": 0.113,
+    "6": 0.348,
+    "9": 0.1267,
+    "12": -0.0583,
+    "15": -0.1758,
+    "18": -0.2786,
+    "21": -0.3686,
+    "24": -0.4474,
+    "27": -0.4474,
+    "30": -0.4474,
+    "33": -0.4474,
+    "36": -0.4474,
+    "39": -0.4474,
+    "42": -0.4474,
+    "45": -0.4474,
+    "48": -0.4474
+  }
+}

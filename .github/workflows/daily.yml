@@ -21,6 +21,12 @@ jobs:
       - name: Refresh screened watchlist (auto add/remove $5-$50 chases)
         run: node scripts/screen.js
 
+      # Refits the value curve on the cross-section the screener just captured,
+      # so the learned model updates every morning. Runs before update.js so
+      # today's shadow predictions use today's coefficients.
+      - name: Refit the value curve
+        run: node scripts/fit.js
+
       - name: Fetch prices, compute signals
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -49,6 +55,6 @@ jobs:
         run: |
           git config user.name "foil-theory-bot"
           git config user.email "actions@github.com"
-          git add history/ docs/data.json docs/sealed.json docs/collection.json docs/accuracy.json watchlist.json
+          git add history/ docs/data.json docs/sealed.json docs/collection.json docs/accuracy.json docs/model-fit.json watchlist.json
           git diff --cached --quiet || git commit -m "Daily price update $(date -u +%F)"
           git push

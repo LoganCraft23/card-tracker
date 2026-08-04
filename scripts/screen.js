@@ -19,6 +19,8 @@ import { charFor, tierFor, rarityTag } from "./classify.js";
 
 const PATH = new URL("../watchlist.json", import.meta.url);
 const prev = JSON.parse(readFileSync(PATH, "utf8"));
+const root = new URL("..", import.meta.url);
+const write = (p, data) => writeFileSync(new URL(p, root), JSON.stringify(data, null, 2));
 
 // Price bands. The screener already prices every secret rare in every set, so
 // adding a band costs no extra API calls — it only changes how the results are
@@ -43,6 +45,7 @@ const allSets = await getSets();
 const idByName = new Map(allSets.map((s) => [s.name.toLowerCase(), s.id]));
 
 const candidates = [];
+const population = []; // every priced secret rare, unfiltered — the fitting sample
 for (const setName of Object.keys(SETS)) {
   for (const part of setName.split("/")) {
     const sid = idByName.get(part.trim().toLowerCase());
@@ -63,7 +66,18 @@ for (const setName of Object.keys(SETS)) {
       }
       const tier = tierFor(d.rarity);
       if (!tier) continue;
-      if (d.price === null || d.price < MIN_PRICE || d.price > MAX_PRICE) continue;
+      if (d.price === null || d.price <= 0) continue;
+
+      // The full priced population, captured BEFORE the price-band filter.
+      // scripts/fit.js needs this: fitting on the selected watchlist instead
+      // would only see cards that survived into $5-$500, hiding both the ones
+      // that mooned past it and the ones that collapsed below it — which would
+      // bias the age curve in opposite directions at each end.
+      population.push({
+        id: d.id, set: setName, tier, char: charFor(d.name), price: d.price,
+      });
+
+      if (d.price < MIN_PRICE || d.price > MAX_PRICE) continue;
       const band = bandFor(d.price);
       if (!band) continue;
       const entry = {
@@ -84,6 +98,13 @@ for (const setName of Object.keys(SETS)) {
     }
   }
 }
+
+write("history/cross-section.json", {
+  captured: new Date().toISOString(),
+  note: "Every secret rare priced today, before any price-band filtering. This is the fitting sample for scripts/fit.js — age variation comes from sets having different release dates, so one day's snapshot is enough to fit the curve.",
+  cards: population,
+});
+console.log(`\nCross-section captured: ${population.length} priced secret rares.`);
 
 const charRank = { S: 2, A: 1, B: 0 };
 candidates.sort(

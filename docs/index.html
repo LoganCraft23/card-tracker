@@ -436,6 +436,14 @@
     <footer class="pageFoot" id="method">
       <div class="holoStrip"></div>
       <div class="footGrid">
+        <div id="fitPanel" hidden>
+          <h4>What the data says</h4>
+          <p id="fitSummary"></p>
+          <div id="fitCurve"></div>
+          <p style="font-size:12px;color:var(--faint);margin-top:8px">Refit every morning from that
+            day's full cross-section. It runs in shadow — logged and scored beside the hand-set model,
+            but not driving any signal until it proves more accurate.</p>
+        </div>
         <div>
           <h4>The theory</h4>
           <p>A set moves through predictable phases — hype-fade, supply trough, recovery,
@@ -979,6 +987,42 @@ function renderMovers() {
   }).join("");
 }
 
+// Shows only what the data can actually support: the price premiums the
+// market pays (measurable, because character and rarity vary within a set),
+// and the honest status of the growth curve (not yet measurable, because in a
+// single snapshot every set sits at exactly one age).
+function renderFit(f) {
+  const pct = (v) => (v >= 0 ? "+" : "") + Math.round(v * 100) + "%";
+  const e = f.effects || {};
+  const bar = (label, v) => {
+    const w = Math.min(100, Math.abs(v) * 20);
+    const col = v >= 0 ? "var(--buy)" : "var(--sell)";
+    return `<div style="display:flex;align-items:center;gap:8px;margin:5px 0;font-size:12px">
+      <span style="flex:0 0 118px;color:var(--muted)">${label}</span>
+      <span style="flex:1;height:6px;border-radius:3px;background:var(--line2);overflow:hidden">
+        <i style="display:block;height:100%;width:${w}%;background:${col}"></i></span>
+      <b style="font-family:var(--mono);font-size:11.5px;color:${col}">${pct(v)}</b></div>`;
+  };
+
+  $("fitSummary").innerHTML =
+    `Refit each morning on <b>${f.n.toLocaleString()}</b> priced secret rares — the full population,
+     not the watchlist, so cards that crashed or mooned out of the tracked range still count.
+     These are the premiums the market actually pays (R² ${f.r2}):`;
+
+  const w = f.withinCard || {};
+  $("fitCurve").innerHTML =
+    bar("Top-tier character", e.sVsA ?? 0) +
+    bar("Low-tier character", e.bVsA ?? 0) +
+    bar("Ultra vs chase art", e.ultraVsChase ?? 0) +
+    `<p style="font-size:12px;color:var(--muted);margin:10px 0 0">
+      <b>Growth by age isn't measurable yet.</b> In one day's snapshot each set sits at exactly one
+      age, so an age curve is really just set identity relabelled — it can't tell "cards fade with age"
+      apart from "these particular old sets are cheap". Learning that properly needs the same card
+      watched as it ages: <b>${w.usableCards ?? 0}</b> cards qualify so far, longest run
+      <b>${w.longestSpanDays ?? 0} days</b> (needs ${esc(w.needs || "more history")}).</p>`;
+  $("fitPanel").hidden = false;
+}
+
 function renderStats() {
   const cards = items();
   if (!cards.length) { $("stats").innerHTML = ""; return; }
@@ -1082,7 +1126,9 @@ Promise.allSettled([
   fetch("./data.json").then((r) => r.json()),
   fetch("./sealed.json").then((r) => r.json()),
   fetch("./collection.json").then((r) => r.json()),
-]).then(([cards, sealed, mine]) => {
+  fetch("./model-fit.json").then((r) => r.json()),
+]).then(([cards, sealed, mine, modelFit]) => {
+  if (modelFit.status === "fulfilled" && modelFit.value?.fitted) renderFit(modelFit.value);
   if (cards.status === "fulfilled") DATA = cards.value;
   if (sealed.status === "fulfilled" && Array.isArray(sealed.value?.products)) SEALED = sealed.value;
   if (mine.status === "fulfilled" && Array.isArray(mine.value?.items)) COLLECTION = mine.value;

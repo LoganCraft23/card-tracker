@@ -10,6 +10,7 @@
     "update": "node scripts/update.js",
     "sealed": "node scripts/sealed.js",
     "collection": "node scripts/collection.js",
+    "fit": "node scripts/fit.js",
     "score": "node scripts/score.js",
     "serve": "node scripts/serve.js"
   }

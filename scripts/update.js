@@ -8,7 +8,8 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { fetchCard, getEurUsd } from "./tcgdex.js";
-import { analyze } from "./model.js";
+import { analyze, SETS, monthsSince } from "./model.js";
+import { fittedGrowth } from "./curve.js";
 import { sendDiscord } from "./notify.js";
 
 const root = new URL("..", import.meta.url);
@@ -25,6 +26,12 @@ const predictions = readOr("history/predictions.json", {}); // { cardKey: [entry
 
 const eurUsd = await getEurUsd();
 console.log(`EUR/USD ${eurUsd}`);
+
+// The learned curve runs in shadow: its prediction is logged beside the
+// hand-set model's every day so score.js can grade them head to head, but it
+// does not drive any signal until it has earned that on measured accuracy.
+const fit = readOr("docs/model-fit.json", { fitted: false });
+if (fit.fitted) console.log(`Shadow model: fitted on ${fit.n} cards, R2 ${fit.r2}`);
 
 const today = new Date().toISOString().slice(0, 10);
 const changes = [];
@@ -66,12 +73,20 @@ for (const card of watchlist.cards) {
   const a = analyze(card, price, priceHistory[key], market, eurUsd);
   newSignals[key] = a.signal;
 
-  // Log what the model claimed today so its accuracy can be measured later.
+  // Log what each model claimed today so accuracy can be measured later.
   // One entry per day; re-running the same day overwrites rather than stacks.
+  // `f` is the shadow model's point prediction for the same card and day.
+  let fitPred = null;
+  if (fit.fitted && SETS[card.set]) {
+    const g = fittedGrowth(fit.coef, monthsSince(SETS[card.set].release));
+    if (g !== null) fitPred = +(price * (1 + g)).toFixed(2);
+  }
   const log = (predictions[key] || []).filter((e) => e.d !== today);
   log.push({
     d: today, p: price, lo: a.proj[0], hi: a.proj[1],
     s: a.signal, c: a.confidence, src: a.momSource,
+    band: card.band || "chase",
+    ...(fitPred !== null ? { f: fitPred } : {}),
   });
   predictions[key] = log.slice(-400);
 
