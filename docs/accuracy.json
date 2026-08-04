@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T05:20:19.449Z",
+  "generated": "2026-08-04T06:06:52.213Z",
   "predictionsLogged": 854,
   "daysCollected": 3,
   "horizons": {
@@ -9,7 +9,11 @@
       "naiveMAPE": null,
       "bandHitRate": null,
       "directionAccuracy": null,
-      "beatsNaive": null
+      "fittedSamples": 0,
+      "fittedMAPE": null,
+      "handMAPEOnSameCards": null,
+      "beatsNaive": null,
+      "fittedBeatsHand": null
     },
     "90": {
       "samples": 0,
@@ -17,7 +21,11 @@
       "naiveMAPE": null,
       "bandHitRate": null,
       "directionAccuracy": null,
-      "beatsNaive": null
+      "fittedSamples": 0,
+      "fittedMAPE": null,
+      "handMAPEOnSameCards": null,
+      "beatsNaive": null,
+      "fittedBeatsHand": null
     },
     "180": {
       "samples": 0,
@@ -25,7 +33,11 @@
       "naiveMAPE": null,
       "bandHitRate": null,
       "directionAccuracy": null,
-      "beatsNaive": null
+      "fittedSamples": 0,
+      "fittedMAPE": null,
+      "handMAPEOnSameCards": null,
+      "beatsNaive": null,
+      "fittedBeatsHand": null
     }
   },
   "bySignal": {}
