@@ -1,7 +1,555 @@
 {
-  "updated": "2026-08-07T14:19:56.157Z",
-  "totalValue": 0,
+  "updated": "2026-08-07T22:31:16.853Z",
+  "totalValue": 1052.9,
   "costBasis": 0,
   "costedItems": 0,
-  "items": []
+  "items": [
+    {
+      "kind": "card",
+      "id": "sv01-204",
+      "name": "Slowpoke IR",
+      "set": "Scarlet & Violet",
+      "image": "https://assets.tcgdex.net/en/sv/sv01/204",
+      "productId": 490064,
+      "qty": 1,
+      "paid": null,
+      "value": 45.44,
+      "modelled": false,
+      "price": 45.44,
+      "signal": null,
+      "reasons": [
+        "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-08-07",
+          45.44
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "me02.5-218",
+      "name": "Erika's Tangela IR",
+      "set": "Ascended Heroes",
+      "image": "https://assets.tcgdex.net/en/me/me02.5/218",
+      "productId": 676030,
+      "qty": 1,
+      "paid": null,
+      "value": 23.76,
+      "modelled": true,
+      "phase": "hype-fade",
+      "price": 23.76,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.07587168758716872,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        17.35,
+        22.09
+      ],
+      "history": [
+        [
+          "2026-08-07",
+          23.76
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "sv10.5b-125",
+      "name": "Timburr IR",
+      "set": "Black Bolt / White Flare",
+      "image": "https://assets.tcgdex.net/en/sv/sv10.5b/125",
+      "productId": 642580,
+      "qty": 1,
+      "paid": null,
+      "value": 21.78,
+      "modelled": true,
+      "phase": "supply-trough",
+      "price": 21.78,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Up ~26% over the last month (estimated from Cardmarket's trend vs its 30-day average) — spikes like this usually give back a chunk.",
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": 0.25853436504324073,
+      "momSource": "cardmarket",
+      "confidence": 0.88,
+      "confidenceFlags": [],
+      "proj": [
+        16.12,
+        22.24
+      ],
+      "history": [
+        [
+          "2026-08-07",
+          21.78
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "me05-090",
+      "name": "Slowbro IR",
+      "set": "Pitch Black",
+      "image": "https://assets.tcgdex.net/en/me/me05/090",
+      "productId": 704847,
+      "qty": 1,
+      "paid": null,
+      "value": 17.94,
+      "modelled": true,
+      "phase": "hype-fade",
+      "price": 17.94,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.2362869198312237,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        13.1,
+        16.68
+      ],
+      "history": [
+        [
+          "2026-08-07",
+          17.94
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "me05-087",
+      "name": "Goldeen IR",
+      "set": "Pitch Black",
+      "image": "https://assets.tcgdex.net/en/me/me05/087",
+      "productId": 704844,
+      "qty": 1,
+      "paid": null,
+      "value": 12.92,
+      "modelled": true,
+      "phase": "hype-fade",
+      "price": 12.92,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "HOLD",
+      "reasons": [
+        "No strong edge either way at current price."
+      ],
+      "rationale": "No strong edge either way at current price.",
+      "mom": -0.07155142758857946,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        9.44,
+        12.01
+      ],
+      "history": [
+        [
+          "2026-08-07",
+          12.92
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "me05-101",
+      "name": "Mega Darkrai ex UR",
+      "set": "Pitch Black",
+      "image": "https://assets.tcgdex.net/en/me/me05/101",
+      "productId": 704858,
+      "qty": 1,
+      "paid": null,
+      "value": 14.99,
+      "modelled": true,
+      "phase": "hype-fade",
+      "price": 14.99,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "AVOID",
+      "reasons": [
+        "Down ~27% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
+        "Standard hits from in-print sets keep bleeding as packs get opened."
+      ],
+      "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
+      "mom": -0.26564003849855605,
+      "momSource": "cardmarket",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        10.42,
+        13.26
+      ],
+      "history": [
+        [
+          "2026-08-07",
+          14.99
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "sv09-167",
+      "name": "N's Reshiram IR",
+      "set": "Journey Together",
+      "image": "https://assets.tcgdex.net/en/sv/sv09/167",
+      "productId": 624677,
+      "qty": 1,
+      "paid": null,
+      "value": 19.97,
+      "modelled": true,
+      "phase": "supply-trough",
+      "price": 19.97,
+      "chg30": null,
+      "chg90": null,
+      "chg180": null,
+      "signal": "BUY",
+      "reasons": [
+        "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+      ],
+      "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
+      "mom": -0.011962119953480626,
+      "momSource": "cardmarket",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
+      ],
+      "proj": [
+        16.38,
+        25.56
+      ],
+      "history": [
+        [
+          "2026-08-07",
+          19.97
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "vintage:38259",
+      "name": "Mew EX (Full Art) UR",
+      "set": "Legendary Treasures: Radiant Collection",
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/87413.jpg",
+      "productId": 87413,
+      "qty": 1,
+      "paid": null,
+      "value": 227.73,
+      "modelled": false,
+      "price": 227.73,
+      "signal": null,
+      "reasons": [
+        "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-07-31",
+          231.74
+        ],
+        [
+          "2026-08-01",
+          231.74
+        ],
+        [
+          "2026-08-02",
+          231.74
+        ],
+        [
+          "2026-08-03",
+          232.62
+        ],
+        [
+          "2026-08-04",
+          232.62
+        ],
+        [
+          "2026-08-06",
+          225.7
+        ],
+        [
+          "2026-08-07",
+          227.73
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "vintage:33150",
+      "name": "Genesect EX (Team Plasma) (97 Full Art) UR",
+      "set": "Plasma Blast",
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/85666.jpg",
+      "productId": 85666,
+      "qty": 1,
+      "paid": null,
+      "value": 292.27,
+      "modelled": false,
+      "price": 292.27,
+      "signal": null,
+      "reasons": [
+        "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-07-31",
+          292.27
+        ],
+        [
+          "2026-08-01",
+          292.27
+        ],
+        [
+          "2026-08-02",
+          292.27
+        ],
+        [
+          "2026-08-03",
+          292.27
+        ],
+        [
+          "2026-08-04",
+          292.27
+        ],
+        [
+          "2026-08-06",
+          292.27
+        ],
+        [
+          "2026-08-07",
+          292.27
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "vintage:38256",
+      "name": "Reshiram (Full Art) UR",
+      "set": "Legendary Treasures: Radiant Collection",
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/88712.jpg",
+      "productId": 88712,
+      "qty": 1,
+      "paid": null,
+      "value": 173.46,
+      "modelled": false,
+      "price": 173.46,
+      "signal": null,
+      "reasons": [
+        "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-07-31",
+          173.46
+        ],
+        [
+          "2026-08-01",
+          173.46
+        ],
+        [
+          "2026-08-02",
+          173.46
+        ],
+        [
+          "2026-08-03",
+          173.46
+        ],
+        [
+          "2026-08-04",
+          173.46
+        ],
+        [
+          "2026-08-06",
+          173.46
+        ],
+        [
+          "2026-08-07",
+          173.46
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "vintage:30610",
+      "name": "Reshiram (113 Full Art) UR",
+      "set": "Black and White",
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/88710.jpg",
+      "productId": 88710,
+      "qty": 1,
+      "paid": null,
+      "value": 101.23,
+      "modelled": false,
+      "price": 101.23,
+      "signal": null,
+      "reasons": [
+        "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-07-31",
+          103.17
+        ],
+        [
+          "2026-08-01",
+          103.17
+        ],
+        [
+          "2026-08-02",
+          103.17
+        ],
+        [
+          "2026-08-03",
+          103.17
+        ],
+        [
+          "2026-08-04",
+          102.21
+        ],
+        [
+          "2026-08-06",
+          102.21
+        ],
+        [
+          "2026-08-07",
+          101.23
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "vintage:31202",
+      "name": "Latias EX UR",
+      "set": "Plasma Freeze",
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/86660.jpg",
+      "productId": 86660,
+      "qty": 1,
+      "paid": null,
+      "value": 52.44,
+      "modelled": false,
+      "price": 52.44,
+      "signal": null,
+      "reasons": [
+        "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-07-31",
+          52.44
+        ],
+        [
+          "2026-08-01",
+          52.44
+        ],
+        [
+          "2026-08-02",
+          52.44
+        ],
+        [
+          "2026-08-03",
+          52.44
+        ],
+        [
+          "2026-08-04",
+          52.44
+        ],
+        [
+          "2026-08-06",
+          52.44
+        ],
+        [
+          "2026-08-07",
+          52.44
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "vintage:38251",
+      "name": "Shaymin EX (Full Art) UR",
+      "set": "Legendary Treasures: Radiant Collection",
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/89113.jpg",
+      "productId": 89113,
+      "qty": 1,
+      "paid": null,
+      "value": 48.97,
+      "modelled": false,
+      "price": 48.97,
+      "signal": null,
+      "reasons": [
+        "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-07-31",
+          44.89
+        ],
+        [
+          "2026-08-01",
+          48.89
+        ],
+        [
+          "2026-08-02",
+          49.29
+        ],
+        [
+          "2026-08-03",
+          49.29
+        ],
+        [
+          "2026-08-04",
+          49.29
+        ],
+        [
+          "2026-08-06",
+          48.97
+        ],
+        [
+          "2026-08-07",
+          48.97
+        ]
+      ]
+    }
+  ]
 }

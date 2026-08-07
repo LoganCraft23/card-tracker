@@ -1,6 +1,6 @@
 {
   "fitted": true,
-  "updated": "2026-08-07T14:18:32.355Z",
+  "updated": "2026-08-07T22:30:02.126Z",
   "identified": {
     "characterAndRarity": true,
     "ageCurve": false,
@@ -9,7 +9,7 @@
   "withinCard": {
     "status": "accumulating",
     "usableCards": 0,
-    "longestSpanDays": 5,
+    "longestSpanDays": 6,
     "needs": "40 cards with 25+ days of history",
     "growthByAgeBucket": {}
   },
