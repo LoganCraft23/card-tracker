@@ -1,9 +1,27 @@
 {
-  "note": "Your holdings. Unlike watchlist.json (which the screener rebuilds every morning), this file is yours — nothing overwrites it. Every card here is priced daily regardless of its value or set, so a $900 grail is tracked just like a $20 chase. Discord alerts fire ONLY for these, on the same rule as the rest of the site: a flip to or from BUY/SELL. Easiest way to fill it: star cards on the site, click Export in the sidebar, and commit the file it hands you. Entries whose note begins with 'example' are ignored, so the two below stay inert until you replace them. `qty` and `paid` are optional and only affect the portfolio totals. VINTAGE CARDS: TCGdex has no pricing for a lot of pre-2023 cards. For those, use `vintageId` (TCG API's numeric card id) plus `vintageQuery` (a name that finds it via https://tcgapi.dev search) instead of `id` — priced from TCG API, real history backfilled once from their /history endpoint, but never scored (no BUY/SELL signal, no alerts) since the lifecycle model is fitted on cards under 3 years old and hasn't been tested against a decade-old print.",
+  "note": "Your holdings. Unlike watchlist.json (which the screener rebuilds every morning), this file is yours — nothing overwrites it. Every card here is priced daily regardless of its value or set, so a $900 grail is tracked just like a $20 chase. Discord alerts fire ONLY for these, on the same rule as the rest of the site: a flip to or from BUY/SELL. Easiest way to fill it: star cards on the site, click Export in the sidebar, and commit the file it hands you. Entries whose note begins with 'example' are ignored. `qty` and `paid` are optional and only affect the portfolio totals. VINTAGE CARDS: TCGdex has no pricing for a lot of pre-2023 cards. For those, use `vintageId` (TCG API's numeric card id) plus `vintageQuery` (a name that finds it via https://tcgapi.dev search) instead of `id` — priced from TCG API, real history backfilled once from their /history endpoint, but never scored (no BUY/SELL signal, no alerts) since the lifecycle model is fitted on cards under 3 years old and hasn't been tested against a decade-old print. Imported 2026-08-07 from PriceCharting collection (seller nrovud2ybtfivv4yxshkn26xee), every Pokemon card valued over $10 that resolved to a confident single-print match. `paid` unknown for these — PriceCharting's public view doesn't expose cost basis — left null; fill in if you want gain/loss tracked.",
   "cards": [
-    { "id": "sv04.5-233", "qty": 1, "paid": null, "note": "example — Gardevoir ex SIR, Paldean Fates. Replace or delete." }
+    { "id": "sv01-204", "qty": 1, "paid": null, "note": "Slowpoke #204, Scarlet & Violet" },
+    { "id": "me02.5-218", "qty": 1, "paid": null, "note": "Erika's Tangela #218, Ascended Heroes" },
+    { "id": "sv10.5b-125", "qty": 1, "paid": null, "note": "Timburr #125, Black Bolt" },
+    { "id": "me05-090", "qty": 1, "paid": null, "note": "Slowbro #90, Pitch Black" },
+    { "id": "me05-087", "qty": 1, "paid": null, "note": "Goldeen #87, Pitch Black" },
+    { "id": "me05-101", "qty": 1, "paid": null, "note": "Mega Darkrai ex #101, Pitch Black" },
+    { "id": "sv09-167", "qty": 1, "paid": null, "note": "N's Reshiram #167, Journey Together" },
+    { "vintageId": 38259, "vintageQuery": "Mew EX", "qty": 1, "paid": null, "note": "Mew EX (Full Art) #RC24, Legendary Treasures: Radiant Collection" },
+    { "vintageId": 33150, "vintageQuery": "Genesect EX", "qty": 1, "paid": null, "note": "Genesect EX (Team Plasma) (97 Full Art) #97, Plasma Blast" },
+    { "vintageId": 38256, "vintageQuery": "Reshiram", "qty": 1, "paid": null, "note": "Reshiram (Full Art) #RC22, Legendary Treasures: Radiant Collection" },
+    { "vintageId": 30610, "vintageQuery": "Reshiram", "qty": 1, "paid": null, "note": "Reshiram (113 Full Art) #113, Black and White" },
+    { "vintageId": 31202, "vintageQuery": "Latias EX", "qty": 1, "paid": null, "note": "Latias EX #85, Plasma Freeze" },
+    { "vintageId": 38251, "vintageQuery": "Shaymin EX", "qty": 1, "paid": null, "note": "Shaymin EX (Full Art) #RC21, Legendary Treasures: Radiant Collection" },
+    { "vintageId": 23686, "vintageQuery": "Brigette", "qty": 1, "paid": null, "note": "Brigette (Full Art) #161, XY BREAKthrough" },
+    { "vintageId": 32520, "vintageQuery": "Mewtwo", "qty": 1, "paid": null, "note": "Mewtwo #53, Legendary Treasures" },
+    { "vintageId": 19888, "vintageQuery": "Charizard EX", "qty": 1, "paid": null, "note": "Charizard EX #XY29, XY Promos" },
+    { "vintageId": 32730, "vintageQuery": "Blaziken", "qty": 1, "paid": null, "note": "Blaziken #17, Dark Explorers" },
+    { "vintageId": 36131, "vintageQuery": "Slowpoke", "qty": 1, "paid": null, "note": "Slowpoke #66, Undaunted" },
+    { "vintageId": 28209, "vintageQuery": "Deoxys EX", "qty": 1, "paid": null, "note": "Deoxys EX (Team Plasma) #BW82, Black and White Promos" },
+    { "vintageId": 28210, "vintageQuery": "Mewtwo EX", "qty": 1, "paid": null, "note": "Mewtwo EX #BW45, Black and White Promos" },
+    { "vintageId": 38252, "vintageQuery": "Gardevoir", "qty": 1, "paid": null, "note": "Gardevoir #RC10, Legendary Treasures: Radiant Collection" }
   ],
-  "sealed": [
-    { "productId": 512821, "qty": 1, "paid": null, "note": "example — Paradox Rift Booster Box. Replace or delete." }
-  ]
+  "sealed": []
 }
