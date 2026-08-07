@@ -1141,10 +1141,24 @@ async function runGlobalSearch() {
   panel.hidden = false;
   $("globalBody").innerHTML = `<div class="globalStatus"><span class="spin"></span>Searching the full card database…</div>`;
 
+  // TCGdex's search is literal, and official card names are inconsistently
+  // hyphenated: classic Black & White-era EX cards are "Genesect-EX", modern
+  // reprints are "Genesect ex" — a hyphen and a space are different strings to
+  // it, so searching "Genesect EX" alone misses every vintage hyphenated
+  // printing even though TCGdex has them. Firing a second query with the last
+  // space turned into a hyphen catches the "-EX"/"-GX"/"-V" suffix pattern
+  // without having to know which era a card is from.
+  const queries = [q];
+  const lastSpace = q.lastIndexOf(" ");
+  if (lastSpace > 0) queries.push(q.slice(0, lastSpace) + "-" + q.slice(lastSpace + 1));
+
   let hits;
   try {
-    const res = await fetch(`https://api.tcgdex.net/v2/en/cards?name=${encodeURIComponent(q)}`);
-    hits = await res.json();
+    const results = await Promise.all(
+      queries.map((query) => fetch(`https://api.tcgdex.net/v2/en/cards?name=${encodeURIComponent(query)}`).then((r) => r.json()))
+    );
+    const seen = new Set();
+    hits = results.flat().filter((h) => h && !seen.has(h.id) && seen.add(h.id));
   } catch {
     if (myToken !== globalToken) return;
     $("globalBody").innerHTML = `<div class="globalStatus">Couldn't reach the card database — try again in a moment.</div>`;
