@@ -23,7 +23,7 @@ const readOr = (p, fb) => {
 const write = (p, data) => writeFileSync(new URL(p, root), JSON.stringify(data, null, 2));
 
 const collection = readOr("collection.json", { cards: [], sealed: [] });
-const cards = (collection.cards || []).filter((c) => c.id && !/^example/i.test(c.note || ""));
+const cards = (collection.cards || []).filter((c) => (c.id || c.vintageId) && !/^example/i.test(c.note || ""));
 const sealedWanted = (collection.sealed || []).filter((s) => s.productId && !/^example/i.test(s.note || ""));
 
 if (!cards.length && !sealedWanted.length) {
