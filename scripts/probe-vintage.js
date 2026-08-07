@@ -1,20 +1,41 @@
-// Round 3: zero "Cards"-type hits even on the bare hyphenated name is
-// suspicious enough that the product_type filter itself might be wrong, or
-// this API might not carry singles at all despite being generically "Cards"
-// named. Dump raw, unfiltered responses to find out what's actually there.
+// Round 4. Round 3 found the real naming convention: TCG API uses a SPACE
+// ("Genesect EX") and disambiguates prints via a parenthetical, e.g.
+// "Genesect EX (Team Plasma)" for the Plasma Blast set that TCGdex has zero
+// pricing for — and it IS priced there ($25.03). Confirm Mew EX the same way,
+// get full field shapes (need an id for daily re-fetching), and test whether
+// a real historical-price endpoint exists or whether "history" would have to
+// mean our own accumulated daily snapshots going forward.
 const KEY = process.env.TCGAPI_KEY;
 if (!KEY) { console.error("TCGAPI_KEY not set."); process.exit(1); }
 const BASE = "https://api.tcgapi.dev/v1";
 const headers = { "X-API-Key": KEY, accept: "application/json" };
 
-for (const q of ["Genesect-EX", "Genesect EX", "Pikachu", "Charizard"]) {
-  const res = await fetch(`${BASE}/search?q=${encodeURIComponent(q)}&game=pokemon&per_page=10`, { headers });
+let sample = null;
+for (const q of ["Genesect EX", "Mew EX"]) {
+  const res = await fetch(`${BASE}/search?q=${encodeURIComponent(q)}&game=pokemon&per_page=20`, { headers });
   const json = await res.json();
-  const types = {};
-  for (const r of json?.data || []) types[r.product_type] = (types[r.product_type] || 0) + 1;
-  console.log(`\n"${q}" -> total=${json?.meta?.total} product_types=${JSON.stringify(types)} remaining=${json?.rate_limit?.daily_remaining}`);
-  for (const r of (json?.data || []).slice(0, 4)) {
-    console.log(`  [${r.product_type}] "${r.name}" set=${r.set_name} market=${r.market_price}`);
+  console.log(`\n"${q}" -> ${json?.data?.length ?? 0} hits, remaining=${json?.rate_limit?.daily_remaining}`);
+  for (const r of json?.data || []) {
+    console.log(`  "${r.name}" set=${r.set_name} market=${r.market_price} low=${r.low_price} id=${r.id} tcgplayer_id=${r.tcgplayer_id}`);
+    if (!sample && r.market_price != null && /Dragons Exalted|Legendary Treasures|Plasma Blast/i.test(r.set_name)) sample = r;
   }
   await new Promise((r) => setTimeout(r, 400));
+}
+
+if (sample) {
+  console.log("\nfull sample record:", JSON.stringify(sample, null, 1));
+  console.log("\n--- trying history endpoints against a real id/tcgplayer_id ---");
+  for (const path of [
+    `/cards/${sample.id}/history`, `/history/${sample.id}`,
+    `/products/${sample.tcgplayer_id}/history`, `/history/${sample.tcgplayer_id}`,
+    `/cards/${sample.id}`, // maybe detail view embeds a history array
+  ]) {
+    const res = await fetch(`${BASE}${path}`, { headers });
+    const text = await res.text();
+    console.log(`${path} -> ${res.status}`);
+    console.log("  body:", text.slice(0, 400));
+    await new Promise((r) => setTimeout(r, 400));
+  }
+} else {
+  console.log("\nno usable vintage sample found to test history against.");
 }
