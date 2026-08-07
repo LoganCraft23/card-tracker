@@ -73,19 +73,23 @@ for (const owned of cards) {
       console.warn(`skip ${key}: TCGAPI_KEY not set`);
       continue;
     }
+    if (!owned.vintageQuery) {
+      console.warn(`skip ${key}: needs a "vintageQuery" search string (the pricing endpoint only returns results by name search, not by id)`);
+      continue;
+    }
     if (quotaRemaining() !== null && quotaRemaining() < VINTAGE_QUOTA_FLOOR) {
       console.warn(`skip ${key}: TCG API quota too low (${quotaRemaining()} left)`);
       continue;
     }
     let d;
     try {
-      d = await fetchVintageCard(owned.vintageId);
+      d = await fetchVintageCard(owned.vintageId, owned.vintageQuery);
     } catch (e) {
       console.error(`skip ${key}: ${e.message}`);
       continue;
     }
     if (!d || d.price === null) {
-      console.warn(`no price for ${key}${d ? ` (${d.name})` : ""}`);
+      console.warn(`no price for ${key}${d ? ` (${d.name})` : ""} — check vintageQuery still finds this id`);
       continue;
     }
     ({ name, set, image, productId, price, rarity } = d);

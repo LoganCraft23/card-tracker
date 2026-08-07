@@ -126,20 +126,26 @@ export async function sealedForSet(modelSetName) {
 // The API's own numeric card id (not a TCGdex id) is what this needs; there
 // is no free bulk endpoint to auto-discover it, so it's a manual, one-time
 // lookup per card (see scripts/probe-vintage.js pattern) recorded in
-// collection.json as `vintageId`.
-
-export async function fetchVintageCard(vintageId) {
-  const json = await get(`/cards/${vintageId}`);
-  const c = json?.data;
-  if (!c) return null;
+// collection.json as `vintageId` alongside a `vintageQuery` search string.
+//
+// Verified the hard way: /cards/{id} looked like the obvious "get one card"
+// endpoint, but its body carries card metadata (attacks, abilities, artist,
+// a custom_attributes block) and NO price field whatsoever — confirmed by
+// dumping the full, untruncated response. Only /search results carry
+// market_price, so fetching one card by id means re-searching by name and
+// picking the matching id back out of the results.
+export async function fetchVintageCard(vintageId, searchQuery) {
+  const json = await get(`/search?q=${encodeURIComponent(searchQuery)}&game=pokemon&per_page=50`);
+  const hit = (json?.data || []).find((r) => r.product_type === "Cards" && r.id === vintageId);
+  if (!hit) return null;
   return {
-    id: c.id,
-    name: c.name,
-    set: c.set_name || null,
-    image: c.image_url || null,
-    productId: c.tcgplayer_id ?? null,
-    price: typeof c.market_price === "number" ? c.market_price : null,
-    rarity: c.rarity || null,
+    id: hit.id,
+    name: hit.name,
+    set: hit.set_name || null,
+    image: hit.image_url || null,
+    productId: hit.tcgplayer_id ?? null,
+    price: typeof hit.market_price === "number" ? hit.market_price : null,
+    rarity: hit.rarity || null,
   };
 }
 

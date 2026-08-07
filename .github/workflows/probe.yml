@@ -13,8 +13,8 @@ jobs:
           {
             "note": "TEST FILE - not the real collection.json, only exists in this CI run",
             "cards": [
-              { "vintageId": 33099, "qty": 1, "paid": 30, "note": "Genesect EX (Team Plasma), Plasma Blast" },
-              { "vintageId": 30790, "qty": 2, "paid": 70, "note": "Mew EX, Dragons Exalted" }
+              { "vintageId": 33099, "vintageQuery": "Genesect EX", "qty": 1, "paid": 30, "note": "Genesect EX (Team Plasma), Plasma Blast" },
+              { "vintageId": 30790, "vintageQuery": "Mew EX", "qty": 2, "paid": 70, "note": "Mew EX, Dragons Exalted" }
             ],
             "sealed": []
           }
