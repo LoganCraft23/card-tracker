@@ -91,6 +91,18 @@ them) and never alert.
 To fill it: star cards on the site, click **Export** in the sidebar, and commit
 the file it hands you. Or add TCGdex ids by hand.
 
+**Cards TCGdex has no pricing for** (common for pre-2023 prints — confirmed by
+hand for several Black & White-era "-EX" cards) can often still be priced via
+[TCG API](https://tcgapi.dev), which also backs `docs/sealed.json` and needs the
+same `TCGAPI_KEY` secret. Give the entry `vintageId` (TCG API's numeric card id)
+and `vintageQuery` (a name that surfaces it via TCG API's own search — the
+`/cards/{id}` detail endpoint carries no price at all, only `/search` results
+do, so the id alone isn't enough) instead of `id`. History is backfilled once
+from TCG API's own `/cards/{id}/history` (confirmed real, but a rolling ~week,
+not a deep archive) and grows day by day after that like anything else. These
+never get a signal or alert — the lifecycle model is fitted on cards under 3
+years old and hasn't been tested on a decade-old print.
+
 **Alerts are scoped to this file.** Discord fires only for your holdings, on the
 same rule as everything else — a flip to or from BUY/SELL. To also be pinged
 about the whole screened watchlist, set `WATCHLIST_ALERTS: "on"` in
