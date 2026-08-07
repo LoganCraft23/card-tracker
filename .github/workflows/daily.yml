@@ -30,9 +30,10 @@ jobs:
       - name: Fetch prices, compute signals
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          # Alerts are scoped to collection.json. Flip to "on" to also be
-          # pinged about every card in the screened watchlist.
-          WATCHLIST_ALERTS: "off"
+          # "on" pings for every signal change across the 200-card screened
+          # watchlist, in addition to collection.json holdings. Flip to "off"
+          # to go back to collection-only alerts.
+          WATCHLIST_ALERTS: "on"
         run: node scripts/update.js
 
       # After update.js, so it can reuse that run's card prices for the

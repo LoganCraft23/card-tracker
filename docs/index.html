@@ -232,6 +232,19 @@
   .rowDetail ul { margin: 0; padding-left: 17px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
   .empty { color: var(--muted); text-align: center; padding: 60px 0; }
 
+  /* Live, unmodelled results from the full card database — visually a step
+     back from the modelled grid above it (dashed top border, no signal rail
+     color) so it reads as a different kind of answer, not more of the same. */
+  .globalSearch { margin-top: 34px; padding-top: 22px; border-top: 1px dashed var(--line2); }
+  .globalHead { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .globalHead h3 { margin: 0; font-size: 15px; font-weight: 600; }
+  .globalHead span { font-size: 12px; color: var(--faint); }
+  .globalStatus { color: var(--muted); font-size: 13px; padding: 14px 2px; display: flex; align-items: center; gap: 9px; }
+  .globalStatus .spin { width: 13px; height: 13px; border-radius: 50%; flex-shrink: 0;
+    border: 2px solid var(--line2); border-top-color: var(--gold); animation: spin .7s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .globalStatus .spin { animation: none; } }
+
   footer.pageFoot { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 26px; }
   .footGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 30px; }
   .footGrid h4 { margin: 0 0 9px; font-size: 12.5px; letter-spacing: 1px; text-transform: uppercase;
@@ -432,6 +445,12 @@
     </div>
 
     <main id="list"><div class="empty">Loading data…</div></main>
+
+    <section class="globalSearch" id="globalSearch" hidden>
+      <div class="globalHead"><h3>Anywhere in the Pokémon TCG</h3>
+        <span>live from TCGdex · price only, no model signal</span></div>
+      <div id="globalBody"></div>
+    </section>
 
     <footer class="pageFoot" id="method">
       <div class="holoStrip"></div>
@@ -691,7 +710,9 @@ try {
     fig.style.top = `${Math.round(top)}px`;
   }
 
-  const list = $("list");
+  // Delegated at .content, not #list, so the global-search results panel
+  // (a sibling of #list, same parent) gets the same hover magnifier for free.
+  const list = document.querySelector(".content");
   list.addEventListener("mouseover", (e) => {
     const t = e.target.closest("img.thumb");
     if (!t || t === current) return;
@@ -851,7 +872,7 @@ function tileHTML(c) {
       ${c.qty ? `<div class="range">You hold <b>${c.qty}</b> · worth <b>$${(c.value ?? c.price * c.qty).toFixed(2)}</b>${
         c.paid != null ? ` · ${c.price * c.qty >= c.paid * c.qty ? "up" : "down"} <b>${Math.abs(Math.round(((c.price - c.paid) / c.paid) * 100))}%</b> on cost` : ""}</div>` : ""}
       ${(c.confidenceFlags || []).length ? `<span class="thin">${esc(c.confidenceFlags.join("; "))}</span>` : ""}
-      <details class="why"><summary>Why ${c.signal}?</summary>
+      <details class="why"><summary>Why ${c.signal || "no signal"}?</summary>
         <ul>${c.reasons.map((r) => "<li>" + esc(r) + "</li>").join("")}</ul>
       </details>
       <div class="tFoot"><a href="${tcgUrl(c)}" target="_blank" rel="noreferrer">View listing on TCGplayer ↗</a></div>
@@ -1050,7 +1071,135 @@ function renderStats() {
   ].map(([s, b]) => `<div class="rstat"><span>${s}</span><b>${b}</b></div>`).join("");
 }
 
-$("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+// --- search the whole card database, not just what's tracked -------------
+// The tracked lists are the top 100-200 cards per price band, so most real
+// cards are never in them. This queries TCGdex's public search live in the
+// browser — no key needed, its CORS is wide open — so any card can be found
+// and priced even if the screener never picked it up. Sealed products have no
+// equivalent free public search, so this only covers singles.
+let globalToken = 0;
+let globalTimer = null;
+const globalCache = new Map(); // query -> {items, overflow}, so pausing and
+                                // resuming on the same text doesn't refetch
+
+function clientPrice(card) {
+  const p = card?.pricing?.tcgplayer;
+  if (!p || typeof p !== "object") return { price: null, productId: null };
+  let best = null;
+  for (const v of Object.values(p)) {
+    if (!v || typeof v !== "object") continue;
+    const m = typeof v.marketPrice === "number" ? v.marketPrice : null;
+    if (m === null || (best && m <= best.marketPrice)) continue;
+    best = v;
+  }
+  return { price: best?.marketPrice ?? null, productId: best?.productId ?? null };
+}
+
+// Concurrency-limited map — a broad query can return hundreds of hits, and
+// this keeps a search from firing that many requests at once at a free API.
+async function pooled(items, limit, fn) {
+  const out = new Array(items.length);
+  let i = 0;
+  async function worker() {
+    while (i < items.length) {
+      const idx = i++;
+      out[idx] = await fn(items[idx]).catch(() => null);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return out;
+}
+
+function scheduleGlobalSearch() {
+  clearTimeout(globalTimer);
+  globalTimer = setTimeout(runGlobalSearch, 450);
+}
+
+function refreshGlobalPanel() {
+  const q = state.q.trim();
+  if (globalCache.has(q) && !$("globalSearch").hidden) renderGlobalResults(globalCache.get(q), q);
+}
+
+async function runGlobalSearch() {
+  const q = state.q.trim();
+  const panel = $("globalSearch");
+  const myToken = ++globalToken;
+
+  // No public sealed-product search exists, and re-showing the panel on a
+  // market switch with old results would be misleading, so it's cards-only.
+  if (state.market === "sealed" || q.length < 2) {
+    panel.hidden = true;
+    return;
+  }
+
+  if (globalCache.has(q)) {
+    panel.hidden = false;
+    renderGlobalResults(globalCache.get(q), q);
+    return;
+  }
+
+  panel.hidden = false;
+  $("globalBody").innerHTML = `<div class="globalStatus"><span class="spin"></span>Searching the full card database…</div>`;
+
+  let hits;
+  try {
+    const res = await fetch(`https://api.tcgdex.net/v2/en/cards?name=${encodeURIComponent(q)}`);
+    hits = await res.json();
+  } catch {
+    if (myToken !== globalToken) return;
+    $("globalBody").innerHTML = `<div class="globalStatus">Couldn't reach the card database — try again in a moment.</div>`;
+    return;
+  }
+  if (myToken !== globalToken) return; // a newer keystroke has since superseded this search
+
+  if (!Array.isArray(hits) || !hits.length) {
+    $("globalBody").innerHTML = `<div class="globalStatus">No cards found for "${esc(q)}".</div>`;
+    globalCache.set(q, { items: [], overflow: 0 });
+    return;
+  }
+
+  // Cards already in the tracked lists show up in the grid above; skip them
+  // here so the same card doesn't appear to be both tracked and not.
+  const tracked = new Set(DATA.cards.map((c) => c.id));
+  const untracked = hits.filter((h) => !tracked.has(h.id));
+  const candidates = untracked.slice(0, 18);
+
+  const details = await pooled(candidates, 6, async (h) => {
+    const res = await fetch(`https://api.tcgdex.net/v2/en/cards/${h.id}`);
+    if (!res.ok) return null;
+    const card = await res.json();
+    const { price, productId } = clientPrice(card);
+    if (!price) return null; // no market price on file — nothing useful to show
+    return {
+      id: card.id, name: card.name, set: card?.set?.name || "Unknown set",
+      image: card.image || null, price, productId, isSealed: false,
+      subtitle: "not tracked — live lookup",
+      signal: null, proj: null, confidence: null, confidenceFlags: [],
+      reasons: ["Live lookup — priced from TCGplayer just now, but not part of today's screened list, so there's no model signal for it."],
+      history: [],
+    };
+  });
+  if (myToken !== globalToken) return;
+
+  const payload = { items: details.filter(Boolean), overflow: untracked.length - candidates.length };
+  globalCache.set(q, payload);
+  renderGlobalResults(payload, q);
+}
+
+function renderGlobalResults(payload, q) {
+  const { items: results, overflow } = payload;
+  if (!results.length) {
+    $("globalBody").innerHTML = `<div class="globalStatus">Found matches for "${esc(q)}", but none have a current TCGplayer price.</div>`;
+    return;
+  }
+  $("globalBody").innerHTML =
+    `<div class="tiles">${results.map(tileHTML).join("")}</div>` +
+    (overflow > 0
+      ? `<div class="globalStatus">+${overflow} more match${overflow === 1 ? "" : "es"} not shown — narrow your search to see them.</div>`
+      : "");
+}
+
+$("q").addEventListener("input", (e) => { state.q = e.target.value; render(); scheduleGlobalSearch(); });
 $("sort").addEventListener("change", (e) => {
   const p = SORT_PRESETS[e.target.value];
   if (p) [state.sortKey, state.sortDir] = p;
@@ -1081,11 +1230,16 @@ $("marketSeg").addEventListener("click", (e) => {
   renderStats();
   renderMovers();
   render();
+  // Sealed has no live search; switching away from it should bring a pending
+  // query's panel back rather than leaving it hidden from the last switch.
+  if (state.q.trim().length >= 2) runGlobalSearch(); else $("globalSearch").hidden = true;
 });
 $("format").addEventListener("change", (e) => { state.format = e.target.value; render(); });
 
 // Stars stage items locally; Export turns the staged list into collection.json.
-$("list").addEventListener("click", (e) => {
+// Delegated at .content (not #list) so stars on live global-search results —
+// a sibling section — work too, including cards the tracked lists never had.
+document.querySelector(".content").addEventListener("click", (e) => {
   const b = e.target.closest("button[data-star]");
   if (!b) return;
   // In rows view the star sits inside a <summary>, which would otherwise toggle.
@@ -1095,6 +1249,7 @@ $("list").addEventListener("click", (e) => {
   if (staged.has(k)) staged.delete(k); else staged.set(k, b.dataset.name || "");
   saveStaged();
   render();
+  refreshGlobalPanel(); // re-render from cache so its star icon updates too
 });
 
 $("exportBtn").addEventListener("click", async () => {
