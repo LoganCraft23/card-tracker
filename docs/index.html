@@ -1195,19 +1195,29 @@ async function runGlobalSearch() {
   });
   if (myToken !== globalToken) return;
 
-  const payload = { items: details.filter(Boolean), overflow: untracked.length - candidates.length };
+  // Distinguish "excluded for lack of a price" from "excluded to keep the
+  // list short" — a real match with no price would otherwise vanish with no
+  // trace, which is exactly how a card you own can look like it doesn't
+  // exist even though the search genuinely found it.
+  const items = details.filter(Boolean);
+  const unpriced = candidates.length - items.length;
+  const payload = { items, unpriced, overflow: untracked.length - candidates.length };
   globalCache.set(q, payload);
   renderGlobalResults(payload, q);
 }
 
 function renderGlobalResults(payload, q) {
-  const { items: results, overflow } = payload;
+  const { items: results, overflow, unpriced = 0 } = payload;
+  const unpricedNote = unpriced > 0
+    ? `<div class="globalStatus">Also found ${unpriced} matching printing${unpriced === 1 ? "" : "s"} with no current TCGplayer price on file — likely a real card TCGdex just can't price, not a search miss.</div>`
+    : "";
   if (!results.length) {
     $("globalBody").innerHTML = `<div class="globalStatus">Found matches for "${esc(q)}", but none have a current TCGplayer price.</div>`;
     return;
   }
   $("globalBody").innerHTML =
     `<div class="tiles">${results.map(tileHTML).join("")}</div>` +
+    unpricedNote +
     (overflow > 0
       ? `<div class="globalStatus">+${overflow} more match${overflow === 1 ? "" : "es"} not shown — narrow your search to see them.</div>`
       : "");
