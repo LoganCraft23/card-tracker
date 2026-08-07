@@ -11,6 +11,7 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { fetchCard, getSets, getEurUsd } from "./tcgdex.js";
+import { fetchVintageCard, fetchVintageHistory, quotaRemaining } from "./tcgapi.js";
 import { SETS, analyze } from "./model.js";
 import { charFor, tierFor, rarityTag } from "./classify.js";
 import { sendDiscord } from "./notify.js";
@@ -57,58 +58,112 @@ const items = [];
 const changes = [];
 const newSignals = {};
 
+// A quota guard for the shared TCGAPI_KEY budget: sealed.js already spent
+// ~16 of 100 today, so vintage lookups stop early rather than risking sealed
+// tomorrow's run over a handful of collectible cards.
+const VINTAGE_QUOTA_FLOOR = 10;
+
 for (const owned of cards) {
-  let d;
-  try {
-    d = await fetchCard(owned.id);
-  } catch (e) {
-    console.error(`skip ${owned.id}: ${e.message}`);
-    continue;
-  }
-  if (d.price === null) {
-    console.warn(`no price for ${owned.id} (${d.name})`);
-    continue;
+  const key = owned.vintageId ? `vintage:${owned.vintageId}` : owned.id;
+  let name, set, image, productId, price, rarity, market = null, vintage = false;
+
+  if (owned.vintageId) {
+    vintage = true;
+    if (!process.env.TCGAPI_KEY) {
+      console.warn(`skip ${key}: TCGAPI_KEY not set`);
+      continue;
+    }
+    if (quotaRemaining() !== null && quotaRemaining() < VINTAGE_QUOTA_FLOOR) {
+      console.warn(`skip ${key}: TCG API quota too low (${quotaRemaining()} left)`);
+      continue;
+    }
+    let d;
+    try {
+      d = await fetchVintageCard(owned.vintageId);
+    } catch (e) {
+      console.error(`skip ${key}: ${e.message}`);
+      continue;
+    }
+    if (!d || d.price === null) {
+      console.warn(`no price for ${key}${d ? ` (${d.name})` : ""}`);
+      continue;
+    }
+    ({ name, set, image, productId, price, rarity } = d);
+  } else {
+    let d;
+    try {
+      d = await fetchCard(owned.id);
+    } catch (e) {
+      console.error(`skip ${owned.id}: ${e.message}`);
+      continue;
+    }
+    if (d.price === null) {
+      console.warn(`no price for ${owned.id} (${d.name})`);
+      continue;
+    }
+    name = d.name; image = d.image; productId = d.productId; price = d.price; rarity = d.rarity; market = d.market;
+    // Card ids are "<setId>-<localId>"; the set id can itself contain hyphens.
+    const setId = owned.id.slice(0, owned.id.lastIndexOf("-"));
+    set = setNameById.get(setId) || setId;
   }
 
-  // Card ids are "<setId>-<localId>"; the set id can itself contain hyphens.
-  const setId = owned.id.slice(0, owned.id.lastIndexOf("-"));
-  const modelSet = modelKeyFor(setNameById.get(setId));
+  const modelSet = vintage ? null : modelKeyFor(set); // vintage sets are never in SETS — see note below
 
-  const key = owned.id;
+  // A brand-new card starts as a single flat point; TCG API's own history
+  // gives a vintage card a real running start instead — seeded once, the
+  // first time this key is ever seen, then grown day by day like any other.
+  if (vintage && !history[key]) {
+    try {
+      const backfill = await fetchVintageHistory(owned.vintageId);
+      if (backfill.length) history[key] = backfill;
+    } catch (e) {
+      console.warn(`history backfill failed for ${key}: ${e.message}`);
+    }
+  }
+
   const hist = (history[key] || []).filter(([dt]) => dt !== today);
-  hist.push([today, d.price]);
+  hist.push([today, price]);
   history[key] = hist.slice(-400);
 
-  const tag = rarityTag(d.rarity);
+  const tag = rarityTag(rarity);
   const entry = {
-    name: `${d.name}${tag ? " " + tag : ""}`,
-    set: modelSet || setNameById.get(setId) || setId,
-    char: charFor(d.name),
-    tier: tierFor(d.rarity) || "chase",
+    name: `${name}${tag ? " " + tag : ""}`,
+    set: modelSet || set,
+    char: charFor(name),
+    tier: tierFor(rarity) || "chase",
   };
 
   let a = null;
   if (modelSet) {
-    a = analyze({ ...entry, set: modelSet }, d.price, history[key], d.market, eurUsd);
+    a = analyze({ ...entry, set: modelSet }, price, history[key], market, eurUsd);
     newSignals[key] = a.signal;
     const prev = prevSignals[key];
     const actionable = a.signal === "BUY" || a.signal === "SELL";
     if (prev !== a.signal && (actionable || prev === "BUY" || prev === "SELL")) {
       changes.push({
         name: entry.name, set: entry.set, signal: a.signal, prev: prev || null,
-        price: d.price, reason: a.rationale,
+        price, reason: a.rationale,
       });
     }
   }
 
+  // The lifecycle model was fitted on cards 1-36 months old (see
+  // docs/model-fit.json); nothing here has been validated against a card
+  // that's been out of print for over a decade, so vintage cards are never
+  // scored even though SETS could technically be extended to cover them —
+  // that's a real, undertested extrapolation, not just a missing entry.
+  const unmodelledReason = vintage
+    ? "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+    : "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts.";
+
   const qty = owned.qty ?? 1;
   items.push({
-    kind: "card", id: owned.id, name: entry.name, set: entry.set,
-    image: d.image, productId: d.productId,
+    kind: "card", id: key, name: entry.name, set: entry.set,
+    image, productId,
     qty, paid: owned.paid ?? null,
-    value: +(d.price * qty).toFixed(2),
+    value: +(price * qty).toFixed(2),
     modelled: !!modelSet,
-    ...(a || { price: d.price, signal: null, reasons: ["This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."], proj: null, confidence: null, confidenceFlags: [] }),
+    ...(a || { price, signal: null, reasons: [unmodelledReason], proj: null, confidence: null, confidenceFlags: [] }),
     history: history[key].slice(-180),
   });
 }

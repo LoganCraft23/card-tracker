@@ -44,9 +44,13 @@ jobs:
         run: node scripts/sealed.js
 
       # After sealed, so owned sealed products can reuse that run's signals.
+      # TCGAPI_KEY here is for cards with a vintageId in collection.json —
+      # pricing for older prints TCGdex has no data for. Optional: a card
+      # entry without vintageId never touches it.
       - name: Price your collection and alert on flips
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TCGAPI_KEY: ${{ secrets.TCGAPI_KEY }}
         run: node scripts/collection.js
 
       - name: Score past predictions against what actually happened

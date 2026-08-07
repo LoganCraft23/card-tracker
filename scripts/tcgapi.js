@@ -111,3 +111,46 @@ export async function sealedForSet(modelSetName) {
   }
   return out;
 }
+
+// --- vintage singles -------------------------------------------------------
+// TCGdex has thin-to-zero pricing for a lot of pre-2023 cards (confirmed by
+// hand: several Black & White-era "-EX" prints carry no TCGplayer OR
+// Cardmarket price on TCGdex at all). This API's own catalog covers them —
+// same source TCGdex draws from, evidently synced more completely — and adds
+// something TCGdex never had: real daily history with sales volume, at
+// /cards/{id}/history. That history is a rolling window (confirmed ~7 days
+// deep, not a multi-year archive), so it's a head start, not a replacement
+// for building our own — collection.js appends today's price to it exactly
+// like it does for a TCGdex-priced card.
+//
+// The API's own numeric card id (not a TCGdex id) is what this needs; there
+// is no free bulk endpoint to auto-discover it, so it's a manual, one-time
+// lookup per card (see scripts/probe-vintage.js pattern) recorded in
+// collection.json as `vintageId`.
+
+export async function fetchVintageCard(vintageId) {
+  const json = await get(`/cards/${vintageId}`);
+  const c = json?.data;
+  if (!c) return null;
+  return {
+    id: c.id,
+    name: c.name,
+    set: c.set_name || null,
+    image: c.image_url || null,
+    productId: c.tcgplayer_id ?? null,
+    price: typeof c.market_price === "number" ? c.market_price : null,
+    rarity: c.rarity || null,
+  };
+}
+
+// Real daily history TCG API already has, oldest first — used once to seed
+// history/collection-prices.json so a newly-added vintage card doesn't start
+// from a single flat point the way a brand-new TCGdex-priced card does.
+export async function fetchVintageHistory(vintageId) {
+  const json = await get(`/cards/${vintageId}/history`);
+  const rows = Array.isArray(json?.data) ? json.data : [];
+  return rows
+    .filter((r) => typeof r.market_price === "number")
+    .map((r) => [r.date, r.market_price])
+    .sort((a, b) => (a[0] < b[0] ? -1 : 1));
+}

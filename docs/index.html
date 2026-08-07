@@ -838,17 +838,21 @@ function sortList(list) {
   });
 }
 
-// TCGdex serves card art as a base path needing a size suffix; the sealed
-// source returns a complete image URL, so only cards get "/low.webp".
-//
+// TCGdex serves card art as a base path needing a size suffix ("/low.webp",
+// "/high.webp"); TCGplayer's CDN — used for sealed products AND vintage
+// singles priced via TCG API, since TCGdex has no data for those at all —
+// returns a complete image URL already. isSealed alone doesn't distinguish
+// this (a vintage single isn't sealed), so detect the host directly.
+const isTcgplayerImage = (c) => !!c.image && c.image.includes("tcgplayer.com");
+
 // The zoom variant is ~5x the bytes (160KB vs 33KB for a card), so it is only
 // ever referenced — never loaded — until something is actually hovered.
 const zoomSrc = (c) =>
-  c.isSealed ? c.image.replace("/fit-in/400x400/", "/fit-in/1000x1000/") : c.image + "/high.webp";
+  isTcgplayerImage(c) ? c.image.replace("/fit-in/400x400/", "/fit-in/1000x1000/") : c.image + "/high.webp";
 
 const artImg = (c) => {
   if (!c.image) return "";
-  const src = c.isSealed ? c.image : c.image + "/low.webp";
+  const src = isTcgplayerImage(c) ? c.image : c.image + "/low.webp";
   return `<img class="thumb" src="${esc(src)}" data-zoom="${esc(zoomSrc(c))}" alt="${esc(c.name)}"
     loading="lazy" decoding="async" onerror="this.style.visibility='hidden'">`;
 };
