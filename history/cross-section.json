@@ -1,5 +1,5 @@
 {
-  "captured": "2026-08-08T13:51:13.354Z",
+  "captured": "2026-08-09T13:57:17.109Z",
   "note": "Every secret rare priced today, before any price-band filtering. This is the fitting sample for scripts/fit.js — age variation comes from sets having different release dates, so one day's snapshot is enough to fit the curve.",
   "cards": [
     {
@@ -21,28 +21,28 @@
       "set": "151",
       "tier": "chase",
       "char": "S",
-      "price": 110.04
+      "price": 110
     },
     {
       "id": "sv03.5-169",
       "set": "151",
       "tier": "chase",
       "char": "S",
-      "price": 69.24
+      "price": 69.75
     },
     {
       "id": "sv03.5-170",
       "set": "151",
       "tier": "chase",
       "char": "A",
-      "price": 103.47
+      "price": 103.1
     },
     {
       "id": "sv03.5-171",
       "set": "151",
       "tier": "chase",
       "char": "A",
-      "price": 69
+      "price": 68.86
     },
     {
       "id": "sv03.5-172",
@@ -63,49 +63,49 @@
       "set": "151",
       "tier": "chase",
       "char": "B",
-      "price": 21.65
+      "price": 21.81
     },
     {
       "id": "sv03.5-175",
       "set": "151",
       "tier": "chase",
       "char": "A",
-      "price": 75.08
+      "price": 74.85
     },
     {
       "id": "sv03.5-176",
       "set": "151",
       "tier": "chase",
       "char": "B",
-      "price": 49.07
+      "price": 49.12
     },
     {
       "id": "sv03.5-177",
       "set": "151",
       "tier": "chase",
       "char": "B",
-      "price": 25.92
+      "price": 26
     },
     {
       "id": "sv03.5-178",
       "set": "151",
       "tier": "chase",
       "char": "B",
-      "price": 18
+      "price": 18.06
     },
     {
       "id": "sv03.5-179",
       "set": "151",
       "tier": "chase",
       "char": "B",
-      "price": 15.27
+      "price": 15.35
     },
     {
       "id": "sv03.5-180",
       "set": "151",
       "tier": "chase",
       "char": "B",
-      "price": 15.75
+      "price": 16
     },
     {
       "id": "sv03.5-181",
@@ -119,14 +119,14 @@
       "set": "151",
       "tier": "ultra",
       "char": "A",
-      "price": 18.25
+      "price": 18.26
     },
     {
       "id": "sv03.5-183",
       "set": "151",
       "tier": "ultra",
       "char": "S",
-      "price": 47.64
+      "price": 47.65
     },
     {
       "id": "sv03.5-184",
@@ -140,14 +140,14 @@
       "set": "151",
       "tier": "ultra",
       "char": "B",
-      "price": 9
+      "price": 8.99
     },
     {
       "id": "sv03.5-186",
       "set": "151",
       "tier": "ultra",
       "char": "A",
-      "price": 16.79
+      "price": 16.85
     },
     {
       "id": "sv03.5-187",
@@ -175,21 +175,21 @@
       "set": "151",
       "tier": "ultra",
       "char": "B",
-      "price": 7.5
+      "price": 7.51
     },
     {
       "id": "sv03.5-191",
       "set": "151",
       "tier": "ultra",
       "char": "B",
-      "price": 7.27
+      "price": 7.36
     },
     {
       "id": "sv03.5-192",
       "set": "151",
       "tier": "ultra",
       "char": "A",
-      "price": 11.02
+      "price": 11.09
     },
     {
       "id": "sv03.5-193",
@@ -203,7 +203,7 @@
       "set": "151",
       "tier": "ultra",
       "char": "B",
-      "price": 3.9
+      "price": 3.85
     },
     {
       "id": "sv03.5-195",
@@ -217,7 +217,7 @@
       "set": "151",
       "tier": "ultra",
       "char": "B",
-      "price": 9.47
+      "price": 9.49
     },
     {
       "id": "sv03.5-197",
@@ -231,28 +231,28 @@
       "set": "151",
       "tier": "chase",
       "char": "A",
-      "price": 129.8
+      "price": 128.35
     },
     {
       "id": "sv03.5-199",
       "set": "151",
       "tier": "chase",
       "char": "S",
-      "price": 404.99
+      "price": 402.99
     },
     {
       "id": "sv03.5-200",
       "set": "151",
       "tier": "chase",
       "char": "A",
-      "price": 157.5
+      "price": 157
     },
     {
       "id": "sv03.5-201",
       "set": "151",
       "tier": "chase",
       "char": "A",
-      "price": 77
+      "price": 77.37
     },
     {
       "id": "sv03.5-202",
@@ -266,7 +266,7 @@
       "set": "151",
       "tier": "chase",
       "char": "B",
-      "price": 21
+      "price": 20.97
     },
     {
       "id": "sv03.5-204",
@@ -280,7 +280,7 @@
       "set": "151",
       "tier": "ultra",
       "char": "S",
-      "price": 32.02
+      "price": 32
     },
     {
       "id": "sv03.5-206",
@@ -301,7 +301,7 @@
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 25.85
+      "price": 25.4
     },
     {
       "id": "sv03-199",
@@ -315,21 +315,21 @@
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 5.99
+      "price": 6
     },
     {
       "id": "sv03-201",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 6.15
+      "price": 6.19
     },
     {
       "id": "sv03-202",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 42.32
+      "price": 42.55
     },
     {
       "id": "sv03-203",
@@ -343,63 +343,63 @@
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 11.98
+      "price": 11.97
     },
     {
       "id": "sv03-205",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 18.08
+      "price": 18
     },
     {
       "id": "sv03-206",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 3.31
+      "price": 3.3
     },
     {
       "id": "sv03-207",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 18.91
+      "price": 18.92
     },
     {
       "id": "sv03-208",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 12.49
+      "price": 12.55
     },
     {
       "id": "sv03-209",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 14.5
+      "price": 14.38
     },
     {
       "id": "sv03-210",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 2
+      "price": 1.99
     },
     {
       "id": "sv03-211",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "A",
-      "price": 5.97
+      "price": 5.99
     },
     {
       "id": "sv03-212",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.48
+      "price": 1.49
     },
     {
       "id": "sv03-213",
@@ -420,91 +420,91 @@
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "S",
-      "price": 25
+      "price": 24.99
     },
     {
       "id": "sv03-216",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.09
+      "price": 1.1
     },
     {
       "id": "sv03-217",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 2.49
+      "price": 2.47
     },
     {
       "id": "sv03-218",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.26
+      "price": 1.27
     },
     {
       "id": "sv03-219",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.23
+      "price": 1.22
     },
     {
       "id": "sv03-220",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.49
+      "price": 1.5
     },
     {
       "id": "sv03-221",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.03
+      "price": 1.04
     },
     {
       "id": "sv03-222",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 8.3
+      "price": 8.23
     },
     {
       "id": "sv03-223",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "S",
-      "price": 119.99
+      "price": 119.94
     },
     {
       "id": "sv03-224",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 6.27
+      "price": 6.4
     },
     {
       "id": "sv03-225",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 23
+      "price": 23.3
     },
     {
       "id": "sv03-226",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 3.89
+      "price": 3.88
     },
     {
       "id": "sv03-227",
       "set": "Obsidian Flames",
       "tier": "chase",
       "char": "B",
-      "price": 3.63
+      "price": 3.64
     },
     {
       "id": "sv03-228",
@@ -518,35 +518,35 @@
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.99
+      "price": 1.97
     },
     {
       "id": "sv03-230",
       "set": "Obsidian Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 4.44
+      "price": 4.48
     },
     {
       "id": "sv04-183",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 5.81
+      "price": 5.93
     },
     {
       "id": "sv04-184",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 6.1
+      "price": 6.28
     },
     {
       "id": "sv04-185",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 7.9
+      "price": 7.91
     },
     {
       "id": "sv04-186",
@@ -560,35 +560,35 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 9.07
+      "price": 9.13
     },
     {
       "id": "sv04-188",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 12.23
+      "price": 12.19
     },
     {
       "id": "sv04-189",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 39.22
+      "price": 38.99
     },
     {
       "id": "sv04-190",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 12.68
+      "price": 12.76
     },
     {
       "id": "sv04-191",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 14.98
+      "price": 14.96
     },
     {
       "id": "sv04-192",
@@ -602,63 +602,63 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 50.62
+      "price": 50.56
     },
     {
       "id": "sv04-194",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 47.99
+      "price": 48.55
     },
     {
       "id": "sv04-195",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 11.86
+      "price": 11.84
     },
     {
       "id": "sv04-196",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 29.44
+      "price": 29.39
     },
     {
       "id": "sv04-197",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 9.17
+      "price": 9.54
     },
     {
       "id": "sv04-198",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 15.58
+      "price": 15.63
     },
     {
       "id": "sv04-199",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "A",
-      "price": 145.7
+      "price": 144.46
     },
     {
       "id": "sv04-200",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 10.1
+      "price": 10.2
     },
     {
       "id": "sv04-201",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 27.94
+      "price": 28.14
     },
     {
       "id": "sv04-202",
@@ -672,35 +672,35 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 6.7
+      "price": 6.71
     },
     {
       "id": "sv04-204",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 21.42
+      "price": 20.85
     },
     {
       "id": "sv04-205",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "A",
-      "price": 32.38
+      "price": 32.1
     },
     {
       "id": "sv04-206",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 57.65
+      "price": 57.33
     },
     {
       "id": "sv04-207",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 19.89
+      "price": 19.93
     },
     {
       "id": "sv04-208",
@@ -714,7 +714,7 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 6.59
+      "price": 6.58
     },
     {
       "id": "sv04-210",
@@ -728,28 +728,28 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 31.48
+      "price": 31.66
     },
     {
       "id": "sv04-212",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 18
+      "price": 17.96
     },
     {
       "id": "sv04-213",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 29.48
+      "price": 29.27
     },
     {
       "id": "sv04-214",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 16
+      "price": 16.03
     },
     {
       "id": "sv04-215",
@@ -763,28 +763,28 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 11.99
+      "price": 11.97
     },
     {
       "id": "sv04-217",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2.65
+      "price": 2.66
     },
     {
       "id": "sv04-218",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2.45
+      "price": 2.5
     },
     {
       "id": "sv04-219",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "S",
-      "price": 7.65
+      "price": 7.77
     },
     {
       "id": "sv04-220",
@@ -798,7 +798,7 @@
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2.08
+      "price": 2.1
     },
     {
       "id": "sv04-222",
@@ -812,35 +812,35 @@
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2.46
+      "price": 2.49
     },
     {
       "id": "sv04-224",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2
+      "price": 2.07
     },
     {
       "id": "sv04-225",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "A",
-      "price": 2.75
+      "price": 2.78
     },
     {
       "id": "sv04-226",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 4
+      "price": 4.19
     },
     {
       "id": "sv04-227",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 3.5
+      "price": 3.51
     },
     {
       "id": "sv04-228",
@@ -903,14 +903,14 @@
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2.9
+      "price": 2.89
     },
     {
       "id": "sv04-237",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 1.5
+      "price": 1.51
     },
     {
       "id": "sv04-238",
@@ -924,7 +924,7 @@
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2.2
+      "price": 2.19
     },
     {
       "id": "sv04-240",
@@ -938,7 +938,7 @@
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "B",
-      "price": 2.71
+      "price": 2.74
     },
     {
       "id": "sv04-242",
@@ -966,7 +966,7 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "S",
-      "price": 40.64
+      "price": 40.58
     },
     {
       "id": "sv04-246",
@@ -980,21 +980,21 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 20.99
+      "price": 20.27
     },
     {
       "id": "sv04-248",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 13.74
+      "price": 13.85
     },
     {
       "id": "sv04-249",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "A",
-      "price": 23.83
+      "price": 24
     },
     {
       "id": "sv04-250",
@@ -1008,35 +1008,35 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "A",
-      "price": 42.8
+      "price": 42.71
     },
     {
       "id": "sv04-252",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 37.91
+      "price": 37.83
     },
     {
       "id": "sv04-253",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 61.51
+      "price": 61.79
     },
     {
       "id": "sv04-254",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 9.19
+      "price": 9.25
     },
     {
       "id": "sv04-255",
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 17.19
+      "price": 17.1
     },
     {
       "id": "sv04-256",
@@ -1050,7 +1050,7 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 6.14
+      "price": 6.17
     },
     {
       "id": "sv04-258",
@@ -1064,7 +1064,7 @@
       "set": "Paradox Rift",
       "tier": "chase",
       "char": "B",
-      "price": 9.21
+      "price": 9.25
     },
     {
       "id": "sv04-260",
@@ -1078,14 +1078,14 @@
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "A",
-      "price": 5.79
+      "price": 5.82
     },
     {
       "id": "sv04-262",
       "set": "Paradox Rift",
       "tier": "ultra",
       "char": "A",
-      "price": 7.83
+      "price": 7.71
     },
     {
       "id": "sv04-263",
@@ -1120,14 +1120,14 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 14.75
+      "price": 14.73
     },
     {
       "id": "sv04.5-093",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5.91
+      "price": 5.88
     },
     {
       "id": "sv04.5-094",
@@ -1141,7 +1141,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 11.49
+      "price": 11.5
     },
     {
       "id": "sv04.5-096",
@@ -1155,21 +1155,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.36
+      "price": 3.44
     },
     {
       "id": "sv04.5-098",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5.55
+      "price": 5.52
     },
     {
       "id": "sv04.5-099",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.54
+      "price": 2.57
     },
     {
       "id": "sv04.5-100",
@@ -1183,21 +1183,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.35
+      "price": 3.3
     },
     {
       "id": "sv04.5-102",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5
+      "price": 5.9
     },
     {
       "id": "sv04.5-103",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.98
+      "price": 2.97
     },
     {
       "id": "sv04.5-104",
@@ -1211,21 +1211,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3
+      "price": 2.99
     },
     {
       "id": "sv04.5-106",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.78
+      "price": 2.81
     },
     {
       "id": "sv04.5-107",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.47
+      "price": 2.46
     },
     {
       "id": "sv04.5-108",
@@ -1253,63 +1253,63 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.91
+      "price": 3.88
     },
     {
       "id": "sv04.5-112",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 16.05
+      "price": 16.21
     },
     {
       "id": "sv04.5-113",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.05
+      "price": 3
     },
     {
       "id": "sv04.5-114",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 7.02
+      "price": 7.01
     },
     {
       "id": "sv04.5-115",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5.61
+      "price": 5.63
     },
     {
       "id": "sv04.5-116",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 22.55
+      "price": 22.68
     },
     {
       "id": "sv04.5-117",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 19.67
+      "price": 19.96
     },
     {
       "id": "sv04.5-118",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 7.17
+      "price": 7.21
     },
     {
       "id": "sv04.5-119",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 9.83
+      "price": 9.81
     },
     {
       "id": "sv04.5-120",
@@ -1323,14 +1323,14 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.36
+      "price": 3.37
     },
     {
       "id": "sv04.5-122",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.61
+      "price": 3.7
     },
     {
       "id": "sv04.5-123",
@@ -1344,7 +1344,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.53
+      "price": 3.55
     },
     {
       "id": "sv04.5-125",
@@ -1365,7 +1365,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 7.46
+      "price": 7.42
     },
     {
       "id": "sv04.5-128",
@@ -1386,42 +1386,42 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 4.72
+      "price": 4.68
     },
     {
       "id": "sv04.5-131",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "S",
-      "price": 88.7
+      "price": 88
     },
     {
       "id": "sv04.5-132",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 24
+      "price": 23.76
     },
     {
       "id": "sv04.5-133",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5.23
+      "price": 5.24
     },
     {
       "id": "sv04.5-134",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 4.35
+      "price": 4.37
     },
     {
       "id": "sv04.5-135",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 20.92
+      "price": 20.77
     },
     {
       "id": "sv04.5-136",
@@ -1442,35 +1442,35 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 11.52
+      "price": 11.5
     },
     {
       "id": "sv04.5-139",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.86
+      "price": 2.79
     },
     {
       "id": "sv04.5-140",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.87
+      "price": 3.86
     },
     {
       "id": "sv04.5-141",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.99
+      "price": 3.98
     },
     {
       "id": "sv04.5-142",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5.63
+      "price": 5.66
     },
     {
       "id": "sv04.5-143",
@@ -1484,14 +1484,14 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.87
+      "price": 3.88
     },
     {
       "id": "sv04.5-145",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.14
+      "price": 3.13
     },
     {
       "id": "sv04.5-146",
@@ -1512,14 +1512,14 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 15.82
+      "price": 15.75
     },
     {
       "id": "sv04.5-149",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 8.33
+      "price": 8.35
     },
     {
       "id": "sv04.5-150",
@@ -1540,35 +1540,35 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.04
+      "price": 3
     },
     {
       "id": "sv04.5-153",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 11.7
+      "price": 11.64
     },
     {
       "id": "sv04.5-154",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 7.99
+      "price": 8
     },
     {
       "id": "sv04.5-155",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5.99
+      "price": 5.97
     },
     {
       "id": "sv04.5-156",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.96
+      "price": 3.93
     },
     {
       "id": "sv04.5-157",
@@ -1582,28 +1582,28 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 6.01
+      "price": 6.03
     },
     {
       "id": "sv04.5-159",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 4.28
+      "price": 4.29
     },
     {
       "id": "sv04.5-160",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 57.83
+      "price": 57.95
     },
     {
       "id": "sv04.5-161",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 11.6
+      "price": 11.58
     },
     {
       "id": "sv04.5-162",
@@ -1624,7 +1624,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.83
+      "price": 2.91
     },
     {
       "id": "sv04.5-165",
@@ -1638,21 +1638,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 7
+      "price": 6.99
     },
     {
       "id": "sv04.5-167",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 10.02
+      "price": 10.47
     },
     {
       "id": "sv04.5-168",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.6
+      "price": 2.62
     },
     {
       "id": "sv04.5-169",
@@ -1680,14 +1680,14 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.82
+      "price": 3.81
     },
     {
       "id": "sv04.5-173",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 15.8
+      "price": 15.9
     },
     {
       "id": "sv04.5-174",
@@ -1701,7 +1701,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 7.96
+      "price": 7.95
     },
     {
       "id": "sv04.5-176",
@@ -1715,21 +1715,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.54
+      "price": 2.53
     },
     {
       "id": "sv04.5-178",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.29
+      "price": 2.31
     },
     {
       "id": "sv04.5-179",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.31
+      "price": 2.33
     },
     {
       "id": "sv04.5-180",
@@ -1743,28 +1743,28 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.9
+      "price": 3.85
     },
     {
       "id": "sv04.5-182",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.98
+      "price": 3.99
     },
     {
       "id": "sv04.5-183",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.22
+      "price": 3.19
     },
     {
       "id": "sv04.5-184",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 9.23
+      "price": 9.14
     },
     {
       "id": "sv04.5-185",
@@ -1778,7 +1778,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.86
+      "price": 2.89
     },
     {
       "id": "sv04.5-187",
@@ -1799,7 +1799,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.44
+      "price": 2.43
     },
     {
       "id": "sv04.5-190",
@@ -1813,14 +1813,14 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 10.67
+      "price": 10.68
     },
     {
       "id": "sv04.5-192",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2
+      "price": 1.99
     },
     {
       "id": "sv04.5-193",
@@ -1841,7 +1841,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.49
+      "price": 2.55
     },
     {
       "id": "sv04.5-196",
@@ -1855,21 +1855,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 5.96
+      "price": 5.99
     },
     {
       "id": "sv04.5-198",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 31.69
+      "price": 31.77
     },
     {
       "id": "sv04.5-199",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 4.71
+      "price": 4.7
     },
     {
       "id": "sv04.5-200",
@@ -1890,28 +1890,28 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "S",
-      "price": 64.91
+      "price": 64.7
     },
     {
       "id": "sv04.5-203",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.37
+      "price": 3.38
     },
     {
       "id": "sv04.5-204",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.32
+      "price": 3.33
     },
     {
       "id": "sv04.5-205",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.2
+      "price": 3.12
     },
     {
       "id": "sv04.5-206",
@@ -1925,7 +1925,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 17.99
+      "price": 18
     },
     {
       "id": "sv04.5-208",
@@ -1939,21 +1939,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 32.22
+      "price": 32.18
     },
     {
       "id": "sv04.5-210",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 34.79
+      "price": 34.61
     },
     {
       "id": "sv04.5-211",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.65
+      "price": 3.68
     },
     {
       "id": "sv04.5-212",
@@ -1974,14 +1974,14 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 1.3
+      "price": 1.33
     },
     {
       "id": "sv04.5-215",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 7.39
+      "price": 7.37
     },
     {
       "id": "sv04.5-216",
@@ -1995,7 +1995,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 9.52
+      "price": 9.5
     },
     {
       "id": "sv04.5-218",
@@ -2023,7 +2023,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 3.38
+      "price": 3.4
     },
     {
       "id": "sv04.5-222",
@@ -2037,7 +2037,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 1.33
+      "price": 1.34
     },
     {
       "id": "sv04.5-224",
@@ -2051,7 +2051,7 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 2.38
+      "price": 2.43
     },
     {
       "id": "sv04.5-226",
@@ -2065,7 +2065,7 @@
       "set": "Paldean Fates",
       "tier": "ultra",
       "char": "B",
-      "price": 0.8
+      "price": 0.82
     },
     {
       "id": "sv04.5-228",
@@ -2100,42 +2100,42 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "S",
-      "price": 1036.65
+      "price": 1042.03
     },
     {
       "id": "sv04.5-233",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "A",
-      "price": 198.39
+      "price": 199.38
     },
     {
       "id": "sv04.5-234",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "S",
-      "price": 324
+      "price": 324.12
     },
     {
       "id": "sv04.5-235",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 10.73
+      "price": 10.65
     },
     {
       "id": "sv04.5-236",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 29.92
+      "price": 29.47
     },
     {
       "id": "sv04.5-237",
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 30.83
+      "price": 30.92
     },
     {
       "id": "sv04.5-238",
@@ -2149,21 +2149,21 @@
       "set": "Paldean Fates",
       "tier": "chase",
       "char": "B",
-      "price": 18.93
+      "price": 18.99
     },
     {
       "id": "sv04.5-240",
       "set": "Paldean Fates",
       "tier": "ultra",
       "char": "B",
-      "price": 7.6
+      "price": 7.7
     },
     {
       "id": "sv04.5-241",
       "set": "Paldean Fates",
       "tier": "ultra",
       "char": "B",
-      "price": 12.18
+      "price": 12.27
     },
     {
       "id": "sv04.5-242",
@@ -2177,14 +2177,14 @@
       "set": "Paldean Fates",
       "tier": "ultra",
       "char": "A",
-      "price": 17
+      "price": 17.24
     },
     {
       "id": "sv04.5-244",
       "set": "Paldean Fates",
       "tier": "ultra",
       "char": "B",
-      "price": 6.72
+      "price": 6.67
     },
     {
       "id": "sv04.5-245",
@@ -2205,42 +2205,42 @@
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 20.99
+      "price": 21.07
     },
     {
       "id": "sv05-165",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 46.06
+      "price": 46.27
     },
     {
       "id": "sv05-166",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 63.25
+      "price": 63.36
     },
     {
       "id": "sv05-167",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "A",
-      "price": 44.75
+      "price": 44.99
     },
     {
       "id": "sv05-168",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 18.52
+      "price": 18.48
     },
     {
       "id": "sv05-169",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 10.21
+      "price": 9.99
     },
     {
       "id": "sv05-170",
@@ -2254,21 +2254,21 @@
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 16.53
+      "price": 16.63
     },
     {
       "id": "sv05-172",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 9.64
+      "price": 9.75
     },
     {
       "id": "sv05-173",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 12.63
+      "price": 12.6
     },
     {
       "id": "sv05-174",
@@ -2282,63 +2282,63 @@
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 10.61
+      "price": 10.83
     },
     {
       "id": "sv05-176",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 33.02
+      "price": 32.96
     },
     {
       "id": "sv05-177",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "A",
-      "price": 107.67
+      "price": 106.57
     },
     {
       "id": "sv05-178",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "A",
-      "price": 40.32
+      "price": 40.2
     },
     {
       "id": "sv05-179",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 6.93
+      "price": 6.92
     },
     {
       "id": "sv05-180",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 33.48
+      "price": 33.32
     },
     {
       "id": "sv05-181",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 12.95
+      "price": 12.75
     },
     {
       "id": "sv05-182",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 27.89
+      "price": 27.81
     },
     {
       "id": "sv05-183",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 47.92
+      "price": 47.84
     },
     {
       "id": "sv05-184",
@@ -2352,21 +2352,21 @@
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 4.33
+      "price": 4.38
     },
     {
       "id": "sv05-186",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 2.37
+      "price": 2.43
     },
     {
       "id": "sv05-187",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 3.01
+      "price": 3
     },
     {
       "id": "sv05-188",
@@ -2380,14 +2380,14 @@
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 2.22
+      "price": 2.18
     },
     {
       "id": "sv05-190",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 1.9
+      "price": 1.93
     },
     {
       "id": "sv05-191",
@@ -2401,28 +2401,28 @@
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 1.64
+      "price": 1.66
     },
     {
       "id": "sv05-193",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "S",
-      "price": 67.96
+      "price": 68
     },
     {
       "id": "sv05-194",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 2.45
+      "price": 2.4
     },
     {
       "id": "sv05-195",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 3.91
+      "price": 3.95
     },
     {
       "id": "sv05-196",
@@ -2436,28 +2436,28 @@
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 3.03
+      "price": 3.01
     },
     {
       "id": "sv05-198",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 8.31
+      "price": 8.3
     },
     {
       "id": "sv05-199",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 2.91
+      "price": 2.99
     },
     {
       "id": "sv05-200",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 2.44
+      "price": 2.41
     },
     {
       "id": "sv05-201",
@@ -2471,35 +2471,35 @@
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 4.69
+      "price": 4.67
     },
     {
       "id": "sv05-203",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 37.9
+      "price": 38.05
     },
     {
       "id": "sv05-204",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 59.05
+      "price": 58.69
     },
     {
       "id": "sv05-205",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 58.4
+      "price": 57.72
     },
     {
       "id": "sv05-206",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 60.47
+      "price": 60.55
     },
     {
       "id": "sv05-207",
@@ -2513,14 +2513,14 @@
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 73.3
+      "price": 72.93
     },
     {
       "id": "sv05-209",
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 31
+      "price": 30.46
     },
     {
       "id": "sv05-210",
@@ -2534,7 +2534,7 @@
       "set": "Temporal Forces",
       "tier": "chase",
       "char": "B",
-      "price": 76.53
+      "price": 76.49
     },
     {
       "id": "sv05-212",
@@ -2562,91 +2562,91 @@
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 12.49
+      "price": 12.3
     },
     {
       "id": "sv05-216",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 9.53
+      "price": 9.62
     },
     {
       "id": "sv05-217",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 9.19
+      "price": 9.25
     },
     {
       "id": "sv05-218",
       "set": "Temporal Forces",
       "tier": "ultra",
       "char": "B",
-      "price": 14.27
+      "price": 14.02
     },
     {
       "id": "sv06-168",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 17.04
+      "price": 17
     },
     {
       "id": "sv06-169",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 9.13
+      "price": 9.11
     },
     {
       "id": "sv06-170",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 13.78
+      "price": 13.96
     },
     {
       "id": "sv06-171",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 6.3
+      "price": 6.31
     },
     {
       "id": "sv06-172",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 7
+      "price": 6.99
     },
     {
       "id": "sv06-173",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 15.53
+      "price": 15.35
     },
     {
       "id": "sv06-174",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 9.06
+      "price": 9.11
     },
     {
       "id": "sv06-175",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 14
+      "price": 14.13
     },
     {
       "id": "sv06-176",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 5.39
+      "price": 5.38
     },
     {
       "id": "sv06-177",
@@ -2660,14 +2660,14 @@
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 6.03
+      "price": 6
     },
     {
       "id": "sv06-179",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 6.04
+      "price": 6.02
     },
     {
       "id": "sv06-180",
@@ -2681,7 +2681,7 @@
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "A",
-      "price": 32.54
+      "price": 32.33
     },
     {
       "id": "sv06-182",
@@ -2695,21 +2695,21 @@
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 7.04
+      "price": 7
     },
     {
       "id": "sv06-184",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 6.28
+      "price": 6.29
     },
     {
       "id": "sv06-185",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 13.27
+      "price": 13.1
     },
     {
       "id": "sv06-186",
@@ -2723,28 +2723,28 @@
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 60.25
+      "price": 60.34
     },
     {
       "id": "sv06-188",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "S",
-      "price": 100.79
+      "price": 100.35
     },
     {
       "id": "sv06-189",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 1.65
+      "price": 1.66
     },
     {
       "id": "sv06-190",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "A",
-      "price": 5.97
+      "price": 5.99
     },
     {
       "id": "sv06-191",
@@ -2758,56 +2758,56 @@
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "A",
-      "price": 2.36
+      "price": 2.37
     },
     {
       "id": "sv06-193",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 1.91
+      "price": 1.9
     },
     {
       "id": "sv06-194",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "A",
-      "price": 3.89
+      "price": 3.94
     },
     {
       "id": "sv06-195",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 3.3
+      "price": 3.27
     },
     {
       "id": "sv06-196",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 2.98
+      "price": 2.96
     },
     {
       "id": "sv06-197",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 2.77
+      "price": 2.76
     },
     {
       "id": "sv06-198",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "S",
-      "price": 17.7
+      "price": 17.86
     },
     {
       "id": "sv06-199",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "A",
-      "price": 4
+      "price": 3.99
     },
     {
       "id": "sv06-200",
@@ -2828,7 +2828,7 @@
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 2.89
+      "price": 2.85
     },
     {
       "id": "sv06-203",
@@ -2842,35 +2842,35 @@
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 5.39
+      "price": 5.35
     },
     {
       "id": "sv06-205",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 1.73
+      "price": 1.74
     },
     {
       "id": "sv06-206",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 4.03
+      "price": 4.06
     },
     {
       "id": "sv06-207",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 6.97
+      "price": 7.19
     },
     {
       "id": "sv06-208",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 1.48
+      "price": 1.47
     },
     {
       "id": "sv06-209",
@@ -2884,21 +2884,21 @@
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 36
+      "price": 36.95
     },
     {
       "id": "sv06-211",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "A",
-      "price": 24.43
+      "price": 24
     },
     {
       "id": "sv06-212",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "A",
-      "price": 13.64
+      "price": 13.97
     },
     {
       "id": "sv06-213",
@@ -2912,14 +2912,14 @@
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "S",
-      "price": 396.94
+      "price": 393.47
     },
     {
       "id": "sv06-215",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "A",
-      "price": 16.12
+      "price": 16.15
     },
     {
       "id": "sv06-216",
@@ -2933,49 +2933,49 @@
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 64.92
+      "price": 64.98
     },
     {
       "id": "sv06-218",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 31.63
+      "price": 31.75
     },
     {
       "id": "sv06-219",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 44.02
+      "price": 43.99
     },
     {
       "id": "sv06-220",
       "set": "Twilight Masquerade",
       "tier": "chase",
       "char": "B",
-      "price": 185
+      "price": 183.74
     },
     {
       "id": "sv06-221",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "A",
-      "price": 10.99
+      "price": 10.81
     },
     {
       "id": "sv06-222",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 9.81
+      "price": 9.8
     },
     {
       "id": "sv06-223",
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 13.95
+      "price": 13.92
     },
     {
       "id": "sv06-224",
@@ -2996,21 +2996,21 @@
       "set": "Twilight Masquerade",
       "tier": "ultra",
       "char": "B",
-      "price": 5.5
+      "price": 5.48
     },
     {
       "id": "sv06.5-065",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 13.99
+      "price": 13.97
     },
     {
       "id": "sv06.5-066",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 62.83
+      "price": 63.68
     },
     {
       "id": "sv06.5-067",
@@ -3024,14 +3024,14 @@
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 61.72
+      "price": 61.99
     },
     {
       "id": "sv06.5-069",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 46.58
+      "price": 46.15
     },
     {
       "id": "sv06.5-070",
@@ -3045,21 +3045,21 @@
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 31.3
+      "price": 31.01
     },
     {
       "id": "sv06.5-072",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 40.95
+      "price": 40.1
     },
     {
       "id": "sv06.5-073",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 15.19
+      "price": 15.02
     },
     {
       "id": "sv06.5-074",
@@ -3073,21 +3073,21 @@
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "A",
-      "price": 30.48
+      "price": 30.69
     },
     {
       "id": "sv06.5-076",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 16.17
+      "price": 16.15
     },
     {
       "id": "sv06.5-077",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 19.99
+      "price": 19.7
     },
     {
       "id": "sv06.5-078",
@@ -3101,7 +3101,7 @@
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 30
+      "price": 30.1
     },
     {
       "id": "sv06.5-080",
@@ -3129,7 +3129,7 @@
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 2.71
+      "price": 2.7
     },
     {
       "id": "sv06.5-084",
@@ -3143,21 +3143,21 @@
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 8.39
+      "price": 8.24
     },
     {
       "id": "sv06.5-086",
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 3.86
+      "price": 4.01
     },
     {
       "id": "sv06.5-087",
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 7.41
+      "price": 7.49
     },
     {
       "id": "sv06.5-088",
@@ -3171,21 +3171,21 @@
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 8.75
+      "price": 9
     },
     {
       "id": "sv06.5-090",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 23.98
+      "price": 23.82
     },
     {
       "id": "sv06.5-091",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 21.87
+      "price": 21.86
     },
     {
       "id": "sv06.5-092",
@@ -3199,14 +3199,14 @@
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 26
+      "price": 26.04
     },
     {
       "id": "sv06.5-094",
       "set": "Shrouded Fable",
       "tier": "chase",
       "char": "B",
-      "price": 45
+      "price": 45.12
     },
     {
       "id": "sv06.5-095",
@@ -3220,7 +3220,7 @@
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 20.57
+      "price": 20.58
     },
     {
       "id": "sv06.5-097",
@@ -3234,35 +3234,35 @@
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 65.67
+      "price": 66.09
     },
     {
       "id": "sv06.5-099",
       "set": "Shrouded Fable",
       "tier": "ultra",
       "char": "B",
-      "price": 37.48
+      "price": 37.4
     },
     {
       "id": "sv07-143",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "A",
-      "price": 122.03
+      "price": 120.84
     },
     {
       "id": "sv07-144",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 6.74
+      "price": 6.8
     },
     {
       "id": "sv07-145",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 9.67
+      "price": 9.88
     },
     {
       "id": "sv07-146",
@@ -3297,7 +3297,7 @@
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 8.99
+      "price": 8.95
     },
     {
       "id": "sv07-151",
@@ -3311,35 +3311,35 @@
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 20.37
+      "price": 20.27
     },
     {
       "id": "sv07-153",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 8.32
+      "price": 8.39
     },
     {
       "id": "sv07-154",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 14.71
+      "price": 14.6
     },
     {
       "id": "sv07-155",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 4.1
+      "price": 4.15
     },
     {
       "id": "sv07-156",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 3.6
+      "price": 3.58
     },
     {
       "id": "sv07-157",
@@ -3353,21 +3353,21 @@
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "A",
-      "price": 7.29
+      "price": 7.34
     },
     {
       "id": "sv07-159",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 2.33
+      "price": 2.36
     },
     {
       "id": "sv07-160",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 4.89
+      "price": 4.98
     },
     {
       "id": "sv07-161",
@@ -3381,42 +3381,42 @@
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 1.2
+      "price": 1.22
     },
     {
       "id": "sv07-163",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 2.2
+      "price": 2.23
     },
     {
       "id": "sv07-164",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 10
+      "price": 9.98
     },
     {
       "id": "sv07-165",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 1.12
+      "price": 1.13
     },
     {
       "id": "sv07-166",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "B",
-      "price": 2.75
+      "price": 2.77
     },
     {
       "id": "sv07-167",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 40.99
+      "price": 40.51
     },
     {
       "id": "sv07-168",
@@ -3430,35 +3430,35 @@
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 74.29
+      "price": 74.01
     },
     {
       "id": "sv07-170",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "A",
-      "price": 44.3
+      "price": 44.49
     },
     {
       "id": "sv07-171",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 13.17
+      "price": 13.09
     },
     {
       "id": "sv07-172",
       "set": "Stellar Crown",
       "tier": "chase",
       "char": "B",
-      "price": 19.15
+      "price": 19.17
     },
     {
       "id": "sv07-173",
       "set": "Stellar Crown",
       "tier": "ultra",
       "char": "A",
-      "price": 12.08
+      "price": 12.12
     },
     {
       "id": "sv07-175",
@@ -3486,7 +3486,7 @@
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 18.01
+      "price": 18.09
     },
     {
       "id": "sv09-163",
@@ -3500,28 +3500,28 @@
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 6.13
+      "price": 6.14
     },
     {
       "id": "sv09-165",
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 3.55
+      "price": 3.61
     },
     {
       "id": "sv09-166",
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 3.49
+      "price": 3.5
     },
     {
       "id": "sv09-167",
       "set": "Journey Together",
       "tier": "chase",
       "char": "A",
-      "price": 19.61
+      "price": 19.49
     },
     {
       "id": "sv09-168",
@@ -3535,7 +3535,7 @@
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 6.58
+      "price": 6.59
     },
     {
       "id": "sv09-170",
@@ -3570,7 +3570,7 @@
       "set": "Journey Together",
       "tier": "ultra",
       "char": "B",
-      "price": 1.01
+      "price": 1.02
     },
     {
       "id": "sv09-175",
@@ -3584,28 +3584,28 @@
       "set": "Journey Together",
       "tier": "ultra",
       "char": "A",
-      "price": 2.15
+      "price": 2.25
     },
     {
       "id": "sv09-177",
       "set": "Journey Together",
       "tier": "ultra",
       "char": "A",
-      "price": 2.4
+      "price": 2.41
     },
     {
       "id": "sv09-179",
       "set": "Journey Together",
       "tier": "ultra",
       "char": "B",
-      "price": 2.6
+      "price": 2.59
     },
     {
       "id": "sv09-180",
       "set": "Journey Together",
       "tier": "ultra",
       "char": "B",
-      "price": 1.75
+      "price": 1.74
     },
     {
       "id": "sv09-181",
@@ -3619,63 +3619,63 @@
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 22.59
+      "price": 22.49
     },
     {
       "id": "sv09-183",
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 44
+      "price": 43.95
     },
     {
       "id": "sv09-184",
       "set": "Journey Together",
       "tier": "chase",
       "char": "B",
-      "price": 125.28
+      "price": 125
     },
     {
       "id": "sv09-185",
       "set": "Journey Together",
       "tier": "chase",
       "char": "A",
-      "price": 53.08
+      "price": 53.33
     },
     {
       "id": "sv09-186",
       "set": "Journey Together",
       "tier": "chase",
       "char": "A",
-      "price": 38
+      "price": 37.99
     },
     {
       "id": "sv09-187",
       "set": "Journey Together",
       "tier": "chase",
       "char": "A",
-      "price": 65.89
+      "price": 65.54
     },
     {
       "id": "sv09-188",
       "set": "Journey Together",
       "tier": "ultra",
       "char": "B",
-      "price": 17.96
+      "price": 18.08
     },
     {
       "id": "sv09-189",
       "set": "Journey Together",
       "tier": "ultra",
       "char": "A",
-      "price": 17.22
+      "price": 17.37
     },
     {
       "id": "sv09-190",
       "set": "Journey Together",
       "tier": "ultra",
       "char": "B",
-      "price": 4.78
+      "price": 4.79
     },
     {
       "id": "sv10-183",
@@ -3689,42 +3689,42 @@
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 15.59
+      "price": 15.64
     },
     {
       "id": "sv10-185",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 13.8
+      "price": 13.85
     },
     {
       "id": "sv10-186",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 4
+      "price": 3.99
     },
     {
       "id": "sv10-187",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 6.5
+      "price": 6.52
     },
     {
       "id": "sv10-188",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 4.99
+      "price": 4.96
     },
     {
       "id": "sv10-189",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 10.49
+      "price": 10.54
     },
     {
       "id": "sv10-190",
@@ -3738,63 +3738,63 @@
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 16.55
+      "price": 16.49
     },
     {
       "id": "sv10-192",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "A",
-      "price": 12.02
+      "price": 12.25
     },
     {
       "id": "sv10-193",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "A",
-      "price": 72.79
+      "price": 72.25
     },
     {
       "id": "sv10-194",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "A",
-      "price": 40.95
+      "price": 40.66
     },
     {
       "id": "sv10-195",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 5.15
+      "price": 5.16
     },
     {
       "id": "sv10-196",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 3.99
+      "price": 4
     },
     {
       "id": "sv10-197",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 4.61
+      "price": 4.6
     },
     {
       "id": "sv10-198",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 4.25
+      "price": 4.26
     },
     {
       "id": "sv10-199",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 9.5
+      "price": 9.38
     },
     {
       "id": "sv10-200",
@@ -3836,7 +3836,7 @@
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 4.19
+      "price": 4.12
     },
     {
       "id": "sv10-206",
@@ -3850,42 +3850,42 @@
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 2.52
+      "price": 2.5
     },
     {
       "id": "sv10-208",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "A",
-      "price": 6
+      "price": 5.99
     },
     {
       "id": "sv10-209",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "A",
-      "price": 5.71
+      "price": 5.73
     },
     {
       "id": "sv10-210",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 1.45
+      "price": 1.44
     },
     {
       "id": "sv10-211",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 1.28
+      "price": 1.25
     },
     {
       "id": "sv10-212",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 1.59
+      "price": 1.57
     },
     {
       "id": "sv10-213",
@@ -3899,7 +3899,7 @@
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 1.5
+      "price": 1.49
     },
     {
       "id": "sv10-215",
@@ -3913,14 +3913,14 @@
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 4.57
+      "price": 4.55
     },
     {
       "id": "sv10-217",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 3.16
+      "price": 3.13
     },
     {
       "id": "sv10-218",
@@ -3934,21 +3934,21 @@
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 4.7
+      "price": 4.73
     },
     {
       "id": "sv10-220",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 2.39
+      "price": 2.4
     },
     {
       "id": "sv10-221",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 3.75
+      "price": 3.8
     },
     {
       "id": "sv10-222",
@@ -3962,7 +3962,7 @@
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 3.49
+      "price": 3.48
     },
     {
       "id": "sv10-224",
@@ -3990,21 +3990,21 @@
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 4.28
+      "price": 4.21
     },
     {
       "id": "sv10-228",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 24.92
+      "price": 24.9
     },
     {
       "id": "sv10-229",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "A",
-      "price": 115
+      "price": 114.98
     },
     {
       "id": "sv10-230",
@@ -4018,14 +4018,14 @@
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "S",
-      "price": 537.99
+      "price": 534.67
     },
     {
       "id": "sv10-232",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "S",
-      "price": 274.99
+      "price": 275
     },
     {
       "id": "sv10-233",
@@ -4046,42 +4046,42 @@
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 33.55
+      "price": 33.69
     },
     {
       "id": "sv10-236",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 43.37
+      "price": 43.29
     },
     {
       "id": "sv10-237",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 24.49
+      "price": 24.24
     },
     {
       "id": "sv10-238",
       "set": "Destined Rivals",
       "tier": "chase",
       "char": "B",
-      "price": 31.8
+      "price": 31.89
     },
     {
       "id": "sv10-239",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "A",
-      "price": 29.99
+      "price": 30
     },
     {
       "id": "sv10-240",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "S",
-      "price": 68.09
+      "price": 68.04
     },
     {
       "id": "sv10-241",
@@ -4102,63 +4102,63 @@
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 9.4
+      "price": 9.38
     },
     {
       "id": "sv10-244",
       "set": "Destined Rivals",
       "tier": "ultra",
       "char": "B",
-      "price": 9.02
+      "price": 9.07
     },
     {
       "id": "sv10.5b-087",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "A",
-      "price": 36.98
+      "price": 36.76
     },
     {
       "id": "sv10.5b-088",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 21.97
+      "price": 22
     },
     {
       "id": "sv10.5b-089",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 27.71
+      "price": 27.35
     },
     {
       "id": "sv10.5b-090",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 12.99
+      "price": 12.95
     },
     {
       "id": "sv10.5b-091",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 32.1
+      "price": 32.02
     },
     {
       "id": "sv10.5b-092",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 61.73
+      "price": 61.71
     },
     {
       "id": "sv10.5b-093",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 8.26
+      "price": 8.18
     },
     {
       "id": "sv10.5b-094",
@@ -4172,70 +4172,70 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 20.35
+      "price": 20.15
     },
     {
       "id": "sv10.5b-096",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 48.02
+      "price": 48.43
     },
     {
       "id": "sv10.5b-097",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 17
+      "price": 17.07
     },
     {
       "id": "sv10.5b-098",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 13.06
+      "price": 13
     },
     {
       "id": "sv10.5b-099",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 16.34
+      "price": 16.27
     },
     {
       "id": "sv10.5b-100",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 64.74
+      "price": 64.84
     },
     {
       "id": "sv10.5b-101",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 17.25
+      "price": 17.22
     },
     {
       "id": "sv10.5b-102",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 16
+      "price": 15.7
     },
     {
       "id": "sv10.5b-103",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 16.96
+      "price": 16.99
     },
     {
       "id": "sv10.5b-104",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 17.15
+      "price": 16.99
     },
     {
       "id": "sv10.5b-105",
@@ -4249,7 +4249,7 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 42
+      "price": 41.99
     },
     {
       "id": "sv10.5b-107",
@@ -4263,7 +4263,7 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 27.52
+      "price": 27.3
     },
     {
       "id": "sv10.5b-109",
@@ -4277,14 +4277,14 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 11.9
+      "price": 11.82
     },
     {
       "id": "sv10.5b-111",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 9.7
+      "price": 9.72
     },
     {
       "id": "sv10.5b-112",
@@ -4305,49 +4305,49 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 25.92
+      "price": 25.91
     },
     {
       "id": "sv10.5b-115",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 31.89
+      "price": 32.05
     },
     {
       "id": "sv10.5b-116",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 21.38
+      "price": 21.37
     },
     {
       "id": "sv10.5b-117",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 14.48
+      "price": 14.49
     },
     {
       "id": "sv10.5b-118",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 35.32
+      "price": 35.33
     },
     {
       "id": "sv10.5b-119",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 18
+      "price": 17.74
     },
     {
       "id": "sv10.5b-120",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 15.71
+      "price": 15.7
     },
     {
       "id": "sv10.5b-121",
@@ -4361,63 +4361,63 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 12.99
+      "price": 12.97
     },
     {
       "id": "sv10.5b-123",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 16.7
+      "price": 16.43
     },
     {
       "id": "sv10.5b-124",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 9.45
+      "price": 9
     },
     {
       "id": "sv10.5b-125",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 21.6
+      "price": 21.71
     },
     {
       "id": "sv10.5b-126",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 13.56
+      "price": 13.21
     },
     {
       "id": "sv10.5b-127",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 41.81
+      "price": 41.84
     },
     {
       "id": "sv10.5b-128",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 10.88
+      "price": 10.99
     },
     {
       "id": "sv10.5b-129",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 62.7
+      "price": 61.83
     },
     {
       "id": "sv10.5b-130",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 8.98
+      "price": 8.97
     },
     {
       "id": "sv10.5b-131",
@@ -4438,21 +4438,21 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 9.04
+      "price": 9.16
     },
     {
       "id": "sv10.5b-134",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 30.5
+      "price": 30.72
     },
     {
       "id": "sv10.5b-135",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 18.5
+      "price": 18.42
     },
     {
       "id": "sv10.5b-136",
@@ -4466,14 +4466,14 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 61.99
+      "price": 61.77
     },
     {
       "id": "sv10.5b-138",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 19.68
+      "price": 19.58
     },
     {
       "id": "sv10.5b-139",
@@ -4494,7 +4494,7 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 35.62
+      "price": 35.69
     },
     {
       "id": "sv10.5b-142",
@@ -4508,63 +4508,63 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 13.47
+      "price": 13.51
     },
     {
       "id": "sv10.5b-144",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 34.84
+      "price": 34.89
     },
     {
       "id": "sv10.5b-145",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 22.71
+      "price": 22.72
     },
     {
       "id": "sv10.5b-146",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 36.93
+      "price": 36.99
     },
     {
       "id": "sv10.5b-147",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 78.02
+      "price": 79.08
     },
     {
       "id": "sv10.5b-148",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 41.35
+      "price": 41.75
     },
     {
       "id": "sv10.5b-149",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 7.99
+      "price": 7.98
     },
     {
       "id": "sv10.5b-150",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 36.49
+      "price": 35.96
     },
     {
       "id": "sv10.5b-151",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 47.03
+      "price": 47
     },
     {
       "id": "sv10.5b-152",
@@ -4585,21 +4585,21 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 9.51
+      "price": 9.53
     },
     {
       "id": "sv10.5b-155",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 11.84
+      "price": 11.98
     },
     {
       "id": "sv10.5b-156",
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "B",
-      "price": 1.5
+      "price": 1.49
     },
     {
       "id": "sv10.5b-157",
@@ -4613,14 +4613,14 @@
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "A",
-      "price": 5.23
+      "price": 5.26
     },
     {
       "id": "sv10.5b-159",
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "B",
-      "price": 1.8
+      "price": 1.75
     },
     {
       "id": "sv10.5b-160",
@@ -4634,7 +4634,7 @@
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "B",
-      "price": 2.25
+      "price": 2.27
     },
     {
       "id": "sv10.5b-162",
@@ -4648,14 +4648,14 @@
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "B",
-      "price": 5.14
+      "price": 5.1
     },
     {
       "id": "sv10.5b-164",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 55.63
+      "price": 55.98
     },
     {
       "id": "sv10.5b-165",
@@ -4669,14 +4669,14 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "A",
-      "price": 306.35
+      "price": 310.7
     },
     {
       "id": "sv10.5b-167",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 45.19
+      "price": 44.99
     },
     {
       "id": "sv10.5b-168",
@@ -4690,63 +4690,63 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 51.99
+      "price": 51.74
     },
     {
       "id": "sv10.5b-170",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 79.99
+      "price": 80
     },
     {
       "id": "sv10.5w-087",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 21.77
+      "price": 21.99
     },
     {
       "id": "sv10.5w-088",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 13.45
+      "price": 13.68
     },
     {
       "id": "sv10.5w-089",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 43.74
+      "price": 43.75
     },
     {
       "id": "sv10.5w-090",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 10.75
+      "price": 10.59
     },
     {
       "id": "sv10.5w-091",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 26.22
+      "price": 25.9
     },
     {
       "id": "sv10.5w-092",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 42.78
+      "price": 42.77
     },
     {
       "id": "sv10.5w-093",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 9.58
+      "price": 9.27
     },
     {
       "id": "sv10.5w-094",
@@ -4760,21 +4760,21 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 33.44
+      "price": 33.58
     },
     {
       "id": "sv10.5w-096",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "A",
-      "price": 42.57
+      "price": 43
     },
     {
       "id": "sv10.5w-097",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 14.73
+      "price": 14.64
     },
     {
       "id": "sv10.5w-098",
@@ -4809,21 +4809,21 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 19.44
+      "price": 19.58
     },
     {
       "id": "sv10.5w-103",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 76.23
+      "price": 76.17
     },
     {
       "id": "sv10.5w-104",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 9.05
+      "price": 9.03
     },
     {
       "id": "sv10.5w-105",
@@ -4837,42 +4837,42 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 25.27
+      "price": 25.49
     },
     {
       "id": "sv10.5w-107",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 57.9
+      "price": 57.86
     },
     {
       "id": "sv10.5w-108",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 10.1
+      "price": 10.08
     },
     {
       "id": "sv10.5w-109",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 37.23
+      "price": 36.95
     },
     {
       "id": "sv10.5w-110",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 16.5
+      "price": 16.74
     },
     {
       "id": "sv10.5w-111",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 19.69
+      "price": 19.68
     },
     {
       "id": "sv10.5w-112",
@@ -4886,14 +4886,14 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 45.26
+      "price": 45.39
     },
     {
       "id": "sv10.5w-114",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 12.39
+      "price": 12.41
     },
     {
       "id": "sv10.5w-115",
@@ -4914,63 +4914,63 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 22.45
+      "price": 22.4
     },
     {
       "id": "sv10.5w-118",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 7.47
+      "price": 7.5
     },
     {
       "id": "sv10.5w-119",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 17.07
+      "price": 16.56
     },
     {
       "id": "sv10.5w-120",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 17.55
+      "price": 17.61
     },
     {
       "id": "sv10.5w-121",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 13.9
+      "price": 13.75
     },
     {
       "id": "sv10.5w-122",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 12.81
+      "price": 12.66
     },
     {
       "id": "sv10.5w-123",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 30.96
+      "price": 30.99
     },
     {
       "id": "sv10.5w-124",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 28.75
+      "price": 29.82
     },
     {
       "id": "sv10.5w-125",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 21.88
+      "price": 22
     },
     {
       "id": "sv10.5w-126",
@@ -4984,7 +4984,7 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 13.51
+      "price": 13.6
     },
     {
       "id": "sv10.5w-128",
@@ -4998,42 +4998,42 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 21.05
+      "price": 21.3
     },
     {
       "id": "sv10.5w-130",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 16.1
+      "price": 15.95
     },
     {
       "id": "sv10.5w-131",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 12.55
+      "price": 12.4
     },
     {
       "id": "sv10.5w-132",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 15.5
+      "price": 15.33
     },
     {
       "id": "sv10.5w-133",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 15.97
+      "price": 15.92
     },
     {
       "id": "sv10.5w-134",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 11
+      "price": 10.99
     },
     {
       "id": "sv10.5w-135",
@@ -5054,14 +5054,14 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 54.99
+      "price": 54.83
     },
     {
       "id": "sv10.5w-138",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 24.71
+      "price": 24.9
     },
     {
       "id": "sv10.5w-139",
@@ -5075,42 +5075,42 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 19.95
+      "price": 19.94
     },
     {
       "id": "sv10.5w-141",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 23.95
+      "price": 23.91
     },
     {
       "id": "sv10.5w-142",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "A",
-      "price": 51.26
+      "price": 51.97
     },
     {
       "id": "sv10.5w-143",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "A",
-      "price": 82.99
+      "price": 82.86
     },
     {
       "id": "sv10.5w-144",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 11.34
+      "price": 11.49
     },
     {
       "id": "sv10.5w-145",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 11.88
+      "price": 11.99
     },
     {
       "id": "sv10.5w-146",
@@ -5138,49 +5138,49 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 21
+      "price": 21.43
     },
     {
       "id": "sv10.5w-150",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 13.99
+      "price": 13.97
     },
     {
       "id": "sv10.5w-151",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 29.17
+      "price": 29.15
     },
     {
       "id": "sv10.5w-152",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 14.98
+      "price": 15
     },
     {
       "id": "sv10.5w-153",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 11.54
+      "price": 11.53
     },
     {
       "id": "sv10.5w-154",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 40.77
+      "price": 40.03
     },
     {
       "id": "sv10.5w-155",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 19.99
+      "price": 20
     },
     {
       "id": "sv10.5w-156",
@@ -5194,21 +5194,21 @@
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "B",
-      "price": 1.3
+      "price": 1.29
     },
     {
       "id": "sv10.5w-158",
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "A",
-      "price": 3.68
+      "price": 3.72
     },
     {
       "id": "sv10.5w-159",
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "B",
-      "price": 1.59
+      "price": 1.6
     },
     {
       "id": "sv10.5w-160",
@@ -5222,7 +5222,7 @@
       "set": "Black Bolt / White Flare",
       "tier": "ultra",
       "char": "B",
-      "price": 1.49
+      "price": 1.5
     },
     {
       "id": "sv10.5w-162",
@@ -5250,7 +5250,7 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 35.57
+      "price": 34.62
     },
     {
       "id": "sv10.5w-166",
@@ -5264,147 +5264,147 @@
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 81.74
+      "price": 81.63
     },
     {
       "id": "sv10.5w-168",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 32.52
+      "price": 32.99
     },
     {
       "id": "sv10.5w-169",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 93.05
+      "price": 93.28
     },
     {
       "id": "sv10.5w-170",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 20.6
+      "price": 20.72
     },
     {
       "id": "sv10.5w-171",
       "set": "Black Bolt / White Flare",
       "tier": "chase",
       "char": "B",
-      "price": 59.97
+      "price": 59.84
     },
     {
       "id": "me01-133",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "A",
-      "price": 23.59
+      "price": 23.79
     },
     {
       "id": "me01-134",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "A",
-      "price": 22.82
+      "price": 22.75
     },
     {
       "id": "me01-135",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 5.81
+      "price": 5.76
     },
     {
       "id": "me01-136",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 7.94
+      "price": 8
     },
     {
       "id": "me01-137",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 5.22
+      "price": 5.36
     },
     {
       "id": "me01-138",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "A",
-      "price": 21.71
+      "price": 21.64
     },
     {
       "id": "me01-139",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 5.17
+      "price": 5.15
     },
     {
       "id": "me01-140",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 2.64
+      "price": 2.67
     },
     {
       "id": "me01-141",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 2.27
+      "price": 2.31
     },
     {
       "id": "me01-142",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 3.04
+      "price": 3.11
     },
     {
       "id": "me01-143",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 4
+      "price": 3.99
     },
     {
       "id": "me01-144",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 3.53
+      "price": 3.71
     },
     {
       "id": "me01-145",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 3.1
+      "price": 3.2
     },
     {
       "id": "me01-146",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 17.06
+      "price": 17.05
     },
     {
       "id": "me01-147",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 1.68
+      "price": 1.69
     },
     {
       "id": "me01-148",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 3.2
+      "price": 3.16
     },
     {
       "id": "me01-149",
@@ -5418,14 +5418,14 @@
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 8.42
+      "price": 8.5
     },
     {
       "id": "me01-151",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 4.7
+      "price": 4.8
     },
     {
       "id": "me01-152",
@@ -5439,7 +5439,7 @@
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 3.74
+      "price": 3.72
     },
     {
       "id": "me01-154",
@@ -5453,35 +5453,35 @@
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "A",
-      "price": 13.5
+      "price": 13.47
     },
     {
       "id": "me01-156",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 2.01
+      "price": 2.22
     },
     {
       "id": "me01-157",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 2.27
+      "price": 2.25
     },
     {
       "id": "me01-158",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 2.75
+      "price": 2.74
     },
     {
       "id": "me01-159",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "A",
-      "price": 5.75
+      "price": 5.7
     },
     {
       "id": "me01-160",
@@ -5495,7 +5495,7 @@
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "A",
-      "price": 5.49
+      "price": 5.5
     },
     {
       "id": "me01-162",
@@ -5509,21 +5509,21 @@
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "A",
-      "price": 5.07
+      "price": 5.12
     },
     {
       "id": "me01-164",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 5.55
+      "price": 5.61
     },
     {
       "id": "me01-165",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 2.36
+      "price": 2.39
     },
     {
       "id": "me01-166",
@@ -5537,21 +5537,21 @@
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 6.11
+      "price": 6.17
     },
     {
       "id": "me01-168",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 2.6
+      "price": 2.59
     },
     {
       "id": "me01-169",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 23.69
+      "price": 23.8
     },
     {
       "id": "me01-170",
@@ -5565,7 +5565,7 @@
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 1.39
+      "price": 1.37
     },
     {
       "id": "me01-172",
@@ -5593,28 +5593,28 @@
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 4.14
+      "price": 4.17
     },
     {
       "id": "me01-176",
       "set": "Mega Evolution",
       "tier": "ultra",
       "char": "B",
-      "price": 3.49
+      "price": 3.42
     },
     {
       "id": "me01-177",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "A",
-      "price": 170
+      "price": 170.52
     },
     {
       "id": "me01-178",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "A",
-      "price": 205.95
+      "price": 205.79
     },
     {
       "id": "me01-179",
@@ -5635,42 +5635,42 @@
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "A",
-      "price": 94.8
+      "price": 94.04
     },
     {
       "id": "me01-182",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 66.16
+      "price": 66.72
     },
     {
       "id": "me01-183",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 36.4
+      "price": 36.51
     },
     {
       "id": "me01-184",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 73.43
+      "price": 73.56
     },
     {
       "id": "me01-185",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 19.39
+      "price": 19.28
     },
     {
       "id": "me01-186",
       "set": "Mega Evolution",
       "tier": "chase",
       "char": "B",
-      "price": 22.48
+      "price": 22.46
     },
     {
       "id": "me01-187",
@@ -5691,7 +5691,7 @@
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 2.8
+      "price": 2.88
     },
     {
       "id": "me02-096",
@@ -5712,7 +5712,7 @@
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "A",
-      "price": 16.96
+      "price": 16.99
     },
     {
       "id": "me02-099",
@@ -5726,35 +5726,35 @@
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "A",
-      "price": 4.75
+      "price": 4.78
     },
     {
       "id": "me02-101",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 6.01
+      "price": 6
     },
     {
       "id": "me02-102",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 4.77
+      "price": 4.89
     },
     {
       "id": "me02-103",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 2.42
+      "price": 2.4
     },
     {
       "id": "me02-104",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 2.8
+      "price": 2.83
     },
     {
       "id": "me02-105",
@@ -5768,28 +5768,28 @@
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 24.17
+      "price": 24.38
     },
     {
       "id": "me02-107",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 2.74
+      "price": 2.75
     },
     {
       "id": "me02-108",
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 2.27
+      "price": 2.46
     },
     {
       "id": "me02-109",
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "S",
-      "price": 34.39
+      "price": 33.95
     },
     {
       "id": "me02-110",
@@ -5810,21 +5810,21 @@
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.92
+      "price": 1.97
     },
     {
       "id": "me02-113",
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 2.58
+      "price": 2.56
     },
     {
       "id": "me02-114",
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 2
+      "price": 1.99
     },
     {
       "id": "me02-115",
@@ -5838,21 +5838,21 @@
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.84
+      "price": 1.82
     },
     {
       "id": "me02-117",
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 0.88
+      "price": 0.85
     },
     {
       "id": "me02-118",
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 6.6
+      "price": 6.65
     },
     {
       "id": "me02-119",
@@ -5866,7 +5866,7 @@
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.19
+      "price": 1.22
     },
     {
       "id": "me02-121",
@@ -5887,7 +5887,7 @@
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "B",
-      "price": 1.46
+      "price": 1.45
     },
     {
       "id": "me02-124",
@@ -5901,56 +5901,56 @@
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "S",
-      "price": 829.12
+      "price": 829.07
     },
     {
       "id": "me02-126",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 20.87
+      "price": 20.76
     },
     {
       "id": "me02-127",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 23.85
+      "price": 23.9
     },
     {
       "id": "me02-128",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 19.62
+      "price": 19.69
     },
     {
       "id": "me02-129",
       "set": "Phantasmal Flames",
       "tier": "chase",
       "char": "B",
-      "price": 27.26
+      "price": 27.12
     },
     {
       "id": "me02-130",
       "set": "Phantasmal Flames",
       "tier": "ultra",
       "char": "S",
-      "price": 342.13
+      "price": 340.85
     },
     {
       "id": "me02.5-218",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 23.67
+      "price": 23.49
     },
     {
       "id": "me02.5-219",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 8.28
+      "price": 8.32
     },
     {
       "id": "me02.5-220",
@@ -5964,7 +5964,7 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 9.3
+      "price": 9.27
     },
     {
       "id": "me02.5-222",
@@ -5978,14 +5978,14 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 6.25
+      "price": 6.26
     },
     {
       "id": "me02.5-224",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 3.65
+      "price": 3.64
     },
     {
       "id": "me02.5-225",
@@ -5999,28 +5999,28 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "A",
-      "price": 81.72
+      "price": 80.55
     },
     {
       "id": "me02.5-227",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 6.27
+      "price": 6.23
     },
     {
       "id": "me02.5-228",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 7.3
+      "price": 7.26
     },
     {
       "id": "me02.5-229",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 2.99
+      "price": 3
     },
     {
       "id": "me02.5-230",
@@ -6034,28 +6034,28 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 10.91
+      "price": 10.86
     },
     {
       "id": "me02.5-232",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 16
+      "price": 15.99
     },
     {
       "id": "me02.5-233",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 6.52
+      "price": 6.48
     },
     {
       "id": "me02.5-234",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 12.9
+      "price": 12.97
     },
     {
       "id": "me02.5-235",
@@ -6069,7 +6069,7 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 9.42
+      "price": 9.38
     },
     {
       "id": "me02.5-237",
@@ -6083,28 +6083,28 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "A",
-      "price": 26.88
+      "price": 26.75
     },
     {
       "id": "me02.5-239",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 10.63
+      "price": 10.5
     },
     {
       "id": "me02.5-240",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 7.77
+      "price": 7.52
     },
     {
       "id": "me02.5-241",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 6.61
+      "price": 6.54
     },
     {
       "id": "me02.5-242",
@@ -6132,42 +6132,42 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 4.24
+      "price": 4.2
     },
     {
       "id": "me02.5-246",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 6.88
+      "price": 6.86
     },
     {
       "id": "me02.5-247",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 8.99
+      "price": 8.87
     },
     {
       "id": "me02.5-248",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 7.04
+      "price": 7.02
     },
     {
       "id": "me02.5-249",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 4.99
+      "price": 4.97
     },
     {
       "id": "me02.5-250",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 4.16
+      "price": 4.22
     },
     {
       "id": "me02.5-251",
@@ -6181,7 +6181,7 @@
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 0.9
+      "price": 0.89
     },
     {
       "id": "me02.5-253",
@@ -6216,7 +6216,7 @@
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 3.83
+      "price": 3.84
     },
     {
       "id": "me02.5-258",
@@ -6237,7 +6237,7 @@
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 0.86
+      "price": 0.85
     },
     {
       "id": "me02.5-261",
@@ -6251,28 +6251,28 @@
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 2.71
+      "price": 2.72
     },
     {
       "id": "me02.5-263",
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 1.65
+      "price": 1.68
     },
     {
       "id": "me02.5-264",
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 7.9
+      "price": 7.76
     },
     {
       "id": "me02.5-265",
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 10.54
+      "price": 10.56
     },
     {
       "id": "me02.5-266",
@@ -6286,14 +6286,14 @@
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 8.86
+      "price": 8.99
     },
     {
       "id": "me02.5-268",
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 6.95
+      "price": 7
     },
     {
       "id": "me02.5-269",
@@ -6307,35 +6307,35 @@
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "B",
-      "price": 5.65
+      "price": 5.59
     },
     {
       "id": "me02.5-271",
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "S",
-      "price": 48.3
+      "price": 48
     },
     {
       "id": "me02.5-272",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 94.94
+      "price": 94.81
     },
     {
       "id": "me02.5-273",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 62.28
+      "price": 62.19
     },
     {
       "id": "me02.5-274",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 170.5
+      "price": 170
     },
     {
       "id": "me02.5-275",
@@ -6349,35 +6349,35 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "S",
-      "price": 1161
+      "price": 1160.2
     },
     {
       "id": "me02.5-277",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "S",
-      "price": 393.13
+      "price": 391
     },
     {
       "id": "me02.5-278",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 45.24
+      "price": 45.36
     },
     {
       "id": "me02.5-279",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 72.49
+      "price": 71.98
     },
     {
       "id": "me02.5-280",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 187.3
+      "price": 188.6
     },
     {
       "id": "me02.5-281",
@@ -6391,14 +6391,14 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 68.94
+      "price": 69.02
     },
     {
       "id": "me02.5-283",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 67.3
+      "price": 66.71
     },
     {
       "id": "me02.5-284",
@@ -6412,77 +6412,77 @@
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 69.99
+      "price": 70
     },
     {
       "id": "me02.5-286",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "A",
-      "price": 178.89
+      "price": 177.91
     },
     {
       "id": "me02.5-287",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 77.63
+      "price": 76.83
     },
     {
       "id": "me02.5-288",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 67
+      "price": 67.01
     },
     {
       "id": "me02.5-289",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "A",
-      "price": 98.33
+      "price": 98.99
     },
     {
       "id": "me02.5-290",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "S",
-      "price": 749.09
+      "price": 748.4
     },
     {
       "id": "me02.5-291",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 44
+      "price": 43.51
     },
     {
       "id": "me02.5-292",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 38.99
+      "price": 39
     },
     {
       "id": "me02.5-293",
       "set": "Ascended Heroes",
       "tier": "chase",
       "char": "B",
-      "price": 25.52
+      "price": 26
     },
     {
       "id": "me02.5-294",
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "S",
-      "price": 492.22
+      "price": 490.13
     },
     {
       "id": "me02.5-295",
       "set": "Ascended Heroes",
       "tier": "ultra",
       "char": "S",
-      "price": 296.39
+      "price": 296.38
     },
     {
       "id": "me04-087",
@@ -6496,21 +6496,21 @@
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "A",
-      "price": 12.19
+      "price": 12
     },
     {
       "id": "me04-089",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 8.77
+      "price": 8.73
     },
     {
       "id": "me04-090",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 9.19
+      "price": 9
     },
     {
       "id": "me04-091",
@@ -6524,49 +6524,49 @@
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 2.93
+      "price": 2.89
     },
     {
       "id": "me04-093",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 3.8
+      "price": 3.75
     },
     {
       "id": "me04-094",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 3.52
+      "price": 3.5
     },
     {
       "id": "me04-095",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 2.9
+      "price": 2.89
     },
     {
       "id": "me04-096",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 4.5
+      "price": 4.6
     },
     {
       "id": "me04-097",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 2.05
+      "price": 2.1
     },
     {
       "id": "me04-098",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 4.1
+      "price": 4.16
     },
     {
       "id": "me04-099",
@@ -6580,7 +6580,7 @@
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "S",
-      "price": 15
+      "price": 14.95
     },
     {
       "id": "me04-101",
@@ -6601,161 +6601,161 @@
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 2.1
+      "price": 2.12
     },
     {
       "id": "me04-104",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 3.99
+      "price": 3.84
     },
     {
       "id": "me04-105",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 5.76
+      "price": 5.77
     },
     {
       "id": "me04-106",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 2.5
+      "price": 2.49
     },
     {
       "id": "me04-107",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 3.55
+      "price": 3.5
     },
     {
       "id": "me04-108",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 2.54
+      "price": 2.52
     },
     {
       "id": "me04-109",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 4.39
+      "price": 4.37
     },
     {
       "id": "me04-110",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 2
+      "price": 1.99
     },
     {
       "id": "me04-111",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 3.45
+      "price": 3.27
     },
     {
       "id": "me04-112",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 2.79
+      "price": 2.81
     },
     {
       "id": "me04-113",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 4.99
+      "price": 4.98
     },
     {
       "id": "me04-114",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 5.4
+      "price": 5.43
     },
     {
       "id": "me04-115",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "B",
-      "price": 1.82
+      "price": 1.81
     },
     {
       "id": "me04-116",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "S",
-      "price": 245.49
+      "price": 244.7
     },
     {
       "id": "me04-117",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 38.79
+      "price": 39.06
     },
     {
       "id": "me04-118",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 47.66
+      "price": 47.67
     },
     {
       "id": "me04-119",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 71.98
+      "price": 71.2
     },
     {
       "id": "me04-120",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 32.14
+      "price": 32.23
     },
     {
       "id": "me04-121",
       "set": "Chaos Rising",
       "tier": "chase",
       "char": "B",
-      "price": 29.2
+      "price": 28.98
     },
     {
       "id": "me04-122",
       "set": "Chaos Rising",
       "tier": "ultra",
       "char": "S",
-      "price": 205.53
+      "price": 204.39
     },
     {
       "id": "me05-085",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 4.44
+      "price": 4.4
     },
     {
       "id": "me05-086",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 6.16
+      "price": 6.08
     },
     {
       "id": "me05-087",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 12.3
+      "price": 12.17
     },
     {
       "id": "me05-088",
@@ -6769,21 +6769,21 @@
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 3.51
+      "price": 3.55
     },
     {
       "id": "me05-090",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 17.5
+      "price": 18.79
     },
     {
       "id": "me05-091",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 6.99
+      "price": 6.78
     },
     {
       "id": "me05-092",
@@ -6804,7 +6804,7 @@
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 5.72
+      "price": 5.75
     },
     {
       "id": "me05-095",
@@ -6818,35 +6818,35 @@
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 3
+      "price": 3.03
     },
     {
       "id": "me05-097",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 5
+      "price": 5.22
     },
     {
       "id": "me05-098",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 8.86
+      "price": 8.99
     },
     {
       "id": "me05-099",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 10.25
+      "price": 10.31
     },
     {
       "id": "me05-100",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 3.82
+      "price": 3.83
     },
     {
       "id": "me05-101",
@@ -6860,7 +6860,7 @@
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 6
+      "price": 6.07
     },
     {
       "id": "me05-103",
@@ -6874,35 +6874,35 @@
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 5.17
+      "price": 5.1
     },
     {
       "id": "me05-105",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 5.11
+      "price": 5.15
     },
     {
       "id": "me05-106",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 3.37
+      "price": 3.35
     },
     {
       "id": "me05-107",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 2.8
+      "price": 2.77
     },
     {
       "id": "me05-108",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 4.44
+      "price": 4.35
     },
     {
       "id": "me05-109",
@@ -6916,14 +6916,14 @@
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 1.26
+      "price": 1.28
     },
     {
       "id": "me05-111",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 27.02
+      "price": 26.99
     },
     {
       "id": "me05-112",
@@ -6937,56 +6937,56 @@
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "B",
-      "price": 1.67
+      "price": 1.65
     },
     {
       "id": "me05-114",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 71.66
+      "price": 72
     },
     {
       "id": "me05-115",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 55.23
+      "price": 55.06
     },
     {
       "id": "me05-116",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "A",
-      "price": 281.25
+      "price": 280.99
     },
     {
       "id": "me05-117",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 114.99
+      "price": 111.75
     },
     {
       "id": "me05-118",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 35.21
+      "price": 35
     },
     {
       "id": "me05-119",
       "set": "Pitch Black",
       "tier": "chase",
       "char": "B",
-      "price": 44
+      "price": 44.09
     },
     {
       "id": "me05-120",
       "set": "Pitch Black",
       "tier": "ultra",
       "char": "A",
-      "price": 202.45
+      "price": 200
     }
   ]
 }
