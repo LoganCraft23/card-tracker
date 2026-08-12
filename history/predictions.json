@@ -114,6 +114,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 22.15
+    },
+    {
+      "d": "2026-08-12",
+      "p": 39.99,
+      "lo": 42.18,
+      "hi": 59.4,
+      "s": "BUY",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 22.15
     }
   ],
   "Mew ex Shiny | Paldean Fates": [
@@ -226,6 +237,17 @@
       "p": 40,
       "lo": 39.62,
       "hi": 69.69,
+      "s": "BUY",
+      "c": 0.53,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 22.15
+    },
+    {
+      "d": "2026-08-12",
+      "p": 40,
+      "lo": 40.15,
+      "hi": 70.62,
       "s": "BUY",
       "c": 0.53,
       "src": "cardmarket",
@@ -348,6 +370,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 17.67
+    },
+    {
+      "d": "2026-08-12",
+      "p": 30.86,
+      "lo": 32.94,
+      "hi": 45.45,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 17.09
     }
   ],
   "Charmeleon Shiny | Paldean Fates": [
@@ -465,6 +498,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 11.07
+    },
+    {
+      "d": "2026-08-12",
+      "p": 19.95,
+      "lo": 19.37,
+      "hi": 31.3,
+      "s": "BUY",
+      "c": 0.65,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 11.05
     }
   ],
   "Alakazam ex Shiny | Paldean Fates": [
@@ -644,6 +688,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.41
+    },
+    {
+      "d": "2026-08-12",
+      "p": 11.67,
+      "lo": 11.92,
+      "hi": 16.79,
+      "s": "BUY",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.46
     }
   ],
   "Cornerstone Mask Ogerpon ex SIR | Twilight Masquerade": [
@@ -761,6 +816,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.9
+    },
+    {
+      "d": "2026-08-12",
+      "p": 16,
+      "lo": 17.32,
+      "hi": 22.04,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.86
     }
   ],
   "Ceruledge Shiny | Paldean Fates": [
@@ -816,6 +882,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.64
+    },
+    {
+      "d": "2026-08-12",
+      "p": 12,
+      "lo": 12.4,
+      "hi": 17.12,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.65
     }
   ],
   "Iron Valiant ex SIR | Paradox Rift": [
@@ -911,6 +988,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 13.25
+    },
+    {
+      "d": "2026-08-12",
+      "p": 23.75,
+      "lo": 25.71,
+      "hi": 32.72,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 13.15
     }
   ],
   "Gardevoir ex Shiny | Paldean Fates": [
@@ -1017,6 +1105,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 5.26
+    },
+    {
+      "d": "2026-08-12",
+      "p": 9.47,
+      "lo": 9.21,
+      "hi": 14.08,
+      "s": "BUY",
+      "c": 0.73,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 5.25
     }
   ],
   "Yveltal IR | Paradox Rift": [
@@ -1094,6 +1193,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 18.23
+    },
+    {
+      "d": "2026-08-12",
+      "p": 32.99,
+      "lo": 34.1,
+      "hi": 47.05,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 18.27
     }
   ],
   "Slowpoke Shiny | Paldean Fates": [
@@ -1211,6 +1321,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 12.44
+    },
+    {
+      "d": "2026-08-12",
+      "p": 22.2,
+      "lo": 22.83,
+      "hi": 35.64,
+      "s": "BUY",
+      "c": 0.7,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 12.3
     }
   ],
   "Ninetales IR | Obsidian Flames": [
@@ -1328,6 +1449,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 24.2
+    },
+    {
+      "d": "2026-08-12",
+      "p": 45.69,
+      "lo": 54.57,
+      "hi": 69.45,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 25.31
     }
   ],
   "Hisuian Growlithe IR | Twilight Masquerade": [
@@ -1426,6 +1558,17 @@
     },
     {
       "d": "2026-08-11",
+      "p": 32.25,
+      "lo": 34.91,
+      "hi": 44.43,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 17.86
+    },
+    {
+      "d": "2026-08-12",
       "p": 32.25,
       "lo": 34.91,
       "hi": 44.43,
@@ -1551,6 +1694,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 16.6
+    },
+    {
+      "d": "2026-08-12",
+      "p": 29.71,
+      "lo": 30.71,
+      "hi": 42.38,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 16.46
     }
   ],
   "Teal Mask Ogerpon ex SIR | Twilight Masquerade": [
@@ -1668,6 +1822,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 13.5
+    },
+    {
+      "d": "2026-08-12",
+      "p": 24,
+      "lo": 25.98,
+      "hi": 33.06,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 13.29
     }
   ],
   "Hearthflame Mask Ogerpon ex SIR | Twilight Masquerade": [
@@ -1785,6 +1950,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 7.49
+    },
+    {
+      "d": "2026-08-12",
+      "p": 13.54,
+      "lo": 14.66,
+      "hi": 18.65,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 7.5
     }
   ],
   "Kirlia Shiny | Paldean Fates": [
@@ -1894,6 +2070,17 @@
     },
     {
       "d": "2026-08-11",
+      "p": 8,
+      "lo": 8.17,
+      "hi": 11.51,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 4.43
+    },
+    {
+      "d": "2026-08-12",
       "p": 8,
       "lo": 8.17,
       "hi": 11.51,
@@ -2176,6 +2363,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 25.33
+    },
+    {
+      "d": "2026-08-12",
+      "p": 43.1,
+      "lo": 51.07,
+      "hi": 70.47,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 24.96
     }
   ],
   "Litten IR | Temporal Forces": [
@@ -2278,6 +2476,17 @@
       "lo": 42.22,
       "hi": 65.9,
       "s": "HOLD",
+      "c": 0.7,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 24.33
+    },
+    {
+      "d": "2026-08-12",
+      "p": 43.92,
+      "lo": 42.19,
+      "hi": 65.85,
+      "s": "BUY",
       "c": 0.7,
       "src": "cardmarket",
       "band": "chase",
@@ -2399,6 +2608,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 9.88
+    },
+    {
+      "d": "2026-08-12",
+      "p": 17.79,
+      "lo": 19.26,
+      "hi": 24.51,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 9.85
     }
   ],
   "Riolu Shiny | Paldean Fates": [
@@ -2507,6 +2727,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.66
+    },
+    {
+      "d": "2026-08-12",
+      "p": 15.3,
+      "lo": 15.82,
+      "hi": 21.82,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.47
     }
   ],
   "Entei Shiny | Paldean Fates": [
@@ -2624,6 +2855,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.85
+    },
+    {
+      "d": "2026-08-12",
+      "p": 15.91,
+      "lo": 16.25,
+      "hi": 22.89,
+      "s": "BUY",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.81
     }
   ],
   "Jumpluff Shiny | Paldean Fates": [
@@ -2709,6 +2951,17 @@
       "hi": 12.19,
       "s": "HOLD",
       "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 4.88
+    },
+    {
+      "d": "2026-08-12",
+      "p": 8.42,
+      "lo": 9.13,
+      "hi": 12.86,
+      "s": "HOLD",
+      "c": 0.85,
       "src": "cardmarket",
       "band": "chase",
       "f": 4.88
@@ -2829,6 +3082,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 3.99
+    },
+    {
+      "d": "2026-08-12",
+      "p": 7.18,
+      "lo": 7.52,
+      "hi": 9.57,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 3.98
     }
   ],
   "Torkoal IR | Twilight Masquerade": [
@@ -3107,6 +3371,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 5.54
+    },
+    {
+      "d": "2026-08-12",
+      "p": 10.36,
+      "lo": 10.36,
+      "hi": 14.3,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 5.74
     }
   ],
   "Crustle IR | Paradox Rift": [
@@ -3182,6 +3457,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 5.17
+    },
+    {
+      "d": "2026-08-12",
+      "p": 9.15,
+      "lo": 9.15,
+      "hi": 12.63,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 5.07
     }
   ],
   "Vileplume Shiny | Paldean Fates": [
@@ -3266,6 +3552,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 4.42
+    },
+    {
+      "d": "2026-08-12",
+      "p": 7.95,
+      "lo": 8.34,
+      "hi": 11.74,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 4.4
     }
   ],
   "Pidgeotto IR | Obsidian Flames": [
@@ -3332,6 +3629,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.9
+    },
+    {
+      "d": "2026-08-12",
+      "p": 12.43,
+      "lo": 13.11,
+      "hi": 18.46,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.88
     }
   ],
   "Scizor IR | Obsidian Flames": [
@@ -3409,6 +3717,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 9.96
+    },
+    {
+      "d": "2026-08-12",
+      "p": 17.66,
+      "lo": 20.82,
+      "hi": 26.5,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 9.78
     }
   ],
   "Ferrothorn IR | Paradox Rift": [
@@ -3537,6 +3856,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 4.98
+    },
+    {
+      "d": "2026-08-12",
+      "p": 9,
+      "lo": 9.42,
+      "hi": 12,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 4.98
     }
   ],
   "Wigglytuff Shiny | Paldean Fates": [
@@ -3632,6 +3962,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.01
+    },
+    {
+      "d": "2026-08-12",
+      "p": 11.13,
+      "lo": 11.66,
+      "hi": 14.83,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.16
     }
   ],
   "Iron Jugulis IR | Paradox Rift": [
@@ -3855,6 +4196,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 11.07
+    },
+    {
+      "d": "2026-08-12",
+      "p": 20,
+      "lo": 21.34,
+      "hi": 32.62,
+      "s": "HOLD",
+      "c": 0.73,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 11.08
     }
   ],
   "Gimmighoul IR | Paradox Rift": [
@@ -4027,6 +4379,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 7.1
+    },
+    {
+      "d": "2026-08-12",
+      "p": 12.58,
+      "lo": 12.58,
+      "hi": 17.36,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.97
     }
   ],
   "Pidgeot ex SIR | Obsidian Flames": [
@@ -4144,6 +4507,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 5.1
+    },
+    {
+      "d": "2026-08-12",
+      "p": 9.2,
+      "lo": 9.63,
+      "hi": 12.26,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 5.1
     }
   ],
   "Heliolisk IR | Twilight Masquerade": [
@@ -4199,6 +4573,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 3.02
+    },
+    {
+      "d": "2026-08-12",
+      "p": 5.43,
+      "lo": 5.58,
+      "hi": 9.02,
+      "s": "HOLD",
+      "c": 0.65,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 3.01
     }
   ],
   "Reuniclus IR | Temporal Forces": [
@@ -4466,6 +4851,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 9.41
+    },
+    {
+      "d": "2026-08-12",
+      "p": 16.99,
+      "lo": 17.79,
+      "hi": 22.64,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 9.41
     }
   ],
   "Lechonk IR | Obsidian Flames": [
@@ -4605,6 +5001,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 11.07
+    },
+    {
+      "d": "2026-08-12",
+      "p": 19.12,
+      "lo": 20.02,
+      "hi": 25.48,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 11.07
     }
   ],
   "Scyther Shiny | Paldean Fates": [
@@ -4722,6 +5129,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.36
+    },
+    {
+      "d": "2026-08-12",
+      "p": 11.41,
+      "lo": 11.95,
+      "hi": 15.21,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.32
     }
   ],
   "Milcery IR | Stellar Crown": [
@@ -4733,6 +5151,17 @@
       "s": "HOLD",
       "c": 0.7,
       "src": "cardmarket"
+    },
+    {
+      "d": "2026-08-12",
+      "p": 20.33,
+      "lo": 20.24,
+      "hi": 31.6,
+      "s": "HOLD",
+      "c": 0.7,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 11.78
     }
   ],
   "Wattrel IR | Twilight Masquerade": [
@@ -4850,6 +5279,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 18.45
+    },
+    {
+      "d": "2026-08-12",
+      "p": 33.17,
+      "lo": 33.17,
+      "hi": 45.77,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 18.37
     }
   ],
   "Tinkatink Shiny | Paldean Fates": [
@@ -4991,6 +5431,17 @@
       "s": "HOLD",
       "c": 0.85,
       "src": "cardmarket"
+    },
+    {
+      "d": "2026-08-12",
+      "p": 14.02,
+      "lo": 14.7,
+      "hi": 20.7,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 7.77
     }
   ],
   "Eiscue ex SIR | Obsidian Flames": [
@@ -5119,6 +5570,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 24.91
+    },
+    {
+      "d": "2026-08-12",
+      "p": 44.99,
+      "lo": 44.99,
+      "hi": 62.08,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 24.92
     }
   ],
   "Vanillish IR | Paradox Rift": [
@@ -5205,6 +5667,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 10.53
+    },
+    {
+      "d": "2026-08-12",
+      "p": 18.75,
+      "lo": 19.64,
+      "hi": 24.99,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 10.38
     }
   ],
   "Cleffa IR | Obsidian Flames": [
@@ -5249,6 +5722,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 23.26
+    },
+    {
+      "d": "2026-08-12",
+      "p": 41.35,
+      "lo": 46.51,
+      "hi": 59.19,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 22.9
     }
   ],
   "Okidogi ex SIR | Shrouded Fable": [
@@ -5344,6 +5828,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 13.28
+    },
+    {
+      "d": "2026-08-12",
+      "p": 23.99,
+      "lo": 25.12,
+      "hi": 31.97,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 13.29
     }
   ],
   "Salvatore SIR | Temporal Forces": [
@@ -5461,6 +5956,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 10.51
+    },
+    {
+      "d": "2026-08-12",
+      "p": 18.99,
+      "lo": 19.89,
+      "hi": 25.31,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 10.52
     }
   ],
   "Deerling IR | Temporal Forces": [
@@ -5578,6 +6084,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 26.08
+    },
+    {
+      "d": "2026-08-12",
+      "p": 47.86,
+      "lo": 57.7,
+      "hi": 73.44,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 26.51
     }
   ],
   "Froslass IR | Twilight Masquerade": [
@@ -5712,6 +6229,17 @@
       "p": 18.33,
       "lo": 19.09,
       "hi": 26.88,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 10.15
+    },
+    {
+      "d": "2026-08-12",
+      "p": 18.32,
+      "lo": 18.89,
+      "hi": 26.6,
       "s": "HOLD",
       "c": 0.85,
       "src": "cardmarket",
@@ -5929,6 +6457,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 24.47
+    },
+    {
+      "d": "2026-08-12",
+      "p": 43.99,
+      "lo": 43.99,
+      "hi": 60.7,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 24.36
     }
   ],
   "Pawmi Shiny | Paldean Fates": [
@@ -6046,6 +6585,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 16.2
+    },
+    {
+      "d": "2026-08-12",
+      "p": 29.22,
+      "lo": 29.22,
+      "hi": 40.32,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 16.18
     }
   ],
   "Clive SIR | Paldean Fates": [
@@ -6163,6 +6713,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 16.39
+    },
+    {
+      "d": "2026-08-12",
+      "p": 29.65,
+      "lo": 31.05,
+      "hi": 39.52,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 16.42
     }
   ],
   "Golisopod ex SIR | Paradox Rift": [
@@ -6280,6 +6841,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 15.91
+    },
+    {
+      "d": "2026-08-12",
+      "p": 28.66,
+      "lo": 30.01,
+      "hi": 38.2,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 15.87
     }
   ],
   "Gholdengo ex SIR | Paradox Rift": [
@@ -6386,6 +6958,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 20.94
+    },
+    {
+      "d": "2026-08-12",
+      "p": 37.83,
+      "lo": 37.83,
+      "hi": 52.2,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 20.95
     }
   ],
   "Mantyke IR | Paradox Rift": [
@@ -6397,6 +6980,17 @@
       "s": "HOLD",
       "c": 0.7,
       "src": "cardmarket"
+    },
+    {
+      "d": "2026-08-12",
+      "p": 39,
+      "lo": 39,
+      "hi": 53.82,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 21.6
     }
   ],
   "Pecharunt ex SIR | Shrouded Fable": [
@@ -6506,6 +7100,17 @@
     },
     {
       "d": "2026-08-11",
+      "p": 25.99,
+      "lo": 27.22,
+      "hi": 34.64,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 14.39
+    },
+    {
+      "d": "2026-08-12",
       "p": 25.99,
       "lo": 27.22,
       "hi": 34.64,
@@ -6631,6 +7236,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 24.89
+    },
+    {
+      "d": "2026-08-12",
+      "p": 44.77,
+      "lo": 44.77,
+      "hi": 61.78,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 24.8
     }
   ],
   "Joltik IR | Paradox Rift": [
@@ -6982,6 +7598,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 14.95
+    },
+    {
+      "d": "2026-08-12",
+      "p": 26.98,
+      "lo": 30.85,
+      "hi": 39.26,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 14.94
     }
   ],
   "Porygon-Z IR | Paradox Rift": [
@@ -7099,6 +7726,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.86
+    },
+    {
+      "d": "2026-08-12",
+      "p": 16,
+      "lo": 16,
+      "hi": 22.08,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.86
     }
   ],
   "Tulip SIR | Paradox Rift": [
@@ -7205,6 +7843,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 5.09
+    },
+    {
+      "d": "2026-08-12",
+      "p": 9.17,
+      "lo": 9.6,
+      "hi": 12.22,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 5.08
     }
   ],
   "Chatot IR | Temporal Forces": [
@@ -7322,6 +7971,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.97
+    },
+    {
+      "d": "2026-08-12",
+      "p": 12.59,
+      "lo": 13.18,
+      "hi": 16.78,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.97
     }
   ],
   "Cufant IR | Shrouded Fable": [
@@ -7417,6 +8077,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.94
+    },
+    {
+      "d": "2026-08-12",
+      "p": 16.19,
+      "lo": 16.95,
+      "hi": 21.58,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.97
     }
   ],
   "Tapu Koko ex SIR | Paradox Rift": [
@@ -7523,6 +8194,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 11.15
+    },
+    {
+      "d": "2026-08-12",
+      "p": 20.12,
+      "lo": 21.07,
+      "hi": 26.82,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 11.14
     }
   ],
   "Iron Leaves ex SIR | Temporal Forces": [
@@ -7640,6 +8322,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 20.86
+    },
+    {
+      "d": "2026-08-12",
+      "p": 37,
+      "lo": 42.12,
+      "hi": 53.61,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 20.49
     }
   ],
   "Munkidori ex SIR | Shrouded Fable": [
@@ -7757,6 +8450,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 12.16
+    },
+    {
+      "d": "2026-08-12",
+      "p": 21.59,
+      "lo": 22.61,
+      "hi": 28.78,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 11.96
     }
   ],
   "Gloom Shiny | Paldean Fates": [
@@ -7896,6 +8600,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 7.61
+    },
+    {
+      "d": "2026-08-12",
+      "p": 13.66,
+      "lo": 14.3,
+      "hi": 18.21,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 7.57
     }
   ],
   "Parasol Lady SIR | Paradox Rift": [
@@ -8013,6 +8728,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 9.57
+    },
+    {
+      "d": "2026-08-12",
+      "p": 17,
+      "lo": 17.8,
+      "hi": 22.66,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 9.42
     }
   ],
   "Kieran SIR | Twilight Masquerade": [
@@ -8130,6 +8856,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 17.67
+    },
+    {
+      "d": "2026-08-12",
+      "p": 32.42,
+      "lo": 33.95,
+      "hi": 43.21,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 17.96
     }
   ],
   "Arbok IR | Temporal Forces": [
@@ -8247,6 +8984,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 18.13
+    },
+    {
+      "d": "2026-08-12",
+      "p": 32.72,
+      "lo": 38.65,
+      "hi": 49.19,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 18.12
     }
   ],
   "Iono SIR | Paldean Fates": [
@@ -8364,6 +9112,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 16.97
+    },
+    {
+      "d": "2026-08-12",
+      "p": 30.79,
+      "lo": 32.24,
+      "hi": 41.04,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 17.05
     }
   ],
   "Bianca's Devotion SIR | Temporal Forces": [
@@ -8476,6 +9235,17 @@
       "p": 30,
       "lo": 32.31,
       "hi": 44.59,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 16.61
+    },
+    {
+      "d": "2026-08-12",
+      "p": 29.99,
+      "lo": 32.27,
+      "hi": 44.52,
       "s": "HOLD",
       "c": 0.88,
       "src": "cardmarket",
@@ -8680,6 +9450,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 7.72
+    },
+    {
+      "d": "2026-08-12",
+      "p": 13.95,
+      "lo": 13.95,
+      "hi": 19.25,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 7.73
     }
   ],
   "Raichu Shiny | Paldean Fates": [
@@ -8892,6 +9673,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 9.73
+    },
+    {
+      "d": "2026-08-12",
+      "p": 17.49,
+      "lo": 20.08,
+      "hi": 27.71,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 9.69
     }
   ],
   "Okidogi IR | Shrouded Fable": [
@@ -9115,6 +9907,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 27.72
+    },
+    {
+      "d": "2026-08-12",
+      "p": 49.99,
+      "lo": 49.99,
+      "hi": 68.98,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 27.69
     }
   ],
   "Munkidori IR | Shrouded Fable": [
@@ -9202,6 +10005,17 @@
     },
     {
       "d": "2026-08-11",
+      "p": 40,
+      "lo": 40,
+      "hi": 55.2,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 22.15
+    },
+    {
+      "d": "2026-08-12",
       "p": 40,
       "lo": 40,
       "hi": 55.2,
@@ -9318,6 +10132,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 19.38
+    },
+    {
+      "d": "2026-08-12",
+      "p": 35,
+      "lo": 35,
+      "hi": 48.3,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 19.38
     }
   ],
   "Tandemaus Shiny | Paldean Fates": [
@@ -9426,6 +10251,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 18
+    },
+    {
+      "d": "2026-08-12",
+      "p": 32.46,
+      "lo": 32.46,
+      "hi": 44.79,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 17.98
     }
   ],
   "Abra Shiny | Paldean Fates": [
@@ -9700,6 +10536,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.58
+    },
+    {
+      "d": "2026-08-12",
+      "p": 11.5,
+      "lo": 12.04,
+      "hi": 15.33,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.37
     }
   ],
   "Cyclizar IR | Paradox Rift": [
@@ -9806,6 +10653,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 4.43
+    },
+    {
+      "d": "2026-08-12",
+      "p": 8,
+      "lo": 8,
+      "hi": 11.04,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 4.43
     }
   ],
   "Hawlucha Shiny | Paldean Fates": [
@@ -9903,6 +10761,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 4.38
+    },
+    {
+      "d": "2026-08-12",
+      "p": 7.92,
+      "lo": 7.92,
+      "hi": 10.93,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 4.39
     }
   ],
   "Minun IR | Paradox Rift": [
@@ -10020,6 +10889,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 26.64
+    },
+    {
+      "d": "2026-08-12",
+      "p": 47.27,
+      "lo": 47.27,
+      "hi": 65.23,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 26.18
     }
   ],
   "Hydrapple ex SIR | Stellar Crown": [
@@ -10137,6 +11017,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 23.46
+    },
+    {
+      "d": "2026-08-12",
+      "p": 40.29,
+      "lo": 40.29,
+      "hi": 55.6,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 23.34
     }
   ],
   "Cresselia IR | Shrouded Fable": [
@@ -10327,6 +11218,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 11.07
+    },
+    {
+      "d": "2026-08-12",
+      "p": 20,
+      "lo": 21.73,
+      "hi": 29.99,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 11.08
     }
   ],
   "Gulpin IR | Stellar Crown": [
@@ -10444,6 +11346,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.59
+    },
+    {
+      "d": "2026-08-12",
+      "p": 14.82,
+      "lo": 14.82,
+      "hi": 20.45,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.58
     }
   ],
   "Tinkatuff Shiny | Paldean Fates": [
@@ -10638,6 +11551,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 4.92
+    },
+    {
+      "d": "2026-08-12",
+      "p": 8.52,
+      "lo": 9.19,
+      "hi": 12.94,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 4.94
     }
   ],
   "Enamorus IR | Twilight Masquerade": [
@@ -10777,6 +11701,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 5.25
+    },
+    {
+      "d": "2026-08-12",
+      "p": 9.38,
+      "lo": 9.82,
+      "hi": 12.5,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 5.2
     }
   ],
   "Pidgey Shiny | Paldean Fates": [
@@ -11009,6 +11944,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 21.02
+    },
+    {
+      "d": "2026-08-12",
+      "p": 38.25,
+      "lo": 38.25,
+      "hi": 52.78,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 21.18
     }
   ],
   "Aipom IR | Paradox Rift": [
@@ -11110,6 +12056,17 @@
       "p": 31.53,
       "lo": 31.53,
       "hi": 43.51,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 17.48
+    },
+    {
+      "d": "2026-08-12",
+      "p": 31.56,
+      "lo": 31.56,
+      "hi": 43.55,
       "s": "HOLD",
       "c": 0.88,
       "src": "cardmarket",
@@ -11232,6 +12189,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 13.39
+    },
+    {
+      "d": "2026-08-12",
+      "p": 24.13,
+      "lo": 27.45,
+      "hi": 37.87,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 13.36
     }
   ],
   "Gardevoir ex SIR | Paldean Fates": [
@@ -11349,6 +12317,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 110.01
+    },
+    {
+      "d": "2026-08-12",
+      "p": 198.09,
+      "lo": 214.41,
+      "hi": 272.89,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 109.71
     }
   ],
   "Gastly IR | Temporal Forces": [
@@ -11466,6 +12445,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 59.14
+    },
+    {
+      "d": "2026-08-12",
+      "p": 106.95,
+      "lo": 132.7,
+      "hi": 168.9,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 59.23
     }
   ],
   "Groudon IR | Paradox Rift": [
@@ -11583,6 +12573,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 76.93
+    },
+    {
+      "d": "2026-08-12",
+      "p": 138,
+      "lo": 149.37,
+      "hi": 190.11,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 76.43
     }
   ],
   "Raging Bolt ex SIR | Temporal Forces": [
@@ -11700,6 +12701,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 40.42
+    },
+    {
+      "d": "2026-08-12",
+      "p": 72.87,
+      "lo": 84.6,
+      "hi": 107.67,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 40.36
     }
   ],
   "Horsea IR | Shrouded Fable": [
@@ -11817,6 +12829,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 28.25
+    },
+    {
+      "d": "2026-08-12",
+      "p": 51.46,
+      "lo": 51.46,
+      "hi": 71.01,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 28.5
     }
   ],
   "Sawsbuck IR | Temporal Forces": [
@@ -11934,6 +12957,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 35.85
+    },
+    {
+      "d": "2026-08-12",
+      "p": 64.38,
+      "lo": 72.61,
+      "hi": 100.19,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 35.66
     }
   ],
   "Eevee IR | Twilight Masquerade": [
@@ -12051,6 +13085,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 55.86
+    },
+    {
+      "d": "2026-08-12",
+      "p": 100.53,
+      "lo": 112.35,
+      "hi": 142.99,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 55.68
     }
   ],
   "Morpeko IR | Paradox Rift": [
@@ -12168,6 +13213,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 32.08
+    },
+    {
+      "d": "2026-08-12",
+      "p": 57.85,
+      "lo": 47.46,
+      "hi": 74.08,
+      "s": "HOLD",
+      "c": 0.7,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 32.04
     }
   ],
   "Charmander IR | 151": [
@@ -12285,6 +13341,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 61.36
+    },
+    {
+      "d": "2026-08-12",
+      "p": 112.91,
+      "lo": 102.21,
+      "hi": 143.93,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 62.54
     }
   ],
   "Snorlax Shiny | Paldean Fates": [
@@ -12402,6 +13469,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 35.28
+    },
+    {
+      "d": "2026-08-12",
+      "p": 63.12,
+      "lo": 75.15,
+      "hi": 103.69,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 34.96
     }
   ],
   "Greninja ex SIR | Twilight Masquerade": [
@@ -12519,6 +13597,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 219.77
+    },
+    {
+      "d": "2026-08-12",
+      "p": 391.75,
+      "lo": 418.12,
+      "hi": 576.93,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 216.97
     }
   ],
   "Charmander Shiny | Paldean Fates": [
@@ -12636,6 +13725,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 31.33
+    },
+    {
+      "d": "2026-08-12",
+      "p": 55.14,
+      "lo": 62.86,
+      "hi": 86.73,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 30.54
     }
   ],
   "Pikachu Shiny | Paldean Fates": [
@@ -12753,6 +13853,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 48.32
+    },
+    {
+      "d": "2026-08-12",
+      "p": 86.94,
+      "lo": 105.94,
+      "hi": 146.18,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 48.15
     }
   ],
   "Squirtle IR | Stellar Crown": [
@@ -12870,6 +13981,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 72.38
+    },
+    {
+      "d": "2026-08-12",
+      "p": 124.99,
+      "lo": 135.29,
+      "hi": 172.19,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 72.4
     }
   ],
   "Bulbasaur IR | Stellar Crown": [
@@ -12987,6 +14109,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 69.49
+    },
+    {
+      "d": "2026-08-12",
+      "p": 119.99,
+      "lo": 129.88,
+      "hi": 165.3,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 69.5
     }
   ],
   "Charizard ex SIR | Paldean Fates": [
@@ -13104,6 +14237,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 179.51
+    },
+    {
+      "d": "2026-08-12",
+      "p": 320,
+      "lo": 357.63,
+      "hi": 455.17,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 177.23
     }
   ],
   "Ditto Shiny | Paldean Fates": [
@@ -13221,6 +14365,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 28.24
+    },
+    {
+      "d": "2026-08-12",
+      "p": 50.77,
+      "lo": 55.9,
+      "hi": 77.14,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 28.12
     }
   ],
   "Mimikyu Shiny | Paldean Fates": [
@@ -13338,6 +14493,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 32.1
+    },
+    {
+      "d": "2026-08-12",
+      "p": 57.45,
+      "lo": 59.39,
+      "hi": 81.94,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 31.82
     }
   ],
   "Walking Wake ex SIR | Temporal Forces": [
@@ -13455,6 +14621,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 32.04
+    },
+    {
+      "d": "2026-08-12",
+      "p": 58.2,
+      "lo": 68.05,
+      "hi": 86.61,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 32.23
     }
   ],
   "Iron Crown ex SIR | Temporal Forces": [
@@ -13572,6 +14749,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 33.48
+    },
+    {
+      "d": "2026-08-12",
+      "p": 60,
+      "lo": 63.77,
+      "hi": 89.81,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 33.23
     }
   ],
   "Persian IR | Shrouded Fable": [
@@ -13689,6 +14877,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 44.29
+    },
+    {
+      "d": "2026-08-12",
+      "p": 80,
+      "lo": 83.78,
+      "hi": 106.62,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 44.31
     }
   ],
   "Morty's Conviction SIR | Temporal Forces": [
@@ -13806,6 +15005,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 42.3
+    },
+    {
+      "d": "2026-08-12",
+      "p": 76.2,
+      "lo": 90.7,
+      "hi": 115.44,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 42.2
     }
   ],
   "Gouging Fire ex SIR | Temporal Forces": [
@@ -13923,6 +15133,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 32.18
+    },
+    {
+      "d": "2026-08-12",
+      "p": 58.2,
+      "lo": 67.07,
+      "hi": 85.36,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 32.23
     }
   ],
   "Chansey IR | Twilight Masquerade": [
@@ -14040,6 +15261,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 33.28
+    },
+    {
+      "d": "2026-08-12",
+      "p": 60.01,
+      "lo": 68.18,
+      "hi": 86.78,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 33.24
     }
   ],
   "Lilligant IR | Black Bolt / White Flare": [
@@ -14157,6 +15389,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 56.69
+    },
+    {
+      "d": "2026-08-12",
+      "p": 61.66,
+      "lo": 58.82,
+      "hi": 74.86,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 55.9
     }
   ],
   "Oshawott IR | Black Bolt / White Flare": [
@@ -14274,6 +15517,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 90.68
+    },
+    {
+      "d": "2026-08-12",
+      "p": 99.71,
+      "lo": 87.99,
+      "hi": 121.4,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 90.4
     }
   ],
   "Dachsbun ex SIR | Stellar Crown": [
@@ -14391,6 +15645,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 42.27
+    },
+    {
+      "d": "2026-08-12",
+      "p": 73,
+      "lo": 73.01,
+      "hi": 100.73,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 42.28
     }
   ],
   "Perrin SIR | Twilight Masquerade": [
@@ -14508,6 +15773,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 100.79
+    },
+    {
+      "d": "2026-08-12",
+      "p": 180.15,
+      "lo": 193.51,
+      "hi": 267,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 99.78
     }
   ],
   "Carmine SIR | Twilight Masquerade": [
@@ -14625,6 +15901,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 35.99
+    },
+    {
+      "d": "2026-08-12",
+      "p": 64.99,
+      "lo": 68.06,
+      "hi": 86.62,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 36
     }
   ],
   "Plusle IR | Paradox Rift": [
@@ -14742,6 +16029,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 27.98
+    },
+    {
+      "d": "2026-08-12",
+      "p": 50.17,
+      "lo": 50.17,
+      "hi": 69.23,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 27.79
     }
   ],
   "Alakazam ex SIR | 151": [
@@ -14859,6 +16157,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 42.27
+    },
+    {
+      "d": "2026-08-12",
+      "p": 77,
+      "lo": 71.15,
+      "hi": 90.55,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 42.65
     }
   ],
   "Duskull IR | Shrouded Fable": [
@@ -14976,6 +16285,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 34.16
+    },
+    {
+      "d": "2026-08-12",
+      "p": 60.22,
+      "lo": 66.41,
+      "hi": 91.64,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 33.35
     }
   ],
   "Bulbasaur IR | 151": [
@@ -15093,6 +16413,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 49.83
+    },
+    {
+      "d": "2026-08-12",
+      "p": 90,
+      "lo": 67.64,
+      "hi": 86.09,
+      "s": "SELL",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 49.85
     }
   ],
   "Mega Latias ex SIR | Mega Evolution": [
@@ -15210,6 +16541,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 94.16
+    },
+    {
+      "d": "2026-08-12",
+      "p": 93.09,
+      "lo": 86.02,
+      "hi": 109.47,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 93.84
     }
   ],
   "Team Rocket's Crobat ex SIR | Destined Rivals": [
@@ -15327,6 +16669,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 61.49
+    },
+    {
+      "d": "2026-08-12",
+      "p": 71.97,
+      "lo": 73.31,
+      "hi": 93.3,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 59.66
     }
   ],
   "Gengar ex UR | Temporal Forces": [
@@ -15439,6 +16792,17 @@
       "p": 67.56,
       "lo": 75.98,
       "hi": 96.71,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 37.41
+    },
+    {
+      "d": "2026-08-12",
+      "p": 67.55,
+      "lo": 72.29,
+      "hi": 92,
       "s": "HOLD",
       "c": 1,
       "src": "cardmarket",
@@ -15561,6 +16925,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 227.55
+    },
+    {
+      "d": "2026-08-12",
+      "p": 225.61,
+      "lo": 216.41,
+      "hi": 275.42,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 227.42
     }
   ],
   "Charizard ex SIR | 151": [
@@ -15678,6 +17053,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 224.3
+    },
+    {
+      "d": "2026-08-12",
+      "p": 404.99,
+      "lo": 388.47,
+      "hi": 494.41,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 224.31
     }
   ],
   "Pikachu IR | 151": [
@@ -15795,6 +17181,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 55.37
+    },
+    {
+      "d": "2026-08-12",
+      "p": 100,
+      "lo": 95.92,
+      "hi": 122.08,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 55.39
     }
   ],
   "Cynthia's Garchomp ex SIR | Destined Rivals": [
@@ -15912,6 +17309,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 226.76
+    },
+    {
+      "d": "2026-08-12",
+      "p": 273.9,
+      "lo": 289.94,
+      "hi": 369.02,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 227.04
     }
   ],
   "Charmeleon IR | 151": [
@@ -16024,6 +17432,17 @@
       "p": 70,
       "lo": 67.14,
       "hi": 85.46,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 38.76
+    },
+    {
+      "d": "2026-08-12",
+      "p": 69.99,
+      "lo": 67.13,
+      "hi": 85.44,
       "s": "BUY",
       "c": 1,
       "src": "cardmarket",
@@ -16146,6 +17565,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 226.7
+    },
+    {
+      "d": "2026-08-12",
+      "p": 249.99,
+      "lo": 238.23,
+      "hi": 356.75,
+      "s": "HOLD",
+      "c": 0.76,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 226.65
     }
   ],
   "Charizard ex SIR | Obsidian Flames": [
@@ -16263,6 +17693,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 66.35
+    },
+    {
+      "d": "2026-08-12",
+      "p": 119.88,
+      "lo": 133.47,
+      "hi": 187.95,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 66.4
     }
   ],
   "Houndoom IR | Shrouded Fable": [
@@ -16380,6 +17821,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 34.04
+    },
+    {
+      "d": "2026-08-12",
+      "p": 61.5,
+      "lo": 61.5,
+      "hi": 84.87,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 34.06
     }
   ],
   "Zorua IR | Black Bolt / White Flare": [
@@ -16497,6 +17949,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 46.76
+    },
+    {
+      "d": "2026-08-12",
+      "p": 51.48,
+      "lo": 38.29,
+      "hi": 53.92,
+      "s": "SELL",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 46.67
     }
   ],
   "Psyduck IR | 151": [
@@ -16614,6 +18077,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 41.42
+    },
+    {
+      "d": "2026-08-12",
+      "p": 73.94,
+      "lo": 68.32,
+      "hi": 86.95,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 40.95
     }
   ],
   "Wartortle IR | 151": [
@@ -16731,6 +18205,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 37.94
+    },
+    {
+      "d": "2026-08-12",
+      "p": 68.48,
+      "lo": 65.09,
+      "hi": 91.66,
+      "s": "BUY",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 37.93
     }
   ],
   "Mega Absol ex SIR | Mega Evolution": [
@@ -16848,6 +18333,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 69.72
+    },
+    {
+      "d": "2026-08-12",
+      "p": 68.84,
+      "lo": 63.61,
+      "hi": 80.96,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 69.39
     }
   ],
   "Zoroark IR | Black Bolt / White Flare": [
@@ -16965,6 +18461,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 75.14
+    },
+    {
+      "d": "2026-08-12",
+      "p": 82.38,
+      "lo": 65.77,
+      "hi": 83.71,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 74.69
     }
   ],
   "Mega Venusaur ex SIR | Mega Evolution": [
@@ -17082,6 +18589,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 171.73
+    },
+    {
+      "d": "2026-08-12",
+      "p": 170,
+      "lo": 157.08,
+      "hi": 199.92,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 171.36
     }
   ],
   "Blastoise ex SIR | 151": [
@@ -17199,6 +18717,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 85.07
+    },
+    {
+      "d": "2026-08-12",
+      "p": 153.65,
+      "lo": 141.97,
+      "hi": 180.69,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 85.1
     }
   ],
   "Mega Gardevoir ex SIR | Mega Evolution": [
@@ -17316,6 +18845,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 206.75
+    },
+    {
+      "d": "2026-08-12",
+      "p": 205.06,
+      "lo": 189.48,
+      "hi": 241.15,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 206.7
     }
   ],
   "Salamence ex SIR | Journey Together": [
@@ -17433,6 +18973,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 49.71
+    },
+    {
+      "d": "2026-08-12",
+      "p": 65.68,
+      "lo": 60.69,
+      "hi": 77.24,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 49.78
     }
   ],
   "N's Zoroark ex SIR | Journey Together": [
@@ -17550,6 +19101,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 40.39
+    },
+    {
+      "d": "2026-08-12",
+      "p": 52.94,
+      "lo": 48.92,
+      "hi": 62.26,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 40.12
     }
   ],
   "Squirtle IR | 151": [
@@ -17667,6 +19229,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 56.45
+    },
+    {
+      "d": "2026-08-12",
+      "p": 102.1,
+      "lo": 101.11,
+      "hi": 128.68,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 56.55
     }
   ],
   "Venusaur ex SIR | 151": [
@@ -17784,6 +19357,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 70.69
+    },
+    {
+      "d": "2026-08-12",
+      "p": 127.03,
+      "lo": 117.38,
+      "hi": 149.39,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 70.36
     }
   ],
   "Dragonair IR | 151": [
@@ -17901,6 +19485,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 28.4
+    },
+    {
+      "d": "2026-08-12",
+      "p": 51.44,
+      "lo": 47.53,
+      "hi": 60.49,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 28.49
     }
   ],
   "Reshiram ex SIR | Black Bolt / White Flare": [
@@ -18018,6 +19613,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 200.32
+    },
+    {
+      "d": "2026-08-12",
+      "p": 222.88,
+      "lo": 196.67,
+      "hi": 271.37,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 202.07
     }
   ],
   "Zapdos ex SIR | 151": [
@@ -18135,6 +19741,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 61.34
+    },
+    {
+      "d": "2026-08-12",
+      "p": 111.99,
+      "lo": 98.82,
+      "hi": 136.36,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 62.03
     }
   ],
   "Zekrom ex SIR | Black Bolt / White Flare": [
@@ -18252,6 +19869,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 282.34
+    },
+    {
+      "d": "2026-08-12",
+      "p": 311.35,
+      "lo": 274.74,
+      "hi": 379.09,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 282.28
     }
   ],
   "Misty's Psyduck IR | Destined Rivals": [
@@ -18369,6 +19997,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 59.78
+    },
+    {
+      "d": "2026-08-12",
+      "p": 72.55,
+      "lo": 71.82,
+      "hi": 91.41,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 60.14
     }
   ],
   "Team Rocket's Moltres ex SIR | Destined Rivals": [
@@ -18486,6 +20125,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 94.91
+    },
+    {
+      "d": "2026-08-12",
+      "p": 112.82,
+      "lo": 105.89,
+      "hi": 165.28,
+      "s": "BUY",
+      "c": 0.7,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 93.52
     }
   ],
   "Ethan's Ho-Oh ex SIR | Destined Rivals": [
@@ -18603,6 +20253,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 149.04
+    },
+    {
+      "d": "2026-08-12",
+      "p": 176.56,
+      "lo": 164.41,
+      "hi": 256.61,
+      "s": "BUY",
+      "c": 0.7,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 146.35
     }
   ],
   "Team Rocket's Mewtwo ex Gold | Destined Rivals": [
@@ -18720,6 +20381,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 56.45
+    },
+    {
+      "d": "2026-08-12",
+      "p": 68.03,
+      "lo": 62.96,
+      "hi": 80.13,
+      "s": "AVOID",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 56.39
     }
   ],
   "Basic Darkness Energy Gold | Shrouded Fable": [
@@ -18837,6 +20509,17 @@
       "src": "none",
       "band": "premium",
       "f": 36.62
+    },
+    {
+      "d": "2026-08-12",
+      "p": 66.09,
+      "lo": 57.66,
+      "hi": 78.49,
+      "s": "HOLD",
+      "c": 0.9,
+      "src": "none",
+      "band": "premium",
+      "f": 36.6
     }
   ],
   "Serperior ex SIR | Black Bolt / White Flare": [
@@ -18954,6 +20637,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 50.09
+    },
+    {
+      "d": "2026-08-12",
+      "p": 55.04,
+      "lo": 48.92,
+      "hi": 62.26,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 49.9
     }
   ],
   "Lillie's Clefairy ex SIR | Journey Together": [
@@ -19071,6 +20765,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 94.67
+    },
+    {
+      "d": "2026-08-12",
+      "p": 124,
+      "lo": 119.8,
+      "hi": 152.47,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 93.98
     }
   ],
   "Genesect ex SIR | Black Bolt / White Flare": [
@@ -19188,6 +20893,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 46.92
+    },
+    {
+      "d": "2026-08-12",
+      "p": 51.39,
+      "lo": 45.68,
+      "hi": 58.13,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 46.59
     }
   ],
   "Samurott IR | Black Bolt / White Flare": [
@@ -19305,6 +21021,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 52.53
+    },
+    {
+      "d": "2026-08-12",
+      "p": 57.97,
+      "lo": 51.52,
+      "hi": 65.58,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 52.56
     }
   ],
   "Volcarona IR | Black Bolt / White Flare": [
@@ -19422,6 +21149,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 57.31
+    },
+    {
+      "d": "2026-08-12",
+      "p": 63,
+      "lo": 55.99,
+      "hi": 71.27,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 57.12
     }
   ],
   "Chandelure IR | Black Bolt / White Flare": [
@@ -19539,6 +21277,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 69.36
+    },
+    {
+      "d": "2026-08-12",
+      "p": 77.24,
+      "lo": 68.65,
+      "hi": 87.37,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 70.03
     }
   ],
   "Krookodile IR | Black Bolt / White Flare": [
@@ -19656,6 +21405,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 56.17
+    },
+    {
+      "d": "2026-08-12",
+      "p": 61.03,
+      "lo": 54.24,
+      "hi": 69.04,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 55.33
     }
   ],
   "Poliwhirl IR | 151": [
@@ -19835,6 +21595,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 86.51
+    },
+    {
+      "d": "2026-08-12",
+      "p": 92.99,
+      "lo": 82.65,
+      "hi": 105.19,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 84.31
     }
   ],
   "Mega Kangaskhan ex SIR | Mega Evolution": [
@@ -19952,6 +21723,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 66.9
+    },
+    {
+      "d": "2026-08-12",
+      "p": 66.07,
+      "lo": 58.72,
+      "hi": 74.74,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 66.6
     }
   ],
   "Kyurem ex SIR | Black Bolt / White Flare": [
@@ -20047,6 +21829,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 77.42
+    },
+    {
+      "d": "2026-08-12",
+      "p": 84.99,
+      "lo": 72.14,
+      "hi": 99.54,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 77.05
     }
   ],
   "Lillie's Determination SIR | Mega Evolution": [
@@ -20164,6 +21957,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 74.06
+    },
+    {
+      "d": "2026-08-12",
+      "p": 72.89,
+      "lo": 64.78,
+      "hi": 82.45,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 73.47
     }
   ],
   "Emboar IR | Black Bolt / White Flare": [
@@ -20323,6 +22127,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 98.65
+    },
+    {
+      "d": "2026-08-12",
+      "p": 118.99,
+      "lo": 101,
+      "hi": 139.36,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 98.63
     }
   ],
   "Dwebble IR | Black Bolt / White Flare": [
@@ -20440,6 +22255,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 55.27
+    },
+    {
+      "d": "2026-08-12",
+      "p": 61.27,
+      "lo": 52.01,
+      "hi": 71.76,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 55.55
     }
   ],
   "Hilda SIR | Black Bolt / White Flare": [
@@ -20557,6 +22383,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 53.97
+    },
+    {
+      "d": "2026-08-12",
+      "p": 59.9,
+      "lo": 50.84,
+      "hi": 70.15,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 54.31
     }
   ],
   "Mega Charizard X ex Gold | Phantasmal Flames": [
@@ -20674,6 +22511,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 387.86
+    },
+    {
+      "d": "2026-08-12",
+      "p": 339.69,
+      "lo": 331.81,
+      "hi": 422.3,
+      "s": "AVOID",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 387
     }
   ],
   "Mega Froslass ex SIR | Ascended Heroes": [
@@ -20831,6 +22679,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 286.76
+    },
+    {
+      "d": "2026-08-12",
+      "p": 274.36,
+      "lo": 228.42,
+      "hi": 315.18,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 283.15
     }
   ],
   "Marnie's Grimmsnarl ex SIR | Ascended Heroes": [
@@ -20990,6 +22849,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 34.68
+    },
+    {
+      "d": "2026-08-12",
+      "p": 62.9,
+      "lo": 55.49,
+      "hi": 94.21,
+      "s": "HOLD",
+      "c": 0.58,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 34.84
     }
   ],
   "Mega Lucario ex Gold | Mega Evolution": [
@@ -21107,6 +22977,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 280.88
+    },
+    {
+      "d": "2026-08-12",
+      "p": 278.82,
+      "lo": 228.19,
+      "hi": 290.42,
+      "s": "AVOID",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 281.05
     }
   ],
   "Mega Zeraora ex SIR | Pitch Black": [
@@ -21224,6 +23105,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 72.99
+    },
+    {
+      "d": "2026-08-12",
+      "p": 70.82,
+      "lo": 56.87,
+      "hi": 72.39,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 73.09
     }
   ],
   "Mega Chandelure ex SIR | Pitch Black": [
@@ -21341,6 +23233,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 55.46
+    },
+    {
+      "d": "2026-08-12",
+      "p": 53,
+      "lo": 43.49,
+      "hi": 55.36,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 54.7
     }
   ],
   "Fezandipiti ex SIR | Ascended Heroes": [
@@ -21489,6 +23392,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 502.08
+    },
+    {
+      "d": "2026-08-12",
+      "p": 388.7,
+      "lo": 354.98,
+      "hi": 451.79,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 500.51
     }
   ],
   "Mega Greninja ex SIR | Chaos Rising": [
@@ -21606,6 +23520,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 279.82
+    },
+    {
+      "d": "2026-08-12",
+      "p": 240.13,
+      "lo": 192.3,
+      "hi": 244.74,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 277.47
     }
   ],
   "Team Rocket's Mewtwo ex SIR | Ascended Heroes": [
@@ -21712,6 +23637,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 500.29
+    },
+    {
+      "d": "2026-08-12",
+      "p": 391.7,
+      "lo": 313.67,
+      "hi": 399.22,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 504.38
     }
   ],
   "Steven's Metagross ex SIR | Ascended Heroes": [
@@ -21829,6 +23765,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 126.16
+    },
+    {
+      "d": "2026-08-12",
+      "p": 97.55,
+      "lo": 74.68,
+      "hi": 95.05,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 125.61
     }
   ],
   "N's Zoroark ex SIR | Ascended Heroes": [
@@ -21946,6 +23893,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 230.34
+    },
+    {
+      "d": "2026-08-12",
+      "p": 176.83,
+      "lo": 135.38,
+      "hi": 172.3,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 227.7
     }
   ],
   "Psyduck IR | Ascended Heroes": [
@@ -22063,6 +24021,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 101.11
+    },
+    {
+      "d": "2026-08-12",
+      "p": 78.35,
+      "lo": 59.98,
+      "hi": 76.34,
+      "s": "BUY",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 100.89
     }
   ],
   "Mega Darkrai ex Gold | Pitch Black": [
@@ -22169,6 +24138,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 204.82
+    },
+    {
+      "d": "2026-08-12",
+      "p": 199.49,
+      "lo": 149.04,
+      "hi": 189.68,
+      "s": "AVOID",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 205.88
     }
   ],
   "Haxorus IR | Black Bolt / White Flare": [
@@ -22286,6 +24266,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 71.11
+    },
+    {
+      "d": "2026-08-12",
+      "p": 77.71,
+      "lo": 69.07,
+      "hi": 87.91,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 70.45
     }
   ],
   "Liepard IR | Black Bolt / White Flare": [
@@ -22370,6 +24361,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 50.05
+    },
+    {
+      "d": "2026-08-12",
+      "p": 55.19,
+      "lo": 42.21,
+      "hi": 53.72,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 50.04
     }
   ],
   "Mega Scrafty ex SIR | Ascended Heroes": [
@@ -22403,6 +24405,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 89.19
+    },
+    {
+      "d": "2026-08-12",
+      "p": 67.75,
+      "lo": 47.26,
+      "hi": 65.21,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 87.24
     }
   ],
   "Bewear IR | Shrouded Fable": [
@@ -22553,6 +24566,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 15.43
+    },
+    {
+      "d": "2026-08-12",
+      "p": 27.87,
+      "lo": 30.58,
+      "hi": 45.79,
+      "s": "HOLD",
+      "c": 0.76,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 15.44
     }
   ],
   "Gloom IR | Obsidian Flames": [
@@ -22630,6 +24654,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 14.27
+    },
+    {
+      "d": "2026-08-12",
+      "p": 25.31,
+      "lo": 26.91,
+      "hi": 37.9,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 14.02
     }
   ],
   "Sandy Shocks ex SIR | Paradox Rift": [
@@ -22727,6 +24762,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 5.25
+    },
+    {
+      "d": "2026-08-12",
+      "p": 9.46,
+      "lo": 9.91,
+      "hi": 12.61,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 5.24
     }
   ],
   "Vulpix IR | Mega Evolution": [
@@ -22897,6 +24943,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 71.91
+    },
+    {
+      "d": "2026-08-12",
+      "p": 78.15,
+      "lo": 57.86,
+      "hi": 73.64,
+      "s": "SELL",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 70.85
     }
   ],
   "Mega Diancie ex SIR | Ascended Heroes": [
@@ -23205,6 +25262,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 27.87
+    },
+    {
+      "d": "2026-08-12",
+      "p": 50.3,
+      "lo": 50.22,
+      "hi": 69.29,
+      "s": "BUY",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 27.86
     }
   ],
   "Mega Dragonite ex Gold | Ascended Heroes": [
@@ -23383,6 +25451,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.49
+    },
+    {
+      "d": "2026-08-12",
+      "p": 15.5,
+      "lo": 15.5,
+      "hi": 21.39,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.58
     }
   ],
   "Lillie's Clefairy ex SIR | Ascended Heroes": [
@@ -23600,6 +25679,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 6.31
+    },
+    {
+      "d": "2026-08-12",
+      "p": 11,
+      "lo": 11,
+      "hi": 15.18,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 6.09
     }
   ],
   "Morpeko ex SIR | Pitch Black": [
@@ -23705,6 +25795,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 3.05
+    },
+    {
+      "d": "2026-08-12",
+      "p": 5.34,
+      "lo": 5.59,
+      "hi": 9.04,
+      "s": "HOLD",
+      "c": 0.65,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 2.96
     }
   ],
   "Emolga IR | Black Bolt / White Flare": [
@@ -23856,6 +25957,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 74.12
+    },
+    {
+      "d": "2026-08-12",
+      "p": 81.74,
+      "lo": 72.65,
+      "hi": 92.46,
+      "s": "HOLD",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 74.11
     }
   ],
   "Chien-Pao ex Gold | Paldean Fates": [
@@ -23950,6 +26062,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 18.82
+    },
+    {
+      "d": "2026-08-12",
+      "p": 34,
+      "lo": 34,
+      "hi": 46.92,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 18.83
     }
   ],
   "Applin IR | Twilight Masquerade": [
@@ -23988,6 +26111,17 @@
     },
     {
       "d": "2026-08-11",
+      "p": 13,
+      "lo": 13,
+      "hi": 17.94,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 7.2
+    },
+    {
+      "d": "2026-08-12",
       "p": 13,
       "lo": 13,
       "hi": 17.94,
@@ -24066,6 +26200,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 8.3
+    },
+    {
+      "d": "2026-08-12",
+      "p": 15,
+      "lo": 15,
+      "hi": 20.7,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 8.31
     }
   ],
   "Steelix IR | Paradox Rift": [
@@ -24090,6 +26235,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 23.34
+    },
+    {
+      "d": "2026-08-12",
+      "p": 42,
+      "lo": 42,
+      "hi": 57.96,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 23.26
     }
   ],
   "Mega Gardevoir ex Gold | Mega Evolution": [
@@ -24125,6 +26281,17 @@
       "src": "cardmarket",
       "band": "premium",
       "f": 221.79
+    },
+    {
+      "d": "2026-08-12",
+      "p": 219.99,
+      "lo": 172.3,
+      "hi": 219.29,
+      "s": "AVOID",
+      "c": 1,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 221.75
     }
   ],
   "Miraidon ex Gold | Paldean Fates": [
@@ -24149,6 +26316,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 9.54
+    },
+    {
+      "d": "2026-08-12",
+      "p": 16.99,
+      "lo": 17.06,
+      "hi": 24.02,
+      "s": "HOLD",
+      "c": 0.85,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 9.41
     }
   ],
   "Ting-Lu ex Gold | Paldean Fates": [
@@ -24173,6 +26351,17 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 3.69
+    },
+    {
+      "d": "2026-08-12",
+      "p": 6.64,
+      "lo": 6.35,
+      "hi": 9.71,
+      "s": "HOLD",
+      "c": 0.73,
+      "src": "cardmarket",
+      "band": "chase",
+      "f": 3.68
     }
   ],
   "Grotle IR | Temporal Forces": [
@@ -24186,6 +26375,19 @@
       "src": "cardmarket",
       "band": "chase",
       "f": 11.49
+    }
+  ],
+  "Mega Hawlucha ex SIR | Ascended Heroes": [
+    {
+      "d": "2026-08-12",
+      "p": 65.31,
+      "lo": 45.56,
+      "hi": 62.86,
+      "s": "HOLD",
+      "c": 0.88,
+      "src": "cardmarket",
+      "band": "premium",
+      "f": 84.1
     }
   ]
 }
