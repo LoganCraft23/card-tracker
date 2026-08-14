@@ -8,6 +8,8 @@
     { "id": "me05-087", "qty": 1, "paid": null, "note": "Goldeen #87, Pitch Black" },
     { "id": "me05-101", "qty": 1, "paid": null, "note": "Mega Darkrai ex #101, Pitch Black" },
     { "id": "sv09-167", "qty": 1, "paid": null, "note": "N's Reshiram #167, Journey Together" },
+    { "id": "bw3-81", "qty": 1, "paid": null, "note": "Pawniard (Reverse Holo) #81, Noble Victories" },
+    { "id": "hgss3-14", "qty": 1, "paid": null, "note": "Hariyama (Reverse Holo) #14, Undaunted" },
     { "vintageId": 38259, "vintageQuery": "Mew EX", "qty": 1, "paid": null, "note": "Mew EX (Full Art) #RC24, Legendary Treasures: Radiant Collection" },
     { "vintageId": 33150, "vintageQuery": "Genesect EX", "qty": 1, "paid": null, "note": "Genesect EX (Team Plasma) (97 Full Art) #97, Plasma Blast" },
     { "vintageId": 38256, "vintageQuery": "Reshiram", "qty": 1, "paid": null, "note": "Reshiram (Full Art) #RC22, Legendary Treasures: Radiant Collection" },
@@ -21,7 +23,8 @@
     { "vintageId": 36131, "vintageQuery": "Slowpoke", "qty": 1, "paid": null, "note": "Slowpoke #66, Undaunted" },
     { "vintageId": 28209, "vintageQuery": "Deoxys EX", "qty": 1, "paid": null, "note": "Deoxys EX (Team Plasma) #BW82, Black and White Promos" },
     { "vintageId": 28210, "vintageQuery": "Mewtwo EX", "qty": 1, "paid": null, "note": "Mewtwo EX #BW45, Black and White Promos" },
-    { "vintageId": 38252, "vintageQuery": "Gardevoir", "qty": 1, "paid": null, "note": "Gardevoir #RC10, Legendary Treasures: Radiant Collection" }
+    { "vintageId": 38252, "vintageQuery": "Gardevoir", "qty": 1, "paid": null, "note": "Gardevoir #RC10, Legendary Treasures: Radiant Collection" },
+    { "vintageId": 28316, "vintageQuery": "Minccino", "qty": 1, "paid": null, "note": "Minccino (Cracked Ice Holo) #BW13, Black and White Promos" }
   ],
   "sealed": []
 }
