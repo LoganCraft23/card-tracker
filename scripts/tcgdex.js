@@ -50,28 +50,6 @@ export async function searchCards(name) {
   }));
 }
 
-function extractPrice(card) {
-  const p = card?.pricing?.tcgplayer;
-  if (!p) return null;
-  // Defensive: TCGdex nests prices by variant (normal/holofoil/reverse etc.)
-  // and exposes fields like marketPrice / market / midPrice depending on version.
-  const variants = typeof p === "object" ? Object.values(p) : [];
-  const candidates = [];
-  const dig = (obj) => {
-    if (!obj || typeof obj !== "object") return;
-    for (const key of ["marketPrice", "market", "midPrice", "mid"]) {
-      if (typeof obj[key] === "number") candidates.push(obj[key]);
-    }
-    for (const v of Object.values(obj)) if (typeof v === "object") dig(v);
-  };
-  dig(p);
-  variants.forEach(dig);
-  if (!candidates.length) return null;
-  // Prefer the highest market price (usually the holo variant, which is the
-  // collectible one for IR/SIR cards where only one variant exists anyway).
-  return Math.max(...candidates);
-}
-
 // The TCGplayer variant block backing the price we quote — the one with the
 // highest market price. Its low/mid/high fields describe that same listing
 // pool, which is what makes the spread meaningful.
@@ -105,7 +83,7 @@ export async function fetchCard(cardId) {
     illustrator: card.illustrator || null,
     standardLegal: card?.legal?.standard === true,
     image: card.image || null,
-    price: extractPrice(card),
+    price: v?.marketPrice ?? null,
     // TCGplayer's own product id for the variant we quote — lets the dashboard
     // deep-link to the exact listing page instead of a name search.
     productId: v?.productId ?? null,
