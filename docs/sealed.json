@@ -1,240 +1,6 @@
 {
-  "updated": "2026-08-13T14:28:00.738Z",
+  "updated": "2026-08-14T06:21:43.973Z",
   "products": [
-    {
-      "name": "Shrouded Fable Pokemon Center Elite Trainer Box (Exclusive)",
-      "set": "Shrouded Fable",
-      "format": "Elite Trainer Box",
-      "productId": 552998,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/552998.jpg",
-      "listings": 50,
-      "low": 152.52,
-      "phase": "recovery",
-      "price": 169.3,
-      "mom": null,
-      "signal": "BUY",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $45) keeps boxes getting opened.",
-        "Out of print and still being opened — sealed supply only goes down from here."
-      ],
-      "rationale": "Out of print and still being opened — sealed supply only goes down from here.",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        183.25,
-        233.23
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          167.94
-        ],
-        [
-          "2026-08-02",
-          167.94
-        ],
-        [
-          "2026-08-03",
-          168.34
-        ],
-        [
-          "2026-08-04",
-          168.34
-        ],
-        [
-          "2026-08-05",
-          168.34
-        ],
-        [
-          "2026-08-06",
-          168.82
-        ],
-        [
-          "2026-08-07",
-          168.82
-        ],
-        [
-          "2026-08-08",
-          168.82
-        ],
-        [
-          "2026-08-09",
-          168.82
-        ],
-        [
-          "2026-08-10",
-          168.82
-        ],
-        [
-          "2026-08-11",
-          168.82
-        ],
-        [
-          "2026-08-12",
-          169.3
-        ],
-        [
-          "2026-08-13",
-          169.3
-        ]
-      ]
-    },
-    {
-      "name": "Shrouded Fable Elite Trainer Box",
-      "set": "Shrouded Fable",
-      "format": "Elite Trainer Box",
-      "productId": 552999,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/552999.jpg",
-      "listings": 57,
-      "low": 64.99,
-      "phase": "recovery",
-      "price": 119.26,
-      "mom": null,
-      "signal": "BUY",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $45) keeps boxes getting opened.",
-        "Out of print and still being opened — sealed supply only goes down from here."
-      ],
-      "rationale": "Out of print and still being opened — sealed supply only goes down from here.",
-      "confidence": 0.88,
-      "confidenceFlags": [],
-      "proj": [
-        123.28,
-        170.1
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          122.62
-        ],
-        [
-          "2026-08-02",
-          123.01
-        ],
-        [
-          "2026-08-03",
-          123.81
-        ],
-        [
-          "2026-08-04",
-          122.46
-        ],
-        [
-          "2026-08-05",
-          122.46
-        ],
-        [
-          "2026-08-06",
-          122.51
-        ],
-        [
-          "2026-08-07",
-          122.91
-        ],
-        [
-          "2026-08-08",
-          121.6
-        ],
-        [
-          "2026-08-09",
-          120.96
-        ],
-        [
-          "2026-08-10",
-          120.96
-        ],
-        [
-          "2026-08-11",
-          119.99
-        ],
-        [
-          "2026-08-12",
-          119.66
-        ],
-        [
-          "2026-08-13",
-          119.26
-        ]
-      ]
-    },
-    {
-      "name": "Shrouded Fable Booster Bundle",
-      "set": "Shrouded Fable",
-      "format": "Booster Bundle",
-      "productId": 553031,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/553031.jpg",
-      "listings": 59,
-      "low": 43.46,
-      "phase": "recovery",
-      "price": 55.83,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $45) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 1,
-      "confidenceFlags": [],
-      "proj": [
-        59.45,
-        75.66
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          66.54
-        ],
-        [
-          "2026-08-02",
-          66.26
-        ],
-        [
-          "2026-08-03",
-          66.4
-        ],
-        [
-          "2026-08-04",
-          65.45
-        ],
-        [
-          "2026-08-05",
-          65.45
-        ],
-        [
-          "2026-08-06",
-          64.77
-        ],
-        [
-          "2026-08-07",
-          64.25
-        ],
-        [
-          "2026-08-08",
-          60.53
-        ],
-        [
-          "2026-08-09",
-          58.82
-        ],
-        [
-          "2026-08-10",
-          58.12
-        ],
-        [
-          "2026-08-11",
-          56.81
-        ],
-        [
-          "2026-08-12",
-          55.5
-        ],
-        [
-          "2026-08-13",
-          55.83
-        ]
-      ]
-    },
     {
       "name": "Twilight Masquerade Booster Box",
       "set": "Twilight Masquerade",
@@ -311,6 +77,10 @@
         ],
         [
           "2026-08-13",
+          363.86
+        ],
+        [
+          "2026-08-14",
           363.86
         ]
       ]
@@ -392,6 +162,10 @@
         [
           "2026-08-13",
           297.2
+        ],
+        [
+          "2026-08-14",
+          297.2
         ]
       ]
     },
@@ -471,6 +245,10 @@
         ],
         [
           "2026-08-13",
+          281.73
+        ],
+        [
+          "2026-08-14",
           281.73
         ]
       ]
@@ -552,6 +330,10 @@
         [
           "2026-08-13",
           321.92
+        ],
+        [
+          "2026-08-14",
+          321.92
         ]
       ]
     },
@@ -628,6 +410,10 @@
         ],
         [
           "2026-08-13",
+          189.79
+        ],
+        [
+          "2026-08-14",
           189.79
         ]
       ]
@@ -706,6 +492,10 @@
         [
           "2026-08-13",
           214.39
+        ],
+        [
+          "2026-08-14",
+          214.39
         ]
       ]
     },
@@ -783,6 +573,91 @@
         [
           "2026-08-13",
           612.49
+        ],
+        [
+          "2026-08-14",
+          612.49
+        ]
+      ]
+    },
+    {
+      "name": "Shrouded Fable Pokemon Center Elite Trainer Box (Exclusive)",
+      "set": "Shrouded Fable",
+      "format": "Elite Trainer Box",
+      "productId": 552998,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/552998.jpg",
+      "listings": 50,
+      "low": 152.52,
+      "phase": "recovery",
+      "price": 169.3,
+      "mom": null,
+      "signal": "BUY",
+      "reasons": [
+        "Out of print and still being opened — sealed supply only goes down from here."
+      ],
+      "rationale": "Out of print and still being opened — sealed supply only goes down from here.",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        178.78,
+        227.54
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          167.94
+        ],
+        [
+          "2026-08-02",
+          167.94
+        ],
+        [
+          "2026-08-03",
+          168.34
+        ],
+        [
+          "2026-08-04",
+          168.34
+        ],
+        [
+          "2026-08-05",
+          168.34
+        ],
+        [
+          "2026-08-06",
+          168.82
+        ],
+        [
+          "2026-08-07",
+          168.82
+        ],
+        [
+          "2026-08-08",
+          168.82
+        ],
+        [
+          "2026-08-09",
+          168.82
+        ],
+        [
+          "2026-08-10",
+          168.82
+        ],
+        [
+          "2026-08-11",
+          168.82
+        ],
+        [
+          "2026-08-12",
+          169.3
+        ],
+        [
+          "2026-08-13",
+          169.3
+        ],
+        [
+          "2026-08-14",
+          169.3
         ]
       ]
     },
@@ -859,6 +734,10 @@
         ],
         [
           "2026-08-13",
+          180.53
+        ],
+        [
+          "2026-08-14",
           180.53
         ]
       ]
@@ -937,6 +816,10 @@
         [
           "2026-08-13",
           189.81
+        ],
+        [
+          "2026-08-14",
+          189.81
         ]
       ]
     },
@@ -1013,6 +896,10 @@
         ],
         [
           "2026-08-13",
+          195.04
+        ],
+        [
+          "2026-08-14",
           195.04
         ]
       ]
@@ -1094,6 +981,10 @@
         [
           "2026-08-13",
           228.33
+        ],
+        [
+          "2026-08-14",
+          228.33
         ]
       ]
     },
@@ -1174,165 +1065,91 @@
         [
           "2026-08-13",
           189.71
+        ],
+        [
+          "2026-08-14",
+          189.71
         ]
       ]
     },
     {
-      "name": "Obsidian Flames Booster Box",
-      "set": "Obsidian Flames",
-      "format": "Booster Box",
-      "productId": 501257,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501257.jpg",
-      "listings": 65,
-      "low": 41.48,
-      "phase": "appreciation",
-      "price": 368.78,
-      "mom": null,
-      "signal": "BUY",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Long out of print. Survivor boxes get scarcer every year.",
-        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
-      ],
-      "rationale": "Long out of print. Survivor boxes get scarcer every year.",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "lowest listing looks like junk"
-      ],
-      "proj": [
-        354.26,
-        552.94
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          380.51
-        ],
-        [
-          "2026-08-02",
-          379.99
-        ],
-        [
-          "2026-08-03",
-          379.27
-        ],
-        [
-          "2026-08-04",
-          379.27
-        ],
-        [
-          "2026-08-05",
-          379.27
-        ],
-        [
-          "2026-08-06",
-          377.87
-        ],
-        [
-          "2026-08-07",
-          376.43
-        ],
-        [
-          "2026-08-08",
-          375.07
-        ],
-        [
-          "2026-08-09",
-          375.07
-        ],
-        [
-          "2026-08-10",
-          374.92
-        ],
-        [
-          "2026-08-11",
-          373.31
-        ],
-        [
-          "2026-08-12",
-          372.23
-        ],
-        [
-          "2026-08-13",
-          368.78
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Pokemon Center Elite Trainer Box (Exclusive)",
-      "set": "Obsidian Flames",
+      "name": "Shrouded Fable Elite Trainer Box",
+      "set": "Shrouded Fable",
       "format": "Elite Trainer Box",
-      "productId": 501266,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501266.jpg",
-      "listings": 36,
-      "low": 675,
-      "phase": "appreciation",
-      "price": 704.23,
+      "productId": 552999,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/552999.jpg",
+      "listings": 57,
+      "low": 64.99,
+      "phase": "recovery",
+      "price": 119.26,
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Long out of print. Survivor boxes get scarcer every year."
+        "Out of print and still being opened — sealed supply only goes down from here."
       ],
-      "rationale": "Long out of print. Survivor boxes get scarcer every year.",
-      "confidence": 1,
+      "rationale": "Out of print and still being opened — sealed supply only goes down from here.",
+      "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        737.47,
-        938.6
+        120.27,
+        165.95
       ],
       "history": [
         [
           "2026-08-01",
-          712.14
+          122.62
         ],
         [
           "2026-08-02",
-          712.14
+          123.01
         ],
         [
           "2026-08-03",
-          712.14
+          123.81
         ],
         [
           "2026-08-04",
-          706.34
+          122.46
         ],
         [
           "2026-08-05",
-          706.34
+          122.46
         ],
         [
           "2026-08-06",
-          707.34
+          122.51
         ],
         [
           "2026-08-07",
-          707.82
+          122.91
         ],
         [
           "2026-08-08",
-          707.82
+          121.6
         ],
         [
           "2026-08-09",
-          708.26
+          120.96
         ],
         [
           "2026-08-10",
-          704.54
+          120.96
         ],
         [
           "2026-08-11",
-          704.23
+          119.99
         ],
         [
           "2026-08-12",
-          704.23
+          119.66
         ],
         [
           "2026-08-13",
-          704.23
+          119.26
+        ],
+        [
+          "2026-08-14",
+          119.26
         ]
       ]
     },
@@ -1409,6 +1226,10 @@
         ],
         [
           "2026-08-13",
+          145.28
+        ],
+        [
+          "2026-08-14",
           145.28
         ]
       ]
@@ -1487,6 +1308,10 @@
         [
           "2026-08-13",
           209.04
+        ],
+        [
+          "2026-08-14",
+          209.04
         ]
       ]
     },
@@ -1563,6 +1388,10 @@
         ],
         [
           "2026-08-13",
+          137.13
+        ],
+        [
+          "2026-08-14",
           137.13
         ]
       ]
@@ -1641,6 +1470,91 @@
         [
           "2026-08-13",
           165.62
+        ],
+        [
+          "2026-08-14",
+          165.62
+        ]
+      ]
+    },
+    {
+      "name": "Shrouded Fable Booster Bundle",
+      "set": "Shrouded Fable",
+      "format": "Booster Bundle",
+      "productId": 553031,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/553031.jpg",
+      "listings": 59,
+      "low": 43.46,
+      "phase": "recovery",
+      "price": 55.83,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 1,
+      "confidenceFlags": [],
+      "proj": [
+        57.97,
+        73.78
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          66.54
+        ],
+        [
+          "2026-08-02",
+          66.26
+        ],
+        [
+          "2026-08-03",
+          66.4
+        ],
+        [
+          "2026-08-04",
+          65.45
+        ],
+        [
+          "2026-08-05",
+          65.45
+        ],
+        [
+          "2026-08-06",
+          64.77
+        ],
+        [
+          "2026-08-07",
+          64.25
+        ],
+        [
+          "2026-08-08",
+          60.53
+        ],
+        [
+          "2026-08-09",
+          58.82
+        ],
+        [
+          "2026-08-10",
+          58.12
+        ],
+        [
+          "2026-08-11",
+          56.81
+        ],
+        [
+          "2026-08-12",
+          55.5
+        ],
+        [
+          "2026-08-13",
+          55.83
+        ],
+        [
+          "2026-08-14",
+          55.83
         ]
       ]
     },
@@ -1717,6 +1631,10 @@
         ],
         [
           "2026-08-13",
+          130.39
+        ],
+        [
+          "2026-08-14",
           130.39
         ]
       ]
@@ -1795,6 +1713,10 @@
         [
           "2026-08-13",
           163.05
+        ],
+        [
+          "2026-08-14",
+          163.05
         ]
       ]
     },
@@ -1871,6 +1793,10 @@
         ],
         [
           "2026-08-13",
+          132.27
+        ],
+        [
+          "2026-08-14",
           132.27
         ]
       ]
@@ -1952,6 +1878,10 @@
         [
           "2026-08-13",
           109.52
+        ],
+        [
+          "2026-08-14",
+          109.52
         ]
       ]
     },
@@ -2032,6 +1962,94 @@
         [
           "2026-08-13",
           466.5
+        ],
+        [
+          "2026-08-14",
+          466.5
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Booster Box",
+      "set": "Obsidian Flames",
+      "format": "Booster Box",
+      "productId": 501257,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501257.jpg",
+      "listings": 65,
+      "low": 41.48,
+      "phase": "appreciation",
+      "price": 368.78,
+      "mom": null,
+      "signal": "BUY",
+      "reasons": [
+        "Long out of print. Survivor boxes get scarcer every year.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Long out of print. Survivor boxes get scarcer every year.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        345.62,
+        539.45
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          380.51
+        ],
+        [
+          "2026-08-02",
+          379.99
+        ],
+        [
+          "2026-08-03",
+          379.27
+        ],
+        [
+          "2026-08-04",
+          379.27
+        ],
+        [
+          "2026-08-05",
+          379.27
+        ],
+        [
+          "2026-08-06",
+          377.87
+        ],
+        [
+          "2026-08-07",
+          376.43
+        ],
+        [
+          "2026-08-08",
+          375.07
+        ],
+        [
+          "2026-08-09",
+          375.07
+        ],
+        [
+          "2026-08-10",
+          374.92
+        ],
+        [
+          "2026-08-11",
+          373.31
+        ],
+        [
+          "2026-08-12",
+          372.23
+        ],
+        [
+          "2026-08-13",
+          368.78
+        ],
+        [
+          "2026-08-14",
+          368.78
         ]
       ]
     },
@@ -2108,6 +2126,10 @@
         ],
         [
           "2026-08-13",
+          73.75
+        ],
+        [
+          "2026-08-14",
           73.75
         ]
       ]
@@ -2186,6 +2208,10 @@
         [
           "2026-08-13",
           87.53
+        ],
+        [
+          "2026-08-14",
+          87.53
         ]
       ]
     },
@@ -2263,6 +2289,10 @@
         [
           "2026-08-13",
           89.37
+        ],
+        [
+          "2026-08-14",
+          89.37
         ]
       ]
     },
@@ -2339,6 +2369,10 @@
         ],
         [
           "2026-08-13",
+          77.9
+        ],
+        [
+          "2026-08-14",
           77.9
         ]
       ]
@@ -2420,6 +2454,10 @@
         [
           "2026-08-13",
           290.92
+        ],
+        [
+          "2026-08-14",
+          290.92
         ]
       ]
     },
@@ -2499,6 +2537,10 @@
         ],
         [
           "2026-08-13",
+          386.42
+        ],
+        [
+          "2026-08-14",
           386.42
         ]
       ]
@@ -2580,87 +2622,91 @@
         [
           "2026-08-13",
           218.41
+        ],
+        [
+          "2026-08-14",
+          218.41
         ]
       ]
     },
     {
-      "name": "Obsidian Flames Elite Trainer Box",
+      "name": "Obsidian Flames Pokemon Center Elite Trainer Box (Exclusive)",
       "set": "Obsidian Flames",
       "format": "Elite Trainer Box",
-      "productId": 501264,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501264.jpg",
-      "listings": 45,
-      "low": 42.99,
+      "productId": 501266,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501266.jpg",
+      "listings": 36,
+      "low": 675,
       "phase": "appreciation",
-      "price": 293.52,
+      "price": 704.23,
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Long out of print. Survivor boxes get scarcer every year.",
-        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+        "Long out of print. Survivor boxes get scarcer every year."
       ],
       "rationale": "Long out of print. Survivor boxes get scarcer every year.",
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "lowest listing looks like junk"
-      ],
+      "confidence": 1,
+      "confidenceFlags": [],
       "proj": [
-        272.79,
-        425.78
+        718.88,
+        914.94
       ],
       "history": [
         [
           "2026-08-01",
-          314.26
+          712.14
         ],
         [
           "2026-08-02",
-          312
+          712.14
         ],
         [
           "2026-08-03",
-          310.83
+          712.14
         ],
         [
           "2026-08-04",
-          307.09
+          706.34
         ],
         [
           "2026-08-05",
-          307.09
+          706.34
         ],
         [
           "2026-08-06",
-          306.09
+          707.34
         ],
         [
           "2026-08-07",
-          303.21
+          707.82
         ],
         [
           "2026-08-08",
-          301.41
+          707.82
         ],
         [
           "2026-08-09",
-          300.41
+          708.26
         ],
         [
           "2026-08-10",
-          300.41
+          704.54
         ],
         [
           "2026-08-11",
-          300.41
+          704.23
         ],
         [
           "2026-08-12",
-          296.08
+          704.23
         ],
         [
           "2026-08-13",
-          293.52
+          704.23
+        ],
+        [
+          "2026-08-14",
+          704.23
         ]
       ]
     },
@@ -2737,6 +2783,10 @@
         ],
         [
           "2026-08-13",
+          721.57
+        ],
+        [
+          "2026-08-14",
           721.57
         ]
       ]
@@ -2815,6 +2865,10 @@
         [
           "2026-08-13",
           206.94
+        ],
+        [
+          "2026-08-14",
+          206.94
         ]
       ]
     },
@@ -2891,6 +2945,10 @@
         ],
         [
           "2026-08-13",
+          211.5
+        ],
+        [
+          "2026-08-14",
           211.5
         ]
       ]
@@ -2969,84 +3027,10 @@
         [
           "2026-08-13",
           70.68
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Booster Bundle",
-      "set": "Obsidian Flames",
-      "format": "Booster Bundle",
-      "productId": 501263,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501263.jpg",
-      "listings": 10,
-      "low": 115,
-      "phase": "appreciation",
-      "price": 119.01,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        115.64,
-        162.84
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          116.6
         ],
         [
-          "2026-08-02",
-          117.18
-        ],
-        [
-          "2026-08-03",
-          117.51
-        ],
-        [
-          "2026-08-04",
-          117.67
-        ],
-        [
-          "2026-08-05",
-          117.67
-        ],
-        [
-          "2026-08-06",
-          117.67
-        ],
-        [
-          "2026-08-07",
-          117.67
-        ],
-        [
-          "2026-08-08",
-          117.67
-        ],
-        [
-          "2026-08-09",
-          117.67
-        ],
-        [
-          "2026-08-10",
-          118.11
-        ],
-        [
-          "2026-08-11",
-          118.11
-        ],
-        [
-          "2026-08-12",
-          118.11
-        ],
-        [
-          "2026-08-13",
-          119.01
+          "2026-08-14",
+          70.68
         ]
       ]
     },
@@ -3123,6 +3107,10 @@
         ],
         [
           "2026-08-13",
+          73.64
+        ],
+        [
+          "2026-08-14",
           73.64
         ]
       ]
@@ -3204,6 +3192,10 @@
         [
           "2026-08-13",
           236.23
+        ],
+        [
+          "2026-08-14",
+          236.23
         ]
       ]
     },
@@ -3283,6 +3275,10 @@
         ],
         [
           "2026-08-13",
+          214.54
+        ],
+        [
+          "2026-08-14",
           214.54
         ]
       ]
@@ -3364,87 +3360,94 @@
         [
           "2026-08-13",
           226.11
+        ],
+        [
+          "2026-08-14",
+          226.11
         ]
       ]
     },
     {
-      "name": "Shrouded Fable 3 Pack Blister [Pecharunt]",
-      "set": "Shrouded Fable",
-      "format": "Blister",
-      "productId": 553007,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/553007.jpg",
-      "listings": 1,
-      "low": 55,
-      "phase": "recovery",
-      "price": 33.78,
+      "name": "Obsidian Flames Elite Trainer Box",
+      "set": "Obsidian Flames",
+      "format": "Elite Trainer Box",
+      "productId": 501264,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501264.jpg",
+      "listings": 45,
+      "low": 42.99,
+      "phase": "appreciation",
+      "price": 293.52,
       "mom": null,
-      "signal": "HOLD",
+      "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $45) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
+        "Long out of print. Survivor boxes get scarcer every year.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
+      "rationale": "Long out of print. Survivor boxes get scarcer every year.",
+      "confidence": 0.7,
       "confidenceFlags": [
-        "almost no listings"
+        "lowest listing looks like junk"
       ],
       "proj": [
-        29.96,
-        48.41
+        265.92,
+        415.05
       ],
       "history": [
         [
           "2026-08-01",
-          32.62
+          314.26
         ],
         [
           "2026-08-02",
-          32.62
+          312
         ],
         [
           "2026-08-03",
-          32.62
+          310.83
         ],
         [
           "2026-08-04",
-          33.3
+          307.09
         ],
         [
           "2026-08-05",
-          33.3
+          307.09
         ],
         [
           "2026-08-06",
-          33.3
+          306.09
         ],
         [
           "2026-08-07",
-          33.3
+          303.21
         ],
         [
           "2026-08-08",
-          33.78
+          301.41
         ],
         [
           "2026-08-09",
-          33.78
+          300.41
         ],
         [
           "2026-08-10",
-          33.78
+          300.41
         ],
         [
           "2026-08-11",
-          33.78
+          300.41
         ],
         [
           "2026-08-12",
-          33.78
+          296.08
         ],
         [
           "2026-08-13",
-          33.78
+          293.52
+        ],
+        [
+          "2026-08-14",
+          293.52
         ]
       ]
     },
@@ -3525,6 +3528,91 @@
         [
           "2026-08-13",
           72.97
+        ],
+        [
+          "2026-08-14",
+          72.97
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Booster Bundle",
+      "set": "Obsidian Flames",
+      "format": "Booster Bundle",
+      "productId": 501263,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501263.jpg",
+      "listings": 10,
+      "low": 115,
+      "phase": "appreciation",
+      "price": 119.01,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        112.68,
+        158.67
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          116.6
+        ],
+        [
+          "2026-08-02",
+          117.18
+        ],
+        [
+          "2026-08-03",
+          117.51
+        ],
+        [
+          "2026-08-04",
+          117.67
+        ],
+        [
+          "2026-08-05",
+          117.67
+        ],
+        [
+          "2026-08-06",
+          117.67
+        ],
+        [
+          "2026-08-07",
+          117.67
+        ],
+        [
+          "2026-08-08",
+          117.67
+        ],
+        [
+          "2026-08-09",
+          117.67
+        ],
+        [
+          "2026-08-10",
+          118.11
+        ],
+        [
+          "2026-08-11",
+          118.11
+        ],
+        [
+          "2026-08-12",
+          118.11
+        ],
+        [
+          "2026-08-13",
+          119.01
+        ],
+        [
+          "2026-08-14",
+          119.01
         ]
       ]
     },
@@ -3601,6 +3689,10 @@
         ],
         [
           "2026-08-13",
+          13.67
+        ],
+        [
+          "2026-08-14",
           13.67
         ]
       ]
@@ -3679,6 +3771,10 @@
         [
           "2026-08-13",
           24.99
+        ],
+        [
+          "2026-08-14",
+          24.99
         ]
       ]
     },
@@ -3755,6 +3851,10 @@
         ],
         [
           "2026-08-13",
+          10.69
+        ],
+        [
+          "2026-08-14",
           10.69
         ]
       ]
@@ -3833,6 +3933,10 @@
         [
           "2026-08-13",
           9.54
+        ],
+        [
+          "2026-08-14",
+          9.54
         ]
       ]
     },
@@ -3909,6 +4013,10 @@
         ],
         [
           "2026-08-13",
+          10.89
+        ],
+        [
+          "2026-08-14",
           10.89
         ]
       ]
@@ -3987,6 +4095,10 @@
         [
           "2026-08-13",
           10.4
+        ],
+        [
+          "2026-08-14",
+          10.4
         ]
       ]
     },
@@ -4063,6 +4175,10 @@
         ],
         [
           "2026-08-13",
+          10.06
+        ],
+        [
+          "2026-08-14",
           10.06
         ]
       ]
@@ -4141,87 +4257,10 @@
         [
           "2026-08-13",
           8.51
-        ]
-      ]
-    },
-    {
-      "name": "Shrouded Fable Booster Pack",
-      "set": "Shrouded Fable",
-      "format": "Booster Pack",
-      "productId": 552997,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/552997.jpg",
-      "listings": 23,
-      "low": 3.99,
-      "phase": "recovery",
-      "price": 14.73,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $45) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.55,
-      "confidenceFlags": [
-        "lowest listing looks like junk"
-      ],
-      "proj": [
-        12.39,
-        21.49
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          14.6
         ],
         [
-          "2026-08-02",
-          14.59
-        ],
-        [
-          "2026-08-03",
-          14.59
-        ],
-        [
-          "2026-08-04",
-          14.62
-        ],
-        [
-          "2026-08-05",
-          14.62
-        ],
-        [
-          "2026-08-06",
-          14.62
-        ],
-        [
-          "2026-08-07",
-          14.62
-        ],
-        [
-          "2026-08-08",
-          14.66
-        ],
-        [
-          "2026-08-09",
-          14.66
-        ],
-        [
-          "2026-08-10",
-          14.65
-        ],
-        [
-          "2026-08-11",
-          14.69
-        ],
-        [
-          "2026-08-12",
-          14.69
-        ],
-        [
-          "2026-08-13",
-          14.73
+          "2026-08-14",
+          8.51
         ]
       ]
     },
@@ -4299,84 +4338,10 @@
         [
           "2026-08-13",
           23.5
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Single Pack Blister [Pawmi]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 501262,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501262.jpg",
-      "listings": 10,
-      "low": 12,
-      "phase": "appreciation",
-      "price": 13.08,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        12.17,
-        17.13
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          13.08
         ],
         [
-          "2026-08-02",
-          13.08
-        ],
-        [
-          "2026-08-03",
-          13.08
-        ],
-        [
-          "2026-08-04",
-          13.08
-        ],
-        [
-          "2026-08-05",
-          13.08
-        ],
-        [
-          "2026-08-06",
-          13.08
-        ],
-        [
-          "2026-08-07",
-          13.08
-        ],
-        [
-          "2026-08-08",
-          13.08
-        ],
-        [
-          "2026-08-09",
-          13.08
-        ],
-        [
-          "2026-08-10",
-          13.08
-        ],
-        [
-          "2026-08-11",
-          13.08
-        ],
-        [
-          "2026-08-12",
-          13.08
-        ],
-        [
-          "2026-08-13",
-          13.08
+          "2026-08-14",
+          23.5
         ]
       ]
     },
@@ -4453,6 +4418,10 @@
         ],
         [
           "2026-08-13",
+          93.27
+        ],
+        [
+          "2026-08-14",
           93.27
         ]
       ]
@@ -4531,84 +4500,10 @@
         [
           "2026-08-13",
           39.16
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames 3 Pack Blister [Houndstone]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 501260,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501260.jpg",
-      "listings": 10,
-      "low": 35.59,
-      "phase": "appreciation",
-      "price": 35.59,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        33.1,
-        46.62
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          35.45
         ],
         [
-          "2026-08-02",
-          35.59
-        ],
-        [
-          "2026-08-03",
-          35.59
-        ],
-        [
-          "2026-08-04",
-          35.59
-        ],
-        [
-          "2026-08-05",
-          35.59
-        ],
-        [
-          "2026-08-06",
-          35.59
-        ],
-        [
-          "2026-08-07",
-          35.59
-        ],
-        [
-          "2026-08-08",
-          35.59
-        ],
-        [
-          "2026-08-09",
-          35.59
-        ],
-        [
-          "2026-08-10",
-          35.59
-        ],
-        [
-          "2026-08-11",
-          35.59
-        ],
-        [
-          "2026-08-12",
-          35.59
-        ],
-        [
-          "2026-08-13",
-          35.59
+          "2026-08-14",
+          39.16
         ]
       ]
     },
@@ -4686,84 +4581,10 @@
         [
           "2026-08-13",
           43.51
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Single Pack Blister [Paldean Wooper]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 512047,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/512047.jpg",
-      "listings": 8,
-      "low": 12,
-      "phase": "appreciation",
-      "price": 12.92,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        12.02,
-        16.92
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          12.68
         ],
         [
-          "2026-08-02",
-          12.68
-        ],
-        [
-          "2026-08-03",
-          12.68
-        ],
-        [
-          "2026-08-04",
-          12.68
-        ],
-        [
-          "2026-08-05",
-          12.68
-        ],
-        [
-          "2026-08-06",
-          12.68
-        ],
-        [
-          "2026-08-07",
-          12.68
-        ],
-        [
-          "2026-08-08",
-          12.68
-        ],
-        [
-          "2026-08-09",
-          12.68
-        ],
-        [
-          "2026-08-10",
-          12.92
-        ],
-        [
-          "2026-08-11",
-          12.92
-        ],
-        [
-          "2026-08-12",
-          12.92
-        ],
-        [
-          "2026-08-13",
-          12.92
+          "2026-08-14",
+          43.51
         ]
       ]
     },
@@ -4841,6 +4662,10 @@
         [
           "2026-08-13",
           44.47
+        ],
+        [
+          "2026-08-14",
+          44.47
         ]
       ]
     },
@@ -4917,6 +4742,10 @@
         ],
         [
           "2026-08-13",
+          11.28
+        ],
+        [
+          "2026-08-14",
           11.28
         ]
       ]
@@ -4998,6 +4827,10 @@
         [
           "2026-08-13",
           15.83
+        ],
+        [
+          "2026-08-14",
+          15.83
         ]
       ]
     },
@@ -5077,6 +4910,10 @@
         ],
         [
           "2026-08-13",
+          29.41
+        ],
+        [
+          "2026-08-14",
           29.41
         ]
       ]
@@ -5158,6 +4995,10 @@
         [
           "2026-08-13",
           35.37
+        ],
+        [
+          "2026-08-14",
+          35.37
         ]
       ]
     },
@@ -5233,6 +5074,10 @@
         ],
         [
           "2026-08-13",
+          30.99
+        ],
+        [
+          "2026-08-14",
           30.99
         ]
       ]
@@ -5314,6 +5159,10 @@
         [
           "2026-08-13",
           22.07
+        ],
+        [
+          "2026-08-14",
+          22.07
         ]
       ]
     },
@@ -5393,6 +5242,10 @@
         ],
         [
           "2026-08-13",
+          29.61
+        ],
+        [
+          "2026-08-14",
           29.61
         ]
       ]
@@ -5474,6 +5327,10 @@
         [
           "2026-08-13",
           27.5
+        ],
+        [
+          "2026-08-14",
+          27.5
         ]
       ]
     },
@@ -5553,6 +5410,10 @@
         ],
         [
           "2026-08-13",
+          10
+        ],
+        [
+          "2026-08-14",
           10
         ]
       ]
@@ -5634,6 +5495,10 @@
         [
           "2026-08-13",
           28
+        ],
+        [
+          "2026-08-14",
+          28
         ]
       ]
     },
@@ -5713,6 +5578,10 @@
         ],
         [
           "2026-08-13",
+          10
+        ],
+        [
+          "2026-08-14",
           10
         ]
       ]
@@ -5794,6 +5663,10 @@
         [
           "2026-08-13",
           20
+        ],
+        [
+          "2026-08-14",
+          20
         ]
       ]
     },
@@ -5873,6 +5746,10 @@
         ],
         [
           "2026-08-13",
+          34.5
+        ],
+        [
+          "2026-08-14",
           34.5
         ]
       ]
@@ -5954,6 +5831,10 @@
         [
           "2026-08-13",
           36
+        ],
+        [
+          "2026-08-14",
+          36
         ]
       ]
     },
@@ -6033,6 +5914,10 @@
         ],
         [
           "2026-08-13",
+          17.5
+        ],
+        [
+          "2026-08-14",
           17.5
         ]
       ]
@@ -6114,6 +5999,94 @@
         [
           "2026-08-13",
           29.08
+        ],
+        [
+          "2026-08-14",
+          29.08
+        ]
+      ]
+    },
+    {
+      "name": "Shrouded Fable 3 Pack Blister [Pecharunt]",
+      "set": "Shrouded Fable",
+      "format": "Blister",
+      "productId": 553007,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/553007.jpg",
+      "listings": 1,
+      "low": 55,
+      "phase": "recovery",
+      "price": 33.78,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        29.18,
+        47.16
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          32.62
+        ],
+        [
+          "2026-08-02",
+          32.62
+        ],
+        [
+          "2026-08-03",
+          32.62
+        ],
+        [
+          "2026-08-04",
+          33.3
+        ],
+        [
+          "2026-08-05",
+          33.3
+        ],
+        [
+          "2026-08-06",
+          33.3
+        ],
+        [
+          "2026-08-07",
+          33.3
+        ],
+        [
+          "2026-08-08",
+          33.78
+        ],
+        [
+          "2026-08-09",
+          33.78
+        ],
+        [
+          "2026-08-10",
+          33.78
+        ],
+        [
+          "2026-08-11",
+          33.78
+        ],
+        [
+          "2026-08-12",
+          33.78
+        ],
+        [
+          "2026-08-13",
+          33.78
+        ],
+        [
+          "2026-08-14",
+          33.78
         ]
       ]
     },
@@ -6193,6 +6166,10 @@
         ],
         [
           "2026-08-13",
+          49.71
+        ],
+        [
+          "2026-08-14",
           49.71
         ]
       ]
@@ -6274,6 +6251,10 @@
         [
           "2026-08-13",
           11.89
+        ],
+        [
+          "2026-08-14",
+          11.89
         ]
       ]
     },
@@ -6353,6 +6334,10 @@
         ],
         [
           "2026-08-13",
+          42.22
+        ],
+        [
+          "2026-08-14",
           42.22
         ]
       ]
@@ -6434,6 +6419,10 @@
         [
           "2026-08-13",
           15.28
+        ],
+        [
+          "2026-08-14",
+          15.28
         ]
       ]
     },
@@ -6513,6 +6502,10 @@
         ],
         [
           "2026-08-13",
+          30.18
+        ],
+        [
+          "2026-08-14",
           30.18
         ]
       ]
@@ -6594,6 +6587,10 @@
         [
           "2026-08-13",
           23.33
+        ],
+        [
+          "2026-08-14",
+          23.33
         ]
       ]
     },
@@ -6673,6 +6670,10 @@
         ],
         [
           "2026-08-13",
+          11.6
+        ],
+        [
+          "2026-08-14",
           11.6
         ]
       ]
@@ -6754,6 +6755,10 @@
         [
           "2026-08-13",
           10.91
+        ],
+        [
+          "2026-08-14",
+          10.91
         ]
       ]
     },
@@ -6770,7 +6775,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print."
       ],
       "rationale": "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
@@ -6831,6 +6836,10 @@
         ],
         [
           "2026-08-13",
+          309.37
+        ],
+        [
+          "2026-08-14",
           309.37
         ]
       ]
@@ -6912,6 +6921,10 @@
         [
           "2026-08-13",
           11.74
+        ],
+        [
+          "2026-08-14",
+          11.74
         ]
       ]
     },
@@ -6991,6 +7004,10 @@
         ],
         [
           "2026-08-13",
+          10.38
+        ],
+        [
+          "2026-08-14",
           10.38
         ]
       ]
@@ -7072,6 +7089,10 @@
         [
           "2026-08-13",
           11.09
+        ],
+        [
+          "2026-08-14",
+          11.09
         ]
       ]
     },
@@ -7151,6 +7172,10 @@
         ],
         [
           "2026-08-13",
+          8.8
+        ],
+        [
+          "2026-08-14",
           8.8
         ]
       ]
@@ -7232,84 +7257,10 @@
         [
           "2026-08-13",
           10.6
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Booster Pack Art Bundle [Set of 4]",
-      "set": "Obsidian Flames",
-      "format": "Booster Pack",
-      "productId": 515079,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/515079.jpg",
-      "listings": 8,
-      "low": 55,
-      "phase": "appreciation",
-      "price": 49,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.85,
-      "confidenceFlags": [],
-      "proj": [
-        45.17,
-        63.61
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          47.64
         ],
         [
-          "2026-08-02",
-          47.64
-        ],
-        [
-          "2026-08-03",
-          47.64
-        ],
-        [
-          "2026-08-04",
-          47.64
-        ],
-        [
-          "2026-08-05",
-          47.64
-        ],
-        [
-          "2026-08-06",
-          48
-        ],
-        [
-          "2026-08-07",
-          48
-        ],
-        [
-          "2026-08-08",
-          48
-        ],
-        [
-          "2026-08-09",
-          48
-        ],
-        [
-          "2026-08-10",
-          48.56
-        ],
-        [
-          "2026-08-11",
-          48.56
-        ],
-        [
-          "2026-08-12",
-          49
-        ],
-        [
-          "2026-08-13",
-          49
+          "2026-08-14",
+          10.6
         ]
       ]
     },
@@ -7390,87 +7341,10 @@
         [
           "2026-08-13",
           10.2
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Single Blister Pack [Houndstone]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 557086,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557086.jpg",
-      "listings": 3,
-      "low": 21.4,
-      "phase": "appreciation",
-      "price": 20.99,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "almost no listings"
-      ],
-      "proj": [
-        17.97,
-        29.05
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          20.99
         ],
         [
-          "2026-08-02",
-          20.99
-        ],
-        [
-          "2026-08-03",
-          20.99
-        ],
-        [
-          "2026-08-04",
-          20.99
-        ],
-        [
-          "2026-08-05",
-          20.99
-        ],
-        [
-          "2026-08-06",
-          20.99
-        ],
-        [
-          "2026-08-07",
-          20.99
-        ],
-        [
-          "2026-08-08",
-          20.99
-        ],
-        [
-          "2026-08-09",
-          20.99
-        ],
-        [
-          "2026-08-10",
-          20.99
-        ],
-        [
-          "2026-08-11",
-          20.99
-        ],
-        [
-          "2026-08-12",
-          20.99
-        ],
-        [
-          "2026-08-13",
-          20.99
+          "2026-08-14",
+          10.2
         ]
       ]
     },
@@ -7550,6 +7424,10 @@
         ],
         [
           "2026-08-13",
+          38.9
+        ],
+        [
+          "2026-08-14",
           38.9
         ]
       ]
@@ -7631,168 +7509,10 @@
         [
           "2026-08-13",
           34.99
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Single Blister Pack [Annihilape]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 557084,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557084.jpg",
-      "listings": 1,
-      "low": 68.6,
-      "phase": "appreciation",
-      "price": 63.99,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "almost no listings"
-      ],
-      "proj": [
-        54.79,
-        88.55
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          63.99
         ],
         [
-          "2026-08-02",
-          63.99
-        ],
-        [
-          "2026-08-03",
-          63.99
-        ],
-        [
-          "2026-08-04",
-          63.99
-        ],
-        [
-          "2026-08-05",
-          63.99
-        ],
-        [
-          "2026-08-06",
-          63.99
-        ],
-        [
-          "2026-08-07",
-          63.99
-        ],
-        [
-          "2026-08-08",
-          63.99
-        ],
-        [
-          "2026-08-09",
-          63.99
-        ],
-        [
-          "2026-08-10",
-          63.99
-        ],
-        [
-          "2026-08-11",
-          63.99
-        ],
-        [
-          "2026-08-12",
-          63.99
-        ],
-        [
-          "2026-08-13",
-          63.99
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames 3 Pack Blister [Set of 2]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 501261,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501261.jpg",
-      "listings": 0,
-      "low": null,
-      "phase": "appreciation",
-      "price": 47.66,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "almost no listings"
-      ],
-      "proj": [
-        40.81,
-        65.95
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          47.66
-        ],
-        [
-          "2026-08-02",
-          47.66
-        ],
-        [
-          "2026-08-03",
-          47.66
-        ],
-        [
-          "2026-08-04",
-          47.66
-        ],
-        [
-          "2026-08-05",
-          47.66
-        ],
-        [
-          "2026-08-06",
-          47.66
-        ],
-        [
-          "2026-08-07",
-          47.66
-        ],
-        [
-          "2026-08-08",
-          47.66
-        ],
-        [
-          "2026-08-09",
-          47.66
-        ],
-        [
-          "2026-08-10",
-          47.66
-        ],
-        [
-          "2026-08-11",
-          47.66
-        ],
-        [
-          "2026-08-12",
-          47.66
-        ],
-        [
-          "2026-08-13",
-          47.66
+          "2026-08-14",
+          34.99
         ]
       ]
     },
@@ -7872,6 +7592,10 @@
         ],
         [
           "2026-08-13",
+          41.21
+        ],
+        [
+          "2026-08-14",
           41.21
         ]
       ]
@@ -7953,6 +7677,10 @@
         [
           "2026-08-13",
           36.09
+        ],
+        [
+          "2026-08-14",
+          36.09
         ]
       ]
     },
@@ -8032,6 +7760,10 @@
         ],
         [
           "2026-08-13",
+          85.9
+        ],
+        [
+          "2026-08-14",
           85.9
         ]
       ]
@@ -8113,249 +7845,10 @@
         [
           "2026-08-13",
           44.77
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames 3 Pack Blister [Eevee]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 501259,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501259.jpg",
-      "listings": 7,
-      "low": 42,
-      "phase": "appreciation",
-      "price": 39.02,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "almost no listings"
-      ],
-      "proj": [
-        33.41,
-        53.99
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          38.4
         ],
         [
-          "2026-08-02",
-          38.4
-        ],
-        [
-          "2026-08-03",
-          38.4
-        ],
-        [
-          "2026-08-04",
-          39.02
-        ],
-        [
-          "2026-08-05",
-          39.02
-        ],
-        [
-          "2026-08-06",
-          39.02
-        ],
-        [
-          "2026-08-07",
-          39.02
-        ],
-        [
-          "2026-08-08",
-          39.02
-        ],
-        [
-          "2026-08-09",
-          39.02
-        ],
-        [
-          "2026-08-10",
-          39.02
-        ],
-        [
-          "2026-08-11",
-          39.02
-        ],
-        [
-          "2026-08-12",
-          39.02
-        ],
-        [
-          "2026-08-13",
-          39.02
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Single Blister Pack [Kingambit]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 557085,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557085.jpg",
-      "listings": 0,
-      "low": null,
-      "phase": "appreciation",
-      "price": 49.99,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "almost no listings"
-      ],
-      "proj": [
-        42.8,
-        69.17
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          49.99
-        ],
-        [
-          "2026-08-02",
-          49.99
-        ],
-        [
-          "2026-08-03",
-          49.99
-        ],
-        [
-          "2026-08-04",
-          49.99
-        ],
-        [
-          "2026-08-05",
-          49.99
-        ],
-        [
-          "2026-08-06",
-          49.99
-        ],
-        [
-          "2026-08-07",
-          49.99
-        ],
-        [
-          "2026-08-08",
-          49.99
-        ],
-        [
-          "2026-08-09",
-          49.99
-        ],
-        [
-          "2026-08-10",
-          49.99
-        ],
-        [
-          "2026-08-11",
-          49.99
-        ],
-        [
-          "2026-08-12",
-          49.99
-        ],
-        [
-          "2026-08-13",
-          49.99
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Single Blister Pack [Revavroom]",
-      "set": "Obsidian Flames",
-      "format": "Blister",
-      "productId": 557087,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557087.jpg",
-      "listings": 3,
-      "low": 20,
-      "phase": "appreciation",
-      "price": 17.6,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "almost no listings"
-      ],
-      "proj": [
-        15.07,
-        24.35
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          17.6
-        ],
-        [
-          "2026-08-02",
-          17.6
-        ],
-        [
-          "2026-08-03",
-          17.6
-        ],
-        [
-          "2026-08-04",
-          17.6
-        ],
-        [
-          "2026-08-05",
-          17.6
-        ],
-        [
-          "2026-08-06",
-          17.6
-        ],
-        [
-          "2026-08-07",
-          17.6
-        ],
-        [
-          "2026-08-08",
-          17.6
-        ],
-        [
-          "2026-08-09",
-          17.6
-        ],
-        [
-          "2026-08-10",
-          17.6
-        ],
-        [
-          "2026-08-11",
-          17.6
-        ],
-        [
-          "2026-08-12",
-          17.6
-        ],
-        [
-          "2026-08-13",
-          17.6
+          "2026-08-14",
+          44.77
         ]
       ]
     },
@@ -8372,7 +7865,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -8437,6 +7930,10 @@
         [
           "2026-08-13",
           325.57
+        ],
+        [
+          "2026-08-14",
+          325.57
         ]
       ]
     },
@@ -8453,7 +7950,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -8518,6 +8015,10 @@
         [
           "2026-08-13",
           466.31
+        ],
+        [
+          "2026-08-14",
+          466.31
         ]
       ]
     },
@@ -8534,7 +8035,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -8599,6 +8100,10 @@
         [
           "2026-08-13",
           300.32
+        ],
+        [
+          "2026-08-14",
+          300.32
         ]
       ]
     },
@@ -8615,7 +8120,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -8680,6 +8185,10 @@
         [
           "2026-08-13",
           260.64
+        ],
+        [
+          "2026-08-14",
+          260.64
         ]
       ]
     },
@@ -8696,7 +8205,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -8761,87 +8270,94 @@
         [
           "2026-08-13",
           376.66
+        ],
+        [
+          "2026-08-14",
+          376.66
         ]
       ]
     },
     {
-      "name": "Obsidian Flames Booster Pack",
-      "set": "Obsidian Flames",
+      "name": "Shrouded Fable Booster Pack",
+      "set": "Shrouded Fable",
       "format": "Booster Pack",
-      "productId": 501256,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501256.jpg",
-      "listings": 50,
-      "low": 4.99,
-      "phase": "appreciation",
-      "price": 12.87,
+      "productId": 552997,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/552997.jpg",
+      "listings": 23,
+      "low": 3.99,
+      "phase": "recovery",
+      "price": 14.73,
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
         "Out of print with real demand. Hold; add on dips rather than chasing.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
       "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.7,
+      "confidence": 0.55,
       "confidenceFlags": [
         "lowest listing looks like junk"
       ],
       "proj": [
-        11.16,
-        17.41
+        12.07,
+        20.93
       ],
       "history": [
         [
           "2026-08-01",
-          12.57
+          14.6
         ],
         [
           "2026-08-02",
-          12.78
+          14.59
         ],
         [
           "2026-08-03",
-          12.84
+          14.59
         ],
         [
           "2026-08-04",
-          12.8
+          14.62
         ],
         [
           "2026-08-05",
-          12.8
+          14.62
         ],
         [
           "2026-08-06",
-          12.88
+          14.62
         ],
         [
           "2026-08-07",
-          12.88
+          14.62
         ],
         [
           "2026-08-08",
-          12.9
+          14.66
         ],
         [
           "2026-08-09",
-          12.89
+          14.66
         ],
         [
           "2026-08-10",
-          12.89
+          14.65
         ],
         [
           "2026-08-11",
-          12.89
+          14.69
         ],
         [
           "2026-08-12",
-          12.87
+          14.69
         ],
         [
           "2026-08-13",
-          12.87
+          14.73
+        ],
+        [
+          "2026-08-14",
+          14.73
         ]
       ]
     },
@@ -8922,6 +8438,10 @@
         [
           "2026-08-13",
           10.27
+        ],
+        [
+          "2026-08-14",
+          10.27
         ]
       ]
     },
@@ -8938,7 +8458,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -9003,6 +8523,10 @@
         [
           "2026-08-13",
           296
+        ],
+        [
+          "2026-08-14",
+          296
         ]
       ]
     },
@@ -9019,7 +8543,7 @@
       "mom": null,
       "signal": "BUY",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Late in the print run and widely available — the classic window to accumulate boxes before it goes out of print.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -9084,87 +8608,10 @@
         [
           "2026-08-13",
           250
-        ]
-      ]
-    },
-    {
-      "name": "Obsidian Flames Sleeved Booster Pack Art Bundle [Set of 4]",
-      "set": "Obsidian Flames",
-      "format": "Booster Pack",
-      "productId": 513422,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/513422.jpg",
-      "listings": 4,
-      "low": 78.99,
-      "phase": "appreciation",
-      "price": 55.72,
-      "mom": null,
-      "signal": "HOLD",
-      "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (almost no listings) — the projection range is widened to match."
-      ],
-      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.65,
-      "confidenceFlags": [
-        "almost no listings"
-      ],
-      "proj": [
-        47.28,
-        76.41
-      ],
-      "history": [
-        [
-          "2026-08-01",
-          55.72
         ],
         [
-          "2026-08-02",
-          55.72
-        ],
-        [
-          "2026-08-03",
-          55.72
-        ],
-        [
-          "2026-08-04",
-          55.72
-        ],
-        [
-          "2026-08-05",
-          55.72
-        ],
-        [
-          "2026-08-06",
-          55.72
-        ],
-        [
-          "2026-08-07",
-          55.72
-        ],
-        [
-          "2026-08-08",
-          55.72
-        ],
-        [
-          "2026-08-09",
-          55.72
-        ],
-        [
-          "2026-08-10",
-          55.72
-        ],
-        [
-          "2026-08-11",
-          55.72
-        ],
-        [
-          "2026-08-12",
-          55.72
-        ],
-        [
-          "2026-08-13",
-          55.72
+          "2026-08-14",
+          250
         ]
       ]
     },
@@ -9245,6 +8692,10 @@
         ],
         [
           "2026-08-13",
+          27.5
+        ],
+        [
+          "2026-08-14",
           27.5
         ]
       ]
@@ -9327,87 +8778,838 @@
         [
           "2026-08-13",
           20.99
+        ],
+        [
+          "2026-08-14",
+          20.99
         ]
       ]
     },
     {
-      "name": "Obsidian Flames Sleeved Booster Pack",
+      "name": "Obsidian Flames Single Pack Blister [Paldean Wooper]",
       "set": "Obsidian Flames",
-      "format": "Booster Pack",
-      "productId": 534087,
-      "image": "https://product-images.tcgplayer.com/fit-in/400x400/534087.jpg",
-      "listings": 19,
-      "low": 4.49,
+      "format": "Blister",
+      "productId": 512047,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/512047.jpg",
+      "listings": 8,
+      "low": 12,
       "phase": "appreciation",
-      "price": 11.94,
+      "price": 12.92,
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $41) keeps boxes getting opened.",
-        "Out of print with real demand. Hold; add on dips rather than chasing.",
-        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+        "Out of print with real demand. Hold; add on dips rather than chasing."
       ],
       "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
-      "confidence": 0.55,
-      "confidenceFlags": [
-        "lowest listing looks like junk"
-      ],
+      "confidence": 0.85,
+      "confidenceFlags": [],
       "proj": [
-        9.69,
-        16.81
+        11.7,
+        16.47
       ],
       "history": [
         [
           "2026-08-01",
-          12.3
+          12.68
         ],
         [
           "2026-08-02",
-          12.3
+          12.68
         ],
         [
           "2026-08-03",
-          12.19
+          12.68
         ],
         [
           "2026-08-04",
-          12.41
+          12.68
         ],
         [
           "2026-08-05",
-          12.41
+          12.68
         ],
         [
           "2026-08-06",
-          12.32
+          12.68
         ],
         [
           "2026-08-07",
-          12.32
+          12.68
         ],
         [
           "2026-08-08",
-          12.32
+          12.68
         ],
         [
           "2026-08-09",
-          12.2
+          12.68
         ],
         [
           "2026-08-10",
-          12.18
+          12.92
         ],
         [
           "2026-08-11",
-          12.13
+          12.92
         ],
         [
           "2026-08-12",
-          12
+          12.92
         ],
         [
           "2026-08-13",
-          11.94
+          12.92
+        ],
+        [
+          "2026-08-14",
+          12.92
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames 3 Pack Blister [Houndstone]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 501260,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501260.jpg",
+      "listings": 10,
+      "low": 35.59,
+      "phase": "appreciation",
+      "price": 35.59,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        32.22,
+        45.37
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          35.45
+        ],
+        [
+          "2026-08-02",
+          35.59
+        ],
+        [
+          "2026-08-03",
+          35.59
+        ],
+        [
+          "2026-08-04",
+          35.59
+        ],
+        [
+          "2026-08-05",
+          35.59
+        ],
+        [
+          "2026-08-06",
+          35.59
+        ],
+        [
+          "2026-08-07",
+          35.59
+        ],
+        [
+          "2026-08-08",
+          35.59
+        ],
+        [
+          "2026-08-09",
+          35.59
+        ],
+        [
+          "2026-08-10",
+          35.59
+        ],
+        [
+          "2026-08-11",
+          35.59
+        ],
+        [
+          "2026-08-12",
+          35.59
+        ],
+        [
+          "2026-08-13",
+          35.59
+        ],
+        [
+          "2026-08-14",
+          35.59
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Single Pack Blister [Pawmi]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 501262,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501262.jpg",
+      "listings": 10,
+      "low": 12,
+      "phase": "appreciation",
+      "price": 13.08,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        11.84,
+        16.67
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          13.08
+        ],
+        [
+          "2026-08-02",
+          13.08
+        ],
+        [
+          "2026-08-03",
+          13.08
+        ],
+        [
+          "2026-08-04",
+          13.08
+        ],
+        [
+          "2026-08-05",
+          13.08
+        ],
+        [
+          "2026-08-06",
+          13.08
+        ],
+        [
+          "2026-08-07",
+          13.08
+        ],
+        [
+          "2026-08-08",
+          13.08
+        ],
+        [
+          "2026-08-09",
+          13.08
+        ],
+        [
+          "2026-08-10",
+          13.08
+        ],
+        [
+          "2026-08-11",
+          13.08
+        ],
+        [
+          "2026-08-12",
+          13.08
+        ],
+        [
+          "2026-08-13",
+          13.08
+        ],
+        [
+          "2026-08-14",
+          13.08
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames 3 Pack Blister [Eevee]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 501259,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501259.jpg",
+      "listings": 7,
+      "low": 42,
+      "phase": "appreciation",
+      "price": 39.02,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        32.52,
+        52.55
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          38.4
+        ],
+        [
+          "2026-08-02",
+          38.4
+        ],
+        [
+          "2026-08-03",
+          38.4
+        ],
+        [
+          "2026-08-04",
+          39.02
+        ],
+        [
+          "2026-08-05",
+          39.02
+        ],
+        [
+          "2026-08-06",
+          39.02
+        ],
+        [
+          "2026-08-07",
+          39.02
+        ],
+        [
+          "2026-08-08",
+          39.02
+        ],
+        [
+          "2026-08-09",
+          39.02
+        ],
+        [
+          "2026-08-10",
+          39.02
+        ],
+        [
+          "2026-08-11",
+          39.02
+        ],
+        [
+          "2026-08-12",
+          39.02
+        ],
+        [
+          "2026-08-13",
+          39.02
+        ],
+        [
+          "2026-08-14",
+          39.02
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Single Blister Pack [Revavroom]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 557087,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557087.jpg",
+      "listings": 3,
+      "low": 20,
+      "phase": "appreciation",
+      "price": 17.6,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        14.67,
+        23.7
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          17.6
+        ],
+        [
+          "2026-08-02",
+          17.6
+        ],
+        [
+          "2026-08-03",
+          17.6
+        ],
+        [
+          "2026-08-04",
+          17.6
+        ],
+        [
+          "2026-08-05",
+          17.6
+        ],
+        [
+          "2026-08-06",
+          17.6
+        ],
+        [
+          "2026-08-07",
+          17.6
+        ],
+        [
+          "2026-08-08",
+          17.6
+        ],
+        [
+          "2026-08-09",
+          17.6
+        ],
+        [
+          "2026-08-10",
+          17.6
+        ],
+        [
+          "2026-08-11",
+          17.6
+        ],
+        [
+          "2026-08-12",
+          17.6
+        ],
+        [
+          "2026-08-13",
+          17.6
+        ],
+        [
+          "2026-08-14",
+          17.6
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Single Blister Pack [Houndstone]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 557086,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557086.jpg",
+      "listings": 3,
+      "low": 21.4,
+      "phase": "appreciation",
+      "price": 20.99,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        17.49,
+        28.27
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          20.99
+        ],
+        [
+          "2026-08-02",
+          20.99
+        ],
+        [
+          "2026-08-03",
+          20.99
+        ],
+        [
+          "2026-08-04",
+          20.99
+        ],
+        [
+          "2026-08-05",
+          20.99
+        ],
+        [
+          "2026-08-06",
+          20.99
+        ],
+        [
+          "2026-08-07",
+          20.99
+        ],
+        [
+          "2026-08-08",
+          20.99
+        ],
+        [
+          "2026-08-09",
+          20.99
+        ],
+        [
+          "2026-08-10",
+          20.99
+        ],
+        [
+          "2026-08-11",
+          20.99
+        ],
+        [
+          "2026-08-12",
+          20.99
+        ],
+        [
+          "2026-08-13",
+          20.99
+        ],
+        [
+          "2026-08-14",
+          20.99
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Single Blister Pack [Kingambit]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 557085,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557085.jpg",
+      "listings": 0,
+      "low": null,
+      "phase": "appreciation",
+      "price": 49.99,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        41.66,
+        67.32
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          49.99
+        ],
+        [
+          "2026-08-02",
+          49.99
+        ],
+        [
+          "2026-08-03",
+          49.99
+        ],
+        [
+          "2026-08-04",
+          49.99
+        ],
+        [
+          "2026-08-05",
+          49.99
+        ],
+        [
+          "2026-08-06",
+          49.99
+        ],
+        [
+          "2026-08-07",
+          49.99
+        ],
+        [
+          "2026-08-08",
+          49.99
+        ],
+        [
+          "2026-08-09",
+          49.99
+        ],
+        [
+          "2026-08-10",
+          49.99
+        ],
+        [
+          "2026-08-11",
+          49.99
+        ],
+        [
+          "2026-08-12",
+          49.99
+        ],
+        [
+          "2026-08-13",
+          49.99
+        ],
+        [
+          "2026-08-14",
+          49.99
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Single Blister Pack [Annihilape]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 557084,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/557084.jpg",
+      "listings": 1,
+      "low": 68.6,
+      "phase": "appreciation",
+      "price": 63.99,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        53.32,
+        86.18
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          63.99
+        ],
+        [
+          "2026-08-02",
+          63.99
+        ],
+        [
+          "2026-08-03",
+          63.99
+        ],
+        [
+          "2026-08-04",
+          63.99
+        ],
+        [
+          "2026-08-05",
+          63.99
+        ],
+        [
+          "2026-08-06",
+          63.99
+        ],
+        [
+          "2026-08-07",
+          63.99
+        ],
+        [
+          "2026-08-08",
+          63.99
+        ],
+        [
+          "2026-08-09",
+          63.99
+        ],
+        [
+          "2026-08-10",
+          63.99
+        ],
+        [
+          "2026-08-11",
+          63.99
+        ],
+        [
+          "2026-08-12",
+          63.99
+        ],
+        [
+          "2026-08-13",
+          63.99
+        ],
+        [
+          "2026-08-14",
+          63.99
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames 3 Pack Blister [Set of 2]",
+      "set": "Obsidian Flames",
+      "format": "Blister",
+      "productId": 501261,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501261.jpg",
+      "listings": 0,
+      "low": null,
+      "phase": "appreciation",
+      "price": 47.66,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        39.72,
+        64.18
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          47.66
+        ],
+        [
+          "2026-08-02",
+          47.66
+        ],
+        [
+          "2026-08-03",
+          47.66
+        ],
+        [
+          "2026-08-04",
+          47.66
+        ],
+        [
+          "2026-08-05",
+          47.66
+        ],
+        [
+          "2026-08-06",
+          47.66
+        ],
+        [
+          "2026-08-07",
+          47.66
+        ],
+        [
+          "2026-08-08",
+          47.66
+        ],
+        [
+          "2026-08-09",
+          47.66
+        ],
+        [
+          "2026-08-10",
+          47.66
+        ],
+        [
+          "2026-08-11",
+          47.66
+        ],
+        [
+          "2026-08-12",
+          47.66
+        ],
+        [
+          "2026-08-13",
+          47.66
+        ],
+        [
+          "2026-08-14",
+          47.66
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Booster Pack Art Bundle [Set of 4]",
+      "set": "Obsidian Flames",
+      "format": "Booster Pack",
+      "productId": 515079,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/515079.jpg",
+      "listings": 8,
+      "low": 55,
+      "phase": "appreciation",
+      "price": 49,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.85,
+      "confidenceFlags": [],
+      "proj": [
+        43.95,
+        61.89
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          47.64
+        ],
+        [
+          "2026-08-02",
+          47.64
+        ],
+        [
+          "2026-08-03",
+          47.64
+        ],
+        [
+          "2026-08-04",
+          47.64
+        ],
+        [
+          "2026-08-05",
+          47.64
+        ],
+        [
+          "2026-08-06",
+          48
+        ],
+        [
+          "2026-08-07",
+          48
+        ],
+        [
+          "2026-08-08",
+          48
+        ],
+        [
+          "2026-08-09",
+          48
+        ],
+        [
+          "2026-08-10",
+          48.56
+        ],
+        [
+          "2026-08-11",
+          48.56
+        ],
+        [
+          "2026-08-12",
+          49
+        ],
+        [
+          "2026-08-13",
+          49
+        ],
+        [
+          "2026-08-14",
+          49
         ]
       ]
     },
@@ -9424,7 +9626,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -9486,6 +9688,10 @@
         [
           "2026-08-13",
           259.27
+        ],
+        [
+          "2026-08-14",
+          259.27
         ]
       ]
     },
@@ -9502,7 +9708,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -9564,6 +9770,10 @@
         [
           "2026-08-13",
           243.93
+        ],
+        [
+          "2026-08-14",
+          243.93
         ]
       ]
     },
@@ -9580,7 +9790,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -9642,6 +9852,10 @@
         [
           "2026-08-13",
           287.15
+        ],
+        [
+          "2026-08-14",
+          287.15
         ]
       ]
     },
@@ -9658,7 +9872,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -9720,6 +9934,10 @@
         [
           "2026-08-13",
           1347.2
+        ],
+        [
+          "2026-08-14",
+          1347.2
         ]
       ]
     },
@@ -9736,7 +9954,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -9798,6 +10016,10 @@
         [
           "2026-08-13",
           515.7
+        ],
+        [
+          "2026-08-14",
+          515.7
         ]
       ]
     },
@@ -9814,7 +10036,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -9876,6 +10098,10 @@
         [
           "2026-08-13",
           212.81
+        ],
+        [
+          "2026-08-14",
+          212.81
         ]
       ]
     },
@@ -9892,7 +10118,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -9954,6 +10180,10 @@
         [
           "2026-08-13",
           297.75
+        ],
+        [
+          "2026-08-14",
+          297.75
         ]
       ]
     },
@@ -9970,7 +10200,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -10032,6 +10262,178 @@
         [
           "2026-08-13",
           203.17
+        ],
+        [
+          "2026-08-14",
+          203.17
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Booster Pack",
+      "set": "Obsidian Flames",
+      "format": "Booster Pack",
+      "productId": 501256,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/501256.jpg",
+      "listings": 50,
+      "low": 4.99,
+      "phase": "appreciation",
+      "price": 12.87,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        10.86,
+        16.94
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.57
+        ],
+        [
+          "2026-08-02",
+          12.78
+        ],
+        [
+          "2026-08-03",
+          12.84
+        ],
+        [
+          "2026-08-04",
+          12.8
+        ],
+        [
+          "2026-08-05",
+          12.8
+        ],
+        [
+          "2026-08-06",
+          12.88
+        ],
+        [
+          "2026-08-07",
+          12.88
+        ],
+        [
+          "2026-08-08",
+          12.9
+        ],
+        [
+          "2026-08-09",
+          12.89
+        ],
+        [
+          "2026-08-10",
+          12.89
+        ],
+        [
+          "2026-08-11",
+          12.89
+        ],
+        [
+          "2026-08-12",
+          12.87
+        ],
+        [
+          "2026-08-13",
+          12.87
+        ],
+        [
+          "2026-08-14",
+          12.87
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Sleeved Booster Pack Art Bundle [Set of 4]",
+      "set": "Obsidian Flames",
+      "format": "Booster Pack",
+      "productId": 513422,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/513422.jpg",
+      "listings": 4,
+      "low": 78.99,
+      "phase": "appreciation",
+      "price": 55.72,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (almost no listings) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.65,
+      "confidenceFlags": [
+        "almost no listings"
+      ],
+      "proj": [
+        46.01,
+        74.35
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          55.72
+        ],
+        [
+          "2026-08-02",
+          55.72
+        ],
+        [
+          "2026-08-03",
+          55.72
+        ],
+        [
+          "2026-08-04",
+          55.72
+        ],
+        [
+          "2026-08-05",
+          55.72
+        ],
+        [
+          "2026-08-06",
+          55.72
+        ],
+        [
+          "2026-08-07",
+          55.72
+        ],
+        [
+          "2026-08-08",
+          55.72
+        ],
+        [
+          "2026-08-09",
+          55.72
+        ],
+        [
+          "2026-08-10",
+          55.72
+        ],
+        [
+          "2026-08-11",
+          55.72
+        ],
+        [
+          "2026-08-12",
+          55.72
+        ],
+        [
+          "2026-08-13",
+          55.72
+        ],
+        [
+          "2026-08-14",
+          55.72
         ]
       ]
     },
@@ -10048,7 +10450,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -10110,6 +10512,10 @@
         [
           "2026-08-13",
           113.83
+        ],
+        [
+          "2026-08-14",
+          113.83
         ]
       ]
     },
@@ -10126,7 +10532,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -10188,6 +10594,10 @@
         [
           "2026-08-13",
           118.62
+        ],
+        [
+          "2026-08-14",
+          118.62
         ]
       ]
     },
@@ -10204,7 +10614,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -10266,6 +10676,10 @@
         [
           "2026-08-13",
           171.16
+        ],
+        [
+          "2026-08-14",
+          171.16
         ]
       ]
     },
@@ -10282,7 +10696,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -10344,6 +10758,94 @@
         [
           "2026-08-13",
           149.53
+        ],
+        [
+          "2026-08-14",
+          149.53
+        ]
+      ]
+    },
+    {
+      "name": "Obsidian Flames Sleeved Booster Pack",
+      "set": "Obsidian Flames",
+      "format": "Booster Pack",
+      "productId": 534087,
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/534087.jpg",
+      "listings": 19,
+      "low": 4.49,
+      "phase": "appreciation",
+      "price": 11.94,
+      "mom": null,
+      "signal": "HOLD",
+      "reasons": [
+        "Out of print with real demand. Hold; add on dips rather than chasing.",
+        "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
+      ],
+      "rationale": "Out of print with real demand. Hold; add on dips rather than chasing.",
+      "confidence": 0.55,
+      "confidenceFlags": [
+        "lowest listing looks like junk"
+      ],
+      "proj": [
+        9.43,
+        16.36
+      ],
+      "history": [
+        [
+          "2026-08-01",
+          12.3
+        ],
+        [
+          "2026-08-02",
+          12.3
+        ],
+        [
+          "2026-08-03",
+          12.19
+        ],
+        [
+          "2026-08-04",
+          12.41
+        ],
+        [
+          "2026-08-05",
+          12.41
+        ],
+        [
+          "2026-08-06",
+          12.32
+        ],
+        [
+          "2026-08-07",
+          12.32
+        ],
+        [
+          "2026-08-08",
+          12.32
+        ],
+        [
+          "2026-08-09",
+          12.2
+        ],
+        [
+          "2026-08-10",
+          12.18
+        ],
+        [
+          "2026-08-11",
+          12.13
+        ],
+        [
+          "2026-08-12",
+          12
+        ],
+        [
+          "2026-08-13",
+          11.94
+        ],
+        [
+          "2026-08-14",
+          11.94
         ]
       ]
     },
@@ -10360,7 +10862,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -10425,6 +10927,10 @@
         [
           "2026-08-13",
           119.27
+        ],
+        [
+          "2026-08-14",
+          119.27
         ]
       ]
     },
@@ -10441,7 +10947,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -10506,6 +11012,10 @@
         [
           "2026-08-13",
           156.41
+        ],
+        [
+          "2026-08-14",
+          156.41
         ]
       ]
     },
@@ -10522,7 +11032,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -10587,6 +11097,10 @@
         [
           "2026-08-13",
           590.34
+        ],
+        [
+          "2026-08-14",
+          590.34
         ]
       ]
     },
@@ -10603,7 +11117,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -10668,6 +11182,10 @@
         [
           "2026-08-13",
           129.9
+        ],
+        [
+          "2026-08-14",
+          129.9
         ]
       ]
     },
@@ -10684,7 +11202,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -10746,6 +11264,10 @@
         [
           "2026-08-13",
           45.98
+        ],
+        [
+          "2026-08-14",
+          45.98
         ]
       ]
     },
@@ -10762,7 +11284,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -10824,6 +11346,10 @@
         [
           "2026-08-13",
           68.48
+        ],
+        [
+          "2026-08-14",
+          68.48
         ]
       ]
     },
@@ -10840,7 +11366,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -10902,6 +11428,10 @@
         [
           "2026-08-13",
           96.18
+        ],
+        [
+          "2026-08-14",
+          96.18
         ]
       ]
     },
@@ -10918,7 +11448,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -10980,6 +11510,10 @@
         [
           "2026-08-13",
           87.99
+        ],
+        [
+          "2026-08-14",
+          87.99
         ]
       ]
     },
@@ -10996,7 +11530,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -11058,6 +11592,10 @@
         [
           "2026-08-13",
           80.7
+        ],
+        [
+          "2026-08-14",
+          80.7
         ]
       ]
     },
@@ -11074,7 +11612,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -11136,6 +11674,10 @@
         [
           "2026-08-13",
           63.51
+        ],
+        [
+          "2026-08-14",
+          63.51
         ]
       ]
     },
@@ -11152,7 +11694,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -11217,6 +11759,10 @@
         [
           "2026-08-13",
           181.65
+        ],
+        [
+          "2026-08-14",
+          181.65
         ]
       ]
     },
@@ -11233,7 +11779,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -11295,6 +11841,10 @@
         [
           "2026-08-13",
           932.29
+        ],
+        [
+          "2026-08-14",
+          932.29
         ]
       ]
     },
@@ -11311,7 +11861,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -11373,6 +11923,10 @@
         [
           "2026-08-13",
           44.83
+        ],
+        [
+          "2026-08-14",
+          44.83
         ]
       ]
     },
@@ -11389,7 +11943,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -11451,6 +12005,10 @@
         [
           "2026-08-13",
           239.69
+        ],
+        [
+          "2026-08-14",
+          239.69
         ]
       ]
     },
@@ -11467,7 +12025,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -11532,6 +12090,10 @@
         [
           "2026-08-13",
           114.47
+        ],
+        [
+          "2026-08-14",
+          114.47
         ]
       ]
     },
@@ -11548,7 +12110,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -11613,6 +12175,10 @@
         [
           "2026-08-13",
           80.98
+        ],
+        [
+          "2026-08-14",
+          80.98
         ]
       ]
     },
@@ -11629,7 +12195,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -11694,6 +12260,10 @@
         [
           "2026-08-13",
           71.11
+        ],
+        [
+          "2026-08-14",
+          71.11
         ]
       ]
     },
@@ -11710,7 +12280,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -11775,6 +12345,10 @@
         [
           "2026-08-13",
           121.41
+        ],
+        [
+          "2026-08-14",
+          121.41
         ]
       ]
     },
@@ -11791,7 +12365,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -11856,6 +12430,10 @@
         [
           "2026-08-13",
           78.55
+        ],
+        [
+          "2026-08-14",
+          78.55
         ]
       ]
     },
@@ -11872,7 +12450,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -11937,6 +12515,10 @@
         [
           "2026-08-13",
           47.72
+        ],
+        [
+          "2026-08-14",
+          47.72
         ]
       ]
     },
@@ -11953,7 +12535,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -12018,6 +12600,10 @@
         [
           "2026-08-13",
           30.38
+        ],
+        [
+          "2026-08-14",
+          30.38
         ]
       ]
     },
@@ -12034,7 +12620,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -12099,6 +12685,10 @@
         [
           "2026-08-13",
           13.03
+        ],
+        [
+          "2026-08-14",
+          13.03
         ]
       ]
     },
@@ -12115,7 +12705,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -12180,6 +12770,10 @@
         [
           "2026-08-13",
           40.95
+        ],
+        [
+          "2026-08-14",
+          40.95
         ]
       ]
     },
@@ -12196,7 +12790,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -12258,6 +12852,10 @@
         [
           "2026-08-13",
           25.01
+        ],
+        [
+          "2026-08-14",
+          25.01
         ]
       ]
     },
@@ -12274,7 +12872,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings; lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -12340,6 +12938,10 @@
         [
           "2026-08-13",
           35.31
+        ],
+        [
+          "2026-08-14",
+          35.31
         ]
       ]
     },
@@ -12356,7 +12958,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -12421,6 +13023,10 @@
         [
           "2026-08-13",
           41.99
+        ],
+        [
+          "2026-08-14",
+          41.99
         ]
       ]
     },
@@ -12437,7 +13043,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -12502,6 +13108,10 @@
         [
           "2026-08-13",
           13.32
+        ],
+        [
+          "2026-08-14",
+          13.32
         ]
       ]
     },
@@ -12518,7 +13128,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -12583,6 +13193,10 @@
         [
           "2026-08-13",
           23.35
+        ],
+        [
+          "2026-08-14",
+          23.35
         ]
       ]
     },
@@ -12599,7 +13213,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -12661,6 +13275,10 @@
         [
           "2026-08-13",
           9.85
+        ],
+        [
+          "2026-08-14",
+          9.85
         ]
       ]
     },
@@ -12677,7 +13295,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -12739,6 +13357,10 @@
         [
           "2026-08-13",
           10.85
+        ],
+        [
+          "2026-08-14",
+          10.85
         ]
       ]
     },
@@ -12755,7 +13377,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -12817,6 +13439,10 @@
         [
           "2026-08-13",
           48.78
+        ],
+        [
+          "2026-08-14",
+          48.78
         ]
       ]
     },
@@ -12833,7 +13459,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -12898,6 +13524,10 @@
         [
           "2026-08-13",
           77.74
+        ],
+        [
+          "2026-08-14",
+          77.74
         ]
       ]
     },
@@ -12914,7 +13544,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -12979,6 +13609,10 @@
         [
           "2026-08-13",
           18.77
+        ],
+        [
+          "2026-08-14",
+          18.77
         ]
       ]
     },
@@ -12995,7 +13629,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -13060,6 +13694,10 @@
         [
           "2026-08-13",
           17.04
+        ],
+        [
+          "2026-08-14",
+          17.04
         ]
       ]
     },
@@ -13076,7 +13714,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -13141,6 +13779,10 @@
         [
           "2026-08-13",
           40.41
+        ],
+        [
+          "2026-08-14",
+          40.41
         ]
       ]
     },
@@ -13157,7 +13799,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13219,6 +13861,10 @@
         [
           "2026-08-13",
           17.81
+        ],
+        [
+          "2026-08-14",
+          17.81
         ]
       ]
     },
@@ -13235,7 +13881,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13297,6 +13943,10 @@
         [
           "2026-08-13",
           13.39
+        ],
+        [
+          "2026-08-14",
+          13.39
         ]
       ]
     },
@@ -13313,7 +13963,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13375,6 +14025,10 @@
         [
           "2026-08-13",
           44.96
+        ],
+        [
+          "2026-08-14",
+          44.96
         ]
       ]
     },
@@ -13391,7 +14045,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -13456,6 +14110,10 @@
         [
           "2026-08-13",
           26.35
+        ],
+        [
+          "2026-08-14",
+          26.35
         ]
       ]
     },
@@ -13472,7 +14130,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13534,6 +14192,10 @@
         [
           "2026-08-13",
           13.02
+        ],
+        [
+          "2026-08-14",
+          13.02
         ]
       ]
     },
@@ -13550,7 +14212,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13612,6 +14274,10 @@
         [
           "2026-08-13",
           12.68
+        ],
+        [
+          "2026-08-14",
+          12.68
         ]
       ]
     },
@@ -13628,7 +14294,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13690,6 +14356,10 @@
         [
           "2026-08-13",
           13.66
+        ],
+        [
+          "2026-08-14",
+          13.66
         ]
       ]
     },
@@ -13706,7 +14376,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13768,6 +14438,10 @@
         [
           "2026-08-13",
           42.8
+        ],
+        [
+          "2026-08-14",
+          42.8
         ]
       ]
     },
@@ -13784,7 +14458,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13846,6 +14520,10 @@
         [
           "2026-08-13",
           41.74
+        ],
+        [
+          "2026-08-14",
+          41.74
         ]
       ]
     },
@@ -13862,7 +14540,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -13924,6 +14602,10 @@
         [
           "2026-08-13",
           14.66
+        ],
+        [
+          "2026-08-14",
+          14.66
         ]
       ]
     },
@@ -13940,7 +14622,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -14005,6 +14687,10 @@
         [
           "2026-08-13",
           29.72
+        ],
+        [
+          "2026-08-14",
+          29.72
         ]
       ]
     },
@@ -14021,7 +14707,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -14083,6 +14769,10 @@
         [
           "2026-08-13",
           15.84
+        ],
+        [
+          "2026-08-14",
+          15.84
         ]
       ]
     },
@@ -14099,7 +14789,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -14164,6 +14854,10 @@
         [
           "2026-08-13",
           31.16
+        ],
+        [
+          "2026-08-14",
+          31.16
         ]
       ]
     },
@@ -14180,7 +14874,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -14245,6 +14939,10 @@
         [
           "2026-08-13",
           13.24
+        ],
+        [
+          "2026-08-14",
+          13.24
         ]
       ]
     },
@@ -14261,7 +14959,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -14326,6 +15024,10 @@
         [
           "2026-08-13",
           15.24
+        ],
+        [
+          "2026-08-14",
+          15.24
         ]
       ]
     },
@@ -14342,7 +15044,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -14404,6 +15106,10 @@
         [
           "2026-08-13",
           25.87
+        ],
+        [
+          "2026-08-14",
+          25.87
         ]
       ]
     },
@@ -14420,7 +15126,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -14482,6 +15188,10 @@
         [
           "2026-08-13",
           43.27
+        ],
+        [
+          "2026-08-14",
+          43.27
         ]
       ]
     },
@@ -14498,7 +15208,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (almost no listings) — the projection range is widened to match."
       ],
@@ -14563,6 +15273,10 @@
         [
           "2026-08-13",
           42.27
+        ],
+        [
+          "2026-08-14",
+          42.27
         ]
       ]
     },
@@ -14579,7 +15293,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -14641,6 +15355,10 @@
         [
           "2026-08-13",
           32.2
+        ],
+        [
+          "2026-08-14",
+          32.2
         ]
       ]
     },
@@ -14657,7 +15375,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -14722,6 +15440,10 @@
         [
           "2026-08-13",
           9.27
+        ],
+        [
+          "2026-08-14",
+          9.27
         ]
       ]
     },
@@ -14738,7 +15460,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -14803,6 +15525,10 @@
         [
           "2026-08-13",
           9.23
+        ],
+        [
+          "2026-08-14",
+          9.23
         ]
       ]
     },
@@ -14819,7 +15545,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -14884,6 +15610,10 @@
         [
           "2026-08-13",
           15.31
+        ],
+        [
+          "2026-08-14",
+          15.31
         ]
       ]
     },
@@ -14900,7 +15630,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -14965,6 +15695,10 @@
         [
           "2026-08-13",
           6.61
+        ],
+        [
+          "2026-08-14",
+          6.61
         ]
       ]
     },
@@ -14981,7 +15715,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -15046,6 +15780,10 @@
         [
           "2026-08-13",
           11.11
+        ],
+        [
+          "2026-08-14",
+          11.11
         ]
       ]
     },
@@ -15062,7 +15800,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -15127,6 +15865,10 @@
         [
           "2026-08-13",
           12.62
+        ],
+        [
+          "2026-08-14",
+          12.62
         ]
       ]
     },
@@ -15143,7 +15885,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $100) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $90) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -15208,6 +15950,10 @@
         [
           "2026-08-13",
           28.59
+        ],
+        [
+          "2026-08-14",
+          28.59
         ]
       ]
     },
@@ -15224,7 +15970,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $63) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $76) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -15289,6 +16035,10 @@
         [
           "2026-08-13",
           14.89
+        ],
+        [
+          "2026-08-14",
+          14.89
         ]
       ]
     },
@@ -15305,7 +16055,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -15370,6 +16120,10 @@
         [
           "2026-08-13",
           10.42
+        ],
+        [
+          "2026-08-14",
+          10.42
         ]
       ]
     },
@@ -15386,7 +16140,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -15451,6 +16205,10 @@
         [
           "2026-08-13",
           9.64
+        ],
+        [
+          "2026-08-14",
+          9.64
         ]
       ]
     },
@@ -15467,7 +16225,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -15529,6 +16287,10 @@
         [
           "2026-08-13",
           42.81
+        ],
+        [
+          "2026-08-14",
+          42.81
         ]
       ]
     },
@@ -15545,7 +16307,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -15607,6 +16369,10 @@
         [
           "2026-08-13",
           35.72
+        ],
+        [
+          "2026-08-14",
+          35.72
         ]
       ]
     },
@@ -15623,7 +16389,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -15685,6 +16451,10 @@
         [
           "2026-08-13",
           29.66
+        ],
+        [
+          "2026-08-14",
+          29.66
         ]
       ]
     },
@@ -15701,7 +16471,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -15763,6 +16533,10 @@
         [
           "2026-08-13",
           53.79
+        ],
+        [
+          "2026-08-14",
+          53.79
         ]
       ]
     },
@@ -15779,7 +16553,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -15841,6 +16615,10 @@
         [
           "2026-08-13",
           38.99
+        ],
+        [
+          "2026-08-14",
+          38.99
         ]
       ]
     },
@@ -15857,7 +16635,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $113) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $105) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -15919,6 +16697,10 @@
         [
           "2026-08-13",
           46.46
+        ],
+        [
+          "2026-08-14",
+          46.46
         ]
       ]
     },
@@ -15935,7 +16717,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $65) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $111) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -15997,6 +16779,10 @@
         [
           "2026-08-13",
           24.97
+        ],
+        [
+          "2026-08-14",
+          24.97
         ]
       ]
     },
@@ -16013,7 +16799,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $340) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $309) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -16075,6 +16861,10 @@
         [
           "2026-08-13",
           46.79
+        ],
+        [
+          "2026-08-14",
+          46.79
         ]
       ]
     },
@@ -16091,7 +16881,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $170) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $156) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -16153,6 +16943,10 @@
         [
           "2026-08-13",
           8.09
+        ],
+        [
+          "2026-08-14",
+          8.09
         ]
       ]
     },
@@ -16169,7 +16963,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -16234,6 +17028,10 @@
         [
           "2026-08-13",
           184.11
+        ],
+        [
+          "2026-08-14",
+          184.11
         ]
       ]
     },
@@ -16250,7 +17048,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -16315,6 +17113,10 @@
         [
           "2026-08-13",
           179.29
+        ],
+        [
+          "2026-08-14",
+          179.29
         ]
       ]
     },
@@ -16331,7 +17133,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -16396,6 +17198,10 @@
         [
           "2026-08-13",
           169.57
+        ],
+        [
+          "2026-08-14",
+          169.57
         ]
       ]
     },
@@ -16412,7 +17218,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -16477,6 +17283,10 @@
         [
           "2026-08-13",
           72.38
+        ],
+        [
+          "2026-08-14",
+          72.38
         ]
       ]
     },
@@ -16493,7 +17303,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -16558,6 +17368,10 @@
         [
           "2026-08-13",
           74.86
+        ],
+        [
+          "2026-08-14",
+          74.86
         ]
       ]
     },
@@ -16574,7 +17388,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -16636,6 +17450,10 @@
         [
           "2026-08-13",
           138.81
+        ],
+        [
+          "2026-08-14",
+          138.81
         ]
       ]
     },
@@ -16652,7 +17470,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -16714,6 +17532,10 @@
         [
           "2026-08-13",
           127.95
+        ],
+        [
+          "2026-08-14",
+          127.95
         ]
       ]
     },
@@ -16730,7 +17552,7 @@
       "mom": null,
       "signal": "HOLD",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Still in print and freely available — no edge at current prices."
       ],
       "rationale": "Still in print and freely available — no edge at current prices.",
@@ -16792,6 +17614,10 @@
         [
           "2026-08-13",
           436.45
+        ],
+        [
+          "2026-08-14",
+          436.45
         ]
       ]
     },
@@ -16808,7 +17634,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -16873,6 +17699,10 @@
         [
           "2026-08-13",
           38.06
+        ],
+        [
+          "2026-08-14",
+          38.06
         ]
       ]
     },
@@ -16889,7 +17719,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -16954,6 +17784,10 @@
         [
           "2026-08-13",
           47.14
+        ],
+        [
+          "2026-08-14",
+          47.14
         ]
       ]
     },
@@ -16970,7 +17804,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17035,6 +17869,10 @@
         [
           "2026-08-13",
           31.13
+        ],
+        [
+          "2026-08-14",
+          31.13
         ]
       ]
     },
@@ -17051,7 +17889,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17116,6 +17954,10 @@
         [
           "2026-08-13",
           66.51
+        ],
+        [
+          "2026-08-14",
+          66.51
         ]
       ]
     },
@@ -17132,7 +17974,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17197,6 +18039,10 @@
         [
           "2026-08-13",
           47.37
+        ],
+        [
+          "2026-08-14",
+          47.37
         ]
       ]
     },
@@ -17213,7 +18059,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17278,6 +18124,10 @@
         [
           "2026-08-13",
           28.62
+        ],
+        [
+          "2026-08-14",
+          28.62
         ]
       ]
     },
@@ -17294,7 +18144,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -17356,6 +18206,10 @@
         [
           "2026-08-13",
           39.53
+        ],
+        [
+          "2026-08-14",
+          39.53
         ]
       ]
     },
@@ -17372,7 +18226,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -17434,6 +18288,10 @@
         [
           "2026-08-13",
           86.51
+        ],
+        [
+          "2026-08-14",
+          86.51
         ]
       ]
     },
@@ -17450,7 +18308,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17515,6 +18373,10 @@
         [
           "2026-08-13",
           8.6
+        ],
+        [
+          "2026-08-14",
+          8.6
         ]
       ]
     },
@@ -17531,7 +18393,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17596,6 +18458,10 @@
         [
           "2026-08-13",
           7.23
+        ],
+        [
+          "2026-08-14",
+          7.23
         ]
       ]
     },
@@ -17612,7 +18478,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17677,6 +18543,10 @@
         [
           "2026-08-13",
           6.49
+        ],
+        [
+          "2026-08-14",
+          6.49
         ]
       ]
     },
@@ -17693,7 +18563,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17758,6 +18628,10 @@
         [
           "2026-08-13",
           28.17
+        ],
+        [
+          "2026-08-14",
+          28.17
         ]
       ]
     },
@@ -17774,7 +18648,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
         "Price confidence is low (lowest listing looks like junk) — the projection range is widened to match."
       ],
@@ -17839,6 +18713,10 @@
         [
           "2026-08-13",
           6.13
+        ],
+        [
+          "2026-08-14",
+          6.13
         ]
       ]
     },
@@ -17855,7 +18733,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -17917,6 +18795,10 @@
         [
           "2026-08-13",
           19.21
+        ],
+        [
+          "2026-08-14",
+          19.21
         ]
       ]
     },
@@ -17933,7 +18815,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -17995,6 +18877,10 @@
         [
           "2026-08-13",
           18.08
+        ],
+        [
+          "2026-08-14",
+          18.08
         ]
       ]
     },
@@ -18011,7 +18897,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18073,6 +18959,10 @@
         [
           "2026-08-13",
           20.24
+        ],
+        [
+          "2026-08-14",
+          20.24
         ]
       ]
     },
@@ -18089,7 +18979,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18151,6 +19041,10 @@
         [
           "2026-08-13",
           18.93
+        ],
+        [
+          "2026-08-14",
+          18.93
         ]
       ]
     },
@@ -18167,7 +19061,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18229,6 +19123,10 @@
         [
           "2026-08-13",
           16.05
+        ],
+        [
+          "2026-08-14",
+          16.05
         ]
       ]
     },
@@ -18245,7 +19143,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18307,6 +19205,10 @@
         [
           "2026-08-13",
           30.68
+        ],
+        [
+          "2026-08-14",
+          30.68
         ]
       ]
     },
@@ -18323,7 +19225,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18385,6 +19287,10 @@
         [
           "2026-08-13",
           26.06
+        ],
+        [
+          "2026-08-14",
+          26.06
         ]
       ]
     },
@@ -18401,7 +19307,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18463,6 +19369,10 @@
         [
           "2026-08-13",
           7.84
+        ],
+        [
+          "2026-08-14",
+          7.84
         ]
       ]
     },
@@ -18479,7 +19389,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18541,6 +19451,10 @@
         [
           "2026-08-13",
           6.92
+        ],
+        [
+          "2026-08-14",
+          6.92
         ]
       ]
     },
@@ -18557,7 +19471,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $241) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $182) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18619,6 +19533,10 @@
         [
           "2026-08-13",
           17.03
+        ],
+        [
+          "2026-08-14",
+          17.03
         ]
       ]
     },
@@ -18635,7 +19553,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18697,6 +19615,10 @@
         [
           "2026-08-13",
           24.37
+        ],
+        [
+          "2026-08-14",
+          24.37
         ]
       ]
     },
@@ -18713,7 +19635,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18775,6 +19697,10 @@
         [
           "2026-08-13",
           23.42
+        ],
+        [
+          "2026-08-14",
+          23.42
         ]
       ]
     },
@@ -18791,7 +19717,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $97) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $81) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18853,6 +19779,10 @@
         [
           "2026-08-13",
           12.54
+        ],
+        [
+          "2026-08-14",
+          12.54
         ]
       ]
     },
@@ -18869,7 +19799,7 @@
       "mom": null,
       "signal": "AVOID",
       "reasons": [
-        "Strong chase lineup (median tracked hit $199) keeps boxes getting opened.",
+        "Strong chase lineup (median tracked hit $173) keeps boxes getting opened.",
         "Retail format from an in-print set — these get discounted hard while the set is still on shelves."
       ],
       "rationale": "Retail format from an in-print set — these get discounted hard while the set is still on shelves.",
@@ -18930,6 +19860,10 @@
         ],
         [
           "2026-08-13",
+          28.22
+        ],
+        [
+          "2026-08-14",
           28.22
         ]
       ]

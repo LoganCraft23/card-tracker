@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-13T14:28:21.631Z",
-  "totalValue": 1244.33,
+  "updated": "2026-08-14T06:22:09.866Z",
+  "totalValue": 1284.51,
   "costBasis": 0,
   "costedItems": 0,
   "items": [
@@ -13,9 +13,9 @@
       "productId": 490064,
       "qty": 1,
       "paid": null,
-      "value": 44.5,
+      "value": 40.59,
       "modelled": false,
-      "price": 44.5,
+      "price": 40.59,
       "signal": null,
       "reasons": [
         "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."
@@ -51,6 +51,10 @@
         [
           "2026-08-13",
           44.5
+        ],
+        [
+          "2026-08-14",
+          40.59
         ]
       ]
     },
@@ -63,10 +67,10 @@
       "productId": 676030,
       "qty": 1,
       "paid": null,
-      "value": 22.43,
+      "value": 18.78,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 22.43,
+      "price": 18.78,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -80,8 +84,8 @@
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        16.38,
-        20.85
+        13.72,
+        17.46
       ],
       "history": [
         [
@@ -111,6 +115,10 @@
         [
           "2026-08-13",
           22.43
+        ],
+        [
+          "2026-08-14",
+          18.78
         ]
       ]
     },
@@ -123,10 +131,10 @@
       "productId": 642580,
       "qty": 1,
       "paid": null,
-      "value": 21.55,
+      "value": 19.72,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 21.55,
+      "price": 19.72,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -140,8 +148,8 @@
       "confidence": 0.73,
       "confidenceFlags": [],
       "proj": [
-        17.21,
-        26.32
+        15.75,
+        24.08
       ],
       "history": [
         [
@@ -171,6 +179,10 @@
         [
           "2026-08-13",
           21.55
+        ],
+        [
+          "2026-08-14",
+          19.72
         ]
       ]
     },
@@ -183,10 +195,10 @@
       "productId": 704847,
       "qty": 1,
       "paid": null,
-      "value": 16.98,
+      "value": 13.86,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 16.98,
+      "price": 13.86,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -198,11 +210,11 @@
       "rationale": "No strong edge either way at current price.",
       "mom": -0.35336976320582864,
       "momSource": "cardmarket",
-      "confidence": 0.85,
+      "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        13.2,
-        18.59
+        11.42,
+        14.53
       ],
       "history": [
         [
@@ -232,6 +244,10 @@
         [
           "2026-08-13",
           16.98
+        ],
+        [
+          "2026-08-14",
+          13.86
         ]
       ]
     },
@@ -244,25 +260,28 @@
       "productId": 704844,
       "qty": 1,
       "paid": null,
-      "value": 11.34,
+      "value": 9.85,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 11.34,
+      "price": 9.85,
       "chg30": null,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "No strong edge either way at current price."
+        "No strong edge either way at current price.",
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
       ],
       "rationale": "No strong edge either way at current price.",
       "mom": -0.11932203389830517,
       "momSource": "cardmarket",
-      "confidence": 0.73,
-      "confidenceFlags": [],
+      "confidence": 0.7,
+      "confidenceFlags": [
+        "US and EU prices disagree"
+      ],
       "proj": [
-        7.44,
-        11.38
+        6.39,
+        9.97
       ],
       "history": [
         [
@@ -292,6 +311,10 @@
         [
           "2026-08-13",
           11.34
+        ],
+        [
+          "2026-08-14",
+          9.85
         ]
       ]
     },
@@ -304,10 +327,10 @@
       "productId": 704858,
       "qty": 1,
       "paid": null,
-      "value": 14.8,
+      "value": 13.24,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 14.8,
+      "price": 13.24,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -321,8 +344,8 @@
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        9.25,
-        11.77
+        8.27,
+        10.53
       ],
       "history": [
         [
@@ -352,6 +375,10 @@
         [
           "2026-08-13",
           14.8
+        ],
+        [
+          "2026-08-14",
+          13.24
         ]
       ]
     },
@@ -364,10 +391,10 @@
       "productId": 624677,
       "qty": 1,
       "paid": null,
-      "value": 19.41,
+      "value": 17.33,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 19.41,
+      "price": 17.33,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -384,8 +411,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        15.92,
-        24.84
+        14.21,
+        22.18
       ],
       "history": [
         [
@@ -415,6 +442,62 @@
         [
           "2026-08-13",
           19.41
+        ],
+        [
+          "2026-08-14",
+          17.33
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "bw3-81",
+      "name": "Pawniard",
+      "set": "Noble Victories",
+      "image": "https://assets.tcgdex.net/en/bw/bw3/81",
+      "productId": 87968,
+      "qty": 1,
+      "paid": null,
+      "value": 15.99,
+      "modelled": false,
+      "price": 15.99,
+      "signal": null,
+      "reasons": [
+        "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-08-14",
+          15.99
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "hgss3-14",
+      "name": "Hariyama",
+      "set": "Undaunted",
+      "image": "https://assets.tcgdex.net/en/hgss/hgss3/14",
+      "productId": 86016,
+      "qty": 1,
+      "paid": null,
+      "value": 22.28,
+      "modelled": false,
+      "price": 22.28,
+      "signal": null,
+      "reasons": [
+        "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-08-14",
+          22.28
         ]
       ]
     },
@@ -488,6 +571,10 @@
         ],
         [
           "2026-08-13",
+          240.01
+        ],
+        [
+          "2026-08-14",
           240.01
         ]
       ]
@@ -563,6 +650,10 @@
         [
           "2026-08-13",
           292.27
+        ],
+        [
+          "2026-08-14",
+          292.27
         ]
       ]
     },
@@ -636,6 +727,10 @@
         ],
         [
           "2026-08-13",
+          175.93
+        ],
+        [
+          "2026-08-14",
           175.93
         ]
       ]
@@ -711,6 +806,10 @@
         [
           "2026-08-13",
           99.05
+        ],
+        [
+          "2026-08-14",
+          99.05
         ]
       ]
     },
@@ -784,6 +883,10 @@
         ],
         [
           "2026-08-13",
+          53.69
+        ],
+        [
+          "2026-08-14",
           53.69
         ]
       ]
@@ -859,6 +962,10 @@
         [
           "2026-08-13",
           49.31
+        ],
+        [
+          "2026-08-14",
+          49.31
         ]
       ]
     },
@@ -932,6 +1039,10 @@
         ],
         [
           "2026-08-13",
+          32.94
+        ],
+        [
+          "2026-08-14",
           32.94
         ]
       ]
@@ -1035,6 +1146,10 @@
         [
           "2026-08-13",
           23.97
+        ],
+        [
+          "2026-08-14",
+          23.97
         ]
       ]
     },
@@ -1108,6 +1223,10 @@
         ],
         [
           "2026-08-13",
+          21.58
+        ],
+        [
+          "2026-08-14",
           21.58
         ]
       ]
@@ -1211,6 +1330,10 @@
         [
           "2026-08-13",
           15.77
+        ],
+        [
+          "2026-08-14",
+          15.77
         ]
       ]
     },
@@ -1313,6 +1436,10 @@
         [
           "2026-08-13",
           26.35
+        ],
+        [
+          "2026-08-14",
+          26.35
         ]
       ]
     },
@@ -1386,6 +1513,10 @@
         ],
         [
           "2026-08-13",
+          26.31
+        ],
+        [
+          "2026-08-14",
           26.31
         ]
       ]
@@ -1461,6 +1592,10 @@
         [
           "2026-08-13",
           22.87
+        ],
+        [
+          "2026-08-14",
+          22.87
         ]
       ]
     },
@@ -1535,6 +1670,64 @@
         [
           "2026-08-13",
           13.27
+        ],
+        [
+          "2026-08-14",
+          13.27
+        ]
+      ]
+    },
+    {
+      "kind": "card",
+      "id": "vintage:28316",
+      "name": "Minccino - BW13 (Cracked Ice Holo)",
+      "set": "Black and White Promos",
+      "image": "https://product-images.tcgplayer.com/fit-in/400x400/96881.jpg",
+      "productId": 96881,
+      "qty": 1,
+      "paid": null,
+      "value": 19.55,
+      "modelled": false,
+      "price": 19.55,
+      "signal": null,
+      "reasons": [
+        "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
+      ],
+      "proj": null,
+      "confidence": null,
+      "confidenceFlags": [],
+      "history": [
+        [
+          "2026-08-07",
+          18.75
+        ],
+        [
+          "2026-08-08",
+          18.75
+        ],
+        [
+          "2026-08-09",
+          18.75
+        ],
+        [
+          "2026-08-10",
+          18.75
+        ],
+        [
+          "2026-08-11",
+          18.75
+        ],
+        [
+          "2026-08-12",
+          19.55
+        ],
+        [
+          "2026-08-13",
+          19.55
+        ],
+        [
+          "2026-08-14",
+          19.55
         ]
       ]
     }
