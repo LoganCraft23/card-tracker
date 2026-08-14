@@ -226,7 +226,10 @@
     line-height: 1; color: var(--faint); transition: color .14s, transform .14s; }
   .star:hover { color: var(--gold); transform: scale(1.15); }
   .star.on { color: var(--gold); }
-  .star.owned { color: var(--buy); cursor: default; }
+  .star.owned { color: var(--buy); }
+  .star.owned:hover { color: var(--sell); }
+  .star.owned.removing { color: var(--sell); }
+  .star.owned.removing:hover { color: var(--buy); }
   .thin { display: inline-block; color: var(--hold); border: 1px solid color-mix(in srgb, var(--hold) 45%, transparent);
     border-radius: 5px; padding: 1px 7px; font-size: 11px; margin-top: 8px; }
   .rowDetail ul { margin: 0; padding-left: 17px; color: #B9C3DB; font-size: 13px; line-height: 1.55; }
@@ -526,11 +529,21 @@ const staged = new Map(Object.entries(store.get("ft.staged", null) ? JSON.parse(
 const saveStaged = () => store.set("ft.staged", JSON.stringify(Object.fromEntries(staged)));
 const stagedKey = (c) => (c.isSealed ? `sealed:${c.productId}` : c.id);
 
+// Owned cards you've starred back off, staged for removal on next Export. Goes
+// stale harmlessly once the removal is committed and the next daily run drops
+// the card from COLLECTION — the owned check below just stops matching it.
+const removals = new Set(JSON.parse(store.get("ft.removals", "null") || "[]"));
+const saveRemovals = () => store.set("ft.removals", JSON.stringify([...removals]));
+
 function starBtn(c) {
   const k = stagedKey(c);
   if (!k) return "";
   const owned = COLLECTION.items.some((i) => i.id === k);
-  if (owned) return `<span class="star owned" title="In your committed collection">★</span>`;
+  if (owned) {
+    const removing = removals.has(k);
+    return `<button type="button" class="star owned${removing ? " removing" : ""}" data-star="${esc(k)}"
+      data-name="${esc(c.name)}" data-owned="1" title="${removing ? "Marked for removal — click to keep" : "In your collection — click to remove"}">★</button>`;
+  }
   const on = staged.has(k);
   return `<button type="button" class="star${on ? " on" : ""}" data-star="${esc(k)}"
     data-name="${esc(c.name)}" title="${on ? "Staged — click to remove" : "Stage for your collection"}">${on ? "★" : "☆"}</button>`;
@@ -980,7 +993,8 @@ function render() {
       COLLECTION.items.length
         ? `Your holdings from <code>collection.json</code>, priced every morning whatever their value
            and whichever set they're from. <b>Discord alerts fire for these and nothing else</b>, on
-           the same rule as the rest of the site: a flip to or from BUY/SELL.`
+           the same rule as the rest of the site: a flip to or from BUY/SELL. Click a card's star to
+           stage it for removal, then hit <b>Export</b> and commit the result.`
         : `Nothing here yet. Star cards anywhere on the site, hit <b>Export</b> in the sidebar, and commit
            the result as <code>collection.json</code> — the daily job then prices them and alerts you when
            one flips to or from BUY/SELL.`],
@@ -1274,6 +1288,19 @@ document.querySelector(".content").addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
   const k = b.dataset.star;
+  if (b.dataset.owned === "1") {
+    if (removals.has(k)) {
+      removals.delete(k);
+    } else {
+      const name = b.dataset.name || "this card";
+      if (!confirm(`Remove ${name} from your collection?\n\nThis stages the removal — nothing changes until you hit Export and commit the updated collection.json.`)) return;
+      removals.add(k);
+    }
+    saveRemovals();
+    render();
+    refreshGlobalPanel();
+    return;
+  }
   if (staged.has(k)) staged.delete(k); else staged.set(k, b.dataset.name || "");
   saveStaged();
   render();
@@ -1282,8 +1309,13 @@ document.querySelector(".content").addEventListener("click", (e) => {
 
 $("exportBtn").addEventListener("click", async () => {
   // Merge what's already committed with what's newly staged, so exporting
-  // never drops holdings that are already being tracked.
-  const existing = COLLECTION.items.map((i) => ({ key: i.id, name: i.name, qty: i.qty, paid: i.paid }));
+  // never drops holdings that are already being tracked. Anything starred
+  // back off (removals) is dropped here rather than cleared from the set —
+  // it goes stale on its own once the commit lands and COLLECTION no longer
+  // has the card, the same way a staged addition does once it's owned.
+  const existing = COLLECTION.items
+    .filter((i) => !removals.has(i.id))
+    .map((i) => ({ key: i.id, name: i.name, qty: i.qty, paid: i.paid }));
   const all = [...existing, ...[...staged].map(([key, name]) => ({ key, name, qty: 1, paid: null }))];
   const out = {
     note: "Your holdings. Priced daily; Discord alerts fire only for these, on a flip to or from BUY/SELL. qty and paid are optional.",
@@ -1298,7 +1330,8 @@ $("exportBtn").addEventListener("click", async () => {
   const a = document.createElement("a");
   a.href = blob; a.download = "collection.json"; a.click();
   URL.revokeObjectURL(blob);
-  alert(`collection.json downloaded (and copied to your clipboard).\n\n${out.cards.length} cards, ${out.sealed.length} sealed.\n\nCommit it to the repo root and the next daily run will price them and alert on flips.`);
+  const removedCount = COLLECTION.items.filter((i) => removals.has(i.id)).length;
+  alert(`collection.json downloaded (and copied to your clipboard).\n\n${out.cards.length} cards, ${out.sealed.length} sealed${removedCount ? `, ${removedCount} removed` : ""}.\n\nCommit it to the repo root and the next daily run will price them and alert on flips.`);
 });
 
 function refresh() { renderStats(); renderMovers(); render(); }
