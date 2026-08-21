@@ -23,6 +23,7 @@ if (!process.env.TCGAPI_KEY) {
 
 const history = readOr("history/sealed-prices.json", {}); // { key: [[date, price], ...] }
 const cards = readOr("docs/data.json", { cards: [] });
+const supplyEvents = readOr("supply-events.json", { sets: {} }).sets || {};
 
 // Median tracked chase price per set — a relative read on how desirable a
 // set's hits are, reused as a sealed input. Explicitly not an expected value.
@@ -57,7 +58,7 @@ for (const setName of Object.keys(SETS)) {
     hist.push([today, item.price]);
     history[key] = hist.slice(-400);
 
-    const a = analyzeSealed(item, history[key], chaseBySet[setName]);
+    const a = analyzeSealed(item, history[key], chaseBySet[setName], supplyEvents[setName]);
     out.push({
       name: item.name, set: item.set, format: item.format,
       productId: item.productId, image: item.image,

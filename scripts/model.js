@@ -149,8 +149,31 @@ export function confidence(price, market, eurUsd = 1.08) {
 // wide one, instead of a flat ±20% that implies precision nobody has.
 const BAND_TIGHT = 0.12, BAND_LOOSE = 0.45;
 
-export function analyze(card, price, history, market = null, eurUsd = 1.08) {
+// --- supply events (reprints, restocks, early out-of-print reversals) -----
+// The phase model assumes an in-print set's supply fades on its own natural
+// schedule and an out-of-print set's supply only ever shrinks. A confirmed
+// reprint or restock breaks that assumption from outside the model, so it has
+// to be told rather than inferred — see supply-events.json (root), which a
+// weekly research job maintains (2+ independently corroborating sources
+// required before it writes an entry) and analyze()/analyzeSealed() read via
+// the `supplyEvent` param, keyed by set name.
+//
+// Effect decays linearly to zero over `decayMonths` from the event date, so
+// a stale entry stops distorting the model once the market has caught up —
+// `strength` is 1 the day it lands, 0 once decayMonths have passed.
+export function supplyEventEffect(event, now = new Date()) {
+  if (!event?.date) return null;
+  const age = monthsSince(event.date, now);
+  const decayMonths = event.decayMonths || 6;
+  if (age < 0 || age >= decayMonths) return null;
+  return { ...event, strength: 1 - age / decayMonths };
+}
+
+const EVENT_PENALTY = { reprint: 0.35, restock: 0.2 };
+
+export function analyze(card, price, history, market = null, eurUsd = 1.08, supplyEvent = null) {
   const phase = getPhase(card);
+  const event = supplyEventEffect(supplyEvent);
   const p30 = priceDaysAgo(history, 30);
   const p90 = priceDaysAgo(history, 90);
   const p180 = priceDaysAgo(history, 180);
@@ -172,9 +195,23 @@ export function analyze(card, price, history, market = null, eurUsd = 1.08) {
   if (mom !== null && mom > 0.2 * margin) {
     growth -= mom * 0.5;
     reasons.push(`Up ~${Math.round(mom * 100)}% over the last month${via} — spikes like this usually give back a chunk.`);
-  } else if (mom !== null && mom < -0.2 * margin) {
+  } else if (mom !== null && mom < -0.2 * margin && !event) {
     growth += Math.abs(mom) * 0.3;
     reasons.push(`Down ~${Math.round(Math.abs(mom) * 100)}% over the last month${via} — oversold moves partially bounce.`);
+  } else if (mom !== null && mom < -0.2 * margin && event) {
+    // A drop during a confirmed supply event isn't noise to bounce back from —
+    // it's the event working as expected, so no mean-reversion credit here.
+    reasons.push(`Down ~${Math.round(Math.abs(mom) * 100)}% over the last month${via} — consistent with the ${event.type} below, not treated as an oversold bounce.`);
+  }
+
+  if (event) {
+    const penalty = (EVENT_PENALTY[event.type] ?? 0.15) * event.strength;
+    growth -= penalty;
+    const note = event.note?.replace(/\.+$/, "");
+    reasons.push(
+      `${event.type === "reprint" ? "Reprint" : event.type === "restock" ? "Restock" : "Supply event"} confirmed ${event.date}` +
+      `${note ? ` — ${note}` : ""}. Extra supply is pressuring price; the phase read below is suspended until this fades (~${event.decayMonths || 6} months out).`
+    );
   }
 
   const conf = confidence(price, market, eurUsd);
@@ -214,9 +251,27 @@ export function analyze(card, price, history, market = null, eurUsd = 1.08) {
     reasons.push("No strong edge either way at current price.");
   }
 
+  // A confirmed supply event overrides a BUY outright — every BUY branch
+  // above rests on supply fading on its normal schedule, which is exactly
+  // what a reprint or restock breaks. Nothing else needs overriding: SELL,
+  // AVOID and HOLD all still hold (or get more conservative) under more
+  // supply, just not "accumulate now."
+  if (event && signal === "BUY") {
+    signal = "AVOID";
+    reasons.push(`Would otherwise be a BUY on phase alone, but the active ${event.type} overrides that — more supply is still landing.`);
+  }
+
   // Grab this before the confidence caveat is appended — it's what the signal
   // actually rests on, and what the Discord alert quotes.
   const rationale = reasons[reasons.length - 1];
+
+  if (event) {
+    // An active event means the price is moving for a reason the phase model
+    // was never fit on — treat the read as low-confidence regardless of how
+    // clean the listing pool looks, so the projection band widens to match.
+    conf.score = Math.min(conf.score, 0.4);
+    if (!conf.flags.includes(`active ${event.type}`)) conf.flags.push(`active ${event.type}`);
+  }
 
   if (conf.flags.length) {
     reasons.push(`Price confidence is low (${conf.flags.join("; ")}) — the projection range is widened to match.`);
@@ -226,6 +281,7 @@ export function analyze(card, price, history, market = null, eurUsd = 1.08) {
   return {
     phase, price, chg30, chg90, chg180, signal, reasons, rationale,
     mom, momSource,
+    supplyEvent: event ? { type: event.type, date: event.date, strength: +event.strength.toFixed(2) } : null,
     confidence: +conf.score.toFixed(2), confidenceFlags: conf.flags,
     proj: [+(proj12 * (1 - band)).toFixed(2), +(proj12 * (1 + band)).toFixed(2)],
   };

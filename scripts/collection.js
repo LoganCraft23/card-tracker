@@ -37,6 +37,7 @@ if (!cards.length && !sealedWanted.length) {
 const history = readOr("history/collection-prices.json", {});
 const prevSignals = readOr("history/collection-signals.json", {});
 const sealedData = readOr("docs/sealed.json", { products: [] });
+const supplyEvents = readOr("supply-events.json", { sets: {} }).sets || {};
 
 const eurUsd = await getEurUsd();
 const allSets = await getSets();
@@ -139,7 +140,7 @@ for (const owned of cards) {
 
   let a = null;
   if (modelSet) {
-    a = analyze({ ...entry, set: modelSet }, price, history[key], market, eurUsd);
+    a = analyze({ ...entry, set: modelSet }, price, history[key], market, eurUsd, supplyEvents[modelSet]);
     newSignals[key] = a.signal;
     const prev = prevSignals[key];
     const actionable = a.signal === "BUY" || a.signal === "SELL";

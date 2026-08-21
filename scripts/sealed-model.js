@@ -9,7 +9,7 @@
 // box has neither. Format takes their place, and liquidity is measured
 // directly from the listing count rather than inferred from a price spread.
 
-import { getPhase } from "./model.js";
+import { getPhase, supplyEventEffect } from "./model.js";
 
 // 12-month growth baseline by lifecycle phase. Compared with the singles
 // model, hype-fade is gentler (sealed has an MSRP floor that singles lack) and
@@ -85,20 +85,36 @@ function momentum(price, history) {
  *               A relative desirability read, NOT an expected value — a true
  *               EV needs per-slot pull rates, which no free source publishes.
  */
-export function analyzeSealed(item, history, chase = null) {
+export function analyzeSealed(item, history, chase = null, supplyEvent = null) {
   const phase = getPhase({ set: item.set });
   const price = item.price;
   const mom = momentum(price, history);
   const reasons = [];
+  const event = supplyEventEffect(supplyEvent);
 
   let growth = (PHASE_BASE[phase] ?? 0) + (FORMAT_ADJ[item.format] ?? 0);
 
   if (mom !== null && mom > 0.2) {
     growth -= mom * 0.5;
     reasons.push(`Up ${Math.round(mom * 100)}% in 30 days — sealed spikes on hype usually give part of it back.`);
-  } else if (mom !== null && mom < -0.2) {
+  } else if (mom !== null && mom < -0.2 && !event) {
     growth += Math.abs(mom) * 0.3;
     reasons.push(`Down ${Math.round(Math.abs(mom) * 100)}% in 30 days — oversold sealed tends to bounce off its floor.`);
+  } else if (mom !== null && mom < -0.2 && event) {
+    // Sealed's core assumption is that supply only shrinks — a reprint or
+    // restock breaks that directly, so a drop here isn't noise to bounce
+    // back from, it's fresh boxes hitting the market.
+    reasons.push(`Down ${Math.round(Math.abs(mom) * 100)}% in 30 days — consistent with the ${event.type} below, not treated as an oversold bounce.`);
+  }
+
+  if (event) {
+    const penalty = (event.type === "reprint" ? 0.4 : event.type === "restock" ? 0.25 : 0.15) * event.strength;
+    growth -= penalty;
+    const note = event.note?.replace(/\.+$/, "");
+    reasons.push(
+      `${event.type === "reprint" ? "Reprint" : event.type === "restock" ? "Restock" : "Supply event"} confirmed ${event.date}` +
+      `${note ? ` — ${note}` : ""}. Sealed's "supply only shrinks" assumption doesn't hold until this fades (~${event.decayMonths || 6} months out).`
+    );
   }
 
   // A set whose chase cards are expensive keeps people opening its boxes,
@@ -134,7 +150,21 @@ export function analyzeSealed(item, history, chase = null) {
     reasons.push("Still in print and freely available — no edge at current prices.");
   }
 
+  // Every BUY branch above assumes sealed supply is shrinking on schedule —
+  // exactly what a reprint or restock breaks. See model.js's analyze() for
+  // the singles-side version of this same override.
+  if (event && signal === "BUY") {
+    signal = "AVOID";
+    reasons.push(`Would otherwise be a BUY on phase alone, but the active ${event.type} overrides that — more supply is still landing.`);
+  }
+
   const rationale = reasons[reasons.length - 1];
+
+  if (event) {
+    conf.score = Math.min(conf.score, 0.4);
+    if (!conf.flags.includes(`active ${event.type}`)) conf.flags.push(`active ${event.type}`);
+  }
+
   if (conf.flags.length) {
     reasons.push(`Price confidence is low (${conf.flags.join("; ")}) — the projection range is widened to match.`);
   }
@@ -143,6 +173,7 @@ export function analyzeSealed(item, history, chase = null) {
   const band = BAND_TIGHT + (1 - conf.score) * (BAND_LOOSE - BAND_TIGHT);
   return {
     phase, price, mom, signal, reasons, rationale,
+    supplyEvent: event ? { type: event.type, date: event.date, strength: +event.strength.toFixed(2) } : null,
     confidence: +conf.score.toFixed(2), confidenceFlags: conf.flags,
     proj: [+(proj12 * (1 - band)).toFixed(2), +(proj12 * (1 + band)).toFixed(2)],
   };

@@ -23,6 +23,7 @@ const watchlist = read("watchlist.json");
 const priceHistory = read("history/prices.json"); // { cardKey: [[date, price], ...] }
 const prevSignals = read("history/signals.json"); // { cardKey: "BUY" | ... }
 const predictions = readOr("history/predictions.json", {}); // { cardKey: [entry, ...] }
+const supplyEvents = readOr("supply-events.json", { sets: {} }).sets || {};
 
 const eurUsd = await getEurUsd();
 console.log(`EUR/USD ${eurUsd}`);
@@ -70,7 +71,7 @@ for (const card of watchlist.cards) {
   // keep ~13 months of daily snapshots
   priceHistory[key] = filtered.slice(-400);
 
-  const a = analyze(card, price, priceHistory[key], market, eurUsd);
+  const a = analyze(card, price, priceHistory[key], market, eurUsd, supplyEvents[card.set]);
   newSignals[key] = a.signal;
 
   // Log what each model claimed today so accuracy can be measured later.

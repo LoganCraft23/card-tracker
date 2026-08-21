@@ -21,6 +21,10 @@ const PATH = new URL("../watchlist.json", import.meta.url);
 const prev = JSON.parse(readFileSync(PATH, "utf8"));
 const root = new URL("..", import.meta.url);
 const write = (p, data) => writeFileSync(new URL(p, root), JSON.stringify(data, null, 2));
+const readOr = (p, fb) => {
+  try { return JSON.parse(readFileSync(new URL(p, root), "utf8")); } catch { return fb; }
+};
+const supplyEvents = readOr("supply-events.json", { sets: {} }).sets || {};
 
 // Price bands. The screener already prices every secret rare in every set, so
 // adding a band costs no extra API calls — it only changes how the results are
@@ -90,7 +94,7 @@ for (const setName of Object.keys(SETS)) {
         image: d.image,
         auto: true,
       };
-      const a = analyze(entry, d.price, [], d.market, eurUsd);
+      const a = analyze(entry, d.price, [], d.market, eurUsd, supplyEvents[setName]);
       const upside = (a.proj[0] + a.proj[1]) / 2 / d.price - 1;
       // Rank on upside but discount cards whose price we don't trust, so a
       // thin-market outlier can't top the board on a phantom quote.

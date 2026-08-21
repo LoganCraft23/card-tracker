@@ -130,6 +130,17 @@ serves the dashboard at http://localhost:4173 exactly as GitHub Pages will.
   this moves its cards from trough to recovery phase.
 - **Alerts:** Discord pings only on signal *changes* to or from BUY/SELL, so
   it's quiet unless something actionable happens.
+- **Confirmed reprint, restock, or an early return to print:** add an entry to
+  `supply-events.json` (repo root), keyed by set name — `{ "type": "reprint",
+  "date": "YYYY-MM-DD", "note": "...", "sources": ["..."], "decayMonths": 6 }`.
+  While active, `analyze()`/`analyzeSealed()` downgrade any BUY on that set to
+  AVOID, stop reading a price drop as "oversold, expect a bounce," and widen
+  the confidence band — the phase model assumes supply fades on its own
+  schedule, which is exactly what a reprint breaks. The effect decays linearly
+  to zero over `decayMonths`. A scheduled weekly job maintains this file
+  automatically (WebSearch for reprint/restock news, cross-referencing 2+
+  independent sources before writing), but it's plain JSON — safe to hand-edit
+  the moment you hear something before the job would otherwise catch it.
 
 ## Notes and caveats
 
