@@ -1,0 +1,15 @@
+{
+  "note": "Confirmed reprints, restocks, or early out-of-print reversals, keyed by set name (must match scripts/model.js's SETS keys). model.js's analyze()/analyzeSealed() read an entry for a card's set and override the phase model while it's active: BUY signals downgrade to AVOID, momentum's 'oversold, expect a bounce' logic is suppressed, growth is penalized, and confidence is capped low so the projection band widens. Effect decays linearly to zero over decayMonths from `date`. Auto-maintained by the weekly reprint/restock news-scan scheduled task, which requires 2+ independently corroborating sources before writing or changing an entry — see README.md. Safe to hand-edit too: same shape, `type` is \"reprint\" | \"restock\" | anything else (treated as a generic supply event).",
+  "sets": {
+    "Destined Rivals": {
+      "type": "reprint",
+      "date": "2026-08-07",
+      "note": "Multiple retail/distributor sources report a substantial reprint wave (booster boxes + ETBs) confirmed via allocation info, one distributor estimate cited at 25,000+ booster boxes; not an official Pokemon Company/Pokemon Center press statement. Secondary prices already falling sharply on the news.",
+      "sources": [
+        "https://cardgroove.com/blog/destined-rivals-reprints-august-2026",
+        "https://cardchill.com/article/destined-rivals-reprint-announced-shocking-prices"
+      ],
+      "decayMonths": 9
+    }
+  }
+}
