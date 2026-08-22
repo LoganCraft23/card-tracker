@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-21T13:51:22.842Z",
-  "totalValue": 1266.25,
+  "updated": "2026-08-22T13:38:30.209Z",
+  "totalValue": 1271.39,
   "costBasis": 0,
   "costedItems": 0,
   "items": [
@@ -83,6 +83,10 @@
         [
           "2026-08-21",
           39.12
+        ],
+        [
+          "2026-08-22",
+          39.12
         ]
       ]
     },
@@ -95,10 +99,10 @@
       "productId": 676030,
       "qty": 1,
       "paid": null,
-      "value": 17.11,
+      "value": 16.87,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 17.11,
+      "price": 16.87,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -113,8 +117,8 @@
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        12.5,
-        15.91
+        12.32,
+        15.68
       ],
       "history": [
         [
@@ -176,6 +180,10 @@
         [
           "2026-08-21",
           17.11
+        ],
+        [
+          "2026-08-22",
+          16.87
         ]
       ]
     },
@@ -188,10 +196,10 @@
       "productId": 642580,
       "qty": 1,
       "paid": null,
-      "value": 19.47,
+      "value": 19.52,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 19.47,
+      "price": 19.52,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -206,8 +214,8 @@
       "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        16.53,
-        22.8
+        16.57,
+        22.86
       ],
       "history": [
         [
@@ -269,6 +277,10 @@
         [
           "2026-08-21",
           19.47
+        ],
+        [
+          "2026-08-22",
+          19.52
         ]
       ]
     },
@@ -281,10 +293,10 @@
       "productId": 704847,
       "qty": 1,
       "paid": null,
-      "value": 12.55,
+      "value": 12.68,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 12.55,
+      "price": 12.68,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -300,8 +312,8 @@
       "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        9.74,
-        13.44
+        9.84,
+        13.58
       ],
       "history": [
         [
@@ -363,6 +375,10 @@
         [
           "2026-08-21",
           12.55
+        ],
+        [
+          "2026-08-22",
+          12.68
         ]
       ]
     },
@@ -375,10 +391,10 @@
       "productId": 704844,
       "qty": 1,
       "paid": null,
-      "value": 8.97,
+      "value": 8.49,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 8.97,
+      "price": 8.49,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -396,8 +412,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        5.81,
-        9.08
+        5.5,
+        8.59
       ],
       "history": [
         [
@@ -459,6 +475,10 @@
         [
           "2026-08-21",
           8.97
+        ],
+        [
+          "2026-08-22",
+          8.49
         ]
       ]
     },
@@ -471,10 +491,10 @@
       "productId": 704858,
       "qty": 1,
       "paid": null,
-      "value": 12.57,
+      "value": 13.1,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 12.57,
+      "price": 13.1,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -489,8 +509,8 @@
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        7.85,
-        10
+        8.18,
+        10.42
       ],
       "history": [
         [
@@ -552,6 +572,10 @@
         [
           "2026-08-21",
           12.57
+        ],
+        [
+          "2026-08-22",
+          13.1
         ]
       ]
     },
@@ -564,10 +588,10 @@
       "productId": 624677,
       "qty": 1,
       "paid": null,
-      "value": 16.05,
+      "value": 17.09,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 16.05,
+      "price": 17.09,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -585,8 +609,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        13.16,
-        20.54
+        14.01,
+        21.87
       ],
       "history": [
         [
@@ -648,6 +672,10 @@
         [
           "2026-08-21",
           16.05
+        ],
+        [
+          "2026-08-22",
+          17.09
         ]
       ]
     },
@@ -702,6 +730,10 @@
         [
           "2026-08-21",
           15.99
+        ],
+        [
+          "2026-08-22",
+          15.99
         ]
       ]
     },
@@ -755,6 +787,10 @@
         ],
         [
           "2026-08-21",
+          22.28
+        ],
+        [
+          "2026-08-22",
           22.28
         ]
       ]
@@ -862,6 +898,10 @@
         [
           "2026-08-21",
           231.47
+        ],
+        [
+          "2026-08-22",
+          231.47
         ]
       ]
     },
@@ -968,6 +1008,10 @@
         [
           "2026-08-21",
           291.35
+        ],
+        [
+          "2026-08-22",
+          291.35
         ]
       ]
     },
@@ -980,9 +1024,9 @@
       "productId": 88712,
       "qty": 1,
       "paid": null,
-      "value": 176.25,
+      "value": 180.25,
       "modelled": false,
-      "price": 176.25,
+      "price": 180.25,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1074,6 +1118,10 @@
         [
           "2026-08-21",
           176.25
+        ],
+        [
+          "2026-08-22",
+          180.25
         ]
       ]
     },
@@ -1086,9 +1134,9 @@
       "productId": 88710,
       "qty": 1,
       "paid": null,
-      "value": 98.41,
+      "value": 98.54,
       "modelled": false,
-      "price": 98.41,
+      "price": 98.54,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1180,6 +1228,10 @@
         [
           "2026-08-21",
           98.41
+        ],
+        [
+          "2026-08-22",
+          98.54
         ]
       ]
     },
@@ -1285,6 +1337,10 @@
         ],
         [
           "2026-08-21",
+          50.11
+        ],
+        [
+          "2026-08-22",
           50.11
         ]
       ]
@@ -1392,6 +1448,10 @@
         [
           "2026-08-21",
           50.6
+        ],
+        [
+          "2026-08-22",
+          50.6
         ]
       ]
     },
@@ -1497,6 +1557,10 @@
         ],
         [
           "2026-08-21",
+          34.9
+        ],
+        [
+          "2026-08-22",
           34.9
         ]
       ]
@@ -1632,6 +1696,10 @@
         [
           "2026-08-21",
           23.05
+        ],
+        [
+          "2026-08-22",
+          23.05
         ]
       ]
     },
@@ -1644,9 +1712,9 @@
       "productId": 96392,
       "qty": 1,
       "paid": null,
-      "value": 21.37,
+      "value": 21.42,
       "modelled": false,
-      "price": 21.37,
+      "price": 21.42,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1738,6 +1806,10 @@
         [
           "2026-08-21",
           21.37
+        ],
+        [
+          "2026-08-22",
+          21.42
         ]
       ]
     },
@@ -1750,9 +1822,9 @@
       "productId": 83911,
       "qty": 1,
       "paid": null,
-      "value": 15.77,
+      "value": 15.7,
       "modelled": false,
-      "price": 15.77,
+      "price": 15.7,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1872,6 +1944,10 @@
         [
           "2026-08-21",
           15.77
+        ],
+        [
+          "2026-08-22",
+          15.7
         ]
       ]
     },
@@ -2006,6 +2082,10 @@
         [
           "2026-08-21",
           26.47
+        ],
+        [
+          "2026-08-22",
+          26.47
         ]
       ]
     },
@@ -2111,6 +2191,10 @@
         ],
         [
           "2026-08-21",
+          26.31
+        ],
+        [
+          "2026-08-22",
           26.31
         ]
       ]
@@ -2218,6 +2302,10 @@
         [
           "2026-08-21",
           22.87
+        ],
+        [
+          "2026-08-22",
+          22.87
         ]
       ]
     },
@@ -2324,6 +2412,10 @@
         [
           "2026-08-21",
           12.9
+        ],
+        [
+          "2026-08-22",
+          12.9
         ]
       ]
     },
@@ -2405,6 +2497,10 @@
         ],
         [
           "2026-08-21",
+          20.31
+        ],
+        [
+          "2026-08-22",
           20.31
         ]
       ]
