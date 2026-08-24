@@ -10,6 +10,16 @@
         "https://cardchill.com/article/destined-rivals-reprint-announced-shocking-prices"
       ],
       "decayMonths": 9
+    },
+    "Ascended Heroes": {
+      "type": "restock",
+      "date": "2026-06-18",
+      "note": "Pokemon TCG officially revealed three Ascended Heroes Tins ($21.99 each, 4 packs plus a reprinted Mega ex promo) releasing Aug 28, addressing the set's months-long scarcity since its January launch (no standalone booster boxes); secondary Ascended Heroes box prices had already fallen sharply ahead of release.",
+      "sources": [
+        "https://www.pokebeach.com/2026/06/ascended-heroes-tins-revealed-for-august",
+        "https://www.beckett.com/news/pokemon-tcg-ascended-heroes-tins-arrive-august-28-what-collectors-need-to-know/"
+      ],
+      "decayMonths": 4
     }
   }
 }
