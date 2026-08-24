@@ -1,18 +1,18 @@
 {
-  "generated": "2026-08-23T13:37:18.391Z",
-  "predictionsLogged": 4684,
-  "daysCollected": 23,
+  "generated": "2026-08-24T13:57:28.230Z",
+  "predictionsLogged": 4884,
+  "daysCollected": 24,
   "horizons": {
     "30": {
-      "samples": 0,
-      "modelMAPE": null,
-      "naiveMAPE": null,
-      "bandHitRate": null,
-      "directionAccuracy": null,
+      "samples": 175,
+      "modelMAPE": 12.83,
+      "naiveMAPE": 11.77,
+      "bandHitRate": 2.3,
+      "directionAccuracy": 11.8,
       "fittedSamples": 0,
       "fittedMAPE": null,
       "handMAPEOnSameCards": null,
-      "beatsNaive": null,
+      "beatsNaive": false,
       "fittedBeatsHand": null
     },
     "90": {
