@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-25T13:56:39.415Z",
-  "totalValue": 1272.93,
+  "updated": "2026-08-26T14:00:30.678Z",
+  "totalValue": 1273.05,
   "costBasis": 0,
   "costedItems": 0,
   "items": [
@@ -13,9 +13,9 @@
       "productId": 490064,
       "qty": 1,
       "paid": null,
-      "value": 39.34,
+      "value": 39.26,
       "modelled": false,
-      "price": 39.34,
+      "price": 39.26,
       "signal": null,
       "reasons": [
         "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."
@@ -99,6 +99,10 @@
         [
           "2026-08-25",
           39.34
+        ],
+        [
+          "2026-08-26",
+          39.26
         ]
       ]
     },
@@ -111,10 +115,10 @@
       "productId": 676030,
       "qty": 1,
       "paid": null,
-      "value": 17.17,
+      "value": 16.71,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 17.17,
+      "price": 16.71,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -125,7 +129,7 @@
         "Price confidence is low (active restock) — the projection range is widened to match."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.1544028950542822,
+      "mom": -0.11942098914354647,
       "momSource": "cardmarket",
       "supplyEvent": {
         "type": "restock",
@@ -137,8 +141,8 @@
         "active restock"
       ],
       "proj": [
-        8.55,
-        16.52
+        8.32,
+        16.08
       ],
       "history": [
         [
@@ -216,6 +220,10 @@
         [
           "2026-08-25",
           17.17
+        ],
+        [
+          "2026-08-26",
+          16.71
         ]
       ]
     },
@@ -325,6 +333,10 @@
         [
           "2026-08-25",
           19.44
+        ],
+        [
+          "2026-08-26",
+          19.44
         ]
       ]
     },
@@ -337,26 +349,27 @@
       "productId": 704847,
       "qty": 1,
       "paid": null,
-      "value": 12.96,
+      "value": 12.69,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 12.96,
+      "price": 12.69,
       "chg30": null,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
+        "Down ~27% over the last month (estimated from Cardmarket's trend vs its 30-day average) — oversold moves partially bounce.",
         "No strong edge either way at current price."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.2362309223623092,
+      "mom": -0.2667551426675514,
       "momSource": "cardmarket",
       "supplyEvent": null,
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        9.47,
-        12.05
+        10.16,
+        12.93
       ],
       "history": [
         [
@@ -434,6 +447,10 @@
         [
           "2026-08-25",
           12.96
+        ],
+        [
+          "2026-08-26",
+          12.69
         ]
       ]
     },
@@ -446,10 +463,10 @@
       "productId": 704844,
       "qty": 1,
       "paid": null,
-      "value": 8.7,
+      "value": 8.86,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 8.7,
+      "price": 8.86,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -459,7 +476,7 @@
         "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.21490467937608307,
+      "mom": -0.2232235701906412,
       "momSource": "cardmarket",
       "supplyEvent": null,
       "confidence": 0.7,
@@ -467,8 +484,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        5.64,
-        8.8
+        5.74,
+        8.96
       ],
       "history": [
         [
@@ -546,6 +563,10 @@
         [
           "2026-08-25",
           8.7
+        ],
+        [
+          "2026-08-26",
+          8.86
         ]
       ]
     },
@@ -558,10 +579,10 @@
       "productId": 704858,
       "qty": 1,
       "paid": null,
-      "value": 12.64,
+      "value": 12.11,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 12.64,
+      "price": 12.11,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -570,14 +591,14 @@
         "Standard hits from in-print sets keep bleeding as packs get opened."
       ],
       "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
-      "mom": -0.06202924235711115,
+      "mom": -0.1222862206468763,
       "momSource": "cardmarket",
       "supplyEvent": null,
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        7.9,
-        10.05
+        7.57,
+        9.63
       ],
       "history": [
         [
@@ -655,6 +676,10 @@
         [
           "2026-08-25",
           12.64
+        ],
+        [
+          "2026-08-26",
+          12.11
         ]
       ]
     },
@@ -667,10 +692,10 @@
       "productId": 624677,
       "qty": 1,
       "paid": null,
-      "value": 17.15,
+      "value": 17.56,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 17.15,
+      "price": 17.56,
       "chg30": null,
       "chg90": null,
       "chg180": null,
@@ -680,7 +705,7 @@
         "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
       ],
       "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
-      "mom": -0.04980385468190348,
+      "mom": -0.17192563534026967,
       "momSource": "cardmarket",
       "supplyEvent": null,
       "confidence": 0.7,
@@ -688,8 +713,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        14.06,
-        21.95
+        14.4,
+        22.48
       ],
       "history": [
         [
@@ -767,6 +792,10 @@
         [
           "2026-08-25",
           17.15
+        ],
+        [
+          "2026-08-26",
+          17.56
         ]
       ]
     },
@@ -837,6 +866,10 @@
         [
           "2026-08-25",
           15.99
+        ],
+        [
+          "2026-08-26",
+          15.99
         ]
       ]
     },
@@ -906,6 +939,10 @@
         ],
         [
           "2026-08-25",
+          22.28
+        ],
+        [
+          "2026-08-26",
           22.28
         ]
       ]
@@ -1029,6 +1066,10 @@
         [
           "2026-08-25",
           231.47
+        ],
+        [
+          "2026-08-26",
+          231.47
         ]
       ]
     },
@@ -1151,6 +1192,10 @@
         [
           "2026-08-25",
           291.35
+        ],
+        [
+          "2026-08-26",
+          291.35
         ]
       ]
     },
@@ -1163,9 +1208,9 @@
       "productId": 88712,
       "qty": 1,
       "paid": null,
-      "value": 180.85,
+      "value": 180.31,
       "modelled": false,
-      "price": 180.85,
+      "price": 180.31,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1273,6 +1318,10 @@
         [
           "2026-08-25",
           180.85
+        ],
+        [
+          "2026-08-26",
+          180.31
         ]
       ]
     },
@@ -1285,9 +1334,9 @@
       "productId": 88710,
       "qty": 1,
       "paid": null,
-      "value": 97.35,
+      "value": 97.97,
       "modelled": false,
-      "price": 97.35,
+      "price": 97.97,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1395,6 +1444,10 @@
         [
           "2026-08-25",
           97.35
+        ],
+        [
+          "2026-08-26",
+          97.97
         ]
       ]
     },
@@ -1517,6 +1570,10 @@
         [
           "2026-08-25",
           50.11
+        ],
+        [
+          "2026-08-26",
+          50.11
         ]
       ]
     },
@@ -1529,9 +1586,9 @@
       "productId": 89113,
       "qty": 1,
       "paid": null,
-      "value": 50.6,
+      "value": 50.88,
       "modelled": false,
-      "price": 50.6,
+      "price": 50.88,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1639,6 +1696,10 @@
         [
           "2026-08-25",
           50.6
+        ],
+        [
+          "2026-08-26",
+          50.88
         ]
       ]
     },
@@ -1651,9 +1712,9 @@
       "productId": 107280,
       "qty": 1,
       "paid": null,
-      "value": 34.9,
+      "value": 35.13,
       "modelled": false,
-      "price": 34.9,
+      "price": 35.13,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -1761,6 +1822,10 @@
         [
           "2026-08-25",
           34.9
+        ],
+        [
+          "2026-08-26",
+          35.13
         ]
       ]
     },
@@ -1911,6 +1976,10 @@
         [
           "2026-08-25",
           23.05
+        ],
+        [
+          "2026-08-26",
+          23.05
         ]
       ]
     },
@@ -1923,9 +1992,9 @@
       "productId": 96392,
       "qty": 1,
       "paid": null,
-      "value": 22.09,
+      "value": 22.15,
       "modelled": false,
-      "price": 22.09,
+      "price": 22.15,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -2033,6 +2102,10 @@
         [
           "2026-08-25",
           22.09
+        ],
+        [
+          "2026-08-26",
+          22.15
         ]
       ]
     },
@@ -2182,6 +2255,10 @@
         ],
         [
           "2026-08-25",
+          15.7
+        ],
+        [
+          "2026-08-26",
           15.7
         ]
       ]
@@ -2333,6 +2410,10 @@
         [
           "2026-08-25",
           26.47
+        ],
+        [
+          "2026-08-26",
+          26.47
         ]
       ]
     },
@@ -2455,6 +2536,10 @@
         [
           "2026-08-25",
           26.56
+        ],
+        [
+          "2026-08-26",
+          26.56
         ]
       ]
     },
@@ -2467,9 +2552,9 @@
       "productId": 87430,
       "qty": 1,
       "paid": null,
-      "value": 23.47,
+      "value": 23.63,
       "modelled": false,
-      "price": 23.47,
+      "price": 23.63,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -2577,6 +2662,10 @@
         [
           "2026-08-25",
           23.47
+        ],
+        [
+          "2026-08-26",
+          23.63
         ]
       ]
     },
@@ -2589,9 +2678,9 @@
       "productId": 85639,
       "qty": 1,
       "paid": null,
-      "value": 12.98,
+      "value": 13.06,
       "modelled": false,
-      "price": 12.98,
+      "price": 13.06,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -2699,6 +2788,10 @@
         [
           "2026-08-25",
           12.98
+        ],
+        [
+          "2026-08-26",
+          13.06
         ]
       ]
     },
@@ -2796,6 +2889,10 @@
         ],
         [
           "2026-08-25",
+          20.31
+        ],
+        [
+          "2026-08-26",
           20.31
         ]
       ]

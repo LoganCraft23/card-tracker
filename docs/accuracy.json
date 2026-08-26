@@ -1,14 +1,14 @@
 {
-  "generated": "2026-08-25T13:56:39.549Z",
-  "predictionsLogged": 5084,
-  "daysCollected": 25,
+  "generated": "2026-08-26T14:00:30.828Z",
+  "predictionsLogged": 5284,
+  "daysCollected": 26,
   "horizons": {
     "30": {
-      "samples": 340,
-      "modelMAPE": 12.75,
-      "naiveMAPE": 11.68,
-      "bandHitRate": 2.6,
-      "directionAccuracy": 12.2,
+      "samples": 515,
+      "modelMAPE": 12.76,
+      "naiveMAPE": 11.7,
+      "bandHitRate": 1.9,
+      "directionAccuracy": 13.2,
       "fittedSamples": 0,
       "fittedMAPE": null,
       "handMAPEOnSameCards": null,
