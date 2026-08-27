@@ -1,21 +1,46 @@
 {
   "fitted": true,
-  "updated": "2026-08-26T13:59:12.791Z",
+  "updated": "2026-08-27T22:54:34.634Z",
   "identified": {
     "characterAndRarity": true,
     "ageCurve": false,
     "why": "Each set sits at exactly one age, so cross-sectional age terms are collinear with set identity. Character and rarity vary within sets, so those effects are measurable."
   },
   "withinCard": {
-    "status": "accumulating",
-    "usableCards": 0,
-    "longestSpanDays": 24,
+    "status": "estimated",
+    "usableCards": 158,
+    "longestSpanDays": 25,
     "needs": "40 cards with 25+ days of history",
-    "growthByAgeBucket": {}
+    "growthByAgeBucket": {
+      "6": {
+        "n": 8,
+        "medianAnnualised": -0.9035
+      },
+      "12": {
+        "n": 23,
+        "medianAnnualised": -0.7947
+      },
+      "18": {
+        "n": 9,
+        "medianAnnualised": -0.9112
+      },
+      "24": {
+        "n": 19,
+        "medianAnnualised": -0.7796
+      },
+      "30": {
+        "n": 61,
+        "medianAnnualised": -0.8312
+      },
+      "36": {
+        "n": 35,
+        "medianAnnualised": -0.747
+      }
+    }
   },
   "n": 998,
-  "r2": 0.4744,
-  "residSd": 0.9673,
+  "r2": 0.4743,
+  "residSd": 0.97,
   "ageRange": [
     1,
     36
@@ -38,39 +63,39 @@
     36
   ],
   "coef": [
-    3.7050474565919096,
-    -0.053890523642666735,
-    0.1233805164300222,
-    -0.06854449537385392,
-    -0.052673893169906685,
+    3.6709276884346718,
+    -0.04828628629618483,
+    0.11670296415363467,
+    -0.06740030406570874,
+    -0.05196754684069537,
     0,
-    -1.3881882596627686,
-    1.6090350408730845,
-    -1.1892662937422676
+    -1.3960564183751947,
+    1.6080856402987571,
+    -1.1890183249366186
   ],
   "effects": {
-    "ultraVsChase": -0.7505,
-    "sVsA": 3.998,
-    "bVsA": -0.6956
+    "ultraVsChase": -0.7524,
+    "sVsA": 3.9932,
+    "bVsA": -0.6955
   },
   "ageCurveUnidentified": true,
   "growth12moByAgeMonths": {
-    "0": 0.0981,
-    "3": 0.2945,
-    "6": 0.5259,
-    "9": 0.2423,
-    "12": 0.0114,
-    "15": -0.1364,
-    "18": -0.2627,
-    "21": -0.3704,
-    "24": -0.4625,
-    "27": -0.4625,
-    "30": -0.4625,
-    "33": -0.4625,
-    "36": -0.4625,
-    "39": -0.4625,
-    "42": -0.4625,
-    "45": -0.4625,
-    "48": -0.4625
+    "0": 0.1284,
+    "3": 0.3082,
+    "6": 0.5168,
+    "9": 0.2391,
+    "12": 0.0123,
+    "15": -0.1339,
+    "18": -0.2589,
+    "21": -0.3659,
+    "24": -0.4574,
+    "27": -0.4574,
+    "30": -0.4574,
+    "33": -0.4574,
+    "36": -0.4574,
+    "39": -0.4574,
+    "42": -0.4574,
+    "45": -0.4574,
+    "48": -0.4574
   }
 }
