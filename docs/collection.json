@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-31T19:29:57.724Z",
-  "totalValue": 1289.33,
+  "updated": "2026-09-01T17:17:06.941Z",
+  "totalValue": 1285.63,
   "costBasis": 0,
   "costedItems": 0,
   "items": [
@@ -13,9 +13,9 @@
       "productId": 490064,
       "qty": 1,
       "paid": null,
-      "value": 39.43,
+      "value": 39.39,
       "modelled": false,
-      "price": 39.43,
+      "price": 39.39,
       "signal": null,
       "reasons": [
         "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."
@@ -111,6 +111,10 @@
         [
           "2026-08-31",
           39.43
+        ],
+        [
+          "2026-09-01",
+          39.39
         ]
       ]
     },
@@ -123,36 +127,35 @@
       "productId": 676030,
       "qty": 1,
       "paid": null,
-      "value": 17.68,
+      "value": 17.29,
       "modelled": true,
-      "phase": "hype-fade",
-      "price": 17.68,
-      "chg30": -0.25589225589225595,
+      "phase": "supply-trough",
+      "price": 17.29,
+      "chg30": -0.2723063973063974,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Down ~26% over the last month — consistent with the restock below, not treated as an oversold bounce.",
+        "Down ~27% over the last month — consistent with the restock below, not treated as an oversold bounce.",
         "Restock confirmed 2026-06-18 — Pokemon TCG officially revealed three Ascended Heroes Tins ($21.99 each, 4 packs plus a reprinted Mega ex promo) releasing Aug 28, addressing the set's months-long scarcity since its January launch (no standalone booster boxes); secondary Ascended Heroes box prices had already fallen sharply ahead of release. Extra supply is pressuring price; the phase read below is suspended until this fades (~4 months out).",
         "No strong edge either way at current price.",
-        "Price confidence is low (single market only; active restock) — the projection range is widened to match."
+        "Price confidence is low (active restock) — the projection range is widened to match."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.25589225589225595,
+      "mom": -0.2723063973063974,
       "momSource": "history",
       "supplyEvent": {
         "type": "restock",
         "date": "2026-06-18",
-        "strength": 0.5
+        "strength": 0.25
       },
       "confidence": 0.4,
       "confidenceFlags": [
-        "single market only",
         "active restock"
       ],
       "proj": [
-        8.8,
-        17.01
+        11.32,
+        21.88
       ],
       "history": [
         [
@@ -242,6 +245,10 @@
         [
           "2026-08-31",
           17.68
+        ],
+        [
+          "2026-09-01",
+          17.29
         ]
       ]
     },
@@ -254,11 +261,11 @@
       "productId": 642580,
       "qty": 1,
       "paid": null,
-      "value": 19.37,
+      "value": 19.01,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 19.37,
-      "chg30": -0.11065197428833792,
+      "price": 19.01,
+      "chg30": -0.1271808999081726,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
@@ -266,14 +273,14 @@
         "No strong edge either way at current price."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.11065197428833792,
+      "mom": -0.1271808999081726,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        16.44,
-        22.69
+        16.14,
+        22.26
       ],
       "history": [
         [
@@ -363,6 +370,10 @@
         [
           "2026-08-31",
           19.37
+        ],
+        [
+          "2026-09-01",
+          19.01
         ]
       ]
     },
@@ -375,30 +386,27 @@
       "productId": 704847,
       "qty": 1,
       "paid": null,
-      "value": 12.03,
+      "value": 10.41,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 12.03,
-      "chg30": -0.32943143812709036,
+      "price": 10.41,
+      "chg30": -0.41973244147157196,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Down ~33% over the last month — oversold moves partially bounce.",
-        "No strong edge either way at current price.",
-        "Price confidence is low (single market only) — the projection range is widened to match."
+        "Down ~42% over the last month — oversold moves partially bounce.",
+        "No strong edge either way at current price."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.32943143812709036,
+      "mom": -0.41973244147157196,
       "momSource": "history",
       "supplyEvent": null,
-      "confidence": 0.9,
-      "confidenceFlags": [
-        "single market only"
-      ],
+      "confidence": 0.88,
+      "confidenceFlags": [],
       "proj": [
-        9.46,
-        12.88
+        8.36,
+        11.54
       ],
       "history": [
         [
@@ -488,6 +496,10 @@
         [
           "2026-08-31",
           12.03
+        ],
+        [
+          "2026-09-01",
+          10.41
         ]
       ]
     },
@@ -500,21 +512,21 @@
       "productId": 704844,
       "qty": 1,
       "paid": null,
-      "value": 8.81,
+      "value": 8.5,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 8.81,
-      "chg30": -0.3181114551083591,
+      "price": 8.5,
+      "chg30": -0.34210526315789475,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Down ~32% over the last month — oversold moves partially bounce.",
+        "Down ~34% over the last month — oversold moves partially bounce.",
         "No strong edge either way at current price.",
         "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.3181114551083591,
+      "mom": -0.34210526315789475,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 0.7,
@@ -522,8 +534,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        6.37,
-        9.94
+        6.19,
+        9.66
       ],
       "history": [
         [
@@ -613,6 +625,10 @@
         [
           "2026-08-31",
           8.81
+        ],
+        [
+          "2026-09-01",
+          8.5
         ]
       ]
     },
@@ -625,27 +641,27 @@
       "productId": 704858,
       "qty": 1,
       "paid": null,
-      "value": 11.57,
+      "value": 10.16,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 11.57,
-      "chg30": -0.22815210140093395,
+      "price": 10.16,
+      "chg30": -0.32221480987324885,
       "chg90": null,
       "chg180": null,
       "signal": "AVOID",
       "reasons": [
-        "Down ~23% over the last month — oversold moves partially bounce.",
+        "Down ~32% over the last month — oversold moves partially bounce.",
         "Standard hits from in-print sets keep bleeding as packs get opened."
       ],
       "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
-      "mom": -0.22815210140093395,
+      "mom": -0.32221480987324885,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 1,
       "confidenceFlags": [],
       "proj": [
-        7.93,
-        10.09
+        7.21,
+        9.18
       ],
       "history": [
         [
@@ -735,6 +751,10 @@
         [
           "2026-08-31",
           11.57
+        ],
+        [
+          "2026-09-01",
+          10.16
         ]
       ]
     },
@@ -747,29 +767,29 @@
       "productId": 624677,
       "qty": 1,
       "paid": null,
-      "value": 17.49,
+      "value": 17.92,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 17.49,
-      "chg30": -0.12418627941912873,
+      "price": 17.92,
+      "chg30": -0.10265398097145705,
       "chg90": null,
       "chg180": null,
       "signal": "BUY",
       "reasons": [
         "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
-        "Price confidence is low (single market only) — the projection range is widened to match."
+        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
       ],
       "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
-      "mom": -0.12418627941912873,
+      "mom": -0.10265398097145705,
       "momSource": "history",
       "supplyEvent": null,
-      "confidence": 0.9,
+      "confidence": 0.7,
       "confidenceFlags": [
-        "single market only"
+        "US and EU prices disagree"
       ],
       "proj": [
-        15.55,
-        21.17
+        14.7,
+        22.94
       ],
       "history": [
         [
@@ -859,6 +879,10 @@
         [
           "2026-08-31",
           17.49
+        ],
+        [
+          "2026-09-01",
+          17.92
         ]
       ]
     },
@@ -941,6 +965,10 @@
         [
           "2026-08-31",
           19.78
+        ],
+        [
+          "2026-09-01",
+          19.78
         ]
       ]
     },
@@ -1022,6 +1050,10 @@
         ],
         [
           "2026-08-31",
+          25.61
+        ],
+        [
+          "2026-09-01",
           25.61
         ]
       ]
@@ -1157,6 +1189,10 @@
         [
           "2026-08-31",
           234.4
+        ],
+        [
+          "2026-09-01",
+          234.4
         ]
       ]
     },
@@ -1290,6 +1326,10 @@
         ],
         [
           "2026-08-31",
+          291.35
+        ],
+        [
+          "2026-09-01",
           291.35
         ]
       ]
@@ -1425,6 +1465,10 @@
         [
           "2026-08-31",
           186.02
+        ],
+        [
+          "2026-09-01",
+          186.02
         ]
       ]
     },
@@ -1558,6 +1602,10 @@
         ],
         [
           "2026-08-31",
+          98.27
+        ],
+        [
+          "2026-09-01",
           98.27
         ]
       ]
@@ -1693,6 +1741,10 @@
         [
           "2026-08-31",
           50.11428571428571
+        ],
+        [
+          "2026-09-01",
+          50.11428571428571
         ]
       ]
     },
@@ -1827,6 +1879,10 @@
         [
           "2026-08-31",
           51.38
+        ],
+        [
+          "2026-09-01",
+          51.38
         ]
       ]
     },
@@ -1960,6 +2016,10 @@
         ],
         [
           "2026-08-31",
+          35.53
+        ],
+        [
+          "2026-09-01",
           35.53
         ]
       ]
@@ -2123,6 +2183,10 @@
         [
           "2026-08-31",
           22.29
+        ],
+        [
+          "2026-09-01",
+          22.29
         ]
       ]
     },
@@ -2256,6 +2320,10 @@
         ],
         [
           "2026-08-31",
+          22.57
+        ],
+        [
+          "2026-09-01",
           22.57
         ]
       ]
@@ -2419,6 +2487,10 @@
         [
           "2026-08-31",
           16.01
+        ],
+        [
+          "2026-09-01",
+          16.01
         ]
       ]
     },
@@ -2581,6 +2653,10 @@
         [
           "2026-08-31",
           25.98
+        ],
+        [
+          "2026-09-01",
+          25.98
         ]
       ]
     },
@@ -2714,6 +2790,10 @@
         ],
         [
           "2026-08-31",
+          26.6
+        ],
+        [
+          "2026-09-01",
           26.6
         ]
       ]
@@ -2849,6 +2929,10 @@
         [
           "2026-08-31",
           23.66
+        ],
+        [
+          "2026-09-01",
+          23.66
         ]
       ]
     },
@@ -2983,6 +3067,10 @@
         [
           "2026-08-31",
           13.08
+        ],
+        [
+          "2026-09-01",
+          13.08
         ]
       ]
     },
@@ -3092,6 +3180,10 @@
         ],
         [
           "2026-08-31",
+          20.31
+        ],
+        [
+          "2026-09-01",
           20.31
         ]
       ]
