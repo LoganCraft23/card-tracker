@@ -1,17 +1,17 @@
 {
-  "generated": "2026-09-19T16:21:47.635Z",
-  "predictionsLogged": 9145,
-  "daysCollected": 50,
+  "generated": "2026-09-20T16:47:50.337Z",
+  "predictionsLogged": 9343,
+  "daysCollected": 51,
   "horizons": {
     "30": {
-      "samples": 4937,
-      "modelMAPE": 9.57,
-      "naiveMAPE": 8.87,
-      "bandHitRate": 7.8,
-      "directionAccuracy": 27.3,
-      "fittedSamples": 4351,
-      "fittedMAPE": 7.65,
-      "handMAPEOnSameCards": 9.08,
+      "samples": 4953,
+      "modelMAPE": 9.59,
+      "naiveMAPE": 8.9,
+      "bandHitRate": 7.9,
+      "directionAccuracy": 27.2,
+      "fittedSamples": 4367,
+      "fittedMAPE": 7.7,
+      "handMAPEOnSameCards": 9.11,
       "beatsNaive": false,
       "fittedBeatsHand": true
     },
