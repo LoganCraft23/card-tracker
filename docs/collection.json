@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-07T19:19:32.952Z",
-  "totalValue": 1327.99,
+  "updated": "2026-10-09T18:45:18.811Z",
+  "totalValue": 1265.72,
   "costBasis": 0,
   "costedItems": 0,
   "items": [
@@ -13,9 +13,9 @@
       "productId": 490064,
       "qty": 1,
       "paid": null,
-      "value": 39.31,
+      "value": 38.16,
       "modelled": false,
-      "price": 39.31,
+      "price": 38.16,
       "signal": null,
       "reasons": [
         "This set isn't in the lifecycle model, so it's tracked for price only — no signal, no alerts."
@@ -239,6 +239,10 @@
         [
           "2026-10-07",
           39.31
+        ],
+        [
+          "2026-10-09",
+          38.16
         ]
       ]
     },
@@ -251,27 +255,27 @@
       "productId": 676030,
       "qty": 1,
       "paid": null,
-      "value": 11.29,
+      "value": 11.89,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 11.29,
-      "chg30": -0.32354703415218705,
+      "price": 11.89,
+      "chg30": -0.2692071296865396,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Down ~32% over the last month — oversold moves partially bounce.",
+        "Down ~27% over the last month — oversold moves partially bounce.",
         "No strong edge either way at current price."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.32354703415218705,
+      "mom": -0.2692071296865396,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        10.5,
-        14.49
+        10.9,
+        15.04
       ],
       "history": [
         [
@@ -489,6 +493,10 @@
         [
           "2026-10-07",
           11.29
+        ],
+        [
+          "2026-10-09",
+          11.89
         ]
       ]
     },
@@ -501,11 +509,11 @@
       "productId": 642580,
       "qty": 1,
       "paid": null,
-      "value": 16.58,
+      "value": 16.42,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 16.58,
-      "chg30": -0.11289459604066361,
+      "price": 16.42,
+      "chg30": -0.11672942442173201,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
@@ -513,14 +521,14 @@
         "No strong edge either way at current price."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.11289459604066361,
+      "mom": -0.11672942442173201,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        14.07,
-        19.42
+        13.94,
+        19.23
       ],
       "history": [
         [
@@ -738,6 +746,10 @@
         [
           "2026-10-07",
           16.58
+        ],
+        [
+          "2026-10-09",
+          16.42
         ]
       ]
     },
@@ -750,30 +762,26 @@
       "productId": 704847,
       "qty": 1,
       "paid": null,
-      "value": 6.39,
+      "value": 6.85,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 6.39,
-      "chg30": -0.3173076923076923,
+      "price": 6.85,
+      "chg30": -0.19411764705882356,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Down ~32% over the last month — oversold moves partially bounce.",
-        "No strong edge either way at current price.",
-        "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
+        "No strong edge either way at current price."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.3173076923076923,
+      "mom": -0.19411764705882356,
       "momSource": "history",
       "supplyEvent": null,
-      "confidence": 0.7,
-      "confidenceFlags": [
-        "US and EU prices disagree"
-      ],
+      "confidence": 0.73,
+      "confidenceFlags": [],
       "proj": [
-        4.62,
-        7.21
+        4.5,
+        6.87
       ],
       "history": [
         [
@@ -991,6 +999,10 @@
         [
           "2026-10-07",
           6.39
+        ],
+        [
+          "2026-10-09",
+          6.85
         ]
       ]
     },
@@ -1003,21 +1015,21 @@
       "productId": 704844,
       "qty": 1,
       "paid": null,
-      "value": 3.96,
+      "value": 4.4,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 3.96,
-      "chg30": -0.48370273794002605,
+      "price": 4.4,
+      "chg30": -0.37853107344632764,
       "chg90": null,
       "chg180": null,
       "signal": "HOLD",
       "reasons": [
-        "Down ~48% over the last month — oversold moves partially bounce.",
+        "Down ~38% over the last month — oversold moves partially bounce.",
         "No strong edge either way at current price.",
         "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
       ],
       "rationale": "No strong edge either way at current price.",
-      "mom": -0.48370273794002605,
+      "mom": -0.37853107344632764,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 0.55,
@@ -1025,8 +1037,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        2.82,
-        4.9
+        3.04,
+        5.27
       ],
       "history": [
         [
@@ -1244,6 +1256,10 @@
         [
           "2026-10-07",
           3.96
+        ],
+        [
+          "2026-10-09",
+          4.4
         ]
       ]
     },
@@ -1256,27 +1272,27 @@
       "productId": 704858,
       "qty": 1,
       "paid": null,
-      "value": 7.38,
+      "value": 6.97,
       "modelled": true,
       "phase": "hype-fade",
-      "price": 7.38,
-      "chg30": -0.20900321543408362,
+      "price": 6.97,
+      "chg30": -0.2647679324894515,
       "chg90": null,
       "chg180": null,
       "signal": "AVOID",
       "reasons": [
-        "Down ~21% over the last month — oversold moves partially bounce.",
+        "Down ~26% over the last month — oversold moves partially bounce.",
         "Standard hits from in-print sets keep bleeding as packs get opened."
       ],
       "rationale": "Standard hits from in-print sets keep bleeding as packs get opened.",
-      "mom": -0.20900321543408362,
+      "mom": -0.2647679324894515,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 0.88,
       "confidenceFlags": [],
       "proj": [
-        4.79,
-        6.61
+        4.62,
+        6.38
       ],
       "history": [
         [
@@ -1494,6 +1510,10 @@
         [
           "2026-10-07",
           7.38
+        ],
+        [
+          "2026-10-09",
+          6.97
         ]
       ]
     },
@@ -1506,11 +1526,11 @@
       "productId": 624677,
       "qty": 1,
       "paid": null,
-      "value": 14.77,
+      "value": 14.45,
       "modelled": true,
       "phase": "supply-trough",
-      "price": 14.77,
-      "chg30": -0.08431494110353376,
+      "price": 14.45,
+      "chg30": -0.0468337730870713,
       "chg90": null,
       "chg180": null,
       "signal": "BUY",
@@ -1519,7 +1539,7 @@
         "Price confidence is low (US and EU prices disagree) — the projection range is widened to match."
       ],
       "rationale": "Chase card on a popular Pokemon at the supply trough — the classic accumulation window before the set goes out of print.",
-      "mom": -0.08431494110353376,
+      "mom": -0.0468337730870713,
       "momSource": "history",
       "supplyEvent": null,
       "confidence": 0.7,
@@ -1527,8 +1547,8 @@
         "US and EU prices disagree"
       ],
       "proj": [
-        12.11,
-        18.9
+        11.85,
+        18.5
       ],
       "history": [
         [
@@ -1746,6 +1766,10 @@
         [
           "2026-10-07",
           14.77
+        ],
+        [
+          "2026-10-09",
+          14.45
         ]
       ]
     },
@@ -1956,6 +1980,10 @@
         [
           "2026-10-07",
           22.76
+        ],
+        [
+          "2026-10-09",
+          22.76
         ]
       ]
     },
@@ -2165,6 +2193,10 @@
         ],
         [
           "2026-10-07",
+          25.77
+        ],
+        [
+          "2026-10-09",
           25.77
         ]
       ]
@@ -2428,6 +2460,10 @@
         [
           "2026-10-07",
           243.14
+        ],
+        [
+          "2026-10-09",
+          243.14
         ]
       ]
     },
@@ -2440,9 +2476,9 @@
       "productId": 85666,
       "qty": 1,
       "paid": null,
-      "value": 283.14,
+      "value": 224.35,
       "modelled": false,
-      "price": 283.14,
+      "price": 224.35,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -2690,6 +2726,10 @@
         [
           "2026-10-07",
           283.14
+        ],
+        [
+          "2026-10-09",
+          224.35
         ]
       ]
     },
@@ -2702,9 +2742,9 @@
       "productId": 88712,
       "qty": 1,
       "paid": null,
-      "value": 218.84,
+      "value": 219.82,
       "modelled": false,
-      "price": 218.84,
+      "price": 219.82,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -2952,6 +2992,10 @@
         [
           "2026-10-07",
           218.84
+        ],
+        [
+          "2026-10-09",
+          219.82
         ]
       ]
     },
@@ -2964,9 +3008,9 @@
       "productId": 88710,
       "qty": 1,
       "paid": null,
-      "value": 98.58,
+      "value": 97.45,
       "modelled": false,
-      "price": 98.58,
+      "price": 97.45,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -3214,6 +3258,10 @@
         [
           "2026-10-07",
           98.58
+        ],
+        [
+          "2026-10-09",
+          97.45
         ]
       ]
     },
@@ -3226,9 +3274,9 @@
       "productId": 86660,
       "qty": 1,
       "paid": null,
-      "value": 51.26,
+      "value": 52.12,
       "modelled": false,
-      "price": 51.26,
+      "price": 52.12,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -3476,6 +3524,10 @@
         [
           "2026-10-07",
           51.26
+        ],
+        [
+          "2026-10-09",
+          52.12
         ]
       ]
     },
@@ -3488,9 +3540,9 @@
       "productId": 89113,
       "qty": 1,
       "paid": null,
-      "value": 58.19,
+      "value": 53.95,
       "modelled": false,
-      "price": 58.19,
+      "price": 53.95,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -3738,6 +3790,10 @@
         [
           "2026-10-07",
           58.19
+        ],
+        [
+          "2026-10-09",
+          53.95
         ]
       ]
     },
@@ -3999,6 +4055,10 @@
         ],
         [
           "2026-10-07",
+          37
+        ],
+        [
+          "2026-10-09",
           37
         ]
       ]
@@ -4290,6 +4350,10 @@
         [
           "2026-10-07",
           31.31
+        ],
+        [
+          "2026-10-09",
+          31.31
         ]
       ]
     },
@@ -4302,9 +4366,9 @@
       "productId": 96392,
       "qty": 1,
       "paid": null,
-      "value": 22.33,
+      "value": 22.87,
       "modelled": false,
-      "price": 22.33,
+      "price": 22.87,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -4552,6 +4616,10 @@
         [
           "2026-10-07",
           22.33
+        ],
+        [
+          "2026-10-09",
+          22.87
         ]
       ]
     },
@@ -4564,9 +4632,9 @@
       "productId": 83911,
       "qty": 1,
       "paid": null,
-      "value": 16.62,
+      "value": 16.63,
       "modelled": false,
-      "price": 16.62,
+      "price": 16.63,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -4842,6 +4910,10 @@
         [
           "2026-10-07",
           16.62
+        ],
+        [
+          "2026-10-09",
+          16.63
         ]
       ]
     },
@@ -5132,6 +5204,10 @@
         [
           "2026-10-07",
           26.84
+        ],
+        [
+          "2026-10-09",
+          26.84
         ]
       ]
     },
@@ -5393,6 +5469,10 @@
         ],
         [
           "2026-10-07",
+          31.56
+        ],
+        [
+          "2026-10-09",
           31.56
         ]
       ]
@@ -5656,6 +5736,10 @@
         [
           "2026-10-07",
           26.58
+        ],
+        [
+          "2026-10-09",
+          26.58
         ]
       ]
     },
@@ -5668,9 +5752,9 @@
       "productId": 85639,
       "qty": 1,
       "paid": null,
-      "value": 14.38,
+      "value": 14.42,
       "modelled": false,
-      "price": 14.38,
+      "price": 14.42,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -5918,6 +6002,10 @@
         [
           "2026-10-07",
           14.38
+        ],
+        [
+          "2026-10-09",
+          14.42
         ]
       ]
     },
@@ -6155,6 +6243,10 @@
         ],
         [
           "2026-10-07",
+          20.01
+        ],
+        [
+          "2026-10-09",
           20.01
         ]
       ]
