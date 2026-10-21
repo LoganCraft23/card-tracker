@@ -1,6 +1,6 @@
 {
   "fitted": true,
-  "updated": "2026-10-18T16:27:10.771Z",
+  "updated": "2026-10-21T17:59:45.371Z",
   "identified": {
     "characterAndRarity": true,
     "ageCurve": false,
@@ -8,29 +8,29 @@
   },
   "withinCard": {
     "status": "estimated",
-    "usableCards": 168,
-    "longestSpanDays": 76,
+    "usableCards": 171,
+    "longestSpanDays": 78,
     "needs": "40 cards with 25+ days of history",
     "growthByAgeBucket": {
       "12": {
         "n": 19,
-        "medianAnnualised": -0.8102
+        "medianAnnualised": -0.7966
       },
       "18": {
-        "n": 21,
-        "medianAnnualised": -0.6991
+        "n": 22,
+        "medianAnnualised": -0.6897
       },
       "24": {
         "n": 21,
-        "medianAnnualised": -0.7247
+        "medianAnnualised": -0.6651
       },
       "30": {
-        "n": 36,
-        "medianAnnualised": -0.597
+        "n": 37,
+        "medianAnnualised": -0.6109
       },
       "36": {
-        "n": 66,
-        "medianAnnualised": -0.6381
+        "n": 67,
+        "medianAnnualised": -0.6263
       }
     }
   },
