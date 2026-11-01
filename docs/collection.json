@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-31T17:36:02.044Z",
-  "totalValue": 1419.47,
+  "updated": "2026-11-01T18:21:57.281Z",
+  "totalValue": 1419.27,
   "costBasis": 0,
   "costedItems": 0,
   "items": [
@@ -298,6 +298,10 @@
         ],
         [
           "2026-10-31",
+          37.55
+        ],
+        [
+          "2026-11-01",
           37.55
         ]
       ]
@@ -608,6 +612,10 @@
         [
           "2026-10-31",
           10.56
+        ],
+        [
+          "2026-11-01",
+          10.56
         ]
       ]
     },
@@ -917,6 +925,10 @@
         [
           "2026-10-31",
           14.54
+        ],
+        [
+          "2026-11-01",
+          14.54
         ]
       ]
     },
@@ -1225,6 +1237,10 @@
         ],
         [
           "2026-10-31",
+          6.34
+        ],
+        [
+          "2026-11-01",
           6.34
         ]
       ]
@@ -1538,6 +1554,10 @@
         [
           "2026-10-31",
           3.61
+        ],
+        [
+          "2026-11-01",
+          3.61
         ]
       ]
     },
@@ -1846,6 +1866,10 @@
         ],
         [
           "2026-10-31",
+          6.57
+        ],
+        [
+          "2026-11-01",
           6.57
         ]
       ]
@@ -2159,6 +2183,10 @@
         [
           "2026-10-31",
           13.35
+        ],
+        [
+          "2026-11-01",
+          13.35
         ]
       ]
     },
@@ -2428,6 +2456,10 @@
         ],
         [
           "2026-10-31",
+          22.76
+        ],
+        [
+          "2026-11-01",
           22.76
         ]
       ]
@@ -2699,6 +2731,10 @@
         [
           "2026-10-31",
           25.77
+        ],
+        [
+          "2026-11-01",
+          25.77
         ]
       ]
     },
@@ -2711,9 +2747,9 @@
       "productId": 87413,
       "qty": 1,
       "paid": null,
-      "value": 300.86,
+      "value": 299.42,
       "modelled": false,
-      "price": 300.86,
+      "price": 299.42,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -3021,6 +3057,10 @@
         [
           "2026-10-31",
           300.86
+        ],
+        [
+          "2026-11-01",
+          299.42
         ]
       ]
     },
@@ -3342,6 +3382,10 @@
         ],
         [
           "2026-10-31",
+          284.8
+        ],
+        [
+          "2026-11-01",
           284.8
         ]
       ]
@@ -3665,6 +3709,10 @@
         [
           "2026-10-31",
           218.19
+        ],
+        [
+          "2026-11-01",
+          218.19
         ]
       ]
     },
@@ -3677,9 +3725,9 @@
       "productId": 88710,
       "qty": 1,
       "paid": null,
-      "value": 107.09,
+      "value": 106.02,
       "modelled": false,
-      "price": 107.09,
+      "price": 106.02,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -3987,6 +4035,10 @@
         [
           "2026-10-31",
           107.09
+        ],
+        [
+          "2026-11-01",
+          106.02
         ]
       ]
     },
@@ -3999,9 +4051,9 @@
       "productId": 86660,
       "qty": 1,
       "paid": null,
-      "value": 51.75,
+      "value": 53.87,
       "modelled": false,
-      "price": 51.75,
+      "price": 53.87,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -4309,6 +4361,10 @@
         [
           "2026-10-31",
           51.75
+        ],
+        [
+          "2026-11-01",
+          53.87
         ]
       ]
     },
@@ -4321,9 +4377,9 @@
       "productId": 89113,
       "qty": 1,
       "paid": null,
-      "value": 55.41,
+      "value": 55.6,
       "modelled": false,
-      "price": 55.41,
+      "price": 55.6,
       "signal": null,
       "reasons": [
         "Vintage card — priced from TCG API since TCGdex has no market data for this printing. Not scored: the lifecycle model is fitted on cards under 3 years old, and a decade-old print is a different regime it hasn't been tested against."
@@ -4631,6 +4687,10 @@
         [
           "2026-10-31",
           55.41
+        ],
+        [
+          "2026-11-01",
+          55.6
         ]
       ]
     },
@@ -4952,6 +5012,10 @@
         ],
         [
           "2026-10-31",
+          36.76
+        ],
+        [
+          "2026-11-01",
           36.76
         ]
       ]
@@ -5303,6 +5367,10 @@
         [
           "2026-10-31",
           33.15
+        ],
+        [
+          "2026-11-01",
+          33.15
         ]
       ]
     },
@@ -5624,6 +5692,10 @@
         ],
         [
           "2026-10-31",
+          22.95
+        ],
+        [
+          "2026-11-01",
           22.95
         ]
       ]
@@ -5975,6 +6047,10 @@
         [
           "2026-10-31",
           17.54
+        ],
+        [
+          "2026-11-01",
+          17.54
         ]
       ]
     },
@@ -6325,6 +6401,10 @@
         [
           "2026-10-31",
           27
+        ],
+        [
+          "2026-11-01",
+          27
         ]
       ]
     },
@@ -6646,6 +6726,10 @@
         ],
         [
           "2026-10-31",
+          36.39
+        ],
+        [
+          "2026-11-01",
           36.39
         ]
       ]
@@ -6969,6 +7053,10 @@
         [
           "2026-10-31",
           48.56
+        ],
+        [
+          "2026-11-01",
+          48.56
         ]
       ]
     },
@@ -7291,6 +7379,10 @@
         [
           "2026-10-31",
           15.28
+        ],
+        [
+          "2026-11-01",
+          15.28
         ]
       ]
     },
@@ -7588,6 +7680,10 @@
         ],
         [
           "2026-10-31",
+          22.69
+        ],
+        [
+          "2026-11-01",
           22.69
         ]
       ]
