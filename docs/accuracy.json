@@ -1,29 +1,29 @@
 {
-  "generated": "2026-11-10T20:25:13.024Z",
-  "predictionsLogged": 15237,
-  "daysCollected": 102,
+  "generated": "2026-11-12T20:45:49.219Z",
+  "predictionsLogged": 15404,
+  "daysCollected": 104,
   "horizons": {
     "30": {
-      "samples": 11624,
-      "modelMAPE": 9.46,
-      "naiveMAPE": 8.79,
-      "bandHitRate": 8,
-      "directionAccuracy": 25.9,
-      "fittedSamples": 11038,
-      "fittedMAPE": 8.59,
-      "handMAPEOnSameCards": 9.26,
+      "samples": 11668,
+      "modelMAPE": 9.51,
+      "naiveMAPE": 8.84,
+      "bandHitRate": 7.9,
+      "directionAccuracy": 25.7,
+      "fittedSamples": 11082,
+      "fittedMAPE": 8.65,
+      "handMAPEOnSameCards": 9.32,
       "beatsNaive": false,
       "fittedBeatsHand": true
     },
     "90": {
-      "samples": 2857,
-      "modelMAPE": 26.34,
-      "naiveMAPE": 22.69,
-      "bandHitRate": 4,
-      "directionAccuracy": 14.3,
-      "fittedSamples": 2365,
-      "fittedMAPE": 17.18,
-      "handMAPEOnSameCards": 26.71,
+      "samples": 3198,
+      "modelMAPE": 26.04,
+      "naiveMAPE": 22.49,
+      "bandHitRate": 4.2,
+      "directionAccuracy": 14.8,
+      "fittedSamples": 2706,
+      "fittedMAPE": 17.1,
+      "handMAPEOnSameCards": 26.3,
       "beatsNaive": false,
       "fittedBeatsHand": true
     },
@@ -42,20 +42,20 @@
   },
   "bySignal": {
     "BUY": {
-      "n": 868,
-      "avgReturn90d": -26.87
+      "n": 974,
+      "avgReturn90d": -26.46
     },
     "HOLD": {
-      "n": 1835,
-      "avgReturn90d": -19.02
+      "n": 2049,
+      "avgReturn90d": -18.78
     },
     "SELL": {
-      "n": 65,
-      "avgReturn90d": -22.47
+      "n": 68,
+      "avgReturn90d": -22.99
     },
     "AVOID": {
-      "n": 89,
-      "avgReturn90d": -37.17
+      "n": 107,
+      "avgReturn90d": -36.9
     }
   }
 }
